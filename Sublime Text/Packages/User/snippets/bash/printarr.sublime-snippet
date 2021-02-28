@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+printf '%s\n' "\$\{${1:arr}[@]\}"
+]]></content>
+    <tabTrigger>printarr</tabTrigger>
+    <scope>source.shell.bash</scope>
+    <description>Print the contents of an array</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+    NSLog("${1:text}")
+]]></content>
+    <tabTrigger>NSLog</tabTrigger>
+    <scope>source.swift</scope>
+    <description>NSLog template</description>
+</snippet>

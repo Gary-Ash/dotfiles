@@ -1,0 +1,22 @@
+{
+	"bootstrapped": true,
+	"auto_upgrade_frequency": 1,
+
+	"installed_packages":
+	[
+		"BetterSnippetManager",
+		"BracketHighlighter",
+		"Case Conversion",
+		"DashDoc",
+		"Decent Swift Syntax",
+		"FAlign",
+		"FileIcons Mono",
+		"LSP",
+		"Package Control",
+		"PackageDev",
+		"Solarized Color Scheme",
+	],
+	"in_process_packages":
+	[
+	],
+}

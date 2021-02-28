@@ -1,0 +1,19 @@
+{
+	"font_face": "PragmataPro Liga",
+	"font_size": 10,
+	"font_options": ["dlig", "ss01", "no_round"],
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (light).sublime-color-scheme",
+	"tab_size": 4,
+	"open_files_in_new_window": false,
+	"save_on_focus_lost": true,
+	"trim_trailing_white_space_on_save": true,
+   "close_windows_when_empty": false,
+   "auto_complete_commit_on_tab": false,
+
+
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+}

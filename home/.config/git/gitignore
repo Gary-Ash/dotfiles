@@ -1,0 +1,114 @@
+#----------------------------------------------------------------------------------------
+# Apple system files
+#
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+#----------------------------------------------------------------------------------------
+# GPG
+#
+secring.*
+
+#----------------------------------------------------------------------------------------
+# Android
+#
+*.apk
+*.ap_
+*.dex
+*.jks
+*.class
+bin/
+gen/
+out/
+.gradle/
+build/
+local.properties
+*.log
+.navigation/
+captures/
+.externalNativeBuild
+google-services.json
+
+#----------------------------------------------------------------------------------------
+# Xcode
+#
+build/
+DerivedData/
+*.pbxuser
+xcuserdata/
+
+#----------------------------------------------------------------------------------------
+# Java
+#
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+#----------------------------------------------------------------------------------------
+# C/C++
+#
+*.slo
+*.lo
+*.o
+*.obj
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.mod
+*.smod
+*.lai
+*.la
+*.a
+*.lib
+*.exe
+*.out
+*.app
+*.dSYM/
+compile_commands.json
+
+#----------------------------------------------------------------------------------------
+# Perl
+#
+Build/
+.last_cover_stats
+/META.yml
+/META.json
+/MYMETA.*
+*.o
+*.pm.tdy
+*.bs
+
+#----------------------------------------------------------------------------------------
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt

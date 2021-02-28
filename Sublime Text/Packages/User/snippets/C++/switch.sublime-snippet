@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+switch (${1:control expression}) {
+	case ${2:pattern}:
+		$3
+		break;
+
+	default:
+		$4
+		break;
+}
+]]></content>
+    <tabTrigger>switch</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+    <description>switch block</description>
+</snippet>

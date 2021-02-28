@@ -1,0 +1,7 @@
+{
+	"font_face": "PragmataPro Liga",
+	"font_size": 10,
+	"render_commit_dialog_message_at_top": true,
+	"side_bar_layout": "locations_as_column",
+	"theme": "Merge.sublime-theme",
+}

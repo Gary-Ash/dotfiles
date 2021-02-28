@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+#*****************************************************************************************
+# pre-commit
+#
+# Git pre-commit hook that will run various source code formatters
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  27-Feb-2021  7:16pm
+# Modified :  27-Feb-2021  7:16pm
+#
+# Copyright © 2021 By Gee Dbl A All rights reserved.
+#***************************************************************************************** 
+for commit in $(git diff --cached --name-only --diff-filter=ACM); do
+	extension="${filename##*.}"
+
+	if [[ "$extension" == ".swift" ]]; then
+		if which swiftlint >/dev/null; then
+			swiftlint
+			git update-index --really-refresh "$commit"
+		fi
+
+		if which swiftformat >/dev/null; then
+			swiftformat --config "$HOME/.config/.swiftformat" "$commit"
+			git update-index --really-refresh "$commit"
+		fi
+	elif [[ "$extension" =~ [m|mm|pch|h|hh] ]]; then
+		if which uncrustify >/dev/null; then
+			uncrustify -l OC+ --replace --no-backup -c "$HOME/.config/.uncrustify" "$commit"
+			git update-index --really-refresh "$commit"
+		fi
+	elif [[ "$extension" =~ [hpp|hxx|c|cc|cpp|cxx|cs|jav|java] ]]; then
+		if which uncrustify >/dev/null; then
+			uncrustify --replace --no-backup -c "$HOME/.config/.uncrustify" "$commit"
+			git update-index --really-refresh "$commit"
+		fi
+	else
+		read line
+		if [[ "$line" =~ ^\#\!.*perl ]]; then
+			if which uncrustify >/dev/null; then
+				perltidy  -b -bext='/' --profile="$HOME/.config/.perltidyrc" "$commit"
+				git update-index --really-refresh "$commit"
+			fi
+		elif [[ "$line" =~ ^\#\!.*python ]]; then
+			if which uncrustify >/dev/null; then
+				black --config "$HOME/.config/.black" "$commit"
+				git update-index --really-refresh "$commit"
+			fi
+		fi
+	fi
+done

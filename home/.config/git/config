@@ -1,0 +1,136 @@
+[user]
+		name = Gary Ash
+		email = gary.ash@icloud.com
+		signingKey = F5DBC4518805C366
+
+[github]
+		user            = Gary-Ash
+
+[init]
+		defaultBranch = main
+		templateDir   = ~/.config/git/template
+
+[core]
+		excludesFile      = ~/.config/git/gitignore
+		attributesFile    = ~/.config/git/gitattributes
+		autocrlf          = input
+		compression       = 9
+		filemode          = false
+		precomposeUnicode = false
+		editor            = subl --new-window --wait
+
+[pager]
+		diff            = diff-so-fancy | less --tabs=4 -RFX
+		show            = diff-so-fancy | less --tabs=4 -RFX
+
+[color]
+		ui              = always
+
+[color "branch"]
+		current         = yellow reverse
+		local           = yellow
+		remote          = green
+
+[color "diff"]
+		meta            = yellow bold
+		frag            = magenta bold
+		old             = red bold
+		new             = green bold
+		newMoved 	= cyan
+		oldMoved 	= blue
+		whitespace      = red reverse
+
+[color "status"]
+		added           = green
+		changed         = yellow
+		untracked       = cyan
+
+[alias]
+		unstage         = reset HEAD --         # unstage the named file(s)
+		discard         = checkout --           # undo last commit
+		clone           = clone --recursive     # clone submodules too
+		log             = --decorate --graph --all
+
+[color "diff-highlight"]
+		oldNormal       = red bold
+		oldHighlight    = red bold 52
+		newNormal       = green bold
+		newHighlight    = green bold 22
+
+[url "https://github.com/"]
+		insteadOf       = gh:
+
+[url "https://gist.github.com/"]
+		insteadOf       = gist:
+
+[filter "hawser"]
+		clean           = git hawser clean %f
+		smudge          = git hawser smudge %f
+		required        = true
+
+[filter "lfs"]
+		clean           = git-lfs clean -- %f
+		smudge          = git-lfs smudge -- %f
+		process         = git-lfs filter-process
+		required        = true
+
+[credential]
+		helper = osxkeychain
+
+[gpg]
+		program         = /usr/local/bin/gpg
+
+[help]
+		autocorrect     = 1
+
+[submodule]
+		fetchJobs       = 0
+
+[status]
+		submodule       = 1
+
+[push]
+		default         = simple
+
+[commit]
+		gpgSign = true
+		verbose = true
+
+[tag]
+		gpgSign         = true
+
+[fetch]
+		prune = true
+		writeCommitGraph = true
+
+[gc]
+	writeCommitGraph = true
+
+[rebase]
+		autosquash = true
+
+
+[diff]
+		tool = Kaleidoscope
+
+[diff "bin"]
+		textconv = hexdump -v -C
+
+[difftool "Kaleidoscope"]
+		prompt = false
+		cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[merge]
+		tool = Kaleidoscope
+
+		[mergetool "Kaleidoscope"]
+		cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+		trustexitcode 	= true
+		keepTemporaries = false
+		prompt          = false
+
+[protocol]
+	version = 2
+
+[log]
+	date = human

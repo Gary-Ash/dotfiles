@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+display notification with title "${1:text}" subtitle "${2:text}" ${3:sound name "${4:Purr}"}
+${5:delay ${6:1}}
+]]></content>
+	<tabTrigger>OS:Notification Message</tabTrigger>
+	<scope>source.applescript</scope>
+</snippet>

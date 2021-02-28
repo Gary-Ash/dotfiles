@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+try
+	tell application "${1:application}" to launch
+    repeat while application "${1:application}" is not running
+        delay 0.01
+    end repeat
+
+	tell application "System Events" to tell process "${1:application}"
+        set frontmost to true
+		${2:code}	
+	end tell
+end try
+]]></content>
+    <tabTrigger>startapp</tabTrigger>
+    <scope>source.applescript</scope>
+    <description>launch and app and GUI scripting setup</description>
+</snippet>

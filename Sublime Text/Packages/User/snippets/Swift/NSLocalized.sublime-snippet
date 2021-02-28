@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+    NSLocalizedString(key: "${1:key}", comment: "${2:comment}")
+]]></content>
+    <tabTrigger>NSLocalized</tabTrigger>
+    <scope>source.swift</scope>
+    <description>NSLocalizedString template</description>
+</snippet>

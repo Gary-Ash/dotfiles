@@ -1,0 +1,9 @@
+{
+    "color_scheme": "Packages/Solarized Color Scheme/Solarized (light).sublime-color-scheme",
+    "draw_centered": false,
+    "highlight_line": true,
+    "line_numbers": true,
+    "rulers": [81, 100],
+    "trim_trailing_white_space_on_save": false,
+    "word_wrap": false,
+}
