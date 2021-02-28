@@ -5,10 +5,10 @@
 # This file the contains the bunk of my Z shell setup
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :  27-Feb-2021  7:16pm
-# Modified :  27-Feb-2021  7:16pm
+# Created  :  11-Jan-2020  2:23pm
+# Modified :   1-Feb-2021  2:44pm
 #
-# Copyright © 2021 By Gee Dbl A All rights reserved.
+# Copyright © 2020-2021 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
 
 #*****************************************************************************************

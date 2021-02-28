@@ -5,10 +5,10 @@
 # Git pre-commit hook that will run various source code formatters
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :  27-Feb-2021  7:16pm
-# Modified :  27-Feb-2021  7:16pm
+# Created  :  13-Aug-2020  7:23pm
+# Modified :  15-Aug-2020  6:41pm
 #
-# Copyright © 2021 By Gee Dbl A All rights reserved.
+# Copyright © 2020 By Gee Dbl A All rights reserved.
 #***************************************************************************************** 
 for commit in $(git diff --cached --name-only --diff-filter=ACM); do
 	extension="${filename##*.}"

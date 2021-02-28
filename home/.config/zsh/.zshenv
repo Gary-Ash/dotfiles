@@ -5,10 +5,10 @@
 # This file contains my Z shell environment setup
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :  27-Feb-2021  7:16pm
-# Modified :  27-Feb-2021  7:16pm
+# Created  :  11-Jan-2020  2:23pm
+# Modified :  21-Feb-2021  5:07pm
 #
-# Copyright © 2021 By Gee Dbl A All rights reserved.
+# Copyright © 2020-2021 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
 
 #*****************************************************************************************
