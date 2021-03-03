@@ -2,31 +2,12 @@
 	"last_version": 2046,
 	"new_window_session":
 	{
-		"window_height": 1281.0,
-		"window_width": 1822.0
+		"window_height": 1281,
+		"window_width": 1822
 	},
 	"project_dir": "/Users/garyash/Developer",
 	"recent":
 	[
-		{
-			"locations_tab_selected": false,
-			"path": "/Users/garyash/Downloads/dotfiles",
-			"previous_commit_messages":
-			[
-				"Fixed a type o in the README.md",
-				"Fix a type o in the README.md"
-			],
-			"search":
-			{
-				"history":
-				[
-				]
-			},
-			"show_untracked_files": false,
-			"side_bar_visible": true,
-			"table_of_contents_tab_selected": false,
-			"table_of_contents_tree_mode": false
-		}
 	],
 	"select_repository":
 	{
@@ -39,18 +20,8 @@
 	},
 	"window_positions":
 	{
-		"/Users/garyash/Downloads/dotfiles": "1 0 369 45 1822 1309 0 0 2560 1415 "
 	},
 	"windows":
 	[
-		{
-			"tabs":
-			[
-				{
-					"path": "/Users/garyash/Downloads/dotfiles",
-					"selected": true
-				}
-			]
-		}
 	]
 }
