@@ -1,0 +1,45 @@
+#!/usr/bin/env zsh
+#*****************************************************************************************
+# blog_post
+#
+# This file contains some blogging utilities
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  11-Jan-2020  2:23pm
+# Modified :  21-Jul-2020  3:19pm
+#
+# Copyright © 2020 By Gee Dbl A All rights reserved.
+#*****************************************************************************************
+if [[ $# -eq 0 ]]; then
+	echo -n "Post title: "
+	read -r title
+elif [[ $# -ne 1 ]]; then
+	echo "Wrong number of arguments"
+	echo "blog-post \"<post title>\""
+	return 1
+else
+	title="$1"
+fi
+
+postNumber=$(find $HOME/Sites/geedbla/_posts -maxdepth 1 -type f -iname "*.markdown" | awk '{print NR}'| sed -n '$p')
+let postNumber=postNumber+1
+filename="$HOME/Sites/geedbla/_posts/$(date +"%Y-%m-%d")-Post${postNumber}.markdown"
+cat << POST_TEMPLATE > "$filename"
+---
+layout: post
+title:  "$title"
+date:   $(date +"%d-%b-%Y %l:%M%PM")
+category: blog
+---
+POST_TEMPLATE
+
+$EDITOR "$filename:8"
+pushd "$HOME/Sites/geedbla" &> /dev/null || return
+if bundle exec jekyll build; then
+	echo -n "Enter system password:" >&2
+	read -r password
+    echo
+	sshpass -p "$password" rsync -arz --rsh=ssh	"$HOME/Sites/geedbla/_site/" "garyash@geedbla.com:~/geedbla.com"
+	rm -fr "$HOME/Sites/geedbla/_site"
+fi
+popd 				&> /dev/null || return

@@ -1,0 +1,21 @@
+#!/usr/bin/env zsh
+#*****************************************************************************************
+# format-project
+#
+# Run Uncrustify on the source files in the project tree
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  11-Jan-2020  2:23pm
+# Modified :  19-Sep-2020  7:42pm
+#
+# Copyright © 2020 By Gee Dbl A All rights reserved.
+#*****************************************************************************************
+if [ -z "$@" ]; then
+    directory="."
+else
+    directory="$@"
+fi
+
+find "$directory" -type f -name "*.[m|mm|pch|h|hh]" -print0 | xargs -0  uncrustify -l OC+ --replace --no-backup -c "$HOME/.config/.uncrustify"
+find "$directory" -type f -name "*.[hpp|hxx|c|cc|cpp|cxx|cs|jav|java]" -print0 | xargs -0 uncrustify --replace --no-backup -c "$HOME/.config/.uncrustify"
+find "$directory" -type f -name "*.swift" -print0 | xargs -0 swiftformat --config /Users/garyash/.config/.swiftformat

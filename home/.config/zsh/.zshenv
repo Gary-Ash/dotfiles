@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  11-Jan-2020  2:23pm
-# Modified :   2-Mar-2021 12:11pm
+# Modified :   6-Mar-2021  3:49pm
 #
 # Copyright © 2020-2021 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
@@ -138,7 +138,7 @@ alias regexsr="perl -pi -e "
 alias mkstrings='find -E . -iregex ".*\\.(m|h|mm|swift)$" -print0 | xargs -0 genstrings -a -o Resources/en.lproj'
 alias ll="exa --long -all --git --group --group-directories-first --color=always --classify --level=3"
 
-alias brewup="brew update --greedy;brew upgrade;brew upgrade --cask --force;brew cleanup;brew doctor"
+alias brewup="brew update;brew upgrade;brew upgrade --cask --force;brew cleanup;brew doctor"
 
 alias mute="osascript -e \"set volume output muted true\""
 alias volumenormal="osascript -e \"set volume output volume 50\""
@@ -155,4 +155,3 @@ alias perms="stat -f '%Sp %OLp %N'"
 alias recordSimulator="xcrun simctl io booted recordVideo "
 
 alias sppedtimemachine="sudo sysctl debug.lowpri_throttle_enabled=0"
-

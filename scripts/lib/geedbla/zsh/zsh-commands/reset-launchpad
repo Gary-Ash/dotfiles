@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+#*****************************************************************************************
+# reset-launchpad
+#
+# Reset the macOS launch pad
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  11-Jan-2020  2:23pm
+# Modified :  11-Jan-2020  2:23pm
+#
+# Copyright © 2020 By Gee Dbl A All rights reserved.
+#*****************************************************************************************
+defaults write com.apple.dock ResetLaunchPad -bool true
+killall Dock

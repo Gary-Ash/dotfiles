@@ -1,0 +1,17 @@
+#!/usr/bin/env zsh
+#*****************************************************************************************
+# fix-icons
+#
+# replace some app icons with better looking versions
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  11-Jan-2020  2:23pm
+# Modified :  27-Jan-2021  1:28pm
+#
+# Copyright © 2020-2021 By Gee Dbl A All rights reserved.
+#*****************************************************************************************
+if [ -e "/Applications/Cyberduck.app" ]; then
+	sudo cp -f "/Applications/Cyberduck.app/Contents/Resources/cyberduck-application-rect.icns" "/Applications/Cyberduck.app/Contents/Resources/cyberduck-application.icns"
+	sudo cp -f "/Applications/Cyberduck.app/Contents/Resources/cyberduck-application-rect.icns" "/Applications/Cyberduck.app/Contents/Resources/cyberduck-document.icns"
+	sudo touch "/Applications/Cyberduck.app"
+fi

@@ -1,0 +1,18 @@
+#!/usr/bin/env zsh
+#*****************************************************************************************
+# zcompile-lib
+#
+# This script command will recompile my Zsh scripting library and comments
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :   2-Mar-2020  7:47pm
+# Modified :   2-Mar-2020  8:01pm
+#
+# Copyright © 2020 By Gee Dbl A All rights reserved.
+#***************************************************************************************** 
+
+find -x /usr/local/lib/geedbla/zsh -name "*.DS_Store" -type f -delete 
+for file (/usr/local/lib/geedbla/zsh/**/^*.zwc(N.)); do
+	zcompile $file
+done
+find /usr/local/lib/geedbla/zsh -type f -exec chmod 644 {} \;

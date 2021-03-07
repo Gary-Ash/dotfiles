@@ -1,0 +1,20 @@
+
+stop_persistant_sudo() {
+	if [[ -n $ZSH_VERSION ]]; then
+    	setopt local_options no_monitor
+	fi
+
+	kill $SUDO_SHELL_PID
+	kill $CAFFEINATE
+	wait
+	unset SUDO_SHELL_PID
+	unset CAFFEINATE
+	unset SUDO_PASSWORD
+
+	if [[ -n $ZSH_VERSION ]]; then
+		setopt monitor
+	fi
+
+	sudo --reset-timestamp
+}
+stop_persistant_sudo
