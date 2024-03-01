@@ -1,0 +1,19 @@
+
+# Title: ########50 characters###################
+# Status Indicator	Meaning
+# F					Feature
+# B					Bug fix
+# !!!				Non-provable refactoring
+# c					Comments only (added or deleted)
+# d					Developer documentation (non-user facing)
+# e					Environment (non-code) changes (for development)
+# t					Test only
+# r					Provable (manual) refactoring
+# a					Automated formatting
+#
+# Github issue #123 (Optional)
+# Body: ########72 characters##########################################
+# - The bullets are fine too
+# - Typically a dash or asterisk is used for the bullets
+# - Followed by a single space, with blank lines in between
+# - Using a hanging indentation
