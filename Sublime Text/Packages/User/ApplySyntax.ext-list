@@ -132,4 +132,17 @@
 		"php5",
 		"phtml"
 	],
+	"HTML (Liquid)":
+	[
+		"htm",
+		"html"
+	],
+	"CSS (Liquid)":
+	[
+		"css"
+	],
+	"JSON (Liquid)":
+	[
+		"json"
+	],
 }

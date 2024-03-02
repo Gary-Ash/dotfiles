@@ -1,8 +1,6 @@
 tap "apparition47/tap"
 tap "ggpeti/rmrec"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "hudochenkov/sshpass"
 tap "mulle-kybernetik/software"
 tap "peripheryapp/periphery"

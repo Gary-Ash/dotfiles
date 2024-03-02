@@ -8,7 +8,7 @@ shopt -s extglob
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  25-Jul-2023  1:46pm
-# Modified :  10-Feb-2024  7:54pm
+# Modified :   5-Mar-2024  9:10pm
 #
 # Copyright © 2023-2024 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
@@ -49,7 +49,7 @@ for commit in $(git diff --cached --name-only --diff-filter=ACM); do
 				fi
 			elif [[ $line =~ ^\#\!.*(bash|zsh|sh)$ ]]; then
 				if which shfmt >/dev/null; then
-					shfmt -s -ci -i 0 -w -ln bash "${filename}"
+					shfmt -ln bash -i 0 -s -ci -w"${filename}"
 					git update-index --really-refresh --again "${filename}"
 				fi
 			fi

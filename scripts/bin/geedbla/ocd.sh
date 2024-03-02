@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  18-Aug-2023  8:10pm
-# Modified :  27-Feb-2024  3:38pm
+# Modified :   4-Mar-2024  3:26pm
 #
 # Copyright © 2023-2024 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
@@ -1106,11 +1106,13 @@ our @itemsToDelete = (
     ["$HOME/Library/Developer/Xcode/UserData/IDEEditorInteractivityHistory",                                                              0],
     ["$HOME/Library/Application Support/Alfred/usage.data",                                                                               1],
     ["$HOME/Library/Application Support/Sublime Merge/Local/Backup Session.sublime_session",                                              0],
+    ["$HOME/Library/Application Support/Sublime Merge/Log",                                                                               0],
     ["$HOME/Library/Application Support/Sublime Merge/Cache",                                                                             1],
     ["$HOME/Library/Application Support/Sublime Text/Backup",                                                                             0],
     ["$HOME/Library/Application Support/Sublime Text/Cache",                                                                              1],
     ["$HOME/Library/Application Support/Sublime Text/Index",                                                                              1],
-    ["$HOME/Library/Application Support/Sublime Text/Trash",                                                                              1],
+    ["$HOME/Library/Application Support/Sublime Text/Log",                                                                                0],
+    ["$HOME/Library/Application Support/Sublime Text/Trash",                                                                              0],
     ["$HOME/Library/Application Support/Sublime Text/Local/Backup Auto Save Session.sublime_session",                          			  0],
     ["$HOME/Library/Application Support/Sublime Text/Local/Backup Session.sublime_session",                                               0],
     ["$HOME/Library/Application Support/Sublime Text/Packages/User/Package Control.cache",                                                1],
@@ -1170,6 +1172,7 @@ our @itemsToDelete = (
     ["$HOME/Library/Containers/com.runisoft.Video-Joiner-and-Merger/Data/Library/Preferences/com.runisoft.Video-Joiner-and-Merger.plist", 0],
     ["$HOME/Library/Containers/com.bridgetech.asset-catalog/Data/Library/Application Support/saved_asset_catalog_creator",                0],
     ["$HOME/Library/Caches/com.apple.Music/SubscriptionPlayCache/",                                                                       0],
+    ["$HOME/Library/Application Support/iTerm2/SavedState/lock", 																		  0],
 );
 
 #*****************************************************************************************

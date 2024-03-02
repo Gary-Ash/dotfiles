@@ -37,13 +37,13 @@
 	version = 2
 
 [color "branch"]
-	current         = yellow reverse
-	local           = yellow
-	remote          = green
+	current         = black
+	local           = normal
+	remote          = magenta bold
 
 [color "status"]
 	added           = green
-	changed         = yellow
+	changed         = blue
 	untracked       = cyan
 
 [alias]
@@ -54,7 +54,7 @@
 	log             = "--decorate --graph --all"				# fancy up my log
 	fpush  			= "push --force"
 	amend			= "commit --amend --reuse-message=HEAD"
-	delete-merged   = "!git branch --merged | grep -E -v \"(master|main|develop|other)\" | xargs git branch -D"
+	delete-merged   = "git branch --merged | grep -i -v -E \"master|main|develop|dev\"| xargs git branch -d"
 	trim 			= "!f() { git branch | grep -v \"main\" | grep -v \"master\" | grep -v \"^*\" | xargs git branch -D; git remote prune rigin; }; f"
 	fuckit          = "!git clean -df && git reset --hard"
 	gcc 			= "gc --aggressive --cruft"

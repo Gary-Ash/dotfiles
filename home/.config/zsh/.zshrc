@@ -2,13 +2,13 @@
 #*****************************************************************************************
 # .zshrc
 #
-# Zdh interactive setup
+# Z shell interactive setup
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  29-May-2021  2:35pm
-# Modified :  29-May-2021  2:35pm
+# Modified :   6-Mar-2024  1:38pm
 #
-# Copyright © 2021 Gee Dbl A All rights reserved.
+# Copyright © 2021-2024 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
 
 #*****************************************************************************************
@@ -17,8 +17,8 @@
 unset HISTFILE
 export HISTFILE="$XDG_CACHE_HOME/zsh/history"
 
-if [[ -v SHELL_SESSIONS_DISABLE ]]; then
-	source "$XDG_CONFIG_HOME/zsh/.zshenv"
+if [[ -z "$SHELL_SESSIONS_DISABLE" ]]; then
+    source "$XDG_CONFIG_HOME/zsh/.zshenv"
 fi
 
 #*****************************************************************************************
@@ -28,12 +28,21 @@ osascript <<CENTER_WINDOW &>/dev/null
 tell application "Finder"
     set screenSize to bounds of window of desktop
     set screenWidth to item 3 of screenSize
-    set screenHeight to item 4 of screenSize
+    set screenHeight to (item 4 of screenSize) - 200
 end tell
 
 tell application "System Events"
     set myFrontMost to name of first item of ¬
         (processes whose frontmost is true)
+
+    if application "ITerm" is  running
+        set myFrontMost to "iTerm"
+    end if
+
+    if application "Terminal" is  running
+        set myFrontMost to "Terminal"
+    end if
+
 end tell
 
 try
@@ -46,12 +55,11 @@ try
 
         set windowWidth to windowXr - windowXl
         set windowHeight to windowYb - windowYt
-
-         set bounds of window 1 to {¬
-            round ((screenWidth - windowWidth) / 2) rounding as taught in school, ¬
-            round ((screenHeight - windowHeight) / 2) rounding as taught in school, ¬
-            round ((screenWidth + windowWidth) / 2) rounding as taught in school, ¬
-            round ((screenHeight + windowHeight) / 2) rounding as taught in school}
+        set bounds of window 1 to {¬
+            round ((screenWidth - windowWidth) / 2), ¬
+            round ((screenHeight - windowHeight) / 2), ¬
+            round ((screenWidth + windowWidth) / 2), ¬
+            round ((screenHeight + windowHeight) / 2)}
 
         set the result to bounds of window 1
     end tell
@@ -59,8 +67,8 @@ end try
 CENTER_WINDOW
 
 if [[ $TERM_PROGRAM != "Apple_Terminal" ]]; then
-	#*****************************************************************************************
-	# startup banner
-	#*****************************************************************************************
-	perl /opt/bin/geedbla/startup-banner.pl --light
+    #*****************************************************************************************
+    # startup banner
+    #*****************************************************************************************
+    perl /opt/bin/geedbla/startup-banner.pl --light
 fi
