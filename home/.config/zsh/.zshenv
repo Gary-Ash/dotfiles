@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  29-May-2021  2:35pm
-# Modified :  25-Feb-2024  2:26pm
+# Modified :   8-Mar-2024  1:20pm
 #
 # Copyright © 2021-2024 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
@@ -19,7 +19,7 @@ export SHELL_SESSIONS_DISABLE=1
 export SHELL_SESSION_HISTORY=0
 
 export NODE_PATH="/opt/homebrew/lib/node_modules"
-export PATH="/opt/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/opt/python@3.12/libexec/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/bin/geedbla:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/Applications/Sublime Merge.app/Contents/SharedSupport/bin:/opt/homebrew/lib/node_modules/npm"
+export PATH="/opt/bin:/opt/geedbla/bin:/opt/geedbla/scripts:/opt/homebrew/opt/ruby/bin:/opt/homebrew/opt/python@3.12/libexec/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/bin/geedbla:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/Applications/Sublime Merge.app/Contents/SharedSupport/bin:/opt/homebrew/lib/node_modules/npm"
 
 export EDITOR=(subl --wait)
 export VISUAL="subl"
@@ -48,9 +48,9 @@ export CP_HOME_DIR="$XDG_CACHE_HOME/.cocoapods/"
 fpath=(
   /opt/homebrew/share/zsh-completions
   /opt/homebrew/zsh/site-functions
-  /opt/lib/geedbla/zsh/lib
-  /opt/lib/geedbla/zsh/zsh-commands
-  /opt/lib/geedbla/zsh/zsh-completion
+  /opt/geedbla/zsh/lib
+  /opt/geedbla/lib/zsh/zsh-commands
+  /opt/geedbla/lib/zsh/zsh-completion
   "${fpath[@]}"
   )
 
@@ -134,10 +134,10 @@ source <(npm completion)
 eval "$(gh completion -s zsh)"
 
 #*****************************************************************************************
-# source utils
+# source my own utilities
 #*****************************************************************************************
 # shellcheck disable=SC2044,SC1090
-for file in $(find /opt/lib/geedbla/zsh/zsh-commands -type f -or -type l); do
+for file in $(find /opt/geedbla/lib/zsh/zsh-commands -type f -or -type l); do
   file="${file%.*}"
   autoload -U "$file"
 done
@@ -176,14 +176,6 @@ alias reset-notification-center="defaults delete com.apple.notificationcenterui;
 alias show-all-files="defaults write com.apple.finder AppleShowAllFiles true;killall Finder"
 alias hide-all-files="defaults delete com.apple.finder AppleShowAllFiles;killall Finder"
 
-#*****************************************************************************************
-# source my own utilities
-#*****************************************************************************************
-# shellcheck disable=SC2044,SC1090
-for file in $(find /opt/lib/geedbla/zsh/zsh-commands -type f -or -type l); do
-  file="${file%.*}"
-  autoload -U "$file"
-done
 
 #*****************************************************************************************
 # Zsh Autosuggest
@@ -202,7 +194,7 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export SNAZZY_PROMPT="cwd,235,179,235,166;git,235,219,235,40;error,235,166"
 
 powerline_precmd() {
-    PS1="$(/opt/bin/SnazzyPrompt --error $?)"
+    PS1="$(/opt/geedbla/bin/SnazzyPrompt --error $?)"
 }
 
 install_powerline_precmd() {
@@ -230,7 +222,7 @@ if command -v fzf &> /dev/null; then
 	export FZF_DEFAULT_OPTS="--prompt='▶' --pointer='→' --marker='✓' --border=rounded --color=fg:#93a1a1,bg:#fdf6e3,hl:#eee8d5,fg+:#839496 --color=bg+:#eee8d5,hl+:#268bd2 --color=info:#268bd2,prompt:#268bd2,pointer:#dc322f --color=marker:#dc322f,spinner:#268bd2,header:#93a1a1,border:#93a1a1"
 
 	source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
-  	source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
+  source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
 fi
 
 fd() {
@@ -316,24 +308,6 @@ export _Z_DATA="$XDG_CACHE_HOME/zsh/.z"
 source /opt/homebrew/etc/profile.d/z.sh
 
 #*****************************************************************************************
-# reset Finder settings
-#*****************************************************************************************
-reset-finder() {
-  defaults delete com.apple.finder
-
-  defaults write com.apple.finder NewWindowTarget -string "PfHm"
-  defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
-  defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-  defaults write com.apple.finder ShowStatusBar -bool true
-  defaults write com.apple.finder ShowRecentTags -bool false
-
-  defaults write com.apple.finder _FXSortFoldersFirst -bool true
-  defaults write com.apple.finder _FXSortFoldersFirstOnDesktop -bool true
-  defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
-  killall Finder
-}
-
-#*****************************************************************************************
 # quick system update
 #*****************************************************************************************
 sysupdate() {
@@ -410,13 +384,6 @@ sysupdate() {
 }
 
 #*****************************************************************************************
-#  kill the stuck crash report tool that hangs the Mac Finder sync
-#*****************************************************************************************
-hung-sync() {
-  kill -9 $(pgrep MDCrashReportTool)
-}
-
-#*****************************************************************************************
 # enhance man with some color and highlighting
 #*****************************************************************************************
 man() {
@@ -436,7 +403,7 @@ man() {
 alias OCD=ocd
 
 ocd() {
-  /opt/bin/geedbla/ocd.sh "$@"
+  /opt/geedbla/scripts/ocd.sh "$@"
   if [ "$?" -eq "0" ]; then
     mkdir -p "$HOME/.cache/zsh"   &> /dev/null
     exec "$SHELL" -l

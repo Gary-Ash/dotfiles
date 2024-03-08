@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  29-May-2021  2:35pm
-# Modified :   6-Mar-2024  1:38pm
+# Modified :   8-Mar-2024  1:08pm
 #
 # Copyright © 2021-2024 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
@@ -70,5 +70,5 @@ if [[ $TERM_PROGRAM != "Apple_Terminal" ]]; then
     #*****************************************************************************************
     # startup banner
     #*****************************************************************************************
-    perl /opt/bin/geedbla/startup-banner.pl --light
+    perl /opt/geedbla/scripts/startup-banner.pl --light
 fi

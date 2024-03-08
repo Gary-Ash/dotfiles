@@ -109,6 +109,8 @@
 	<true/>
 	<key>DVTTextIndentUsingTabs</key>
 	<true/>
+	<key>DVTTextOverscrollAmount</key>
+	<real>0.25</real>
 	<key>DVTTextShowFoldingSidebar</key>
 	<true/>
 	<key>DVTTextShowMinimap</key>
@@ -139,7 +141,7 @@
 		<string>Screen</string>
 	</array>
 	<key>IDEAnalyticsMetricsNotifications.AnalyticsMetricsNotificationsController.lastRefreshAttemptDate</key>
-	<date>2024-03-05T19:48:16Z</date>
+	<date>2024-03-07T18:11:16Z</date>
 	<key>IDEAnnotationPresentation</key>
 	<string>initially-inline</string>
 	<key>IDEAppStatisticsRunDestinationPlatform</key>
@@ -174,7 +176,7 @@
 		<key>15C65</key>
 		<date>2024-01-08T18:30:01Z</date>
 		<key>15E204a</key>
-		<date>2024-03-06T04:45:21Z</date>
+		<date>2024-03-08T05:14:34Z</date>
 	</dict>
 	<key>IDEAppStoreProductSourceRateLimiter</key>
 	<dict>
@@ -188,6 +190,8 @@
 			<string>App Store Product Source Accounts: gary.ash@icloud.com and gary@earbug.com</string>
 		</array>
 	</dict>
+	<key>IDEAppearance</key>
+	<integer>0</integer>
 	<key>IDEBuildLocationStyle</key>
 	<string>Unique</string>
 	<key>IDEBuildingContinueBuildingAfterErrors</key>
@@ -286,7 +290,7 @@
 		</data>
 		<key>/System/Library/CoreServices/CoreTypes.bundle</key>
 		<data>
-		49ZCUpDZDbh9UNAOE9yMRtv993k=
+		4DIvRP38rwZiie4Gy3Xta9ivbd8=
 		</data>
 	</dict>
 	<key>IDELastShownWhatsNewContentRevision</key>
@@ -552,11 +556,11 @@
 	<key>IDEWorkspaceSuppressCleanBuildPrompt</key>
 	<true/>
 	<key>IDE_CA_Daily_LastReport</key>
-	<real>731360779.68991399</real>
+	<real>731567671.40125</real>
 	<key>IDE_CA_Daily_SessionCount</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>IDE_CA_Daily_UptimeHours</key>
-	<real>0.10101590777777776</real>
+	<real>0.0047164442939811122</real>
 	<key>IDE_CA_Daily_UsedScriptingAPI</key>
 	<true/>
 	<key>LastExplicitInspectorVisibility</key>
@@ -667,7 +671,7 @@
 	<key>NSWindow Frame IDENewContextSheet</key>
 	<string>1211 665 493 150 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDEPreferencesPanel</key>
-	<string>865 680 830 507 0 0 2560 1415 </string>
+	<string>865 730 830 457 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESourceControlCommitWindow</key>
 	<string>604 259 1352 964 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESwiftPackageAdditionAssistant</key>
