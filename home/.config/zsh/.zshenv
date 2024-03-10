@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  29-May-2021  2:35pm
-# Modified :   8-Mar-2024  1:20pm
+# Modified :   8-Mar-2024  5:13pm
 #
 # Copyright © 2021-2024 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
@@ -48,7 +48,7 @@ export CP_HOME_DIR="$XDG_CACHE_HOME/.cocoapods/"
 fpath=(
   /opt/homebrew/share/zsh-completions
   /opt/homebrew/zsh/site-functions
-  /opt/geedbla/zsh/lib
+  /opt/geedbla/lib/zsh/lib
   /opt/geedbla/lib/zsh/zsh-commands
   /opt/geedbla/lib/zsh/zsh-completion
   "${fpath[@]}"
@@ -137,7 +137,7 @@ eval "$(gh completion -s zsh)"
 # source my own utilities
 #*****************************************************************************************
 # shellcheck disable=SC2044,SC1090
-for file in $(find /opt/geedbla/lib/zsh/zsh-commands -type f -or -type l); do
+for file in $(find /opt/geedbla/lib/zsh -type f -or -type l); do
   file="${file%.*}"
   autoload -U "$file"
 done

@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  29-May-2021  2:35pm
-# Modified :   8-Mar-2024  1:08pm
+# Modified :   8-Mar-2024  7:06pm
 #
 # Copyright © 2021-2024 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
@@ -17,8 +17,8 @@
 unset HISTFILE
 export HISTFILE="$XDG_CACHE_HOME/zsh/history"
 
-if [[ -z "$SHELL_SESSIONS_DISABLE" ]]; then
-    source "$XDG_CONFIG_HOME/zsh/.zshenv"
+if [[ -z $SHELL_SESSIONS_DISABLE ]]; then
+	source "$XDG_CONFIG_HOME/zsh/.zshenv"
 fi
 
 #*****************************************************************************************
@@ -67,8 +67,8 @@ end try
 CENTER_WINDOW
 
 if [[ $TERM_PROGRAM != "Apple_Terminal" ]]; then
-    #*****************************************************************************************
-    # startup banner
-    #*****************************************************************************************
-    perl /opt/geedbla/scripts/startup-banner.pl --light
+	#*****************************************************************************************
+	# startup banner
+	#*****************************************************************************************
+	perl /opt/geedbla/scripts/startup-banner.pl --light
 fi

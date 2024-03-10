@@ -1,14 +1,21 @@
 {
 	"author": "Gary Ash",
 	"email": "gary.ash@icloud.com",
-	"line_length": 90,
-	"organizations": ["Gee Dbl A", "Gary Ash",],
-	"uncrustify exec": "/opt/homebrew/bin/uncrustify",
-	"perltidy exec": "/opt/homebrew/bin/perltidy",
-	"swiftformat exec": "/opt/homebrew/bin/swiftformat",
+	"folders_to_open":
+	[
+		"/opt/geedbla/"
+	],
 	"go exec": "",
+	"line_length": 90,
+	"organizations":
+	[
+		"Gee Dbl A",
+		"Gary Ash",
+	],
+	"perltidy exec": "/opt/homebrew/bin/perltidy",
 	"python exec": "/opt/homebrew/bin/black",
 	"ruby exec": "",
 	"shfmt exec": "/opt/homebrew/bin/shfmt",
-	"shfmt config": "-ln bash -i 0 -s -ci",
+	"swiftformat exec": "/opt/homebrew/bin/swiftformat",
+	"uncrustify exec": "/opt/homebrew/bin/uncrustify",
 }
