@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  29-May-2021  2:35pm
-# Modified :   8-Mar-2024  7:06pm
+# Modified :  15-Mar-2024  8:14pm
 #
 # Copyright © 2021-2024 By Gee Dbl A All rights reserved.
 #*****************************************************************************************
@@ -42,7 +42,6 @@ tell application "System Events"
     if application "Terminal" is  running
         set myFrontMost to "Terminal"
     end if
-
 end tell
 
 try
