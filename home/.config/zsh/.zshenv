@@ -5,7 +5,7 @@
 # This file contains my ZSH environment setup
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :  27-Apr-2024  10:26pm
+# Created  :  27-Apr-2024  7:11pm
 # Modified :
 #
 # Copyright © 2024 By Gary Ash All rights reserved.

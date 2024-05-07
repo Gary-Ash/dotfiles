@@ -18,7 +18,7 @@
 	templateDir   = ~/.config/git/template
 
 [core]
-    excludesfile      = /Users/garyash/.config/git/gitignore
+	excludesfile = /Users/garyash/.config/git/gitignore
     attributesFile    = ~/.config/git/gitattributes
     autocrlf          = input
     compression       = 9
@@ -160,3 +160,9 @@
     cmd           = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
     trustExitCode = true
     prompt        = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
