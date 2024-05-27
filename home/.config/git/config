@@ -6,7 +6,6 @@
 [gpg "ssh"]
 	allowedSignersFile = /Users/garyash/.ssh/allowed_signers
 
-
 [credential]
 	helper = cache --timeout=604800
 
@@ -36,6 +35,8 @@
 [pager]
 	diff            = delta
 	show            = delta
+    log 			= delta
+    reflog 			= delta
 
 [color]
 	ui = true
@@ -55,17 +56,16 @@
 	untracked       = cyan
 
 [alias]
-	difft           = "difftool -y"								# use the my external diff tool w/o prompting
-	unstage         = "reset HEAD --"         					# unstage the named file(s)
-	discard         = "checkout --"           					# undo last commit
-	clone           = "clone --recursive"     					# clone submodules too
-	log             = "--decorate --graph --all"				# fancy up my log
-	fpush  			= "push --force"
+	logg            = "log --pretty=fuller --decorate --graph --all --show-signature"
+	difft           = "difftool -y"									# use the my external diff tool w/o prompting
+	unstage         = "reset HEAD --"         						# unstage the named file(s)
+	discard         = "checkout --"           						# undo last commit
+	cloner          = "clone --recursive"     						# clone submodules too
+	pushf  			= "push --force"
 	amend			= "commit --amend --reuse-message=HEAD"
 	delete-merged   = "git branch --merged | grep -i -v -E \"master|main|develop|dev\"| xargs git branch -d"
 	trim 			= "!f() { git branch | grep -v \"main\" | grep -v \"master\" | grep -v \"^*\" | xargs git branch -D; git remote prune rigin; }; f"
 	fuckit          = "!git clean -df && git reset --hard"
-	gcc 			= "gc --aggressive --cruft"
   	pruner 			= "!git prune --expire=now; git reflog expire --expire-unreachable=now --rewrite --all"
 
 
@@ -90,9 +90,7 @@
 [gpg]
 	format = ssh
 
-[log]
-	date = human
-
+	
 [help]
 	autocorrect     = 1
 
@@ -106,6 +104,10 @@
     submoduleSummary = true
    	showuntrackedfiles = all
 
+[log]
+	date = human
+	decorate = full
+	
 [push]
 	default         = simple
 	autoSetupRemote = true

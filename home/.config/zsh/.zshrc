@@ -36,6 +36,7 @@ end tell
 
 try
     tell application myFrontMost
+    	activate
         set windowSize to bounds of window 1
         set windowXl to item 1 of windowSize
         set windowYt to item 2 of windowSize

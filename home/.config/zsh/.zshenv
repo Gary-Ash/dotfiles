@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  27-Apr-2024  7:11pm
-# Modified :
+# Modified :  25-May-2024  9:13pm
 #
 # Copyright © 2024 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -19,9 +19,9 @@ export SHELL_SESSIONS_DISABLE=1
 export SHELL_SESSION_HISTORY=0
 
 export NODE_PATH="/opt/homebrew/lib/node_modules"
-export PATH="/opt/bin:/opt/geedbla/bin:/opt/geedbla/scripts:/opt/homebrew/opt/ruby/bin:/opt/homebrew/opt/python@3.12/libexec/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/bin/geedbla:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/Applications/Sublime Merge.app/Contents/SharedSupport/bin:/opt/homebrew/lib/node_modules/npm"
+export PATH="/opt/bin:/opt/geedbla/bin:/opt/geedbla/scripts:/opt/homebrew/opt/ruby/bin:/opt/homebrew/opt/python@3.12/libexec/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/bin/geedbla:/opt/homebrew/lib/node_modules/npm:/Applications/Sublime Text.app/Contents/SharedSupport/bin/"
 
-export EDITOR=(subl --wait)
+export EDITOR="subl --wait"
 export VISUAL="subl"
 
 export LESSHISTFILE="-"
@@ -145,7 +145,7 @@ done
 #*****************************************************************************************
 # Zsh-Autosuggest
 #*****************************************************************************************
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=240,bg=#00d7d7"
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#AEB5B0,bg=#003743"
 export ZSH_AUTOSUGGEST_USE_ASYNC="1"
 export ZSH_AUTOSUGGEST_MANUAL_REBIND="1"
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE="1"

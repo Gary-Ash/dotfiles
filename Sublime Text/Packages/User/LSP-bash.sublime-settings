@@ -4,7 +4,7 @@
 	"bashIde.shellcheckPath": "shellcheck",
 	"bashIde.shellcheckArguments": [
 		"-shell=bash",
-		"--source-path=/opt/homebrew/share/zsh-completions:/opt/homebrew/zsh/site-functions:/usr/local/lib/geedbla/zsh/lib",
+		"--source-path=/opt/homebrew/share/zsh-completions:/opt/homebrew/zsh/site-functions",
 	]
 
 }

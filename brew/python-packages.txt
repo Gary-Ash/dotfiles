@@ -4,14 +4,18 @@ astroid
 attrs
 autopep8
 black
+cattrs
 click
 dill
+docstring-to-markdown
 flake8
 frozenlist
 idna
 importlib-metadata
 isort
 jedi
+jedi-language-server
+lsprotocol
 mccabe
 multidict
 mypy-extensions
@@ -24,6 +28,7 @@ pluggy
 pycodestyle
 pydocstyle
 pyflakes
+pygls
 pylint
 python-jsonrpc-server
 python-language-server
