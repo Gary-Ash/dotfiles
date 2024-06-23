@@ -56,6 +56,9 @@
 	untracked       = cyan
 
 [alias]
+	tags 			= "tag -l"
+	branches 		= "branch -a"
+	remotes 		= "remote -v"
 	logg            = "log --pretty=fuller --decorate --graph --all --show-signature"
 	difft           = "difftool -y"									# use the my external diff tool w/o prompting
 	unstage         = "reset HEAD --"         						# unstage the named file(s)

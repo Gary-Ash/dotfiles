@@ -6,55 +6,10 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  27-Apr-2024  7:11pm
-# Modified :
+# Modified :  27-May-2024  8:56pm
 #
 # Copyright © 2024 By Gary Ash All rights reserved.
 #*****************************************************************************************
-
-#*****************************************************************************************
-# center the terminal window on my screen
-#*****************************************************************************************
-osascript <<CENTER_WINDOW &>/dev/null
-tell application "Finder"
-    set screenSize to bounds of window of desktop
-    set screenWidth to item 3 of screenSize
-    set screenHeight to (item 4 of screenSize) - 200
-end tell
-
-tell application "System Events"
-    set myFrontMost to name of first item of ¬
-        (processes whose frontmost is true)
-
-    if (myFrontMost as text) is equal to "" then
-        if application "Terminal" is running then
-            set myFrontMost to "Terminal"
-        else
-            set myFrontMost to "iTerm"
-        end if
-    end if
-end tell
-
-try
-    tell application myFrontMost
-    	activate
-        set windowSize to bounds of window 1
-        set windowXl to item 1 of windowSize
-        set windowYt to item 2 of windowSize
-        set windowXr to item 3 of windowSize
-        set windowYb to item 4 of windowSize
-
-        set windowWidth to windowXr - windowXl
-        set windowHeight to windowYb - windowYt
-        set bounds of window 1 to {¬
-            round ((screenWidth - windowWidth) / 2), ¬
-            round ((screenHeight - windowHeight) / 2), ¬
-            round ((screenWidth + windowWidth) / 2), ¬
-            round ((screenHeight + windowHeight) / 2)}
-
-        set the result to bounds of window 1
-    end tell
-end try
-CENTER_WINDOW
 
 #*****************************************************************************************
 # Apple's system shell startup file fights me when it try to set the location of my files
@@ -63,9 +18,48 @@ unset HISTFILE
 export HISTFILE="$XDG_CACHE_HOME/zsh/history"
 
 #*****************************************************************************************
+# center the terminal window on my screen
+#*****************************************************************************************
+osascript <<CENTER_WINDOW &>/dev/null
+tell application "System Events"
+	set myFrontMost to name of first item of ¬
+		(processes whose frontmost is true)
+	
+	if (myFrontMost as text) is equal to "Terminal" or (myFrontMost as text) is equal to "iTerm" then
+		try
+			tell application "Finder"
+				set screenSize to bounds of window of desktop
+				set screenWidth to item 3 of screenSize
+				set screenHeight to (item 4 of screenSize) - 200
+			end tell
+			
+			tell application myFrontMost
+				activate
+				set windowSize to bounds of window 1
+				set windowXl to item 1 of windowSize
+				set windowYt to item 2 of windowSize
+				set windowXr to item 3 of windowSize
+				set windowYb to item 4 of windowSize
+				
+				set windowWidth to windowXr - windowXl
+				set windowHeight to windowYb - windowYt
+				set bounds of window 1 to {¬
+					round ((screenWidth - windowWidth) / 2), ¬
+					round ((screenHeight - windowHeight) / 2), ¬
+					round ((screenWidth + windowWidth) / 2), ¬
+					round ((screenHeight + windowHeight) / 2)}
+				
+				set the result to bounds of window 1
+			end tell
+		end try
+	end if
+end tell
+CENTER_WINDOW
+
+#*****************************************************************************************
 # prompt setup
 #*****************************************************************************************
-export SNAZZY_PROMPT="cwd,235,179,235,166;git,235,219,235,40;error,235,166"
+export SNAZZY_PROMPT="cwd,235,45,235,166;git,235,219,235,40;error,235,166"
 
 powerline_precmd() {
 	PS1="$(/opt/geedbla/bin/SnazzyPrompt --error $?)"
