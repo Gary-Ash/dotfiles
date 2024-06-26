@@ -139,10 +139,10 @@
 	ff = only
 
 [diff "utf16"]
-	textconv = "iconv -t utf-8"
+	textconv = "iconv -f utf-16 -t utf-8"
 
 [diff "plist"]
-	textconv = plutil -convert xml1 -o -
+	textconv = "plutil -convert xml1 -o -"
 
 [diff "bin"]
 	textconv = hexdump -v -C
