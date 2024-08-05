@@ -1,0 +1,51 @@
+(*
+A BBEdit selection can be:
+ 1. an insertion point when nothing is selected
+ 	- class of selection: insertion point
+	- length of selection: 0
+	- get selection: insertion point before character x of text document 1
+	- (properties of selection) as record: {
+		contents:"",
+		length:0,
+		characterOffset:254,
+		startLine:8,
+		endLine:8,
+		startColumn:17,
+		endColumn:17,
+		startDisplayLine:8,
+		endDisplayLine:8,
+		container:project window 1 of application "BBEdit"}
+
+ 2. a characters specifier when user click-dragged a selection.
+ 	- class of selection: character
+	- length of selection: n > 0
+	- get selection: characters x thru y of text document 1
+	- (properties of selection) as record: {
+		contents:"blabla",
+		length:6,
+		characterOffset:2,
+		startLine:2,
+		endLine:2,
+		startColumn:1,
+		endColumn:7,
+		startDisplayLine:2,
+		endDisplayLine:2,
+		container:project window 1 of application "BBEdit"}
+
+ 3. a list of characters specifiers when user option-click-dragged a selection.
+ 	- class of selection: text
+    - length of selection: error!!!
+	- get selection: {characters x1 thru y1 of text document 1,
+	                  characters x2 thru y2 of text document 1, ...}
+	- (properties of selection) as record: {
+		contents:"foo\nbar\n",
+		length:8,
+		characterOffset:4,
+		startLine:1,
+		endLine:2,
+		startColumn:5,
+		endColumn:8,
+		startDisplayLine:1,
+		endDisplayLine:2,
+		container:project window 1}
+*)
