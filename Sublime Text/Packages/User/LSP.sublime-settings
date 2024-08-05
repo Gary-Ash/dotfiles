@@ -1,0 +1,18 @@
+{
+    "show_view_status": false,
+    "show_diagnostics_count_in_view_status": false,
+
+    "clients":{
+        "ruby":{
+            "enabled":true,
+            "command":[
+                "solargraph",
+                "stdio"
+            ],
+            "selector":"source.ruby | text.html.ruby",
+            "initializationOptions":{
+                "diagnostics":false
+            }
+        }
+    }
+}
