@@ -1,0 +1,10 @@
+// Settings in here override those in "LSP-bash/LSP-bash.sublime-settings"
+
+{
+	"bashIde.shellcheckPath": "shellcheck",
+	"bashIde.shellcheckArguments": [
+		"-shell=bash",
+		"--source-path=/opt/homebrew/share/zsh-completions:/opt/homebrew/zsh/site-functions",
+	]
+
+}
