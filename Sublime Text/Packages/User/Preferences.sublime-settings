@@ -1,0 +1,53 @@
+{
+	"update_check": true,
+
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "Solarized (light).sublime-color-scheme",
+	"font_face": "PragmataPro Liga",
+	"font_size": 12,
+	"font_options": ["dlig", "ss01", "ss02"],
+    "show_tab_close_buttons_on_left": true,
+    "close_windows_when_empty": false,
+
+	"tab_size": 4,
+	"trim_trailing_white_space_on_save": "all",
+	"trim_automatic_white_space": true,
+
+	"update_system_recent_files": false,
+	"open_files_in_new_window": "never",
+	"save_on_focus_lost": true,
+
+	"draw_minimap_border": false,
+	"always_show_minimap_viewport": true,
+
+    "auto_complete_commit_on_tab": false,
+	"auto_complete_include_snippets": true,
+	"auto_find_in_selection": true,
+
+    "spell_check": true,
+ 	"show_spelling_errors": false,
+
+   	"default_encoding": "UTF-8",
+	"fallback_encoding": "Western (Mac Roman)",
+	"show_encoding": true,
+	"word_wrap": false,
+
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"added_words":
+	[
+		"Xcode",
+		"icloud",
+		"gary",
+		"am",
+		"pm"
+	],
+	"ignored_words":
+	[
+		"json"
+	],
+	"indent_to_bracket": false,
+	"index_files": false,
+}

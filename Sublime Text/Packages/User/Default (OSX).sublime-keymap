@@ -1,0 +1,5 @@
+[
+		{ "keys": ["ctrl+super+a"], "command": "multialign" },
+		{ "keys": ["ctrl+super+shift+d"], "command": "dash_doc"}
+
+]

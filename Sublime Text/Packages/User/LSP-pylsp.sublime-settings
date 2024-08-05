@@ -1,0 +1,40 @@
+{
+   "settings": {
+	       "plugins":{
+	        "jedi":{
+	            "extra_paths":[
+	                "/opt/homebrew/lib/python3.12/site-packages",
+	                "/Applications/Sublime Text.app/Contents/MacOS/Lib/python38"
+	            ],
+	        },
+	        "jedi_completion":{
+	            "fuzzy":true,
+	        },
+	        "pycodestyle":{
+	            "enabled":true,
+	            "exclude":[
+
+	            ],
+	            "ignore":[
+	                "E501"
+	            ],
+	            "maxLineLength":120,
+	        },
+	        "pydocstyle":{
+	            "enabled":false,
+	        },
+	        "pyflakes":{
+	            "enabled":true,
+	        },
+	        "pylint":{
+	            "enabled":false,
+	        },
+	        "yapf":{
+	            "enabled":true,
+	        },
+	        "pyls-isortled":{
+	            "enabled":true,
+	        },
+	    }
+	}
+}

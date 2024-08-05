@@ -1,0 +1,13 @@
+*.key filter=git-crypt diff=git-crypt
+*.rev filter=git-crypt diff=git-crypt
+License.sublime_license filter=git-crypt diff=git-crypt
+
+home/.ssh/allowed_signers filter=git-crypt diff=git-crypt
+home/.ssh/allowed_signers filter=git-crypt diff=git-crypt
+home/.ssh/id_ed25519* filter=git-crypt diff=git-crypt
+home/.ssh/signing* filter=git-crypt diff=git-crypt
+home/.ssh/known_hosts filter=git-crypt diff=git-crypt
+
+home/.config/.gnupg/pubring.kbx filter=git-crypt diff=git-crypt
+home/.config/.gnupg/random_seed filter=git-crypt diff=git-crypt
+home/.config/.gnupg/trustdb.gpg filter=git-crypt diff=git-crypt
