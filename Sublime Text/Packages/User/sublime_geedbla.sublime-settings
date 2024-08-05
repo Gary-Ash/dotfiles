@@ -1,0 +1,21 @@
+{
+	"author": "Gary Ash",
+	"email": "gary.ash@icloud.com",
+	"folders_to_open":
+	[
+		"/opt/geedbla/"
+	],
+	"go exec": "",
+	"line_length": 90,
+	"organizations":
+	[
+		"Gary Ash",
+		"Gee Dbl A",
+	],
+	"perltidy exec": "/opt/homebrew/bin/perltidy",
+	"python exec": "/opt/homebrew/bin/black",
+	"ruby exec": "",
+	"shfmt exec": "/opt/homebrew/bin/shfmt",
+	"swiftformat exec": "/opt/homebrew/bin/swiftformat",
+	"uncrustify exec": "/opt/homebrew/bin/uncrustify",
+}
