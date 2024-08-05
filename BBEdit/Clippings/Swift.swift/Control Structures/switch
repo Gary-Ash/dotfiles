@@ -1,0 +1,4 @@
+#INDENT#switch #placeholderstart#condition#placeholderend# {
+case #placeholderstart#constant#placeholderend#:
+	 #placeholderstart#code#placeholderend#
+} 

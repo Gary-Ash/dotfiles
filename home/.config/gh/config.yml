@@ -1,0 +1,10 @@
+version: 1
+git_protocol: ssh
+editor:
+prompt: enabled
+pager: bat
+aliases:
+    co: pr checkout
+
+ttp_unix_socket:
+browser:

@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AlwaysShowFileList</key>
+	<true/>
+	<key>ApplicationAppearanceMode</key>
+	<integer>0</integer>
+	<key>ApplicationAutoSaveState</key>
+	<dict>
+		<key>ApplicationBuildNumber</key>
+		<string>15B62</string>
+		<key>DisplayConfiguration</key>
+		<string>displays([(0, 0), (2560, 1440)])</string>
+		<key>OpenDocuments</key>
+		<dict>
+			<key>52667375-A87E-40DC-8F34-639FAF28CD41</key>
+			<dict>
+				<key>CreationDate</key>
+				<date>2025-01-02T21:05:09Z</date>
+				<key>DocumentProperties</key>
+				<dict/>
+				<key>Location</key>
+				<dict>
+					<key>FileBookmark</key>
+					<data>
+					Ym9vaxQDAAAAAAQQMAAAAFFepoNws5pR647e
+					iBclKF39hY7U614h/5aQpf4ia4RREAIAAAQA
+					AAADAwAAAAgAKAMAAAABAQAAb3B0AAcAAAAB
+					AQAAZ2VlZGJsYQAHAAAAAQEAAHNjcmlwdHMA
+					DgAAAAEBAAB1cGRhdGUtZG90cy5zaAAAEAAA
+					AAEGAAAQAAAAHAAAACwAAAA8AAAACAAAAAQD
+					AABLTwAAAAAAAAgAAAAEAwAAkewOAAAAAAAI
+					AAAABAMAAJ3sDgAAAAAACAAAAAQDAACo7A4A
+					AAAAABAAAAABBgAAbAAAAHwAAACMAAAAnAAA
+					AAgAAAAABAAAQcaTHVSAAAAYAAAAAQIAAAEA
+					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAB
+					CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
+					aCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQA
+					AEHGgh1lgAAAJAAAAAEBAAA1NjVBNzQ5OS0z
+					MkRGLTQ3MDctOEFDQy1DMTkxQTA1MjFEMDIY
+					AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
+					AAAAAAEAAAABAQAALwAAAAAAAAABBQAAGgAA
+					AAEBAABOU1VSTERvY3VtZW50SWRlbnRpZmll
+					cktleQAABAAAAAMDAACRAQAAGgAAAAEBAABO
+					U1VSTFBhcmVudERpcmVjdG9yeVVSTEtleQAA
+					HAAAAAEJAABmaWxlOi8vL29wdC9nZWVkYmxh
+					L3NjcmlwdHMvzAAAAP7///8BAAAAAAAAABAA
+					AAAEEAAAVAAAAAAAAAAFEAAArAAAAAAAAAAQ
+					EAAA1AAAAAAAAAAgEAAAPAAAAAAAAABAEAAA
+					xAAAAAAAAAACIAAAhAEAAAAAAAAFIAAA9AAA
+					AAAAAAAQIAAABAEAAAAAAAARIAAAOAEAAAAA
+					AAASIAAAGAEAAAAAAAATIAAAKAEAAAAAAAAg
+					IAAAZAEAAAAAAAAwIAAAkAEAAAAAAAAQ0AAA
+					BAAAAAAAAACYAQCAvAEAAAAAAADIAQCA7AEA
+					AAAAAAA=
+					</data>
+					<key>FileBookmarkHasSecurityScope</key>
+					<true/>
+					<key>FileName</key>
+					<string>update-dots.sh</string>
+					<key>FileURLString</key>
+					<string>file:///opt/geedbla/scripts/update-dots.sh</string>
+				</dict>
+				<key>com.barebones.DocumentType</key>
+				<string>Text</string>
+			</dict>
+			<key>D4DDB758-6AB0-4AAD-88B6-6C1FBE8121B5</key>
+			<dict>
+				<key>CreationDate</key>
+				<date>2025-01-02T21:04:48Z</date>
+				<key>DocumentProperties</key>
+				<dict>
+					<key>EditorState</key>
+					<dict>
+						<key>MainScrollBar</key>
+						<integer>0</integer>
+						<key>SelectionEnd</key>
+						<integer>0</integer>
+						<key>SelectionStart</key>
+						<integer>0</integer>
+					</dict>
+					<key>EncodingName</key>
+					<string>Unicode (UTF-8)</string>
+					<key>LanguageName</key>
+					<string>Text File</string>
+					<key>LineEnds</key>
+					<string>LF  </string>
+					<key>MarkerData</key>
+					<data>
+					UipjaAAAAAEAAAAA
+					</data>
+				</dict>
+				<key>Location</key>
+				<string>-unsaved-</string>
+				<key>UntitledName</key>
+				<string>untitled text</string>
+				<key>com.barebones.DocumentType</key>
+				<string>Text</string>
+			</dict>
+			<key>D8492423-3804-4C3D-8254-CD67134A5A80</key>
+			<dict>
+				<key>CreationDate</key>
+				<date>2025-01-02T21:04:59Z</date>
+				<key>DocumentProperties</key>
+				<dict/>
+				<key>Location</key>
+				<dict>
+					<key>FileBookmark</key>
+					<data>
+					Ym9va3ACAAAAAAQQMAAAABn21kTi3X/JVwTT
+					p2giJ8cR/9wGJkLYeFvALl2Q+PQreAEAAAQA
+					AAADAwAAAAgAKAMAAAABAQAAb3B0AAcAAAAB
+					AQAAZ2VlZGJsYQAIAAAAAQYAABAAAAAcAAAA
+					CAAAAAQDAABLTwAAAAAAAAgAAAAEAwAAkewO
+					AAAAAAAIAAAAAQYAADwAAABMAAAACAAAAAAE
+					AABBxpMdVIAAABgAAAABAgAAAgAAAAAAAAAP
+					AAAAAAAAAAAAAAAAAAAACAAAAAEJAABmaWxl
+					Oi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAA
+					AAQDAAAAkIKW5wAAAAgAAAAABAAAQcaCHWWA
+					AAAkAAAAAQEAADU2NUE3NDk5LTMyREYtNDcw
+					Ny04QUNDLUMxOTFBMDUyMUQwMhgAAAABAgAA
+					gQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAA
+					AAEBAAAvAAAAAAAAAAEFAAAaAAAAAQEAAE5T
+					VVJMUGFyZW50RGlyZWN0b3J5VVJMS2V5AAAM
+					AAAAAQkAAGZpbGU6Ly8vb3B0L8AAAAD+////
+					AQAAAAAAAAAPAAAABBAAACwAAAAAAAAABRAA
+					AFwAAAAAAAAAEBAAAHwAAAAAAAAAIBAAABwA
+					AAAAAAAAQBAAAGwAAAAAAAAAAiAAACwBAAAA
+					AAAABSAAAJwAAAAAAAAAECAAAKwAAAAAAAAA
+					ESAAAOAAAAAAAAAAEiAAAMAAAAAAAAAAEyAA
+					ANAAAAAAAAAAICAAAAwBAAAAAAAAMCAAADgB
+					AAAAAAAAENAAAAQAAAAAAAAAQAEAgGQBAAAA
+					AAAA
+					</data>
+					<key>FileBookmarkHasSecurityScope</key>
+					<true/>
+					<key>FileName</key>
+					<string>geedbla</string>
+					<key>FileURLString</key>
+					<string>file:///opt/geedbla/</string>
+				</dict>
+				<key>UntitledName</key>
+				<string>geedbla</string>
+				<key>com.barebones.DocumentType</key>
+				<string>Project</string>
+			</dict>
+		</dict>
+		<key>OpenWindows</key>
+		<array>
+			<dict>
+				<key>ActiveDocument</key>
+				<string>52667375-A87E-40DC-8F34-639FAF28CD41</string>
+				<key>AdditionalProperties</key>
+				<dict>
+					<key>EmbeddedEditorVisible</key>
+					<true/>
+					<key>FileListVisible</key>
+					<true/>
+					<key>IsFullScreen</key>
+					<false/>
+					<key>OpenDocumentSplitProportion</key>
+					<real>0.59999999999999998</real>
+					<key>ProjectListWidthAsFraction</key>
+					<real>0.20000000000000001</real>
+				</dict>
+				<key>Documents</key>
+				<array>
+					<string>D8492423-3804-4C3D-8254-CD67134A5A80</string>
+					<string>52667375-A87E-40DC-8F34-639FAF28CD41</string>
+				</array>
+				<key>IsFullScreen</key>
+				<false/>
+				<key>IsMinimized</key>
+				<false/>
+				<key>SavedPosition</key>
+				<string>rect(53,739,1398,1818)</string>
+				<key>SavedPosition_v3</key>
+				<string>{{739, 42}, {1079, 1373}}</string>
+				<key>WindowName</key>
+				<string>update-dots.sh — geedbla</string>
+				<key>WindowType</key>
+				<string>ProjectWindow</string>
+			</dict>
+			<dict>
+				<key>ActiveDocument</key>
+				<string>D4DDB758-6AB0-4AAD-88B6-6C1FBE8121B5</string>
+				<key>AdditionalProperties</key>
+				<dict>
+					<key>EmbeddedEditorVisible</key>
+					<true/>
+					<key>FileListVisible</key>
+					<true/>
+					<key>IsFullScreen</key>
+					<false/>
+					<key>OpenDocumentSplitProportion</key>
+					<real>0.0</real>
+					<key>ProjectListWidthAsFraction</key>
+					<real>0.20000000000000001</real>
+				</dict>
+				<key>Documents</key>
+				<array>
+					<string>D4DDB758-6AB0-4AAD-88B6-6C1FBE8121B5</string>
+				</array>
+				<key>IsFullScreen</key>
+				<false/>
+				<key>IsMinimized</key>
+				<false/>
+				<key>SavedPosition</key>
+				<string>rect(53,742,1394,1817)</string>
+				<key>SavedPosition_v3</key>
+				<string>{{742, 46}, {1075, 1369}}</string>
+				<key>WindowName</key>
+				<string>untitled text</string>
+				<key>WindowType</key>
+				<string>ProjectWindow</string>
+			</dict>
+		</array>
+		<key>UntitledWindowsState</key>
+		<dict>
+			<key>GrpD</key>
+			<integer>1</integer>
+			<key>TxtD</key>
+			<integer>1</integer>
+		</dict>
+		<key>com.barebones.DocumentFormatVersion</key>
+		<integer>2</integer>
+		<key>com.barebones.DocumentType</key>
+		<string>ApplicationState</string>
+	</dict>
+	<key>ApplicationDidStartClean</key>
+	<true/>
+	<key>AutoShowFileList</key>
+	<false/>
+	<key>BBEditSerialNumber:15.0</key>
+	<string>BEE150-VAT69-QKSZ2-JQZW8</string>
+	<key>BBEditorFont</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGpCwwTHR4fICEnVSRudWxs0w0O
+	DxARElYkY2xhc3NfEBdOU0ZvbnREZXNjcmlwdG9yT3B0aW9uc18QGk5TRm9udERlc2Ny
+	aXB0b3JBdHRyaWJ1dGVzgAgSgAAAAIAC0xQVDRYZHFdOUy5rZXlzWk5TLm9iamVjdHOi
+	FxiAA4AEohobgAWABoAHXxATTlNGb250U2l6ZUF0dHJpYnV0ZV8QE05TRm9udE5hbWVB
+	dHRyaWJ1dGUjQCgAAAAAAABfEBdQcmFnbWF0YVByb0xpZ2EtUmVndWxhctIiIyQlWiRj
+	bGFzc25hbWVYJGNsYXNzZXNcTlNEaWN0aW9uYXJ5oiQmWE5TT2JqZWN00iIjKClfEBBO
+	U0ZvbnREZXNjcmlwdG9yoiomXxAQTlNGb250RGVzY3JpcHRvcgAIABEAGgAkACkAMgA3
+	AEkATABRAFMAXQBjAGoAcQCLAKgAqgCvALEAuADAAMsAzgDQANIA1QDXANkA2wDxAQcB
+	EAEqAS8BOgFDAVABUwFcAWEBdAF3AAAAAAAAAgEAAAAAAAAAKwAAAAAAAAAAAAAAAAAA
+	AYo=
+	</data>
+	<key>BBPreferencesSelectedModuleIdentifier</key>
+	<string>BBLanguagesPreferences</string>
+	<key>BBPrintingFont</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGpCwwTHR4fICEnVSRudWxs0w0O
+	DxARElYkY2xhc3NfEBdOU0ZvbnREZXNjcmlwdG9yT3B0aW9uc18QGk5TRm9udERlc2Ny
+	aXB0b3JBdHRyaWJ1dGVzgAgSgAAAAIAC0xQVDRYZHFdOUy5rZXlzWk5TLm9iamVjdHOi
+	FxiAA4AEohobgAWABoAHXxATTlNGb250U2l6ZUF0dHJpYnV0ZV8QE05TRm9udE5hbWVB
+	dHRyaWJ1dGUjQCYAAAAAAABfEBpQcmFnbWF0YVByb0xpZ2EtQm9sZEl0YWxpY9IiIyQl
+	WiRjbGFzc25hbWVYJGNsYXNzZXNcTlNEaWN0aW9uYXJ5oiQmWE5TT2JqZWN00iIjKClf
+	EBBOU0ZvbnREZXNjcmlwdG9yoiomXxAQTlNGb250RGVzY3JpcHRvcgAIABEAGgAkACkA
+	MgA3AEkATABRAFMAXQBjAGoAcQCLAKgAqgCvALEAuADAAMsAzgDQANIA1QDXANkA2wDx
+	AQcBEAEtATIBPQFGAVMBVgFfAWQBdwF6AAAAAAAAAgEAAAAAAAAAKwAAAAAAAAAAAAAA
+	AAAAAY0=
+	</data>
+	<key>BBSuffixMapOverrides</key>
+	<array/>
+	<key>BrowserWindowSavedBounds:(null)</key>
+	<string>rect(175,850,1250,1710)</string>
+	<key>ColorSchemeFormatVersion</key>
+	<integer>4</integer>
+	<key>CopiedPreferencesToNewKeys_v1</key>
+	<true/>
+	<key>CopiedPreferencesToNewKeys_v2</key>
+	<true/>
+	<key>CopiedPreferencesToNewKeys_v3</key>
+	<true/>
+	<key>CopiedPreferencesToNewKeys_v4</key>
+	<true/>
+	<key>DefaultInterpreter_Python</key>
+	<integer>3</integer>
+	<key>DefaultPosition:ProjectWindow:displays([(0, 0), (2560, 1440)])</key>
+	<string>rect(53,739,1398,1818)</string>
+	<key>DefaultPosition:TextWindow:displays([(0, 0), (2560, 1440)])</key>
+	<string>rect(53,742,1394,1817)</string>
+	<key>DefaultProperties:ProjectWindow:displays([(0, 0), (2560, 1440)])</key>
+	<dict>
+		<key>EmbeddedEditorVisible</key>
+		<true/>
+		<key>FileListVisible</key>
+		<true/>
+		<key>IsFullScreen</key>
+		<false/>
+		<key>OpenDocumentSplitProportion</key>
+		<real>0.59999999999999998</real>
+		<key>ProjectListWidthAsFraction</key>
+		<real>0.20000000000000001</real>
+	</dict>
+	<key>DefaultProperties:TextWindow:displays([(0, 0), (2560, 1440)])</key>
+	<dict>
+		<key>EmbeddedEditorVisible</key>
+		<true/>
+		<key>FileListVisible</key>
+		<true/>
+		<key>IsFullScreen</key>
+		<false/>
+		<key>OpenDocumentSplitProportion</key>
+		<real>0.0</real>
+		<key>ProjectListWidthAsFraction</key>
+		<real>0.20000000000000001</real>
+	</dict>
+	<key>DidMigrateTextWranglerIconSetting</key>
+	<true/>
+	<key>EnableFontLigatures</key>
+	<true/>
+	<key>EnableRareLigatures</key>
+	<true/>
+	<key>FindDialog_SelectedSourceNodes</key>
+	<array/>
+	<key>FindDialog_SelectionOnly</key>
+	<false/>
+	<key>FindDialog_ShowLiveMatches</key>
+	<true/>
+	<key>Frontmost Project</key>
+	<false/>
+	<key>GetMeOnTheBetaTrainWooWoooooChuggaChuggaChuggaChugga</key>
+	<true/>
+	<key>HiddenLanguageCodes</key>
+	<array/>
+	<key>InstaprojectWindowSavedBounds:/opt/geedbla</key>
+	<string>rect(53,739,1398,1818)</string>
+	<key>KeepHistoricalBackups</key>
+	<false/>
+	<key>LanguageServerInfo_ANSI C</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd</string>
+		<key>ServerInitParams</key>
+		<string>clangd-params.json</string>
+		<key>ServerLanguageID</key>
+		<string>c</string>
+	</dict>
+	<key>LanguageServerInfo_C++</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd</string>
+		<key>ServerInitParams</key>
+		<string>clangd-params.json</string>
+		<key>ServerLanguageID</key>
+		<string>cpp</string>
+	</dict>
+	<key>LanguageServerInfo_JavaScript</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array>
+			<string>--stdio</string>
+		</array>
+		<key>ServerCommand</key>
+		<string>typescript-language-server</string>
+		<key>ServerInitParams</key>
+		<string></string>
+		<key>ServerLanguageID</key>
+		<string></string>
+	</dict>
+	<key>LanguageServerInfo_Objective-C</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd</string>
+		<key>ServerInitParams</key>
+		<string>clangd-params.json</string>
+		<key>ServerLanguageID</key>
+		<string>objective-c</string>
+	</dict>
+	<key>LanguageServerInfo_Objective-C++</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd</string>
+		<key>ServerInitParams</key>
+		<string>clangd-params.json</string>
+		<key>ServerLanguageID</key>
+		<string>objective-cpp</string>
+	</dict>
+	<key>LanguageServerInfo_Python</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>jedi-language-server</string>
+		<key>ServerInitParams</key>
+		<string></string>
+		<key>ServerLanguageID</key>
+		<string></string>
+	</dict>
+	<key>LanguageServerInfo_Swift</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp</string>
+		<key>ServerInitParams</key>
+		<string></string>
+		<key>ServerLanguageID</key>
+		<string>swift</string>
+	</dict>
+	<key>LanguageServerInfo_Unix Shell Script</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array>
+			<string>start</string>
+		</array>
+		<key>ServerCommand</key>
+		<string>bash-language-server</string>
+		<key>ServerInitParams</key>
+		<string></string>
+		<key>ServerLanguageID</key>
+		<string></string>
+	</dict>
+	<key>LastLaunchOSVersion</key>
+	<string>Version 15.2 (Build 24C101)</string>
+	<key>ListDisplayFont</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAChC1UkbnVsbAgRGiQpMjdJTFFT
+	VQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
+	</data>
+	<key>MakeBackup</key>
+	<false/>
+	<key>My Files &amp; Folders</key>
+	<false/>
+	<key>NSAutomaticCapitalizationEnabled</key>
+	<false/>
+	<key>NSAutomaticDashSubstitutionEnabled</key>
+	<false/>
+	<key>NSAutomaticPeriodSubstitutionEnabled</key>
+	<false/>
+	<key>NSAutomaticQuoteSubstitutionEnabled</key>
+	<false/>
+	<key>NSAutomaticSpellingCorrectionEnabled</key>
+	<false/>
+	<key>NSAutomaticTextCompletionEnabled</key>
+	<false/>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{1210, 911}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{1314, 958}</string>
+	<key>NSOSPLastRootDirectory</key>
+	<data>
+	Ym9va3wCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAEA
+	AAQAAAADAwAAAAQAAAMAAAABAQAAb3B0AAcAAAABAQAAZ2VlZGJsYQAIAAAAAQYAABAA
+	AAAcAAAACAAAAAQDAABLTwAAAAAAAAgAAAAEAwAAkewOAAAAAAAIAAAAAQYAADwAAABM
+	AAAACAAAAAAEAABBxpMdVIAAABgAAAABAgAAAgAAAAAAAAAfAgAAAAAAAB8CAAAAAAAA
+	AAAAAAEFAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMA
+	AACQgpbnAAAACAAAAAAEAABBxoIdZYAAACQAAAABAQAANTY1QTc0OTktMzJERi00NzA3
+	LThBQ0MtQzE5MUEwNTIxRDAyGAAAAAECAACBAAAAAQAAAO8TAAABAAAA7xMAAAEAAAAB
+	AAAAAQEAAC8AAAAwAAAAAQIAAGRuaWIAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAHJkbGYCAAAAAAAAAMwAAAD+////AQAAAAAAAAAQAAAABBAAACwAAAAAAAAABRAA
+	AFwAAAAAAAAAEBAAAHwAAAAAAAAAQBAAAGwAAAAAAAAAAiAAADQBAAAAAAAABSAAAKQA
+	AAAAAAAAECAAALQAAAAAAAAAESAAAOgAAAAAAAAAEiAAAMgAAAAAAAAAEyAAANgAAAAA
+	AAAAICAAABQBAAAAAAAAMCAAAJwAAAAAAAAAAdAAAJwAAAAAAAAAENAAAAQAAAAAAAAA
+	F/AAABwAAAAAAAAAIvAAAEABAAAAAAAA
+	</data>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
+		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
+	</array>
+	<key>NSTableView Columns v3 CustomLanguageExtensionMappingsList</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABrgsMEx4fICEiIyQqNDU2VSRu
+	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
+	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuVnN1ZmZp
+	eCNAYQAAAAAAAAjSJSYnKFokY2xhc3NuYW1lWCRjbGFzc2VzXE5TRGljdGlvbmFyeaIn
+	KVhOU09iamVjdNMUDQ4rLx2jFhcYgAOABIAFozAxHIALgAyACIAJWGxhbmd1YWdlI0Bv
+	AAAAAAAA0iUmNzheTlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIA
+	NwBJAEwAUgBUAGMAaQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5
+	AL8AxgDNANYA1wDcAOcA8AD9AQABCQEQARQBFgEYARoBHgEgASIBJAEmAS8BOAE9AUwB
+	UAAAAAAAAAIBAAAAAAAAADoAAAAAAAAAAAAAAAAAAAFY
+	</data>
+	<key>NSTableView Columns v3 CustomLanguageSettingsList</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABrgsMEx4fICEiIyQqNDU2VSRu
+	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
+	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuXGxhbmd1
+	YWdlTmFtZSNAY8AAAAAAAAjSJSYnKFokY2xhc3NuYW1lWCRjbGFzc2VzXE5TRGljdGlv
+	bmFyeaInKVhOU09iamVjdNMUDQ4rLx2jFhcYgAOABIAFozAxHIALgAyACIAJXxAgQXV0
+	b21hdGljVGFibGVDb2x1bW5JZGVudGlmaWVyLjEjQGxAAAAAAADSJSY3OF5OU011dGFi
+	bGVBcnJheaM3OSlXTlNBcnJheQAIABEAGgAkACkAMgA3AEkATABSAFQAYwBpAG4AeQCA
+	AIMAhQCHAIkAkACYAJwAngCgAKIApgCoAKoArACuALkAvwDGANMA3ADdAOIA7QD2AQMB
+	BgEPARYBGgEcAR4BIAEkASYBKAEqASwBTwFYAV0BbAFwAAAAAAAAAgEAAAAAAAAAOgAA
+	AAAAAAAAAAAAAAAAAXg=
+	</data>
+	<key>NSTableView Sort Ordering v2 CustomLanguageExtensionMappingsList</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABqQsMEhscHR4fJVUkbnVsbNIN
+	Dg8RWk5TLm9iamVjdHNWJGNsYXNzoRCAAoAI0xMNDhQXGldOUy5rZXlzohUWgAOABKIY
+	GYAFgAaAB1pJZGVudGlmaWVyWUFzY2VuZGluZ1ZzdWZmaXgJ0iAhIiNaJGNsYXNzbmFt
+	ZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiIiRYTlNPYmplY3TSICEmJ15OU011dGFibGVB
+	cnJheaMmKCRXTlNBcnJheQAIABEAGgAkACkAMgA3AEkATABSAFQAXgBkAGkAdAB7AH0A
+	fwCBAIgAkACTAJUAlwCaAJwAngCgAKsAtQC8AL0AwgDNANYA4wDmAO8A9AEDAQcAAAAA
+	AAACAQAAAAAAAAApAAAAAAAAAAAAAAAAAAABDw==
+	</data>
+	<key>NSTableView Sort Ordering v2 CustomLanguageSettingsList</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABqQsMEhscHR4fJVUkbnVsbNIN
+	Dg8RWk5TLm9iamVjdHNWJGNsYXNzoRCAAoAI0xMNDhQXGldOUy5rZXlzohUWgAOABKIY
+	GYAFgAaAB1pJZGVudGlmaWVyWUFzY2VuZGluZ1xsYW5ndWFnZU5hbWUJ0iAhIiNaJGNs
+	YXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiIiRYTlNPYmplY3TSICEmJ15OU011
+	dGFibGVBcnJheaMmKCRXTlNBcnJheQAIABEAGgAkACkAMgA3AEkATABSAFQAXgBkAGkA
+	dAB7AH0AfwCBAIgAkACTAJUAlwCaAJwAngCgAKsAtQDCAMMAyADTANwA6QDsAPUA+gEJ
+	AQ0AAAAAAAACAQAAAAAAAAApAAAAAAAAAAAAAAAAAAABFQ==
+	</data>
+	<key>NSTableView Supports v2 CustomLanguageExtensionMappingsList</key>
+	<true/>
+	<key>NSTableView Supports v2 CustomLanguageSettingsList</key>
+	<true/>
+	<key>NSToolbar Configuration BBSetupConfigurationPanelToolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSToolbar Configuration E6A14725-E08D-4AAC-A81B-CD1E58EA44C0</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame BBCustomizeLanguageSettings</key>
+	<string>1058 728 528 414 0 0 2560 1415 </string>
+	<key>NSWindow Frame BBLanguageListPanel</key>
+	<string>1004 796 636 278 0 0 2560 1415 </string>
+	<key>NSWindow Frame BBPreferences</key>
+	<string>979 617 685 607 0 0 2560 1415 </string>
+	<key>NSWindow Frame BBSetupEditorWindow</key>
+	<string>1963 979 350 426 0 0 2560 1415 </string>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>0 97 224 278 0 0 2560 1415 </string>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>2045 150 445 235 0 0 2560 1415 </string>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>675 388 1210 796 0 0 2560 1415 </string>
+	<key>NSWindow Frame SoftwareUpdateDownloadProgress</key>
+	<string>1116 860 426 167 0 0 2560 1415 </string>
+	<key>NSWindow Frame SoftwareUpdatePromptWindow</key>
+	<string>857 761 538 386 0 0 2560 1415 </string>
+	<key>NSWindow Frame StartupProgressPanel</key>
+	<string>1096 664 369 109 0 0 2560 1415 </string>
+	<key>NSWindow Frame WindowPosition_v2_Find</key>
+	<string>196 240 666 328 0 0 2560 1415 </string>
+	<key>NSWindow Frame WindowPosition_v2_MultiFileFind</key>
+	<string>196 240 626 563 0 0 2560 1415 </string>
+	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
+	<string>959 1126 266 289 0 0 2560 1415 </string>
+	<key>NextAutoSaveCheckTime</key>
+	<integer>1991356340</integer>
+	<key>Open Editing Windows</key>
+	<false/>
+	<key>Open Text Documents</key>
+	<false/>
+	<key>OpenDialogShowsHiddenItems</key>
+	<true/>
+	<key>Paths Files</key>
+	<false/>
+	<key>PreferencesSnapshotDate</key>
+	<date>2025-01-02T21:08:44Z</date>
+	<key>PrintColorSyntax</key>
+	<false/>
+	<key>Projects</key>
+	<false/>
+	<key>PropertyWindowsToReopen</key>
+	<array/>
+	<key>ReadTextEncodingFallbacks</key>
+	<array>
+		<integer>0</integer>
+	</array>
+	<key>Recent Folders</key>
+	<false/>
+	<key>RecentItemsData</key>
+	<dict>
+		<key>Folder</key>
+		<array>
+			<dict>
+				<key>Date</key>
+				<date>2025-01-02T21:04:59Z</date>
+				<key>DocumentClass</key>
+				<string>Folder</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9vayACAAAAAAQQMAAAAJLUmdl6gas2s/K1
+					Tcz0fjtw3XrFl98twJ96kXrtAFDyQAEAAAQA
+					AAADAwAAAAgAKAMAAAABAQAAb3B0AAcAAAAB
+					AQAAZ2VlZGJsYQAIAAAAAQYAABAAAAAcAAAA
+					CAAAAAQDAABLTwAAAAAAAAgAAAAEAwAAkewO
+					AAAAAAAIAAAAAQYAADwAAABMAAAACAAAAAAE
+					AABBxpMdVIAAABgAAAABAgAAAgAAAAAAAAAP
+					AAAAAAAAAAAAAAAAAAAACAAAAAEJAABmaWxl
+					Oi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAA
+					AAQDAAAAkIKW5wAAAAgAAAAABAAAQcaCHWWA
+					AAAkAAAAAQEAADU2NUE3NDk5LTMyREYtNDcw
+					Ny04QUNDLUMxOTFBMDUyMUQwMhgAAAABAgAA
+					gQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAA
+					AAEBAAAvAAAAAAAAAAEFAACoAAAA/v///wEA
+					AAAAAAAADQAAAAQQAAAsAAAAAAAAAAUQAABc
+					AAAAAAAAABAQAAB8AAAAAAAAAEAQAABsAAAA
+					AAAAAAIgAAAsAQAAAAAAAAUgAACcAAAAAAAA
+					ABAgAACsAAAAAAAAABEgAADgAAAAAAAAABIg
+					AADAAAAAAAAAABMgAADQAAAAAAAAACAgAAAM
+					AQAAAAAAADAgAAA4AQAAAAAAABDQAAAEAAAA
+					AAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///opt/geedbla/</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>geedbla</string>
+				<key>URL</key>
+				<string>file:///opt/geedbla/</string>
+			</dict>
+		</array>
+		<key>Text</key>
+		<array>
+			<dict>
+				<key>Date</key>
+				<date>2025-01-02T21:08:43Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va7QCAAAAAAQQMAAAAG72CfIRbh0HGqN0
+					YxQ/SZuEyybrgZJ+g2PiLbcBpkTqyAEAAAQA
+					AAADAwAAAAgAKAMAAAABAQAAb3B0AAcAAAAB
+					AQAAZ2VlZGJsYQAHAAAAAQEAAHNjcmlwdHMA
+					DgAAAAEBAAB1cGRhdGUtZG90cy5zaAAAEAAA
+					AAEGAAAQAAAAHAAAACwAAAA8AAAACAAAAAQD
+					AABLTwAAAAAAAAgAAAAEAwAAkewOAAAAAAAI
+					AAAABAMAAJ3sDgAAAAAACAAAAAQDAACo7A4A
+					AAAAABAAAAABBgAAbAAAAHwAAACMAAAAnAAA
+					AAgAAAAABAAAQcaTHVSAAAAYAAAAAQIAAAEA
+					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAB
+					CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
+					aCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQA
+					AEHGgh1lgAAAJAAAAAEBAAA1NjVBNzQ5OS0z
+					MkRGLTQ3MDctOEFDQy1DMTkxQTA1MjFEMDIY
+					AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
+					AAAAAAEAAAABAQAALwAAAAAAAAABBQAAGgAA
+					AAEBAABOU1VSTERvY3VtZW50SWRlbnRpZmll
+					cktleQAABAAAAAMDAACRAQAAtAAAAP7///8B
+					AAAAAAAAAA4AAAAEEAAAVAAAAAAAAAAFEAAA
+					rAAAAAAAAAAQEAAA1AAAAAAAAABAEAAAxAAA
+					AAAAAAACIAAAhAEAAAAAAAAFIAAA9AAAAAAA
+					AAAQIAAABAEAAAAAAAARIAAAOAEAAAAAAAAS
+					IAAAGAEAAAAAAAATIAAAKAEAAAAAAAAgIAAA
+					ZAEAAAAAAAAwIAAAkAEAAAAAAAAQ0AAABAAA
+					AAAAAACYAQCAvAEAAAAAAAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///opt/geedbla/scripts/update-dots.sh</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>update-dots.sh</string>
+				<key>URL</key>
+				<string>file:///opt/geedbla/scripts/update-dots.sh</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2025-01-02T21:00:34Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va7gCAAAAAAQQMAAAALuj5lb651hoZUsO
+					aOVGItrrKbnfDi5ep0PoN7y/oF5nzAEAAAQA
+					AAADAwAAAAgAKAMAAAABAQAAb3B0AAcAAAAB
+					AQAAZ2VlZGJsYQAHAAAAAQEAAHNjcmlwdHMA
+					EQAAAAEBAABzdGFydHVwLWJhbm5lci5wbAAA
+					ABAAAAABBgAAEAAAABwAAAAsAAAAPAAAAAgA
+					AAAEAwAAS08AAAAAAAAIAAAABAMAAJHsDgAA
+					AAAACAAAAAQDAACd7A4AAAAAAAgAAAAEAwAA
+					oOwOAAAAAAAQAAAAAQYAAHAAAACAAAAAkAAA
+					AKAAAAAIAAAAAAQAAEHGkx1UgAAAGAAAAAEC
+					AAABAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAI
+					AAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNp
+					bnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAA
+					AAAEAABBxoIdZYAAACQAAAABAQAANTY1QTc0
+					OTktMzJERi00NzA3LThBQ0MtQzE5MUEwNTIx
+					RDAyGAAAAAECAACBAAAAAQAAAO8TAAABAAAA
+					AAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUA
+					ABoAAAABAQAATlNVUkxEb2N1bWVudElkZW50
+					aWZpZXJLZXkAAAQAAAADAwAAiwEAALQAAAD+
+					////AQAAAAAAAAAOAAAABBAAAFgAAAAAAAAA
+					BRAAALAAAAAAAAAAEBAAANgAAAAAAAAAQBAA
+					AMgAAAAAAAAAAiAAAIgBAAAAAAAABSAAAPgA
+					AAAAAAAAECAAAAgBAAAAAAAAESAAADwBAAAA
+					AAAAEiAAABwBAAAAAAAAEyAAACwBAAAAAAAA
+					ICAAAGgBAAAAAAAAMCAAAJQBAAAAAAAAENAA
+					AAQAAAAAAAAAnAEAgMABAAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///opt/geedbla/scripts/startup-banner.pl</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>startup-banner.pl</string>
+				<key>URL</key>
+				<string>file:///opt/geedbla/scripts/startup-banner.pl</string>
+			</dict>
+		</array>
+	</dict>
+	<key>RecentItemsPrefDataUpgradedForSandbox</key>
+	<true/>
+	<key>SULastCheckedDate</key>
+	<date>2025-01-02T20:01:49Z</date>
+	<key>Saved Search Sets</key>
+	<false/>
+	<key>Search_mode</key>
+	<string>Ltrl</string>
+	<key>SelectedColorSchemeName</key>
+	<string>Solarized Light</string>
+	<key>SelectedColorSchemeNameDarkMode</key>
+	<string>BBEdit Dark</string>
+	<key>StripTrailingWhitespace_ANSI C</key>
+	<true/>
+	<key>StripTrailingWhitespace_C++</key>
+	<true/>
+	<key>StripTrailingWhitespace_JavaScript</key>
+	<true/>
+	<key>StripTrailingWhitespace_Objective-C</key>
+	<true/>
+	<key>StripTrailingWhitespace_Objective-C++</key>
+	<true/>
+	<key>StripTrailingWhitespace_Python</key>
+	<true/>
+	<key>StripTrailingWhitespace_Ruby</key>
+	<true/>
+	<key>StripTrailingWhitespace_Swift</key>
+	<true/>
+	<key>StripTrailingWhitespace_Unix Shell Script</key>
+	<true/>
+	<key>UserDeclinedSandboxAccess</key>
+	<true/>
+	<key>Xcode Projects</key>
+	<false/>
+	<key>~3E7DB6614F745724D1215972C36C5107DE7C7322</key>
+	<data>
+	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
+	83iOAGl7orUSsrECkj7W
+	</data>
+</dict>
+</plist>
