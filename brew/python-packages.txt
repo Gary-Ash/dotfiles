@@ -1,0 +1,15 @@
+attrs
+cattrs
+docstring-to-markdown
+jedi
+jedi-language-server
+lsprotocol
+packaging
+parso
+pip
+pluggy
+pygls
+python-jsonrpc-server
+python-language-server
+ujson
+wheel

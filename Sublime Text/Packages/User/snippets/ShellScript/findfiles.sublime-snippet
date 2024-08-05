@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+while IFS= read -r -d '' file
+do
+	${2:code}
+done <   <(find ${1:find command} -print0)
+
+]]></content>
+	<tabTrigger>findfiles</tabTrigger>
+	<scope>source.shell.bash</scope>
+	<description>Process the result of a find command</description>
+</snippet>

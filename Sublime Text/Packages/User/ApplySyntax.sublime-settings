@@ -1,0 +1,33 @@
+{
+    "reraise_exceptions": false,
+    "new_file_syntax": false,
+    "add_exts_to_lang_settings": true,
+    "debug": false,
+    "syntaxes": [
+        {
+            "syntax": "Git Formats/Git Config",
+            "match": "all",
+            "rules": [ {"file_path": ".*/\\.config/git/config$"},]
+        },
+       {
+            "syntax": "Git Formats/Git Commit Message",
+            "match": "all",
+            "rules": [{"file_path": ".*/\\.config/git/gitmessage$"},]
+       },
+      {
+          "syntax": "Liquid/Syntaxes/HTML (Liquid)",
+          "extensions": ["html", "htm"]
+        },
+      {
+          "syntax": "Liquid/Syntaxes/CSS (Liquid)",
+          "extensions": ["css"]
+        },
+
+     {
+          "syntax": "Liquid/Syntaxes/JSON (Liquid)",
+          "extensions": ["json"]
+        },
+
+
+    ]
+}

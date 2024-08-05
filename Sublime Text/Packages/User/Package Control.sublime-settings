@@ -1,0 +1,37 @@
+{
+	"bootstrapped": true,
+	"install_prereleases": ["Package Control"],
+	"installed_packages":
+	[
+		"ApplySyntax",
+		"BetterSnippetManager",
+		"BracketHighlighter",
+		"DashDoc",
+		"FileIcons Mono",
+		"iOS build system",
+		"Liquid",
+		"LSP",
+		"LSP-bash",
+		"LSP-clangd",
+		"LSP-json",
+		"LSP-pylsp",
+		"LSP-SourceKit",
+		"LSP-yaml",
+		"multiAlign",
+		"Package Control",
+		"PackageDev",
+		"Sass",
+		"SideBarTools",
+		"Solarized Color Scheme",
+		"Strings Resource File",
+		"sublime_geedbla",
+		"Swift Next",
+	],
+	"in_process_packages":
+	[
+	],
+	"repositories":
+	[
+		"https://github.com/Gary-Ash/sublime_geedbla.git",
+	],
+}

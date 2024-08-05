@@ -1,0 +1,6 @@
+{
+  "backgroundIndexing": true,
+  swiftPM : {
+	configuration: "debug",
+  }
+}
