@@ -1,0 +1,11 @@
+theme = "iTerm2 Solarized Dark"
+font-size = 12
+font-family = "PragmataPro Mono Liga"
+shell-integration = "zsh"
+shell-integration-features = no-cursor
+window-height = 55
+window-width = 150
+window-colorspace = "display-p3"
+
+cursor-style = "bar"
+confirm-close-surface = false
