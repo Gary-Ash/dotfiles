@@ -1,0 +1,8 @@
+{
+	"theme": "Merge Solarized Light.sublime-theme",
+	"font_face": "PragmataPro Mono Liga",
+	"font_size": 12,
+	"trim_trailing_white_space_on_save": "all",
+	"side_bar_layout": "commit_graph_as_column",
+	"translate_tabs_to_spaces": true,
+}
