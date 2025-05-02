@@ -11,50 +11,15 @@
 	<key>ApplicationAutoSaveState</key>
 	<dict>
 		<key>ApplicationBuildNumber</key>
-		<string>15C57</string>
+		<string>15C59</string>
 		<key>DisplayConfiguration</key>
 		<string>displays([(0, 0), (2560, 1440)])</string>
 		<key>OpenDocuments</key>
 		<dict>
-			<key>77D56E58-C2DC-43E8-A571-7EC9CA0314AB</key>
+			<key>955DEEF9-B72B-47A3-8AFF-DC4ECC1E4D06</key>
 			<dict>
 				<key>CreationDate</key>
-				<date>2025-04-30T19:43:25Z</date>
-				<key>DocumentProperties</key>
-				<dict>
-					<key>EditorState</key>
-					<dict>
-						<key>MainScrollBar</key>
-						<integer>0</integer>
-						<key>ManualLanguageSetting</key>
-						<string>MRKD</string>
-						<key>SelectionEnd</key>
-						<integer>262</integer>
-						<key>SelectionStart</key>
-						<integer>262</integer>
-					</dict>
-					<key>EncodingName</key>
-					<string>Unicode (UTF-8)</string>
-					<key>LanguageName</key>
-					<string>Markdown</string>
-					<key>LineEnds</key>
-					<string>LF  </string>
-					<key>MarkerData</key>
-					<data>
-					UipjaAAAAAEAAAAA
-					</data>
-				</dict>
-				<key>Location</key>
-				<string>-unsaved-</string>
-				<key>UntitledName</key>
-				<string>untitled chat worksheet</string>
-				<key>com.barebones.DocumentType</key>
-				<string>AIChatWorksheet</string>
-			</dict>
-			<key>F18DFA87-4790-40E0-B221-3E0F381F4831</key>
-			<dict>
-				<key>CreationDate</key>
-				<date>2025-04-30T19:43:14Z</date>
+				<date>2025-05-10T00:32:41Z</date>
 				<key>DocumentProperties</key>
 				<dict>
 					<key>EditorState</key>
@@ -62,9 +27,9 @@
 						<key>MainScrollBar</key>
 						<integer>0</integer>
 						<key>SelectionEnd</key>
-						<integer>0</integer>
+						<integer>65</integer>
 						<key>SelectionStart</key>
-						<integer>0</integer>
+						<integer>65</integer>
 					</dict>
 					<key>EncodingName</key>
 					<string>Unicode (UTF-8)</string>
@@ -89,7 +54,7 @@
 		<array>
 			<dict>
 				<key>ActiveDocument</key>
-				<string>77D56E58-C2DC-43E8-A571-7EC9CA0314AB</string>
+				<string>955DEEF9-B72B-47A3-8AFF-DC4ECC1E4D06</string>
 				<key>AdditionalProperties</key>
 				<dict>
 					<key>EmbeddedEditorVisible</key>
@@ -105,8 +70,7 @@
 				</dict>
 				<key>Documents</key>
 				<array>
-					<string>77D56E58-C2DC-43E8-A571-7EC9CA0314AB</string>
-					<string>F18DFA87-4790-40E0-B221-3E0F381F4831</string>
+					<string>955DEEF9-B72B-47A3-8AFF-DC4ECC1E4D06</string>
 				</array>
 				<key>IsFullScreen</key>
 				<false/>
@@ -117,15 +81,13 @@
 				<key>SavedPosition_v3</key>
 				<string>{{742, 46}, {1075, 1369}}</string>
 				<key>WindowName</key>
-				<string>untitled chat worksheet</string>
+				<string>untitled text</string>
 				<key>WindowType</key>
 				<string>ProjectWindow</string>
 			</dict>
 		</array>
 		<key>UntitledWindowsState</key>
 		<dict>
-			<key>AIWk</key>
-			<integer>1</integer>
 			<key>GrpD</key>
 			<integer>1</integer>
 			<key>TxtD</key>
@@ -422,20 +384,19 @@
 	<string>{1314, 958}</string>
 	<key>NSOSPLastRootDirectory</key>
 	<data>
-	Ym9va6QCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAEA
-	AAQAAAADAwAAAAQAAAMAAAABAQAAb3B0AAcAAAABAQAAZ2VlZGJsYQAHAAAAAQEAAHNj
-	cmlwdHMADAAAAAEGAAAQAAAAHAAAACwAAAAIAAAABAMAAEtPAAAAAAAACAAAAAQDAACR
-	7A4AAAAAAAgAAAAEAwAAnewOAAAAAAAMAAAAAQYAAFAAAABgAAAAcAAAAAgAAAAABAAA
-	Qcbd9BSAAAAYAAAAAQIAAAIAAAAAAAAAHwIAAAAAAAAfAgAAAAAAAAAAAAABBQAACAAA
-	AAEJAABmaWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgA
-	AAAABAAAQcbVF0yAAAAkAAAAAQEAADU2NUE3NDk5LTMyREYtNDcwNy04QUNDLUMxOTFB
-	MDUyMUQwMhgAAAABAgAAgQAAAAEAAADvEwAAAQAAAO8TAAABAAAAAQAAAAEBAAAvAAAA
-	MAAAAAECAABkbmliAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAByZGxmAgAA
-	AAAAAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAAA8AAAAAAAAAAUQAACAAAAAAAAAABAQ
-	AACkAAAAAAAAAEAQAACUAAAAAAAAAAIgAABcAQAAAAAAAAUgAADMAAAAAAAAABAgAADc
-	AAAAAAAAABEgAAAQAQAAAAAAABIgAADwAAAAAAAAABMgAAAAAQAAAAAAACAgAAA8AQAA
-	AAAAADAgAADEAAAAAAAAAAHQAADEAAAAAAAAABDQAAAEAAAAAAAAABfwAAAsAAAAAAAA
-	ACLwAABoAQAAAAAAAA==
+	Ym9va3wCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAEA
+	AAQAAAADAwAAAAQAAAMAAAABAQAAb3B0AAcAAAABAQAAZ2VlZGJsYQAIAAAAAQYAABAA
+	AAAcAAAACAAAAAQDAABLTwAAAAAAAAgAAAAEAwAAkewOAAAAAAAIAAAAAQYAADwAAABM
+	AAAACAAAAAAEAABBxuIAuIAAABgAAAABAgAAAgAAAAAAAAAfAgAAAAAAAB8CAAAAAAAA
+	AAAAAAEFAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMA
+	AACQgpbnAAAACAAAAAAEAABBxtUXTIAAACQAAAABAQAANTY1QTc0OTktMzJERi00NzA3
+	LThBQ0MtQzE5MUEwNTIxRDAyGAAAAAECAACBAAAAAQAAAO8TAAABAAAA7xMAAAEAAAAB
+	AAAAAQEAAC8AAAAwAAAAAQIAAGRuaWIAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAHJkbGYCAAAAAAAAAMwAAAD+////AQAAAAAAAAAQAAAABBAAACwAAAAAAAAABRAA
+	AFwAAAAAAAAAEBAAAHwAAAAAAAAAQBAAAGwAAAAAAAAAAiAAADQBAAAAAAAABSAAAKQA
+	AAAAAAAAECAAALQAAAAAAAAAESAAAOgAAAAAAAAAEiAAAMgAAAAAAAAAEyAAANgAAAAA
+	AAAAICAAABQBAAAAAAAAMCAAAJwAAAAAAAAAAdAAAJwAAAAAAAAAENAAAAQAAAAAAAAA
+	F/AAABwAAAAAAAAAIvAAAEABAAAAAAAA
 	</data>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
@@ -587,6 +548,8 @@
 	<string>1085 949 389 358 0 0 2560 1415 </string>
 	<key>NSWindow Frame WindowPosition_v2_Find</key>
 	<string>196 241 666 328 0 0 2560 1415 </string>
+	<key>NSWindow Frame WindowPosition_v2_FunctionsPalette</key>
+	<string>1155 487 285 358 0 0 2560 1415 </string>
 	<key>NSWindow Frame WindowPosition_v2_MultiFileFind</key>
 	<string>196 240 626 563 0 0 2560 1415 </string>
 	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
@@ -602,7 +565,7 @@
 	<key>Paths Files</key>
 	<false/>
 	<key>PreferencesSnapshotDate</key>
-	<date>2025-04-30T19:45:28Z</date>
+	<date>2025-05-10T00:34:59Z</date>
 	<key>PrintColorSyntax</key>
 	<false/>
 	<key>Projects</key>
@@ -622,7 +585,7 @@
 	<key>Results Browsers</key>
 	<false/>
 	<key>SULastCheckedDate</key>
-	<date>2025-04-30T18:27:30Z</date>
+	<date>2025-05-09T18:44:28Z</date>
 	<key>Saved Search Sets</key>
 	<false/>
 	<key>Search_mode</key>

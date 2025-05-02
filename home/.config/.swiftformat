@@ -5,13 +5,19 @@
 --asynccapturing 
 --beforemarks 
 --binarygrouping 4,8
+--callsiteparen default
 --categorymark "MARK: %c"
 --classthreshold 0
 --closingparen balanced
 --closurevoid remove
 --commas always
+--complexattrs preserve
+--computedvarattrs preserve
+--condassignment after-property
 --conflictmarkers reject
+--dateformat system
 --decimalgrouping 3,6
+--doccomments before-declarations
 --elseposition same-line
 --emptybraces linebreak
 --enumnamespaces always
@@ -25,6 +31,7 @@
 --fragment false
 --funcattributes preserve
 --generictypes 
+--groupblanklines true
 --groupedextension "MARK: %c"
 --guardelse same-line
 --header ignore
@@ -35,41 +42,56 @@
 --indent 4
 --indentcase false
 --indentstrings false
+--inferredtypes always
+--initcodernil false
+--inlinedforeach ignore
+--languagemode 0
 --lifecycle 
 --lineaftermarks true
 --linebreaks lf
 --markcategories false
---markextensions always
---marktypes always
+--markextensions never
+--marktypes never
 --maxwidth none
 --modifierorder 
 --nevertrailing 
+--nilinit remove
+--noncomplexattrs 
 --nospaceoperators 
 --nowrapoperators 
 --octalgrouping 4,8
---onelineforeach ignore
 --operatorfunc spaced
+--organizationmode visibility
 --organizetypes class,enum,struct
 --patternlet hoist
+--preservedecls 
+--preservedsymbols Package
+--propertytypes inferred
 --ranges spaced
---redundanttype inferred
 --self remove
 --selfrequired 
 --semicolons inline
 --shortoptionals always
 --smarttabs enabled
 --someany true
+--sortedpatterns 
+--storedvarattrs preserve
 --stripunusedargs always
 --structthreshold 0
---swiftversion 5.9
+--swiftversion 6.0
 --tabwidth 4
 --throwcapturing 
+--timezone system
 --trailingclosures 
 --trimwhitespace always
 --typeattributes preserve
 --typeblanklines remove
+--typedelimiter space-after
 --typemark "MARK: - %t"
---varattributes preserve
+--typemarks 
+--typeorder 
+--visibilitymarks 
+--visibilityorder 
 --voidtype void
 --wraparguments preserve
 --wrapcollections preserve
@@ -83,4 +105,4 @@
 --xcodeindentation disabled
 --yodaswap always
 --disable blankLinesAroundMark,emptyBraces,modifierOrder,redundantReturn,sortDeclarations,sortTypealiases
---enable blankLinesBetweenImports,docComments,isEmpty,wrapConditionalBodies,wrapEnumCases,wrapSwitchCases
+--enable blankLinesBetweenImports,docComments,isEmpty,organizeDeclarations,wrapConditionalBodies,wrapEnumCases,wrapSwitchCases
