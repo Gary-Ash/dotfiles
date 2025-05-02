@@ -70,6 +70,7 @@
 *.rb    		text diff=ruby
 *.go 			text diff=golang
 *.m     		text diff=objc
+*.mm     		text diff=objc++
 *.swift 		text diff=swift
 *.java          text diff=java
 *.gradle        text diff=java
@@ -81,6 +82,8 @@
 *.pbxproj 		merge=union
 *.plist 		diff=plist
 *.strings 		diff=utf16
+*.rs       		text diff=rust
+*.toml     		text diff=toml
 
 # Compiled Object files
 *.class         binary

@@ -23,7 +23,7 @@
 	<key>NSWindow Frame TTAppPreferences</key>
 	<string>947 847 668 568 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>825 439 910 845 0 0 2560 1415 </string>
+	<string>825 440 910 845 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow Basic</key>
 	<string>995 541 570 371 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow Man Page</key>
@@ -43,7 +43,7 @@
 	<key>Startup Window Settings</key>
 	<string>Solarized Dark</string>
 	<key>TTAppPreferences Selected Tab</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>Window Settings</key>
 	<dict>
 		<key>Basic</key>
@@ -913,6 +913,8 @@
 			fqmrrbK9xs7RAAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAA
 			ANo=
 			</data>
+			<key>ShouldRestoreContent</key>
+			<false/>
 			<key>TerminalType</key>
 			<string>xterm-256color</string>
 			<key>TextBoldColor</key>
@@ -1190,6 +1192,8 @@
 			qKqssbzFzdAAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
 			2Q==
 			</data>
+			<key>ShouldRestoreContent</key>
+			<false/>
 			<key>TerminalType</key>
 			<string>xterm-256color</string>
 			<key>TextBoldColor</key>

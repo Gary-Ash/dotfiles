@@ -88,12 +88,7 @@
 	fuckit          = "!git clean -df  && git reset --hard "https://opengraph.githubassets.com/a567aa8ccfb1b536544aeff45e77943c011ad5abc28080448240bae4e5694f99/git-for-windows/build-extra
 	pruner          = "!git prune --expire=now && git reflog expire --expire-unreachable=now --rewrite --all"
 	oops			= "!git  add -A  && git commit --amend --reuse-message=HEAD && git push --force"
-    credit 			= "!f() { \
-        if [ -n \"$1\" ] && [ -n \"$2\" ]; then \
-            git commit --amend --author \"$1 <$2>\" --no-edit --reuse-message=HEAD; \
-        fi \
-    }; f"
-   credit-co-author = "!f() { \
+    co-author 		= "!f() { \
         if [ -n \"$1\" ] && [ -n \"$2\" ]; then \
             GIT_EDITOR=\"git interpret-trailers --in-place --trailer='Co-authored-by: $1 <$2>'\" git commit --amend; \
         fi \
