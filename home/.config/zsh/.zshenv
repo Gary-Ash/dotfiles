@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  17-May-2025  9:54pm
-# Modified :
+# Modified :   8-Jun-2025  3:48pm
 #
 # Copyright © 2024-2025 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -49,7 +49,6 @@ fpath=(
   /opt/homebrew/share/zsh-completions
   /opt/homebrew/zsh/site-functions
   /opt/geedbla/lib/zsh/lib
-  /opt/geedbla/lib/zsh/zsh-commands
   /opt/geedbla/lib/zsh/zsh-completion
   "${fpath[@]}"
   )
@@ -402,4 +401,46 @@ genuuid() {
     uuid=$(uuidgen | tr 'A-Z' 'a-z' | tr -d '\n')
     (osascript -e "display notification with title \"⌘-V to paste\" subtitle \"$uuid\"" &) >/dev/null 2>&1
     echo -n "$uuid" | pbcopy
+}
+
+#*****************************************************************************************
+# make given directory and then cd into it
+#*****************************************************************************************
+mkcd() {
+	mkdir -p "$1"
+	cd "$1" || return
+}
+#*****************************************************************************************
+#  open a finder qindow at the current directory
+#*****************************************************************************************
+2finder() {
+/usr/bin/osascript &>/dev/null <<"END"
+tell application "Finder"
+	activate
+	repeat with w in (get every Finder window)
+		activate w
+		tell application "System Events"
+			keystroke "a" using {command down}
+			key code 123
+			keystroke "a" using {command down, option down}
+		end tell
+		close w
+	end repeat
+
+	set desktopBounds to bounds of window of desktop
+	set w to round (((item 3 of desktopBounds) - 1100) / 2) rounding as taught in school
+	set h to round (((item 4 of desktopBounds) - 1000) / 2) rounding as taught in school
+	set finderBounds to {w, h, 1100 + w, 1000 + h}
+
+	make new Finder window to (POSIX file (system attribute "PWD"))
+	set (bounds of window 1) to finderBounds
+end tell
+END
+
+}
+#*****************************************************************************************
+#  change terminal directory to match the finder
+#*****************************************************************************************
+cdf() {
+	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')" || return
 }

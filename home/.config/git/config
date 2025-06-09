@@ -93,6 +93,7 @@
             GIT_EDITOR=\"git interpret-trailers --in-place --trailer='Co-authored-by: $1 <$2>'\" git commit --amend; \
         fi \
     }; f"
+    
 
 [url "https://github.com/"]
 	insteadOf       = gh:
