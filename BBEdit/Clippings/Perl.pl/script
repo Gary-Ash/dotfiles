@@ -8,6 +8,3 @@ use warnings;
 
 use Data::Dumper;
 use Carp;
-
-print "Hello World\n";
-

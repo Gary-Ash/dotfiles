@@ -1,7 +1,9 @@
 -utf8
 --backup-and-modify-in-place
 --backup-file-extension='/'
---iterations=4
+--add-trailing-commas
+
+--iterations=8
 --comma-arrow-breakpoints=0
 --maximum-fields-per-table=4
 --maximum-line-length=600
@@ -11,9 +13,10 @@
 --square-bracket-tightness=2
 --nospace-for-semicolon
 --nospace-terminal-semicolon
---nocuddled-else
+--cuddled-else
 --tight-secret-operators
 --no-space-keyword-paren
+--weld-nested-containers
 --no-opening-brace-on-new-line
 --no-opening-sub-brace-on-new-line
 --no-opening-anonymous-sub-brace-on-new-line
