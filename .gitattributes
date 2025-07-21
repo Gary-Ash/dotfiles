@@ -1,0 +1,9 @@
+*.key 									filter=crypt diff=crypt merge=crypt
+*.rev 									filter=crypt diff=crypt merge=crypt
+License.sublime_license 				filter=crypt diff=crypt merge=crypt
+
+home/.ssh/allowed_signers 				filter=crypt diff=crypt merge=crypt
+home/.ssh/allowed_signers 				filter=crypt diff=crypt merge=crypt
+home/.ssh/id_ed25519* 					filter=crypt diff=crypt merge=crypt
+home/.ssh/git-signing*					filter=crypt diff=crypt merge=crypt
+home/.ssh/known_hosts 					filter=crypt diff=crypt merge=crypt
