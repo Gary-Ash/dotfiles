@@ -3,9 +3,9 @@
 #################################################
 # 72 characters per line comment
 #######################################################################
-
-[BUG FIX]   = A bug Fix
-[FEATURE]   = New feature code
-[REFACTOR]  = A code Refactor
-[TEST CODE] = Added Test code
-[TIDY]      = A tidy up action: reformat code, fix a spelling error
+#
+# [BUG FIX]   = A bug Fix
+# [FEATURE]   = New feature code
+# [REFACTOR]  = A code Refactor
+# [TEST CODE] = Added Test code
+# [TIDY]      = A tidy up action: reformat code, fix a spelling error
