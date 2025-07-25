@@ -6,6 +6,96 @@
 	<true/>
 	<key>ApplicationAppearanceMode</key>
 	<integer>0</integer>
+	<key>ApplicationAutoSaveState</key>
+	<dict>
+		<key>ApplicationBuildNumber</key>
+		<string>15C87</string>
+		<key>DisplayConfiguration</key>
+		<string>displays([(0, 0), (2560, 1440)])</string>
+		<key>OpenDocuments</key>
+		<dict>
+			<key>D508591C-8EC8-489E-8783-65C62E3501B2</key>
+			<dict>
+				<key>CreationDate</key>
+				<date>2025-08-04T18:30:44Z</date>
+				<key>DocumentProperties</key>
+				<dict>
+					<key>EditorState</key>
+					<dict>
+						<key>MainScrollBar</key>
+						<integer>0</integer>
+						<key>SelectionEnd</key>
+						<integer>0</integer>
+						<key>SelectionStart</key>
+						<integer>0</integer>
+					</dict>
+					<key>EncodingName</key>
+					<string>Unicode (UTF-8)</string>
+					<key>LanguageName</key>
+					<string>Text File</string>
+					<key>LineEnds</key>
+					<string>LF  </string>
+					<key>MarkerData</key>
+					<data>
+					UipjaAAAAAEAAAAA
+					</data>
+				</dict>
+				<key>Location</key>
+				<string>-unsaved-</string>
+				<key>UntitledName</key>
+				<string>untitled text</string>
+				<key>com.barebones.DocumentType</key>
+				<string>Text</string>
+			</dict>
+		</dict>
+		<key>OpenWindows</key>
+		<array>
+			<dict>
+				<key>ActiveDocument</key>
+				<string>D508591C-8EC8-489E-8783-65C62E3501B2</string>
+				<key>AdditionalProperties</key>
+				<dict>
+					<key>EmbeddedEditorVisible</key>
+					<true/>
+					<key>FileListVisible</key>
+					<true/>
+					<key>IsFullScreen</key>
+					<false/>
+					<key>OpenDocumentSplitProportion</key>
+					<real>0.0</real>
+					<key>ProjectListWidthAsFraction</key>
+					<real>0.20000000000000001</real>
+				</dict>
+				<key>Documents</key>
+				<array>
+					<string>D508591C-8EC8-489E-8783-65C62E3501B2</string>
+				</array>
+				<key>IsFullScreen</key>
+				<false/>
+				<key>IsMinimized</key>
+				<false/>
+				<key>SavedPosition</key>
+				<string>rect(53,742,1372,1817)</string>
+				<key>SavedPosition_v3</key>
+				<string>{{742, 68}, {1075, 1347}}</string>
+				<key>WindowName</key>
+				<string>untitled text</string>
+				<key>WindowType</key>
+				<string>ProjectWindow</string>
+			</dict>
+		</array>
+		<key>UntitledWindowsState</key>
+		<dict>
+			<key>GrpD</key>
+			<integer>1</integer>
+			<key>TxtD</key>
+			<integer>1</integer>
+		</dict>
+		<key>com.barebones.DocumentFormatVersion</key>
+		<integer>2</integer>
+		<key>com.barebones.DocumentType</key>
+		<string>ApplicationState</string>
+	</dict>
 	<key>ApplicationDidStartClean</key>
 	<true/>
 	<key>AutoSaveCurrentWorkspaceWhenSwitching</key>
@@ -29,7 +119,7 @@
 	AYo=
 	</data>
 	<key>BBPreferencesSelectedModuleIdentifier</key>
-	<string>BBMenusAndShortcutsPreferences</string>
+	<string>BBLanguagesPreferences</string>
 	<key>BBPrintingFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -89,7 +179,7 @@
 	<key>DefaultPosition:FTPBrowser:displays([(0, 0), (2560, 1440)])</key>
 	<string>rect(53,0,565,668)</string>
 	<key>DefaultPosition:PatternTester:displays([(0, 0), (2560, 1440)])</key>
-	<string>rect(324,1074,1399,1934)</string>
+	<string>rect(220,952,1295,1812)</string>
 	<key>DefaultPosition:ProjectWindow:displays([(0, 0), (2560, 1440)])</key>
 	<string>rect(53,739,1369,1818)</string>
 	<key>DefaultPosition:TextWindow:displays([(0, 0), (2560, 1440)])</key>
@@ -126,6 +216,8 @@
 	<integer>2</integer>
 	<key>EditingWindowPageGuideWidth</key>
 	<integer>120</integer>
+	<key>EditorAutoExpandTabs_Python</key>
+	<true/>
 	<key>EditorCutCopyLinesForInsertionPoint</key>
 	<true/>
 	<key>EnableFontLigatures</key>
@@ -145,11 +237,9 @@
 	<key>HiddenLanguageCodes</key>
 	<array/>
 	<key>InfoPanelSelectedTab</key>
-	<string>textStatistics</string>
+	<string>imageMetadata</string>
 	<key>InsertionPointCursorType</key>
 	<integer>0</integer>
-	<key>InstaprojectWindowSavedBounds:/opt/geedbla</key>
-	<string>rect(53,739,1369,1818)</string>
 	<key>KeepHistoricalBackups</key>
 	<false/>
 	<key>LanguageServerInfo_ANSI C</key>
@@ -225,7 +315,7 @@
 		<key>ServerArguments</key>
 		<array/>
 		<key>ServerCommand</key>
-		<string>jedi-language-server</string>
+		<string>/opt/geedbla/venv/bin/pylsp</string>
 		<key>ServerInitParams</key>
 		<string></string>
 		<key>ServerLanguageID</key>
@@ -256,7 +346,7 @@
 		<string></string>
 	</dict>
 	<key>LastLaunchOSVersion</key>
-	<string>Version 15.5 (Build 24F74)</string>
+	<string>Version 15.6 (Build 24G84)</string>
 	<key>LastOpenByNameString</key>
 	<string></string>
 	<key>ListDisplayFont</key>
@@ -289,19 +379,23 @@
 	<string>{1314, 958}</string>
 	<key>NSOSPLastRootDirectory</key>
 	<data>
-	Ym9va3wCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAEA
-	AAQAAAADAwAAAAQAAAMAAAABAQAAb3B0AAcAAAABAQAAZ2VlZGJsYQAIAAAAAQYAABAA
-	AAAcAAAACAAAAAQDAABLTwAAAAAAAAgAAAAEAwAAkewOAAAAAAAIAAAAAQYAADwAAABM
-	AAAACAAAAAAEAABBxvsQ+IAAABgAAAABAgAAAgAAAAAAAAAfAgAAAAAAAB8CAAAAAAAA
-	AAAAAAEFAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMA
-	AACQgpbnAAAACAAAAAAEAABBxuOahQAAACQAAAABAQAANTY1QTc0OTktMzJERi00NzA3
-	LThBQ0MtQzE5MUEwNTIxRDAyGAAAAAECAACBAAAAAQAAAO8TAAABAAAA7xMAAAEAAAAB
-	AAAAAQEAAC8AAAAwAAAAAQIAAGRuaWIAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-	AAAAAHJkbGYCAAAAAAAAAMwAAAD+////AQAAAAAAAAAQAAAABBAAACwAAAAAAAAABRAA
-	AFwAAAAAAAAAEBAAAHwAAAAAAAAAQBAAAGwAAAAAAAAAAiAAADQBAAAAAAAABSAAAKQA
-	AAAAAAAAECAAALQAAAAAAAAAESAAAOgAAAAAAAAAEiAAAMgAAAAAAAAAEyAAANgAAAAA
-	AAAAICAAABQBAAAAAAAAMCAAAJwAAAAAAAAAAdAAAJwAAAAAAAAAENAAAAQAAAAAAAAA
-	F/AAABwAAAAAAAAAIvAAAEABAAAAAAAA
+	Ym9vazQDAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA
+	AAQAAAADAwAAAAQAAAUAAAABAQAAVXNlcnMAAAAHAAAAAQEAAGdhcnlhc2gABwAAAAEB
+	AAAuY29uZmlnAAwAAAABBgAAEAAAACAAAAAwAAAACAAAAAQDAABCTwAAAAAAAAgAAAAE
+	AwAAIHoAAAAAAAAIAAAABAMAAMLyDgAAAAAADAAAAAEGAABUAAAAZAAAAHQAAAAIAAAA
+	AAQAAEHHICC0gAAAGAAAAAECAAACAAAAAAAAAB8CAAAAAAAAHwIAAAAAAAAAAAAAAQUA
+	AAgAAAAEAwAAAQAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEB
+	AABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBxxWwfgAAACQAAAAB
+	AQAANTY1QTc0OTktMzJERi00NzA3LThBQ0MtQzE5MUEwNTIxRDAyGAAAAAECAACBAAAA
+	AQAAAO8TAAABAAAA7xMAAAEAAAABAAAAAQEAAC8AAAA2AAAAAQIAAGRuaWIAAAAAAQAA
+	AAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAGNvbmZpZz8/Pz8CAAAAAAAAAAAALwAAAAEB
+	AABOU1VSTEJvb2ttYXJrUXVhcmFudGluZU1vdW50ZWROZXR3b3JrVm9sdW1lc0tleQD8
+	AAAA/v///wEAAAAAAAAAFAAAAAQQAABAAAAAAAAAAAUQAACEAAAAAAAAABAQAACoAAAA
+	AAAAAEAQAACYAAAAAAAAAAIgAAB8AQAAAAAAAAUgAADsAAAAAAAAABAgAAD8AAAAAAAA
+	ABEgAAAwAQAAAAAAABIgAAAQAQAAAAAAABMgAAAgAQAAAAAAACAgAABcAQAAAAAAADAg
+	AADIAAAAAAAAAAHAAADQAAAAAAAAABHAAAAgAAAAAAAAABLAAADgAAAAAAAAAAHQAADI
+	AAAAAAAAABDQAAAEAAAAAAAAABfwAAAwAAAAAAAAACLwAACIAQAAAAAAAMgBAIDIAAAA
+	AAAAAA==
 	</data>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
@@ -431,13 +525,13 @@
 	<key>NSWindow Frame BBPreferences</key>
 	<string>978 619 685 607 0 0 2560 1415 </string>
 	<key>NSWindow Frame BBSetupEditorWindow</key>
-	<string>1963 979 350 426 0 0 2560 1415 </string>
+	<string>1963 1017 350 388 0 0 2560 1415 </string>
 	<key>NSWindow Frame ChatGPTKeyEntryPanel</key>
 	<string>1000 812 560 345 0 0 2560 1415 </string>
 	<key>NSWindow Frame ClippingLanguageSetupPanel</key>
 	<string>2028 966 220 387 0 0 2560 1415 </string>
 	<key>NSWindow Frame ConfirmCloseMulti</key>
-	<string>997 776 565 393 0 0 2560 1415 </string>
+	<string>1063 559 433 393 0 0 2560 1415 </string>
 	<key>NSWindow Frame GoToLine</key>
 	<string>1100 604 359 208 0 0 2560 1415 </string>
 	<key>NSWindow Frame GoToSymbol</key>
@@ -477,9 +571,9 @@
 	<key>NSWindow Frame WindowPosition_v2_MultiFileFind</key>
 	<string>379 292 626 563 0 0 2560 1415 </string>
 	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
-	<string>1145 857 266 289 0 0 2560 1415 </string>
+	<string>1145 986 266 160 0 0 2560 1415 </string>
 	<key>NextAutoSaveCheckTime</key>
-	<integer>2008554722</integer>
+	<integer>2009086423</integer>
 	<key>Open Editing Windows</key>
 	<false/>
 	<key>Open Text Documents</key>
@@ -488,8 +582,10 @@
 	<true/>
 	<key>Paths Files</key>
 	<false/>
+	<key>PatternTesterExpandCaptureGroups</key>
+	<true/>
 	<key>PreferencesSnapshotDate</key>
-	<date>2025-07-22T02:26:40Z</date>
+	<date>2025-08-04T18:31:10Z</date>
 	<key>PrintColorSyntax</key>
 	<false/>
 	<key>Projects</key>
@@ -502,371 +598,6 @@
 	</array>
 	<key>Recent Folders</key>
 	<false/>
-	<key>RecentItemsData</key>
-	<dict>
-		<key>Folder</key>
-		<array>
-			<dict>
-				<key>Date</key>
-				<date>2025-07-22T02:13:21Z</date>
-				<key>DocumentClass</key>
-				<string>Folder</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9vayACAAAAAAQQMAAAACVTfXBVa7AqA5BN
-					Ft0Izyq2S3U37A2eN7eQehaZyqwMQAEAAAQA
-					AAADAwAAAAgAKAMAAAABAQAAb3B0AAcAAAAB
-					AQAAZ2VlZGJsYQAIAAAAAQYAABAAAAAcAAAA
-					CAAAAAQDAABLTwAAAAAAAAgAAAAEAwAAkewO
-					AAAAAAAIAAAAAQYAADwAAABMAAAACAAAAAAE
-					AABBxvsQ+IAAABgAAAABAgAAAgAAAAAAAAAP
-					AAAAAAAAAAAAAAAAAAAACAAAAAEJAABmaWxl
-					Oi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAA
-					AAQDAAAAkIKW5wAAAAgAAAAABAAAQcbjmoUA
-					AAAkAAAAAQEAADU2NUE3NDk5LTMyREYtNDcw
-					Ny04QUNDLUMxOTFBMDUyMUQwMhgAAAABAgAA
-					gQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAA
-					AAEBAAAvAAAAAAAAAAEFAACoAAAA/v///wEA
-					AAAAAAAADQAAAAQQAAAsAAAAAAAAAAUQAABc
-					AAAAAAAAABAQAAB8AAAAAAAAAEAQAABsAAAA
-					AAAAAAIgAAAsAQAAAAAAAAUgAACcAAAAAAAA
-					ABAgAACsAAAAAAAAABEgAADgAAAAAAAAABIg
-					AADAAAAAAAAAABMgAADQAAAAAAAAACAgAAAM
-					AQAAAAAAADAgAAA4AQAAAAAAABDQAAAEAAAA
-					AAAAAA==
-					</data>
-					<key>FileURL</key>
-					<string>file:///opt/geedbla/</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>geedbla</string>
-				<key>URL</key>
-				<string>file:///opt/geedbla/</string>
-			</dict>
-		</array>
-		<key>Text</key>
-		<array>
-			<dict>
-				<key>Date</key>
-				<date>2025-07-22T02:24:48Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va7ACAAAAAAQQMAAAANDbjbw95jSpGmC8
-					Xhk+4ijTNXtD+MnPs/7xWX9Z2OsXxAEAAAQA
-					AAADAwAAAAgAKAMAAAABAQAAb3B0AAcAAAAB
-					AQAAZ2VlZGJsYQAHAAAAAQEAAHNjcmlwdHMA
-					DAAAAAEBAABzeW5jLW1hY3Muc2gQAAAAAQYA
-					ABAAAAAcAAAALAAAADwAAAAIAAAABAMAAEtP
-					AAAAAAAACAAAAAQDAACR7A4AAAAAAAgAAAAE
-					AwAAnewOAAAAAAAIAAAABAMAAH1FowQAAAAA
-					EAAAAAEGAABoAAAAeAAAAIgAAACYAAAACAAA
-					AAAEAABBxwUcxIAAABgAAAABAgAAAQAAAAAA
-					AAAPAAAAAAAAAAAAAAAAAAAACAAAAAEJAABm
-					aWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhE
-					CAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcbj
-					moUAAAAkAAAAAQEAADU2NUE3NDk5LTMyREYt
-					NDcwNy04QUNDLUMxOTFBMDUyMUQwMhgAAAAB
-					AgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAA
-					AQAAAAEBAAAvAAAAAAAAAAEFAAAaAAAAAQEA
-					AE5TVVJMRG9jdW1lbnRJZGVudGlmaWVyS2V5
-					AAAEAAAAAwMAAGUBAAC0AAAA/v///wEAAAAA
-					AAAADgAAAAQQAABQAAAAAAAAAAUQAACoAAAA
-					AAAAABAQAADQAAAAAAAAAEAQAADAAAAAAAAA
-					AAIgAACAAQAAAAAAAAUgAADwAAAAAAAAABAg
-					AAAAAQAAAAAAABEgAAA0AQAAAAAAABIgAAAU
-					AQAAAAAAABMgAAAkAQAAAAAAACAgAABgAQAA
-					AAAAADAgAACMAQAAAAAAABDQAAAEAAAAAAAA
-					AJQBAIC4AQAAAAAAAA==
-					</data>
-					<key>FileURL</key>
-					<string>file:///opt/geedbla/scripts/sync-macs.sh</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>sync-macs.sh</string>
-				<key>URL</key>
-				<string>file:///opt/geedbla/scripts/sync-macs.sh</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2025-07-22T02:26:38Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va7QCAAAAAAQQMAAAAKDLfyqnZBZmKzo2
-					V57JisSAB/MnsQkPTFTWKB44z5uwyAEAAAQA
-					AAADAwAAAAgAKAMAAAABAQAAb3B0AAcAAAAB
-					AQAAZ2VlZGJsYQAHAAAAAQEAAHNjcmlwdHMA
-					DgAAAAEBAAB1cGRhdGUtZG90cy5zaAAAEAAA
-					AAEGAAAQAAAAHAAAACwAAAA8AAAACAAAAAQD
-					AABLTwAAAAAAAAgAAAAEAwAAkewOAAAAAAAI
-					AAAABAMAAJ3sDgAAAAAACAAAAAQDAACo7A4A
-					AAAAABAAAAABBgAAbAAAAHwAAACMAAAAnAAA
-					AAgAAAAABAAAQccFHMSAAAAYAAAAAQIAAAEA
-					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAB
-					CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
-					aCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQA
-					AEHG45qFAAAAJAAAAAEBAAA1NjVBNzQ5OS0z
-					MkRGLTQ3MDctOEFDQy1DMTkxQTA1MjFEMDIY
-					AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
-					AAAAAAEAAAABAQAALwAAAAAAAAABBQAAGgAA
-					AAEBAABOU1VSTERvY3VtZW50SWRlbnRpZmll
-					cktleQAABAAAAAMDAACRAQAAtAAAAP7///8B
-					AAAAAAAAAA4AAAAEEAAAVAAAAAAAAAAFEAAA
-					rAAAAAAAAAAQEAAA1AAAAAAAAABAEAAAxAAA
-					AAAAAAACIAAAhAEAAAAAAAAFIAAA9AAAAAAA
-					AAAQIAAABAEAAAAAAAARIAAAOAEAAAAAAAAS
-					IAAAGAEAAAAAAAATIAAAKAEAAAAAAAAgIAAA
-					ZAEAAAAAAAAwIAAAkAEAAAAAAAAQ0AAABAAA
-					AAAAAACYAQCAvAEAAAAAAAA=
-					</data>
-					<key>FileURL</key>
-					<string>file:///opt/geedbla/scripts/update-dots.sh</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>update-dots.sh</string>
-				<key>URL</key>
-				<string>file:///opt/geedbla/scripts/update-dots.sh</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2025-07-21T21:50:16Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9vaxgDAAAAAAQQMAAAAGI3flng3hxN0EG6
-					Jy4oqCfpZ7+886pcY0c/w8/QLPt6CAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAH
-					AAAAAQEAAGdhcnlhc2gABwAAAAEBAAAuY29u
-					ZmlnAAMAAAABAQAAZ2l0AAoAAAABAQAAZ2l0
-					bWVzc2FnZQAAFAAAAAEGAAAQAAAAIAAAADAA
-					AABAAAAATAAAAAgAAAAEAwAAQk8AAAAAAAAI
-					AAAABAMAACB6AAAAAAAACAAAAAQDAADC8g4A
-					AAAAAAgAAAAEAwAAw/IOAAAAAAAIAAAABAMA
-					AAbzDgAAAAAAFAAAAAEGAAB8AAAAjAAAAJwA
-					AACsAAAAvAAAAAgAAAAABAAAQcbsuqiAAAAY
-					AAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAA
-					AAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMA
-					APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEB
-					AABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbn
-					AAAACAAAAAAEAABBxuOahQAAACQAAAABAQAA
-					NTY1QTc0OTktMzJERi00NzA3LThBQ0MtQzE5
-					MUEwNTIxRDAyGAAAAAECAACBAAAAAQAAAO8T
-					AAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAA
-					AAAAAQUAABoAAAABAQAATlNVUkxEb2N1bWVu
-					dElkZW50aWZpZXJLZXkAAAQAAAADAwAAfwMA
-					ANgAAAD+////AQAAAAAAAAARAAAABBAAAGAA
-					AAAAAAAABRAAAMwAAAAAAAAAEBAAAPgAAAAA
-					AAAAQBAAAOgAAAAAAAAAAiAAAMQBAAAAAAAA
-					BSAAADQBAAAAAAAAECAAAEQBAAAAAAAAESAA
-					AHgBAAAAAAAAEiAAAFgBAAAAAAAAEyAAAGgB
-					AAAAAAAAICAAAKQBAAAAAAAAMCAAANABAAAA
-					AAAAAcAAABgBAAAAAAAAEcAAACAAAAAAAAAA
-					EsAAACgBAAAAAAAAENAAAAQAAAAAAAAA2AEA
-					gPwBAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/garyash/.config/git/gitmessage</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>gitmessage</string>
-				<key>URL</key>
-				<string>file:///Users/garyash/.config/git/gitmessage</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2025-07-21T21:34:56Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va2gDAAAAAAQQMAAAANozzmNtCIOCoLn6
-					iIfW3/yqLnfi49CBRqP53EhPLNk9WAIAAAQA
-					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAH
-					AAAAAQEAAGdhcnlhc2gABwAAAAEBAAAuY29u
-					ZmlnAAMAAAABAQAAZ2l0AAgAAAABAQAAdGVt
-					cGxhdGUFAAAAAQEAAGhvb2tzAAAACgAAAAEB
-					AABwcmUtY29tbWl0AAAcAAAAAQYAABAAAAAg
-					AAAAMAAAAEAAAABMAAAAXAAAAGwAAAAIAAAA
-					BAMAAEJPAAAAAAAACAAAAAQDAAAgegAAAAAA
-					AAgAAAAEAwAAwvIOAAAAAAAIAAAABAMAAMPy
-					DgAAAAAACAAAAAQDAADG8g4AAAAAAAgAAAAE
-					AwAAx/IOAAAAAAAIAAAABAMAAFjzDgAAAAAA
-					HAAAAAEGAACkAAAAtAAAAMQAAADUAAAA5AAA
-					APQAAAAEAQAACAAAAAAEAABBxuy6qIAAABgA
-					AAABAgAAAQAAAAAAAAAPAAAAAAAAAAAAAAAA
-					AAAACAAAAAQDAAAFAAAAAAAAAAQAAAADAwAA
-					9QEAAAgAAAABCQAAZmlsZTovLy8MAAAAAQEA
-					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJCClucA
-					AAAIAAAAAAQAAEHG45qFAAAAJAAAAAEBAAA1
-					NjVBNzQ5OS0zMkRGLTQ3MDctOEFDQy1DMTkx
-					QTA1MjFEMDIYAAAAAQIAAIEAAAABAAAA7xMA
-					AAEAAAAAAAAAAAAAAAEAAAABAQAALwAAAAAA
-					AAABBQAAGgAAAAEBAABOU1VSTERvY3VtZW50
-					SWRlbnRpZmllcktleQAABAAAAAMDAACVBAAA
-					2AAAAP7///8BAAAAAAAAABEAAAAEEAAAgAAA
-					AAAAAAAFEAAAFAEAAAAAAAAQEAAASAEAAAAA
-					AABAEAAAOAEAAAAAAAACIAAAFAIAAAAAAAAF
-					IAAAhAEAAAAAAAAQIAAAlAEAAAAAAAARIAAA
-					yAEAAAAAAAASIAAAqAEAAAAAAAATIAAAuAEA
-					AAAAAAAgIAAA9AEAAAAAAAAwIAAAIAIAAAAA
-					AAABwAAAaAEAAAAAAAARwAAAIAAAAAAAAAAS
-					wAAAeAEAAAAAAAAQ0AAABAAAAAAAAAAoAgCA
-					TAIAAAAAAAA=
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/garyash/.config/git/template/hooks/pre-commit</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>pre-commit</string>
-				<key>URL</key>
-				<string>file:///Users/garyash/.config/git/template/hooks/pre-commit</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2025-07-21T20:58:39Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va7QCAAAAAAQQMAAAACbP4gBPe3i5U9fG
-					tFGGMMbd7kHX/UP1VhWYIeOWr8yayAEAAAQA
-					AAADAwAAAAgAKAMAAAABAQAAb3B0AAcAAAAB
-					AQAAZ2VlZGJsYQAHAAAAAQEAAHNjcmlwdHMA
-					DgAAAAEBAAB1cGRhdGUtc2l0ZS5zaAAAEAAA
-					AAEGAAAQAAAAHAAAACwAAAA8AAAACAAAAAQD
-					AABLTwAAAAAAAAgAAAAEAwAAkewOAAAAAAAI
-					AAAABAMAAJ3sDgAAAAAACAAAAAQDAAC67A4A
-					AAAAABAAAAABBgAAbAAAAHwAAACMAAAAnAAA
-					AAgAAAAABAAAQccFHMSAAAAYAAAAAQIAAAEA
-					AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAB
-					CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
-					aCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQA
-					AEHG45qFAAAAJAAAAAEBAAA1NjVBNzQ5OS0z
-					MkRGLTQ3MDctOEFDQy1DMTkxQTA1MjFEMDIY
-					AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
-					AAAAAAEAAAABAQAALwAAAAAAAAABBQAAGgAA
-					AAEBAABOU1VSTERvY3VtZW50SWRlbnRpZmll
-					cktleQAABAAAAAMDAAC8AwAAtAAAAP7///8B
-					AAAAAAAAAA4AAAAEEAAAVAAAAAAAAAAFEAAA
-					rAAAAAAAAAAQEAAA1AAAAAAAAABAEAAAxAAA
-					AAAAAAACIAAAhAEAAAAAAAAFIAAA9AAAAAAA
-					AAAQIAAABAEAAAAAAAARIAAAOAEAAAAAAAAS
-					IAAAGAEAAAAAAAATIAAAKAEAAAAAAAAgIAAA
-					ZAEAAAAAAAAwIAAAkAEAAAAAAAAQ0AAABAAA
-					AAAAAACYAQCAvAEAAAAAAAA=
-					</data>
-					<key>FileURL</key>
-					<string>file:///opt/geedbla/scripts/update-site.sh</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>update-site.sh</string>
-				<key>URL</key>
-				<string>file:///opt/geedbla/scripts/update-site.sh</string>
-			</dict>
-			<dict>
-				<key>Date</key>
-				<date>2025-07-21T20:55:20Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va6wCAAAAAAQQMAAAAGuyKc5R1fDSa1Wz
-					YO6odhJyRiO9sUPmG1LYFH5ChlBxwAEAAAQA
-					AAADAwAAAAgAKAMAAAABAQAAb3B0AAcAAAAB
-					AQAAZ2VlZGJsYQAHAAAAAQEAAHNjcmlwdHMA
-					BgAAAAEBAABvY2Quc2gAABAAAAABBgAAEAAA
-					ABwAAAAsAAAAPAAAAAgAAAAEAwAAS08AAAAA
-					AAAIAAAABAMAAJHsDgAAAAAACAAAAAQDAACd
-					7A4AAAAAAAgAAAAEAwAApuwOAAAAAAAQAAAA
-					AQYAAGQAAAB0AAAAhAAAAJQAAAAIAAAAAAQA
-					AEHHBRzEgAAAGAAAAAECAAABAAAAAAAAAA8A
-					AAAAAAAAAAAAAAAAAAAIAAAAAQkAAGZpbGU6
-					Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAA
-					BAMAAACQgpbnAAAACAAAAAAEAABBxuOahQAA
-					ACQAAAABAQAANTY1QTc0OTktMzJERi00NzA3
-					LThBQ0MtQzE5MUEwNTIxRDAyGAAAAAECAACB
-					AAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
-					AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNV
-					UkxEb2N1bWVudElkZW50aWZpZXJLZXkAAAQA
-					AAADAwAAggEAALQAAAD+////AQAAAAAAAAAO
-					AAAABBAAAEwAAAAAAAAABRAAAKQAAAAAAAAA
-					EBAAAMwAAAAAAAAAQBAAALwAAAAAAAAAAiAA
-					AHwBAAAAAAAABSAAAOwAAAAAAAAAECAAAPwA
-					AAAAAAAAESAAADABAAAAAAAAEiAAABABAAAA
-					AAAAEyAAACABAAAAAAAAICAAAFwBAAAAAAAA
-					MCAAAIgBAAAAAAAAENAAAAQAAAAAAAAAkAEA
-					gLQBAAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///opt/geedbla/scripts/ocd.sh</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>ocd.sh</string>
-				<key>URL</key>
-				<string>file:///opt/geedbla/scripts/ocd.sh</string>
-			</dict>
-		</array>
-	</dict>
 	<key>RecentItemsPrefDataUpgradedForSandbox</key>
 	<true/>
 	<key>RestoreApplicationStateAtStartup</key>
@@ -886,7 +617,7 @@
 	<key>Rewrap_RemoveSpaces</key>
 	<false/>
 	<key>SULastCheckedDate</key>
-	<date>2025-07-21T15:56:09Z</date>
+	<date>2025-08-04T18:30:51Z</date>
 	<key>Saved Search Sets</key>
 	<false/>
 	<key>Search_CaseSensitive</key>

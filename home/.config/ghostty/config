@@ -4,14 +4,14 @@
 # This my Ghostty configuration 
 # 
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :  17-May-2025  9:54pm
+# Created  :   4-Aug-2025  4:27pm
 # Modified :
 # 
 # Copyright © 2025 By Gary Ash All rights reserved.
 #*****************************************************************************************
 
 macos-icon = official
-
+title = "👻 Ghostty"
 theme = "iTerm2 Solarized Dark"
 font-size = 12
 font-family = "PragmataPro Liga"

@@ -5,10 +5,10 @@
 # This file contains my ZSH environment setup
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :  17-May-2025  9:54pm
-# Modified :  20-Jul-2025  7:56pm
+# Created  :   4-Aug-2025  4:27pm
+# Modified :
 #
-# Copyright © 2024-2025 By Gary Ash All rights reserved.
+# Copyright © 2025 By Gary Ash All rights reserved.
 #*****************************************************************************************
 
 #*****************************************************************************************
@@ -174,6 +174,7 @@ alias hide-all-files="defaults delete com.apple.finder AppleShowAllFiles;killall
 
 alias gitkeep="find . -type d -empty -not -path \"./.git/*\" -exec touch {}/.gitkeep \;"
 
+
 #*****************************************************************************************
 # Zsh Autosuggest
 #*****************************************************************************************
@@ -186,12 +187,11 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #*****************************************************************************************
-# change directory and list it
+# setup Z directory utility
 #*****************************************************************************************
-cdl() {
-  cd "$1"
-  eza --long -all --git --group --group-directories-first --color=always  --icons=always --classify --level=3 --sort=name
-}
+export _Z_DATA="$XDG_CACHE_HOME/zsh/.z"
+source /opt/homebrew/etc/profile.d/z.sh
+
 #*****************************************************************************************
 # setup FZF
 #*****************************************************************************************
@@ -275,10 +275,25 @@ fstash() {
 }
 
 #*****************************************************************************************
-# setup Z directory utility
+# make given directory and then cd into it
 #*****************************************************************************************
-export _Z_DATA="$XDG_CACHE_HOME/zsh/.z"
-source /opt/homebrew/etc/profile.d/z.sh
+mkcd() {
+	mkdir -p "$1"
+	cd "$1" || return
+}
+#*****************************************************************************************
+#  change terminal directory to match the finder
+#*****************************************************************************************
+cdf() {
+	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')" || return
+}
+#*****************************************************************************************
+# change directory and list it
+#*****************************************************************************************
+cdl() {
+  cd "$1"
+  eza --long -all --git --group --group-directories-first --color=always  --icons=always --classify --level=3 --sort=name
+}
 
 #*****************************************************************************************
 # quick system update
@@ -304,8 +319,8 @@ sysupdate() {
 		fi
 
 		if command -v pip3 &>/dev/null; then
-			pip3 install --upgrade --break-system-package pip &>/dev/null
-			pip3 install -U --break-system-packages $(pip3 freeze | cut -d = -f 1) &>/dev/null
+			pip3 install --upgrade pip &>/dev/null
+			pip3 install -U $(pip3 freeze | cut -d = -f 1) &>/dev/null
 		fi
 
 		if command -v npm &>/dev/null; then
@@ -403,13 +418,6 @@ genuuid() {
 }
 
 #*****************************************************************************************
-# make given directory and then cd into it
-#*****************************************************************************************
-mkcd() {
-	mkdir -p "$1"
-	cd "$1" || return
-}
-#*****************************************************************************************
 #  open a finder qindow at the current directory
 #*****************************************************************************************
 2finder() {
@@ -435,11 +443,4 @@ tell application "Finder"
 	set (bounds of window 1) to finderBounds
 end tell
 END
-
-}
-#*****************************************************************************************
-#  change terminal directory to match the finder
-#*****************************************************************************************
-cdf() {
-	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')" || return
 }

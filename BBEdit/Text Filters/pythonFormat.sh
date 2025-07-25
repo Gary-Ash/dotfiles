@@ -1,2 +1,2 @@
 #!/bin/zsh
-black --config "$HOME/.config/black" -
+/opt/geedbla/venv/bin/black --config "$HOME/.config/black" -

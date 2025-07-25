@@ -7,10 +7,10 @@ shopt -s extglob
 # actual commit to the target repository
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :  17-May-2025  9:54pm
-# Modified :  21-Jul-2025  5:34pm
+# Created  :   4-Aug-2025  4:27pm
+# Modified :
 #
-# Copyright © 2024-2025 By Gary Ash All rights reserved.
+# Copyright © 2025 By Gary Ash All rights reserved.
 #*****************************************************************************************
 
 # Transcrypt pre-commit hook: fail if secret file in staging lacks the magic prefix "Salted" in B64
