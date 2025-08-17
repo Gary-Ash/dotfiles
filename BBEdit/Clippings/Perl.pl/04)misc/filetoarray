@@ -1,0 +1,3 @@
+#INDENT#open(my #filehandle#, '<', "#datafile#")
+while (<#filehandle#>) { chomp; push(#array#, $_); }
+close(#filehandle#);
