@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   4-Aug-2025  4:27pm
-# Modified :  14-Aug-2025  3:30pm
+# Modified :  24-Aug-2025  7:45pm
 #
 # Copyright © 2025 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -382,19 +382,6 @@ man() {
   export LESS_TERMCAP_se=$'\033[0m'; \
   export LESS_TERMCAP_ue=$'\033[0m'; \
   /usr/bin/man "$@")
-}
-
-#*****************************************************************************************
-# do an OCD clean
-#*****************************************************************************************
-alias OCD=ocd
-
-ocd() {
-  /opt/geedbla/scripts/ocd.sh "$@"
-  if [ "$?" -eq "0" ]; then
-    mkdir -p "$HOME/.cache/zsh"   &> /dev/null
-    exec "$SHELL" -l
-  fi
 }
 
 #*****************************************************************************************
