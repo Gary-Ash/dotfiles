@@ -1,7 +1,6 @@
 tap "ggpeti/rmrec"
 tap "mulle-kybernetik/software"
 tap "peripheryapp/periphery"
-tap "tsonglew/dutis", "https://github.com/tsonglew/dutis"
 brew "bash"
 brew "libgit2"
 brew "bat"

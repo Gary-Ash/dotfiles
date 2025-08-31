@@ -23,7 +23,7 @@
 	precomposeUnicode = false
 	editor 			  = bbedit --wait --resume
 	pager 			  = delta
-	
+
 [delta]
 	max-line-length = 0
 	true-color   = always
@@ -46,13 +46,16 @@
 	current         = black
 	local           = normal
 	remote          = magenta bold
-    
+
 [color "decorate"]
-    head = black
-    branch = black
+  branch       = white bold
+  remoteBranch = cyan bold
+  tag          = red
+  stash        = magenta
+  HEAD         = green
 
 [color "diff"]
-   commit     = yellow 
+   commit     = yellow
    func       = cyan
    meta       = blue
    frag       = cyan
@@ -60,7 +63,7 @@
    new        = green
    newMoved   = cyan
    oldMoved   = blue
-   context    = default 
+   context    = default
    whitespace = red
 
 [color "status"]
@@ -68,6 +71,12 @@
 	changed         = blue
 	updated			= yellow
 	untracked       = cyan
+
+[color "interactive"]
+  error        = red bold
+  header       = cyan
+  help         = yellow bold
+  prompt       = magenta bold
 
 [column]
 	ui = auto
@@ -93,7 +102,7 @@
             GIT_EDITOR=\"git interpret-trailers --in-place --trailer='Co-authored-by: $1 <$2>'\" git commit --amend; \
         fi \
     }; f"
-    
+
 
 [url "https://github.com/"]
 	insteadOf       = gh:
@@ -136,7 +145,7 @@
 [log]
 	date = human
 	decorate = fuller
-	
+
 [push]
 	default         = simple
 	autoSetupRemote = true
@@ -193,10 +202,10 @@
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
 	prompt        = false
-	
+
 [difftool]
 	prompt = false
 	trustExitCode = true
-	
+
 [mergetool]
 	prompt = false
