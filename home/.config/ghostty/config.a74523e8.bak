@@ -10,20 +10,20 @@
 # Copyright © 2025 By Gary Ash All rights reserved.
 #*****************************************************************************************
 
+macos-icon = official
 title = "👻 Ghostty"
-theme = "Selenized Dark"
+theme = "iTerm2 Solarized Dark"
 font-size = 12
 font-family = "PragmataPro Liga"
 #font-feature = +ss15
 shell-integration = "zsh"
 shell-integration-features = no-cursor
-window-height = 60
-window-width = 160
+window-height = 55
+window-width = 150
 window-colorspace = "display-p3"
 window-save-state = always 
 
-cursor-style = "underline"
+cursor-style = "block"
 confirm-close-surface = false
 
 quit-after-last-window-closed = true
-keybind = shift+enter=text:\x1b\r

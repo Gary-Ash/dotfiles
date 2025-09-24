@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>locate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private func &lt;#name#&gt;&lt;V: ViewInspector.KnownViewType&gt;(_ view: InspectableView&lt;V&gt;) throws {
+    try view.asInspectableView().find(viewWithId: "&lt;#view ID#&gt;").&lt;#dig down#&gt;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>909C26EB-E54A-45A4-9EE3-18A26290F744</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Locates view by ID inside inspect() or display(_:using:).</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SwiftUI View Locator (Jon Reid)</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   4-Aug-2025  4:27pm
-# Modified :  24-Aug-2025  7:45pm
+# Modified :  23-Sep-2025  8:06pm
 #
 # Copyright © 2025 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -36,6 +36,7 @@ export HOMEBREW_NO_ENV_HINTS=1
 export COCOAPODS_DISABLE_STATS=1
 export HOMEBREW_CASK_OPTS="--no-quarantine --no-binaries"
 
+export EZA_CONFIG_DIR="$XDG_CONFIG_HOME/eza"
 export SOLARGRAPH_CACHE="$XDG_CACHE_HOME/.solargraph/cache"
 export SOLARGRAPH_GLOBAL_CONFIG="$HOME/.config/.solargraph/config.yml"
 export RIPGREP_CONFIG_PATH="$HOME/.config/rgrc.conf"
@@ -173,7 +174,6 @@ alias show-all-files="defaults write com.apple.finder AppleShowAllFiles true;kil
 alias hide-all-files="defaults delete com.apple.finder AppleShowAllFiles;killall Finder"
 
 alias gitkeep="find . -type d -empty -not -path \"./.git/*\" -exec touch {}/.gitkeep \;"
-
 
 #*****************************************************************************************
 # Zsh Autosuggest
@@ -339,7 +339,6 @@ sysupdate() {
 
 	rm -rf "$XDG_CACHE_HOME/" &>/dev/null
 	mkdir -p "$XDG_CACHE_HOME/zsh"
-	touch "$_Z_DATA"
 	history -p
 
 	stuff=(

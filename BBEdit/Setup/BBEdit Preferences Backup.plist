@@ -2,10 +2,102 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AIWorksheetWrapResponseCharLimit</key>
+	<integer>120</integer>
 	<key>AlwaysShowFileList</key>
 	<true/>
 	<key>ApplicationAppearanceMode</key>
 	<integer>0</integer>
+	<key>ApplicationAutoSaveState</key>
+	<dict>
+		<key>ApplicationBuildNumber</key>
+		<string>15C100</string>
+		<key>DisplayConfiguration</key>
+		<string>displays([(0, 0), (2560, 1440)])</string>
+		<key>OpenDocuments</key>
+		<dict>
+			<key>323E2C5A-3145-4BAA-A154-436229800C1C</key>
+			<dict>
+				<key>CreationDate</key>
+				<date>2025-09-23T23:34:54Z</date>
+				<key>DocumentProperties</key>
+				<dict>
+					<key>EditorState</key>
+					<dict>
+						<key>MainScrollBar</key>
+						<integer>0</integer>
+						<key>SelectionEnd</key>
+						<integer>0</integer>
+						<key>SelectionStart</key>
+						<integer>0</integer>
+					</dict>
+					<key>EncodingName</key>
+					<string>Unicode (UTF-8)</string>
+					<key>LanguageName</key>
+					<string>Text File</string>
+					<key>LineEnds</key>
+					<string>LF  </string>
+					<key>MarkerData</key>
+					<data>
+					UipjaAAAAAEAAAAA
+					</data>
+				</dict>
+				<key>Location</key>
+				<string>-unsaved-</string>
+				<key>UntitledName</key>
+				<string>untitled text</string>
+				<key>com.barebones.DocumentType</key>
+				<string>Text</string>
+			</dict>
+		</dict>
+		<key>OpenWindows</key>
+		<array>
+			<dict>
+				<key>ActiveDocument</key>
+				<string>323E2C5A-3145-4BAA-A154-436229800C1C</string>
+				<key>AdditionalProperties</key>
+				<dict>
+					<key>EmbeddedEditorVisible</key>
+					<true/>
+					<key>FileListVisible</key>
+					<true/>
+					<key>IsFullScreen</key>
+					<false/>
+					<key>OpenDocumentSplitProportion</key>
+					<real>0.0</real>
+					<key>ProjectListWidthAsFraction</key>
+					<real>0.20000000000000001</real>
+				</dict>
+				<key>Documents</key>
+				<array>
+					<string>323E2C5A-3145-4BAA-A154-436229800C1C</string>
+				</array>
+				<key>IsFullScreen</key>
+				<false/>
+				<key>IsMinimized</key>
+				<false/>
+				<key>SavedPosition</key>
+				<string>rect(59,742,1378,1817)</string>
+				<key>SavedPosition_v3</key>
+				<string>{{742, 62}, {1075, 1347}}</string>
+				<key>WindowName</key>
+				<string>untitled text</string>
+				<key>WindowType</key>
+				<string>ProjectWindow</string>
+			</dict>
+		</array>
+		<key>UntitledWindowsState</key>
+		<dict>
+			<key>GrpD</key>
+			<integer>1</integer>
+			<key>TxtD</key>
+			<integer>1</integer>
+		</dict>
+		<key>com.barebones.DocumentFormatVersion</key>
+		<integer>2</integer>
+		<key>com.barebones.DocumentType</key>
+		<string>ApplicationState</string>
+	</dict>
 	<key>ApplicationDidStartClean</key>
 	<true/>
 	<key>AutoSaveCurrentWorkspaceWhenSwitching</key>
@@ -29,7 +121,7 @@
 	AYo=
 	</data>
 	<key>BBPreferencesSelectedModuleIdentifier</key>
-	<string>BBMenusAndShortcutsPreferences</string>
+	<string>BBEditorDefaultsPreferences</string>
 	<key>BBPrintingFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -69,7 +161,9 @@
 	<key>ChatAPIIdentifier</key>
 	<string>chatgpt</string>
 	<key>ChatGPTModel</key>
-	<string>gpt-4</string>
+	<string>gpt-5</string>
+	<key>ClaudeModel</key>
+	<string>claude-3-sonnet-20240229</string>
 	<key>ColorSchemeFormatVersion</key>
 	<integer>4</integer>
 	<key>CopiedPreferencesToNewKeys_v1</key>
@@ -256,7 +350,7 @@
 		<string></string>
 	</dict>
 	<key>LastLaunchOSVersion</key>
-	<string>Version 15.6.1 (Build 24G90)</string>
+	<string>Version 26.0 (Build 25A354)</string>
 	<key>LastOpenByNameString</key>
 	<string></string>
 	<key>ListDisplayFont</key>
@@ -289,28 +383,31 @@
 	<string>{1314, 958}</string>
 	<key>NSOSPLastRootDirectory</key>
 	<data>
-	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
+	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
+	8AAAOAIAAAAAAAB0AgCAeAEAAAAAAAA=
 	</data>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
-		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 230.000000, 281.000000, NO, NO</string>
+		<string>0.000000, 282.000000, 230.000000, 48.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames PatternPlaygroundPatternSplitSize</key>
 	<array>
@@ -435,7 +532,7 @@
 	<key>NSWindow Frame BBLanguageListPanel</key>
 	<string>1003 798 636 278 0 0 2560 1415 </string>
 	<key>NSWindow Frame BBPreferences</key>
-	<string>978 619 685 607 0 0 2560 1415 </string>
+	<string>978 614 685 607 0 0 2560 1409 </string>
 	<key>NSWindow Frame BBSetupEditorWindow</key>
 	<string>1963 1017 350 388 0 0 2560 1415 </string>
 	<key>NSWindow Frame ChatGPTKeyEntryPanel</key>
@@ -451,17 +548,17 @@
 	<key>NSWindow Frame MultiFileReplaceAllOptions</key>
 	<string>315 472 388 128 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>0 97 224 278 0 0 2560 1415 </string>
+	<string>0 64 250 311 0 0 2560 1409 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>2045 150 445 199 0 0 2560 1415 </string>
+	<string>2024 113 536 235 0 0 2560 1409 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>675 388 1210 796 0 0 2560 1415 </string>
+	<string>675 384 1210 911 0 0 2560 1409 </string>
 	<key>NSWindow Frame OpenFileByName</key>
 	<string>1040 564 480 356 0 0 2560 1415 </string>
 	<key>NSWindow Frame OpenRecentPanel</key>
-	<string>1039 949 480 300 0 0 2560 1415 </string>
+	<string>1039 944 480 300 0 0 2560 1409 </string>
 	<key>NSWindow Frame ProgressPanel</key>
-	<string>850 1156 407 137 0 0 2560 1415 </string>
+	<string>850 1151 407 137 0 0 2560 1409 </string>
 	<key>NSWindow Frame ProgressPanelSheet</key>
 	<string>850 1156 407 137 0 0 2560 1415 </string>
 	<key>NSWindow Frame SoftwareUpdateDownloadProgress</key>
@@ -475,7 +572,7 @@
 	<key>NSWindow Frame UniversalRunner</key>
 	<string>1085 949 389 358 0 0 2560 1415 </string>
 	<key>NSWindow Frame WindowPosition_v2_Find</key>
-	<string>1109 705 666 328 0 0 2560 1415 </string>
+	<string>323 458 666 328 0 0 2560 1409 </string>
 	<key>NSWindow Frame WindowPosition_v2_FunctionsPalette</key>
 	<string>1155 487 285 358 0 0 2560 1415 </string>
 	<key>NSWindow Frame WindowPosition_v2_HTMLUtilitiesPalette</key>
@@ -485,7 +582,7 @@
 	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
 	<string>1145 986 266 160 0 0 2560 1415 </string>
 	<key>NextAutoSaveCheckTime</key>
-	<integer>2011589167</integer>
+	<integer>2013658802</integer>
 	<key>Open Editing Windows</key>
 	<false/>
 	<key>Open Text Documents</key>
@@ -499,7 +596,7 @@
 	<key>PinchZoomChangesMagnification</key>
 	<true/>
 	<key>PreferencesSnapshotDate</key>
-	<date>2025-08-30T23:50:04Z</date>
+	<date>2025-09-23T23:37:58Z</date>
 	<key>PrintColorSyntax</key>
 	<false/>
 	<key>Projects</key>
@@ -512,6 +609,248 @@
 	</array>
 	<key>Recent Folders</key>
 	<false/>
+	<key>RecentItemsData</key>
+	<dict>
+		<key>Text</key>
+		<array>
+			<dict>
+				<key>Date</key>
+				<date>2025-09-23T23:14:48Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va6wDAAAAAAQQMAAAAGz6Pwz9w1AoE+Qa
+					e0EItpKD/6kPP3sLlghEmsYLbsRinAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAH
+					AAAAAQEAAGdhcnlhc2gACQAAAAEBAABEZXZl
+					bG9wZXIAAAAHAAAAAQEAAEdlZURibEEAEAAA
+					AAEBAABQcm9qZWN0VGVtcGxhdGVzBgAAAAEB
+					AABfRmlsZXMAAAgAAAABAQAAQnVpbGRFbnYV
+					AAAAAQEAAHN0YW1wLWJldGEtdmVyc2lvbi5z
+					aAAAACAAAAABBgAAEAAAACAAAAAwAAAARAAA
+					AFQAAABsAAAAfAAAAIwAAAAIAAAABAMAAEJP
+					AAAAAAAACAAAAAQDAAAgegAAAAAAAAgAAAAE
+					AwAAHo0LAAAAAAAIAAAABAMAAB+NCwAAAAAA
+					CAAAAAQDAACVfhEFAAAAAAgAAAAEAwAAMX8R
+					BQAAAAAIAAAABAMAAH9/EQUAAAAACAAAAAQD
+					AACCfxEFAAAAACAAAAABBgAA1AAAAOQAAAD0
+					AAAABAEAABQBAAAkAQAANAEAAEQBAAAIAAAA
+					AAQAAEHHBmNgICJtGAAAAAECAAABAAAAAAAA
+					AA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAYA
+					AAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABm
+					aWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhE
+					CAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcc4
+					BdKAAAAkAAAAAQEAADU2NUE3NDk5LTMyREYt
+					NDcwNy04QUNDLUMxOTFBMDUyMUQwMhgAAAAB
+					AgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAA
+					AQAAAAEBAAAvAAAAAAAAAAEFAAAaAAAAAQEA
+					AE5TVVJMRG9jdW1lbnRJZGVudGlmaWVyS2V5
+					AAAEAAAAAwMAAEwEAADYAAAA/v///wEAAAAA
+					AAAAEQAAAAQQAACsAAAAAAAAAAUQAABUAQAA
+					AAAAABAQAACMAQAAAAAAAEAQAAB8AQAAAAAA
+					AAIgAABYAgAAAAAAAAUgAADIAQAAAAAAABAg
+					AADYAQAAAAAAABEgAAAMAgAAAAAAABIgAADs
+					AQAAAAAAABMgAAD8AQAAAAAAACAgAAA4AgAA
+					AAAAADAgAABkAgAAAAAAAAHAAACsAQAAAAAA
+					ABHAAAAgAAAAAAAAABLAAAC8AQAAAAAAABDQ
+					AAAEAAAAAAAAAGwCAICQAgAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/garyash/Developer/GeeDblA/ProjectTemplates/_Files/BuildEnv/stamp-beta-version.sh</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>stamp-beta-version.sh</string>
+				<key>URL</key>
+				<string>file:///Users/garyash/Developer/GeeDblA/ProjectTemplates/_Files/BuildEnv/stamp-beta-version.sh</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2025-09-23T20:52:38Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va6gDAAAAAAQQMAAAABiy6s3ugg7OxrYQ
+					yeooD4HisjPdtqspU1eA1l9mMn4ZmAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAH
+					AAAAAQEAAGdhcnlhc2gACQAAAAEBAABEZXZl
+					bG9wZXIAAAAHAAAAAQEAAEdlZURibEEAEAAA
+					AAEBAABQcm9qZWN0VGVtcGxhdGVzBgAAAAEB
+					AABfRmlsZXMAAAgAAAABAQAAQnVpbGRFbnYU
+					AAAAAQEAAHN3aWZ0bGludC1wcm9qZWN0LnNo
+					IAAAAAEGAAAQAAAAIAAAADAAAABEAAAAVAAA
+					AGwAAAB8AAAAjAAAAAgAAAAEAwAAQk8AAAAA
+					AAAIAAAABAMAACB6AAAAAAAACAAAAAQDAAAe
+					jQsAAAAAAAgAAAAEAwAAH40LAAAAAAAIAAAA
+					BAMAAJV+EQUAAAAACAAAAAQDAAAxfxEFAAAA
+					AAgAAAAEAwAAf38RBQAAAAAIAAAABAMAAIN/
+					EQUAAAAAIAAAAAEGAADQAAAA4AAAAPAAAAAA
+					AQAAEAEAACABAAAwAQAAQAEAAAgAAAAABAAA
+					QccGY2AgJREYAAAAAQIAAAEAAAAAAAAADwAA
+					AAAAAAAAAAAAAAAAAAgAAAAEAwAABgAAAAAA
+					AAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6
+					Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAA
+					BAMAAACQgpbnAAAACAAAAAAEAABBxzgF0oAA
+					ACQAAAABAQAANTY1QTc0OTktMzJERi00NzA3
+					LThBQ0MtQzE5MUEwNTIxRDAyGAAAAAECAACB
+					AAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
+					AQEAAC8AAAAAAAAAAQUAABoAAAABAQAATlNV
+					UkxEb2N1bWVudElkZW50aWZpZXJLZXkAAAQA
+					AAADAwAASwQAANgAAAD+////AQAAAAAAAAAR
+					AAAABBAAAKgAAAAAAAAABRAAAFABAAAAAAAA
+					EBAAAIgBAAAAAAAAQBAAAHgBAAAAAAAAAiAA
+					AFQCAAAAAAAABSAAAMQBAAAAAAAAECAAANQB
+					AAAAAAAAESAAAAgCAAAAAAAAEiAAAOgBAAAA
+					AAAAEyAAAPgBAAAAAAAAICAAADQCAAAAAAAA
+					MCAAAGACAAAAAAAAAcAAAKgBAAAAAAAAEcAA
+					ACAAAAAAAAAAEsAAALgBAAAAAAAAENAAAAQA
+					AAAAAAAAaAIAgIwCAAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/garyash/Developer/GeeDblA/ProjectTemplates/_Files/BuildEnv/swiftlint-project.sh</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>swiftlint-project.sh</string>
+				<key>URL</key>
+				<string>file:///Users/garyash/Developer/GeeDblA/ProjectTemplates/_Files/BuildEnv/swiftlint-project.sh</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2025-09-23T23:14:48Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va6wDAAAAAAQQMAAAAJAmmT2Pd+s7eBvi
+					jIXkfzqjHFoBGvRIy+Mtdc/Whv2fnAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAH
+					AAAAAQEAAGdhcnlhc2gACQAAAAEBAABEZXZl
+					bG9wZXIAAAAHAAAAAQEAAEdlZURibEEAEAAA
+					AAEBAABQcm9qZWN0VGVtcGxhdGVzBgAAAAEB
+					AABfRmlsZXMAAAgAAAABAQAAQnVpbGRFbnYX
+					AAAAAQEAAHJlc3RvcmUtc3RhbXBlZC1pY29u
+					LnNoACAAAAABBgAAEAAAACAAAAAwAAAARAAA
+					AFQAAABsAAAAfAAAAIwAAAAIAAAABAMAAEJP
+					AAAAAAAACAAAAAQDAAAgegAAAAAAAAgAAAAE
+					AwAAHo0LAAAAAAAIAAAABAMAAB+NCwAAAAAA
+					CAAAAAQDAACVfhEFAAAAAAgAAAAEAwAAMX8R
+					BQAAAAAIAAAABAMAAH9/EQUAAAAACAAAAAQD
+					AACBfxEFAAAAACAAAAABBgAA1AAAAOQAAAD0
+					AAAABAEAABQBAAAkAQAANAEAAEQBAAAIAAAA
+					AAQAAEHHBmNgICBHGAAAAAECAAABAAAAAAAA
+					AA8AAAAAAAAAAAAAAAAAAAAIAAAABAMAAAYA
+					AAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABm
+					aWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhE
+					CAAAAAQDAAAAkIKW5wAAAAgAAAAABAAAQcc4
+					BdKAAAAkAAAAAQEAADU2NUE3NDk5LTMyREYt
+					NDcwNy04QUNDLUMxOTFBMDUyMUQwMhgAAAAB
+					AgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAA
+					AQAAAAEBAAAvAAAAAAAAAAEFAAAaAAAAAQEA
+					AE5TVVJMRG9jdW1lbnRJZGVudGlmaWVyS2V5
+					AAAEAAAAAwMAAE4EAADYAAAA/v///wEAAAAA
+					AAAAEQAAAAQQAACsAAAAAAAAAAUQAABUAQAA
+					AAAAABAQAACMAQAAAAAAAEAQAAB8AQAAAAAA
+					AAIgAABYAgAAAAAAAAUgAADIAQAAAAAAABAg
+					AADYAQAAAAAAABEgAAAMAgAAAAAAABIgAADs
+					AQAAAAAAABMgAAD8AQAAAAAAACAgAAA4AgAA
+					AAAAADAgAABkAgAAAAAAAAHAAACsAQAAAAAA
+					ABHAAAAgAAAAAAAAABLAAAC8AQAAAAAAABDQ
+					AAAEAAAAAAAAAGwCAICQAgAAAAAAAA==
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/garyash/Developer/GeeDblA/ProjectTemplates/_Files/BuildEnv/restore-stamped-icon.sh</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>restore-stamped-icon.sh</string>
+				<key>URL</key>
+				<string>file:///Users/garyash/Developer/GeeDblA/ProjectTemplates/_Files/BuildEnv/restore-stamped-icon.sh</string>
+			</dict>
+			<dict>
+				<key>Date</key>
+				<date>2025-09-23T20:52:36Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9va7ADAAAAAAQQMAAAAGoU6N7upDgfDM5e
+					LqRm/cTCZ9rpp+RhhSl4AROxbX7AoAIAAAQA
+					AAADAwAAAAgAKAUAAAABAQAAVXNlcnMAAAAH
+					AAAAAQEAAGdhcnlhc2gACQAAAAEBAABEZXZl
+					bG9wZXIAAAAHAAAAAQEAAEdlZURibEEAEAAA
+					AAEBAABQcm9qZWN0VGVtcGxhdGVzBgAAAAEB
+					AABfRmlsZXMAAAgAAAABAQAAQnVpbGRFbnYZ
+					AAAAAQEAAGluY3JlbWVudC1idWlsZC1udW1i
+					ZXIuc2gAAAAgAAAAAQYAABAAAAAgAAAAMAAA
+					AEQAAABUAAAAbAAAAHwAAACMAAAACAAAAAQD
+					AABCTwAAAAAAAAgAAAAEAwAAIHoAAAAAAAAI
+					AAAABAMAAB6NCwAAAAAACAAAAAQDAAAfjQsA
+					AAAAAAgAAAAEAwAAlX4RBQAAAAAIAAAABAMA
+					ADF/EQUAAAAACAAAAAQDAAB/fxEFAAAAAAgA
+					AAAEAwAAgH8RBQAAAAAgAAAAAQYAANgAAADo
+					AAAA+AAAAAgBAAAYAQAAKAEAADgBAABIAQAA
+					CAAAAAAEAABBxwZjYCAdsxgAAAABAgAAAQAA
+					AAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQD
+					AAAGAAAAAAAAAAQAAAADAwAA9QEAAAgAAAAB
+					CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9z
+					aCBIRAgAAAAEAwAAAJCClucAAAAIAAAAAAQA
+					AEHHOAXSgAAAJAAAAAEBAAA1NjVBNzQ5OS0z
+					MkRGLTQ3MDctOEFDQy1DMTkxQTA1MjFEMDIY
+					AAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAA
+					AAAAAAEAAAABAQAALwAAAAAAAAABBQAAGgAA
+					AAEBAABOU1VSTERvY3VtZW50SWRlbnRpZmll
+					cktleQAABAAAAAMDAABNBAAA2AAAAP7///8B
+					AAAAAAAAABEAAAAEEAAAsAAAAAAAAAAFEAAA
+					WAEAAAAAAAAQEAAAkAEAAAAAAABAEAAAgAEA
+					AAAAAAACIAAAXAIAAAAAAAAFIAAAzAEAAAAA
+					AAAQIAAA3AEAAAAAAAARIAAAEAIAAAAAAAAS
+					IAAA8AEAAAAAAAATIAAAAAIAAAAAAAAgIAAA
+					PAIAAAAAAAAwIAAAaAIAAAAAAAABwAAAsAEA
+					AAAAAAARwAAAIAAAAAAAAAASwAAAwAEAAAAA
+					AAAQ0AAABAAAAAAAAABwAgCAlAIAAAAAAAA=
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/garyash/Developer/GeeDblA/ProjectTemplates/_Files/BuildEnv/increment-build-number.sh</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>increment-build-number.sh</string>
+				<key>URL</key>
+				<string>file:///Users/garyash/Developer/GeeDblA/ProjectTemplates/_Files/BuildEnv/increment-build-number.sh</string>
+			</dict>
+		</array>
+	</dict>
 	<key>RecentItemsPrefDataUpgradedForSandbox</key>
 	<true/>
 	<key>RestoreApplicationStateAtStartup</key>
@@ -531,7 +870,7 @@
 	<key>Rewrap_RemoveSpaces</key>
 	<false/>
 	<key>SULastCheckedDate</key>
-	<date>2025-08-30T23:49:54Z</date>
+	<date>2025-09-23T23:07:53Z</date>
 	<key>Saved Search Sets</key>
 	<false/>
 	<key>Search_CaseSensitive</key>
