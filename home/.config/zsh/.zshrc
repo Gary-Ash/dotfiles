@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   4-Aug-2025  4:27pm
-# Modified :
+# Modified :   6-Oct-2025  8:18pm
 #
 # Copyright © 2025 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -25,8 +25,8 @@ source /opt/geedbla/venv/bin/activate
 #*****************************************************************************************
 # prompt setup
 #*****************************************************************************************
-export SNAZZY_PROMPT="cwd,255,166,255,196:git,255,200,255,35:err,255,1"
-export SNAZZY_PROMPT_TRUE="cwd,255;255;255,255;148;0,255;255;255,1:git,255;255;255,255;142;198,255;255;255,178;216;143:err,255;255;255,128;0;0"
+export SNAZZY_PROMPT="cwd,255,166,255,196:git,255,200,255,35:short,1,1"
+export SNAZZY_PROMPT_TRUE="cwd,255;255;255,255;148;0,255;255;255,1:git,255;255;255,255;142;198,255;255;255,178;216;143:short,255;0;0,255;0;0"
 
 powerline_precmd() {
 	PS1="$(/opt/geedbla/bin/Prompt --error $?)"

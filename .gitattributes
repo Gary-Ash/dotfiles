@@ -2,6 +2,8 @@
 *.rev 									filter=crypt diff=crypt merge=crypt
 License.sublime_license 				filter=crypt diff=crypt merge=crypt
 
+home/.claude							filter=crypt diff=crypt merge=crypt
+home/.claude.json						filter=crypt diff=crypt merge=crypt
 home/.ssh/allowed_signers 				filter=crypt diff=crypt merge=crypt
 home/.ssh/allowed_signers 				filter=crypt diff=crypt merge=crypt
 home/.ssh/id_ed25519* 					filter=crypt diff=crypt merge=crypt
