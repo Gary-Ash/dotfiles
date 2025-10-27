@@ -1,22 +1,11 @@
 [user]
 	name       = Gary Ash
-	email      = gary.ash@icloud.com
 	signingkey = ~/.ssh/git-signing.pub
-
-[github]
-	user            = Gary-Ash
 
 [gpg "ssh"]
 	allowedSignersFile = ~/.config/git/allowed_signers
 
-
-[init]
-	defaultBranch = main
-	templateDir   = ~/.config/git/template
-
 [core]
-	excludesfile 	  = ~/.config/git/gitignore
-	attributesFile    = ~/.config/git/gitattributes
 	autocrlf          = input
 	compression       = 9
 	filemode          = false
@@ -155,7 +144,6 @@
 	verbose  = true
 	gpgsign = true
 	verbose  = true
-	template = /Users/garyash/.config/git/gitmessage
 
 [tag]
 	sort    = -v:refname
@@ -209,3 +197,6 @@
 
 [mergetool]
 	prompt = false
+
+[includeIf "hasconfig:remote.*.url:*:Gary-Ash/**"]
+	path = "~/.config/git/geedbla.config"
