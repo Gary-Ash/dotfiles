@@ -20,6 +20,7 @@
 	tabs         = 4
 	syntax-theme = Solarized (dark)
 	side-by-side = true
+    features = navigate hyperlinks line-numbers decorations
 
 [pager]
 	blame			= delta
