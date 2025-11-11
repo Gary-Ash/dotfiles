@@ -3,7 +3,7 @@
 	       "plugins":{
 	        "jedi":{
 	            "extra_paths":[
-	                "/opt/homebrew/lib/python3.12/site-packages",
+	                "/opt/homebrew/lib/python3.14/site-packages",
 	                "/Applications/Sublime Text.app/Contents/MacOS/Lib/python38"
 	            ],
 	        },

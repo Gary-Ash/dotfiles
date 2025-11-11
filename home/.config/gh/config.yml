@@ -8,3 +8,5 @@ aliases:
 
 ttp_unix_socket:
 browser:
+color_labels: enabled
+spinner: enabled

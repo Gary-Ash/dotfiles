@@ -133,7 +133,7 @@
 		<string>Screen</string>
 	</array>
 	<key>IDEAnalyticsMetricsNotifications.AnalyticsMetricsNotificationsController.lastRefreshAttemptDate</key>
-	<date>2025-10-29T18:42:40Z</date>
+	<date>2025-11-30T21:30:30Z</date>
 	<key>IDEAppStatisticsRunDestinationPlatform</key>
 	<dict>
 		<key>appletvos</key>
@@ -152,7 +152,7 @@
 		<key>DVTUserDefaultsCachingCache</key>
 		<dict>
 			<key>App Store Product Source Accounts: 9CF43D67-D21F-44C2-A730-AA112E1AACF2</key>
-			<date>2025-10-25T23:39:38Z</date>
+			<date>2025-11-10T01:52:27Z</date>
 		</dict>
 		<key>DVTUserDefaultsCachingKeysRecentlyUsed</key>
 		<array>
@@ -203,31 +203,31 @@
 	<dict>
 		<key>/Applications/Xcode.app/Contents/Applications/Accessibility Inspector.app</key>
 		<data>
-		GlIUBzcdYdAi71UTwleS0P+gPUI=
+		0JIq9QLusf7RNAWLM2BVg0ddgJg=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/FileMerge.app</key>
 		<data>
-		gwkr2E/IoCXe/cF/2czFRiG9PCk=
+		+Q3v+yznO9xiftTT+vVm9Izpq3s=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Icon Composer.app</key>
 		<data>
-		nToKQtPre0K/FzO0Vx/Ihrp5smI=
+		tCG0/atjWiR5H59BaZXRZ4Q9xok=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Instruments.app</key>
 		<data>
-		z9y3uuRxcyqzL99c/fgVOcjvwE0=
+		Tu12vg1l6hBr8tE6AJ7CA2Fn2Ig=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Reality Composer Pro.app</key>
 		<data>
-		iv7TFQVes/+T7BlaomGnr4hPKOU=
+		IE5tUZEpg0sBxk3LHqaUYYmYTVA=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app</key>
 		<data>
-		j5opkzLyPDvQjNzlz0a8c+cNQdw=
+		QL9zGdRcjK4TmOqwvGrQHJyEL0A=
 		</data>
 		<key>/System/Library/CoreServices/CoreTypes.bundle</key>
 		<data>
-		KBz6pOoJi2GwZopoM5sKyRMbSPA=
+		PzMBJr9jEb9E886rfnvxzm+sEc0=
 		</data>
 	</dict>
 	<key>IDELastShownWhatsNewContentRevision</key>
@@ -282,6 +282,7 @@
 	<real>560</real>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-appletvos</key>
 	<array>
+		<string>23J576</string>
 		<string>23J352</string>
 		<string>22L572</string>
 		<string>22L251</string>
@@ -290,6 +291,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-iphoneos</key>
 	<array>
+		<string>23B77</string>
 		<string>23A339</string>
 		<string>22F76</string>
 		<string>22E235</string>
@@ -298,6 +300,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-macosx</key>
 	<array>
+		<string>25B74</string>
 		<string>25A352</string>
 		<string>24F74</string>
 		<string>24E241</string>
@@ -306,6 +309,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-watchos</key>
 	<array>
+		<string>23S34</string>
 		<string>23R351</string>
 		<string>22T572</string>
 		<string>22T246</string>
@@ -314,6 +318,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-xros</key>
 	<array>
+		<string>23N45</string>
 		<string>23M336</string>
 		<string>22O473</string>
 		<string>22O233</string>
@@ -323,7 +328,7 @@
 	<key>IDEPlatformsFirstLaunchSelected-appletvos</key>
 	<true/>
 	<key>IDEPlatformsFirstLaunchSelected-iphoneos</key>
-	<true/>
+	<false/>
 	<key>IDEPlatformsFirstLaunchSelected-watchos</key>
 	<true/>
 	<key>IDEPlatformsFirstLaunchSelected-xros</key>
@@ -458,7 +463,7 @@
 	<key>IDEStringCatalogAutomaticCommentGenerationEnabled</key>
 	<true/>
 	<key>IDESwiftPackageCollectionsAddedDefaultCollectionsDVTToolsVersion</key>
-	<string>Xcode 16.1.0</string>
+	<string>Xcode 26.1.1</string>
 	<key>IDETestActionSelectedTab</key>
 	<string>Info</string>
 	<key>IDEWorkspaceSuppressCleanBuildPrompt</key>
@@ -469,8 +474,6 @@
 	<string>17B48</string>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
-	<key>IDE_CA_Daily_UsedScriptingAPI</key>
-	<true/>
 	<key>LastExplicitInspectorVisibility</key>
 	<true/>
 	<key>NSColorPanelMode</key>
@@ -492,8 +495,8 @@
 	</array>
 	<key>NSSplitView Subview Frames com.apple.dt.Xcode.DevicesWidow.DevicesSplit</key>
 	<array>
-		<string>0.000000, 0.000000, 205.000000, 700.000000, NO, NO</string>
-		<string>205.000000, 0.000000, 979.000000, 700.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 338.500000, 700.000000, NO, NO</string>
+		<string>338.500000, 0.000000, 845.500000, 700.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v3 PlistColumns</key>
 	<data>
@@ -564,7 +567,7 @@
 	<key>NSWindow Frame Documentation Viewer Window</key>
 	<string>841 586 1024 730 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDEDownloadProgressWindow</key>
-	<string>1944 1197 400 104 0 0 2560 1409 </string>
+	<string>1944 1089 400 212 0 0 2560 1409 </string>
 	<key>NSWindow Frame IDEEditContextSheet</key>
 	<string>1176 572 534 341 0 0 2560 1409 </string>
 	<key>NSWindow Frame IDEEditSchemeWindow</key>
@@ -574,7 +577,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>925 318 710 722 0 0 2560 1409 </string>
+	<string>892 397 710 722 0 0 2560 1409 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
@@ -594,11 +597,11 @@
 	<key>ProductMappingKey</key>
 	<data>
 	YnBsaXN0MDDRAQJXZW50cmllc6IDCtMEBQYHCAldd29ya3NwYWNlUGF0aFhwcm9kdWN0
-	c1psYXN0T3BlbmVkXxBKL1VzZXJzL2dhcnlhc2gvRGV2ZWxvcGVyL0dlZURibEEvU29j
-	aWFsQnV0dGVyZmx5L1NvY2lhbEJ1dHRlcmZseS54Y29kZXByb2qgM0HHVtLEsT1D0wQF
-	BgsMDV8QTi9Vc2Vycy9nYXJ5YXNoL0xpYnJhcnkvQXV0b3NhdmUgSW5mb3JtYXRpb24v
-	VW5zYXZlZCBYY29kZSBEb2N1bWVudC54Y3dvcmtzcGFjZaAzQcdW0t4LtHgICxMWHSs0
-	P4yNlp3u7wAAAAAAAAEBAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAD4
+	c1psYXN0T3BlbmVkXxBJL1VzZXJzL2dhcnlhc2gvRG93bmxvYWRzL09wZW5JblRlcm1p
+	bmFsLW1hc3Rlci9PcGVuSW5UZXJtaW5hbC54Y3dvcmtzcGFjZaAzQcdud1Dd/zfTBAUG
+	CwwNXxBOL1VzZXJzL2dhcnlhc2gvTGlicmFyeS9BdXRvc2F2ZSBJbmZvcm1hdGlvbi9V
+	bnNhdmVkIFhjb2RlIERvY3VtZW50Lnhjd29ya3NwYWNloDNBx255BCtCkQgLExYdKzQ/
+	i4yVnO3uAAAAAAAAAQEAAAAAAAAADgAAAAAAAAAAAAAAAAAAAPc=
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
 	<string>23A8464</string>

@@ -1,6 +1,7 @@
 [user]
-	name       = Gary Ash
+	name = Gary Ash
 	signingkey = ~/.ssh/git-signing.pub
+	email = gary.ash@icloud.com
 
 [gpg "ssh"]
 	allowedSignersFile = ~/.config/git/allowed_signers
@@ -20,7 +21,7 @@
 	tabs         = 4
 	syntax-theme = Solarized (dark)
 	side-by-side = true
-    features = navigate hyperlinks line-numbers decorations
+    features 	= navigate hyperlinks line-numbers decorations
 
 [pager]
 	blame			= delta
@@ -76,8 +77,8 @@
 	branches        = "branch -a"
 	remotes         = "remote -v"
 	logg            = "log --pretty=fuller --decorate --graph --all --show-signature"
-	difft           = "difftool -y"                          # use the my external diff tool w/o prompting
-	unstage         = "reset HEAD -- "                       # unstage the named file(s)
+	difft           = "difftool -y"    		                 # use the my external diff tool w/o prompting
+	unstage         = "restore --staged ."                   # unstage the named file(s)
 	discard         = "checkout --"                          # undo last commit
 	cloner          = "clone --recursive "                   # clone submodules too
 	pushf           = "push --force "
