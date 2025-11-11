@@ -1,4 +1,0 @@
-[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
-[DEBUG] MCP server "sosumi": Starting connection with timeout of 30000ms
-[DEBUG] MCP server "sosumi": Connection failed after 18ms: spawn https://sosumi.ai/mcp ENOENT
-[ERROR] MCP server "sosumi" Connection failed: spawn https://sosumi.ai/mcp ENOENT

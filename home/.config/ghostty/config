@@ -22,7 +22,7 @@ window-width = 180
 window-colorspace = "display-p3"
 window-save-state = always 
 
-cursor-style = "underline"
+cursor-style = "bar"
 confirm-close-surface = false
 
 quit-after-last-window-closed = true
