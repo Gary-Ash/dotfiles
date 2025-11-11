@@ -41,7 +41,7 @@
 	<key>NSWindow Frame TTAppPreferences</key>
 	<string>947 837 668 572 0 0 2560 1409 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>820 423 920 859 0 0 2560 1409 </string>
+	<string>820 424 920 859 0 0 2560 1409 </string>
 	<key>NSWindow Frame TTWindow Basic</key>
 	<string>995 541 570 371 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow Man Page</key>
@@ -49,7 +49,7 @@
 	<key>NSWindow Frame TTWindow Pro</key>
 	<string>900 556 760 686 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow Solarized Dark</key>
-	<string>820 423 920 859 0 0 2560 1409 </string>
+	<string>820 424 920 859 0 0 2560 1409 </string>
 	<key>NSWindow Frame TTWindow Solarized Light</key>
 	<string>852 448 910 686 0 0 2560 1415 </string>
 	<key>ProfileCurrentVersion</key>

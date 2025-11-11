@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   4-Aug-2025  4:27pm
-# Modified :  23-Sep-2025  8:06pm
+# Modified :  17-Nov-2025  9:15pm
 #
 # Copyright © 2025 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -19,8 +19,7 @@ export SHELL_SESSIONS_DISABLE=1
 export SHELL_SESSION_HISTORY=0
 
 export NODE_PATH="/opt/homebrew/lib/node_modules"
-export PATH="/opt/bin:/opt/geedbla/bin:/opt/geedbla/scripts:/opt/homebrew/opt/ruby/bin:/opt/homebrew/opt/python@3.13/libexec/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/bin/geedbla:/opt/homebrew/lib/node_modules/npm"
-
+export PATH="/Library/Apple/usr/bin:/opt/venv/python3/bin:/opt/venv/ruby/shims:/opt/bin:/opt/geedbla/scripts:/opt/homebrew/opt/python3/libexec/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/homebrew/lib/node_modules/npm"
 export EDITOR="/usr/local/bin/bbedit --wait"
 export VISUAL="/usr/local/bin/bbedit"
 
@@ -33,16 +32,37 @@ export HISTSIZE=2000
 export SAVEHIST=1000
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_ENV_HINTS=1
-export COCOAPODS_DISABLE_STATS=1
 export HOMEBREW_CASK_OPTS="--no-quarantine --no-binaries"
-
 export EZA_CONFIG_DIR="$XDG_CONFIG_HOME/eza"
-export SOLARGRAPH_CACHE="$XDG_CACHE_HOME/.solargraph/cache"
-export SOLARGRAPH_GLOBAL_CONFIG="$HOME/.config/.solargraph/config.yml"
 export RIPGREP_CONFIG_PATH="$HOME/.config/rgrc.conf"
+
+export COCOAPODS_DISABLE_STATS=1
+export CP_HOME_DIR="$XDG_CACHE_HOME/.cocoapods/"
+
+#*****************************************************************************************
+# Node.js NPM setup environment variables
+#*****************************************************************************************
 export NODE_OPTIONS='--disable-warning=ExperimentalWarning'
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/config"
-export CP_HOME_DIR="$XDG_CACHE_HOME/.cocoapods/"
+
+#*****************************************************************************************
+# Ruby environment variables
+#*****************************************************************************************
+export RBENV_ROOT="/opt/venv/ruby"
+export SOLARGRAPH_CACHE="$XDG_CACHE_HOME/.solargraph/cache"
+export SOLARGRAPH_GLOBAL_CONFIG="$HOME/.config/.solargraph/config.yml"
+
+eval "$(rbenv init - zsh)"
+#*****************************************************************************************
+# setup python3 virtual environment
+#*****************************************************************************************
+source /opt/venv/python3/bin/activate
+
+#*****************************************************************************************
+# setup Z directory utility
+#*****************************************************************************************
+eval "$(zoxide init zsh)"
+
 #*****************************************************************************************
 # module load up
 #*****************************************************************************************
@@ -150,7 +170,6 @@ export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE="1"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 #*****************************************************************************************
 # useful aliases
 #*****************************************************************************************
@@ -185,12 +204,6 @@ export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE="1"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-#*****************************************************************************************
-# setup Z directory utility
-#*****************************************************************************************
-eval "$(zoxide init zsh)"
-
 #*****************************************************************************************
 # setup FZF
 #*****************************************************************************************
@@ -298,49 +311,6 @@ cdl() {
 # quick system update
 #*****************************************************************************************
 sysupdate() {
-	if command -v brew &>/dev/null; then
-		SUDO_PASSWORD=$(get_sudo_password)
-		start_persistant_sudo "$SUDO_PASSWORD"
-		sudo chmod -R 777 /Applications/* &>/dev/null
-		stop_persistant_sudo
-
-		brew update &>/dev/null
-		brew upgrade &>/dev/null
-		brew link --overwrie node &>/dev/null
-		brew autoremove &>/dev/null
-		brew cleanup &>/dev/null
-		rm -rf $(brew --cache) &>/dev/null
-
-		if command -v gem &>/dev/null; then
-			gem update &>/dev/null
-			gem update --system &>/dev/null
-			gem cleanup &>/dev/null
-		fi
-
-		if command -v pip3 &>/dev/null; then
-			pip3 install --upgrade pip &>/dev/null
-			pip3 install -U $(pip3 freeze | cut -d = -f 1) &>/dev/null
-		fi
-
-		if command -v npm &>/dev/null; then
-			npm install -g npm@latest &>/dev/null
-			npm update -g &>/dev/null
-		fi
-
-		SUDO_PASSWORD=$(get_sudo_password)
-		start_persistant_sudo "$SUDO_PASSWORD"
-
-		sudo xattr -cr /Applications/* &>/dev/null
-		sudo chown -R garyash:admin /opt/geedbla/* &>/dev/null
-		sudo chown -R root:admin /Applications/* &>/dev/null
-		sudo chmod -R 775 /Applications/* &>/dev/null
-		stop_persistant_sudo
-	fi
-
-	rm -rf "$XDG_CACHE_HOME/" &>/dev/null
-	mkdir -p "$XDG_CACHE_HOME/zsh"
-	history -p
-
 	stuff=(
 		"$HOME/.local"
 		"$HOME/.npm"
@@ -353,20 +323,55 @@ sysupdate() {
 		"$HOME/.config/zsh/.zsh_history"
 	)
 
+		if command -v gem &>/dev/null; then
+			gem update 					&>/dev/null
+			gem update --system 		&>/dev/null
+			gem cleanup 				&>/dev/null
+		fi
+
+		if command -v pip3 &>/dev/null; then
+			pip3 install --upgrade pip 						&>/dev/null
+			pip3 install -U $(pip3 freeze | cut -d = -f 1)	&>/dev/null
+		fi
+
+		if command -v npm &>/dev/null; then
+			npm install -g npm@latest 	&>/dev/null
+			npm update -g 				&>/dev/null
+		fi
+
+	find "$HOME/Library/CloudStorage/Dropbox/Data" -name "Keyboard Maestro Macros \(*.kmsync" -delete &>/dev/null
 	pkill -f '.*GradleDaemon.*'
 
-	SUDO_PASSWORD=$(get_sudo_password)
-	start_persistant_sudo "$SUDO_PASSWORD"
 	for item in "${stuff[@]}"; do
-		sudo rm -rf "$item" &>/dev/null
+		rm -rf "$item" &>/dev/null
 	done
 
-	stop_persistant_sudo
+	if command -v brew &>/dev/null; then
+		brew update 					&>/dev/null
+		brew upgrade 					&>/dev/null
+		brew link --overwrie node 		&>/dev/null
+		brew autoremove 				&>/dev/null
+		brew cleanup 					&>/dev/null
+		rm -rf "$(brew --cache)"		&>/dev/null
+
+
+		rm -rf "$XDG_CACHE_HOME/" &>/dev/null
+		mkdir -p "$XDG_CACHE_HOME/zsh"
+		history -p
+
+		start_persistant_sudo
+
+		sudo xattr -cr /Applications/* 				&>/dev/null
+		sudo chown -R garyash:admin /opt/geedbla/* 	&>/dev/null
+		sudo chown -R root:admin /Applications/* 	&>/dev/null
+		sudo chmod -R 775 /Applications/* 			&>/dev/null
+		stop_persistant_sudo
+	fi
+
 	unset SUDO_PASSWORD
 	setopt local_options no_monitor
-	find "$HOME/Library/CloudStorage/Dropbox/Data" -name "Keyboard Maestro Macros \(*.kmsync" -delete &>/dev/null
 
-	startup-banner.pl --dark
+  	#perl /opt/geedbla/scripts/startup-banner.pl --dark
 }
 
 #*****************************************************************************************
@@ -391,7 +396,6 @@ cleanhist() {
   mkdir -p "$HOME/.cache/zsh" &> /dev/null
   exec "$SHELL" -l
 }
-
 
 #*****************************************************************************************
 # generate a UUID
