@@ -32,7 +32,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>DVTDevicesWindowControllerSelectedDeviceIdentifier</key>
-	<string>00008310-0009729E21FBA01E</string>
+	<string>00008130-001835D622A0001C</string>
 	<key>DVTDevicesWindowControllerSelectedSimulatorIdentifier</key>
 	<string>EA2A5BC3-890E-443C-8841-64F8BE0D566D-mobiledevice</string>
 	<key>DVTDisclosureViewDisclosedStates</key>
@@ -133,7 +133,7 @@
 		<string>Screen</string>
 	</array>
 	<key>IDEAnalyticsMetricsNotifications.AnalyticsMetricsNotificationsController.lastRefreshAttemptDate</key>
-	<date>2025-11-30T21:30:30Z</date>
+	<date>2025-12-31T03:01:45Z</date>
 	<key>IDEAppStatisticsRunDestinationPlatform</key>
 	<dict>
 		<key>appletvos</key>
@@ -203,27 +203,27 @@
 	<dict>
 		<key>/Applications/Xcode.app/Contents/Applications/Accessibility Inspector.app</key>
 		<data>
-		0JIq9QLusf7RNAWLM2BVg0ddgJg=
+		17NRgCDS9L9x+3wGRSmTohPSjeE=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/FileMerge.app</key>
 		<data>
-		+Q3v+yznO9xiftTT+vVm9Izpq3s=
+		tVYR+tZ05T+0p0qyfOyjkPGdv5A=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Icon Composer.app</key>
 		<data>
-		tCG0/atjWiR5H59BaZXRZ4Q9xok=
+		9ihC4h/t1ctYMHlV6Cxnysfhp+k=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Instruments.app</key>
 		<data>
-		Tu12vg1l6hBr8tE6AJ7CA2Fn2Ig=
+		kZ312Uc/ZEDpa6S9OaHQDIptZew=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Reality Composer Pro.app</key>
 		<data>
-		IE5tUZEpg0sBxk3LHqaUYYmYTVA=
+		QpMgwiN3VUgoIEM51Aja57PC9jk=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app</key>
 		<data>
-		QL9zGdRcjK4TmOqwvGrQHJyEL0A=
+		FzlDWQuyjTV5Q9MGLrHcg1d76Es=
 		</data>
 		<key>/System/Library/CoreServices/CoreTypes.bundle</key>
 		<data>
@@ -259,6 +259,8 @@
 	<array/>
 	<key>IDELogNavigatorGroupByKey</key>
 	<false/>
+	<key>IDEMetalToolchainSelectedDuringFirstLaunch</key>
+	<true/>
 	<key>IDEModelAccessHasUserConsentForOnDeviceInteractions</key>
 	<true/>
 	<key>IDEOmnibar.location</key>
@@ -282,6 +284,7 @@
 	<real>560</real>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-appletvos</key>
 	<array>
+		<string>23K50</string>
 		<string>23J576</string>
 		<string>23J352</string>
 		<string>22L572</string>
@@ -291,6 +294,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-iphoneos</key>
 	<array>
+		<string>23C53</string>
 		<string>23B77</string>
 		<string>23A339</string>
 		<string>22F76</string>
@@ -300,6 +304,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-macosx</key>
 	<array>
+		<string>25C57</string>
 		<string>25B74</string>
 		<string>25A352</string>
 		<string>24F74</string>
@@ -309,6 +314,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-watchos</key>
 	<array>
+		<string>23S303</string>
 		<string>23S34</string>
 		<string>23R351</string>
 		<string>22T572</string>
@@ -318,6 +324,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-xros</key>
 	<array>
+		<string>23N301</string>
 		<string>23N45</string>
 		<string>23M336</string>
 		<string>22O473</string>
@@ -328,7 +335,7 @@
 	<key>IDEPlatformsFirstLaunchSelected-appletvos</key>
 	<true/>
 	<key>IDEPlatformsFirstLaunchSelected-iphoneos</key>
-	<false/>
+	<true/>
 	<key>IDEPlatformsFirstLaunchSelected-watchos</key>
 	<true/>
 	<key>IDEPlatformsFirstLaunchSelected-xros</key>
@@ -474,6 +481,8 @@
 	<string>17B48</string>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
+	<key>IDE_CA_Daily_UsedScriptingAPI</key>
+	<true/>
 	<key>LastExplicitInspectorVisibility</key>
 	<true/>
 	<key>NSColorPanelMode</key>
@@ -495,8 +504,8 @@
 	</array>
 	<key>NSSplitView Subview Frames com.apple.dt.Xcode.DevicesWidow.DevicesSplit</key>
 	<array>
-		<string>0.000000, 0.000000, 338.500000, 700.000000, NO, NO</string>
-		<string>338.500000, 0.000000, 845.500000, 700.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 230.000000, 700.000000, NO, NO</string>
+		<string>230.000000, 0.000000, 954.000000, 700.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v3 PlistColumns</key>
 	<data>
@@ -577,7 +586,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>892 397 710 722 0 0 2560 1409 </string>
+	<string>892 345 710 722 0 0 2560 1409 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
@@ -589,9 +598,9 @@
 	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
 	<string>692 392 359 150 0 0 2560 1409 </string>
 	<key>NSWindow Frame Products</key>
-	<string>768 385 1024 640 0 0 2560 1409 </string>
+	<string>768 386 1024 640 0 0 2560 1410 </string>
 	<key>NSWindow Frame com.apple.dt.xcode.devicesWindow</key>
-	<string>734 542 1184 700 0 0 2560 1409 </string>
+	<string>734 543 1184 700 0 0 2560 1410 </string>
 	<key>PegasusMultipleCursorsEnabled</key>
 	<true/>
 	<key>ProductMappingKey</key>

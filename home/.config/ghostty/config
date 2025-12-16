@@ -10,6 +10,7 @@
 # Copyright © 2025 By Gary Ash All rights reserved.
 #*****************************************************************************************
 
+auto-update-channel = tip
 title = "👻 Ghostty"
 font-size = 12
 font-family = "PragmataPro Liga"
