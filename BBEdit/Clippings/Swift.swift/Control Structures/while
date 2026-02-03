@@ -1,0 +1,3 @@
+#INDENT#repeat {
+	#placeholderstart#code#placeholderend#
+} while #placeholderstart#condition#placeholderend#

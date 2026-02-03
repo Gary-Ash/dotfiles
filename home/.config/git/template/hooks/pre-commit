@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+basedir=$(dirname "$0")
+"$basedir"/pre-commit.d/format-source.sh

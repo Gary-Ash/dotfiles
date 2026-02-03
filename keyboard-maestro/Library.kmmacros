@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>684876186.20532894</real>
+		<key>FocussedWindowConditionType</key>
+		<string>Exists</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
+						<integer>1165</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string>(*----------------------------------------------------------------------------------------
+ * 
+*--------------------------------------------------------------------------------------*)</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>1929</integer>
+						<key>KeyCode</key>
+						<integer>126</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>196608</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>1930</integer>
+						<key>KeyCode</key>
+						<integer>119</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>131072</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>684876186.20540702</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Applications/Utilities/Script Editor.app</string>
+				<key>ModificationDate</key>
+				<real>702179873.36375594</real>
+				<key>Name</key>
+				<string>Script Editor Dash Box Comment</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>(*--</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>6F3791D4-DD27-4365-A849-7A203BB1570A</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Script Editor</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Running</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.ScriptEditor2</string>
+					<key>Name</key>
+					<string>Script Editor</string>
+					<key>NewFile</key>
+					<string>/System/Applications/Utilities/Script Editor.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>60589654-19DB-457B-B21E-C4A13FCB84B4</string>
+		<key>UID</key>
+		<string>EC46E326-B2F6-4C1B-9E70-C1C9973F2A73</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>684876186.20532894</real>
+		<key>FocussedWindowConditionType</key>
+		<string>Exists</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
+						<integer>1173</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string>(*========================================================================================
+ * 
+*======================================================================================*)</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>1927</integer>
+						<key>KeyCode</key>
+						<integer>126</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>196608</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>1928</integer>
+						<key>KeyCode</key>
+						<integer>119</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>131072</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>684876186.20546806</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Applications/Utilities/Script Editor.app</string>
+				<key>ModificationDate</key>
+				<real>702180000.26339996</real>
+				<key>Name</key>
+				<string>Script Editor Box Equals Comment</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>(*===</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>BC290028-9DB3-4837-B535-B164A802C3C0</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Script Editor</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Running</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.ScriptEditor2</string>
+					<key>Name</key>
+					<string>Script Editor</string>
+					<key>NewFile</key>
+					<string>/System/Applications/Utilities/Script Editor.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>60589654-19DB-457B-B21E-C4A13FCB84B4</string>
+		<key>UID</key>
+		<string>EC46E326-B2F6-4C1B-9E70-C1C9973F2A73</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>684876186.20532894</real>
+		<key>FocussedWindowConditionType</key>
+		<string>Exists</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
+						<integer>1169</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string> ---------------------------------------------------------------------------------------------------
+</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>684876186.20544505</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Applications/Utilities/Script Editor.app</string>
+				<key>ModificationDate</key>
+				<real>702178950.74742198</real>
+				<key>Name</key>
+				<string>Script Editor Seperator Comment </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>---</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>75A5D769-0CF1-48E5-9147-CFED5D2C4ACC</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Script Editor</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Running</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.ScriptEditor2</string>
+					<key>Name</key>
+					<string>Script Editor</string>
+					<key>NewFile</key>
+					<string>/System/Applications/Utilities/Script Editor.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>60589654-19DB-457B-B21E-C4A13FCB84B4</string>
+		<key>UID</key>
+		<string>EC46E326-B2F6-4C1B-9E70-C1C9973F2A73</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>684876186.20532894</real>
+		<key>FocussedWindowConditionType</key>
+		<string>Exists</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
+						<integer>1163</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string>(*****************************************************************************************
+ *
+****************************************************************************************)</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>1925</integer>
+						<key>KeyCode</key>
+						<integer>126</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>196608</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>1926</integer>
+						<key>KeyCode</key>
+						<integer>119</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>131072</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>3885</integer>
+						<key>KeyCode</key>
+						<integer>49</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>684876186.205351</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Applications/Utilities/Script Editor.app</string>
+				<key>ModificationDate</key>
+				<real>744948679.03442001</real>
+				<key>Name</key>
+				<string>Script Editor Box Comment</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>(**</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>0B8229E9-5E88-496B-8C46-63BAA0F0AD5A</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Script Editor</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Running</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.ScriptEditor2</string>
+					<key>Name</key>
+					<string>Script Editor</string>
+					<key>NewFile</key>
+					<string>/System/Applications/Utilities/Script Editor.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>60589654-19DB-457B-B21E-C4A13FCB84B4</string>
+		<key>UID</key>
+		<string>EC46E326-B2F6-4C1B-9E70-C1C9973F2A73</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>588380868.02725506</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>4281</integer>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>set finderPath to ""try	tell application "Finder"		if (count of Finder windows) &gt; 0 then			set finderPath to quoted form of POSIX path of ((target of front Finder window) as text)		else			set finderPath to POSIX path of (path to home folder)		end if	end tellend try</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>DirName</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>16</integer>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>set ghosttyWasRunning to application "Ghostty" is runningif not ghosttyWasRunning then	tell application "Ghostty"		activate	end tell		repeat		try			do shell script "pgrep -x perl"			exit repeat		on error			delay 0.1		end try	end repeat	repeat		try			do shell script "pgrep -x perl"			delay 0.1		on error			exit repeat		end try	end repeatend iftell application "System Events"	tell application "Ghostty"		activate
+	end tellend tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>4673</integer>
+						<key>MacroActionType</key>
+						<string>SetActionDelay</string>
+						<key>Permanent</key>
+						<false/>
+						<key>Preference</key>
+						<string>SimulateKeystrokeNormalKey</string>
+						<key>Reset</key>
+						<false/>
+						<key>Value</key>
+						<string>0.01</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
+						<integer>4282</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string>cd %Variable%DirName%%LineFeed%</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>4283</integer>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>DirName</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>588529967.00609899</real>
+				<key>CustomIconData</key>
+				<data>
+				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
+				CyU64CI8AIgIxuBKBIDI9SBSIHBjCaT0H2+iGuG2G2G4
+				E4iAG6IGT+I8M8TgIEgKIEO0IEVjDMT0U8IEPCIEcuIF
+				DkNeJUM8NDD4RYMtCZETEbEdEfEhEjElEnEpErEtEuQI
+				ICAAEQEAAAMAAAABAEAAAAEBAAMAAAABAEAAAAECAAMA
+				AAAEAAAK4gEDAAMAAAABAAUAAAEGAAMAAAABAAIAAAEK
+				AAMAAAABAAEAAAERAAQAAAABAAAACAESAAMAAAABAAEA
+				AAEVAAMAAAABAAQAAAEWAAMAAAABAEAAAAEXAAQAAAAB
+				AAAKCAEcAAMAAAABAAEAAAEoAAMAAAABAAIAAAE9AAMA
+				AAABAAIAAAFSAAMAAAABAAEAAAFTAAMAAAAEAAAK6odz
+				AAcAAAfYAAAK8gAAFqAACAAIAAgACAABAAEAAQABAAAH
+				2GFwcGwCIAAAbW50clJHQiBYWVogB9kAAgAZAAsAGgAL
+				YWNzcEFQUEwAAAAAYXBwbAAAAAAAAAAAAAAAAAAAAAAA
+				APbWAAEAAAAA0y1hcHBsAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALZGVz
+				YwAAAQgAAABvZHNjbQAAAXgAAAWcY3BydAAABxQAAAA4
+				d3RwdAAAB0wAAAAUclhZWgAAB2AAAAAUZ1hZWgAAB3QA
+				AAAUYlhZWgAAB4gAAAAUclRSQwAAB5wAAAAOY2hhZAAA
+				B6wAAAAsYlRSQwAAB5wAAAAOZ1RSQwAAB5wAAAAOZGVz
+				YwAAAAAAAAAUR2VuZXJpYyBSR0IgUHJvZmlsZQAAAAAA
+				AAAAAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAG1sdWMAAAAAAAAAHwAAAAxza1NLAAAA
+				KAAAAYRkYURLAAAALgAAAaxjYUVTAAAAJAAAAdp2aVZO
+				AAAAJAAAAf5wdEJSAAAAJgAAAiJ1a1VBAAAAKgAAAkhm
+				ckZVAAAAKAAAAnJodUhVAAAAKAAAApp6aFRXAAAAFgAA
+				AsJuYk5PAAAAJgAAAthjc0NaAAAAIgAAAv5oZUlMAAAA
+				HgAAAyBpdElUAAAAKAAAAz5yb1JPAAAAJAAAA2ZkZURF
+				AAAALAAAA4prb0tSAAAAFgAAA7ZzdlNFAAAAJgAAAth6
+				aENOAAAAFgAAA8xqYUpQAAAAGgAAA+JlbEdSAAAAIgAA
+				A/xwdFBPAAAAJgAABB5ubE5MAAAAKAAABERlc0VTAAAA
+				JgAABB50aFRIAAAAJAAABGx0clRSAAAAIgAABJBmaUZJ
+				AAAAKAAABLJockhSAAAAKAAABNpwbFBMAAAALAAABQJy
+				dVJVAAAAIgAABS5hckVHAAAAJgAABVBlblVTAAAAJgAA
+				BXYAVgFhAGUAbwBiAGUAYwBuAP0AIABSAEcAQgAgAHAA
+				cgBvAGYAaQBsAEcAZQBuAGUAcgBlAGwAIABSAEcAQgAt
+				AGIAZQBzAGsAcgBpAHYAZQBsAHMAZQBQAGUAcgBmAGkA
+				bAAgAFIARwBCACAAZwBlAG4A6AByAGkAYwBDHqUAdQAg
+				AGgA7ABuAGgAIABSAEcAQgAgAEMAaAB1AG4AZwBQAGUA
+				cgBmAGkAbAAgAFIARwBCACAARwBlAG4A6QByAGkAYwBv
+				BBcEMAQzBDAEOwRMBD0EOAQ5ACAEPwRABD4ERAQwBDkE
+				OwAgAFIARwBCAFAAcgBvAGYAaQBsACAAZwDpAG4A6QBy
+				AGkAcQB1AGUAIABSAFYAQgDBAGwAdABhAGwA4QBuAG8A
+				cwAgAFIARwBCACAAcAByAG8AZgBpAGyQGnUoACAAUgBH
+				AEIAIIJyX2ljz4/wAEcAZQBuAGUAcgBpAHMAawAgAFIA
+				RwBCAC0AcAByAG8AZgBpAGwATwBiAGUAYwBuAP0AIABS
+				AEcAQgAgAHAAcgBvAGYAaQBsBeQF6AXVBeQF2QXcACAA
+				UgBHAEIAIAXbBdwF3AXZAFAAcgBvAGYAaQBsAG8AIABS
+				AEcAQgAgAGcAZQBuAGUAcgBpAGMAbwBQAHIAbwBmAGkA
+				bAAgAFIARwBCACAAZwBlAG4AZQByAGkAYwBBAGwAbABn
+				AGUAbQBlAGkAbgBlAHMAIABSAEcAQgAtAFAAcgBvAGYA
+				aQBsx3y8GAAgAFIARwBCACDVBLhc0wzHfGZukBoAIABS
+				AEcAQgAgY8+P8GWHTvZOAIIsACAAUgBHAEIAIDDXMO0w
+				1TChMKQw6wOTA7UDvQO5A7oDzAAgA8ADwQO/A8YDrwO7
+				ACAAUgBHAEIAUABlAHIAZgBpAGwAIABSAEcAQgAgAGcA
+				ZQBuAOkAcgBpAGMAbwBBAGwAZwBlAG0AZQBlAG4AIABS
+				AEcAQgAtAHAAcgBvAGYAaQBlAGwOQg4bDiMORA4fDiUO
+				TAAgAFIARwBCACAOFw4xDkgOJw5EDhsARwBlAG4AZQBs
+				ACAAUgBHAEIAIABQAHIAbwBmAGkAbABpAFkAbABlAGkA
+				bgBlAG4AIABSAEcAQgAtAHAAcgBvAGYAaQBpAGwAaQBH
+				AGUAbgBlAHIAaQENAGsAaQAgAFIARwBCACAAcAByAG8A
+				ZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAAcABy
+				AG8AZgBpAGwAIABSAEcAQgQeBDEESQQ4BDkAIAQ/BEAE
+				PgREBDgEOwRMACAAUgBHAEIGRQZEBkEAIAYqBjkGMQZK
+				BkEAIABSAEcAQgAgBicGRAY5BicGRQBHAGUAbgBlAHIA
+				aQBjACAAUgBHAEIAIABQAHIAbwBmAGkAbABldGV4dAAA
+				AABDb3B5cmlnaHQgMjAwNyBBcHBsZSBJbmMuLCBhbGwg
+				cmlnaHRzIHJlc2VydmVkLgBYWVogAAAAAAAA81IAAQAA
+				AAEWz1hZWiAAAAAAAAB0TQAAPe4AAAPQWFlaIAAAAAAA
+				AFp1AACscwAAFzRYWVogAAAAAAAAKBoAABWfAAC4NmN1
+				cnYAAAAAAAAAAQHNAABzZjMyAAAAAAABDEIAAAXe///z
+				JgAAB5IAAP2R///7ov///aMAAAPcAADAbIAAIFA4JBYN
+				B4RCYVC4ZDYdD4hEYlE4pFYtF4xGY1G4kBQNHwQCASCX
+				+AH/JY5KY0AQAAQC+Hw93u+31NYgFgwGQ+MhwOk493s9
+				Q5LpZKqNF5PJQSCgW5GcyWMZHU53O4YYMx0PDG8HY604
+				6nM5QAAgGAqPZ4TKJbBn9bQAFgyGwAEAoFTIzWMxE7DJ
+				4OjQ73W6Uu9Hk8gBHwMAH7iwAA8daMhCJq+gADAcDgAE
+				QqFzSzmQxkxDBiNxyZ8A6kw9XnhgVrQAF9gAHHswA+9t
+				h4/YwFZsjHHzvwACwbmM0FjQz2Sx0zDBgNhvpnW69Tqw
+				BrQUAEZ2QADe4AFn3wAvvEAHn5ZbLt7GN++eqDAbmQqF
+				TQ0GUyeXCxeNBtpq6mHuep6AAA8BsUxgdwOAA8wUAAJQ
+				aAAmwgAB3Qm3TePShqiAAmB8AABIFgYzK6jQaJmGU+6F
+				BcGQaNMdp2P9AAAJCBAAC/GoAB/HAAHjHYAF7HwAFrII
+				AH5IjzqKgbdwtC6BwymJ7xjD7MgmCg0GkZxmROhIWBiG
+				Qzq5FygHq7buirMoAGhNAAGnNYALafwAA5OLGsegkiH4
+				ADonXJaCwymUnpE666SoahnmdLKEBWF4YS8dp2kwfKYw
+				6kcNJhOYB0s4IFgWAA+U6uYIAggpyVGABEVNAp+yM3s+
+				plASRLmCYJjQapomhQ6DhSFoXDOeJ3UdSEOOskyToapM
+				MPRPcmPQe1mVdGYHglWRrmmaVboMFAVhZXh3ncTB9OBY
+				VjWStEM2YezDwIB4IgkNBsGqalrIKEwUhVbdun4mjqqZ
+				Ya1XGo1yqCAACI8AF1XYbRrmteKCBKFAUW2d5MXwfdM0
+				3cV/X+9B643gQCgLgoIgiNBtmwbGFoGEgTBPXh4Yifsi
+				01i1iYxjKWY3MQBgIAmCghkRuG0bOToEEQSBKM55HieB
+				MH8xmY35mmagBm6xseBwHggNBvG4behAAEIRBHo+k6Wt
+				wGbNp+oJTDJ6bZCoAatrBvm8buug+EIQ7EeLQ2Js0QYv
+				tKVvRtkAvPt4HgeNBwm+b+ug8D4P15HZMSO7j37/wCMQ
+				y8p52GgWr8QcRwnDroOg8D2WaVDLLsxy/MItDLCsNY2r
+				6wcZxHFrs4g5Lx4b0xyzdXtHXcy9HYsUtwIcONFRnJro
+				N+e0x34jj2P8OB/heH170R2eLatvkORHL8Wug18q/+kS
+				8M2F7KjXNp/wDSc35NChYMfsLs/FF7lVfYlXZuHUkAkL
+				w6ICCjIYYgCxsALh+IGB5zr/SVLIIEOIdMFRBGTHURdJ
+				UEDIJvg5B+EEIYRQjPSQEAAAEQEAAAMAAAABACAAAAEB
+				AAMAAAABACAAAAECAAMAAAAEAAAXcgEDAAMAAAABAAUA
+				AAEGAAMAAAABAAIAAAEKAAMAAAABAAEAAAERAAQAAAAB
+				AAASygESAAMAAAABAAEAAAEVAAMAAAABAAQAAAEWAAMA
+				AAABACAAAAEXAAQAAAABAAAD1QEcAAMAAAABAAEAAAEo
+				AAMAAAABAAIAAAE9AAMAAAABAAIAAAFSAAMAAAABAAEA
+				AAFTAAMAAAAEAAAXeodzAAcAAAfYAAAXggAAIQgACAAI
+				AAgACAABAAEAAQABAAAH2GFwcGwCIAAAbW50clJHQiBY
+				WVogB9kAAgAZAAsAGgALYWNzcEFQUEwAAAAAYXBwbAAA
+				AAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAALZGVzYwAAAQgAAABvZHNjbQAAAXgA
+				AAWcY3BydAAABxQAAAA4d3RwdAAAB0wAAAAUclhZWgAA
+				B2AAAAAUZ1hZWgAAB3QAAAAUYlhZWgAAB4gAAAAUclRS
+				QwAAB5wAAAAOY2hhZAAAB6wAAAAsYlRSQwAAB5wAAAAO
+				Z1RSQwAAB5wAAAAOZGVzYwAAAAAAAAAUR2VuZXJpYyBS
+				R0IgUHJvZmlsZQAAAAAAAAAAAAAAFEdlbmVyaWMgUkdC
+				IFByb2ZpbGUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG1sdWMAAAAA
+				AAAAHwAAAAxza1NLAAAAKAAAAYRkYURLAAAALgAAAaxj
+				YUVTAAAAJAAAAdp2aVZOAAAAJAAAAf5wdEJSAAAAJgAA
+				AiJ1a1VBAAAAKgAAAkhmckZVAAAAKAAAAnJodUhVAAAA
+				KAAAApp6aFRXAAAAFgAAAsJuYk5PAAAAJgAAAthjc0Na
+				AAAAIgAAAv5oZUlMAAAAHgAAAyBpdElUAAAAKAAAAz5y
+				b1JPAAAAJAAAA2ZkZURFAAAALAAAA4prb0tSAAAAFgAA
+				A7ZzdlNFAAAAJgAAAth6aENOAAAAFgAAA8xqYUpQAAAA
+				GgAAA+JlbEdSAAAAIgAAA/xwdFBPAAAAJgAABB5ubE5M
+				AAAAKAAABERlc0VTAAAAJgAABB50aFRIAAAAJAAABGx0
+				clRSAAAAIgAABJBmaUZJAAAAKAAABLJockhSAAAAKAAA
+				BNpwbFBMAAAALAAABQJydVJVAAAAIgAABS5hckVHAAAA
+				JgAABVBlblVTAAAAJgAABXYAVgFhAGUAbwBiAGUAYwBu
+				AP0AIABSAEcAQgAgAHAAcgBvAGYAaQBsAEcAZQBuAGUA
+				cgBlAGwAIABSAEcAQgAtAGIAZQBzAGsAcgBpAHYAZQBs
+				AHMAZQBQAGUAcgBmAGkAbAAgAFIARwBCACAAZwBlAG4A
+				6AByAGkAYwBDHqUAdQAgAGgA7ABuAGgAIABSAEcAQgAg
+				AEMAaAB1AG4AZwBQAGUAcgBmAGkAbAAgAFIARwBCACAA
+				RwBlAG4A6QByAGkAYwBvBBcEMAQzBDAEOwRMBD0EOAQ5
+				ACAEPwRABD4ERAQwBDkEOwAgAFIARwBCAFAAcgBvAGYA
+				aQBsACAAZwDpAG4A6QByAGkAcQB1AGUAIABSAFYAQgDB
+				AGwAdABhAGwA4QBuAG8AcwAgAFIARwBCACAAcAByAG8A
+				ZgBpAGyQGnUoACAAUgBHAEIAIIJyX2ljz4/wAEcAZQBu
+				AGUAcgBpAHMAawAgAFIARwBCAC0AcAByAG8AZgBpAGwA
+				TwBiAGUAYwBuAP0AIABSAEcAQgAgAHAAcgBvAGYAaQBs
+				BeQF6AXVBeQF2QXcACAAUgBHAEIAIAXbBdwF3AXZAFAA
+				cgBvAGYAaQBsAG8AIABSAEcAQgAgAGcAZQBuAGUAcgBp
+				AGMAbwBQAHIAbwBmAGkAbAAgAFIARwBCACAAZwBlAG4A
+				ZQByAGkAYwBBAGwAbABnAGUAbQBlAGkAbgBlAHMAIABS
+				AEcAQgAtAFAAcgBvAGYAaQBsx3y8GAAgAFIARwBCACDV
+				BLhc0wzHfGZukBoAIABSAEcAQgAgY8+P8GWHTvZOAIIs
+				ACAAUgBHAEIAIDDXMO0w1TChMKQw6wOTA7UDvQO5A7oD
+				zAAgA8ADwQO/A8YDrwO7ACAAUgBHAEIAUABlAHIAZgBp
+				AGwAIABSAEcAQgAgAGcAZQBuAOkAcgBpAGMAbwBBAGwA
+				ZwBlAG0AZQBlAG4AIABSAEcAQgAtAHAAcgBvAGYAaQBl
+				AGwOQg4bDiMORA4fDiUOTAAgAFIARwBCACAOFw4xDkgO
+				Jw5EDhsARwBlAG4AZQBsACAAUgBHAEIAIABQAHIAbwBm
+				AGkAbABpAFkAbABlAGkAbgBlAG4AIABSAEcAQgAtAHAA
+				cgBvAGYAaQBpAGwAaQBHAGUAbgBlAHIAaQENAGsAaQAg
+				AFIARwBCACAAcAByAG8AZgBpAGwAVQBuAGkAdwBlAHIA
+				cwBhAGwAbgB5ACAAcAByAG8AZgBpAGwAIABSAEcAQgQe
+				BDEESQQ4BDkAIAQ/BEAEPgREBDgEOwRMACAAUgBHAEIG
+				RQZEBkEAIAYqBjkGMQZKBkEAIABSAEcAQgAgBicGRAY5
+				BicGRQBHAGUAbgBlAHIAaQBjACAAUgBHAEIAIABQAHIA
+				bwBmAGkAbABldGV4dAAAAABDb3B5cmlnaHQgMjAwNyBB
+				cHBsZSBJbmMuLCBhbGwgcmlnaHRzIHJlc2VydmVkLgBY
+				WVogAAAAAAAA81IAAQAAAAEWz1hZWiAAAAAAAAB0TQAA
+				Pe4AAAPQWFlaIAAAAAAAAFp1AACscwAAFzRYWVogAAAA
+				AAAAKBoAABWfAAC4NmN1cnYAAAAAAAAAAQHNAABzZjMy
+				AAAAAAABDEIAAAXe///zJgAAB5IAAP2R///7ov///aMA
+				AAPcAADAbIAAIFA4JBYNB4RCYVC4MAwJDwDDIlE3/A36
+				/IxCA0HQ6SAeEAicou/IiAYjE5RAwHK3+8Xg70c5nG41
+				xBBEJRMgHs83kfwSCAQAHk83mAIeBAAAgFJ4rKYLTQAC
+				gaDkC3m22kBBA+IhGfHy9nqgyXYwBHA6AFNaQA9LZSaV
+				ToI/rkAAKCASfXC3m6hIIHRAID4+3w+EGSMMAAjiQAxc
+				YAHvjwA8MkAH/lac/cxRgOCD643A375Aw2HQ8fH6+30g
+				wPqwA+dcAB/sboBQKAGJtwA+90AJNJ4PvdzuwGBQMfXK
+				43FoYEGQ2Gz4/owgwN08plt0+4LtNrKeA+u9SYefXO5X
+				LygAFwwGD4/7lqtZlahcIRwNc+d5Sj66XQ6PMFQsCw+O
+				qQagKC+D5IU4DBnwgSTD6dZ1HU8wJAmCY+KWAJBgTDTq
+				vjA6CuAx57gAfzKj6dx2na8wIRWPiVgGQYFxjDkPPmkw
+				AHrHAAMwfo+skeDzAfIJAH6fx+j+BDNxnGiDPowakpWQ
+				J4ykrKBgVKwfqONL4N9JcEJMf6MH4S57TIYKGN7LkuoQ
+				+EOzVNyUoCAAEQEAAAMAAAABABAAAAEBAAMAAAABABAA
+				AAECAAMAAAAEAAAh2gEDAAMAAAABAAUAAAEGAAMAAAAB
+				AAIAAAEKAAMAAAABAAEAAAERAAQAAAABAAAfWgESAAMA
+				AAABAAEAAAEVAAMAAAABAAQAAAEWAAMAAAABABAAAAEX
+				AAQAAAABAAABrgEcAAMAAAABAAEAAAEoAAMAAAABAAIA
+				AAE9AAMAAAABAAIAAAFSAAMAAAABAAEAAAFTAAMAAAAE
+				AAAh4odzAAcAAAfYAAAh6gAAAAAACAAIAAgACAABAAEA
+				AQABAAAH2GFwcGwCIAAAbW50clJHQiBYWVogB9kAAgAZ
+				AAsAGgALYWNzcEFQUEwAAAAAYXBwbAAAAAAAAAAAAAAA
+				AAAAAAAAAPbWAAEAAAAA0y1hcHBsAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAALZGVzYwAAAQgAAABvZHNjbQAAAXgAAAWcY3BydAAA
+				BxQAAAA4d3RwdAAAB0wAAAAUclhZWgAAB2AAAAAUZ1hZ
+				WgAAB3QAAAAUYlhZWgAAB4gAAAAUclRSQwAAB5wAAAAO
+				Y2hhZAAAB6wAAAAsYlRSQwAAB5wAAAAOZ1RSQwAAB5wA
+				AAAOZGVzYwAAAAAAAAAUR2VuZXJpYyBSR0IgUHJvZmls
+				ZQAAAAAAAAAAAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAG1sdWMAAAAAAAAAHwAAAAxz
+				a1NLAAAAKAAAAYRkYURLAAAALgAAAaxjYUVTAAAAJAAA
+				Adp2aVZOAAAAJAAAAf5wdEJSAAAAJgAAAiJ1a1VBAAAA
+				KgAAAkhmckZVAAAAKAAAAnJodUhVAAAAKAAAApp6aFRX
+				AAAAFgAAAsJuYk5PAAAAJgAAAthjc0NaAAAAIgAAAv5o
+				ZUlMAAAAHgAAAyBpdElUAAAAKAAAAz5yb1JPAAAAJAAA
+				A2ZkZURFAAAALAAAA4prb0tSAAAAFgAAA7ZzdlNFAAAA
+				JgAAAth6aENOAAAAFgAAA8xqYUpQAAAAGgAAA+JlbEdS
+				AAAAIgAAA/xwdFBPAAAAJgAABB5ubE5MAAAAKAAABERl
+				c0VTAAAAJgAABB50aFRIAAAAJAAABGx0clRSAAAAIgAA
+				BJBmaUZJAAAAKAAABLJockhSAAAAKAAABNpwbFBMAAAA
+				LAAABQJydVJVAAAAIgAABS5hckVHAAAAJgAABVBlblVT
+				AAAAJgAABXYAVgFhAGUAbwBiAGUAYwBuAP0AIABSAEcA
+				QgAgAHAAcgBvAGYAaQBsAEcAZQBuAGUAcgBlAGwAIABS
+				AEcAQgAtAGIAZQBzAGsAcgBpAHYAZQBsAHMAZQBQAGUA
+				cgBmAGkAbAAgAFIARwBCACAAZwBlAG4A6AByAGkAYwBD
+				HqUAdQAgAGgA7ABuAGgAIABSAEcAQgAgAEMAaAB1AG4A
+				ZwBQAGUAcgBmAGkAbAAgAFIARwBCACAARwBlAG4A6QBy
+				AGkAYwBvBBcEMAQzBDAEOwRMBD0EOAQ5ACAEPwRABD4E
+				RAQwBDkEOwAgAFIARwBCAFAAcgBvAGYAaQBsACAAZwDp
+				AG4A6QByAGkAcQB1AGUAIABSAFYAQgDBAGwAdABhAGwA
+				4QBuAG8AcwAgAFIARwBCACAAcAByAG8AZgBpAGyQGnUo
+				ACAAUgBHAEIAIIJyX2ljz4/wAEcAZQBuAGUAcgBpAHMA
+				awAgAFIARwBCAC0AcAByAG8AZgBpAGwATwBiAGUAYwBu
+				AP0AIABSAEcAQgAgAHAAcgBvAGYAaQBsBeQF6AXVBeQF
+				2QXcACAAUgBHAEIAIAXbBdwF3AXZAFAAcgBvAGYAaQBs
+				AG8AIABSAEcAQgAgAGcAZQBuAGUAcgBpAGMAbwBQAHIA
+				bwBmAGkAbAAgAFIARwBCACAAZwBlAG4AZQByAGkAYwBB
+				AGwAbABnAGUAbQBlAGkAbgBlAHMAIABSAEcAQgAtAFAA
+				cgBvAGYAaQBsx3y8GAAgAFIARwBCACDVBLhc0wzHfGZu
+				kBoAIABSAEcAQgAgY8+P8GWHTvZOAIIsACAAUgBHAEIA
+				IDDXMO0w1TChMKQw6wOTA7UDvQO5A7oDzAAgA8ADwQO/
+				A8YDrwO7ACAAUgBHAEIAUABlAHIAZgBpAGwAIABSAEcA
+				QgAgAGcAZQBuAOkAcgBpAGMAbwBBAGwAZwBlAG0AZQBl
+				AG4AIABSAEcAQgAtAHAAcgBvAGYAaQBlAGwOQg4bDiMO
+				RA4fDiUOTAAgAFIARwBCACAOFw4xDkgOJw5EDhsARwBl
+				AG4AZQBsACAAUgBHAEIAIABQAHIAbwBmAGkAbABpAFkA
+				bABlAGkAbgBlAG4AIABSAEcAQgAtAHAAcgBvAGYAaQBp
+				AGwAaQBHAGUAbgBlAHIAaQENAGsAaQAgAFIARwBCACAA
+				cAByAG8AZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwAbgB5
+				ACAAcAByAG8AZgBpAGwAIABSAEcAQgQeBDEESQQ4BDkA
+				IAQ/BEAEPgREBDgEOwRMACAAUgBHAEIGRQZEBkEAIAYq
+				BjkGMQZKBkEAIABSAEcAQgAgBicGRAY5BicGRQBHAGUA
+				bgBlAHIAaQBjACAAUgBHAEIAIABQAHIAbwBmAGkAbABl
+				dGV4dAAAAABDb3B5cmlnaHQgMjAwNyBBcHBsZSBJbmMu
+				LCBhbGwgcmlnaHRzIHJlc2VydmVkLgBYWVogAAAAAAAA
+				81IAAQAAAAEWz1hZWiAAAAAAAAB0TQAAPe4AAAPQWFla
+				IAAAAAAAAFp1AACscwAAFzRYWVogAAAAAAAAKBoAABWf
+				AAC4NmN1cnYAAAAAAAAAAQHNAABzZjMyAAAAAAABDEIA
+				AAXe///zJgAAB5IAAP2R///7ov///aMAAAPcAADAbA==
+				</data>
+				<key>ModificationDate</key>
+				<real>790202325.49232304</real>
+				<key>Name</key>
+				<string>Launch Terminal</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>17</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6400</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>EDB7351F-54CC-43F9-B3A8-3A4969756E21</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>ToggleMacroUID</key>
+		<string>3DF149AD-8198-4769-850D-D198A1B529BE</string>
+		<key>UID</key>
+		<string>57145D98-A4FE-44D3-BC0F-5FBD493725E4</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>684876186.20532894</real>
+		<key>FocussedWindowConditionType</key>
+		<string>Exists</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
+						<integer>3100</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string>#!/usr/bin/env osascript
+(*****************************************************************************************
+ * 
+*
+* 
+*
+* Author   :  Gary Ash &lt;gary.ash@icloud.com&gt;
+* Created  :  </string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>3889</integer>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>9A4C953D-95C2-4742-8852-48008D5C7951</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
+						<integer>3102</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string> 
+* Modified :
+*
+* Copyright © %ICUDateTime%yyyy% By Gary Ash All rights reserved.
+****************************************************************************************) </string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>3494</integer>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>3492</integer>
+								<key>KeyCode</key>
+								<integer>126</integer>
+								<key>MacroActionType</key>
+								<string>SimulateKeystroke</string>
+								<key>Modifiers</key>
+								<integer>196608</integer>
+								<key>ReleaseAll</key>
+								<false/>
+								<key>TargetApplication</key>
+								<dict/>
+								<key>TargetingType</key>
+								<string>Front</string>
+							</dict>
+						</array>
+						<key>CountExpression</key>
+						<string>9</string>
+						<key>MacroActionType</key>
+						<string>Repeat</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>3495</integer>
+						<key>KeyCode</key>
+						<integer>119</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>131072</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>744754968.19897199</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Applications/Utilities/Script Editor.app</string>
+				<key>ModificationDate</key>
+				<real>745459988.72332597</real>
+				<key>Name</key>
+				<string>Script Editor  File Heading Comment</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>(*h</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>E08BA405-23CC-4377-ABE3-BCE9FC91A064</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Script Editor</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Running</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.ScriptEditor2</string>
+					<key>Name</key>
+					<string>Script Editor</string>
+					<key>NewFile</key>
+					<string>/System/Applications/Utilities/Script Editor.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>60589654-19DB-457B-B21E-C4A13FCB84B4</string>
+		<key>UID</key>
+		<string>EC46E326-B2F6-4C1B-9E70-C1C9973F2A73</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>588380868.02725506</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>4</integer>
+						<key>KeyCode</key>
+						<integer>124</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>197376</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>6</integer>
+						<key>KeyCode</key>
+						<integer>51</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>3887</integer>
+						<key>DisplayKind</key>
+						<string>Typing</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>formatDateTimeStamp((current date))
+on formatDateTimeStamp(thedate)	set output to ""	set ampm to ""	set monthsOfTheYear to {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}		set theday to (day of thedate)	if theday &lt; 10 then		set output to " "	end if	set output to (output &amp; (theday as string) &amp; "-" &amp; (item (month of thedate) of monthsOfTheYear) &amp; "-" &amp; (year of thedate as string) &amp; " ")		set hh to (hours of thedate)	if hh &lt; 12 then		if hh is equal to 0 then			set hh to 12		end if		set ampm to "am"	else		set ampm to "pm"		if hh &gt; 12 then			set hh to hh - 12		end if	end if		if hh &lt; 10 then		set output to (output &amp; " ")	end if		set output to (output &amp; (hh as string) &amp; ":")		set mm to (minutes of thedate)	if mm &lt; 10 then		set output to (output &amp; "0" &amp; (mm as string) &amp; ampm)	else		set output to (output &amp; (mm as string) &amp; ampm)	end if		return outputend formatDateTimeStamp</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<false/>
+						<key>TrimResultsNew</key>
+						<false/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>627439750.50834703</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Applications/Calendar.app</string>
+				<key>ModificationDate</key>
+				<real>775101910.61495495</real>
+				<key>Name</key>
+				<string>Modified Date Comment</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>46</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4352</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>9A4C953D-95C2-4742-8852-48008D5C7951</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>ToggleMacroUID</key>
+		<string>3DF149AD-8198-4769-850D-D198A1B529BE</string>
+		<key>UID</key>
+		<string>57145D98-A4FE-44D3-BC0F-5FBD493725E4</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>588380868.02725506</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>18</integer>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>try	tell application "Finder"		set desktopBounds to bounds of window of desktop		set w to round (((item 3 of desktopBounds) - 1100) / 2) rounding as taught in school		set h to round (((item 4 of desktopBounds) - 1000) / 2) rounding as taught in school		set finderBounds to {w, h, 1100 + w, 1000 + h}	end tell		tell application "Finder"		repeat with w in (get every Finder window)			activate			activate w			tell application "System Events" to tell process "Finder"				click menu item "Select All" of menu 1 of menu bar item "Edit" of menu bar 1				delay 0.5				key code 123				key code 126								tell application "Finder"					try						set (bounds of w) to finderBounds					on error						make new Finder window to home						set (bounds of window w) to finderBounds					end try				end tell			end tell		end repeat		set selection to {}	end tellend try
+
+try
+	tell application "System Events" to tell process "Finder"
+		click menu item "Clear Menu" of menu of menu item "Recent Items" of menu of menu bar item 1 of menu bar 1
+		click menu item "Clear Menu" of menu of menu item "Recent Folders" of menu of menu bar item "Go" of menu bar 1
+	end tell
+end try</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>588562773.26912904</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Library/CoreServices/Finder.app</string>
+				<key>ModificationDate</key>
+				<real>781147796.30918801</real>
+				<key>Name</key>
+				<string>Fix Finder Window</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>80</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>111</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6400</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>47D23103-35A5-453D-8FB9-2D9FF434693B</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>ToggleMacroUID</key>
+		<string>3DF149AD-8198-4769-850D-D198A1B529BE</string>
+		<key>UID</key>
+		<string>57145D98-A4FE-44D3-BC0F-5FBD493725E4</string>
+	</dict>
+</array>
+</plist>

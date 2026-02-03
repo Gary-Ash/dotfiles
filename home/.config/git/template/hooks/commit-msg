@@ -1,0 +1,50 @@
+#!/usr/bin/env zsh
+#*****************************************************************************************
+# commit-msg
+#
+# Git commit-msg hook to enforce commit message format
+#
+# Valid formats:
+#   - "Initial commit."
+#   - Messages beginning with: [BUG FIX], [FEATURE], [REFACTOR], [TEST CODE], [TIDY]
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  30-Jan-2026  2:43pm
+# Modified :
+#
+# Copyright © 2026 By Gary Ash All rights reserved.
+#*****************************************************************************************
+
+commit_msg_file="$1"
+commit_msg=$(cat "$commit_msg_file")
+
+# Check if message is exactly "Initial commit." (case insensitive)
+if echo "$commit_msg" | grep -qiE '^initial commit\.$'; then
+    exit 0
+fi
+
+# Check if message starts with one of the required tags
+if echo "$commit_msg" | grep -qE '^\[(BUG FIX|FEATURE|REFACTOR|TEST CODE|TIDY)\]'; then
+    exit 0
+fi
+
+# If we get here, the commit message is invalid
+echo "ERROR: Invalid commit message format."
+echo ""
+echo "Commit message must be either:"
+echo "  - Exactly: 'Initial commit.'"
+echo "  - Or begin with one of these tags:"
+echo "    [BUG FIX], [FEATURE], [REFACTOR], [TEST CODE], [TIDY]"
+echo ""
+echo "Your message:"
+echo "  $commit_msg"
+echo ""
+echo "Examples:"
+echo "  Initial commit."
+echo "  [FEATURE] Add user authentication"
+echo "  [BUG FIX] Resolve null pointer exception in parser"
+echo "  [REFACTOR] Extract method for validation logic"
+echo "  [TEST CODE] Add integration tests for API endpoints"
+echo "  [TIDY] Remove unused imports"
+
+exit 1

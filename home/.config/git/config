@@ -1,0 +1,207 @@
+[user]
+	name       = Gary Ash
+	signingkey = ~/.ssh/id_ed25519.pub
+	email      = gary.ash@icloud.com
+
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed_signers
+
+[core]
+	autocrlf          = input
+	compression       = 9
+	filemode          = false
+	precomposeUnicode = false
+	editor 			  = bbedit --wait --resume
+	pager 			  = delta
+
+[delta]
+	max-line-length = 0
+	true-color      = always
+	line-numbers    = true
+	tabs            = 4
+	syntax-theme    = Solarized (dark)
+	side-by-side    = true
+    features     	= navigate hyperlinks line-numbers decorations
+
+[pager]
+	blame  = delta
+	diff   = delta
+	show   = delta
+	log    = delta
+	reflog = delta
+
+[protocol]
+	version = 2
+
+[color "branch"]
+	current         = black
+	local           = normal
+	remote          = magenta bold
+
+[color "decorate"]
+  branch       = white bold
+  remoteBranch = cyan bold
+  tag          = red
+  stash        = magenta
+  HEAD         = green
+
+[color "diff"]
+   commit     = yellow
+   func       = cyan
+   meta       = blue
+   frag       = cyan
+   old        = red
+   new        = green
+   newMoved   = cyan
+   oldMoved   = blue
+   context    = default
+   whitespace = red
+
+[color "status"]
+	added           = green
+	changed         = blue
+	updated			= yellow
+	untracked       = cyan
+
+[color "interactive"]
+  error        = red bold
+  header       = cyan
+  help         = yellow bold
+  prompt       = magenta bold
+
+[column]
+	ui = auto
+
+[alias]
+	tags            = "tag -l"
+	branches        = "branch -a"
+	remotes         = "remote -v"
+	init-me 		= "!git init --template ~/.config/git/template"		 # initialize a repository from my template of hooks
+	logg            = "log --pretty=fuller --decorate --graph --all --show-signature"
+	difft           = "difftool -y"    		                 # use the my external diff tool w/o prompting
+	unstage         = "restore --staged ."                   # unstage the named file(s)
+	discard         = "checkout --"                          # undo last commit
+	cloner          = "clone --recursive "                   # clone submodules too
+	pushf           = "push --force "
+	amend           = "commit --amend --reuse-message=HEAD "
+	delete-merged   = "git branch --merged | grep -i -v -E \"master|main|develop|dev\"| xargs git branch -d"
+	trim            = "!f() { git branch | grep -v \"main\" | grep -v \"master\" | grep -v \"^*\" | xargs git branch -D; git remote prune rigin; }; f"
+	fuckit          = "!git clean -df  && git reset --hard "https://opengraph.githubassets.com/a567aa8ccfb1b536544aeff45e77943c011ad5abc28080448240bae4e5694f99/git-for-windows/build-extra
+	pruner          = "!git prune --expire=now && git reflog expire --expire-unreachable=now --rewrite --all"
+	oops			= "!git  add -A  && git commit --amend --reuse-message=HEAD && git push --force"
+    co-author 		= "!f() { \
+        if [ -n \"$1\" ] && [ -n \"$2\" ]; then \
+            GIT_EDITOR=\"git interpret-trailers --in-place --trailer='Co-authored-by: $1 <$2>'\" git commit --amend; \
+        fi \
+    }; f"
+
+
+[url "https://github.com/"]
+	insteadOf       = gh:
+
+[url "https://gist.github.com/"]
+	insteadOf       = gist:
+
+[filter "hawser"]
+	clean           = git hawser clean %f
+	smudge          = git hawser smudge %f
+	required        = true
+
+[filter "lfs"]
+	clean           = git-lfs clean -- %f
+	smudge          = git-lfs smudge -- %f
+	process         = git-lfs filter-process
+	required        = true
+
+[gpg]
+	format = ssh
+
+[help]
+	autocorrect     = 1
+
+[rerere]
+	enabled = true
+	autoupdate = true
+
+[submodule]
+	fetchJobs = 0
+	recurse   = true
+
+[status]
+	showStash        = true
+	submodule        = 1
+	submoduleSummary = true
+	showuntrackedfiles = all
+
+[log]
+	date = human
+	decorate = fuller
+
+[push]
+	default         = simple
+	autoSetupRemote = true
+	followTags      = true
+
+[commit]
+	verbose  = true
+	gpgsign = true
+	verbose  = true
+
+[tag]
+	gpgsign = true
+	sort    = -v:refname
+
+[fetch]
+    all = true
+	prune = true
+    pruneTags = true
+	writeCommitGraph = true
+
+[gc]
+	writeCommitGraph = true
+
+[rebase]
+	autosquash = true
+
+[pull]
+	ff = only
+
+[diff "utf16"]
+	textconv = "iconv -f utf-16 -t utf-8"
+
+[diff "plist"]
+	textconv = "plutil -convert xml1 -o -"
+
+[diff "bin"]
+    textconv = hexdump -v -C
+    binary   = true
+
+[diff]
+	tool = Kaleidoscope
+    guitool   = Kaleidoscope
+    submodule = log
+
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	prompt        = false
+	trustExitCode = true
+
+[merge]
+	tool = Kaleidoscope
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+	prompt        = false
+
+[difftool]
+	prompt = false
+	trustExitCode = true
+
+[mergetool]
+	prompt = false
+
+[includeIf "gitdir:/Users/garyash/Developer/GeeDblA/**"]
+	path = "~/.config/git/geedbla.config"
+[init]
+	defaultBranch = main

@@ -1,0 +1,54 @@
+#*****************************************************************************************
+# config
+#
+# This my Ghostty configuration
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  30-Jan-2026  2:43pm
+# Modified :
+#
+# Copyright © 2026 By Gary Ash All rights reserved.
+#*****************************************************************************************
+
+auto-update-channel = tip
+title = "👻 Ghostty"
+font-size = 12
+font-family = "PragmataPro Liga"
+#font-feature = +ss15
+shell-integration = "zsh"
+shell-integration-features = no-cursor, title, ssh-terminfo
+window-height = 70
+window-width = 180
+window-colorspace = "display-p3"
+window-save-state = always
+
+cursor-style = "block"
+confirm-close-surface = false
+
+quit-after-last-window-closed = true
+keybind = shift+enter=text:\x1b\r
+#*****************************************************************************************
+# terminal theme - solarized dark
+#*****************************************************************************************
+palette              = 0=#184956
+palette              = 1=#fa5750
+palette              = 2=#75b938
+palette              = 3=#dbb32d
+palette              = 4=#4695f7
+palette              = 5=#f275be
+palette              = 6=#41c7b9
+palette              = 7=#adbcbc
+palette              = 8=#72898f
+palette              = 9=#ff665c
+palette              = 10=#84c747
+palette              = 11=#ebc13d
+palette              = 12=#58a3ff
+palette              = 13=#ff84cd
+palette              = 14=#53d6c7
+palette              = 15=#cad8d9
+background           = #103c48
+foreground           = #adbcbc
+cursor-color         = #ff0000
+cursor-text          = #ff0000
+selection-background = #184956
+selection-foreground = #53d6c7
