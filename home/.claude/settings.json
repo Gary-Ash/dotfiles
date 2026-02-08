@@ -1,6 +1,9 @@
 {
   "statusLine": {
     "type": "command",
-    "command": "~/.claude/statusline.sh"
+    "command": "perl ~/.claude/statusline.pl"
+  },
+  "enabledPlugins": {
+    "swift-lsp@claude-plugins-official": true
   }
 }

@@ -9,7 +9,7 @@
 #   - Messages beginning with: [BUG FIX], [FEATURE], [REFACTOR], [TEST CODE], [TIDY]
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :  30-Jan-2026  2:43pm
+# Created  :   8-Feb-2026  3:47pm
 # Modified :
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
@@ -20,12 +20,12 @@ commit_msg=$(cat "$commit_msg_file")
 
 # Check if message is exactly "Initial commit." (case insensitive)
 if echo "$commit_msg" | grep -qiE '^initial commit\.$'; then
-    exit 0
+	exit 0
 fi
 
 # Check if message starts with one of the required tags
 if echo "$commit_msg" | grep -qE '^\[(BUG FIX|FEATURE|REFACTOR|TEST CODE|TIDY)\]'; then
-    exit 0
+	exit 0
 fi
 
 # If we get here, the commit message is invalid
