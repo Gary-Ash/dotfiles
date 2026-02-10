@@ -18,6 +18,80 @@
 						<key>Action</key>
 						<string>ByTyping</string>
 						<key>ActionUID</key>
+						<integer>1169</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string> ---------------------------------------------------------------------------------------------------
+</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>684876186.20544505</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Applications/Utilities/Script Editor.app</string>
+				<key>ModificationDate</key>
+				<real>702178950.74742198</real>
+				<key>Name</key>
+				<string>Script Editor Seperator Comment </string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>---</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>75A5D769-0CF1-48E5-9147-CFED5D2C4ACC</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Script Editor</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Running</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.ScriptEditor2</string>
+					<key>Name</key>
+					<string>Script Editor</string>
+					<key>NewFile</key>
+					<string>/System/Applications/Utilities/Script Editor.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>60589654-19DB-457B-B21E-C4A13FCB84B4</string>
+		<key>UID</key>
+		<string>EC46E326-B2F6-4C1B-9E70-C1C9973F2A73</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>684876186.20532894</real>
+		<key>FocussedWindowConditionType</key>
+		<string>Exists</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
 						<integer>1165</integer>
 						<key>MacroActionType</key>
 						<string>InsertText</string>
@@ -232,80 +306,6 @@
 						<key>Action</key>
 						<string>ByTyping</string>
 						<key>ActionUID</key>
-						<integer>1169</integer>
-						<key>MacroActionType</key>
-						<string>InsertText</string>
-						<key>TargetApplication</key>
-						<dict/>
-						<key>TargetingType</key>
-						<string>Front</string>
-						<key>Text</key>
-						<string> ---------------------------------------------------------------------------------------------------
-</string>
-					</dict>
-				</array>
-				<key>CreationDate</key>
-				<real>684876186.20544505</real>
-				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/System/Applications/Utilities/Script Editor.app</string>
-				<key>ModificationDate</key>
-				<real>702178950.74742198</real>
-				<key>Name</key>
-				<string>Script Editor Seperator Comment </string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>MacroTriggerType</key>
-						<string>TypedString</string>
-						<key>SimulateDeletes</key>
-						<true/>
-						<key>TypedString</key>
-						<string>---</string>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>75A5D769-0CF1-48E5-9147-CFED5D2C4ACC</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>Script Editor</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Running</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.apple.ScriptEditor2</string>
-					<key>Name</key>
-					<string>Script Editor</string>
-					<key>NewFile</key>
-					<string>/System/Applications/Utilities/Script Editor.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>ToggleMacroUID</key>
-		<string>60589654-19DB-457B-B21E-C4A13FCB84B4</string>
-		<key>UID</key>
-		<string>EC46E326-B2F6-4C1B-9E70-C1C9973F2A73</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CreationDate</key>
-		<real>684876186.20532894</real>
-		<key>FocussedWindowConditionType</key>
-		<string>Exists</string>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Action</key>
-						<string>ByTyping</string>
-						<key>ActionUID</key>
 						<integer>1163</integer>
 						<key>MacroActionType</key>
 						<string>InsertText</string>
@@ -417,6 +417,355 @@
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
+		<real>684876186.20532894</real>
+		<key>FocussedWindowConditionType</key>
+		<string>Exists</string>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
+						<integer>3100</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string>#!/usr/bin/env osascript
+(*****************************************************************************************
+ * 
+*
+* 
+*
+* Author   :  Gary Ash &lt;gary.ash@icloud.com&gt;
+* Created  :  </string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>3889</integer>
+						<key>Asynchronously</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteMacro</string>
+						<key>MacroUID</key>
+						<string>9A4C953D-95C2-4742-8852-48008D5C7951</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseParameter</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>ActionUID</key>
+						<integer>3102</integer>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string> 
+* Modified :
+*
+* Copyright © %ICUDateTime%yyyy% By Gary Ash All rights reserved.
+****************************************************************************************) </string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>3494</integer>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>ActionUID</key>
+								<integer>3492</integer>
+								<key>KeyCode</key>
+								<integer>126</integer>
+								<key>MacroActionType</key>
+								<string>SimulateKeystroke</string>
+								<key>Modifiers</key>
+								<integer>196608</integer>
+								<key>ReleaseAll</key>
+								<false/>
+								<key>TargetApplication</key>
+								<dict/>
+								<key>TargetingType</key>
+								<string>Front</string>
+							</dict>
+						</array>
+						<key>CountExpression</key>
+						<string>9</string>
+						<key>MacroActionType</key>
+						<string>Repeat</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>3495</integer>
+						<key>KeyCode</key>
+						<integer>119</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>131072</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>744754968.19897199</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Applications/Utilities/Script Editor.app</string>
+				<key>ModificationDate</key>
+				<real>745459988.72332597</real>
+				<key>Name</key>
+				<string>Script Editor  File Heading Comment</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>(*h</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>E08BA405-23CC-4377-ABE3-BCE9FC91A064</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Script Editor</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Running</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.ScriptEditor2</string>
+					<key>Name</key>
+					<string>Script Editor</string>
+					<key>NewFile</key>
+					<string>/System/Applications/Utilities/Script Editor.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>60589654-19DB-457B-B21E-C4A13FCB84B4</string>
+		<key>UID</key>
+		<string>EC46E326-B2F6-4C1B-9E70-C1C9973F2A73</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>588380868.02725506</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>18</integer>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>try	tell application "Finder"		set desktopBounds to bounds of window of desktop		set w to round (((item 3 of desktopBounds) - 1100) / 2) rounding as taught in school		set h to round (((item 4 of desktopBounds) - 1000) / 2) rounding as taught in school		set finderBounds to {w, h, 1100 + w, 1000 + h}	end tell		tell application "Finder"		repeat with w in (get every Finder window)			activate			activate w			tell application "System Events" to tell process "Finder"				click menu item "Select All" of menu 1 of menu bar item "Edit" of menu bar 1				delay 0.5				key code 123				key code 126								tell application "Finder"					try						set (bounds of w) to finderBounds					on error						make new Finder window to home						set (bounds of window w) to finderBounds					end try				end tell			end tell		end repeat		set selection to {}	end tellend try
+
+try
+	tell application "System Events" to tell process "Finder"
+		click menu item "Clear Menu" of menu of menu item "Recent Items" of menu of menu bar item 1 of menu bar 1
+		click menu item "Clear Menu" of menu of menu item "Recent Folders" of menu of menu bar item "Go" of menu bar 1
+	end tell
+end try</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>588562773.26912904</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Library/CoreServices/Finder.app</string>
+				<key>ModificationDate</key>
+				<real>781147796.30918801</real>
+				<key>Name</key>
+				<string>Fix Finder Window</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>80</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>111</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6400</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>47D23103-35A5-453D-8FB9-2D9FF434693B</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>ToggleMacroUID</key>
+		<string>3DF149AD-8198-4769-850D-D198A1B529BE</string>
+		<key>UID</key>
+		<string>57145D98-A4FE-44D3-BC0F-5FBD493725E4</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>588380868.02725506</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionUID</key>
+						<integer>4</integer>
+						<key>KeyCode</key>
+						<integer>124</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>197376</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>6</integer>
+						<key>KeyCode</key>
+						<integer>51</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>ActionUID</key>
+						<integer>3887</integer>
+						<key>DisplayKind</key>
+						<string>Typing</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IncludedVariables</key>
+						<array>
+							<string>9999</string>
+						</array>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>formatDateTimeStamp((current date))
+on formatDateTimeStamp(thedate)	set output to ""	set ampm to ""	set monthsOfTheYear to {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}		set theday to (day of thedate)	if theday &lt; 10 then		set output to " "	end if	set output to (output &amp; (theday as string) &amp; "-" &amp; (item (month of thedate) of monthsOfTheYear) &amp; "-" &amp; (year of thedate as string) &amp; " ")		set hh to (hours of thedate)	if hh &lt; 12 then		if hh is equal to 0 then			set hh to 12		end if		set ampm to "am"	else		set ampm to "pm"		if hh &gt; 12 then			set hh to hh - 12		end if	end if		if hh &lt; 10 then		set output to (output &amp; " ")	end if		set output to (output &amp; (hh as string) &amp; ":")		set mm to (minutes of thedate)	if mm &lt; 10 then		set output to (output &amp; "0" &amp; (mm as string) &amp; ampm)	else		set output to (output &amp; (mm as string) &amp; ampm)	end if		return outputend formatDateTimeStamp</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<false/>
+						<key>TrimResultsNew</key>
+						<false/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>627439750.50834703</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/System/Applications/Calendar.app</string>
+				<key>ModificationDate</key>
+				<real>775101910.61495495</real>
+				<key>Name</key>
+				<string>Modified Date Comment</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>46</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4352</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>9A4C953D-95C2-4742-8852-48008D5C7951</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>ToggleMacroUID</key>
+		<string>3DF149AD-8198-4769-850D-D198A1B529BE</string>
+		<key>UID</key>
+		<string>57145D98-A4FE-44D3-BC0F-5FBD493725E4</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
 		<real>588380868.02725506</real>
 		<key>Macros</key>
 		<array>
@@ -441,7 +790,8 @@
 						<key>Path</key>
 						<string></string>
 						<key>Text</key>
-						<string>set finderPath to ""try	tell application "Finder"		if (count of Finder windows) &gt; 0 then			set finderPath to quoted form of POSIX path of ((target of front Finder window) as text)		else			set finderPath to POSIX path of (path to home folder)		end if	end tellend try</string>
+						<string>set finderPath to ""try	tell application "Finder"		if (count of Finder windows) &gt; 0 then			set finderPath to quoted form of POSIX path of ((target of front Finder window) as text)		else			set finderPath to POSIX path of (path to home folder)		end if	end tell
+end try</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 						<key>TrimResults</key>
@@ -455,7 +805,7 @@
 					</dict>
 					<dict>
 						<key>ActionUID</key>
-						<integer>16</integer>
+						<integer>5063</integer>
 						<key>DisplayKind</key>
 						<string>None</string>
 						<key>HonourFailureSettings</key>
@@ -471,8 +821,9 @@
 						<key>Path</key>
 						<string></string>
 						<key>Text</key>
-						<string>set ghosttyWasRunning to application "Ghostty" is runningif not ghosttyWasRunning then	tell application "Ghostty"		activate	end tell		repeat		try			do shell script "pgrep -x perl"			exit repeat		on error			delay 0.1		end try	end repeat	repeat		try			do shell script "pgrep -x perl"			delay 0.1		on error			exit repeat		end try	end repeatend iftell application "System Events"	tell application "Ghostty"		activate
-	end tellend tell</string>
+						<string>tell application "System Events"	set appIsRunning to (name of processes) contains "Ghostty"end tellif not appIsRunning then	tell application "Ghostty" to activateend iftell application "System Events"	repeat until exists window 1 of application process "Ghostty"		delay 0.5	end repeat
+	tell application "Ghostty" to activate
+end tell</string>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 						<key>TrimResults</key>
@@ -851,7 +1202,7 @@
 				AAXe///zJgAAB5IAAP2R///7ov///aMAAAPcAADAbA==
 				</data>
 				<key>ModificationDate</key>
-				<real>790202325.49232304</real>
+				<real>792449855.66757298</real>
 				<key>Name</key>
 				<string>Launch Terminal</string>
 				<key>Triggers</key>
@@ -869,355 +1220,6 @@
 				</array>
 				<key>UID</key>
 				<string>EDB7351F-54CC-43F9-B3A8-3A4969756E21</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>Global Macro Group</string>
-		<key>ToggleMacroUID</key>
-		<string>3DF149AD-8198-4769-850D-D198A1B529BE</string>
-		<key>UID</key>
-		<string>57145D98-A4FE-44D3-BC0F-5FBD493725E4</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CreationDate</key>
-		<real>684876186.20532894</real>
-		<key>FocussedWindowConditionType</key>
-		<string>Exists</string>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>Action</key>
-						<string>ByTyping</string>
-						<key>ActionUID</key>
-						<integer>3100</integer>
-						<key>MacroActionType</key>
-						<string>InsertText</string>
-						<key>TargetApplication</key>
-						<dict/>
-						<key>TargetingType</key>
-						<string>Front</string>
-						<key>Text</key>
-						<string>#!/usr/bin/env osascript
-(*****************************************************************************************
- * 
-*
-* 
-*
-* Author   :  Gary Ash &lt;gary.ash@icloud.com&gt;
-* Created  :  </string>
-					</dict>
-					<dict>
-						<key>ActionUID</key>
-						<integer>3889</integer>
-						<key>Asynchronously</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>ExecuteMacro</string>
-						<key>MacroUID</key>
-						<string>9A4C953D-95C2-4742-8852-48008D5C7951</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>UseParameter</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Action</key>
-						<string>ByTyping</string>
-						<key>ActionUID</key>
-						<integer>3102</integer>
-						<key>MacroActionType</key>
-						<string>InsertText</string>
-						<key>TargetApplication</key>
-						<dict/>
-						<key>TargetingType</key>
-						<string>Front</string>
-						<key>Text</key>
-						<string> 
-* Modified :
-*
-* Copyright © %ICUDateTime%yyyy% By Gary Ash All rights reserved.
-****************************************************************************************) </string>
-					</dict>
-					<dict>
-						<key>ActionUID</key>
-						<integer>3494</integer>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>ActionUID</key>
-								<integer>3492</integer>
-								<key>KeyCode</key>
-								<integer>126</integer>
-								<key>MacroActionType</key>
-								<string>SimulateKeystroke</string>
-								<key>Modifiers</key>
-								<integer>196608</integer>
-								<key>ReleaseAll</key>
-								<false/>
-								<key>TargetApplication</key>
-								<dict/>
-								<key>TargetingType</key>
-								<string>Front</string>
-							</dict>
-						</array>
-						<key>CountExpression</key>
-						<string>9</string>
-						<key>MacroActionType</key>
-						<string>Repeat</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>ActionUID</key>
-						<integer>3495</integer>
-						<key>KeyCode</key>
-						<integer>119</integer>
-						<key>MacroActionType</key>
-						<string>SimulateKeystroke</string>
-						<key>Modifiers</key>
-						<integer>131072</integer>
-						<key>ReleaseAll</key>
-						<false/>
-						<key>TargetApplication</key>
-						<dict/>
-						<key>TargetingType</key>
-						<string>Front</string>
-					</dict>
-				</array>
-				<key>CreationDate</key>
-				<real>744754968.19897199</real>
-				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/System/Applications/Utilities/Script Editor.app</string>
-				<key>ModificationDate</key>
-				<real>745459988.72332597</real>
-				<key>Name</key>
-				<string>Script Editor  File Heading Comment</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>MacroTriggerType</key>
-						<string>TypedString</string>
-						<key>SimulateDeletes</key>
-						<true/>
-						<key>TypedString</key>
-						<string>(*h</string>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>E08BA405-23CC-4377-ABE3-BCE9FC91A064</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>Script Editor</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Running</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.apple.ScriptEditor2</string>
-					<key>Name</key>
-					<string>Script Editor</string>
-					<key>NewFile</key>
-					<string>/System/Applications/Utilities/Script Editor.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>ToggleMacroUID</key>
-		<string>60589654-19DB-457B-B21E-C4A13FCB84B4</string>
-		<key>UID</key>
-		<string>EC46E326-B2F6-4C1B-9E70-C1C9973F2A73</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CreationDate</key>
-		<real>588380868.02725506</real>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>ActionUID</key>
-						<integer>4</integer>
-						<key>KeyCode</key>
-						<integer>124</integer>
-						<key>MacroActionType</key>
-						<string>SimulateKeystroke</string>
-						<key>Modifiers</key>
-						<integer>197376</integer>
-						<key>ReleaseAll</key>
-						<false/>
-						<key>TargetApplication</key>
-						<dict/>
-						<key>TargetingType</key>
-						<string>Front</string>
-					</dict>
-					<dict>
-						<key>ActionUID</key>
-						<integer>6</integer>
-						<key>KeyCode</key>
-						<integer>51</integer>
-						<key>MacroActionType</key>
-						<string>SimulateKeystroke</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-						<key>ReleaseAll</key>
-						<false/>
-						<key>TargetApplication</key>
-						<dict/>
-						<key>TargetingType</key>
-						<string>Front</string>
-					</dict>
-					<dict>
-						<key>ActionUID</key>
-						<integer>3887</integer>
-						<key>DisplayKind</key>
-						<string>Typing</string>
-						<key>HonourFailureSettings</key>
-						<true/>
-						<key>IncludeStdErr</key>
-						<false/>
-						<key>IncludedVariables</key>
-						<array>
-							<string>9999</string>
-						</array>
-						<key>MacroActionType</key>
-						<string>ExecuteAppleScript</string>
-						<key>Path</key>
-						<string></string>
-						<key>Text</key>
-						<string>formatDateTimeStamp((current date))
-on formatDateTimeStamp(thedate)	set output to ""	set ampm to ""	set monthsOfTheYear to {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}		set theday to (day of thedate)	if theday &lt; 10 then		set output to " "	end if	set output to (output &amp; (theday as string) &amp; "-" &amp; (item (month of thedate) of monthsOfTheYear) &amp; "-" &amp; (year of thedate as string) &amp; " ")		set hh to (hours of thedate)	if hh &lt; 12 then		if hh is equal to 0 then			set hh to 12		end if		set ampm to "am"	else		set ampm to "pm"		if hh &gt; 12 then			set hh to hh - 12		end if	end if		if hh &lt; 10 then		set output to (output &amp; " ")	end if		set output to (output &amp; (hh as string) &amp; ":")		set mm to (minutes of thedate)	if mm &lt; 10 then		set output to (output &amp; "0" &amp; (mm as string) &amp; ampm)	else		set output to (output &amp; (mm as string) &amp; ampm)	end if		return outputend formatDateTimeStamp</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>TrimResults</key>
-						<false/>
-						<key>TrimResultsNew</key>
-						<false/>
-						<key>UseText</key>
-						<true/>
-					</dict>
-				</array>
-				<key>CreationDate</key>
-				<real>627439750.50834703</real>
-				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/System/Applications/Calendar.app</string>
-				<key>ModificationDate</key>
-				<real>775101910.61495495</real>
-				<key>Name</key>
-				<string>Modified Date Comment</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>46</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>4352</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>9A4C953D-95C2-4742-8852-48008D5C7951</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>Global Macro Group</string>
-		<key>ToggleMacroUID</key>
-		<string>3DF149AD-8198-4769-850D-D198A1B529BE</string>
-		<key>UID</key>
-		<string>57145D98-A4FE-44D3-BC0F-5FBD493725E4</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CreationDate</key>
-		<real>588380868.02725506</real>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>ActionUID</key>
-						<integer>18</integer>
-						<key>DisplayKind</key>
-						<string>None</string>
-						<key>HonourFailureSettings</key>
-						<true/>
-						<key>IncludeStdErr</key>
-						<false/>
-						<key>IncludedVariables</key>
-						<array>
-							<string>9999</string>
-						</array>
-						<key>MacroActionType</key>
-						<string>ExecuteAppleScript</string>
-						<key>Path</key>
-						<string></string>
-						<key>Text</key>
-						<string>try	tell application "Finder"		set desktopBounds to bounds of window of desktop		set w to round (((item 3 of desktopBounds) - 1100) / 2) rounding as taught in school		set h to round (((item 4 of desktopBounds) - 1000) / 2) rounding as taught in school		set finderBounds to {w, h, 1100 + w, 1000 + h}	end tell		tell application "Finder"		repeat with w in (get every Finder window)			activate			activate w			tell application "System Events" to tell process "Finder"				click menu item "Select All" of menu 1 of menu bar item "Edit" of menu bar 1				delay 0.5				key code 123				key code 126								tell application "Finder"					try						set (bounds of w) to finderBounds					on error						make new Finder window to home						set (bounds of window w) to finderBounds					end try				end tell			end tell		end repeat		set selection to {}	end tellend try
-
-try
-	tell application "System Events" to tell process "Finder"
-		click menu item "Clear Menu" of menu of menu item "Recent Items" of menu of menu bar item 1 of menu bar 1
-		click menu item "Clear Menu" of menu of menu item "Recent Folders" of menu of menu bar item "Go" of menu bar 1
-	end tell
-end try</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-						<key>TrimResults</key>
-						<true/>
-						<key>TrimResultsNew</key>
-						<true/>
-						<key>UseText</key>
-						<true/>
-					</dict>
-				</array>
-				<key>CreationDate</key>
-				<real>588562773.26912904</real>
-				<key>CustomIconData</key>
-				<string>KMEP-GenericApplication-/System/Library/CoreServices/Finder.app</string>
-				<key>ModificationDate</key>
-				<real>781147796.30918801</real>
-				<key>Name</key>
-				<string>Fix Finder Window</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>80</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-					</dict>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>111</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>6400</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>47D23103-35A5-453D-8FB9-2D9FF434693B</string>
 			</dict>
 		</array>
 		<key>Name</key>

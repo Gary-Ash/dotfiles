@@ -17,149 +17,11 @@
 		<key>DisplayConfiguration</key>
 		<string>displays([(0, 0), (2560, 1440)])</string>
 		<key>OpenDocuments</key>
-		<dict>
-			<key>B1BCED6F-3B14-455D-A5D9-38838401B9C1</key>
-			<dict>
-				<key>CreationDate</key>
-				<date>2026-02-08T20:23:47Z</date>
-				<key>DocumentProperties</key>
-				<dict/>
-				<key>IsRememberedRecent</key>
-				<true/>
-				<key>Location</key>
-				<dict>
-					<key>FileBookmark</key>
-					<data>
-					Ym9vaxwEAAAAAAUQQAAAAAChsFWCXI/X2ewl
-					BOKcShFiLTtuXgFkus3CYkkiQE5gAAAAAAAA
-					AAAAAAAAAAAAAOQCAAAEAAAAAwMAAAAIACgF
-					AAAAAQEAAFVzZXJzAAAABwAAAAEBAABnYXJ5
-					YXNoAAkAAAABAQAARG93bmxvYWRzAAAACAAA
-					AAEBAABkb3RmaWxlcwQAAAABAQAAaG9tZQcA
-					AAABAQAALmNvbmZpZwADAAAAAQEAAGdpdAAG
-					AAAAAQEAAGNvbmZpZwAAIAAAAAEGAAAQAAAA
-					IAAAADAAAABEAAAAVAAAAGAAAABwAAAAfAAA
-					AAgAAAAEAwAAzFAAAAAAAAAIAAAABAMAABV4
-					AAAAAAAACAAAAAQDAABIeAAAAAAAAAgAAAAE
-					AwAAHh5LAQAAAAAIAAAABAMAAHgfSwEAAAAA
-					CAAAAAQDAACDH0sBAAAAAAgAAAAEAwAAkx9L
-					AQAAAAAIAAAABAMAAJUfSwEAAAAAIAAAAAEG
-					AAC0AAAAxAAAANQAAADkAAAA9AAAAAQBAAAU
-					AQAAJAEAAAgAAAAABAAAQceckH0AAAAYAAAA
-					AQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAA
-					AAgAAAAEAwAABgAAAAAAAAAEAAAAAwMAAPUB
-					AAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABN
-					YWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAA
-					CAAAAAAEAABBx2j7dAAAACQAAAABAQAARUMw
-					N0E2MTktRDcxNi00MTFGLUE3NkUtMkI1RTU2
-					QkRBQjM4GAAAAAECAACBAAAAAQAAAO8TAAAB
-					AAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
-					AQUAABoAAAABAQAATlNVUkxEb2N1bWVudElk
-					ZW50aWZpZXJLZXkAAAQAAAADAwAANAQAABoA
-					AAABAQAATlNVUkxQYXJlbnREaXJlY3RvcnlV
-					UkxLZXkAADoAAAABCQAAZmlsZTovLy9Vc2Vy
-					cy9nYXJ5YXNoL0Rvd25sb2Fkcy9kb3RmaWxl
-					cy9ob21lLy5jb25maWcvZ2l0LwAA8AAAAP7/
-					//8BAAAAAAAAABMAAAAEEAAAjAAAAAAAAAAF
-					EAAANAEAAAAAAAAQEAAAbAEAAAAAAAAgEAAA
-					fAAAAAAAAABAEAAAXAEAAAAAAAACIAAAOAIA
-					AAAAAAAFIAAAqAEAAAAAAAAQIAAAuAEAAAAA
-					AAARIAAA7AEAAAAAAAASIAAAzAEAAAAAAAAT
-					IAAA3AEAAAAAAAAgIAAAGAIAAAAAAAAwIAAA
-					RAIAAAAAAAABwAAAjAEAAAAAAAARwAAAIAAA
-					AAAAAAASwAAAnAEAAAAAAAAQ0AAABAAAAAAA
-					AABMAgCAcAIAAAAAAAB8AgCAoAIAAAAAAAA=
-					</data>
-					<key>FileBookmarkHasSecurityScope</key>
-					<true/>
-					<key>FileName</key>
-					<string>config</string>
-					<key>FileURLString</key>
-					<string>file:///Users/garyash/Downloads/dotfiles/home/.config/git/config</string>
-				</dict>
-				<key>com.barebones.DocumentType</key>
-				<string>Text</string>
-			</dict>
-			<key>E7404580-8D15-4C19-8A16-8B7CB576823D</key>
-			<dict>
-				<key>CreationDate</key>
-				<date>2026-02-08T20:23:38Z</date>
-				<key>DocumentProperties</key>
-				<dict>
-					<key>EditorState</key>
-					<dict>
-						<key>MainScrollBar</key>
-						<integer>0</integer>
-						<key>SelectionEnd</key>
-						<integer>0</integer>
-						<key>SelectionStart</key>
-						<integer>0</integer>
-					</dict>
-					<key>EncodingName</key>
-					<string>Unicode (UTF-8)</string>
-					<key>LanguageName</key>
-					<string>Text File</string>
-					<key>LineEnds</key>
-					<string>LF  </string>
-					<key>MarkerData</key>
-					<data>
-					UipjaAAAAAEAAAAA
-					</data>
-				</dict>
-				<key>IsRememberedRecent</key>
-				<false/>
-				<key>Location</key>
-				<string>-unsaved-</string>
-				<key>UntitledName</key>
-				<string>untitled text</string>
-				<key>com.barebones.DocumentType</key>
-				<string>Text</string>
-			</dict>
-		</dict>
+		<dict/>
 		<key>OpenWindows</key>
-		<array>
-			<dict>
-				<key>ActiveDocument</key>
-				<string>B1BCED6F-3B14-455D-A5D9-38838401B9C1</string>
-				<key>AdditionalProperties</key>
-				<dict>
-					<key>EmbeddedEditorVisible</key>
-					<true/>
-					<key>FileListVisible</key>
-					<true/>
-					<key>IsFullScreen</key>
-					<false/>
-					<key>OpenDocumentSplitProportion</key>
-					<real>0.0</real>
-					<key>ProjectListWidthAsFraction</key>
-					<real>0.20000000000000001</real>
-				</dict>
-				<key>Documents</key>
-				<array>
-					<string>B1BCED6F-3B14-455D-A5D9-38838401B9C1</string>
-					<string>E7404580-8D15-4C19-8A16-8B7CB576823D</string>
-				</array>
-				<key>IsFullScreen</key>
-				<false/>
-				<key>IsMinimized</key>
-				<false/>
-				<key>SavedPosition</key>
-				<string>rect(62,742,1381,1817)</string>
-				<key>SavedPosition_v3</key>
-				<string>{{742, 59}, {1075, 1347}}</string>
-				<key>WindowName</key>
-				<string>config</string>
-				<key>WindowType</key>
-				<string>ProjectWindow</string>
-			</dict>
-		</array>
+		<array/>
 		<key>UntitledWindowsState</key>
-		<dict>
-			<key>GrpD</key>
-			<integer>2</integer>
-			<key>TxtD</key>
-			<integer>1</integer>
-		</dict>
+		<dict/>
 		<key>com.barebones.DocumentFormatVersion</key>
 		<integer>2</integer>
 		<key>com.barebones.DocumentType</key>
@@ -660,7 +522,7 @@
 	<key>PinchZoomChangesMagnification</key>
 	<true/>
 	<key>PreferencesSnapshotDate</key>
-	<date>2026-02-08T20:26:11Z</date>
+	<date>2026-02-10T19:30:20Z</date>
 	<key>PrintColorSyntax</key>
 	<false/>
 	<key>Projects</key>
@@ -671,71 +533,6 @@
 	</array>
 	<key>Recent Folders</key>
 	<false/>
-	<key>RecentItemsData</key>
-	<dict>
-		<key>Text</key>
-		<array>
-			<dict>
-				<key>Date</key>
-				<date>2026-02-08T20:26:07Z</date>
-				<key>DocumentClass</key>
-				<string>Text</string>
-				<key>Locator</key>
-				<dict>
-					<key>BookmarkData</key>
-					<data>
-					Ym9va5wDAAAAAAUQQAAAACZAaRfJZLfTU+yW
-					Vm367TjnoSdKUHV6YjUtBXs7oPsoAAAAAAAA
-					AAAAAAAAAAAAAHwCAAAEAAAAAwMAAAAIACgF
-					AAAAAQEAAFVzZXJzAAAABwAAAAEBAABnYXJ5
-					YXNoAAkAAAABAQAARG93bmxvYWRzAAAACAAA
-					AAEBAABkb3RmaWxlcwQAAAABAQAAaG9tZQcA
-					AAABAQAALmNvbmZpZwADAAAAAQEAAGdpdAAG
-					AAAAAQEAAGNvbmZpZwAAIAAAAAEGAAAQAAAA
-					IAAAADAAAABEAAAAVAAAAGAAAABwAAAAfAAA
-					AAgAAAAEAwAAzFAAAAAAAAAIAAAABAMAABV4
-					AAAAAAAACAAAAAQDAABIeAAAAAAAAAgAAAAE
-					AwAAHh5LAQAAAAAIAAAABAMAAHgfSwEAAAAA
-					CAAAAAQDAACDH0sBAAAAAAgAAAAEAwAAkx9L
-					AQAAAAAIAAAABAMAAJUfSwEAAAAAIAAAAAEG
-					AAC0AAAAxAAAANQAAADkAAAA9AAAAAQBAAAU
-					AQAAJAEAAAgAAAAABAAAQceckH0AAAAYAAAA
-					AQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAA
-					AAgAAAAEAwAABgAAAAAAAAAEAAAAAwMAAPUB
-					AAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABN
-					YWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAA
-					CAAAAAAEAABBx2j7dAAAACQAAAABAQAARUMw
-					N0E2MTktRDcxNi00MTFGLUE3NkUtMkI1RTU2
-					QkRBQjM4GAAAAAECAACBAAAAAQAAAO8TAAAB
-					AAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAA
-					AQUAABoAAAABAQAATlNVUkxEb2N1bWVudElk
-					ZW50aWZpZXJLZXkAAAQAAAADAwAANAQAANgA
-					AAD+////AQAAAAAAAAARAAAABBAAAIwAAAAA
-					AAAABRAAADQBAAAAAAAAEBAAAGwBAAAAAAAA
-					QBAAAFwBAAAAAAAAAiAAADgCAAAAAAAABSAA
-					AKgBAAAAAAAAECAAALgBAAAAAAAAESAAAOwB
-					AAAAAAAAEiAAAMwBAAAAAAAAEyAAANwBAAAA
-					AAAAICAAABgCAAAAAAAAMCAAAEQCAAAAAAAA
-					AcAAAIwBAAAAAAAAEcAAACAAAAAAAAAAEsAA
-					AJwBAAAAAAAAENAAAAQAAAAAAAAATAIAgHAC
-					AAAAAAAA
-					</data>
-					<key>FileURL</key>
-					<string>file:///Users/garyash/Downloads/dotfiles/home/.config/git/config</string>
-					<key>HasSecurityScope</key>
-					<true/>
-					<key>TypeID</key>
-					<string>_CFileLocator</string>
-					<key>Version</key>
-					<integer>1</integer>
-				</dict>
-				<key>Name</key>
-				<string>config</string>
-				<key>URL</key>
-				<string>file:///Users/garyash/Downloads/dotfiles/home/.config/git/config</string>
-			</dict>
-		</array>
-	</dict>
 	<key>RecentItemsPrefDataUpgradedForSandbox</key>
 	<true/>
 	<key>Results Browsers</key>
@@ -753,7 +550,7 @@
 	<key>Rewrap_RemoveSpaces</key>
 	<false/>
 	<key>SULastCheckedDate</key>
-	<date>2026-02-08T18:19:49Z</date>
+	<date>2026-02-10T18:39:30Z</date>
 	<key>Saved Search Sets</key>
 	<false/>
 	<key>Search_CaseSensitive</key>

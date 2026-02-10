@@ -61,16 +61,21 @@ Examples:
 
 Every new source file must include a file header comment. Use the appropriate template based on the language. Replace "file name" with the actual file name, set "Created" to the current date/time, and use the current year in the copyright line.
 
+Rules for maintaining file headers:
+- Replace "brief summary of the file contents" with a concise description of what the file actually contains
+- Every time you edit a file, update the "Modified" field with the current date and time (same format as "Created")
+- If the current year differs from the year in the copyright line, append "-<current year>" to form a range (e.g., "Copyright © 2026-2027"). Do not modify it if the current year is already present.
+
 ### Rust and other `//` comment languages
 
 ```
 //****************************************************************************************
 // file name
 //
-//
+// brief summary of the file contents
 //
 // Author   :  Gary Ash <gary.ash@icloud.com>
-// Created  :   8-Feb-2026  3:47pm
+// Created  :   7-Feb-2026  4:27pm
 // Modified :
 //
 // Copyright © 2026 By Gary Ash All rights reserved.
@@ -83,6 +88,7 @@ Every new source file must include a file header comment. Use the appropriate te
 /*****************************************************************************************
  * file name
  *
+ * brief summary of the file contents
  *
  * Author   :  Gary Ash <gary.ash@icloud.com>
  * Created  :   7-Feb-2026  4:22pm
@@ -100,7 +106,7 @@ Every new source file must include a file header comment. Use the appropriate te
 # ****************************************************************************************
 #  file name
 #
-#
+# brief summary of the file contents
 #
 #  Author   :  Gary Ash <gary.ash@icloud.com>
 #  Created  :   7-Feb-2026  4:21pm
@@ -118,7 +124,7 @@ Every new source file must include a file header comment. Use the appropriate te
 #*****************************************************************************************
 # file name
 #
-#
+# brief summary of the file contents
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   7-Feb-2026  4:19pm
@@ -135,7 +141,7 @@ Every new source file must include a file header comment. Use the appropriate te
 #*****************************************************************************************
 # file name
 #
-#
+# brief summary of the file contents
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   7-Feb-2026  4:16pm
@@ -153,7 +159,7 @@ set -euo pipefail
 #*****************************************************************************************
 # file name
 #
-#
+# brief summary of the file contents
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   3-Feb-2026  8:19pm

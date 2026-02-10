@@ -5,8 +5,8 @@
 # ZSH interactive setup
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :   8-Feb-2026  3:47pm
-# Modified :
+# Created  :   8-Feb-2026  3:37pm
+# Modified :  10-Feb-2026  3:31pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -378,7 +378,7 @@ sysupdate() {
 	unset SUDO_PASSWORD
 	setopt local_options no_monitor
 
-	perl /opt/geedbla/scripts/startup-banner.pl --dark
+	startup-banner --dark
 }
 
 #*****************************************************************************************

@@ -5,8 +5,8 @@
 # My Claude Code status bar display script
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :   8-Feb-2026  3:47pm
-# Modified :
+# Created  :   7-Feb-2026  4:16pm
+# Modified :   7-Feb-2026  9:01pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
