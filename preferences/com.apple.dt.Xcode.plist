@@ -134,7 +134,7 @@
 		<string>Screen</string>
 	</array>
 	<key>IDEAnalyticsMetricsNotifications.AnalyticsMetricsNotificationsController.lastRefreshAttemptDate</key>
-	<date>2026-02-06T21:26:32Z</date>
+	<date>2026-02-11T03:13:52Z</date>
 	<key>IDEAppStatisticsRunDestinationPlatform</key>
 	<dict>
 		<key>appletvos</key>
@@ -488,8 +488,6 @@
 	<string>17B48</string>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
-	<key>IDE_CA_Daily_UsedScriptingAPI</key>
-	<true/>
 	<key>LastExplicitInspectorVisibility</key>
 	<true/>
 	<key>NSColorPanelMode</key>
@@ -613,9 +611,9 @@
 	<key>ProductMappingKey</key>
 	<data>
 	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
-	Wmxhc3RPcGVuZWRfEEovVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9Tb2Np
-	YWxCdXR0ZXJmbHkvU29jaWFsQnV0dGVyZmx5Lnhjb2RlcHJvaqAzQcebbjE5Qi0ICxMV
-	HCozPouMAAAAAAAAAQEAAAAAAAAACgAAAAAAAAAAAAAAAAAAAJU=
+	Wmxhc3RPcGVuZWRfEDgvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9Qcm9t
+	cHQvUHJvbXB0Lnhjb2RlcHJvaqAzQceei8PkVSoICxMVHCozPnl6AAAAAAAAAQEAAAAA
+	AAAACgAAAAAAAAAAAAAAAAAAAIM=
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
 	<string>23C54</string>

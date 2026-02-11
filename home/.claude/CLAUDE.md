@@ -183,6 +183,10 @@ set -euo pipefail
 - Swift: primary
   - Xcode and Swift Package Manager only (no CocoaPods, Carthage, etc.)
 - Perl: primary
+- C++: performance-critical work
+  - Modern C++ (C++20), memory-safe idioms (smart pointers, RAII, no raw new/delete)
+  - CMake only, cross-platform (no platform-specific APIs without abstraction)
+  - Always build with sanitizers (ASan, UBSan) during development
 
 ## Testing
 

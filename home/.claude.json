@@ -1,10 +1,10 @@
 {
-  "numStartups": 24,
+  "numStartups": 28,
   "installMethod": "native",
   "autoUpdates": false,
   "tipsHistory": {
     "new-user-warmup": 7,
-    "plan-mode-for-complex-tasks": 23,
+    "plan-mode-for-complex-tasks": 28,
     "terminal-setup": 23,
     "memory-command": 17,
     "theme-command": 22,
@@ -26,12 +26,11 @@
     "custom-agents": 21,
     "agent-flag": 23,
     "permissions": 23,
-    "rename-conversation": 11,
-    "custom-commands": 11,
-    "overage-promo": 24
+    "rename-conversation": 27,
+    "custom-commands": 27,
+    "overage-promo": 27
   },
-  "promptQueueUseCount": 3,
-  "showExpandedTodos": true,
+  "promptQueueUseCount": 6,
   "cachedGrowthBookFeatures": {
     "tengu_brass_pebble": false,
     "tengu_mcp_tool_search": true,
@@ -90,7 +89,10 @@
       "meridian": "2026-02-05T07:59:00Z"
     },
     "tengu_penguins_enabled": true,
-    "tengu_penguins_off": null
+    "tengu_penguins_off": null,
+    "tengu_mcp_elicitation": false,
+    "tengu_snippet_save": false,
+    "tengu_bergotte_lantern": false
   },
   "sonnet45MigrationComplete": true,
   "opus45MigrationComplete": true,
@@ -99,7 +101,7 @@
   "cachedChromeExtensionInstalled": false,
   "hasCompletedOnboarding": true,
   "lastOnboardingVersion": "2.1.29",
-  "lastReleaseNotesSeen": "2.1.37",
+  "lastReleaseNotesSeen": "2.1.39",
   "hasShownOpus45Notice": {},
   "s1mAccessCache": {},
   "groveConfigCache": {},
@@ -116,5 +118,6 @@
   },
   "showSpinnerTree": false,
   "penguinModeOrgEnabled": true,
-  "anonymousId": "claudecode.v1.3dde9ebe-f1f1-4e30-84ee-4897999e5d1e"
+  "anonymousId": "claudecode.v1.3dde9ebe-f1f1-4e30-84ee-4897999e5d1e",
+  "lspRecommendationIgnoredCount": 1
 }
