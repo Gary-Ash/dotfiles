@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	
+	<key>BBLMLanguageDisplayName</key>
+	<string>Zig</string>
+	
+	<key>BBLMLanguageCode</key>
+	<string>Zig </string>
+	
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.zig</string>
+		</dict>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.zon</string>
+		</dict>
+	</array>
+	
+	<key>BBLMKeywordList</key>
+	<array>
+		<!-- Control flow -->
+		<string>if</string>
+		<string>else</string>
+		<string>switch</string>
+		<string>for</string>
+		<string>while</string>
+		<string>break</string>
+		<string>continue</string>
+		<string>return</string>
+		<string>defer</string>
+		<string>errdefer</string>
+		<string>catch</string>
+		<string>orelse</string>
+		<string>try</string>
+		
+		<!-- Declarations -->
+		<string>const</string>
+		<string>var</string>
+		<string>fn</string>
+		<string>struct</string>
+		<string>enum</string>
+		<string>union</string>
+		<string>opaque</string>
+		<string>test</string>
+		
+		<!-- Visibility and linking -->
+		<string>pub</string>
+		<string>export</string>
+		<string>extern</string>
+		<string>inline</string>
+		<string>noinline</string>
+		<string>comptime</string>
+		<string>callconv</string>
+		<string>noalias</string>
+		
+		<!-- Memory -->
+		<string>packed</string>
+		<string>align</string>
+		<string>linksection</string>
+		<string>volatile</string>
+		<string>allowzero</string>
+		<string>threadlocal</string>
+		
+		<!-- Special -->
+		<string>async</string>
+		<string>await</string>
+		<string>suspend</string>
+		<string>resume</string>
+		<string>nosuspend</string>
+		<string>anyframe</string>
+		<string>asm</string>
+		<string>unreachable</string>
+		<string>usingnamespace</string>
+		
+		<!-- Boolean literals -->
+		<string>true</string>
+		<string>false</string>
+		<string>null</string>
+		<string>undefined</string>
+		
+		<!-- Operators as keywords -->
+		<string>and</string>
+		<string>or</string>
+		
+		<!-- Types -->
+		<string>anytype</string>
+		<string>anyerror</string>
+		<string>anyopaque</string>
+		<string>void</string>
+		<string>noreturn</string>
+		<string>type</string>
+		<string>error</string>
+		<string>bool</string>
+		<string>comptime_int</string>
+		<string>comptime_float</string>
+		
+		<!-- Integer types -->
+		<string>i8</string>
+		<string>i16</string>
+		<string>i32</string>
+		<string>i64</string>
+		<string>i128</string>
+		<string>isize</string>
+		<string>u8</string>
+		<string>u16</string>
+		<string>u32</string>
+		<string>u64</string>
+		<string>u128</string>
+		<string>usize</string>
+		<string>c_char</string>
+		<string>c_short</string>
+		<string>c_ushort</string>
+		<string>c_int</string>
+		<string>c_uint</string>
+		<string>c_long</string>
+		<string>c_ulong</string>
+		<string>c_longlong</string>
+		<string>c_ulonglong</string>
+		<string>c_longdouble</string>
+		
+		<!-- Float types -->
+		<string>f16</string>
+		<string>f32</string>
+		<string>f64</string>
+		<string>f80</string>
+		<string>f128</string>
+	</array>
+	
+	<key>BBLMPredefinedNameList</key>
+	<array>
+		<!-- Built-in functions -->
+		<string>@import</string>
+		<string>@cImport</string>
+		<string>@cInclude</string>
+		<string>@cDefine</string>
+		<string>@cUndef</string>
+		<string>@compileError</string>
+		<string>@compileLog</string>
+		<string>@panic</string>
+		<string>@breakpoint</string>
+		<string>@as</string>
+		<string>@bitCast</string>
+		<string>@alignCast</string>
+		<string>@intCast</string>
+		<string>@floatCast</string>
+		<string>@ptrCast</string>
+		<string>@truncate</string>
+		<string>@alignOf</string>
+		<string>@sizeOf</string>
+		<string>@bitSizeOf</string>
+		<string>@typeInfo</string>
+		<string>@typeName</string>
+		<string>@TypeOf</string>
+		<string>@hasDecl</string>
+		<string>@hasField</string>
+		<string>@fieldParentPtr</string>
+		<string>@field</string>
+		<string>@call</string>
+		<string>@errorName</string>
+		<string>@errorReturnTrace</string>
+		<string>@frame</string>
+		<string>@Frame</string>
+		<string>@frameAddress</string>
+		<string>@frameSize</string>
+		<string>@returnAddress</string>
+		<string>@src</string>
+		<string>@This</string>
+		<string>@setRuntimeSafety</string>
+		<string>@setFloatMode</string>
+		<string>@setAlignStack</string>
+		<string>@setCold</string>
+		<string>@trap</string>
+		<string>@Vector</string>
+		<string>@shuffle</string>
+		<string>@splat</string>
+		<string>@reduce</string>
+		<string>@select</string>
+		<string>@asyncCall</string>
+		<string>@atomicLoad</string>
+		<string>@atomicStore</string>
+		<string>@atomicRmw</string>
+		<string>@cmpxchgWeak</string>
+		<string>@cmpxchgStrong</string>
+		<string>@fence</string>
+		<string>@divExact</string>
+		<string>@divFloor</string>
+		<string>@divTrunc</string>
+		<string>@mod</string>
+		<string>@rem</string>
+		<string>@shlExact</string>
+		<string>@shlWithOverflow</string>
+		<string>@shrExact</string>
+		<string>@sqrt</string>
+		<string>@sin</string>
+		<string>@cos</string>
+		<string>@tan</string>
+		<string>@exp</string>
+		<string>@exp2</string>
+		<string>@log</string>
+		<string>@log2</string>
+		<string>@log10</string>
+		<string>@abs</string>
+		<string>@floor</string>
+		<string>@ceil</string>
+		<string>@trunc</string>
+		<string>@round</string>
+		<string>@min</string>
+		<string>@max</string>
+		<string>@clz</string>
+		<string>@ctz</string>
+		<string>@popCount</string>
+		<string>@byteSwap</string>
+		<string>@bitReverse</string>
+		<string>@memcpy</string>
+		<string>@memset</string>
+		<string>@wasmMemorySize</string>
+		<string>@wasmMemoryGrow</string>
+		<string>@addWithOverflow</string>
+		<string>@subWithOverflow</string>
+		<string>@mulWithOverflow</string>
+		<string>@embedFile</string>
+		<string>@tagName</string>
+		<string>@unionInit</string>
+		<string>@enumFromInt</string>
+		<string>@intFromEnum</string>
+		<string>@intFromPtr</string>
+		<string>@ptrFromInt</string>
+		<string>@intFromBool</string>
+		<string>@intFromFloat</string>
+		<string>@floatFromInt</string>
+		<string>@intFromError</string>
+		<string>@errorFromInt</string>
+		<string>@offsetOf</string>
+		<string>@bitOffsetOf</string>
+	</array>
+	
+	<key>BBLMCommentLineDefault</key>
+	<string>//</string>
+	
+	<key>BBLMScansFunctions</key>
+	<true/>
+	
+	<key>BBLMCanSpellCheckCodeRuns</key>
+	<false/>
+	
+	<key>BBLMSupportsTextCompletion</key>
+	<true/>
+	
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	
+	<key>Language Features</key>
+	<dict>
+		<key>Close Block Comments</key>
+		<string>*/</string>
+		
+		<key>Close Parameter Lists</key>
+		<string>)</string>
+		
+		<key>Close Statement Blocks</key>
+		<string>}</string>
+		
+		<key>Close Strings 1</key>
+		<string>"</string>
+		
+		<key>Close Strings 2</key>
+		<string>'</string>
+		
+		<key>End-of-line Ends Strings 1</key>
+		<false/>
+		
+		<key>End-of-line Ends Strings 2</key>
+		<true/>
+		
+		<key>Escape Char in Strings 1</key>
+		<string>\</string>
+		
+		<key>Escape Char in Strings 2</key>
+		<string>\</string>
+		
+		<key>Identifier and Keyword Characters</key>
+		<string>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz@</string>
+		
+		<key>Open Block Comments</key>
+		<string>/*</string>
+		
+		<key>Open Line Comments</key>
+		<string>//</string>
+		
+		<key>Open Parameter Lists</key>
+		<string>(</string>
+		
+		<key>Open Statement Blocks</key>
+		<string>{</string>
+		
+		<key>Open Strings 1</key>
+		<string>"</string>
+		
+		<key>Open Strings 2</key>
+		<string>'</string>
+		
+		<key>Prefix for Functions</key>
+		<string>fn</string>
+		
+		<key>Prefix for Procedures</key>
+		<string>fn</string>
+		
+		<key>Terminator for Prototypes 1</key>
+		<string>;</string>
+		
+		<key>String Begins with Delimiter</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

@@ -5,6 +5,8 @@
   },
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true,
-    "clangd-lsp@claude-plugins-official": true
+    "clangd-lsp@claude-plugins-official": true,
+    "swift-concurrency@swift-concurrency-agent-skill": true,
+    "swiftui-expert@swiftui-expert-skill": true
   }
 }

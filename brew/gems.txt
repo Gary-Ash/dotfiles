@@ -6,7 +6,6 @@ base64
 benchmark
 bigdecimal
 bundler
-cgi
 colorator
 concurrent-ruby
 csv
@@ -73,7 +72,6 @@ optparse
 ostruct
 parallel
 parser
-pathname
 pathutil
 power_assert
 pp
@@ -109,7 +107,6 @@ rubygems-update
 safe_yaml
 sass-embedded
 securerandom
-set
 shellwords
 singleton
 solargraph
@@ -133,7 +130,6 @@ unicode-emoji
 uri
 weakref
 webrick
-xcpretty
 yaml
 yard
 yard-activesupport-concern

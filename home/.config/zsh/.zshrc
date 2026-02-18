@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :  10-Feb-2026  3:31pm
+# Modified :  20-Feb-2026  5:56pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -18,7 +18,7 @@ fpath=(
   /opt/homebrew/share/zsh-completions
   /opt/homebrew/zsh/site-functions
   /opt/geedbla/lib/shell/lib
-  /opt/geedbla/lib/shell/zsh-completion
+  /opt/geedbla/zsh-completion
   "${fpath[@]}"
 )
 export PATH="$HOME/.local/bin:/Library/Apple/usr/bin:/opt/venv/python3/bin:/opt/bin:/opt/geedbla/scripts:/opt/homebrew/opt/python3/libexec/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/homebrew/lib/node_modules/npm"

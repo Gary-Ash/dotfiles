@@ -20,6 +20,26 @@
         "lastUpdated": "2026-02-11T19:32:47.087Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
+    ],
+    "swift-concurrency@swift-concurrency-agent-skill": [
+      {
+        "scope": "user",
+        "installPath": "/Users/garyash/.claude/plugins/cache/swift-concurrency-agent-skill/swift-concurrency/1.0.1",
+        "version": "1.0.1",
+        "installedAt": "2026-02-18T21:00:34.694Z",
+        "lastUpdated": "2026-02-18T21:00:34.694Z",
+        "gitCommitSha": "76165e3d72210ac2b1f79b49e567d2994176466e"
+      }
+    ],
+    "swiftui-expert@swiftui-expert-skill": [
+      {
+        "scope": "user",
+        "installPath": "/Users/garyash/.claude/plugins/cache/swiftui-expert-skill/swiftui-expert/1.1.2",
+        "version": "1.1.2",
+        "installedAt": "2026-02-18T21:03:33.850Z",
+        "lastUpdated": "2026-02-18T21:03:33.850Z",
+        "gitCommitSha": "0f7d497e1f458476df5e27644f3e0e79470b855a"
+      }
     ]
   }
 }
