@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :  20-Feb-2026  5:56pm
+# Modified :  23-Feb-2026  3:47pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -152,7 +152,6 @@ alias show-all-files="defaults write com.apple.finder AppleShowAllFiles true;kil
 alias hide-all-files="defaults delete com.apple.finder AppleShowAllFiles;killall Finder"
 alias gitkeep="find . -type d -empty -not -path \"./.git/*\" -exec touch {}/.gitkeep \;"
 
-
 #*****************************************************************************************
 # Setup my own snazzy powerline style prompt
 #*****************************************************************************************
@@ -181,10 +180,7 @@ eval "$(zoxide init zsh)"
 
 if [[ $TERM_PROGRAM != "Apple_Terminal" ]]; then
 	() {
-		setopt NO_NOTIFY NO_MONITOR
-  		perl /opt/geedbla/scripts/startup-banner.pl --dark &
-    	wait
-		setopt NOTIFY MONITOR
+  		startup-banner --dark
 	}
 fi
 

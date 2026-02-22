@@ -1,36 +1,37 @@
 {
-  "numStartups": 43,
+  "numStartups": 51,
   "installMethod": "native",
   "autoUpdates": false,
   "tipsHistory": {
     "new-user-warmup": 7,
-    "plan-mode-for-complex-tasks": 39,
+    "plan-mode-for-complex-tasks": 49,
     "terminal-setup": 43,
-    "memory-command": 32,
+    "memory-command": 47,
     "theme-command": 42,
     "prompt-queue": 24,
     "enter-to-steer-in-relatime": 42,
     "todo-list": 42,
     "install-github-app": 43,
-    "install-slack-app": 33,
-    "drag-and-drop-images": 33,
-    "paste-images-mac": 33,
-    "double-esc-code-restore": 34,
-    "continue": 34,
-    "shift-tab": 34,
+    "install-slack-app": 44,
+    "drag-and-drop-images": 44,
+    "paste-images-mac": 44,
+    "double-esc-code-restore": 44,
+    "continue": 44,
+    "shift-tab": 44,
     "image-paste": 43,
-    "desktop-app": 32,
-    "web-app": 33,
-    "mobile-app": 34,
+    "desktop-app": 47,
+    "web-app": 48,
+    "mobile-app": 49,
     "frontend-design-plugin": 2,
-    "custom-agents": 36,
+    "custom-agents": 51,
     "agent-flag": 38,
-    "permissions": 33,
+    "permissions": 44,
     "rename-conversation": 42,
     "custom-commands": 43,
-    "overage-promo": 27
+    "overage-promo": 27,
+    "git-worktrees": 51
   },
-  "promptQueueUseCount": 10,
+  "promptQueueUseCount": 16,
   "cachedGrowthBookFeatures": {
     "tengu_brass_pebble": false,
     "tengu_mcp_tool_search": true,
@@ -102,7 +103,7 @@
       ]
     },
     "tengu_immediate_model_command": false,
-    "tengu_birthday_hat": true,
+    "tengu_birthday_hat": false,
     "tengu_moth_copse": false,
     "tengu_sm_compact": false,
     "tengu_compact_cache_prefix": true,
@@ -111,12 +112,14 @@
     "tengu_marble_sandcastle": true,
     "tengu_pebble_leaf_prune": false,
     "tengu_birch_mist": false,
-    "tengu_swann_brevity": "control",
+    "tengu_swann_brevity": "polished",
     "tengu_oak_drum": false,
     "tengu_tool_input_aliasing": false,
     "tengu_amber_prism": false,
     "tengu_slate_nexus": true,
-    "tengu_destructive_command_warning": false
+    "tengu_destructive_command_warning": false,
+    "tengu_streaming_text": false,
+    "tengu_tst_kx7": false
   },
   "sonnet45MigrationComplete": true,
   "opus45MigrationComplete": true,
@@ -125,7 +128,7 @@
   "cachedChromeExtensionInstalled": false,
   "hasCompletedOnboarding": true,
   "lastOnboardingVersion": "2.1.29",
-  "lastReleaseNotesSeen": "2.1.49",
+  "lastReleaseNotesSeen": "2.1.50",
   "hasShownOpus45Notice": {},
   "s1mAccessCache": {},
   "groveConfigCache": {},
@@ -135,7 +138,7 @@
   "skillUsage": {},
   "clientDataCache": {
     "data": {},
-    "timestamp": 1771628958919
+    "timestamp": 1771882567963
   },
   "hasShownOpus46Notice": {
     "44ed8be7-c6d4-430e-9a86-ed8efc92979c": true
@@ -151,5 +154,13 @@
   "birthdayHatAnimationCount": 3,
   "feedbackSurveyState": {
     "lastShownTime": 1771560462905
+  },
+  "mcpServers": {
+    "github": {
+      "type": "stdio",
+      "command": "/Users/garyash/.claude/github-mcp-wrapper.sh",
+      "args": [],
+      "env": {}
+    }
   }
 }

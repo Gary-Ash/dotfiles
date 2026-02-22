@@ -88,7 +88,8 @@
 	discard         = "checkout --"                          	# undo last commit
 	cloner          = "clone --recursive "                   	# clone submodules too
 	pushf           = "push --force "
-	amend           = "commit --amend --reuse-message=HEAD "
+	edit-comment    = "commit --amend"							# amend everything. Mostly used for comments
+	amend           = "commit --amend --reuse-message=HEAD"		# amend commit content
 	delete-merged   = "git branch --merged | grep -i -v -E \"master|main|develop|dev\"| xargs git branch -d"
 	trim            = "!f() { git branch | grep -v \"main\" | grep -v \"master\" | grep -v \"^*\" | xargs git branch -D; git remote prune rigin; }; f"
 	fuckit          = "!git clean -df  && git reset --hard"

@@ -133,8 +133,6 @@
 		<string>View</string>
 		<string>Screen</string>
 	</array>
-	<key>IDEAnalyticsMetricsNotifications.AnalyticsMetricsNotificationsController.lastRefreshAttemptDate</key>
-	<date>2026-02-20T00:06:16Z</date>
 	<key>IDEAppStatisticsRunDestinationPlatform</key>
 	<dict>
 		<key>appletvos</key>
@@ -171,11 +169,6 @@
 	<true/>
 	<key>IDEChatIsBuiltInClaudeEnabled</key>
 	<true/>
-	<key>IDEChatUserSelectedDefaultChatModelDefinitionIdentifier</key>
-	<data>
-	eyJtb2RlbElkZW50aWZpZXIiOiJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIsInBy
-	b3ZpZGVySWRlbnRpZmllciI6eyJidWlsdEluIjp7Il8wIjp7ImNsYXVkZSI6e319fX19
-	</data>
 	<key>IDEDisableGitSupportForNewProjects</key>
 	<true/>
 	<key>IDEDocSearchSelectedReferenceIdentifier</key>
@@ -499,9 +492,7 @@
 	<string>17B48</string>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
-	<key>IDE_CA_Daily_RunMTC</key>
-	<true/>
-	<key>IDE_CA_Daily_SessionCrashed</key>
+	<key>IDE_CA_Daily_UsedScriptingAPI</key>
 	<true/>
 	<key>LastExplicitInspectorVisibility</key>
 	<true/>
@@ -536,7 +527,7 @@
 	ZW5dT3V0bGluZUNvbHVtbiNAdbAAAAAAAAjSJicoKVokY2xhc3NuYW1lWCRjbGFzc2Vz
 	XE5TRGljdGlvbmFyeaIoKlhOU09iamVjdNMVDQ4sMB6jFxgZgAOABIAFozEyHYALgAyA
 	CIAJW0NsYXNzQ29sdW1uI0BUAAAAAAAA0xUNDjg8HqMXGBmAA4AEgAWjPT4dgA6AD4AI
-	gAlbVmFsdWVDb2x1bW4jQJLEAAAAAADSJidERV5OU011dGFibGVBcnJheaNERipXTlNB
+	gAlbVmFsdWVDb2x1bW4jQHTwAAAAAADSJidERV5OU011dGFibGVBcnJheaNERipXTlNB
 	cnJheQAIABEAGgAkACkAMgA3AEkATABSAFQAaABuAHMAfgCFAIkAiwCNAI8AkQCYAKAA
 	pACmAKgAqgCuALAAsgC0ALYAwQDHAM4A3ADlAOYA6wD2AP8BDAEPARgBHwEjASUBJwEp
 	AS0BLwExATMBNQFBAUoBUQFVAVcBWQFbAV8BYQFjAWUBZwFzAXwBgQGQAZQAAAAAAAAC
@@ -625,22 +616,10 @@
 	<true/>
 	<key>ProductMappingKey</key>
 	<data>
-	YnBsaXN0MDDRAQJXZW50cmllc6cDCg4SFhoe0wQFBgcICV13b3Jrc3BhY2VQYXRoWHBy
-	b2R1Y3RzWmxhc3RPcGVuZWRfEFAvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJs
-	QS9Hcm91cE1lc3NhZ2VIZWxwZXIvR3JvdXBNZXNzYWdlSGVscGVyLnhjb2RlcHJvaqAz
-	QcekeVWd6gPTBAUGCwwNXxBJL1VzZXJzL2dhcnlhc2gvRGV2ZWxvcGVyL0dlZURibEEv
-	UHJvamVjdFRlbXBsYXRlcy8yREdhbWUvMkRHYW1lLnhjb2RlcHJvaqAzQcekflqJGlTT
-	BAUGDxARXxBVL1VzZXJzL2dhcnlhc2gvRGV2ZWxvcGVyL0dlZURibEEvUHJvamVjdFRl
-	bXBsYXRlcy9VSUtpdFByb2plY3QvVUlLaXRQcm9qZWN0Lnhjb2RlcHJvaqAzQcekf2Ec
-	6UfTBAUGExQVXxBXL1VzZXJzL2dhcnlhc2gvRGV2ZWxvcGVyL0dlZURibEEvUHJvamVj
-	dFRlbXBsYXRlcy9BcHBLaXRQcm9qZWN0L0FwcEtpdFByb2plY3QueGNvZGVwcm9qoDNB
-	x6SE3ix+INMEBQYXGBlfEFcvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9Q
-	cm9qZWN0VGVtcGxhdGVzL011bHRpUGxhdGZvcm0vTXVsdGlQbGF0Zm9ybS54Y29kZXBy
-	b2qgM0HHpITy60OF0wQFBhscHV8QLC9Vc2Vycy9nYXJ5YXNoL0RldmVsb3Blci9UZXN0
-	L1Rlc3QueGNvZGVwcm9qoDNBx6SL1/xzR9MEBQYfICFfEC4vVXNlcnMvZ2FyeWFzaC9E
-	ZXZlbG9wZXIvVGVzdDIvVGVzdDIueGNvZGVwcm9qoDNBx6SNgtaDEgAIAAsAEwAbACIA
-	MAA5AEQAlwCYAKEAqAD0APUA/gEFAV0BXgFnAW4ByAHJAdIB2QIzAjQCPQJEAnMCdAJ9
-	AoQCtQK2AAAAAAAAAgEAAAAAAAAAIgAAAAAAAAAAAAAAAAAAAr8=
+	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
+	Wmxhc3RPcGVuZWRfEDIvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9vY2Qv
+	b2NkLnhjb2RlcHJvaqAzQcelysygGucICxMVHCozPnN0AAAAAAAAAQEAAAAAAAAACgAA
+	AAAAAAAAAAAAAAAAAH0=
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
 	<string>23C54</string>
@@ -1681,7 +1660,7 @@
 	<key>Xcode3ProjectTemplateChooserAssistantSelectedTemplateName_Multiplatform</key>
 	<string>Application/App</string>
 	<key>Xcode3ProjectTemplateChooserAssistantSelectedTemplateName_macOS</key>
-	<string>Application/App</string>
+	<string>Application/Command Line Tool</string>
 	<key>XcodeCloudUserHasDismissedGetStartedPrompt</key>
 	<true/>
 </dict>
