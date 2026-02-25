@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :  23-Feb-2026  3:47pm
+# Modified :  25-Feb-2026  3:06pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -127,6 +127,8 @@ zstyle ':completion:*' file-list all
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*:*:z:*' group-order recent-directorieszstyle ':completion:*:*:z:*' group-order recent-directories
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#AEB5B0,bg=#003743"
 export ZSH_AUTOSUGGEST_USE_ASYNC="1"
@@ -176,6 +178,7 @@ install_powerline_precmd
 #*****************************************************************************************
 # Setup  Zoxide directory changer
 #*****************************************************************************************
+_ZO_DATA_DIR="$HOME/Library/Application Support"
 eval "$(zoxide init zsh)"
 
 if [[ $TERM_PROGRAM != "Apple_Terminal" ]]; then

@@ -38,35 +38,39 @@
 [protocol]
 	version = 2
 
-[color "branch"]
-	current         = black
-	local           = normal
-	remote          = magenta bold
+[color]
+    ui = auto
+    pager = true
+
+[color "log"]
+    # Graph line color palette for ancestry columns.
+    # These will cycle for deeper history depths.
+    graphColors = "#268bd2,#859900,#b58900,#d33682,#2aa198,#dc322f,#6c71c4,#93a1a1"
 
 [color "decorate"]
-  branch       = white bold
-  remoteBranch = cyan bold
-  tag          = red
-  stash        = magenta
-  HEAD         = green
+    branch       = "#859900 bold"
+    remoteBranch = "#cb4b16 bold"
+    tag          = "#268bd2 bold"
+    HEAD         = "#2aa198 bold"
+    stash        = "#d33682 bold"
+    grafted      = "#6c71c4 bold"
 
 [color "diff"]
-   commit     = yellow
-   func       = cyan
-   meta       = blue
-   frag       = cyan
-   old        = red
-   new        = green
-   newMoved   = cyan
-   oldMoved   = blue
-   context    = default
-   whitespace = red
+    meta      = "#268bd2 bold"
+    frag      = "#d33682 bold"
+    old       = "#dc322f"
+    new       = "#859900"
+    commit    = "#b58900 bold"
+    whitespace= "#657b83"
 
 [color "status"]
-	added           = green
-	changed         = blue
-	updated			= yellow
-	untracked       = cyan
+    added     = "#859900"
+    changed   = "#b58900"
+    untracked = "#dc322f"
+    deleted   = "#dc322f"
+    renamed   = "#268bd2"
+    copied    = "#268bd2"
+    updated   = "#2aa198"
 
 [color "interactive"]
   error        = red bold
