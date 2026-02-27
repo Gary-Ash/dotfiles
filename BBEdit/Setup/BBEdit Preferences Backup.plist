@@ -16,8 +16,6 @@
 	<integer>0</integer>
 	<key>AutoShowFileList</key>
 	<false/>
-	<key>BBEditSerialNumber:15.0</key>
-	<string>BEE150-VAT69-QKSZ2-JQZW8</string>
 	<key>BBEditorFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -531,7 +529,7 @@
 	<key>Rewrap_RemoveSpaces</key>
 	<false/>
 	<key>SULastCheckedDate</key>
-	<date>2026-02-25T17:57:54Z</date>
+	<date>2026-02-27T21:40:30Z</date>
 	<key>Saved Search Sets</key>
 	<false/>
 	<key>Search_CaseSensitive</key>

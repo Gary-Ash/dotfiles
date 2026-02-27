@@ -45,6 +45,7 @@ jekyll-paginate-v2
 jekyll-sass-converter
 jekyll-watch
 json
+json-schema
 kramdown
 kramdown-parser-gfm
 language_server-protocol
@@ -53,6 +54,7 @@ liquid
 listen
 logger
 matrix
+mcp
 mercenary
 minitest
 mutex_m

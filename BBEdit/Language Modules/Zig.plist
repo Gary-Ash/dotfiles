@@ -4,28 +4,14 @@
 <dict>
 	<key>BBEditDocumentType</key>
 	<string>CodelessLanguageModule</string>
-	
-	<key>BBLMLanguageDisplayName</key>
-	<string>Zig</string>
-	
-	<key>BBLMLanguageCode</key>
-	<string>Zig </string>
-	
-	<key>BBLMSuffixMap</key>
-	<array>
-		<dict>
-			<key>BBLMLanguageSuffix</key>
-			<string>.zig</string>
-		</dict>
-		<dict>
-			<key>BBLMLanguageSuffix</key>
-			<string>.zon</string>
-		</dict>
-	</array>
-	
+	<key>BBLMCanSpellCheckCodeRuns</key>
+	<false/>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMCommentLineDefault</key>
+	<string>//</string>
 	<key>BBLMKeywordList</key>
 	<array>
-		<!-- Control flow -->
 		<string>if</string>
 		<string>else</string>
 		<string>switch</string>
@@ -39,8 +25,6 @@
 		<string>catch</string>
 		<string>orelse</string>
 		<string>try</string>
-		
-		<!-- Declarations -->
 		<string>const</string>
 		<string>var</string>
 		<string>fn</string>
@@ -49,8 +33,6 @@
 		<string>union</string>
 		<string>opaque</string>
 		<string>test</string>
-		
-		<!-- Visibility and linking -->
 		<string>pub</string>
 		<string>export</string>
 		<string>extern</string>
@@ -59,16 +41,12 @@
 		<string>comptime</string>
 		<string>callconv</string>
 		<string>noalias</string>
-		
-		<!-- Memory -->
 		<string>packed</string>
 		<string>align</string>
 		<string>linksection</string>
 		<string>volatile</string>
 		<string>allowzero</string>
 		<string>threadlocal</string>
-		
-		<!-- Special -->
 		<string>async</string>
 		<string>await</string>
 		<string>suspend</string>
@@ -78,18 +56,12 @@
 		<string>asm</string>
 		<string>unreachable</string>
 		<string>usingnamespace</string>
-		
-		<!-- Boolean literals -->
 		<string>true</string>
 		<string>false</string>
 		<string>null</string>
 		<string>undefined</string>
-		
-		<!-- Operators as keywords -->
 		<string>and</string>
 		<string>or</string>
-		
-		<!-- Types -->
 		<string>anytype</string>
 		<string>anyerror</string>
 		<string>anyopaque</string>
@@ -100,8 +72,6 @@
 		<string>bool</string>
 		<string>comptime_int</string>
 		<string>comptime_float</string>
-		
-		<!-- Integer types -->
 		<string>i8</string>
 		<string>i16</string>
 		<string>i32</string>
@@ -124,18 +94,18 @@
 		<string>c_longlong</string>
 		<string>c_ulonglong</string>
 		<string>c_longdouble</string>
-		
-		<!-- Float types -->
 		<string>f16</string>
 		<string>f32</string>
 		<string>f64</string>
 		<string>f80</string>
 		<string>f128</string>
 	</array>
-	
+	<key>BBLMLanguageCode</key>
+	<string>Zig </string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>Zig</string>
 	<key>BBLMPredefinedNameList</key>
 	<array>
-		<!-- Built-in functions -->
 		<string>@import</string>
 		<string>@cImport</string>
 		<string>@cInclude</string>
@@ -240,83 +210,63 @@
 		<string>@offsetOf</string>
 		<string>@bitOffsetOf</string>
 	</array>
-	
-	<key>BBLMCommentLineDefault</key>
-	<string>//</string>
-	
 	<key>BBLMScansFunctions</key>
 	<true/>
-	
-	<key>BBLMCanSpellCheckCodeRuns</key>
-	<false/>
-	
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.zig</string>
+		</dict>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.zon</string>
+		</dict>
+	</array>
 	<key>BBLMSupportsTextCompletion</key>
 	<true/>
-	
-	<key>BBLMColorsSyntax</key>
-	<true/>
-	
 	<key>Language Features</key>
 	<dict>
 		<key>Close Block Comments</key>
 		<string>*/</string>
-		
 		<key>Close Parameter Lists</key>
 		<string>)</string>
-		
 		<key>Close Statement Blocks</key>
 		<string>}</string>
-		
 		<key>Close Strings 1</key>
 		<string>"</string>
-		
 		<key>Close Strings 2</key>
 		<string>'</string>
-		
 		<key>End-of-line Ends Strings 1</key>
 		<false/>
-		
 		<key>End-of-line Ends Strings 2</key>
 		<true/>
-		
 		<key>Escape Char in Strings 1</key>
 		<string>\</string>
-		
 		<key>Escape Char in Strings 2</key>
 		<string>\</string>
-		
 		<key>Identifier and Keyword Characters</key>
 		<string>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz@</string>
-		
 		<key>Open Block Comments</key>
 		<string>/*</string>
-		
 		<key>Open Line Comments</key>
 		<string>//</string>
-		
 		<key>Open Parameter Lists</key>
 		<string>(</string>
-		
 		<key>Open Statement Blocks</key>
 		<string>{</string>
-		
 		<key>Open Strings 1</key>
 		<string>"</string>
-		
 		<key>Open Strings 2</key>
 		<string>'</string>
-		
 		<key>Prefix for Functions</key>
 		<string>fn</string>
-		
 		<key>Prefix for Procedures</key>
 		<string>fn</string>
-		
-		<key>Terminator for Prototypes 1</key>
-		<string>;</string>
-		
 		<key>String Begins with Delimiter</key>
 		<true/>
+		<key>Terminator for Prototypes 1</key>
+		<string>;</string>
 	</dict>
 </dict>
 </plist>

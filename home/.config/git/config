@@ -99,7 +99,6 @@
 	fuckit          = "!git clean -df  && git reset --hard"
 	pruner          = "!git prune --expire=now && git reflog expire --expire-unreachable=now --rewrite --all"
 	oops			= "!git  add -A  && git commit --amend --reuse-message=HEAD && git push --force"
-	oops-tracked	= "!git  add -u  && git commit --amend --reuse-message=HEAD && git push --force"
 
     co-author 		= "!f() { \
         if [ -n \"$1\" ] && [ -n \"$2\" ]; then \

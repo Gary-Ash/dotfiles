@@ -4,9 +4,9 @@
 
 Format:
 ```
-[TYPE]: <description>
+[TYPE]: <Title Cased short summary>
 
-[optional body]
+<description>
 
 [optional footer]
 ```
@@ -76,7 +76,7 @@ Rules for maintaining file headers:
 //
 // Author   :  Gary Ash <gary.ash@icloud.com>
 // Created  :   7-Feb-2026  4:27pm
-// Modified :
+// Modified :  27-Feb-2026  4:59pm
 //
 // Copyright © 2026 By Gary Ash All rights reserved.
 //****************************************************************************************

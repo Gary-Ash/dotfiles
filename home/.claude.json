@@ -1,5 +1,5 @@
 {
-  "numStartups": 51,
+  "numStartups": 52,
   "installMethod": "native",
   "autoUpdates": false,
   "tipsHistory": {
@@ -111,7 +111,7 @@
     "tengu_worktree_mode": true,
     "tengu_marble_sandcastle": true,
     "tengu_pebble_leaf_prune": false,
-    "tengu_birch_mist": false,
+    "tengu_birch_mist": true,
     "tengu_swann_brevity": "polished",
     "tengu_oak_drum": false,
     "tengu_tool_input_aliasing": false,
@@ -138,7 +138,7 @@
   "skillUsage": {},
   "clientDataCache": {
     "data": {},
-    "timestamp": 1771882567963
+    "timestamp": 1772226441115
   },
   "hasShownOpus46Notice": {
     "44ed8be7-c6d4-430e-9a86-ed8efc92979c": true

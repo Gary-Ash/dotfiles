@@ -30,7 +30,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>DVTDevicesWindowControllerSelectedDeviceIdentifier</key>
-	<string>00008130-001835D622A0001C</string>
+	<string>00008310-0009729E21FBA01E</string>
 	<key>DVTDevicesWindowControllerSelectedSimulatorIdentifier</key>
 	<string>CD8D1F09-7309-40B5-BF30-7A5A8EA22E9A-mobiledevice</string>
 	<key>DVTDisclosureViewDisclosedStates</key>
@@ -133,6 +133,8 @@
 		<string>View</string>
 		<string>Screen</string>
 	</array>
+	<key>IDEAllowUnauthenticatedAgents</key>
+	<true/>
 	<key>IDEAppStatisticsRunDestinationPlatform</key>
 	<dict>
 		<key>appletvos</key>
@@ -153,7 +155,7 @@
 			<key>App Store Product Source Accounts: 9CF43D67-D21F-44C2-A730-AA112E1AACF2</key>
 			<date>2025-11-10T01:52:27Z</date>
 			<key>App Store Product Source Accounts: A5AAFAD6-F9AC-4EC8-A438-C8AD629EAA66</key>
-			<date>2026-02-20T02:10:39Z</date>
+			<date>2026-02-26T20:00:38Z</date>
 		</dict>
 		<key>DVTUserDefaultsCachingKeysRecentlyUsed</key>
 		<array>
@@ -168,6 +170,8 @@
 	<key>IDEChatCurrentErrorsContextEnabled</key>
 	<true/>
 	<key>IDEChatIsBuiltInClaudeEnabled</key>
+	<true/>
+	<key>IDEDeveloperDocumentationSelectedDuringFirstLaunch</key>
 	<true/>
 	<key>IDEDisableGitSupportForNewProjects</key>
 	<true/>
@@ -216,27 +220,27 @@
 	<dict>
 		<key>/Applications/Xcode.app/Contents/Applications/Accessibility Inspector.app</key>
 		<data>
-		17NRgCDS9L9x+3wGRSmTohPSjeE=
+		YkgQg8SBkhnnGVXsXZjhgKFo87A=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/FileMerge.app</key>
 		<data>
-		tVYR+tZ05T+0p0qyfOyjkPGdv5A=
+		10p9yragU/5Iei2ZReIx8vfmJFM=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Icon Composer.app</key>
 		<data>
-		9ihC4h/t1ctYMHlV6Cxnysfhp+k=
+		gec65x1SoHBCvhNYtB1OtLRmaPM=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Instruments.app</key>
 		<data>
-		kZ312Uc/ZEDpa6S9OaHQDIptZew=
+		yL4Me+Tn1YiCJJLdBAq83PillYo=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Reality Composer Pro.app</key>
 		<data>
-		QpMgwiN3VUgoIEM51Aja57PC9jk=
+		4iXApulxh7Oeg5MiIkd6GWXPXyE=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app</key>
 		<data>
-		FzlDWQuyjTV5Q9MGLrHcg1d76Es=
+		9uONABxWlLbjfa0NuEyApkHQOTM=
 		</data>
 		<key>/System/Library/CoreServices/CoreTypes.bundle</key>
 		<data>
@@ -244,9 +248,9 @@
 		</data>
 	</dict>
 	<key>IDELastShownWhatsNewContentRevision</key>
-	<integer>4</integer>
+	<integer>5</integer>
 	<key>IDELastViewedSettingsPane</key>
-	<string>Navigation</string>
+	<string>Components</string>
 	<key>IDELibraryWindowController-With-Details.height</key>
 	<real>449</real>
 	<key>IDELibraryWindowController-With-Details.location</key>
@@ -272,6 +276,8 @@
 	<array/>
 	<key>IDELogNavigatorGroupByKey</key>
 	<false/>
+	<key>IDEMetalToolchainLastNotified-17C529</key>
+	<string>17C519</string>
 	<key>IDEMetalToolchainSelectedDuringFirstLaunch</key>
 	<true/>
 	<key>IDEModelAccessHasUserConsentForOnDeviceInteractions</key>
@@ -307,6 +313,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-iphoneos</key>
 	<array>
+		<string>23C57</string>
 		<string>23C53</string>
 		<string>23B77</string>
 		<string>23A339</string>
@@ -317,6 +324,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-macosx</key>
 	<array>
+		<string>25C58</string>
 		<string>25C57</string>
 		<string>25B74</string>
 		<string>25A352</string>
@@ -597,7 +605,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>892 85 710 722 0 0 2560 1410 </string>
+	<string>899 593 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
