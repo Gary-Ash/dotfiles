@@ -4,51 +4,33 @@
 
 Format:
 ```
-[TYPE]: <Title Cased short summary>
+[TAG] Title Cased Short Summary
 
-<description>
-
-[optional footer]
+Detailed description of the change.
 ```
 
 The first commit of a new project should be: `Initial commit`
 
-Types:
-- FEATURE: New functionality
-- BUGFIX: Bug fixes
-- TIDY: Documentation changes, code style changes
-- REFACTOR: Code refactoring (structural changes, no behavior change)
-- TEST: Adding or modifying tests
+Tags:
+- `[BUG FIX]`   = A bug fix
+- `[FEATURE]`   = New feature code
+- `[REFACTOR]`  = A code refactor
+- `[TEST CODE]` = Added test code
+- `[TIDY]`      = A tidy up action: reformat code, fix a spelling error
 
 Rules:
-- Type in square brackets, uppercase
-- Description in imperative mood ("Add" not "Added")
+- Tag in square brackets, no colon after the tag
+- Title is Title Cased
 - Blank line between subject and body
-- Body uses bullet points for multiple changes
+- Body is a prose description, not bullet points
 - Wrap at 72 characters
 
-Examples:
+Example:
 ```
-[FEATURE]: Add Password Reset Functionality
+[TIDY] Improved Template Description
 
-- Add forgot password form
-- Implement email verification flow
-- Add password reset endpoint
-```
-
-```
-[TIDY]: Clean up authentication module
-
-- Remove unused imports
-- Standardize naming conventions
-```
-
-```
-[TEST]: Add edge cases for rate limiting
-```
-
-```
-[REFACTOR]: Extract validation into separate module
+Small change to improve the description of the SwiftUI-based
+multiplatform project template
 ```
 
 ## Code Style
@@ -173,9 +155,17 @@ set -euo pipefail
 
 - Test-Driven Development (Kent Beck style)
   1. Write a failing test
+  
   2. Make it pass with minimal code
+  
   3. Refactor (tidy)
+  
+  4. NEVER delete or comment out a test without my approval 
+  
+     
+  
 - Tidy First: small structural changes before behavior changes
+
 - Prefer small, focused commits that do one thing
 
 ## Languages
