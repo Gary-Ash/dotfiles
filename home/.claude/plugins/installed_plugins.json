@@ -34,11 +34,11 @@
     "swiftui-expert@swiftui-expert-skill": [
       {
         "scope": "user",
-        "installPath": "/Users/garyash/.claude/plugins/cache/swiftui-expert-skill/swiftui-expert/1.1.2",
-        "version": "1.1.2",
+        "installPath": "/Users/garyash/.claude/plugins/cache/swiftui-expert-skill/swiftui-expert/2.0.1",
+        "version": "2.0.1",
         "installedAt": "2026-02-18T21:03:33.850Z",
-        "lastUpdated": "2026-02-18T21:03:33.850Z",
-        "gitCommitSha": "0f7d497e1f458476df5e27644f3e0e79470b855a"
+        "lastUpdated": "2026-03-03T00:00:00.000Z",
+        "gitCommitSha": "020c48af27bce615f3def0ef0ee15da7cf43687f"
       }
     ]
   }

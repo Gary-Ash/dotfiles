@@ -3,17 +3,7 @@
     "commit": "",
     "pr": ""
   },
-  "statusLine": {
-    "type": "command",
-    "command": "perl ~/.claude/statusline.pl"
-  },
-  "enabledPlugins": {
-    "swift-lsp@claude-plugins-official": true,
-    "clangd-lsp@claude-plugins-official": true,
-    "swift-concurrency@swift-concurrency-agent-skill": true,
-    "swiftui-expert@swiftui-expert-skill": true
-  },
- "permissions": {
+  "permissions": {
     "allow": [
       "Skill(bash-skill)",
       "Skill(cpp-skill)",
@@ -34,5 +24,16 @@
       "Bash(chmod 700:*)",
       "mcp__github__list_gists"
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "perl ~/.claude/statusline.pl"
+  },
+  "enabledPlugins": {
+    "swift-lsp@claude-plugins-official": true,
+    "clangd-lsp@claude-plugins-official": true,
+    "swift-concurrency@swift-concurrency-agent-skill": true,
+    "swiftui-expert@swiftui-expert-skill": true
+  },
+  "model": "opus"
 }

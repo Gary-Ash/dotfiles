@@ -28,8 +28,6 @@
 	<string>0.513725 0.580392 0.588235 1</string>
 	<key>DVTConsoleTextSelectionColor</key>
 	<string>0.643137 0.803922 1 1</string>
-	<key>DVTCursor</key>
-	<integer>2</integer>
 	<key>DVTFontAndColorVersion</key>
 	<integer>1</integer>
 	<key>DVTFontSizeModifier</key>
