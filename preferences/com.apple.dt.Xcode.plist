@@ -272,7 +272,7 @@
 	<key>IDELastShownWhatsNewContentRevision</key>
 	<integer>5</integer>
 	<key>IDELastViewedSettingsPane</key>
-	<string>General</string>
+	<string>Components</string>
 	<key>IDELibraryWindowController-With-Details.height</key>
 	<real>449</real>
 	<key>IDELibraryWindowController-With-Details.location</key>
@@ -299,7 +299,7 @@
 	<key>IDELogNavigatorGroupByKey</key>
 	<false/>
 	<key>IDEMetalToolchainLastNotified-17C529</key>
-	<string>17C519</string>
+	<string>17C7003j</string>
 	<key>IDEMetalToolchainSelectedDuringFirstLaunch</key>
 	<true/>
 	<key>IDEModelAccessHasUserConsentForOnDeviceInteractions</key>
@@ -520,6 +520,8 @@
 	<string>16C7015</string>
 	<key>IDEXcodeDeviceSupportLastNotified-17A400</key>
 	<string>17B48</string>
+	<key>IDEXcodeDeviceSupportLastNotified-17C529</key>
+	<string>17C7003i</string>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
 	<key>IDE_CA_Daily_UsedScriptingAPI</key>
@@ -627,7 +629,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>899 489 710 722 0 0 2560 1410 </string>
+	<string>899 437 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
