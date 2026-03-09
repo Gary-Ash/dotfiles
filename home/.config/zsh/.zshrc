@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :  25-Feb-2026  3:06pm
+# Modified :   8-Mar-2026  7:35pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -325,7 +325,7 @@ sysupdate() {
 		"$HOME/.konan"
 		"$HOME/.gradle"
 		"$HOME/.swiftpm"
-		"$HOMD/.hawtjni"
+		"$HOME/.hawtjni"
 		"$HOME/.config/zsh/.zsh_history"
 	)
 

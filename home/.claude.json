@@ -1,35 +1,37 @@
 {
-  "numStartups": 56,
+  "numStartups": 67,
   "installMethod": "native",
   "autoUpdates": false,
   "tipsHistory": {
     "new-user-warmup": 7,
-    "plan-mode-for-complex-tasks": 54,
-    "terminal-setup": 53,
-    "memory-command": 47,
-    "theme-command": 42,
+    "plan-mode-for-complex-tasks": 64,
+    "terminal-setup": 63,
+    "memory-command": 62,
+    "theme-command": 62,
     "prompt-queue": 24,
-    "enter-to-steer-in-relatime": 42,
-    "todo-list": 42,
-    "install-github-app": 53,
-    "install-slack-app": 54,
-    "drag-and-drop-images": 54,
-    "paste-images-mac": 54,
-    "double-esc-code-restore": 54,
-    "continue": 54,
-    "shift-tab": 54,
-    "image-paste": 43,
-    "desktop-app": 47,
-    "web-app": 48,
-    "mobile-app": 49,
+    "enter-to-steer-in-relatime": 62,
+    "todo-list": 62,
+    "install-github-app": 64,
+    "install-slack-app": 64,
+    "drag-and-drop-images": 64,
+    "paste-images-mac": 64,
+    "double-esc-code-restore": 64,
+    "continue": 64,
+    "shift-tab": 64,
+    "image-paste": 63,
+    "desktop-app": 63,
+    "web-app": 63,
+    "mobile-app": 64,
     "frontend-design-plugin": 2,
-    "custom-agents": 51,
+    "custom-agents": 66,
     "agent-flag": 53,
-    "permissions": 54,
-    "rename-conversation": 42,
-    "custom-commands": 43,
+    "permissions": 64,
+    "rename-conversation": 57,
+    "custom-commands": 58,
     "overage-promo": 27,
-    "git-worktrees": 51
+    "git-worktrees": 61,
+    "desktop-shortcut": 58,
+    "feedback-command": 58
   },
   "promptQueueUseCount": 17,
   "cachedGrowthBookFeatures": {
@@ -39,8 +41,7 @@
     "tengu_1p_event_batch_config": {
       "scheduledDelayMillis": 10000,
       "maxExportBatchSize": 400,
-      "maxQueueSize": 8192,
-      "skipAuth": true
+      "maxQueueSize": 8192
     },
     "tengu_scratch": false,
     "tengu_disable_bypass_permissions_mode": false,
@@ -100,7 +101,8 @@
     "tengu_prompt_cache_1h_config": {
       "allowlist": [
         "repl_main_thread*",
-        "sdk"
+        "sdk",
+        "auto_mode"
       ]
     },
     "tengu_immediate_model_command": false,
@@ -123,11 +125,42 @@
     "tengu_tst_kx7": false,
     "tengu_ccr_bridge": true,
     "tengu_coral_whistle": false,
-    "tengu_summarize_tool_results": false,
+    "tengu_summarize_tool_results": true,
     "tengu_auto_background_agents": false,
     "tengu_disable_streaming_to_non_streaming_fallback": false,
     "tengu_amber_quartz": false,
-    "tengu_marble_lantern_disabled": false
+    "tengu_marble_lantern_disabled": false,
+    "tengu_crystal_beam": {
+      "budgetTokens": 0
+    },
+    "tengu_herring_clock": false,
+    "tengu_frond_boric": {},
+    "tengu_cicada_nap_ms": 0,
+    "tengu_miraculo_the_bard": false,
+    "tengu_miraculo_the_bard2": false,
+    "tengu_kairos_cron": true,
+    "tengu_paper_halyard": false,
+    "tengu_quiet_hollow": true,
+    "tengu_granite_whisper": false,
+    "tengu_desktop_upsell": {
+      "enable_shortcut_tip": true,
+      "enable_startup_dialog": false
+    },
+    "tengu_marble_whisper": false,
+    "tengu_turtle_carbon": true,
+    "tengu_grey_wool": true,
+    "tengu_auto_mode_config": {
+      "enabled": "disabled",
+      "twoStageClassifier": true
+    },
+    "tengu_glacier_2xr": false,
+    "tengu_basalt_3kr": false,
+    "tengu_swinburne_dune": false,
+    "tengu_sotto_voce": true,
+    "tengu_defer_all_bn4": false,
+    "tengu_tst_hint_m7r": false,
+    "tengu_satin_quoll": {},
+    "tengu_tight_weave": true
   },
   "sonnet45MigrationComplete": true,
   "opus45MigrationComplete": true,
@@ -136,7 +169,7 @@
   "cachedChromeExtensionInstalled": false,
   "hasCompletedOnboarding": true,
   "lastOnboardingVersion": "2.1.29",
-  "lastReleaseNotesSeen": "2.1.66",
+  "lastReleaseNotesSeen": "2.1.71",
   "hasShownOpus45Notice": {},
   "s1mAccessCache": {},
   "groveConfigCache": {},
@@ -145,8 +178,10 @@
   "officialMarketplaceAutoInstalled": true,
   "skillUsage": {},
   "clientDataCache": {
-    "data": {},
-    "timestamp": 1772226441115
+    "data": {
+      "coral_reef_sonnet": "true"
+    },
+    "timestamp": 1772911318573
   },
   "hasShownOpus46Notice": {
     "44ed8be7-c6d4-430e-9a86-ed8efc92979c": true
@@ -170,5 +205,6 @@
       "args": [],
       "env": {}
     }
-  }
+  },
+  "effortCalloutV2Dismissed": true
 }
