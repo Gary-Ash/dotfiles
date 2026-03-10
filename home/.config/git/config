@@ -124,6 +124,11 @@
 	process         = git-lfs filter-process
 	required        = true
 
+[filter "applescript"]
+    clean = /opt/geedbla/scripts/git-applescript-filter.sh clean
+    smudge = /opt/geedbla/scripts/git-applescript-filter.sh smudge
+    required = true
+
 [gpg]
 	format = ssh
 
