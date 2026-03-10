@@ -2,6 +2,10 @@
 *.gitattributes text
 .gitignore      text
 *.md            text
+*.markdown      text
+
+# filtered files
+*.scpt  filter=applescript
 
 # Graphics
 *.png 			diff=exif
@@ -80,7 +84,7 @@
 *.html          text diff=html
 *.storyboard	text diff=xml
 *.pbxproj 		merge=union
-*.plist 		diff=plist
+*.plist 		filter=plist diff=plist
 *.strings 		diff=utf16
 *.rs       		text diff=rust
 *.toml     		text diff=toml

@@ -485,7 +485,7 @@
 	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
 	<string>1145 986 266 160 0 0 2560 1415 </string>
 	<key>NextAutoSaveCheckTime</key>
-	<integer>2028503535</integer>
+	<integer>2028521381</integer>
 	<key>Open Editing Windows</key>
 	<false/>
 	<key>Open Text Documents</key>
@@ -563,6 +563,8 @@
 	<key>StripTrailingWhitespace_Swift</key>
 	<true/>
 	<key>StripTrailingWhitespace_Unix Shell Script</key>
+	<true/>
+	<key>UseAttachmentScripts</key>
 	<true/>
 	<key>UserDeclinedSandboxAccess</key>
 	<true/>

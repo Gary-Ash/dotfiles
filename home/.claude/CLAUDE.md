@@ -45,7 +45,7 @@ Every new source file must include a file header comment. Use the appropriate te
 
 Rules for maintaining file headers:
 - Replace "brief summary of the file contents" with a concise description of what the file actually contains
-- Every time you edit a file, update the "Modified" field with the current date and time (same format as "Created")
+- Every time you edit a file, update the "Modified" field with the current date and time using the same format as "Created"
 - If the current year differs from the year in the copyright line, append "-<current year>" to form a range (e.g., "Copyright © 2026-2027"). Do not modify it if the current year is already present.
 
 ### Rust and other `//` comment languages
@@ -155,15 +155,15 @@ set -euo pipefail
 
 - Test-Driven Development (Kent Beck style)
   1. Write a failing test
-  
+
   2. Make it pass with minimal code
-  
+
   3. Refactor (tidy)
-  
-  4. NEVER delete or comment out a test without my approval 
-  
-     
-  
+
+  4. NEVER delete or comment out a test without my approval
+
+
+
 - Tidy First: small structural changes before behavior changes
 
 - Prefer small, focused commits that do one thing

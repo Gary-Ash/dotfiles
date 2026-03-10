@@ -295,6 +295,8 @@
 	</array>
 	<key>ApplicationMap</key>
 	<dict>
+		<key>Alfred</key>
+		<string>file:///Applications/Alfred%205.app/</string>
 		<key>Bartender 4</key>
 		<string>file:///Applications/Bartender%205.app/</string>
 		<key>Keyboard Maestro Engine</key>
