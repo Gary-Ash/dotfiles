@@ -13,6 +13,7 @@
 	autocrlf          = input
 	compression       = -1
 	filemode          = false
+	trustctime        = false
 	precomposeUnicode = true
 	editor 			  = bbedit --wait --resume
 	pager 			  = delta
@@ -187,6 +188,9 @@
 [pull]
 	ff = only
 
+[diff "applescript"]
+	textconv = osadecompile
+
 [diff "utf16"]
 	textconv = "iconv -f utf-16 -t utf-8"
 
@@ -198,9 +202,10 @@
     binary   = true
 
 [diff]
-	tool = Kaleidoscope
-    guitool   = Kaleidoscope
-    submodule = log
+	tool        = Kaleidoscope
+    guitool     = Kaleidoscope
+    submodule   = log
+	renormalize = true
 
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
@@ -210,6 +215,7 @@
 [merge]
 	tool          = Kaleidoscope
 	conflictStyle = zdiff3
+	renormalize   = true
 
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot

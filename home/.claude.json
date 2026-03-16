@@ -1,5 +1,5 @@
 {
-  "numStartups": 87,
+  "numStartups": 88,
   "installMethod": "native",
   "autoUpdates": false,
   "tipsHistory": {
@@ -27,11 +27,11 @@
     "agent-flag": 83,
     "permissions": 84,
     "rename-conversation": 87,
-    "custom-commands": 73,
+    "custom-commands": 88,
     "overage-promo": 27,
     "git-worktrees": 81,
-    "desktop-shortcut": 73,
-    "feedback-command": 73
+    "desktop-shortcut": 88,
+    "feedback-command": 88
   },
   "promptQueueUseCount": 20,
   "cachedGrowthBookFeatures": {

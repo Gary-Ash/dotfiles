@@ -5,7 +5,8 @@
 *.markdown      text
 
 # filtered files
-*.scpt  filter=applescript
+*.scpt         filter=applescript diff=applescript
+*.applescript  text diff=applescript
 
 # Graphics
 *.png 			diff=exif

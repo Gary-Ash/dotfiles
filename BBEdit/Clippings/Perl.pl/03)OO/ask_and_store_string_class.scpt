@@ -1,5 +1,0 @@
-set myText to (the text returned of (display dialog "Class Name" default answer "")) as text
-
-do shell script "echo " & quoted form of myText & " > /tmp/ask_and_store_string.txt"
-
-return myText

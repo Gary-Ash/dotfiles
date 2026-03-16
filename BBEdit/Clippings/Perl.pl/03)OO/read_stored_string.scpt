@@ -1,3 +1,0 @@
-set myText to do shell script "cat /tmp/ask_and_store_string.txt"
-
-return myText
