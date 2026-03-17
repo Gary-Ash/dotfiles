@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :   8-Mar-2026  7:35pm
+# Modified :  16-Mar-2026 10:05pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -104,7 +104,6 @@ bindkey "^[[F"    end-of-line
 bindkey "^[[A"    up-line-or-search
 bindkey "^[[B"    down-line-or-search
 bindkey "^[[3~"   delete-char
-bindkey "^[3;5~"  delete-char
 bindkey "^O"      my-sudolast-cmd_widget
 
 #*****************************************************************************************
