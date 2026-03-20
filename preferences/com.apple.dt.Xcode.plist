@@ -537,8 +537,6 @@
 	<string>17C7003i</string>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
-	<key>IDE_CA_Daily_UsedScriptingAPI</key>
-	<true/>
 	<key>LastExplicitInspectorVisibility</key>
 	<true/>
 	<key>NSColorPanelMode</key>
@@ -572,7 +570,7 @@
 	ZW5dT3V0bGluZUNvbHVtbiNAdbAAAAAAAAjSJicoKVokY2xhc3NuYW1lWCRjbGFzc2Vz
 	XE5TRGljdGlvbmFyeaIoKlhOU09iamVjdNMVDQ4sMB6jFxgZgAOABIAFozEyHYALgAyA
 	CIAJW0NsYXNzQ29sdW1uI0BUAAAAAAAA0xUNDjg8HqMXGBmAA4AEgAWjPT4dgA6AD4AI
-	gAlbVmFsdWVDb2x1bW4jQHTwAAAAAADSJidERV5OU011dGFibGVBcnJheaNERipXTlNB
+	gAlbVmFsdWVDb2x1bW4jQEVfnbItDlbSJidERV5OU011dGFibGVBcnJheaNERipXTlNB
 	cnJheQAIABEAGgAkACkAMgA3AEkATABSAFQAaABuAHMAfgCFAIkAiwCNAI8AkQCYAKAA
 	pACmAKgAqgCuALAAsgC0ALYAwQDHAM4A3ADlAOYA6wD2AP8BDAEPARgBHwEjASUBJwEp
 	AS0BLwExATMBNQFBAUoBUQFVAVcBWQFbAV8BYQFjAWUBZwFzAXwBgQGQAZQAAAAAAAAC
@@ -665,9 +663,9 @@
 	<key>ProductMappingKey</key>
 	<data>
 	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
-	Wmxhc3RPcGVuZWRfECwvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvVGVzdC9UZXN0Lnhj
-	b2RlcHJvaqAzQceznskQZqEICxMVHCozPm1uAAAAAAAAAQEAAAAAAAAACgAAAAAAAAAA
-	AAAAAAAAAHc=
+	Wmxhc3RPcGVuZWRfEDQvb3B0L2dlZWRibGEvdGVtcGxhdGVzL1hjb2RlLzJER2FtZS8y
+	REdhbWUueGNvZGVwcm9qoDNBx7Zbd861LQgLExUcKjM+dXYAAAAAAAABAQAAAAAAAAAK
+	AAAAAAAAAAAAAAAAAAAAfw==
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
 	<string>23D8133</string>
@@ -1706,9 +1704,11 @@
 	<key>Xcode3ProjectEditorSourceListVisible</key>
 	<true/>
 	<key>Xcode3ProjectTemplateChooserAssistantSelectedTemplateName_Multiplatform</key>
-	<string>Application/App</string>
+	<string>Application/Game</string>
 	<key>Xcode3ProjectTemplateChooserAssistantSelectedTemplateName_macOS</key>
 	<string>Application/Command Line Tool</string>
+	<key>Xcode3TargetTemplateChooserAssistantSelectedTemplateName_Multiplatform</key>
+	<string>Test/Unit Testing Bundle</string>
 	<key>XcodeCloudUserHasDismissedGetStartedPrompt</key>
 	<true/>
 </dict>

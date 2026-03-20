@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :  16-Mar-2026 10:05pm
+# Modified :  19-Mar-2026  9:08pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -327,6 +327,10 @@ sysupdate() {
 		"$HOME/.hawtjni"
 		"$HOME/.config/zsh/.zsh_history"
 	)
+
+	if command -v gh &>/dev/null; then
+		gh extension upgrade --all
+	fi
 
 	if command -v gem &>/dev/null; then
 		gem update &>/dev/null

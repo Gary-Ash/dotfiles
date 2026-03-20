@@ -18,7 +18,7 @@ font-family = "PragmataPro Liga"
 shell-integration = "zsh"
 shell-integration-features = no-cursor, title, ssh-terminfo
 window-height = 70
-window-width = 180
+window-width = 200
 window-colorspace = "display-p3"
 window-save-state = always
 

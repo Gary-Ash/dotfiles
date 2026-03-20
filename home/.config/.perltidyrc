@@ -2,7 +2,7 @@
 --backup-and-modify-in-place
 --backup-file-extension='/'
 --add-trailing-commas
---maximum-line-length=600
+--maximum-line-length=130
 --default-tabsize=4
 --space-prototype-paren=0
 --iterations=8
