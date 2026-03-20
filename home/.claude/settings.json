@@ -9,6 +9,8 @@
       "Skill(cpp-skill)",
       "Skill(perl-skill)",
       "Skill(python3-skill)",
+      "Skill(file-header-skill)",
+      "Skill(git-commit-skill)",
       "Bash(head:*)",
       "Bash(tail:*)",
       "Bash(ls:*)",

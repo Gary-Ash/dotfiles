@@ -32,6 +32,9 @@ dotfiles/
 │   │   ├── bat/          # Bat (cat replacement) config
 │   │   ├── eza/          # Eza (ls replacement) config
 │   │   ├── gh/           # GitHub CLI config
+│   │   ├── gh-dash/      # GitHub Dashboard config
+│   │   ├── diffnav/      # Diff navigation config
+│   │   ├── television/   # Television (tv) fuzzy finder config
 │   │   └── ...           # Code formatters (swiftformat, perltidy, etc.)
 │   ├── .lldbinit         # LLDB debugger config
 │   ├── .hushlogin        # Suppress login banner
@@ -69,7 +72,7 @@ Key packages installed via Brewfile:
 |----------|----------|
 | Shell | zsh, bash, zsh-autosuggestions, zsh-completions |
 | Git | git, gh, git-delta, git-lfs |
-| Search | ripgrep, fzf |
+| Search | ripgrep, fd, television |
 | File Utilities | bat, eza, jq |
 | Languages | python@3.14, node, rbenv |
 | Swift/Xcode | swiftformat, swiftlint, periphery |

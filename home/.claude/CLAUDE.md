@@ -25,6 +25,11 @@
   - CMake only, cross-platform (no platform-specific APIs without abstraction)
   - Always build with sanitizers (ASan, UBSan) during development
 
+## File Headers
+
+- Always use the `file-header-skill` when creating new source files
+- When editing a file that has a header, always update the Modified timestamp to the current date/time
+
 ## Testing
 
 - Tests come first

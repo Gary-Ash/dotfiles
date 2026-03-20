@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :  19-Mar-2026  9:08pm
+# Modified :  20-Mar-2026  8:10pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -18,7 +18,7 @@ fpath=(
   /opt/homebrew/share/zsh-completions
   /opt/homebrew/zsh/site-functions
   /opt/geedbla/lib/shell/lib
-  /opt/geedbla/zsh-completion
+  /opt/geedbla/zsh-completions
   "${fpath[@]}"
 )
 export PATH="$HOME/.local/bin:/Library/Apple/usr/bin:/opt/venv/python3/bin:/opt/bin:/opt/geedbla/scripts:/opt/homebrew/opt/python3/libexec/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/homebrew/lib/node_modules/npm"
@@ -127,9 +127,8 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*:*:z:*' group-order recent-directorieszstyle ':completion:*:*:z:*' group-order recent-directories
+zstyle ':completion:*:*:z:*' group-order recent-directories
 
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#AEB5B0,bg=#003743"
 export ZSH_AUTOSUGGEST_USE_ASYNC="1"
 export ZSH_AUTOSUGGEST_MANUAL_REBIND="1"
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE="1"
@@ -175,6 +174,118 @@ install_powerline_precmd() {
 install_powerline_precmd
 
 #*****************************************************************************************
+# Setup Television
+#*****************************************************************************************
+# Television widgets and keybindings (completion handled by _tv in fpath)
+# credits to the junegunn/fzf project
+# https://github.com/junegunn/fzf/blob/d18c0bf6948b4707684fe77631aff26a17cbc4fa/shell/completion.zsh
+
+_disable_bracketed_paste() {
+    if [[ -n $zle_bracketed_paste ]]; then
+        print -nr ${zle_bracketed_paste[2]} >${TTY:-/dev/tty}
+    fi
+}
+
+_enable_bracketed_paste() {
+    if [[ -n $zle_bracketed_paste ]]; then
+        print -nr ${zle_bracketed_paste[1]} >${TTY:-/dev/tty}
+    fi
+}
+
+__tv_path_completion() {
+  local base lbuf suffix tail dir leftover matches
+  base=$1
+  lbuf=$2
+  suffix=""
+  tail=" "
+
+  eval "base=$base" 2> /dev/null || return
+  [[ $base = *"/"* ]] && dir="$base"
+  while [ 1 ]; do
+    if [[ -z "$dir" || -d ${dir} ]]; then
+      leftover=${base/#"$dir"}
+      leftover=${leftover/#\/}
+      [ -z "$dir" ] && dir='.'
+      [ "$dir" != "/" ] && dir="${dir/%\//}"
+      zle -I
+      matches=$(
+        shift
+        tv "$dir" --autocomplete-prompt "$lbuf" --inline --no-status-bar --input "$leftover" < /dev/tty | while read -r item; do
+          item="${item%$suffix}$suffix"
+          dirP="$dir/"
+          [[ $dirP = "./" ]] && dirP=""
+          echo -n -E "$dirP${(q)item} "
+        done
+      )
+      matches=${matches% }
+      if [ -n "$matches" ]; then
+        LBUFFER="$lbuf$matches$tail"
+      fi
+      zle reset-prompt
+      break
+    fi
+    dir=$(dirname "$dir")
+    dir=${dir%/}/
+  done
+}
+
+_tv_smart_autocomplete() {
+  _disable_bracketed_paste
+
+  local tokens prefix trigger lbuf
+  setopt localoptions noshwordsplit noksh_arrays noposixbuiltins
+
+  tokens=(${(z)LBUFFER})
+  if [ ${#tokens} -lt 1 ]; then
+    zle ${fzf_default_completion:-expand-or-complete}
+    return
+  fi
+
+  [[ ${LBUFFER[-1]} == ' ' ]] && tokens+=("")
+
+  if [[ ${LBUFFER} = *"${tokens[-2]-}${tokens[-1]}" ]]; then
+    tokens[-2]="${tokens[-2]-}${tokens[-1]}"
+    tokens=(${tokens[0,-2]})
+  fi
+
+  lbuf=$LBUFFER
+  prefix=${tokens[-1]}
+  [ -n "${tokens[-1]}" ] && lbuf=${lbuf:0:-${#tokens[-1]}}
+
+  __tv_path_completion "$prefix" "$lbuf"
+
+  _enable_bracketed_paste
+}
+
+_tv_shell_history() {
+    emulate -L zsh
+    zle -I
+
+    _disable_bracketed_paste
+
+    local current_prompt
+    current_prompt=$LBUFFER
+
+    local output
+
+    output=$(history -n -1 0 | tv --no-status-bar --input "$current_prompt" --inline $*)
+
+    zle reset-prompt
+    if [[ -n $output ]]; then
+        RBUFFER=""
+        LBUFFER=$(echo "$output")
+    fi
+
+    _enable_bracketed_paste
+}
+
+zle -N tv-smart-autocomplete _tv_smart_autocomplete
+zle -N tv-shell-history _tv_shell_history
+
+bindkey '^T' tv-smart-autocomplete
+bindkey '^R' tv-shell-history
+
+#*****************************************************************************************
 # Setup  Zoxide directory changer
 #*****************************************************************************************
 _ZO_DATA_DIR="$HOME/Library/Application Support"
@@ -185,89 +296,6 @@ if [[ $TERM_PROGRAM != "Apple_Terminal" ]]; then
   		startup-banner --dark
 	}
 fi
-
-#*****************************************************************************************
-# FZF fuzzy finder setup and utility functions that use itFZF fuzzy finder setup and
-# utility functions that make use of it
-#*****************************************************************************************
-if command -v fzf &> /dev/null; then
-	export FZF_DEFAULT_COMMAND="rg --files --hidden --follow"
-  	export FZF_DEFAULT_OPTS="--prompt='▶' --pointer='→' --marker='✓' --border=rounded --color=fg:#6c7c80,bg:#012b36,hl:#003743 --color=fg+:#6b7f83,bg+:#003743,hl+:#003743 --color=info:#859900,prompt:#d33682,pointer:#6c71c4 --color=marker:#b58900,spinner:#6c71c4,header:#dc322f"
-	source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
-  	source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
-fi
-
-fd() {
-  local dir
-  dir=$(find ${1:-.} -path '*/\.*' -prune \
-                  -o -type d -print 2> /dev/null | fzf +m) &&
-  cd "$dir"
-}
-
-fbrdel() {
-  local tags branches target
-  branches=$(
-    git --no-pager branch --all \
-      --format="%(if)%(HEAD)%(then)%(else)%(if:equals=HEAD)%(refname:strip=3)%(then)%(else)%1B[0;34;1mbranch%09%1B[m%(refname:short)%(end)%(end)" \
-    | sed '/^$/d') || return
-  tags=$(
-    git --no-pager tag | awk '{print "\x1b[35;1mtag\x1b[m\t" $1}') || return
-  target=$(
-    (echo "$branches"; echo "$tags") |
-    fzf --no-hscroll --no-multi -n 2 \
-        --ansi --preview="git --no-pager log -150 --pretty=format:%s '..{2}'") || return
-  git branch -D $(awk '{print $2}' <<<"$target" ) > /dev/null
-}
-
-fbr() {
-  local tags branches target
-  branches=$(
-    git --no-pager branch --all \
-      --format="%(if)%(HEAD)%(then)%(else)%(if:equals=HEAD)%(refname:strip=3)%(then)%(else)%1B[0;34;1mbranch%09%1B[m%(refname:short)%(end)%(end)" \
-    | sed '/^$/d') || return
-  tags=$(
-    git --no-pager tag | awk '{print "\x1b[35;1mtag\x1b[m\t" $1}') || return
-  target=$(
-    (echo "$branches"; echo "$tags") |
-    fzf --no-hscroll --no-multi -n 2 \
-        --ansi --preview="git --no-pager log -150 --pretty=format:%s '..{2}'") || return
-  git checkout $(awk '{print $2}' <<<"$target" ) &> /dev/null
-}
-
-fshow() {
-  git log --graph --color=always \
-      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
-  fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \
-      --bind "ctrl-m:execute:
-                (grep -o '[a-f0-9]\{7\}' | head -1 |
-                xargs -I % sh -c 'git show --color=always % | less -R') << 'FZF-EOF'
-                {}
-FZF-EOF"
-}
-
-fstash() {
-  local out q k sha
-  while out=$(
-    git stash list --pretty="%C(yellow)%h %>(14)%Cgreen%cr %C(blue)%gs" |
-    fzf --ansi --no-sort --query="$q" --print-query \
-        --expect=ctrl-d,ctrl-b);
-  do
-    mapfile -t out <<< "$out"
-    q="${out[0]}"
-    k="${out[1]}"
-    sha="${out[-1]}"
-    sha="${sha%% *}"
-    [[ -z "$sha" ]] && continue
-    if [[ "$k" == 'ctrl-d' ]]; then
-      git diff $sha
-    elif [[ "$k" == 'ctrl-b' ]]; then
-      git stash branch "stash-$sha" $sha > /dev/null
-      break;
-    else
-      git stash show -p $sha > /dev/null
-    fi
-  done
-}
 
 #*****************************************************************************************
 # Some some directory utilities
@@ -329,7 +357,7 @@ sysupdate() {
 	)
 
 	if command -v gh &>/dev/null; then
-		gh extension upgrade --all
+		gh extension upgrade --all 2> /dev/null
 	fi
 
 	if command -v gem &>/dev/null; then
@@ -414,4 +442,3 @@ genuuid() {
     (osascript -e "display notification with title \"⌘-V to paste\" subtitle \"$uuid\"" &) >/dev/null 2>&1
     echo -n "$uuid" | pbcopy
 }
-
