@@ -53,6 +53,11 @@ dotfiles/
 │   ├── Scripts/
 │   └── Text Filters/
 ├── xcode/                # Xcode configuration
+│   ├── Templates/
+│   │   └── Project Templates/
+│   │       └── Multiplatform/
+│   │           ├── Multiplatform UI Test Module.xctemplate
+│   │           └── Multiplatform Unit Test Module.xctemplate
 │   └── UserData/
 │       ├── CodeSnippets/
 │       ├── FontAndColorThemes/
@@ -89,7 +94,7 @@ Zsh is configured with:
 ## Applications Configured
 
 - **BBEdit** - Text editor with custom scripts, clippings, and color schemes
-- **Xcode** - Code snippets, themes, and keybindings
+- **Xcode** - Code snippets, themes, keybindings, and custom project templates
 - **Ghostty** - Terminal emulator configuration
 - **Keyboard Maestro** - Automation macros
 - **Claude Code** - AI assistant configuration with MCP servers and custom skills

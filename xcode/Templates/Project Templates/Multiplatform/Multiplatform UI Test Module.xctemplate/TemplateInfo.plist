@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Package.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Package.swift</string>
+		</dict>
+		<key>Tests/___VARIABLE_productName___UITests/___VARIABLE_productName___UITests.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Tests/___VARIABLE_productName___UITests/___VARIABLE_productName___UITests.swift</string>
+		</dict>
+		<key>Tests/___VARIABLE_productName___UITests/___VARIABLE_productName___UITestsLaunchTests.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Tests/___VARIABLE_productName___UITests/___VARIABLE_productName___UITestsLaunchTests.swift</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>A Swift Package providing a multiplatform UI test module targeting all Apple platforms using Swift Testing and XCTest UI testing.</string>
+	<key>Identifier</key>
+	<string>com.garyash.dt.unit.multiplatformUITestModule</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Package.swift</string>
+		<string>Tests/___VARIABLE_productName___UITests/___VARIABLE_productName___UITests.swift</string>
+		<string>Tests/___VARIABLE_productName___UITests/___VARIABLE_productName___UITestsLaunchTests.swift</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>MultiplatformUITests</string>
+			<key>Description</key>
+			<string>The name of your UI test module</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Product Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+		<string>com.apple.platform.macosx</string>
+		<string>com.apple.platform.appletvos</string>
+		<string>com.apple.platform.watchos</string>
+		<string>com.apple.platform.xros</string>
+	</array>
+	<key>SortOrder</key>
+	<integer>101</integer>
+</dict>
+</plist>

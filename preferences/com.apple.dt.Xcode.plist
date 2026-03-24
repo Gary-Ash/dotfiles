@@ -30,7 +30,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>DVTDevicesWindowControllerSelectedDeviceIdentifier</key>
-	<string>00008310-0009729E21FBA01E</string>
+	<string>00008130-001835D622A0001C</string>
 	<key>DVTDevicesWindowControllerSelectedSimulatorIdentifier</key>
 	<string>CD8D1F09-7309-40B5-BF30-7A5A8EA22E9A-mobiledevice</string>
 	<key>DVTDisclosureViewDisclosedStates</key>
@@ -157,7 +157,7 @@
 			<key>App Store Product Source Accounts: 9CF43D67-D21F-44C2-A730-AA112E1AACF2</key>
 			<date>2025-11-10T01:52:27Z</date>
 			<key>App Store Product Source Accounts: A5AAFAD6-F9AC-4EC8-A438-C8AD629EAA66</key>
-			<date>2026-03-19T02:57:53Z</date>
+			<date>2026-03-24T01:29:58Z</date>
 		</dict>
 		<key>DVTUserDefaultsCachingKeysRecentlyUsed</key>
 		<array>
@@ -242,27 +242,27 @@
 	<dict>
 		<key>/Applications/Xcode.app/Contents/Applications/Accessibility Inspector.app</key>
 		<data>
-		YkgQg8SBkhnnGVXsXZjhgKFo87A=
+		YDmyBGn+ivzKyaXuL+xmNgcOIzo=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/FileMerge.app</key>
 		<data>
-		10p9yragU/5Iei2ZReIx8vfmJFM=
+		30DqdwY2DWuGcn5NY1wl7uztoYI=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Icon Composer.app</key>
 		<data>
-		gec65x1SoHBCvhNYtB1OtLRmaPM=
+		0c2aF5c1Y4U9Uoin+rw7+unuAmU=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Instruments.app</key>
 		<data>
-		yL4Me+Tn1YiCJJLdBAq83PillYo=
+		K47JQmwO9HE67d7aZES9wpszJw0=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Reality Composer Pro.app</key>
 		<data>
-		4iXApulxh7Oeg5MiIkd6GWXPXyE=
+		aFz0alSojHQ+itN09j4U2ZZaeKE=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app</key>
 		<data>
-		9uONABxWlLbjfa0NuEyApkHQOTM=
+		ZolTKb+6vg5Y4pMLwnDmehsWZBw=
 		</data>
 		<key>/System/Library/CoreServices/CoreTypes.bundle</key>
 		<data>
@@ -313,10 +313,16 @@
 	<false/>
 	<key>IDEMetalToolchainLastNotified-17C529</key>
 	<string>17C7003j</string>
+	<key>IDEMetalToolchainLastNotified-17E192</key>
+	<string>17E188</string>
 	<key>IDEMetalToolchainSelectedDuringFirstLaunch</key>
 	<true/>
 	<key>IDEModelAccessHasUserConsentForOnDeviceInteractions</key>
 	<true/>
+	<key>IDEMostRecentPostFLEDate</key>
+	<date>2026-03-25T21:08:08Z</date>
+	<key>IDEMostRecentPostFLEToolsVersion</key>
+	<string>26.4</string>
 	<key>IDEOmnibar.location</key>
 	<dict>
 		<key>horizontal</key>
@@ -338,6 +344,7 @@
 	<real>560</real>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-appletvos</key>
 	<array>
+		<string>23L236</string>
 		<string>23K50</string>
 		<string>23J576</string>
 		<string>23J352</string>
@@ -348,6 +355,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-iphoneos</key>
 	<array>
+		<string>23E237</string>
 		<string>23C57</string>
 		<string>23C53</string>
 		<string>23B77</string>
@@ -359,6 +367,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-macosx</key>
 	<array>
+		<string>25E236</string>
 		<string>25C58</string>
 		<string>25C57</string>
 		<string>25B74</string>
@@ -370,6 +379,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-watchos</key>
 	<array>
+		<string>23T238</string>
 		<string>23S303</string>
 		<string>23S34</string>
 		<string>23R351</string>
@@ -380,6 +390,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-xros</key>
 	<array>
+		<string>23O238</string>
 		<string>23N301</string>
 		<string>23N45</string>
 		<string>23M336</string>
@@ -572,7 +583,7 @@
 	ZW5dT3V0bGluZUNvbHVtbiNAdbAAAAAAAAjSJicoKVokY2xhc3NuYW1lWCRjbGFzc2Vz
 	XE5TRGljdGlvbmFyeaIoKlhOU09iamVjdNMVDQ4sMB6jFxgZgAOABIAFozEyHYALgAyA
 	CIAJW0NsYXNzQ29sdW1uI0BUAAAAAAAA0xUNDjg8HqMXGBmAA4AEgAWjPT4dgA6AD4AI
-	gAlbVmFsdWVDb2x1bW4jQEVfnbItDlbSJidERV5OU011dGFibGVBcnJheaNERipXTlNB
+	gAlbVmFsdWVDb2x1bW4jQJLEAAAAAADSJidERV5OU011dGFibGVBcnJheaNERipXTlNB
 	cnJheQAIABEAGgAkACkAMgA3AEkATABSAFQAaABuAHMAfgCFAIkAiwCNAI8AkQCYAKAA
 	pACmAKgAqgCuALAAsgC0ALYAwQDHAM4A3ADlAOYA6wD2AP8BDAEPARgBHwEjASUBJwEp
 	AS0BLwExATMBNQFBAUoBUQFVAVcBWQFbAV8BYQFjAWUBZwFzAXwBgQGQAZQAAAAAAAAC
@@ -635,7 +646,7 @@
 	<key>NSWindow Frame Documentation Viewer Window</key>
 	<string>841 555 1024 730 0 0 2560 1410 </string>
 	<key>NSWindow Frame IDEDownloadProgressWindow</key>
-	<string>1944 1089 400 212 0 0 2560 1409 </string>
+	<string>1944 1090 400 212 0 0 2560 1410 </string>
 	<key>NSWindow Frame IDEEditContextSheet</key>
 	<string>1176 572 534 341 0 0 2560 1409 </string>
 	<key>NSWindow Frame IDEEditSchemeWindow</key>
@@ -645,7 +656,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>899 385 710 722 0 0 2560 1410 </string>
+	<string>925 527 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
@@ -665,9 +676,9 @@
 	<key>ProductMappingKey</key>
 	<data>
 	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
-	Wmxhc3RPcGVuZWRfEDQvb3B0L2dlZWRibGEvdGVtcGxhdGVzL1hjb2RlLzJER2FtZS8y
-	REdhbWUueGNvZGVwcm9qoDNBx7Zbd861LQgLExUcKjM+dXYAAAAAAAABAQAAAAAAAAAK
-	AAAAAAAAAAAAAAAAAAAAfw==
+	Wmxhc3RPcGVuZWRfEEAvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9GbGFz
+	aGNhcmRzL0ZsYXNoY2FyZHMueGNvZGVwcm9qoDNBx7kJ7GS2jQgLExUcKjM+gYIAAAAA
+	AAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAiw==
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
 	<string>23D8133</string>
@@ -1706,7 +1717,7 @@
 	<key>Xcode3ProjectEditorSourceListVisible</key>
 	<true/>
 	<key>Xcode3ProjectTemplateChooserAssistantSelectedTemplateName_Multiplatform</key>
-	<string>Application/Game</string>
+	<string>Application/App</string>
 	<key>Xcode3ProjectTemplateChooserAssistantSelectedTemplateName_macOS</key>
 	<string>Application/Command Line Tool</string>
 	<key>Xcode3TargetTemplateChooserAssistantSelectedTemplateName_Multiplatform</key>

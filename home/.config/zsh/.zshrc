@@ -2,93 +2,45 @@
 #*****************************************************************************************
 # .zshrc
 #
-# ZSH interactive setup
+# ZSH interactive shell entry point
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
-# Created  :   8-Feb-2026  3:37pm
-# Modified :  20-Mar-2026  8:10pm
+# Created  :  24-Mar-2026  3:30pm
+# Modified :  24-Mar-2026  3:30pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
 
 #*****************************************************************************************
-# Basic environment setup
+# Load modular configs
 #*****************************************************************************************
-fpath=(
-  /opt/homebrew/share/zsh-completions
-  /opt/homebrew/zsh/site-functions
-  /opt/geedbla/lib/shell/lib
-  /opt/geedbla/zsh-completions
-  "${fpath[@]}"
-)
-export PATH="$HOME/.local/bin:/Library/Apple/usr/bin:/opt/venv/python3/bin:/opt/bin:/opt/geedbla/scripts:/opt/homebrew/opt/python3/libexec/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/homebrew/lib/node_modules/npm"
-export NODE_PATH="/opt/homebrew/lib/node_modules"
-
-export EDITOR="/usr/local/bin/bbedit --wait"
-export VISUAL="/usr/local/bin/bbedit"
-
-export LESSHISTFILE="-"
-export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
-export CLICOLOR=1
-export LC_ALL="en_US.UTF-8"
-export LANG=en_US.UTF-8
-export HISTSIZE=2000
-export SAVEHIST=1000
-
-export HOMEBREW_NO_ANALYTICS=1
-export HOMEBREW_NO_ENV_HINTS=1
-export HOMEBREW_CASK_OPTS="--no-quarantine --no-binaries"
-export EZA_CONFIG_DIR="$XDG_CONFIG_HOME/eza"
-export RIPGREP_CONFIG_PATH="$HOME/.config/rgrc.conf"
-
-export COCOAPODS_DISABLE_STATS=1
-export CP_HOME_DIR="$XDG_CACHE_HOME/.cocoapods/"
-
-export NODE_OPTIONS='--disable-warning=ExperimentalWarning'
-export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/config"
-
-unset HISTFILE
-export HISTFILE="$XDG_CACHE_HOME/zsh/history"
+source "$XDG_CONFIG_HOME/zsh/options.zsh"
+source "$XDG_CONFIG_HOME/zsh/aliases.zsh"
+source "$XDG_CONFIG_HOME/zsh/functions.zsh"
+source "$XDG_CONFIG_HOME/zsh/television.zsh"
 
 #*****************************************************************************************
-# Setup virtual environments for Python and Ruby
+# Initialize completions
 #*****************************************************************************************
-source /opt/venv/python3/bin/activate
+autoload -Uz compinit bashcompinit zmv
+compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
+bashcompinit
+compdef _swift swift
 
-export RBENV_ROOT="/opt/venv/ruby"
-export SOLARGRAPH_CACHE="$XDG_CACHE_HOME/.solargraph/cache"
-export SOLARGRAPH_GLOBAL_CONFIG="$HOME/.config/.solargraph/config.yml"
-eval "$(rbenv init - zsh)"
+source <(npm completion)
+eval "$(gh completion -s zsh)"
 
-#*****************************************************************************************
-# Basic Zsh options
-#*****************************************************************************************
-setopt extended_history
-setopt hist_expire_dups_first
-setopt hist_ignore_dups
-setopt hist_ignore_space
-setopt inc_append_history
-setopt share_history
+# TV completions with channel name support
+_tv_channels() {
+	local -a channels
+	channels=("${(@f)$(tv list-channels 2>/dev/null)}")
+	_describe 'channel' channels
+}
+eval "$(tv completions zsh 2>/dev/null | sed 's/shall we watch?:_default/shall we watch?:_tv_channels/')"
 
-setopt auto_cd
-setopt auto_menu
-setopt auto_list
-setopt auto_pushd
-setopt pushdminus
-setopt globdots
-setopt extendedglob
-
-setopt menu_complete
-setopt always_to_end
-setopt complete_in_word
-setopt completealiases
-
-autoload -Uz colors && colors
 #*****************************************************************************************
 # Key mapping and editing setup
 #*****************************************************************************************
-autoload -Uz zmv
-
 my-sudolast-cmd() {
 	echo sudo $(fc -ln -1)
 }
@@ -107,50 +59,42 @@ bindkey "^[[3~"   delete-char
 bindkey "^O"      my-sudolast-cmd_widget
 
 #*****************************************************************************************
-# Zsh completion system setup
+# Autosuggestions
 #*****************************************************************************************
-autoload -Uz compinit
-autoload bashcompinit
-compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
-bashcompinit
-compdef _swift swift
-
-source <(npm completion)
-eval "$(gh completion -s zsh)"
-
-zstyle ':completion:*' completer _extensions _complete _approximate
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
-zstyle ':completion:*' menu select
-zstyle ':completion:*' file-list all
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*:*:z:*' group-order recent-directories
-
 export ZSH_AUTOSUGGEST_USE_ASYNC="1"
 export ZSH_AUTOSUGGEST_MANUAL_REBIND="1"
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE="1"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 #*****************************************************************************************
-# Shell aliases
+# Setup Zoxide directory changer
 #*****************************************************************************************
-alias sudo="sudo "
-alias ll="eza --long -all --git --group --group-directories-first --color=always  --icons=always --classify --level=3 --sort=name"
-alias edscripts='${VISUAL} /opt/geedbla'
-alias zshrc='${EDITOR} $XDG_CONFIG_HOME/zsh/.zshenv $XDG_CONFIG_HOME/zsh/.zshrc;cleanhist'
-alias mute="osascript -e \"set volume output muted true\""
-alias volumenormal="osascript -e \"set volume output volume 50\""
-alias volumemax="osascript -e \"set volume output volume 100\""
-alias perms="stat -f '%Sp %OLp %N'"
-alias recordSimulator="xcrun simctl io booted recordVideo "
-alias afk="osascript -e 'tell app \"System Events\" to key code 12 using {control down, command down}'"
-alias show-all-files="defaults write com.apple.finder AppleShowAllFiles true;killall Finder"
-alias hide-all-files="defaults delete com.apple.finder AppleShowAllFiles;killall Finder"
-alias gitkeep="find . -type d -empty -not -path \"./.git/*\" -exec touch {}/.gitkeep \;"
+_ZO_DATA_DIR="$HOME/Library/Application Support"
+eval "$(zoxide init zsh)"
+
+# Override zoxide completion to query its database instead of local dirs
+function __zoxide_z_complete() {
+	[[ "${#words[@]}" -eq "${CURRENT}" ]] || return 0
+
+	if [[ "${#words[@]}" -eq 2 ]]; then
+		# Query zoxide database for matches
+		local -a dirs
+		dirs=("${(@f)$(\command zoxide query --list -- "${words[2]}" 2>/dev/null)}")
+		if [[ ${#dirs[@]} -gt 0 ]]; then
+			compadd -U -Q -- "${dirs[@]}"
+		fi
+		return 0
+
+	elif [[ "${words[-1]}" == '' ]]; then
+		__zoxide_result="$(\command zoxide query --exclude "$(__zoxide_pwd || \builtin true)" --interactive -- ${words[2,-1]})" || __zoxide_result=''
+		compadd -Q ""
+		\builtin bindkey '\e[0n' '__zoxide_z_complete_helper'
+		\builtin printf '\e[5n'
+		return 0
+	fi
+}
 
 #*****************************************************************************************
 # Setup my own snazzy powerline style prompt
@@ -174,271 +118,10 @@ install_powerline_precmd() {
 install_powerline_precmd
 
 #*****************************************************************************************
-# Setup Television
+# Startup banner
 #*****************************************************************************************
-# Television widgets and keybindings (completion handled by _tv in fpath)
-# credits to the junegunn/fzf project
-# https://github.com/junegunn/fzf/blob/d18c0bf6948b4707684fe77631aff26a17cbc4fa/shell/completion.zsh
-
-_disable_bracketed_paste() {
-    if [[ -n $zle_bracketed_paste ]]; then
-        print -nr ${zle_bracketed_paste[2]} >${TTY:-/dev/tty}
-    fi
-}
-
-_enable_bracketed_paste() {
-    if [[ -n $zle_bracketed_paste ]]; then
-        print -nr ${zle_bracketed_paste[1]} >${TTY:-/dev/tty}
-    fi
-}
-
-__tv_path_completion() {
-  local base lbuf suffix tail dir leftover matches
-  base=$1
-  lbuf=$2
-  suffix=""
-  tail=" "
-
-  eval "base=$base" 2> /dev/null || return
-  [[ $base = *"/"* ]] && dir="$base"
-  while [ 1 ]; do
-    if [[ -z "$dir" || -d ${dir} ]]; then
-      leftover=${base/#"$dir"}
-      leftover=${leftover/#\/}
-      [ -z "$dir" ] && dir='.'
-      [ "$dir" != "/" ] && dir="${dir/%\//}"
-      zle -I
-      matches=$(
-        shift
-        tv "$dir" --autocomplete-prompt "$lbuf" --inline --no-status-bar --input "$leftover" < /dev/tty | while read -r item; do
-          item="${item%$suffix}$suffix"
-          dirP="$dir/"
-          [[ $dirP = "./" ]] && dirP=""
-          echo -n -E "$dirP${(q)item} "
-        done
-      )
-      matches=${matches% }
-      if [ -n "$matches" ]; then
-        LBUFFER="$lbuf$matches$tail"
-      fi
-      zle reset-prompt
-      break
-    fi
-    dir=$(dirname "$dir")
-    dir=${dir%/}/
-  done
-}
-
-_tv_smart_autocomplete() {
-  _disable_bracketed_paste
-
-  local tokens prefix trigger lbuf
-  setopt localoptions noshwordsplit noksh_arrays noposixbuiltins
-
-  tokens=(${(z)LBUFFER})
-  if [ ${#tokens} -lt 1 ]; then
-    zle ${fzf_default_completion:-expand-or-complete}
-    return
-  fi
-
-  [[ ${LBUFFER[-1]} == ' ' ]] && tokens+=("")
-
-  if [[ ${LBUFFER} = *"${tokens[-2]-}${tokens[-1]}" ]]; then
-    tokens[-2]="${tokens[-2]-}${tokens[-1]}"
-    tokens=(${tokens[0,-2]})
-  fi
-
-  lbuf=$LBUFFER
-  prefix=${tokens[-1]}
-  [ -n "${tokens[-1]}" ] && lbuf=${lbuf:0:-${#tokens[-1]}}
-
-  __tv_path_completion "$prefix" "$lbuf"
-
-  _enable_bracketed_paste
-}
-
-_tv_shell_history() {
-    emulate -L zsh
-    zle -I
-
-    _disable_bracketed_paste
-
-    local current_prompt
-    current_prompt=$LBUFFER
-
-    local output
-
-    output=$(history -n -1 0 | tv --no-status-bar --input "$current_prompt" --inline $*)
-
-    zle reset-prompt
-    if [[ -n $output ]]; then
-        RBUFFER=""
-        LBUFFER=$(echo "$output")
-    fi
-
-    _enable_bracketed_paste
-}
-
-zle -N tv-smart-autocomplete _tv_smart_autocomplete
-zle -N tv-shell-history _tv_shell_history
-
-bindkey '^T' tv-smart-autocomplete
-bindkey '^R' tv-shell-history
-
-#*****************************************************************************************
-# Setup  Zoxide directory changer
-#*****************************************************************************************
-_ZO_DATA_DIR="$HOME/Library/Application Support"
-eval "$(zoxide init zsh)"
-
 if [[ $TERM_PROGRAM != "Apple_Terminal" ]]; then
 	() {
-  		startup-banner --dark
+		startup-banner --dark
 	}
 fi
-
-#*****************************************************************************************
-# Some some directory utilities
-#*****************************************************************************************
-mkcd() {
-	mkdir -p "$1"
-	z "$1" || return
-}
-
-cdf() {
-	cd "$(osascript -e 'tell application "Finder" to POSIX path of (insertion location as alias)')";
-}
-
-cdl() {
-  z "$1"
-  eza --long -all --git --group --group-directories-first --color=always  --icons=always --classify --level=3 --sort=name
-}
-
-2finder() {
-/usr/bin/osascript &>/dev/null <<"END"
-tell application "Finder"
-	activate
-	repeat with w in (get every Finder window)
-		activate w
-		tell application "System Events"
-			keystroke "a" using {command down}
-			key code 123
-			keystroke "a" using {command down, option down}
-		end tell
-		close w
-	end repeat
-
-	set desktopBounds to bounds of window of desktop
-	set w to round (((item 3 of desktopBounds) - 1100) / 2) rounding as taught in school
-	set h to round (((item 4 of desktopBounds) - 1000) / 2) rounding as taught in school
-	set finderBounds to {w, h, 1100 + w, 1000 + h}
-
-	make new Finder window to (POSIX file (system attribute "PWD"))
-	set (bounds of window 1) to finderBounds
-end tell
-END
-}
-
-#*****************************************************************************************
-# Update my system's gems, pip, Home brew, and NPM packages
-#*****************************************************************************************
-sysupdate() {
-	source "/opt/geedbla/lib/shell/lib/get_sudo_password.sh"
-
-	stuff=(
-		"$HOME/.npm"
-		"$HOME/.gem"
-		"$HOME/.android"
-		"$HOME/.konan"
-		"$HOME/.gradle"
-		"$HOME/.swiftpm"
-		"$HOME/.hawtjni"
-		"$HOME/.config/zsh/.zsh_history"
-	)
-
-	if command -v gh &>/dev/null; then
-		gh extension upgrade --all 2> /dev/null
-	fi
-
-	if command -v gem &>/dev/null; then
-		gem update &>/dev/null
-		gem update --system &>/dev/null
-		gem cleanup &>/dev/null
-	fi
-
-	if command -v pip3 &>/dev/null; then
-		pip3 install --upgrade pip &>/dev/null
-		pip3 install -U $(pip3 freeze | cut -d = -f 1) &>/dev/null
-	fi
-
-	if command -v npm &>/dev/null; then
-		npm install -g npm@latest &>/dev/null
-		npm update -g &>/dev/null
-	fi
-
-	find "$HOME/Library/CloudStorage/Dropbox/Data" -name "Keyboard Maestro Macros \(*.kmsync" -delete &>/dev/null
-	pkill -f '.*GradleDaemon.*'
-
-	for item in "${stuff[@]}"; do
-		rm -rf "$item" &>/dev/null
-	done
-
-	if command -v brew &>/dev/null; then
-		brew update &>/dev/null
-		brew upgrade &>/dev/null
-		brew link --overwrie node &>/dev/null
-		brew autoremove &>/dev/null
-		brew cleanup &>/dev/null
-		rm -rf "$(brew --cache)" &>/dev/null
-
-		rm -rf "$XDG_CACHE_HOME/" &>/dev/null
-		mkdir -p "$XDG_CACHE_HOME/zsh"
-		history -p
-
-		export SUDO_PASSWORD=$(get_sudo_password)
-		echo "$SUDO_PASSWORD" | sudo --validate --stdin &>/dev/null
-
-		sudo xattr -cr /Applications/* &>/dev/null
-		sudo chown -R garyash:admin /opt/geedbla/* &>/dev/null
-		sudo chown -R root:admin /Applications/* &>/dev/null
-		sudo chmod -R 775 /Applications/* &>/dev/null
-		setopt local_options no_monitor
-	fi
-
-	unset SUDO_PASSWORD
-	setopt local_options no_monitor
-
-	startup-banner --dark
-}
-
-#*****************************************************************************************
-# an aliasing function to "pretty up" man pages a bit
-#*****************************************************************************************
-man() {
-  (export LESS_TERMCAP_mb=$'\033[5m'; \
-  export LESS_TERMCAP_md=$'\033[1m'; \
-  export LESS_TERMCAP_so=$'\033[7m'; \
-  export LESS_TERMCAP_us=$'\033[4m'; \
-  export LESS_TERMCAP_me=$'\033[0m'; \
-  export LESS_TERMCAP_se=$'\033[0m'; \
-  export LESS_TERMCAP_ue=$'\033[0m'; \
-  /usr/bin/man "$@")
-}
-
-#*****************************************************************************************
-# Clean Zsh history
-#*****************************************************************************************
-cleanhist() {
-  rm -f "${HISTFILE}" &> /dev/null
-  mkdir -p "$HOME/.cache/zsh" &> /dev/null
-  exec "$SHELL" -l
-}
-
-#*****************************************************************************************
-# Generate a UUID and load it onto the paste board
-#*****************************************************************************************
-genuuid() {
-    uuid=$(uuidgen | tr 'A-Z' 'a-z' | tr -d '\n')
-    (osascript -e "display notification with title \"⌘-V to paste\" subtitle \"$uuid\"" &) >/dev/null 2>&1
-    echo -n "$uuid" | pbcopy
-}

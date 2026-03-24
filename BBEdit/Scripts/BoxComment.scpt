@@ -5,7 +5,7 @@
  *
  * Author   :  Gary Ash <gary.ash@icloud.com>
  * Created  :  30-Jan-2026  2:43pm
- * Modified :  15-Mar-2026
+ * Modified :  25-Mar-2026 11:08pm
  *
  * Copyright © 2026 By Gary Ash All rights reserved.
  ****************************************************************************************)
@@ -33,6 +33,8 @@ tell application "BBEdit"
 end tell
 
 tell script "BBEditLibrary"
+	set LF to (ASCII character 10)
+	
 	set commentCharacters to (getCommentCharacters(lang))
 	set comment to (item 1 of commentCharacters)
 	set decoratorCount to 91 - (length of comment) - theColumnNumber
@@ -40,22 +42,23 @@ tell script "BBEditLibrary"
 	repeat decoratorCount times
 		set comment to (comment & (text returned of decoratorDialog))
 	end repeat
-	set comment to (comment & "
-")
+	set comment to (comment & LF)
 	
 	repeat theColumnNumber - 1 times
 		set comment to (comment & " ")
 	end repeat
 	
 	if length of (item 2 of commentCharacters) > 0 then
-		set comment to (comment & " *
-")
+		set comment to (comment & " * " & LF)
 		repeat theColumnNumber times
 			set comment to (comment & " ")
 		end repeat
 	else
-		set comment to (comment & (item 1 of commentCharacters) & "
-")
+		if (item 1 of commentCharacters) ends with " " then
+			set comment to (comment & (item 1 of commentCharacters) & LF)
+		else
+			set comment to (comment & (item 1 of commentCharacters) & " " & LF)
+		end if
 	end if
 	
 	if length of (item 2 of commentCharacters) > 0 then

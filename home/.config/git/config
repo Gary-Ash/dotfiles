@@ -1,51 +1,101 @@
-[user]
-	name       = Gary Ash
-	signingkey = ~/.ssh/id_ed25519.pub
-	email      = gary.ash@icloud.com
+#*****************************************************************************************
+# config
+#
+#  My git configuration file
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  23-Mar-2026  2:06pm
+# Modified :  23-Mar-2026  2:14pm
+#
+# Copyright © 2026 By Gary Ash All rights reserved.
+#*****************************************************************************************
 
-[github]
-	user            = Gary-Ash
+#*****************************************************************************************
+# Identity + signing configuration
+#*****************************************************************************************
+[user]
+    name       = Gary Ash
+    email      = gary.ash@icloud.com
+
+    # SSH signing key (modern alternative to GPG keys)
+    signingkey = ~/.ssh/id_ed25519.pub
+
+[gpg]
+    # Use SSH for signing instead of GPG keychain
+    format = ssh
 
 [gpg "ssh"]
-	allowedSignersFile = ~/.config/git/allowed_signers
+    # Defines trusted signing identities for verification
+    allowedSignersFile = ~/.config/git/allowed_signers
 
+[commit]
+    # Always sign commits
+    gpgsign = true
+
+    # Predefined commit message template
+    template = ~/.config/git/gitmessage
+
+    # Show diff in commit editor
+    verbose = true
+
+#*****************************************************************************************
+# Core Git behavior and platform normalization
+#*****************************************************************************************
 [core]
-	autocrlf          = input
-	compression       = -1
-	filemode          = false
-	trustctime        = false
-	precomposeUnicode = true
-	editor 			  = bbedit --wait --resume
-	pager 			  = delta
-	excludesfile 	  = ~/.config/git/gitignore
-	attributesFile    = ~/.config/git/gitattributes
+    # Normalize line endings on commit (correct for macOS/Linux)
+    autocrlf = input
 
-[delta]
-	max-line-length = 0
-	true-color      = always
-	line-numbers    = true
-	tabs            = 4
-	syntax-theme    = Solarized (dark)
-	side-by-side    = true
-    features     	= navigate hyperlinks line-numbers decorations
+    # Compression level (0 = fastest, 9 = smallest)
+    compression = 0
 
-[pager]
-	blame  = delta
-	diff   = delta
-	show   = delta
-	log    = delta
-	reflog = delta
+    # Ignore file mode changes (macOS consistency)
+    filemode = false
+
+    # Ignore ctime changes for better performance
+    trustctime = false
+
+    # Fix macOS Unicode normalization issues
+    precomposeUnicode = true
+
+    # Preferred editor
+    editor = bbedit --wait --resume
+
+    # Use delta as pager globally
+    pager = delta
+
+    # Global ignore + attributes
+    excludesfile   = ~/.config/git/gitignore
+    attributesFile = ~/.config/git/gitattributes
+
+    # Enable commit graph for performance
+    commitGraph = true
+
+[init]
+    # Default branch name
+    defaultBranch = main
+
+    # Template directory for new repos
+    templateDir = ~/.config/git/template
 
 [protocol]
-	version = 2
+    version = 2
+
+#*****************************************************************************************
+# UI, colors, and pager configuration
+#*****************************************************************************************
+[pager]
+    diff   = delta
+    log    = delta
+    show   = delta
+    reflog = delta
+    blame  = delta
 
 [color]
-    ui = auto
+    ui    = auto
     pager = true
 
 [color "log"]
-    # Graph line color palette for ancestry columns.
-    # These will cycle for deeper history depths.
+    # Graph column colors (Solarized palette)
     graphColors = "#268bd2,#859900,#b58900,#d33682,#2aa198,#dc322f,#6c71c4,#93a1a1"
 
 [color "decorate"]
@@ -57,12 +107,12 @@
     grafted      = "#6c71c4 bold"
 
 [color "diff"]
-    meta      = "#268bd2 bold"
-    frag      = "#d33682 bold"
-    old       = "#dc322f"
-    new       = "#859900"
-    commit    = "#b58900 bold"
-    whitespace= "#657b83"
+    meta       = "#268bd2 bold"
+    frag       = "#d33682 bold"
+    old        = "#dc322f"
+    new        = "#859900"
+    commit     = "#b58900 bold"
+    whitespace = "#657b83"
 
 [color "status"]
     added     = "#859900"
@@ -74,157 +124,225 @@
     updated   = "#2aa198"
 
 [color "interactive"]
-  error        = red bold
-  header       = cyan
-  help         = yellow bold
-  prompt       = magenta bold
+    error  = red bold
+    header = cyan
+    help   = yellow bold
+    prompt = magenta bold
 
 [column]
-	ui = auto
+    ui = auto
 
+[help]
+    # Prompt before autocorrecting commands
+    autocorrect = prompt
+
+#*****************************************************************************************
+# Diff, merge, and external tooling
+#*****************************************************************************************
+[delta]
+    # Full-width diff rendering
+    max-line-length = 0
+
+    # True color support
+    true-color = always
+
+    line-numbers = true
+    tabs         = 4
+
+    # Solarized theme
+    syntax-theme = Solarized (dark)
+
+    # Side-by-side diffs
+    side-by-side = true
+
+    # Feature bundle
+    features = navigate hyperlinks line-numbers decorations
+
+[diff]
+    tool        = Kaleidoscope
+    guitool     = Kaleidoscope
+
+    # Show submodule changes as log
+    submodule   = log
+
+    # Normalize line endings before diffing
+    renormalize = true
+
+[merge]
+    tool          = Kaleidoscope
+
+    # Advanced 3-way conflict markers (includes base)
+    conflictStyle = zdiff3
+
+    renormalize   = true
+
+[difftool]
+    prompt        = false
+    trustExitCode = true
+
+[mergetool]
+    prompt        = false
+
+[difftool "Kaleidoscope"]
+    cmd = ksdiff --partial-changeset --relative-path "$MERGED" -- "$LOCAL" "$REMOTE"
+    trustExitCode = true
+
+[mergetool "Kaleidoscope"]
+    cmd = ksdiff --merge --output "$MERGED" --base "$BASE" -- "$LOCAL" --snapshot "$REMOTE" --snapshot
+    trustExitCode = true
+
+
+#*****************************************************************************************
+# History behavior, rebasing, and logging
+#*****************************************************************************************
+[log]
+    date     = human
+    decorate = fuller
+
+    # Shorten commit hashes
+    abbrevCommit = true
+
+[rebase]
+    # Auto-squash fixup!/squash! commits
+    autosquash = true
+
+    # Stash dirty state automatically
+    autoStash = true
+
+[pull]
+    # Only allow fast-forward merges
+    ff = only
+
+[push]
+    default         = simple
+    autoSetupRemote = true
+    followTags      = true
+
+    # Safer alternative to --force
+    # (used in aliases)
+    # push = current  # optional depending on preference
+
+[tag]
+    gpgsign = true
+    sort    = -v:refname
+
+[rerere]
+    enabled    = true
+    autoupdate = true
+
+#*****************************************************************************************
+# Performance and repository maintenance
+#*****************************************************************************************
+[fetch]
+    all = true
+
+    # Clean up deleted remote branches
+    prune     = true
+    pruneTags = true
+
+    # Maintain commit graph
+    writeCommitGraph = true
+
+[gc]
+    writeCommitGraph = true
+
+[submodule]
+    fetchJobs = 4
+    recurse   = true
+
+[status]
+    showStash           = true
+    submodule           = 1
+    submoduleSummary    = true
+    showuntrackedfiles  = all
+
+#*****************************************************************************************
+# Productivity aliases
+#*****************************************************************************************
 [alias]
-	tags            = "tag -l"
-	branches        = "branch -a"
-	remotes         = "remote -v"
-	init-not-mine	= "!git init --no-template"		 			# initialize a repository without my template of hooks
-	logg            = "log --pretty=fuller --decorate --graph --all --show-signature"
-	difft           = "difftool -y"    		                 	# use the my external diff tool w/o prompting
-	unstage         = "restore --staged ."                   	# unstage the named file(s)
-	discard         = "checkout --"                          	# undo last commit
-	cloner          = "clone --recursive "                   	# clone submodules too
-	pushf           = "push --force "
-	edit-comment    = "commit --amend"							# amend everything. Mostly used for comments
-	amend           = "commit --amend --reuse-message=HEAD"		# amend commit content
-	delete-merged   = "!git branch --merged | grep -i -v -E 'master|main|develop|dev' | xargs git branch -d"
-	trim            = "!f() { git branch | grep -v \"main\" | grep -v \"master\" | grep -v \"^*\" | xargs git branch -D; git remote prune origin; }; f"
-	fuckit          = "!git clean -df  && git reset --hard"
-	pruner          = "!git prune --expire=now && git reflog expire --expire-unreachable=now --rewrite --all"
-	oops			= "!git  add -A  && git commit --amend --reuse-message=HEAD && git push --force"
+    # --- discovery ---
+    tags     = tag -l
+    branches = branch -a
+    remotes  = remote -v
 
-    co-author 		= "!f() { \
+    # --- workflow ---
+    unstage = restore --staged .
+    amend   = commit --amend --reuse-message=HEAD
+    edit-comment = commit --amend
+
+    # Restore working tree files
+    discard = restore --
+
+    # Clone with submodules
+    cloner = clone --recursive
+
+    # Force push (SAFE version)
+    pushf = push --force-with-lease
+
+    # Amend + push safely
+    oops = "!git add -A && git commit --amend --reuse-message=HEAD && git push --force-with-lease"
+
+    # --- cleanup ---
+
+    delete-merged = "!git branch --merged | grep -viE 'main|master|develop|dev' | xargs -r -n 1 git branch -d"
+
+    trim = "!git for-each-ref --format='%(refname:short)' refs/heads | grep -vE '^(main|master)$' | xargs -r -n 1 git branch -D && git remote prune origin"
+
+    pruner = "!git prune --expire=now && git reflog expire --expire-unreachable=now --rewrite --all"
+
+    # --- dangerous ops (explicit naming) ---
+
+    nuke = "!read -p 'Confirm hard reset (yes/no): ' ans && [ \"$ans\" = yes ] && git clean -df && git reset --hard"
+
+    # --- misc ---
+
+    logg = "!git-log.sh"
+
+    # Add co-author trailer
+    co-author = "!f() { \
         if [ -n \"$1\" ] && [ -n \"$2\" ]; then \
             GIT_EDITOR=\"git interpret-trailers --in-place --trailer='Co-authored-by: $1 <$2>'\" git commit --amend; \
         fi \
     }; f"
 
-
-[url "https://github.com/"]
-	insteadOf       = gh:
-
-[url "https://gist.github.com/"]
-	insteadOf       = gist:
-
+#*****************************************************************************************
+# Custom filters and text conversions
+#*****************************************************************************************
 [filter "lfs"]
-	clean           = git-lfs clean -- %f
-	smudge          = git-lfs smudge -- %f
-	process         = git-lfs filter-process
-	required        = true
+    clean    = git-lfs clean -- %f
+    smudge   = git-lfs smudge -- %f
+    process  = git-lfs filter-process
+    required = true
 
 [filter "plist"]
-    clean = /opt/geedbla/scripts/git-plist-filter.sh clean
-    smudge = /opt/geedbla/scripts/git-plist-filter.sh smudge
+    clean    = /opt/geedbla/scripts/git-plist-filter.sh clean
+    smudge   = /opt/geedbla/scripts/git-plist-filter.sh smudge
     required = true
 
 [filter "applescript"]
-    clean = /opt/geedbla/scripts/git-applescript-filter.sh clean
-    smudge = /opt/geedbla/scripts/git-applescript-filter.sh smudge
+    clean    = /opt/geedbla/scripts/git-applescript-filter.sh clean
+    smudge   = /opt/geedbla/scripts/git-applescript-filter.sh smudge
     required = true
 
-[gpg]
-	format = ssh
-
-[commit]
-	template = ~/.config/git/gitmessage
-	verbose  = true
-	gpgsign  = true
-
-[init]
-	defaultBranch = main
-	templateDir   = ~/.config/git/template
-
-[help]
-	autocorrect     = prompt
-
-[rerere]
-	enabled = true
-	autoupdate = true
-
-[submodule]
-	fetchJobs = 4
-	recurse   = true
-
-[status]
-	showStash        = true
-	submodule        = 1
-	submoduleSummary = true
-	showuntrackedfiles = all
-
-[log]
-	date = human
-	decorate = fuller
-
-[push]
-	default         = simple
-	autoSetupRemote = true
-	followTags      = true
-
-[tag]
-	gpgsign = true
-	sort    = -v:refname
-
-[fetch]
-    all = true
-	prune = true
-    pruneTags = true
-	writeCommitGraph = true
-
-[gc]
-	writeCommitGraph = true
-
-[rebase]
-	autosquash = true
-	autoStash  = true
-
-[pull]
-	ff = only
-
 [diff "applescript"]
-	textconv = osadecompile
+    textconv = osadecompile
 
 [diff "utf16"]
-	textconv = "iconv -f utf-16 -t utf-8"
+    textconv = "iconv -f utf-16 -t utf-8"
 
 [diff "plist"]
-	textconv = "plutil -convert xml1 -o -"
+    textconv = "plutil -convert xml1 -o -"
 
 [diff "bin"]
     textconv = hexdump -v -C
     binary   = true
 
-[diff]
-	tool        = Kaleidoscope
-    guitool     = Kaleidoscope
-    submodule   = log
-	renormalize = true
+#*****************************************************************************************
+# URL Shortcuts
+#*****************************************************************************************
+[url "https://github.com/"]
+    insteadOf = gh:
 
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-	prompt        = false
-	trustExitCode = true
+[url "https://gist.github.com/"]
+    insteadOf = gist:
 
-[merge]
-	tool          = Kaleidoscope
-	conflictStyle = zdiff3
-	renormalize   = true
-
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-	prompt        = false
-
-[difftool]
-	prompt = false
-	trustExitCode = true
-
-[mergetool]
-	prompt = false

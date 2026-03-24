@@ -5,7 +5,7 @@
  *
  * Author   :  Gary Ash <gary.ash@icloud.com>
  * Created  :  10-Aug-2024  8:01pm
- * Modified :  15-Mar-2026
+ * Modified :  25-Mar-2026 11:08pm
  *
  * Copyright © 2024-2026 By Gary Ash All rights reserved.
  ****************************************************************************************)
@@ -15,6 +15,7 @@
  * word wrap text
  ****************************************************************************************)
 on wordWrap(inputText, prefix, maxLength)
+	set LF to (ASCII character 10)
 	set wrappedText to ""
 	set maxLen to maxLength - (length of prefix)
 	
@@ -33,14 +34,12 @@ on wordWrap(inputText, prefix, maxLength)
 			
 			if spacePos = 0 then set spacePos to maxLen
 			
-			set wrappedText to wrappedText & prefix & (text 1 thru spacePos of remainingText) & "
-"
+			set wrappedText to wrappedText & prefix & (text 1 thru spacePos of remainingText) & LF
 			
 			set remainingText to text (spacePos + 1) thru -1 of remainingText
 		end repeat
 		
-		set wrappedText to wrappedText & prefix & remainingText & "
-"
+		set wrappedText to wrappedText & prefix & remainingText & LF
 	end repeat
 	
 	return wrappedText
@@ -135,8 +134,8 @@ end formatDateTimeStamp
  *****************************************************************************************)
 on setCursorPosition(lineNumber, columnNumber)
 	tell application "BBEdit"
+		activate
 		try
-			activate
 			set theLineReference to (line lineNumber of text document 1)
 			select insertion point before (character columnNumber of theLineReference)
 		on error
@@ -144,7 +143,9 @@ on setCursorPosition(lineNumber, columnNumber)
 				set theLineReference to (line lineNumber of text document 1)
 				select insertion point after last character of theLineReference
 			on error
-				select insertion point after last character of text document 1
+				try
+					select insertion point before character 1 of text document 1
+				end try
 			end try
 		end try
 	end tell
@@ -205,5 +206,6 @@ on getCommentCharacters(lang)
 	set commentCharacters to {"#", ""}
 	return commentCharacters
 end getCommentCharacters
+
 
 
