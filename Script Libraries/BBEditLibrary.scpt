@@ -10,7 +10,6 @@
  * Copyright © 2024-2026 By Gary Ash All rights reserved.
  ****************************************************************************************)
 
-
 (*****************************************************************************************
  * word wrap text
  ****************************************************************************************)
@@ -173,9 +172,17 @@ end insertText
  * that should be used for that language
  ******************************************************************************************)
 on getCommentCharacters(lang)
-	set c_style to {"ANSI C", "C++", "Objective-C", "Objective-C++", "Swift", "Go", "Java", "JavaScript", "TypeScript", "PHP", "CSS", "SCSS", "SQL"}
+	set semicolon_style to {"INI", "Lisp"}
 	set slash_style to {"Rust", "JSP", "Zig"}
 	set HTML_style to {"HTML", "XML", "Svelte"}
+	set c_style to {"ANSI C", "C++", "C#", "Objective-C", "Objective-C++", "PHP", "Swift", "Go", "Java", "JavaScript", "TypeScript", "PHP", "CSS", "SCSS", "SQL"}
+	
+	repeat with l in semicolon_style
+		if (l as text) is equal to lang then
+			set commentCharacters to {";", ""}
+			return commentCharacters
+		end if
+	end repeat
 	
 	repeat with l in c_style
 		if (l as text) is equal to lang then
