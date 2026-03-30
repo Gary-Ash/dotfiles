@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  24-Mar-2026 10:00pm
+# Modified :  30-Mar-2026  2:27pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -28,8 +28,8 @@ export LC_ALL="en_US.UTF-8"
 #*****************************************************************************************
 # Editor and pager
 #*****************************************************************************************
-export EDITOR="/usr/local/bin/bbedit --wait"
-export VISUAL="/usr/local/bin/bbedit"
+export EDITOR="bbedit --wait --resume"
+export VISUAL="bbedit"
 export LESSHISTFILE="-"
 
 #*****************************************************************************************

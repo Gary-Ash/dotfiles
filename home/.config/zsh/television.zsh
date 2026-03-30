@@ -3,12 +3,10 @@
 # television.zsh
 #
 # Television widgets and keybindings
-# Credits to the junegunn/fzf project
-# https://github.com/junegunn/fzf/blob/d18c0bf6948b4707684fe77631aff26a17cbc4fa/shell/completion.zsh
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  24-Mar-2026  3:30pm
+# Modified :  28-Mar-2026  3:41pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************

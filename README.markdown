@@ -25,8 +25,10 @@ dotfiles/
 ├── home/                     # Files synced to ~/
 │   ├── .claude/              # Claude Code configuration
 │   │   ├── CLAUDE.md         # Claude Code project instructions
+│   │   ├── github-mcp-wrapper.sh
 │   │   ├── mcp.json          # MCP server configuration
 │   │   ├── settings.json     # Claude Code settings
+│   │   ├── statusline.pl     # Custom status line script
 │   │   ├── plugins/          # Installed plugins and marketplace skills
 │   │   └── skills/           # Custom Claude Code skills
 │   │       ├── bash-skill/
@@ -38,20 +40,29 @@ dotfiles/
 │   │       └── python3-skill/
 │   ├── .claude.json          # Claude Code project settings
 │   ├── .config/              # XDG configuration directory
-│   │   ├── agents/           # Agent skills (Swift Concurrency, SwiftUI)
-│   │   ├── zsh/              # Zsh configuration
+│   │   ├── .perltidyrc       # Perl::Tidy configuration
+│   │   ├── .solargraph.yml   # Ruby Solargraph config
+│   │   ├── .swiftformat      # SwiftFormat configuration
+│   │   ├── .uncrustify       # Uncrustify configuration
+│   │   ├── agents/           # Agent skills
+│   │   │   └── skills/       # Swift Concurrency, SwiftUI
+│   │   ├── bat/              # Bat (cat replacement) config
+│   │   ├── black/            # Python Black formatter config
+│   │   ├── diffnav/          # Diff navigation config
+│   │   ├── eza/              # Eza (ls replacement) config
 │   │   ├── gh/               # GitHub CLI config
 │   │   ├── gh-dash/          # GitHub Dashboard config
 │   │   ├── ghostty/          # Ghostty terminal config
-│   │   ├── bat/              # Bat (cat replacement) config
-│   │   ├── eza/              # Eza (ls replacement) config
-│   │   ├── diffnav/          # Diff navigation config
-│   │   ├── television/       # Television (tv) fuzzy finder config
-│   │   ├── sourcekit-lsp/    # SourceKit-LSP configuration
+│   │   ├── git/              # Git configuration
+│   │   ├── npm/              # npm configuration
 │   │   ├── pycodestyle       # Python code style config
-│   │   └── rgrc.conf         # Ripgrep configuration
+│   │   ├── rgrc.conf         # Ripgrep configuration
+│   │   ├── sourcekit-lsp/    # SourceKit-LSP configuration
+│   │   ├── television/       # Television (tv) fuzzy finder config
+│   │   └── zsh/              # Zsh configuration
 │   ├── .gitconfig            # Git configuration
 │   ├── .hushlogin            # Suppress login banner
+│   ├── .lldbinit             # LLDB debugger config
 │   ├── .pdbrc                # Python debugger config
 │   └── .ssh/                 # SSH configuration
 ├── brew/                     # Homebrew configuration
@@ -67,15 +78,18 @@ dotfiles/
 │   └── HashTable.scpt
 ├── BBEdit/                   # BBEdit application support
 │   ├── Attachment Scripts/
+│   ├── Cheat Sheets/
 │   ├── Clippings/
 │   ├── Color Schemes/
 │   ├── Completion Data/
 │   ├── Custom Keywords/
+│   ├── HTML Templates/
 │   ├── Language Modules/
 │   ├── Language Servers/
 │   ├── Menu Scripts/
 │   ├── Packages/
 │   ├── Preview CSS/
+│   ├── Preview Templates/
 │   ├── Scripts/
 │   ├── Setup/
 │   ├── Startup Items/
@@ -91,7 +105,8 @@ dotfiles/
 │   └── UserData/
 │       ├── CodeSnippets/
 │       ├── FontAndColorThemes/
-│       └── KeyBindings/
+│       ├── KeyBindings/
+│       └── xcdebugger/
 ├── keyboard-maestro/         # Keyboard Maestro macros
 │   └── Library.kmmacros
 └── shortcuts/                # macOS Shortcuts

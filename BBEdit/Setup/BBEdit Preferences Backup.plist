@@ -60,6 +60,8 @@
 	<string>rect(175,850,1250,1710)</string>
 	<key>BrowserWindowSavedBounds:AD3AC096DE86F9DE8F7EF9E125C99E8B7D3E6CDD</key>
 	<string>rect(175,850,1250,1710)</string>
+	<key>BrowserWindowSavedBounds:F52BEE158044D6A47806B155B06C90C04E924550</key>
+	<string>rect(176,850,1251,1710)</string>
 	<key>BrowserWindowSavedBounds:LSPDiagnosticsWindow</key>
 	<string>rect(176,850,1251,1710)</string>
 	<key>BrowserWindowSavedSplitPosition:080252C98401C0183DCF88EABC4D572384B5122B</key>
@@ -71,6 +73,8 @@
 	<key>BrowserWindowSavedSplitPosition:93E09034E1717A5FA465B3F59DCE4BDE4599F5E3</key>
 	<integer>33</integer>
 	<key>BrowserWindowSavedSplitPosition:AD3AC096DE86F9DE8F7EF9E125C99E8B7D3E6CDD</key>
+	<integer>33</integer>
+	<key>BrowserWindowSavedSplitPosition:F52BEE158044D6A47806B155B06C90C04E924550</key>
 	<integer>33</integer>
 	<key>BrowserWindowSavedSplitPosition:LSPDiagnosticsWindow</key>
 	<integer>33</integer>
@@ -483,11 +487,11 @@
 	<key>NSWindow Frame WindowPosition_v2_HTMLUtilitiesPalette</key>
 	<string>1851 923 139 208 0 0 2560 1415 </string>
 	<key>NSWindow Frame WindowPosition_v2_MultiFileFind</key>
-	<string>379 290 626 563 0 0 2560 1409 </string>
+	<string>379 290 626 563 0 0 2560 1410 </string>
 	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
 	<string>1145 986 266 160 0 0 2560 1415 </string>
 	<key>NextAutoSaveCheckTime</key>
-	<integer>2029743772</integer>
+	<integer>2030233687</integer>
 	<key>Open Editing Windows</key>
 	<false/>
 	<key>Open Text Documents</key>
@@ -511,7 +515,7 @@
 		<integer>0</integer>
 	</array>
 	<key>Recent Folders</key>
-	<false/>
+	<true/>
 	<key>RecentItemsPrefDataUpgradedForSandbox</key>
 	<true/>
 	<key>Results Browsers</key>

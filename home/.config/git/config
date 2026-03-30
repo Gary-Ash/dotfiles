@@ -21,7 +21,6 @@
     signingkey = ~/.ssh/id_ed25519.pub
 
 [gpg]
-    # Use SSH for signing instead of GPG keychain
     format = ssh
 
 [gpg "ssh"]
