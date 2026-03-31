@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   7-Feb-2026  4:16pm
-# Modified :  29-Mar-2026
+# Modified :  30-Mar-2026 10:34pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -23,7 +23,6 @@ my $model          = $data->{model}->{display_name} // 'unknown';
 my $session_cost   = $data->{cost}->{total_cost_usd} // 0;
 my $ctx_size       = $data->{context_window}->{context_window_size} // 0;
 my $used_pct       = $data->{context_window}->{used_percentage} // 0;
-my $five_hr_pct    = $data->{rate_limits}->{five_hour}->{used_percentage};
 my $five_hr_reset  = $data->{rate_limits}->{five_hour}->{resets_at};
 my $seven_day_pct  = $data->{rate_limits}->{seven_day}->{used_percentage};
 my $seven_day_reset = $data->{rate_limits}->{seven_day}->{resets_at};
@@ -95,20 +94,15 @@ my $ctx_bar      = create_bar($used_pct, $bar_width);
 
 my $line = "$model | Cost: $cost_display | Ctx: ${ctx_display} $ctx_bar";
 
-if (defined $five_hr_pct) {
-    my $color = get_color($five_hr_pct);
-    my $reset = "\e[0m";
+if (defined $five_hr_reset) {
     my $clock = format_clock($five_hr_reset);
-    $line .= sprintf(" | 5h: ${color}%.0f%%${reset}", $five_hr_pct);
-    $line .= " \e[2m$clock\e[0m" if $clock;
+    $line .= " | \e[2m$clock\e[0m" if $clock;
 }
 
-if (defined $seven_day_pct) {
-    my $color = get_color($seven_day_pct);
-    my $reset = "\e[0m";
+if (defined $seven_day_reset) {
     my $cal = format_calendar($seven_day_reset);
-    $line .= sprintf(" | 7d: ${color}%.0f%%${reset}", $seven_day_pct);
-    $line .= " \e[2m$cal\e[0m" if $cal;
+    my $clock = format_clock($seven_day_reset);
+    $line .= " | \e[2m$cal $clock\e[0m" if $cal;
 }
 
 print "$line\n";
