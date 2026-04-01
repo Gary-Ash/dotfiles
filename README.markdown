@@ -124,7 +124,7 @@ Key packages installed via Brewfile:
 | Git | git, gh, git-delta, git-lfs, github-mcp-server |
 | Search | ripgrep, fd, television, diffnav |
 | File Utilities | bat, eza, jq, rename, imagemagick |
-| Languages | python@3.14, node, rbenv |
+| Languages | python@3.14, node, rbenv, uv |
 | Build | cmake |
 | Swift/Xcode | swiftformat, swiftlint, periphery |
 | Formatters | shfmt, shellcheck, perltidy, uncrustify |

@@ -31,7 +31,7 @@
 	AYo=
 	</data>
 	<key>BBPreferencesSelectedModuleIdentifier</key>
-	<string>BBAppearancePreferences</string>
+	<string>BBKeyboardPreferences</string>
 	<key>BBPrintingFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -491,7 +491,7 @@
 	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
 	<string>1145 986 266 160 0 0 2560 1415 </string>
 	<key>NextAutoSaveCheckTime</key>
-	<integer>2030233687</integer>
+	<integer>2030581335</integer>
 	<key>Open Editing Windows</key>
 	<false/>
 	<key>Open Text Documents</key>
