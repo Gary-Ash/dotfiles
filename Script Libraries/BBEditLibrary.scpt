@@ -133,7 +133,6 @@ end formatDateTimeStamp
  *****************************************************************************************)
 on setCursorPosition(lineNumber, columnNumber)
 	tell application "BBEdit"
-		activate
 		try
 			set theLineReference to (line lineNumber of text document 1)
 			select insertion point before (character columnNumber of theLineReference)
