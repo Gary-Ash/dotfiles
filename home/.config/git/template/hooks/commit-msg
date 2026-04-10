@@ -5,12 +5,12 @@
 # Git commit-msg hook to enforce commit message format
 #
 # Valid formats:
-#   - "Initial commit."
+#   - "Initial commit"
 #   - Messages beginning with: [BUG FIX], [FEATURE], [REFACTOR], [TEST CODE], [TIDY]
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :
+# Modified :   9-Apr-2026
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -18,8 +18,8 @@
 commit_msg_file="$1"
 commit_msg=$(cat "$commit_msg_file")
 
-# Check if message is exactly "Initial commit." (case insensitive)
-if echo "$commit_msg" | grep -qiE '^initial commit\.$'; then
+# Check if message is exactly "Initial commit" (case insensitive)
+if echo "$commit_msg" | grep -qiE '^initial commit$'; then
 	exit 0
 fi
 
@@ -32,7 +32,7 @@ fi
 echo "ERROR: Invalid commit message format."
 echo ""
 echo "Commit message must be either:"
-echo "  - Exactly: 'Initial commit.'"
+echo "  - Exactly: 'Initial commit'"
 echo "  - Or begin with one of these tags:"
 echo "    [BUG FIX], [FEATURE], [REFACTOR], [TEST CODE], [TIDY]"
 echo ""
@@ -40,7 +40,7 @@ echo "Your message:"
 echo "  $commit_msg"
 echo ""
 echo "Examples:"
-echo "  Initial commit."
+echo "  Initial commit"
 echo "  [FEATURE] Add user authentication"
 echo "  [BUG FIX] Resolve null pointer exception in parser"
 echo "  [REFACTOR] Extract method for validation logic"

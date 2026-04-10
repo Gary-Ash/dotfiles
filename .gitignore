@@ -37,3 +37,4 @@ xcuserdata/
 # Embedded git repositories (clone separately)
 home/.claude/plugins/marketplaces/
 home/.claude/skills/github-cli-claude-skill/
+home/.swt/

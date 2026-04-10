@@ -62,6 +62,8 @@
 	<string>Solarized Dark</string>
 	<key>TTAppPreferences Selected Tab</key>
 	<integer>1</integer>
+	<key>TTSettingsSnapshotSent</key>
+	<true/>
 	<key>Window Settings</key>
 	<dict>
 		<key>Basic</key>

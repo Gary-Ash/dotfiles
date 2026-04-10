@@ -157,7 +157,7 @@
 			<key>App Store Product Source Accounts: 9CF43D67-D21F-44C2-A730-AA112E1AACF2</key>
 			<date>2025-11-10T01:52:27Z</date>
 			<key>App Store Product Source Accounts: A5AAFAD6-F9AC-4EC8-A438-C8AD629EAA66</key>
-			<date>2026-03-27T18:25:27Z</date>
+			<date>2026-04-03T00:37:48Z</date>
 		</dict>
 		<key>DVTUserDefaultsCachingKeysRecentlyUsed</key>
 		<array>
@@ -197,27 +197,14 @@
 	<true/>
 	<key>IDEDisableGitSupportForNewProjects</key>
 	<true/>
-	<key>IDEDistributionPlanSelection</key>
-	<dict>
-		<key>DVTUserDefaultsCachingCache</key>
-		<dict>
-			<key>com.garyash.Flashcards_ProductCategory_iOSApp_IDEDistributionTask(rawValue: 2)</key>
-			<data>
-			eyJ0eXBlIjoicGxhbiIsInBsYW5JZCI6NjQ4MDU4MzU0ODkwMzI5
-			MzUwOH0=
-			</data>
-		</dict>
-		<key>DVTUserDefaultsCachingKeysRecentlyUsed</key>
-		<array>
-			<string>com.garyash.Flashcards_ProductCategory_iOSApp_IDEDistributionTask(rawValue: 2)</string>
-		</array>
-	</dict>
 	<key>IDEDocSearchSelectedReferenceIdentifier</key>
 	<string>swift</string>
 	<key>IDEDocumentationIndexedStoreLastAccessed</key>
 	<real>794191411.67918801</real>
+	<key>IDEEditorCoordinatorNewTabsContent</key>
+	<string>blank-document</string>
 	<key>IDEEditorCoordinatorPinEditorTabs</key>
-	<string>whenCreated</string>
+	<string>manually</string>
 	<key>IDEExtensionsBuiltPriorToXcode12</key>
 	<array/>
 	<key>IDEFileExtensionDisplayMode</key>
@@ -550,7 +537,7 @@
 	<key>IDETestActionSelectedTab</key>
 	<string>Info</string>
 	<key>IDEWindowTabsHaveIndependentSidebarWidths</key>
-	<true/>
+	<false/>
 	<key>IDEWorkspaceSuppressCleanBuildPrompt</key>
 	<true/>
 	<key>IDEXcodeDeviceSupportLastNotified-16C5032a</key>
@@ -669,7 +656,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>925 475 710 722 0 0 2560 1410 </string>
+	<string>925 319 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
