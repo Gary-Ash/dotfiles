@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UserDomain;Scripts;BoxComment.scpt</key>
+	<dict>
+		<key>KeystrokeRecord</key>
+		<dict>
+			<key>Key</key>
+			<integer>66</integer>
+			<key>KeyCode</key>
+			<integer>0</integer>
+			<key>Modifiers</key>
+			<integer>6400</integer>
+		</dict>
+	</dict>
+	<key>UserDomain;Scripts;HeadingComment.scpt</key>
+	<dict>
+		<key>KeystrokeRecord</key>
+		<dict>
+			<key>Key</key>
+			<integer>72</integer>
+			<key>KeyCode</key>
+			<integer>0</integer>
+			<key>Modifiers</key>
+			<integer>6400</integer>
+		</dict>
+	</dict>
+	<key>UserDomain;Scripts;LineComment.scpt</key>
+	<dict>
+		<key>KeystrokeRecord</key>
+		<dict>
+			<key>Key</key>
+			<integer>76</integer>
+			<key>KeyCode</key>
+			<integer>0</integer>
+			<key>Modifiers</key>
+			<integer>6400</integer>
+		</dict>
+	</dict>
+	<key>UserDomain;Scripts;Smart New Line.scpt</key>
+	<dict>
+		<key>KeystrokeRecord</key>
+		<dict>
+			<key>Key</key>
+			<integer>13</integer>
+			<key>KeyCode</key>
+			<integer>0</integer>
+			<key>Modifiers</key>
+			<integer>6400</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

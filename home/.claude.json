@@ -1,0 +1,33 @@
+{
+  "installMethod": "native",
+  "autoUpdates": false,
+  "s1mAccessCache": {},
+  "groveConfigCache": {},
+  "skillUsage": {},
+  "mcpServers": {
+    "github": {
+      "type": "stdio",
+      "command": "/Users/garyash/.claude/github-mcp-wrapper.sh",
+      "args": [],
+      "env": {}
+    },
+    "xcode": {
+      "type": "stdio",
+      "command": "xcrun",
+      "args": [
+        "mcpbridge"
+      ],
+      "env": {}
+    },
+    "dash-api": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/Kapeli/dash-mcp-server.git",
+        "dash-mcp-server"
+      ],
+      "env": {}
+    }
+  }
+}

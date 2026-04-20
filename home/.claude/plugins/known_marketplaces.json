@@ -1,0 +1,26 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/Users/garyash/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-04-22T00:46:41.474Z"
+  },
+  "swift-concurrency-agent-skill": {
+    "source": {
+      "source": "github",
+      "repo": "AvdLee/Swift-Concurrency-Agent-Skill"
+    },
+    "installLocation": "/Users/garyash/.claude/plugins/marketplaces/swift-concurrency-agent-skill",
+    "lastUpdated": "2026-02-18T20:59:43.704Z"
+  },
+  "swiftui-expert-skill": {
+    "source": {
+      "source": "github",
+      "repo": "AvdLee/SwiftUI-Agent-Skill"
+    },
+    "installLocation": "/Users/garyash/.claude/plugins/marketplaces/swiftui-expert-skill",
+    "lastUpdated": "2026-02-18T21:03:03.163Z"
+  }
+}

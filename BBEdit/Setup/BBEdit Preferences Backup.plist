@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AIWorksheetWrapResponseCharLimit</key>
+	<integer>120</integer>
+	<key>AlwaysShowFileList</key>
+	<true/>
+	<key>AlwaysUseBasePythonWithVirtualEnvironment</key>
+	<false/>
+	<key>ApplicationAppearanceMode</key>
+	<integer>0</integer>
+	<key>ApplicationDidStartClean</key>
+	<true/>
+	<key>AutoSaveCurrentWorkspaceWhenSwitching</key>
+	<integer>0</integer>
+	<key>AutoShowFileList</key>
+	<false/>
+	<key>BBEditorFont</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGpCwwTHR4fICEnVSRudWxs0w0O
+	DxARElYkY2xhc3NfEBdOU0ZvbnREZXNjcmlwdG9yT3B0aW9uc18QGk5TRm9udERlc2Ny
+	aXB0b3JBdHRyaWJ1dGVzgAgSgAAAAIAC0xQVDRYZHFdOUy5rZXlzWk5TLm9iamVjdHOi
+	FxiAA4AEohobgAWABoAHXxATTlNGb250U2l6ZUF0dHJpYnV0ZV8QE05TRm9udE5hbWVB
+	dHRyaWJ1dGUjQCgAAAAAAABfEBdQcmFnbWF0YVByb0xpZ2EtUmVndWxhctIiIyQlWiRj
+	bGFzc25hbWVYJGNsYXNzZXNcTlNEaWN0aW9uYXJ5oiQmWE5TT2JqZWN00iIjKClfEBBO
+	U0ZvbnREZXNjcmlwdG9yoiomXxAQTlNGb250RGVzY3JpcHRvcgAIABEAGgAkACkAMgA3
+	AEkATABRAFMAXQBjAGoAcQCLAKgAqgCvALEAuADAAMsAzgDQANIA1QDXANkA2wDxAQcB
+	EAEqAS8BOgFDAVABUwFcAWEBdAF3AAAAAAAAAgEAAAAAAAAAKwAAAAAAAAAAAAAAAAAA
+	AYo=
+	</data>
+	<key>BBPreferencesSelectedModuleIdentifier</key>
+	<string>BBKeyboardPreferences</string>
+	<key>BBPrintingFont</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGpCwwTHR4fICEnVSRudWxs0w0O
+	DxARElYkY2xhc3NfEBdOU0ZvbnREZXNjcmlwdG9yT3B0aW9uc18QGk5TRm9udERlc2Ny
+	aXB0b3JBdHRyaWJ1dGVzgAgSgAAAAIAC0xQVDRYZHFdOUy5rZXlzWk5TLm9iamVjdHOi
+	FxiAA4AEohobgAWABoAHXxATTlNGb250U2l6ZUF0dHJpYnV0ZV8QE05TRm9udE5hbWVB
+	dHRyaWJ1dGUjQCgAAAAAAABfEBdQcmFnbWF0YVByb0xpZ2EtUmVndWxhctIiIyQlWiRj
+	bGFzc25hbWVYJGNsYXNzZXNcTlNEaWN0aW9uYXJ5oiQmWE5TT2JqZWN00iIjKClfEBBO
+	U0ZvbnREZXNjcmlwdG9yoiomXxAQTlNGb250RGVzY3JpcHRvcgAIABEAGgAkACkAMgA3
+	AEkATABRAFMAXQBjAGoAcQCLAKgAqgCvALEAuADAAMsAzgDQANIA1QDXANkA2wDxAQcB
+	EAEqAS8BOgFDAVABUwFcAWEBdAF3AAAAAAAAAgEAAAAAAAAAKwAAAAAAAAAAAAAAAAAA
+	AYo=
+	</data>
+	<key>BBSuffixMapOverrides</key>
+	<array/>
+	<key>BrowserWindowSavedBounds:(null)</key>
+	<string>rect(175,850,1250,1710)</string>
+	<key>BrowserWindowSavedBounds:080252C98401C0183DCF88EABC4D572384B5122B</key>
+	<string>rect(175,850,1250,1710)</string>
+	<key>BrowserWindowSavedBounds:0B5E72D11BDE8AAACD6EAA0FC31DE1DA5D9766BD</key>
+	<string>rect(176,850,1251,1710)</string>
+	<key>BrowserWindowSavedBounds:36D79EFEA03C0B9BAD995BAABBFCDBEE380AE64E</key>
+	<string>rect(175,850,1250,1710)</string>
+	<key>BrowserWindowSavedBounds:93E09034E1717A5FA465B3F59DCE4BDE4599F5E3</key>
+	<string>rect(175,850,1250,1710)</string>
+	<key>BrowserWindowSavedBounds:AD3AC096DE86F9DE8F7EF9E125C99E8B7D3E6CDD</key>
+	<string>rect(175,850,1250,1710)</string>
+	<key>BrowserWindowSavedBounds:F52BEE158044D6A47806B155B06C90C04E924550</key>
+	<string>rect(176,850,1251,1710)</string>
+	<key>BrowserWindowSavedBounds:LSPDiagnosticsWindow</key>
+	<string>rect(176,850,1251,1710)</string>
+	<key>BrowserWindowSavedSplitPosition:080252C98401C0183DCF88EABC4D572384B5122B</key>
+	<integer>33</integer>
+	<key>BrowserWindowSavedSplitPosition:0B5E72D11BDE8AAACD6EAA0FC31DE1DA5D9766BD</key>
+	<integer>33</integer>
+	<key>BrowserWindowSavedSplitPosition:36D79EFEA03C0B9BAD995BAABBFCDBEE380AE64E</key>
+	<integer>33</integer>
+	<key>BrowserWindowSavedSplitPosition:93E09034E1717A5FA465B3F59DCE4BDE4599F5E3</key>
+	<integer>33</integer>
+	<key>BrowserWindowSavedSplitPosition:AD3AC096DE86F9DE8F7EF9E125C99E8B7D3E6CDD</key>
+	<integer>33</integer>
+	<key>BrowserWindowSavedSplitPosition:F52BEE158044D6A47806B155B06C90C04E924550</key>
+	<integer>33</integer>
+	<key>BrowserWindowSavedSplitPosition:LSPDiagnosticsWindow</key>
+	<integer>33</integer>
+	<key>ChangeCaseDialogLastAction</key>
+	<string>Rase</string>
+	<key>ColorSchemeFormatVersion</key>
+	<integer>4</integer>
+	<key>CopiedPreferencesToNewKeys_v1</key>
+	<true/>
+	<key>CopiedPreferencesToNewKeys_v2</key>
+	<true/>
+	<key>CopiedPreferencesToNewKeys_v3</key>
+	<true/>
+	<key>CopiedPreferencesToNewKeys_v4</key>
+	<true/>
+	<key>DashQueryKeys_Perl</key>
+	<array>
+		<string>Perl</string>
+	</array>
+	<key>DefaultInterpreter_Python</key>
+	<integer>3</integer>
+	<key>DefaultLanguageNameForNewDocuments</key>
+	<string>text-file</string>
+	<key>DefaultPosition:FTPBrowser:displays([(0, 0), (2560, 1440)])</key>
+	<string>rect(58,0,570,668)</string>
+	<key>DefaultPosition:PatternTester:displays([(0, 0), (2560, 1440)])</key>
+	<string>rect(217,946,1292,1806)</string>
+	<key>DefaultPosition:ProjectWindow:displays([(0, 0), (2560, 1440)])</key>
+	<string>rect(53,739,1369,1818)</string>
+	<key>DefaultPosition:TextWindow:displays([(0, 0), (2560, 1440)])</key>
+	<string>rect(62,742,1381,1817)</string>
+	<key>DefaultProperties:ProjectWindow:displays([(0, 0), (2560, 1440)])</key>
+	<dict>
+		<key>EmbeddedEditorVisible</key>
+		<true/>
+		<key>FileListVisible</key>
+		<true/>
+		<key>IsFullScreen</key>
+		<false/>
+		<key>OpenDocumentSplitProportion</key>
+		<real>0.60999999999999999</real>
+		<key>ProjectListWidthAsFraction</key>
+		<real>0.20000000000000001</real>
+	</dict>
+	<key>DefaultProperties:TextWindow:displays([(0, 0), (2560, 1440)])</key>
+	<dict>
+		<key>EmbeddedEditorVisible</key>
+		<true/>
+		<key>FileListVisible</key>
+		<true/>
+		<key>IsFullScreen</key>
+		<false/>
+		<key>OpenDocumentSplitProportion</key>
+		<real>0.0</real>
+		<key>ProjectListWidthAsFraction</key>
+		<real>0.20000000000000001</real>
+	</dict>
+	<key>DidMigrateTextWranglerIconSetting</key>
+	<true/>
+	<key>DiskBrowser_FileFilterMode</key>
+	<integer>2</integer>
+	<key>EditingWindowPageGuideWidth</key>
+	<integer>120</integer>
+	<key>EditorAutoExpandTabs_Python</key>
+	<true/>
+	<key>EditorCutCopyLinesForInsertionPoint</key>
+	<true/>
+	<key>EnableFontLigatures</key>
+	<true/>
+	<key>EnableRareLigatures</key>
+	<true/>
+	<key>ExpertPreferencesListOnlyIncludesNonDefaultValues</key>
+	<false/>
+	<key>FindDialog_MultiFileSearchOptions</key>
+	<string>yes </string>
+	<key>FindDialog_SelectionOnly</key>
+	<false/>
+	<key>FindDialog_ShowLiveMatches</key>
+	<true/>
+	<key>Frontmost Project</key>
+	<false/>
+	<key>GetMeOnTheBetaTrainWooWoooooChuggaChuggaChuggaChugga</key>
+	<true/>
+	<key>HiddenLanguageCodes</key>
+	<array/>
+	<key>InfoPanelSelectedTab</key>
+	<string>info</string>
+	<key>InsertionPointCursorType</key>
+	<integer>0</integer>
+	<key>KeepHistoricalBackups</key>
+	<false/>
+	<key>LanguageServerInfo_ANSI C</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd</string>
+		<key>ServerInitParams</key>
+		<string>clangd-params.json</string>
+		<key>ServerLanguageID</key>
+		<string>c</string>
+	</dict>
+	<key>LanguageServerInfo_C++</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd</string>
+		<key>ServerInitParams</key>
+		<string>clangd-params.json</string>
+		<key>ServerLanguageID</key>
+		<string>cpp</string>
+	</dict>
+	<key>LanguageServerInfo_JavaScript</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array>
+			<string>--stdio</string>
+		</array>
+		<key>ServerCommand</key>
+		<string>typescript-language-server</string>
+		<key>ServerInitParams</key>
+		<string></string>
+		<key>ServerLanguageID</key>
+		<string></string>
+	</dict>
+	<key>LanguageServerInfo_Objective-C</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd</string>
+		<key>ServerInitParams</key>
+		<string>clangd-params.json</string>
+		<key>ServerLanguageID</key>
+		<string>objective-c</string>
+	</dict>
+	<key>LanguageServerInfo_Objective-C++</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clangd</string>
+		<key>ServerInitParams</key>
+		<string>clangd-params.json</string>
+		<key>ServerLanguageID</key>
+		<string>objective-cpp</string>
+	</dict>
+	<key>LanguageServerInfo_Perl</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array>
+			<string>--stdio</string>
+		</array>
+		<key>ServerCommand</key>
+		<string>perlnavigator</string>
+		<key>ServerInitParams</key>
+		<string></string>
+		<key>ServerLanguageID</key>
+		<string></string>
+	</dict>
+	<key>LanguageServerInfo_Python</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/opt/geedbla/venv/bin/pylsp</string>
+		<key>ServerInitParams</key>
+		<string></string>
+		<key>ServerLanguageID</key>
+		<string></string>
+	</dict>
+	<key>LanguageServerInfo_Swift</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array/>
+		<key>ServerCommand</key>
+		<string>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp</string>
+		<key>ServerInitParams</key>
+		<string></string>
+		<key>ServerLanguageID</key>
+		<string>swift</string>
+	</dict>
+	<key>LanguageServerInfo_Unix Shell Script</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array>
+			<string>start</string>
+		</array>
+		<key>ServerCommand</key>
+		<string>bash-language-server</string>
+		<key>ServerInitParams</key>
+		<string></string>
+		<key>ServerLanguageID</key>
+		<string></string>
+	</dict>
+	<key>ListDisplayFont</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAChC1UkbnVsbAgRGiQpMjdJTFFT
+	VQAAAAAAAAEBAAAAAAAAAAwAAAAAAAAAAAAAAAAAAABb
+	</data>
+	<key>MakeBackup</key>
+	<false/>
+	<key>My Files &amp; Folders</key>
+	<false/>
+	<key>NSAutomaticCapitalizationEnabled</key>
+	<false/>
+	<key>NSAutomaticDashSubstitutionEnabled</key>
+	<false/>
+	<key>NSAutomaticPeriodSubstitutionEnabled</key>
+	<false/>
+	<key>NSAutomaticQuoteSubstitutionEnabled</key>
+	<false/>
+	<key>NSAutomaticSpellingCorrectionEnabled</key>
+	<false/>
+	<key>NSAutomaticTextCompletionEnabled</key>
+	<false/>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<true/>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{1210, 911}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{1314, 958}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 230.000000, 286.000000, NO, NO</string>
+		<string>0.000000, 287.000000, 230.000000, 48.000000, NO, NO</string>
+	</array>
+	<key>NSSplitView Subview Frames PatternPlaygroundPatternSplitSize</key>
+	<array>
+		<string>0.000000, 0.000000, 860.000000, 170.500000, NO, NO</string>
+		<string>0.000000, 171.500000, 860.000000, 903.500000, NO, NO</string>
+	</array>
+	<key>NSTableView Columns v3 CustomLanguageExtensionMappingsList</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABrgsMEx4fICEiIyQqNDU2VSRu
+	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
+	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuVnN1ZmZp
+	eCNAYQAAAAAAAAjSJSYnKFokY2xhc3NuYW1lWCRjbGFzc2VzXE5TRGljdGlvbmFyeaIn
+	KVhOU09iamVjdNMUDQ4rLx2jFhcYgAOABIAFozAxHIALgAyACIAJWGxhbmd1YWdlI0Bv
+	AAAAAAAA0iUmNzheTlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIA
+	NwBJAEwAUgBUAGMAaQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5
+	AL8AxgDNANYA1wDcAOcA8AD9AQABCQEQARQBFgEYARoBHgEgASIBJAEmAS8BOAE9AUwB
+	UAAAAAAAAAIBAAAAAAAAADoAAAAAAAAAAAAAAAAAAAFY
+	</data>
+	<key>NSTableView Columns v3 CustomLanguageSettingsList</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABrgsMEx4fICEiIyQqNDU2VSRu
+	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
+	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuXGxhbmd1
+	YWdlTmFtZSNAY8AAAAAAAAjSJSYnKFokY2xhc3NuYW1lWCRjbGFzc2VzXE5TRGljdGlv
+	bmFyeaInKVhOU09iamVjdNMUDQ4rLx2jFhcYgAOABIAFozAxHIALgAyACIAJXxAgQXV0
+	b21hdGljVGFibGVDb2x1bW5JZGVudGlmaWVyLjEjQGxAAAAAAADSJSY3OF5OU011dGFi
+	bGVBcnJheaM3OSlXTlNBcnJheQAIABEAGgAkACkAMgA3AEkATABSAFQAYwBpAG4AeQCA
+	AIMAhQCHAIkAkACYAJwAngCgAKIApgCoAKoArACuALkAvwDGANMA3ADdAOIA7QD2AQMB
+	BgEPARYBGgEcAR4BIAEkASYBKAEqASwBTwFYAV0BbAFwAAAAAAAAAgEAAAAAAAAAOgAA
+	AAAAAAAAAAAAAAAAAXg=
+	</data>
+	<key>NSTableView Columns v3 FTPBrowserOutlineView</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABrxAUCwwVICEiIyQlJiw2NzhC
+	Q0ROT1BVJG51bGzSDQ4PFFpOUy5vYmplY3RzViRjbGFzc6QQERITgAKACoANgBCAE9MW
+	DQ4XGx9XTlMua2V5c6MYGRqAA4AEgAWjHB0egAaAB4AIgAlaSWRlbnRpZmllclVXaWR0
+	aFZIaWRkZW5UbmFtZSNAbGAAAAAAAAjSJygpKlokY2xhc3NuYW1lWCRjbGFzc2VzXE5T
+	RGljdGlvbmFyeaIpK1hOU09iamVjdNMWDQ4tMR+jGBkagAOABIAFozIzHoALgAyACIAJ
+	VGRhdGUjQGhgAAAAAADTFg0OOT0foxgZGoADgASABaM+Px6ADoAPgAiACVRzaXplI0BE
+	AAAAAAAA0xYNDkVJH6MYGRqAA4AEgAWjSksegBGAEoAIgAlaa2luZFN0cmluZyNAYeAA
+	AAAAANInKFFSXk5TTXV0YWJsZUFycmF5o1FTK1dOU0FycmF5AAgAEQAaACQAKQAyADcA
+	SQBMAFIAVABrAHEAdgCBAIgAjQCPAJEAkwCVAJcAngCmAKoArACuALAAtAC2ALgAugC8
+	AMcAzQDUANkA4gDjAOgA8wD8AQkBDAEVARwBIAEiASQBJgEqASwBLgEwATIBNwFAAUcB
+	SwFNAU8BUQFVAVcBWQFbAV0BYgFrAXIBdgF4AXoBfAGAAYIBhAGGAYgBkwGcAaEBsAG0
+	AAAAAAAAAgEAAAAAAAAAVAAAAAAAAAAAAAAAAAAAAbw=
+	</data>
+	<key>NSTableView Sort Ordering v2 CustomLanguageExtensionMappingsList</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABqQsMEhscHR4fJVUkbnVsbNIN
+	Dg8RWk5TLm9iamVjdHNWJGNsYXNzoRCAAoAI0xMNDhQXGldOUy5rZXlzohUWgAOABKIY
+	GYAFgAaAB1pJZGVudGlmaWVyWUFzY2VuZGluZ1ZzdWZmaXgJ0iAhIiNaJGNsYXNzbmFt
+	ZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiIiRYTlNPYmplY3TSICEmJ15OU011dGFibGVB
+	cnJheaMmKCRXTlNBcnJheQAIABEAGgAkACkAMgA3AEkATABSAFQAXgBkAGkAdAB7AH0A
+	fwCBAIgAkACTAJUAlwCaAJwAngCgAKsAtQC8AL0AwgDNANYA4wDmAO8A9AEDAQcAAAAA
+	AAACAQAAAAAAAAApAAAAAAAAAAAAAAAAAAABDw==
+	</data>
+	<key>NSTableView Sort Ordering v2 CustomLanguageSettingsList</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABqQsMEhscHR4fJVUkbnVsbNIN
+	Dg8RWk5TLm9iamVjdHNWJGNsYXNzoRCAAoAI0xMNDhQXGldOUy5rZXlzohUWgAOABKIY
+	GYAFgAaAB1pJZGVudGlmaWVyWUFzY2VuZGluZ1xsYW5ndWFnZU5hbWUJ0iAhIiNaJGNs
+	YXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiIiRYTlNPYmplY3TSICEmJ15OU011
+	dGFibGVBcnJheaMmKCRXTlNBcnJheQAIABEAGgAkACkAMgA3AEkATABSAFQAXgBkAGkA
+	dAB7AH0AfwCBAIgAkACTAJUAlwCaAJwAngCgAKsAtQDCAMMAyADTANwA6QDsAPUA+gEJ
+	AQ0AAAAAAAACAQAAAAAAAAApAAAAAAAAAAAAAAAAAAABFQ==
+	</data>
+	<key>NSTableView Sort Ordering v2 FTPBrowserOutlineView</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
+	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVBcnJheYABqQsMEhscHR4fJVUkbnVsbNIN
+	Dg8RWk5TLm9iamVjdHNWJGNsYXNzoRCAAoAI0xMNDhQXGldOUy5rZXlzohUWgAOABKIY
+	GYAFgAaAB1pJZGVudGlmaWVyWUFzY2VuZGluZ1RuYW1lCdIgISIjWiRjbGFzc25hbWVY
+	JGNsYXNzZXNcTlNEaWN0aW9uYXJ5oiIkWE5TT2JqZWN00iAhJideTlNNdXRhYmxlQXJy
+	YXmjJigkV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAF4AZABpAHQAewB9AH8A
+	gQCIAJAAkwCVAJcAmgCcAJ4AoACrALUAugC7AMAAywDUAOEA5ADtAPIBAQEFAAAAAAAA
+	AgEAAAAAAAAAKQAAAAAAAAAAAAAAAAAAAQ0=
+	</data>
+	<key>NSTableView Supports v2 CustomLanguageExtensionMappingsList</key>
+	<true/>
+	<key>NSTableView Supports v2 CustomLanguageSettingsList</key>
+	<true/>
+	<key>NSTableView Supports v2 FTPBrowserOutlineView</key>
+	<true/>
+	<key>NSToolbar Configuration BBSetupConfigurationPanelToolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSToolbar Configuration E6A14725-E08D-4AAC-A81B-CD1E58EA44C0</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame AboutBoxNeue</key>
+	<string>1126 501 307 432 0 0 2560 1409 </string>
+	<key>NSWindow Frame ApplyTextTransformPanel</key>
+	<string>1050 599 460 251 0 0 2560 1410 </string>
+	<key>NSWindow Frame BBCustomizeLanguageSettings</key>
+	<string>1055 724 528 418 0 0 2560 1410 </string>
+	<key>NSWindow Frame BBLanguageListPanel</key>
+	<string>1003 798 636 278 0 0 2560 1415 </string>
+	<key>NSWindow Frame BBPreferences</key>
+	<string>978 615 682 607 0 0 2560 1410 </string>
+	<key>NSWindow Frame BBSetupEditorWindow</key>
+	<string>1963 1017 350 388 0 0 2560 1415 </string>
+	<key>NSWindow Frame ClippingLanguageSetupPanel</key>
+	<string>2028 966 220 387 0 0 2560 1415 </string>
+	<key>NSWindow Frame ConfirmCloseMulti</key>
+	<string>997 771 565 397 0 0 2560 1410 </string>
+	<key>NSWindow Frame GoToLine</key>
+	<string>1100 602 359 208 0 0 2560 1410 </string>
+	<key>NSWindow Frame GoToSymbol</key>
+	<string>1136 633 288 246 0 0 2560 1415 </string>
+	<key>NSWindow Frame MultiFileReplaceAllOptions</key>
+	<string>315 472 388 128 0 0 2560 1415 </string>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>0 59 250 316 0 0 2560 1410 </string>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>2024 113 536 235 0 0 2560 1409 </string>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>675 384 1210 911 0 0 2560 1409 </string>
+	<key>NSWindow Frame OpenFileByName</key>
+	<string>1040 560 480 360 0 0 2560 1410 </string>
+	<key>NSWindow Frame OpenRecentPanel</key>
+	<string>1039 944 480 300 0 0 2560 1409 </string>
+	<key>NSWindow Frame ProgressPanel</key>
+	<string>850 1152 407 137 0 0 2560 1410 </string>
+	<key>NSWindow Frame ProgressPanelSheet</key>
+	<string>850 1156 407 137 0 0 2560 1415 </string>
+	<key>NSWindow Frame RunUnixCommandSheet</key>
+	<string>1010 630 540 234 0 0 2560 1410 </string>
+	<key>NSWindow Frame SoftwareUpdateDownloadProgress</key>
+	<string>1067 942 426 167 0 0 2560 1410 </string>
+	<key>NSWindow Frame SoftwareUpdatePromptWindow</key>
+	<string>857 754 538 390 0 0 2560 1410 </string>
+	<key>NSWindow Frame StartupProgressPanel</key>
+	<string>1096 662 369 109 0 0 2560 1410 </string>
+	<key>NSWindow Frame StringEntryPanel</key>
+	<string>1000 669 559 155 0 0 2560 1410 </string>
+	<key>NSWindow Frame UniversalRunner</key>
+	<string>1085 945 389 358 0 0 2560 1410 </string>
+	<key>NSWindow Frame WindowPosition_v2_Find</key>
+	<string>0 395 666 332 0 0 2560 1410 </string>
+	<key>NSWindow Frame WindowPosition_v2_FunctionsPalette</key>
+	<string>1155 487 285 358 0 0 2560 1415 </string>
+	<key>NSWindow Frame WindowPosition_v2_HTMLUtilitiesPalette</key>
+	<string>1851 923 139 208 0 0 2560 1415 </string>
+	<key>NSWindow Frame WindowPosition_v2_MultiFileFind</key>
+	<string>379 290 626 563 0 0 2560 1410 </string>
+	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
+	<string>1145 986 266 160 0 0 2560 1415 </string>
+	<key>NextAutoSaveCheckTime</key>
+	<integer>2031898687</integer>
+	<key>Open Editing Windows</key>
+	<false/>
+	<key>Open Text Documents</key>
+	<false/>
+	<key>OpenDialogShowsHiddenItems</key>
+	<true/>
+	<key>PalettesAreHidden</key>
+	<false/>
+	<key>Paths Files</key>
+	<false/>
+	<key>PatternTesterExpandCaptureGroups</key>
+	<true/>
+	<key>PinchZoomChangesMagnification</key>
+	<true/>
+	<key>PrintColorSyntax</key>
+	<false/>
+	<key>Projects</key>
+	<true/>
+	<key>ReadTextEncodingFallbacks</key>
+	<array>
+		<integer>0</integer>
+	</array>
+	<key>Recent Folders</key>
+	<true/>
+	<key>RecentItemsPrefDataUpgradedForSandbox</key>
+	<true/>
+	<key>Results Browsers</key>
+	<false/>
+	<key>Rewrap_CharacterWidth</key>
+	<integer>87</integer>
+	<key>Rewrap_LeaveTrailingSpace</key>
+	<false/>
+	<key>Rewrap_ParagraphFill</key>
+	<true/>
+	<key>Rewrap_ParagraphIndentation</key>
+	<string>nInd</string>
+	<key>Rewrap_RelativeToFirstLine</key>
+	<true/>
+	<key>Rewrap_RemoveSpaces</key>
+	<false/>
+	<key>RunUnixCommand_History</key>
+	<array/>
+	<key>RunUnixCommand_LastCommand</key>
+	<string>sed 's/,/,\n/g'</string>
+	<key>RunUnixCommand_OutputMode</key>
+	<integer>0</integer>
+	<key>Saved Search Sets</key>
+	<false/>
+	<key>Search_CaseSensitive</key>
+	<false/>
+	<key>Search_EntireWord</key>
+	<false/>
+	<key>Search_WrapAround</key>
+	<true/>
+	<key>Search_mode</key>
+	<string>Grep</string>
+	<key>SelectedColorSchemeName</key>
+	<string>Solarized Light</string>
+	<key>SelectedColorSchemeNameDarkMode</key>
+	<string>BBEdit Dark</string>
+	<key>ShowFTPDotFiles</key>
+	<true/>
+	<key>SourceControlForm</key>
+	<string>rect(176,850,1251,1710)</string>
+	<key>StripTrailingWhitespace</key>
+	<true/>
+	<key>StripTrailingWhitespace_ANSI C</key>
+	<true/>
+	<key>StripTrailingWhitespace_C++</key>
+	<true/>
+	<key>StripTrailingWhitespace_JavaScript</key>
+	<true/>
+	<key>StripTrailingWhitespace_Objective-C</key>
+	<true/>
+	<key>StripTrailingWhitespace_Objective-C++</key>
+	<true/>
+	<key>StripTrailingWhitespace_Python</key>
+	<true/>
+	<key>StripTrailingWhitespace_Ruby</key>
+	<true/>
+	<key>StripTrailingWhitespace_Swift</key>
+	<true/>
+	<key>StripTrailingWhitespace_Unix Shell Script</key>
+	<true/>
+	<key>UseAttachmentScripts</key>
+	<true/>
+	<key>UserDeclinedSandboxAccess</key>
+	<true/>
+	<key>WindowPosition:OpenFileByName:displays([(0, 0), (2560, 1440)])</key>
+	<string>rect(548,1040,880,1520)</string>
+	<key>Xcode Projects</key>
+	<false/>
+	<key>ZapGremlins_Action</key>
+	<string>Zrch</string>
+	<key>ZapGremlins_ConvertFullwidthForms</key>
+	<false/>
+	<key>ZapGremlins_ConvertToASCII</key>
+	<true/>
+	<key>ZapGremlins_EightBitCharacters</key>
+	<true/>
+	<key>ZapGremlins_NullCharacters</key>
+	<true/>
+	<key>ZapGremlins_UseNamedEntities</key>
+	<true/>
+	<key>ZapGremlins_ZapControlCharacters</key>
+	<true/>
+	<key>ZapGremlins_ZappedCharacterReplacement</key>
+	<string>10</string>
+</dict>
+</plist>

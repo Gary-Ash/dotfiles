@@ -1,0 +1,41 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "allow": [
+      "Skill(bash-skill)",
+      "Skill(cpp-skill)",
+      "Skill(perl-skill)",
+      "Skill(python3-skill)",
+      "Skill(file-header-skill)",
+      "Skill(git-commit-skill)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(which gh && gh auth status 2>&1)",
+      "WebFetch(domain:github.com)",
+      "Bash(brew search:*)",
+      "Bash(head:*)",
+      "Bash(find:*)",
+      "Bash(github-mcp-server stdio:*)",
+      "Bash(claude mcp:*)",
+      "Bash(gh auth:*)",
+      "Bash(chmod 700:*)",
+      "mcp__github__list_gists"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "perl ~/.claude/statusline.pl"
+  },
+  "enabledPlugins": {
+    "swift-lsp@claude-plugins-official": true,
+    "clangd-lsp@claude-plugins-official": true,
+    "swift-concurrency@swift-concurrency-agent-skill": true,
+    "swiftui-expert@swiftui-expert-skill": true
+  },
+  "model": "opus"
+}
