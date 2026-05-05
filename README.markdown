@@ -33,6 +33,7 @@ dotfiles/
 │   │   └── skills/           # Custom Claude Code skills
 │   │       ├── bash-skill/
 │   │       ├── cpp-skill/
+│   │       ├── discovery-tree/
 │   │       ├── file-header-skill/
 │   │       ├── git-commit-skill/
 │   │       ├── github-cli-claude-skill/
@@ -143,7 +144,7 @@ Zsh is configured with:
 - **Xcode** - Code snippets, themes, keybindings, and template macros
 - **Ghostty** - Terminal emulator configuration
 - **Keyboard Maestro** - Automation macros
-- **Claude Code** - AI assistant with MCP servers, custom skills (Bash, C++, Perl, Python, Git commit, GitHub CLI, file headers), and marketplace plugins (Swift Concurrency, SwiftUI)
+- **Claude Code** - AI assistant with MCP servers, custom skills (Bash, C++, Perl, Python, Git commit, GitHub CLI, file headers, discovery tree), and marketplace plugins (Swift Concurrency, SwiftUI)
 
 ## Notes
 

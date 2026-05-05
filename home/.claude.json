@@ -29,5 +29,20 @@
       ],
       "env": {}
     }
-  }
+  },
+  "closedIssuesLastChecked": 1778185126413,
+  "seenNotifications": {},
+  "cachedExperimentFeatures": [
+    "tengu_amber_prism",
+    "tengu_ashen_kelp",
+    "tengu_coral_beacon",
+    "tengu_ember_latch",
+    "tengu_ember_trail",
+    "tengu_flint_harbor",
+    "tengu_flint_harbor_share",
+    "tengu_mcp_subagent_prompt",
+    "tengu_plank_river_frost",
+    "tengu_read_dedup_killswitch",
+    "tengu_willow_prism"
+  ]
 }

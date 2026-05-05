@@ -10,13 +10,19 @@
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
 
-auto-update-channel = tip
 title = "👻 Ghostty"
+
+theme = "Selenized Dark"
 font-size = 12
 font-family = "PragmataPro Liga"
 #font-feature = +ss15
+
+auto-update = check
+auto-update-channel = tip
+
 shell-integration = "zsh"
 shell-integration-features = no-cursor, title, ssh-terminfo
+
 window-height = 70
 window-width = 200
 window-colorspace = "display-p3"
@@ -26,8 +32,8 @@ cursor-style = block
 cursor-style-blink = true
 cursor-opacity=0.96
 
-confirm-close-surface = false
+mouse-hide-while-typing = true
 
+confirm-close-surface = false
 quit-after-last-window-closed = true
-keybind = shift+enter=text:\x1b\r
-theme = "Selenized Dark"
+

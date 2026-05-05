@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  21-Apr-2026  8:59pm
+# Modified :   2-May-2026  8:23pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -19,21 +19,6 @@ source /opt/venv/python3/bin/activate
 if command -v rbenv &>/dev/null; then
 	eval "$(rbenv init - zsh)"
 fi
-
-#*****************************************************************************************
-# Work In Progress helpers
-#*****************************************************************************************
-mkwip() {
-	mkdir -p "$HOME/Developer/WIP"
-	cd "$HOME/Developer/WIP"
-}
-
-workdone() {
-	if [[ "$(pwd)" == "$HOME/Developer/WIP" ]]; then
-		cd "$HOME"
-	fi
-	rm -rf "$HOME/Developer/WIP"
-}
 
 #*****************************************************************************************
 # Update dot files
@@ -116,14 +101,27 @@ sysupdate() {
 		sudo chown -R garyash:admin /opt/geedbla/* &>/dev/null
 		sudo chown -R root:admin /Applications/* &>/dev/null
 		sudo chmod -R 775 /Applications/* &>/dev/null
-		setopt local_options no_monitor
 	fi
 
 	unset SUDO_PASSWORD
-	setopt local_options no_monitor
-
 	startup-banner --dark &>/dev/null
 }
+
+#*****************************************************************************************
+# Work In Progress helpers
+#*****************************************************************************************
+mkwip() {
+	mkdir -p "$HOME/Developer/WIP"
+	cd "$HOME/Developer/WIP"
+}
+
+workdone() {
+	if [[ "$(pwd)" == "$HOME/Developer/WIP" ]]; then
+		cd "$HOME"
+	fi
+	rm -rf "$HOME/Developer/WIP"
+}
+
 #*****************************************************************************************
 # Directory utilities
 #*****************************************************************************************

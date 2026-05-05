@@ -111,7 +111,7 @@
 	<key>IDEChatIsBuiltInClaudeEnabled</key>
 	<true/>
 	<key>IDEChatLastServerResourcesRetrieval</key>
-	<real>1776999414.3385239</real>
+	<real>1777427646.729871</real>
 	<key>IDECodingIntelligenceUseHistory</key>
 	<dict>
 		<key>HasEverUsed</key>
@@ -351,6 +351,8 @@
 	<false/>
 	<key>IDEProductsUISelectedInspector</key>
 	<integer>-8552023710757241081</integer>
+	<key>IDEProductsViewControllerSelectedProductSectionIdentifier</key>
+	<string>Xcode.ProductsWindow.ProductSection.Row.PerformanceMetrics.BatteryUsage</string>
 	<key>IDEProductsViewControllerSourceListSplitPosition</key>
 	<real>215</real>
 	<key>IDEProfileActionSelectedTab</key>
@@ -391,12 +393,8 @@
 	<false/>
 	<key>IDEWorkspaceSuppressCleanBuildPrompt</key>
 	<true/>
-	<key>IDE_CA_Daily_BuildClangStaticAnalyzer</key>
-	<true/>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
-	<key>IDE_CA_Daily_UsedScriptingAPI</key>
-	<true/>
 	<key>LastExplicitInspectorVisibility</key>
 	<true/>
 	<key>NSColorPanelMode</key>
@@ -503,7 +501,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>925 267 710 722 0 0 2560 1410 </string>
+	<string>915 382 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
@@ -523,9 +521,9 @@
 	<key>ProductMappingKey</key>
 	<data>
 	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
-	Wmxhc3RPcGVuZWRfECwvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvdGVzdC90ZXN0Lnhj
-	b2RlcHJvaqAzQcfNibzPB2wICxMVHCozPm1uAAAAAAAAAQEAAAAAAAAACgAAAAAAAAAA
-	AAAAAAAAAHc=
+	Wmxhc3RPcGVuZWRfEEAvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9GbGFz
+	aGNhcmRzL0ZsYXNoY2FyZHMueGNvZGVwcm9qoDNBx9DOIiZt8AgLExUcKjM+gYIAAAAA
+	AAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAiw==
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
 	<string>23E244</string>
