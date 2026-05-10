@@ -93,7 +93,7 @@ on formatDateTimeStamp()
 	set d to current date
 	
 	set theDay to day of d
-	set theMonth to text 1 thru 3 of (month of d as text)
+	set theMonth to text 1 thru 3 of ((month of d) as text)
 	set theYear to year of d
 	
 	set theHour to hours of d
@@ -111,22 +111,21 @@ on formatDateTimeStamp()
 		set theHour to theHour - 12
 	end if
 	
-	if theDay < 10 then
-		set theDay to " " & theDay
-	end if
-	
-	if theHour < 10 then
-		set theHour to " " & theHour
-	end if
-	
+	-- Pad values
 	if theMinute < 10 then
 		set theMinute to "0" & theMinute
+	else
+		set theMinute to theMinute as text
 	end if
 	
-	set formattedDate to theDay & "-" & theMonth & "-" & theYear & " " & theHour & ":" & theMinute & suffix
+	set theDay to theDay as text
+	set theHour to theHour as text
+	set theYear to theYear as text
+	
+	set formattedDate to theDay & "-" & theMonth & "-" & theYear & "  " & theHour & ":" & theMinute & suffix
+	
 	return formattedDate
 end formatDateTimeStamp
-
 
 (*****************************************************************************************
  * Set the cursor position

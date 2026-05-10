@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  30-Mar-2026  2:44pm
+# Modified :  18-May-2026  5:08pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -15,6 +15,7 @@
 # Core aliases
 #*****************************************************************************************
 alias sudo="sudo "
+alias ls="eza --icons --group-directories-first --all"
 alias ll="eza --long -all --git --group --group-directories-first --color=always  --icons=always --classify --level=3 --sort=name"
 
 #*****************************************************************************************

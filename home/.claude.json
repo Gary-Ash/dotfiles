@@ -30,19 +30,39 @@
       "env": {}
     }
   },
-  "closedIssuesLastChecked": 1778185126413,
+  "closedIssuesLastChecked": 1779994246519,
   "seenNotifications": {},
   "cachedExperimentFeatures": [
     "tengu_amber_prism",
-    "tengu_ashen_kelp",
+    "tengu_cedar_inlet",
     "tengu_coral_beacon",
-    "tengu_ember_latch",
-    "tengu_ember_trail",
     "tengu_flint_harbor",
-    "tengu_flint_harbor_share",
+    "tengu_garnet_finch",
     "tengu_mcp_subagent_prompt",
+    "tengu_orchid_mantis_v2",
     "tengu_plank_river_frost",
-    "tengu_read_dedup_killswitch",
-    "tengu_willow_prism"
-  ]
+    "tengu_read_dedup_killswitch"
+  ],
+  "routineFiredWatermark": "2026-05-24T20:05:01.618Z",
+  "passesEligibilityCache": {
+    "44ed8be7-c6d4-430e-9a86-ed8efc92979c": {
+      "eligible": true,
+      "referral_code_details": {
+        "code": "yslhgPIVpA",
+        "campaign": "claude_code_guest_pass_a47c",
+        "referral_link": "https://claude.ai/referral/yslhgPIVpA"
+      },
+      "referrer_reward": {
+        "amount_minor_units": 1000,
+        "currency": "USD"
+      },
+      "remaining_passes": 3,
+      "timestamp": 1779994247516
+    }
+  },
+  "passesUpsellSeenCount": 0,
+  "hasVisitedPasses": false,
+  "passesLastSeenRemaining": 3,
+  "cachedGrowthBookFeaturesAt": 1780015030577,
+  "opus48LaunchSeenCount": 2
 }

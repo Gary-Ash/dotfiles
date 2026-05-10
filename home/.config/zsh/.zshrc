@@ -122,6 +122,6 @@ install_powerline_precmd
 #*****************************************************************************************
 if [[ $TERM_PROGRAM != "Apple_Terminal" ]]; then
 	() {
-		startup-banner --dark
+		startup-banner --dark --image /opt/geedbla/pictures/apple-logo.png
 	}
 fi

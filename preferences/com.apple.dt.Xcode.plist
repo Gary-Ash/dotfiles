@@ -181,27 +181,27 @@
 	<dict>
 		<key>/Applications/Xcode.app/Contents/Applications/Accessibility Inspector.app</key>
 		<data>
-		35ez2zoDcQKoRDy6K7QHc5bVvlo=
+		XNA0GmBdH89Cr8gbC3580SY6k4s=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/FileMerge.app</key>
 		<data>
-		C5VSRtK4fD3UR/S2ZavlYJOFfWw=
+		RkzS9Cq7AKSWg275nJvIZvbmdP4=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Icon Composer.app</key>
 		<data>
-		OGewKoAeU1k/vvINKyPWyTtAPGg=
+		65Feee7xjENad0U1+XsFGHaOpDg=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Instruments.app</key>
 		<data>
-		0LYi2W7axNH/W4zeF8JQhdBGmXo=
+		vP1zRfupgaRLKg0hwR5iMomQfJc=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Reality Composer Pro.app</key>
 		<data>
-		1NE1SjP/VDQlmmsnzn11jJJP+Ew=
+		cqeQA27hIKfNJCs8IlvuUNm8NfQ=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app</key>
 		<data>
-		dw47imixwCE8cKoV1lWM5F3t/OQ=
+		u/tHxD546VLxpemu7kkC48Ueg2g=
 		</data>
 		<key>/System/Library/CoreServices/CoreTypes.bundle</key>
 		<data>
@@ -261,7 +261,7 @@
 	<key>IDEModelAccessHasUserConsentForOnDeviceInteractions</key>
 	<true/>
 	<key>IDEMostRecentPostFLEToolsVersion</key>
-	<string>26.4.1</string>
+	<string>26.5</string>
 	<key>IDEOmnibar.location</key>
 	<dict>
 		<key>horizontal</key>
@@ -283,6 +283,7 @@
 	<real>560</real>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-appletvos</key>
 	<array>
+		<string>23L470</string>
 		<string>23L236</string>
 		<string>23K50</string>
 		<string>23J576</string>
@@ -294,6 +295,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-iphoneos</key>
 	<array>
+		<string>23F73</string>
 		<string>23E252</string>
 		<string>23E237</string>
 		<string>23C57</string>
@@ -307,6 +309,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-macosx</key>
 	<array>
+		<string>25F70</string>
 		<string>25E251</string>
 		<string>25E236</string>
 		<string>25C58</string>
@@ -320,6 +323,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-watchos</key>
 	<array>
+		<string>23T570</string>
 		<string>23T238</string>
 		<string>23S303</string>
 		<string>23S34</string>
@@ -331,6 +335,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-xros</key>
 	<array>
+		<string>23O469</string>
 		<string>23O248</string>
 		<string>23O238</string>
 		<string>23N301</string>
@@ -395,6 +400,8 @@
 	<true/>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
+	<key>IDE_CA_Daily_UsedScriptingAPI</key>
+	<true/>
 	<key>LastExplicitInspectorVisibility</key>
 	<true/>
 	<key>NSColorPanelMode</key>
@@ -416,8 +423,8 @@
 	</array>
 	<key>NSSplitView Subview Frames com.apple.dt.Xcode.DevicesWidow.DevicesSplit</key>
 	<array>
-		<string>0.000000, 0.000000, 230.000000, 700.000000, NO, NO</string>
-		<string>230.000000, 0.000000, 954.000000, 700.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 178.500000, 700.000000, NO, NO</string>
+		<string>178.500000, 0.000000, 1005.500000, 700.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v3 PlistColumns</key>
 	<data>
@@ -491,7 +498,7 @@
 	<key>NSWindow Frame Documentation Viewer Window</key>
 	<string>841 555 1024 730 0 0 2560 1410 </string>
 	<key>NSWindow Frame IDEDownloadProgressWindow</key>
-	<string>1944 1090 400 212 0 0 2560 1410 </string>
+	<string>1944 1198 400 104 0 0 2560 1410 </string>
 	<key>NSWindow Frame IDEEditContextSheet</key>
 	<string>1176 572 534 341 0 0 2560 1409 </string>
 	<key>NSWindow Frame IDEEditSchemeWindow</key>
@@ -501,7 +508,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>915 382 710 722 0 0 2560 1410 </string>
+	<string>915 278 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>

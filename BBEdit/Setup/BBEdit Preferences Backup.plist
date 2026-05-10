@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>4289e2f8beb11849bfc885ec763c9c0c450</key>
+	<date>2026-05-21T18:49:32Z</date>
+	<key>48c1b5bae70e005b658d2a862d144e70450</key>
+	<date>2026-05-21T19:27:23Z</date>
 	<key>AIWorksheetWrapResponseCharLimit</key>
 	<integer>120</integer>
 	<key>AlwaysShowFileList</key>
@@ -16,6 +20,10 @@
 	<integer>0</integer>
 	<key>AutoShowFileList</key>
 	<false/>
+	<key>BBEditRegisteredOwner:16.0</key>
+	<string>Gary Ash</string>
+	<key>BBEditSerialNumber:16.0</key>
+	<string>BEE160-ATURS-ZLKCK-QZWXY</string>
 	<key>BBEditorFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -31,7 +39,7 @@
 	AYo=
 	</data>
 	<key>BBPreferencesSelectedModuleIdentifier</key>
-	<string>BBKeyboardPreferences</string>
+	<string>BBAppearancePreferences</string>
 	<key>BBPrintingFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -47,7 +55,19 @@
 	AYo=
 	</data>
 	<key>BBSuffixMapOverrides</key>
-	<array/>
+	<array>
+		<dict>
+			<key>fileExtension</key>
+			<string>py</string>
+			<key>languageName</key>
+			<dict>
+				<key>languageCode</key>
+				<string>Pyth</string>
+				<key>languageName</key>
+				<string>Python</string>
+			</dict>
+		</dict>
+	</array>
 	<key>BrowserWindowSavedBounds:(null)</key>
 	<string>rect(175,850,1250,1710)</string>
 	<key>BrowserWindowSavedBounds:080252C98401C0183DCF88EABC4D572384B5122B</key>
@@ -106,6 +126,41 @@
 	<string>rect(53,739,1369,1818)</string>
 	<key>DefaultPosition:TextWindow:displays([(0, 0), (2560, 1440)])</key>
 	<string>rect(62,742,1381,1817)</string>
+	<key>DefaultProperties</key>
+	<dict>
+		<key>ProjectWindow</key>
+		<dict>
+			<key>displays([(0, 0), (2560, 1440)])</key>
+			<dict>
+				<key>EmbeddedEditorVisible</key>
+				<true/>
+				<key>FileListVisible</key>
+				<true/>
+				<key>IsFullScreen</key>
+				<false/>
+				<key>OpenDocumentSplitProportion</key>
+				<real>0.61000001430511475</real>
+				<key>ProjectListWidthAsFraction</key>
+				<real>0.20000000298023224</real>
+			</dict>
+		</dict>
+		<key>TextWindow</key>
+		<dict>
+			<key>displays([(0, 0), (2560, 1440)])</key>
+			<dict>
+				<key>EmbeddedEditorVisible</key>
+				<true/>
+				<key>FileListVisible</key>
+				<true/>
+				<key>IsFullScreen</key>
+				<false/>
+				<key>OpenDocumentSplitProportion</key>
+				<real>0.0</real>
+				<key>ProjectListWidthAsFraction</key>
+				<real>0.20000000298023224</real>
+			</dict>
+		</dict>
+	</dict>
 	<key>DefaultProperties:ProjectWindow:displays([(0, 0), (2560, 1440)])</key>
 	<dict>
 		<key>EmbeddedEditorVisible</key>
@@ -241,11 +296,24 @@
 		<key>ServerArguments</key>
 		<array/>
 		<key>ServerCommand</key>
-		<string>/opt/geedbla/venv/bin/pylsp</string>
+		<string>/opt/venv/python3/bin/pylsp</string>
 		<key>ServerInitParams</key>
 		<string></string>
 		<key>ServerLanguageID</key>
 		<string></string>
+	</dict>
+	<key>LanguageServerInfo_Ruby</key>
+	<dict>
+		<key>ServerArguments</key>
+		<array>
+			<string>stdio</string>
+		</array>
+		<key>ServerCommand</key>
+		<string>/opt/venv/ruby/versions/4.0.1/bin/solargraph</string>
+		<key>ServerInitParams</key>
+		<string>SolargraphInitParams.json</string>
+		<key>ServerLanguageID</key>
+		<string>ruby</string>
 	</dict>
 	<key>LanguageServerInfo_Swift</key>
 	<dict>
@@ -303,8 +371,8 @@
 	<true/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 230.000000, 286.000000, NO, NO</string>
-		<string>0.000000, 287.000000, 230.000000, 48.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 230.000000, 281.000000, NO, NO</string>
+		<string>0.000000, 282.000000, 230.000000, 48.000000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames PatternPlaygroundPatternSplitSize</key>
 	<array>
@@ -421,15 +489,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame AboutBoxNeue</key>
-	<string>1126 501 307 432 0 0 2560 1409 </string>
+	<string>1126 502 307 432 0 0 2560 1410 </string>
 	<key>NSWindow Frame ApplyTextTransformPanel</key>
 	<string>1050 599 460 251 0 0 2560 1410 </string>
 	<key>NSWindow Frame BBCustomizeLanguageSettings</key>
-	<string>1055 724 528 418 0 0 2560 1410 </string>
+	<string>1057 724 528 418 0 0 2560 1410 </string>
 	<key>NSWindow Frame BBLanguageListPanel</key>
-	<string>1003 798 636 278 0 0 2560 1415 </string>
+	<string>1003 792 636 282 0 0 2560 1410 </string>
 	<key>NSWindow Frame BBPreferences</key>
-	<string>978 615 682 607 0 0 2560 1410 </string>
+	<string>978 611 685 611 0 0 2560 1410 </string>
 	<key>NSWindow Frame BBSetupEditorWindow</key>
 	<string>1963 1017 350 388 0 0 2560 1415 </string>
 	<key>NSWindow Frame ClippingLanguageSetupPanel</key>
@@ -459,11 +527,11 @@
 	<key>NSWindow Frame RunUnixCommandSheet</key>
 	<string>1010 630 540 234 0 0 2560 1410 </string>
 	<key>NSWindow Frame SoftwareUpdateDownloadProgress</key>
-	<string>1067 942 426 167 0 0 2560 1410 </string>
+	<string>1067 938 426 171 0 0 2560 1410 </string>
 	<key>NSWindow Frame SoftwareUpdatePromptWindow</key>
-	<string>857 754 538 390 0 0 2560 1410 </string>
+	<string>857 754 641 390 0 0 2560 1410 </string>
 	<key>NSWindow Frame StartupProgressPanel</key>
-	<string>1096 662 369 109 0 0 2560 1410 </string>
+	<string>1096 657 369 114 0 0 2560 1410 </string>
 	<key>NSWindow Frame StringEntryPanel</key>
 	<string>1000 669 559 155 0 0 2560 1410 </string>
 	<key>NSWindow Frame UniversalRunner</key>
