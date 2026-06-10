@@ -508,7 +508,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>915 278 710 722 0 0 2560 1410 </string>
+	<string>915 226 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
@@ -528,19 +528,19 @@
 	<key>ProductMappingKey</key>
 	<data>
 	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
-	Wmxhc3RPcGVuZWRfEEAvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9GbGFz
-	aGNhcmRzL0ZsYXNoY2FyZHMueGNvZGVwcm9qoDNBx9DOIiZt8AgLExUcKjM+gYIAAAAA
-	AAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAiw==
+	Wmxhc3RPcGVuZWRfEEQvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9YY29k
+	ZUdlZURibEEvWGNvZGVHZWVEYmxBLnhjb2RlcHJvaqAzQcfr3nIkLIAICxMVHCozPoWG
+	AAAAAAAAAQEAAAAAAAAACgAAAAAAAAAAAAAAAAAAAI8=
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
-	<string>23E244</string>
+	<string>23F77</string>
 	<key>UVLastDeviceSetPurge-tvOS</key>
-	<string>23L243</string>
+	<string>23L470</string>
 	<key>UVLastDeviceSetPurge-watchOS</key>
-	<string>23T239</string>
+	<string>23T570</string>
 	<key>UVLastUsedDate</key>
 	<data>
-	Nzk0Nzk0NjA4LjUwMTc4OA==
+	ODAyNjY0NTA0LjYyNzUzMw==
 	</data>
 	<key>WebKitUseSystemAppearance</key>
 	<true/>

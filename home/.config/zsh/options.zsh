@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  30-Mar-2026  2:41pm
+# Modified :   9-Jun-2026 10:07pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -16,7 +16,6 @@
 #*****************************************************************************************
 export HISTSIZE=2000
 export SAVEHIST=1000
-unset HISTFILE
 export HISTFILE="$XDG_CACHE_HOME/zsh/history"
 
 setopt extended_history
@@ -56,7 +55,7 @@ autoload -Uz colors && colors
 # Completion styling
 #*****************************************************************************************
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*:*:*:*:default' list-colors "ma=48;5;3;30"
+zstyle ':completion:*:*:*:*:default' list-colors "ma=48;5;248;38;5;231"
 zstyle ':completion:*:descriptions' format $'\e[01;33m--- %d ---\e[00m'
 zstyle ':completion:*:messages' format $'\e[01;35m--- %d ---\e[00m'
 zstyle ':completion:*:warnings' format $'\e[01;31mNo matches for: %d\e[00m'

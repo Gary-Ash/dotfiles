@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  18-May-2026  5:08pm
+# Modified :   9-Jun-2026 10:07pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -16,13 +16,13 @@
 #*****************************************************************************************
 alias sudo="sudo "
 alias ls="eza --icons --group-directories-first --all"
-alias ll="eza --long -all --git --group --group-directories-first --color=always  --icons=always --classify --level=3 --sort=name"
+alias ll="eza --long --all --git --group --group-directories-first --color=always  --icons=always --classify --level=3 --sort=name"
 
 #*****************************************************************************************
 # App shortcuts
 #*****************************************************************************************
 alias edscripts='${VISUAL} /opt/geedbla'
-alias zshrc="${EDITOR} ${ZDOTDIR}/.zshenv ${ZDOTDIR}/options.zsh ${ZDOTDIR}/aliases.zsh ${ZDOTDIR}/functions.zsh ${ZDOTDIR}/television.zsh ${ZDOTDIR}/.zshrc;clearhist"
+alias zshrc="${EDITOR} ${ZDOTDIR}/.zshenv ${ZDOTDIR}/options.zsh ${ZDOTDIR}/aliases.zsh ${ZDOTDIR}/functions.zsh ${ZDOTDIR}/television.zsh ${ZDOTDIR}/.zshrc;cleanhist"
 
 #*****************************************************************************************
 # macOS system controls

@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :   2-May-2026  8:23pm
+# Modified :   9-Jun-2026 10:07pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -51,7 +51,7 @@ sysupdate() {
 		"$HOME/.gradle"
 		"$HOME/.swiftpm"
 		"$HOME/.hawtjni"
-		"$HOME/.config/zsh/.zsh_history"
+		"$XDG_CACHE_HOME/zsh/history"
 	)
 
 	command -v gh &>/dev/null && _q gh extension upgrade --all

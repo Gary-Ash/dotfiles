@@ -642,7 +642,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>GeeDblA Xcode Extension</string>
+				<string>Gee Dbl A's Xcode Extension</string>
 				<key>Title</key>
 				<string>Insert Function Trace Comment</string>
 			</dict>
@@ -664,7 +664,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>GeeDblA Xcode Extension</string>
+				<string>Gee Dbl A's Xcode Extension</string>
 				<key>Title</key>
 				<string>Insert Asterisk Box Comment</string>
 			</dict>
@@ -686,7 +686,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>GeeDblA Xcode Extension</string>
+				<string>Gee Dbl A's Xcode Extension</string>
 				<key>Title</key>
 				<string>Insert Dash Box Comment</string>
 			</dict>
@@ -708,7 +708,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>GeeDblA Xcode Extension</string>
+				<string>Gee Dbl A's Xcode Extension</string>
 				<key>Title</key>
 				<string>Insert Equals Sign Box Comment</string>
 			</dict>
@@ -730,7 +730,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>GeeDblA Xcode Extension</string>
+				<string>Gee Dbl A's Xcode Extension</string>
 				<key>Title</key>
 				<string>Generate File Header</string>
 			</dict>
@@ -750,7 +750,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>GeeDblA Xcode Extension</string>
+				<string>Gee Dbl A's Xcode Extension</string>
 				<key>Title</key>
 				<string>Remove Function Trace Comment</string>
 			</dict>
@@ -770,7 +770,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>GeeDblA Xcode Extension</string>
+				<string>Gee Dbl A's Xcode Extension</string>
 				<key>Title</key>
 				<string>Insert Seperator Comment</string>
 			</dict>
@@ -790,7 +790,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Parent Title</key>
-				<string>GeeDblA Xcode Extension</string>
+				<string>Gee Dbl A's Xcode Extension</string>
 				<key>Title</key>
 				<string>Update File Header</string>
 			</dict>

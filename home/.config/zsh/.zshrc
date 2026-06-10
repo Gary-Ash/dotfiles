@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  24-Mar-2026  3:30pm
+# Modified :   9-Jun-2026 10:07pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -27,8 +27,19 @@ compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
 bashcompinit
 compdef _swift swift
 
-source <(npm completion)
-eval "$(gh completion -s zsh)"
+# Cache generated completions so we don't spawn npm/gh/tv on every startup;
+# regenerate when a cache file is missing, empty, or older than 7 days (168h).
+_comp_cache="$XDG_CACHE_HOME/zsh/completions"
+[[ -d $_comp_cache ]] || mkdir -p "$_comp_cache"
+
+_load_completion() {
+	local file="$_comp_cache/$1.zsh"
+	shift
+	if [[ ! -s $file || -n $file(#qN.mh+168) ]]; then
+		"$@" >| "$file" 2>/dev/null
+	fi
+	source "$file"
+}
 
 # TV completions with channel name support
 _tv_channels() {
@@ -36,7 +47,13 @@ _tv_channels() {
 	channels=("${(@f)$(tv list-channels 2>/dev/null)}")
 	_describe 'channel' channels
 }
-eval "$(tv completions zsh 2>/dev/null | sed 's/shall we watch?:_default/shall we watch?:_tv_channels/')"
+_gen_tv_completion() {
+	tv completions zsh 2>/dev/null | sed 's/shall we watch?:_default/shall we watch?:_tv_channels/'
+}
+
+_load_completion npm npm completion
+_load_completion gh  gh completion -s zsh
+_load_completion tv  _gen_tv_completion
 
 #*****************************************************************************************
 # Key mapping and editing setup

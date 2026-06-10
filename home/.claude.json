@@ -18,19 +18,9 @@
         "mcpbridge"
       ],
       "env": {}
-    },
-    "dash-api": {
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "--from",
-        "git+https://github.com/Kapeli/dash-mcp-server.git",
-        "dash-mcp-server"
-      ],
-      "env": {}
     }
   },
-  "closedIssuesLastChecked": 1779994246519,
+  "closedIssuesLastChecked": 1781036009418,
   "seenNotifications": {},
   "cachedExperimentFeatures": [
     "tengu_amber_prism",
@@ -41,7 +31,8 @@
     "tengu_mcp_subagent_prompt",
     "tengu_orchid_mantis_v2",
     "tengu_plank_river_frost",
-    "tengu_read_dedup_killswitch"
+    "tengu_read_dedup_killswitch",
+    "tengu_sepia_moth"
   ],
   "routineFiredWatermark": "2026-05-24T20:05:01.618Z",
   "passesEligibilityCache": {
@@ -56,13 +47,52 @@
         "amount_minor_units": 1000,
         "currency": "USD"
       },
-      "remaining_passes": 3,
-      "timestamp": 1779994247516
+      "remaining_passes": 2,
+      "timestamp": 1781036010243
     }
   },
   "passesUpsellSeenCount": 0,
   "hasVisitedPasses": false,
   "passesLastSeenRemaining": 3,
-  "cachedGrowthBookFeaturesAt": 1780015030577,
-  "opus48LaunchSeenCount": 2
+  "cachedGrowthBookFeaturesAt": 1781056596717,
+  "remoteControlUpsellSeenCount": 2,
+  "pluginUsage": {
+    "swift-lsp@claude-plugins-official": {
+      "usageCount": 0,
+      "lastUsedAt": 1780973448026,
+      "lastUsedNumStartups": 183
+    },
+    "clangd-lsp@claude-plugins-official": {
+      "usageCount": 0,
+      "lastUsedAt": 1780973448026,
+      "lastUsedNumStartups": 183
+    },
+    "swift-concurrency@swift-concurrency-agent-skill": {
+      "usageCount": 0,
+      "lastUsedAt": 1780973448026,
+      "lastUsedNumStartups": 183
+    },
+    "swiftui-expert@swiftui-expert-skill": {
+      "usageCount": 0,
+      "lastUsedAt": 1780973448026,
+      "lastUsedNumStartups": 183
+    }
+  },
+  "tipLifetimeShownCounts": {
+    "fotw-campaign-upsell": 1,
+    "image-paste": 1,
+    "desktop-app": 1,
+    "web-app": 1,
+    "plan-mode-for-complex-tasks": 2,
+    "guest-passes": 3,
+    "install-github-app": 1,
+    "custom-agents": 1,
+    "install-slack-app": 1,
+    "permissions": 1,
+    "drag-and-drop-images": 1,
+    "paste-images-mac": 1,
+    "double-esc-code-restore": 1,
+    "continue": 1,
+    "shift-tab": 1
+  }
 }

@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026 10:00pm
-# Modified :  24-Mar-2026 10:18pm
+# Modified :   9-Jun-2026 10:07pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -33,7 +33,7 @@ path=(
 
 fpath=(
 	/opt/homebrew/share/zsh-completions
-	/opt/homebrew/zsh/site-functions
+	/opt/homebrew/share/zsh/site-functions
 	/opt/geedbla/lib/shell/lib
 	/opt/geedbla/zsh-completions
 	"${fpath[@]}"
