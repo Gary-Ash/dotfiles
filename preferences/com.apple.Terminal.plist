@@ -33,7 +33,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>452 131 275 474 0 0 2560 1410 </string>
+	<string>452 130 275 474 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>2049 76 445 95 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>

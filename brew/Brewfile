@@ -1,42 +1,77 @@
-tap "dlvhdr/formulae"
-tap "ggpeti/rmrec"
-tap "mulle-kybernetik/software"
-tap "peripheryapp/periphery"
+tap "dlvhdr/formulae", trusted: true
+tap "ggpeti/rmrec", trusted: true
+tap "mulle-kybernetik/software", trusted: true
+tap "peripheryapp/periphery", trusted: true
+# Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# C library of Git core methods that is re-entrant and linkable
 brew "libgit2"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Bash Automated Testing System
 brew "bats-core"
+# Cross-platform make
 brew "cmake"
+# Modern, maintained replacement for ls
 brew "eza"
+# Simple, fast and user-friendly alternative to find
 brew "fd"
+# GitHub command-line tool
 brew "gh"
+# Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Git extension for versioning large files
 brew "git-lfs"
+# GitHub Model Context Protocol server for AI tools
 brew "github-mcp-server"
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# Indents and reformats Perl scripts to make them easier to read
 brew "perltidy"
+# Core utilities for Python packages
 brew "python-packaging"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.14"
+# Ruby version manager
 brew "rbenv"
+# Perl-powered file rename script with many helpful built-ins
 brew "rename"
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Autoformat shell script source code
 brew "shfmt"
+# Non-interactive SSH password auth
 brew "sshpass"
+# Formatting tool for reformatting Swift code
 brew "swiftformat"
+# Tool to enforce Swift style and conventions
 brew "swiftlint"
+# General purpose fuzzy finder TUI
 brew "television"
+# Source code beautifier
 brew "uncrustify"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
+# UNIX shell (command interpreter)
 brew "zsh"
+# Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
+# Additional completion definitions for zsh
 brew "zsh-completions"
+# Debugger for zsh
 brew "zshdb"
+# Git diff pager based on delta but with a file tree, à la GitHub
 brew "dlvhdr/formulae/diffnav"
 cask "peripheryapp/periphery/periphery"
+# Xcode Extension for reformatting Swift code
 cask "swiftformat-for-xcode"
 npm "@mermaid-js/mermaid-cli"
 npm "bash-language-server"

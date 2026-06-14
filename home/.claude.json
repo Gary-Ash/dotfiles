@@ -20,19 +20,17 @@
       "env": {}
     }
   },
-  "closedIssuesLastChecked": 1781036009418,
+  "closedIssuesLastChecked": 1781374360587,
   "seenNotifications": {},
   "cachedExperimentFeatures": [
     "tengu_amber_prism",
     "tengu_cedar_inlet",
     "tengu_coral_beacon",
     "tengu_flint_harbor",
-    "tengu_garnet_finch",
     "tengu_mcp_subagent_prompt",
     "tengu_orchid_mantis_v2",
     "tengu_plank_river_frost",
-    "tengu_read_dedup_killswitch",
-    "tengu_sepia_moth"
+    "tengu_read_dedup_killswitch"
   ],
   "routineFiredWatermark": "2026-05-24T20:05:01.618Z",
   "passesEligibilityCache": {
@@ -47,15 +45,18 @@
         "amount_minor_units": 1000,
         "currency": "USD"
       },
-      "remaining_passes": 2,
-      "timestamp": 1781036010243
+      "remaining_passes": 0,
+      "limit": 3,
+      "share_link": "https://claude.ai/referral/yslhgPIVpA",
+      "terms_url": "https://support.claude.com/en/articles/12875061-claude-code-guest-passes",
+      "timestamp": 1781374361772
     }
   },
-  "passesUpsellSeenCount": 0,
+  "passesUpsellSeenCount": 1,
   "hasVisitedPasses": false,
   "passesLastSeenRemaining": 3,
-  "cachedGrowthBookFeaturesAt": 1781056596717,
-  "remoteControlUpsellSeenCount": 2,
+  "cachedGrowthBookFeaturesAt": 1781374360626,
+  "remoteControlUpsellSeenCount": 3,
   "pluginUsage": {
     "swift-lsp@claude-plugins-official": {
       "usageCount": 0,
@@ -93,6 +94,9 @@
     "paste-images-mac": 1,
     "double-esc-code-restore": 1,
     "continue": 1,
-    "shift-tab": 1
-  }
+    "shift-tab": 1,
+    "git-worktrees": 1,
+    "voice-mode": 1
+  },
+  "lastShownEmergencyTip": "Claude Fable 5 is currently unavailable. Please use Opus 4.8 or another available model. Learn more: https://www.anthropic.com/news/fable-mythos-access"
 }

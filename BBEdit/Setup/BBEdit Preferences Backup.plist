@@ -521,7 +521,7 @@
 	<key>NSWindow Frame OpenRecentPanel</key>
 	<string>1039 944 480 300 0 0 2560 1409 </string>
 	<key>NSWindow Frame ProgressPanel</key>
-	<string>850 1152 407 137 0 0 2560 1410 </string>
+	<string>850 1148 407 141 0 0 2560 1410 </string>
 	<key>NSWindow Frame ProgressPanelSheet</key>
 	<string>850 1156 407 137 0 0 2560 1415 </string>
 	<key>NSWindow Frame RunUnixCommandSheet</key>
@@ -533,7 +533,7 @@
 	<key>NSWindow Frame StartupProgressPanel</key>
 	<string>1096 657 369 114 0 0 2560 1410 </string>
 	<key>NSWindow Frame StringEntryPanel</key>
-	<string>1000 669 559 155 0 0 2560 1410 </string>
+	<string>1000 671 559 159 0 0 2560 1410 </string>
 	<key>NSWindow Frame UniversalRunner</key>
 	<string>1085 945 389 358 0 0 2560 1410 </string>
 	<key>NSWindow Frame WindowPosition_v2_Find</key>
@@ -542,12 +542,14 @@
 	<string>1155 487 285 358 0 0 2560 1415 </string>
 	<key>NSWindow Frame WindowPosition_v2_HTMLUtilitiesPalette</key>
 	<string>1851 923 139 208 0 0 2560 1415 </string>
+	<key>NSWindow Frame WindowPosition_v2_MarkersPalette</key>
+	<string>1155 488 285 363 0 0 2560 1410 </string>
 	<key>NSWindow Frame WindowPosition_v2_MultiFileFind</key>
 	<string>379 290 626 563 0 0 2560 1410 </string>
 	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
 	<string>1145 986 266 160 0 0 2560 1415 </string>
 	<key>NextAutoSaveCheckTime</key>
-	<integer>2031898687</integer>
+	<integer>2036733507</integer>
 	<key>Open Editing Windows</key>
 	<false/>
 	<key>Open Text Documents</key>

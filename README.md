@@ -1,3 +1,5 @@
+# ![Header](.github/Header.jpg)
+
 # Dotfiles
 
 Personal macOS configuration files and setup automation.
@@ -31,6 +33,7 @@ dotfiles/
 │   │   ├── statusline.pl     # Custom status line script
 │   │   ├── plugins/          # Installed plugins and marketplace skills
 │   │   └── skills/           # Custom Claude Code skills
+│   │       ├── applescript-skill/
 │   │       ├── bash-skill/
 │   │       ├── cpp-skill/
 │   │       ├── discovery-tree/
@@ -124,7 +127,7 @@ Key packages installed via Brewfile:
 | Git | git, gh, git-delta, git-lfs, github-mcp-server |
 | Search | ripgrep, fd, television, diffnav |
 | File Utilities | bat, eza, jq, rename, imagemagick |
-| Languages | python@3.14, node, rbenv, uv |
+| Languages | python@3.14, node, rbenv |
 | Build | cmake |
 | Swift/Xcode | swiftformat, swiftlint, periphery |
 | Formatters | shfmt, shellcheck, perltidy, uncrustify |
@@ -144,7 +147,7 @@ Zsh is configured with:
 - **Xcode** - Code snippets, themes, keybindings, and template macros
 - **Ghostty** - Terminal emulator configuration
 - **Keyboard Maestro** - Automation macros
-- **Claude Code** - AI assistant with MCP servers, custom skills (Bash, C++, Perl, Python, Git commit, GitHub CLI, file headers, discovery tree), and marketplace plugins (Swift Concurrency, SwiftUI)
+- **Claude Code** - AI assistant with MCP servers, custom skills (AppleScript, Bash, C++, Perl, Python, Git commit, GitHub CLI, file headers, discovery tree), and marketplace plugins (Swift Concurrency, SwiftUI)
 
 ## Notes
 
@@ -160,4 +163,4 @@ Gary Ash <gary.ash@icloud.com>
 
 ## License
 
-MIT License - see [LICENSE.markdown](LICENSE.markdown) for details.
+MIT License - see [LICENSE.md](LICENSE.md) for details.

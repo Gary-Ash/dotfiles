@@ -36,7 +36,7 @@ Examples: ` 7-Feb-2026  4:22pm`, `19-Mar-2026 11:05am`
 ### Multiline comment style (`/* */`)
 
 Use for languages that support multiline comment delimiters:
-- C, C++, Objective-C, Objective-C++, Java, JavaScript, TypeScript, Swift, AppleScript, Pascal, CSS
+- C, C++, Objective-C, Objective-C++, Java, JavaScript, TypeScript, Swift, Pascal, CSS
 
 Template:
 ```
@@ -57,6 +57,32 @@ Rules:
 - Opening line: `/*` followed by asterisks to fill 89 characters total
 - Each interior line starts with ` * ` (space-asterisk-space)
 - Closing line: space followed by asterisks to fill 88 characters, then `/`
+- The asterisk border lines are exactly 89 characters wide
+
+### AppleScript block comment style (`(* *)`)
+
+AppleScript has no `/* */` comments. It uses `(* ... *)` for block comments
+(and `--` or `#` for single-line). Use this style for `.applescript` and `.scpt` files.
+
+Template:
+```
+(*****************************************************************************************
+ * filename.applescript
+ *
+ * brief summary of the file contents
+ *
+ * Author   :  Gary Ash <gary.ash@icloud.com>
+ * Created  :   7-Feb-2026  4:22pm
+ * Modified :
+ *
+ * Copyright © 2026 By Gary Ash All rights reserved.
+ ****************************************************************************************)
+```
+
+Rules:
+- Opening line: `(*` followed by asterisks to fill 89 characters total
+- Each interior line starts with ` * ` (space-asterisk-space)
+- Closing line: space followed by asterisks to fill 88 characters, then `)`
 - The asterisk border lines are exactly 89 characters wide
 
 ### Single-line comment style (`//`)
