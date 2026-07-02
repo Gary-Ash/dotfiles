@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :   9-Jun-2026 10:07pm
+# Modified :  16-Jun-2026  2:41pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -85,7 +85,7 @@ sysupdate() {
 		export HOMEBREW_COLOR=0
 
 		_q brew update --quiet
-		_q brew upgrade --quiet
+		_q brew upgrade --quiet --no-ask
 		_q brew autoremove --quiet
 		_q brew cleanup --quiet --scrub
 		_q rm -rf "$(brew --cache)"

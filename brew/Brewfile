@@ -1,7 +1,6 @@
 tap "dlvhdr/formulae", trusted: true
 tap "ggpeti/rmrec", trusted: true
 tap "mulle-kybernetik/software", trusted: true
-tap "peripheryapp/periphery", trusted: true
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # C library of Git core methods that is re-entrant and linkable
@@ -26,6 +25,8 @@ brew "git-delta"
 brew "git-lfs"
 # GitHub Model Context Protocol server for AI tools
 brew "github-mcp-server"
+# Program providing model for GNU coding standards and practices
+brew "hello"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -70,7 +71,6 @@ brew "zsh-completions"
 brew "zshdb"
 # Git diff pager based on delta but with a file tree, à la GitHub
 brew "dlvhdr/formulae/diffnav"
-cask "peripheryapp/periphery/periphery"
 # Xcode Extension for reformatting Swift code
 cask "swiftformat-for-xcode"
 npm "@mermaid-js/mermaid-cli"

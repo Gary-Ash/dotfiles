@@ -5,7 +5,7 @@ title: Project Title
 graph TD
     subgraph legend["Legend"]
         direction LR
-        legend-parent-task["Parent task"] --- legend-todo["To do"] --- legend-in-progress["In progress"] --- legend-completed["Completed"] --- legend-blocked["Blocked"] --- legend-punt["Punt"] --- legend-notes["Notes"]
+        legend-parent-task["Parent task"] ~~~ legend-todo["To do"] ~~~ legend-in-progress["In progress"] ~~~ legend-completed["Completed"] ~~~ legend-blocked["Blocked"] ~~~ legend-punt["Punt"] ~~~ legend-notes["Notes"]
     end
 
     parent-node["Parent Task"]
@@ -19,8 +19,6 @@ graph TD
     classDef blocked fill:#f1a2a0
     classDef punt fill:#b5abf4
     classDef notes fill:#b8cffa
-
-    style legend color:#000000,font-size:18px,font-weight:bold
 
     class legend-parent-task parent-task
     class legend-todo todo

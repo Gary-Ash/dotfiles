@@ -181,27 +181,27 @@
 	<dict>
 		<key>/Applications/Xcode.app/Contents/Applications/Accessibility Inspector.app</key>
 		<data>
-		XNA0GmBdH89Cr8gbC3580SY6k4s=
+		YjO3SuE+4Wo5GPWNXPIsBr9lCqk=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/FileMerge.app</key>
 		<data>
-		RkzS9Cq7AKSWg275nJvIZvbmdP4=
+		5mpQIB0CQUOZt9W2pd6QH7LbPPk=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Icon Composer.app</key>
 		<data>
-		65Feee7xjENad0U1+XsFGHaOpDg=
+		j7zC6BctGCN++By+KyHd4vgMBLI=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Instruments.app</key>
 		<data>
-		vP1zRfupgaRLKg0hwR5iMomQfJc=
+		EpA1yFMNRhzIdKA75Y16tFsX1ZU=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Reality Composer Pro.app</key>
 		<data>
-		cqeQA27hIKfNJCs8IlvuUNm8NfQ=
+		oykztSBcoOZUCJGtQ6G5k/bTg4s=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app</key>
 		<data>
-		u/tHxD546VLxpemu7kkC48Ueg2g=
+		qk5u4Z4YfGRN8Q0PuZ/kzVFOMWg=
 		</data>
 		<key>/System/Library/CoreServices/CoreTypes.bundle</key>
 		<data>
@@ -256,12 +256,14 @@
 	<string>17E188</string>
 	<key>IDEMetalToolchainLastNotified-17E202</key>
 	<string>17E188</string>
+	<key>IDEMetalToolchainLastNotified-17F113</key>
+	<string>17F109</string>
 	<key>IDEMetalToolchainSelectedDuringFirstLaunch</key>
 	<true/>
 	<key>IDEModelAccessHasUserConsentForOnDeviceInteractions</key>
 	<true/>
 	<key>IDEMostRecentPostFLEToolsVersion</key>
-	<string>26.5</string>
+	<string>26.6</string>
 	<key>IDEOmnibar.location</key>
 	<dict>
 		<key>horizontal</key>
@@ -295,6 +297,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-iphoneos</key>
 	<array>
+		<string>23F81a</string>
 		<string>23F73</string>
 		<string>23E252</string>
 		<string>23E237</string>
@@ -305,7 +308,6 @@
 		<string>22F76</string>
 		<string>22E235</string>
 		<string>22C146</string>
-		<string>22B74</string>
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-macosx</key>
 	<array>
@@ -508,7 +510,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>915 226 710 722 0 0 2560 1410 </string>
+	<string>925 527 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>

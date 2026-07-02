@@ -7,6 +7,7 @@ benchmark
 bigdecimal
 bundler
 colorator
+commander
 concurrent-ruby
 csv
 date
@@ -31,6 +32,8 @@ forwardable
 forwardable-extended
 getoptlong
 google-protobuf
+hana
+highline
 http_parser.rb
 i18n
 io-console
@@ -46,6 +49,7 @@ jekyll-sass-converter
 jekyll-watch
 json
 json-schema
+json_schemer
 kramdown
 kramdown-parser-gfm
 language_server-protocol
@@ -73,6 +77,7 @@ openssl
 optparse
 ostruct
 parallel
+parlour
 parser
 pathutil
 power_assert
@@ -110,8 +115,11 @@ safe_yaml
 sass-embedded
 securerandom
 shellwords
+simpleidn
 singleton
 solargraph
+sorbet-runtime
+sord
 stringio
 strscan
 syntax_suggest

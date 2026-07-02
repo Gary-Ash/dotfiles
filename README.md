@@ -129,7 +129,7 @@ Key packages installed via Brewfile:
 | File Utilities | bat, eza, jq, rename, imagemagick |
 | Languages | python@3.14, node, rbenv |
 | Build | cmake |
-| Swift/Xcode | swiftformat, swiftlint, periphery |
+| Swift/Xcode | swiftformat, swiftlint |
 | Formatters | shfmt, shellcheck, perltidy, uncrustify |
 | Testing | bats-core |
 | Navigation | zoxide |

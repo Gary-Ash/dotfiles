@@ -20,17 +20,21 @@
       "env": {}
     }
   },
-  "closedIssuesLastChecked": 1781374360587,
+  "closedIssuesLastChecked": 1783023036643,
   "seenNotifications": {},
   "cachedExperimentFeatures": [
     "tengu_amber_prism",
-    "tengu_cedar_inlet",
+    "tengu_copper_fox",
     "tengu_coral_beacon",
+    "tengu_fleetview_onboarding_v2",
     "tengu_flint_harbor",
+    "tengu_malformed_tool_use_clean_retry",
     "tengu_mcp_subagent_prompt",
-    "tengu_orchid_mantis_v2",
     "tengu_plank_river_frost",
-    "tengu_read_dedup_killswitch"
+    "tengu_read_dedup_killswitch",
+    "tengu_review_workflow_routing",
+    "tengu_sepia_moth",
+    "tengu_velvet_hammer_fable_5"
   ],
   "routineFiredWatermark": "2026-05-24T20:05:01.618Z",
   "passesEligibilityCache": {
@@ -48,14 +52,14 @@
       "remaining_passes": 0,
       "limit": 3,
       "share_link": "https://claude.ai/referral/yslhgPIVpA",
-      "terms_url": "https://support.claude.com/en/articles/12875061-claude-code-guest-passes",
-      "timestamp": 1781374361772
+      "terms_url": "https://support.claude.com/en/articles/13456702-claude-code-and-cowork-guest-passes",
+      "timestamp": 1783023561561
     }
   },
-  "passesUpsellSeenCount": 1,
+  "passesUpsellSeenCount": 3,
   "hasVisitedPasses": false,
   "passesLastSeenRemaining": 3,
-  "cachedGrowthBookFeaturesAt": 1781374360626,
+  "cachedGrowthBookFeaturesAt": 1783028731838,
   "remoteControlUpsellSeenCount": 3,
   "pluginUsage": {
     "swift-lsp@claude-plugins-official": {
@@ -82,21 +86,47 @@
   "tipLifetimeShownCounts": {
     "fotw-campaign-upsell": 1,
     "image-paste": 1,
-    "desktop-app": 1,
+    "desktop-app": 2,
     "web-app": 1,
-    "plan-mode-for-complex-tasks": 2,
-    "guest-passes": 3,
-    "install-github-app": 1,
+    "plan-mode-for-complex-tasks": 3,
+    "guest-passes": 5,
+    "install-github-app": 2,
     "custom-agents": 1,
-    "install-slack-app": 1,
-    "permissions": 1,
-    "drag-and-drop-images": 1,
-    "paste-images-mac": 1,
+    "install-slack-app": 2,
+    "permissions": 2,
+    "drag-and-drop-images": 2,
+    "paste-images-mac": 2,
     "double-esc-code-restore": 1,
     "continue": 1,
     "shift-tab": 1,
     "git-worktrees": 1,
-    "voice-mode": 1
+    "voice-mode": 1,
+    "rename-conversation": 1,
+    "desktop-shortcut": 1,
+    "feedback-command": 1,
+    "no-flicker": 1,
+    "plugin-disuse-review": 1,
+    "memory-command": 1,
+    "remote-control": 1
   },
-  "lastShownEmergencyTip": "Claude Fable 5 is currently unavailable. Please use Opus 4.8 or another available model. Learn more: https://www.anthropic.com/news/fable-mythos-access"
+  "lastShownEmergencyTip": "Claude Fable 5 is currently unavailable. Please use Opus 4.8 or another available model. Learn more: https://www.anthropic.com/news/fable-mythos-access",
+  "machineID": "81e92b06cec40dfe3f2ce94b4d162e5bd09f7c6f26f5c4c3cb39e1839691bb08",
+  "announcementImpressions": {
+    "fable-5-promo-2": 3
+  },
+  "clientDataCacheSlots": {
+    "bi1-31e012dbfa691f93": {
+      "data": {
+        "cedar_lagoon": {
+          "": true
+        },
+        "cedar_basin": "2026-08-31"
+      },
+      "at": 1783023560866
+    }
+  },
+  "modelAccessCache": [],
+  "orgModelDefaultCache": null,
+  "autoCompactWindowsCache": null,
+  "fullscreenUpsellSeenCount": 3
 }

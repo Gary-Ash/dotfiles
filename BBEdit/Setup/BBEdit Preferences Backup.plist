@@ -533,7 +533,7 @@
 	<key>NSWindow Frame StartupProgressPanel</key>
 	<string>1096 657 369 114 0 0 2560 1410 </string>
 	<key>NSWindow Frame StringEntryPanel</key>
-	<string>1000 671 559 159 0 0 2560 1410 </string>
+	<string>1000 669 559 155 0 0 2560 1410 </string>
 	<key>NSWindow Frame UniversalRunner</key>
 	<string>1085 945 389 358 0 0 2560 1410 </string>
 	<key>NSWindow Frame WindowPosition_v2_Find</key>
@@ -549,7 +549,7 @@
 	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
 	<string>1145 986 266 160 0 0 2560 1415 </string>
 	<key>NextAutoSaveCheckTime</key>
-	<integer>2036733507</integer>
+	<integer>2038112376</integer>
 	<key>Open Editing Windows</key>
 	<false/>
 	<key>Open Text Documents</key>
