@@ -1,6 +1,6 @@
 #!/usr/bin/env osascript
 (*****************************************************************************************
- * HashTable.scrpt 
+ * HashTable.scrptd 
  *
  * This file contains the implementation of hash table
  *

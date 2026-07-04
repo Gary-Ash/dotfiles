@@ -51,13 +51,14 @@ dotfiles/
 │   │   ├── agents/           # Agent skills
 │   │   │   └── skills/       # Swift Concurrency, SwiftUI
 │   │   ├── bat/              # Bat (cat replacement) config
-│   │   ├── black/            # Python Black formatter config
+│   │   ├── black             # Python Black formatter config
 │   │   ├── diffnav/          # Diff navigation config
 │   │   ├── eza/              # Eza (ls replacement) config
 │   │   ├── gh/               # GitHub CLI config
 │   │   ├── gh-dash/          # GitHub Dashboard config
 │   │   ├── ghostty/          # Ghostty terminal config
 │   │   ├── git/              # Git configuration
+│   │   ├── homebrew/         # Homebrew trust configuration
 │   │   ├── npm/              # npm configuration
 │   │   ├── pycodestyle       # Python code style config
 │   │   ├── rgrc.conf         # Ripgrep configuration
@@ -77,9 +78,10 @@ dotfiles/
 │   ├── com.apple.dt.Xcode.plist
 │   ├── com.apple.Terminal.plist
 │   └── com.apple.applescript.plist
-├── Script Libraries/         # AppleScript libraries
-│   ├── BBEditLibrary.scpt
-│   └── HashTable.scpt
+├── Script Libraries/         # AppleScript script libraries (.scptd bundles)
+│   ├── BBEditUtilities.scptd
+│   ├── HashTable.scptd
+│   └── TextUtilities.scptd
 ├── BBEdit/                   # BBEdit application support
 │   ├── Attachment Scripts/
 │   ├── Cheat Sheets/
@@ -110,10 +112,9 @@ dotfiles/
 │       ├── IDETemplateMacros.plist
 │       ├── KeyBindings/
 │       └── xcdebugger/
-├── keyboard-maestro/         # Keyboard Maestro macros
-│   └── Library.kmmacros
 └── shortcuts/                # macOS Shortcuts
     ├── Clear Downloads Folder.shortcut
+    ├── Gee Dbl A Toolbox.shortcut
     └── OCD.shortcut
 ```
 

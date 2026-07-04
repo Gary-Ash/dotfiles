@@ -10,7 +10,7 @@
  * Copyright © 2026 By Gary Ash All rights reserved.
  ****************************************************************************************)
 
-use script "BBEditLibrary"
+use script "BBEditUtilities"
 use scripting additions
 
 tell application "BBEdit"
@@ -20,7 +20,7 @@ tell application "BBEdit"
 	set theColumnNumber to ((startColumn of selection) of text window 1)
 end tell
 
-tell script "BBEditLibrary"
+tell script "BBEditUtilities"
 	set decoratorDialog to (display dialog ¬
 		"Please enter the character to use to build the comment" with title ¬
 		"Enter Decorator Character" default answer ¬

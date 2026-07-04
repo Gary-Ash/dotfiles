@@ -10,7 +10,9 @@
  * Copyright © 2026 By Gary Ash All rights reserved.
  ****************************************************************************************)
 
-use script "BBEditLibrary"
+use script "BBEditUtilities"
+use script "TextUtilities"
+
 use scripting additions
 
 tell application "BBEdit"
@@ -20,7 +22,11 @@ tell application "BBEdit"
 	set theLineNumber to ((startLine of selection) of text window 1)
 end tell
 
-tell script "BBEditLibrary"
+tell script "TextUtilities"
+	set timeStsmp to formatDateTimeStamp()
+end tell
+
+tell script "BBEditUtilities"
 	set organizations to settings()
 	set shebang to (my makeShebangLine(lang))
 	set commentCharacters to (getCommentCharacters(lang))
@@ -47,7 +53,9 @@ tell script "BBEditLibrary"
 	set comment to (comment & insideLine & LF)
 	set comment to (comment & insideLine & LF)
 	set comment to (comment & insideLine & "Author   :  Gary Ash <gary.ash@icloud.com>" & LF)
-	set comment to (comment & insideLine & "Created  :  " & formatDateTimeStamp() & LF)
+	
+	set comment to (comment & insideLine & "Created  :  " & timeStsmp & LF)
+	
 	set comment to (comment & insideLine & "Modified :  " & LF)
 	set comment to (comment & insideLine & LF)
 	set comment to (comment & insideLine & "Copyright © " & ((year of (current date)) as text) & " By " & (item 1 of organizations) & " All rights reserved." & LF)

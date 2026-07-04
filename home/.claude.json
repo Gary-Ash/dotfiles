@@ -20,7 +20,7 @@
       "env": {}
     }
   },
-  "closedIssuesLastChecked": 1783023036643,
+  "closedIssuesLastChecked": 1783113974183,
   "seenNotifications": {},
   "cachedExperimentFeatures": [
     "tengu_amber_prism",
@@ -53,13 +53,13 @@
       "limit": 3,
       "share_link": "https://claude.ai/referral/yslhgPIVpA",
       "terms_url": "https://support.claude.com/en/articles/13456702-claude-code-and-cowork-guest-passes",
-      "timestamp": 1783023561561
+      "timestamp": 1783113974976
     }
   },
   "passesUpsellSeenCount": 3,
   "hasVisitedPasses": false,
   "passesLastSeenRemaining": 3,
-  "cachedGrowthBookFeaturesAt": 1783028731838,
+  "cachedGrowthBookFeaturesAt": 1783182279476,
   "remoteControlUpsellSeenCount": 3,
   "pluginUsage": {
     "swift-lsp@claude-plugins-official": {
@@ -85,36 +85,68 @@
   },
   "tipLifetimeShownCounts": {
     "fotw-campaign-upsell": 1,
-    "image-paste": 1,
+    "image-paste": 2,
     "desktop-app": 2,
-    "web-app": 1,
-    "plan-mode-for-complex-tasks": 3,
-    "guest-passes": 5,
-    "install-github-app": 2,
-    "custom-agents": 1,
+    "web-app": 2,
+    "plan-mode-for-complex-tasks": 4,
+    "guest-passes": 7,
+    "install-github-app": 3,
+    "custom-agents": 2,
     "install-slack-app": 2,
     "permissions": 2,
     "drag-and-drop-images": 2,
     "paste-images-mac": 2,
-    "double-esc-code-restore": 1,
-    "continue": 1,
-    "shift-tab": 1,
-    "git-worktrees": 1,
-    "voice-mode": 1,
+    "double-esc-code-restore": 2,
+    "continue": 2,
+    "shift-tab": 2,
+    "git-worktrees": 2,
+    "voice-mode": 2,
     "rename-conversation": 1,
     "desktop-shortcut": 1,
     "feedback-command": 1,
     "no-flicker": 1,
     "plugin-disuse-review": 1,
     "memory-command": 1,
-    "remote-control": 1
+    "remote-control": 1,
+    "agents-view-multiclauding": 1,
+    "artifact-publish-plan": 1,
+    "theme-command": 1,
+    "enter-to-steer-in-relatime": 1,
+    "todo-list": 1
   },
   "lastShownEmergencyTip": "Claude Fable 5 is currently unavailable. Please use Opus 4.8 or another available model. Learn more: https://www.anthropic.com/news/fable-mythos-access",
   "machineID": "81e92b06cec40dfe3f2ce94b4d162e5bd09f7c6f26f5c4c3cb39e1839691bb08",
   "announcementImpressions": {
-    "fable-5-promo-2": 3
+    "fable-5-promo-2": 9
   },
   "clientDataCacheSlots": {
+    "bi1-9bf8e0aa6be714d0": {
+      "data": {
+        "cedar_lagoon": {
+          "": true
+        },
+        "cedar_basin": "2026-08-31"
+      },
+      "at": 1783179470871
+    },
+    "bi1-1404dac17a6498ab": {
+      "data": {
+        "cedar_lagoon": {
+          "": true
+        },
+        "cedar_basin": "2026-08-31"
+      },
+      "at": 1783122149962
+    },
+    "bi1-30c4475e4dcea059": {
+      "data": {
+        "cedar_lagoon": {
+          "": true
+        },
+        "cedar_basin": "2026-08-31"
+      },
+      "at": 1783113974443
+    },
     "bi1-31e012dbfa691f93": {
       "data": {
         "cedar_lagoon": {
@@ -128,5 +160,10 @@
   "modelAccessCache": [],
   "orgModelDefaultCache": null,
   "autoCompactWindowsCache": null,
-  "fullscreenUpsellSeenCount": 3
+  "fullscreenUpsellSeenCount": 3,
+  "claudeAiMcpEverConnected": [
+    "claude.ai Google Drive",
+    "claude.ai Gmail",
+    "claude.ai Google Calendar"
+  ]
 }

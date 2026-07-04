@@ -10,7 +10,7 @@
  * Copyright © 2026 By Gary Ash All rights reserved.
  ****************************************************************************************)
 
-use BBREditLibrary : script "BBEditLibrary"
+use BBEditUtilities : script "BBEditUtilities"
 use scripting additions
 
 on documentWillSave(doc)
@@ -62,12 +62,12 @@ on updateHeaderComment(td)
 					
 					delete selection
 					
-					set stamp to BBREditLibrary's formatDateTimeStamp()
+					set stamp to BBEditUtilities's formatDateTimeStamp()
 					set selection to ((":  " & stamp) as string)
 				end if
 			end if
 		end if
 	end tell
-	BBREditLibrary's setCursorPosition(saveLine, saveCol)
+	BBEditUtilities's setCursorPosition(saveLine, saveCol)
 end updateHeaderComment
 

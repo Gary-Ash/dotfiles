@@ -10,7 +10,7 @@
  * Copyright © 2026 By Gary Ash All rights reserved.
  ****************************************************************************************)
 
-use script "BBEditLibrary"
+use script "BBEditUtilities"
 use scripting additions
 
 tell application "BBEdit" to activate
@@ -32,7 +32,7 @@ tell application "BBEdit"
 	set theColumnNumber to ((startColumn of selection) of text window 1)
 end tell
 
-tell script "BBEditLibrary"
+tell script "BBEditUtilities"
 	set LF to (ASCII character 10)
 	
 	set commentCharacters to (getCommentCharacters(lang))
