@@ -31,6 +31,8 @@ brew "hello"
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Deep clean and optimize your Mac
+brew "mole"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Indents and reformats Perl scripts to make them easier to read

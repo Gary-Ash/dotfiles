@@ -60,6 +60,8 @@
 	<real>148</real>
 	<key>IBAppliesAutoResizingRulesWhileResizing</key>
 	<false/>
+	<key>IBICDefaultColorComponentMode</key>
+	<string>Integer</string>
 	<key>IBICImageStackDisplayScale</key>
 	<string>2x</string>
 	<key>IBPreferencesMigrated</key>
@@ -131,11 +133,11 @@
 	<key>IDEDeveloperDocumentationSelectedDuringFirstLaunch</key>
 	<true/>
 	<key>IDEDisableGitSupportForNewProjects</key>
-	<true/>
+	<false/>
 	<key>IDEDocSearchSelectedReferenceIdentifier</key>
 	<string>swift</string>
 	<key>IDEDocumentationIndexedStoreLastAccessed</key>
-	<real>794191411.67918801</real>
+	<real>805747725.13813305</real>
 	<key>IDEEditorCoordinatorNewTabsContent</key>
 	<string>blank-document</string>
 	<key>IDEEditorCoordinatorPinEditorTabs</key>
@@ -372,13 +374,13 @@
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVVTdGF0ZYABrAsMFxgZHyAhKC4vMFUkbnVs
 	bNMNDg8QExZXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6IREoACgAOiFBWABIAIgAtf
 	EBVJREVSdW5TaGVldENvbnRyb2xsZXJfEBhTZWxlY3RlZERldGFpbENvbnRyb2xsZXLT
-	DQ4PGhweoRuABaEdgAaAB18QGHNlbGVjdGVkU2NoZW1lQWN0aW9uTmFtZVNSdW7SIiMk
-	JVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxlRGljdGlvbmFyeaMkJidcTlNE
-	aWN0aW9uYXJ5WE5TT2JqZWN00w0ODykrHqEqgAmhLIAKgAdfEBVTZWxlY3RlZFRhYklk
-	ZW50aWZpZXJbRGlhZ25vc3RpY3PSIiMmMaImJwAIABEAGgAkACkAMgA3AEkATABSAFQA
-	YQBnAG4AdgCBAIgAiwCNAI8AkgCUAJYAmACwAMsA0gDUANYA2ADaANwA9wD7AQABCwEU
-	ASoBLgE7AUQBSwFNAU8BUQFTAVUBbQF5AX4AAAAAAAACAQAAAAAAAAAyAAAAAAAAAAAA
-	AAAAAAABgQ==
+	DQ4PGhweoRuABaEdgAaAB18QGHNlbGVjdGVkU2NoZW1lQWN0aW9uTmFtZVRUZXN00iIj
+	JCVaJGNsYXNzbmFtZVgkY2xhc3Nlc18QE05TTXV0YWJsZURpY3Rpb25hcnmjJCYnXE5T
+	RGljdGlvbmFyeVhOU09iamVjdNMNDg8pKx6hKoAJoSyACoAHXxAVU2VsZWN0ZWRUYWJJ
+	ZGVudGlmaWVyVEluZm/SIiMmMaImJwAIABEAGgAkACkAMgA3AEkATABSAFQAYQBnAG4A
+	dgCBAIgAiwCNAI8AkgCUAJYAmACwAMsA0gDUANYA2ADaANwA9wD8AQEBDAEVASsBLwE8
+	AUUBTAFOAVABUgFUAVYBbgFzAXgAAAAAAAACAQAAAAAAAAAyAAAAAAAAAAAAAAAAAAAB
+	ew==
 	</data>
 	<key>IDESourceControlModernKnownSSHHostsDefaultsKey</key>
 	<dict/>
@@ -402,6 +404,8 @@
 	<true/>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
+	<key>IDE_CA_Daily_RunMTC</key>
+	<true/>
 	<key>IDE_CA_Daily_UsedScriptingAPI</key>
 	<true/>
 	<key>LastExplicitInspectorVisibility</key>
@@ -498,19 +502,19 @@
 	<key>NSWindow Frame AppShortcutsEditorUI</key>
 	<string>1030 349 650 800 0 0 2560 1410 </string>
 	<key>NSWindow Frame Documentation Viewer Window</key>
-	<string>841 555 1024 730 0 0 2560 1410 </string>
+	<string>841 530 1024 730 0 0 2560 1410 </string>
 	<key>NSWindow Frame IDEDownloadProgressWindow</key>
 	<string>1944 1198 400 104 0 0 2560 1410 </string>
 	<key>NSWindow Frame IDEEditContextSheet</key>
 	<string>1176 572 534 341 0 0 2560 1409 </string>
 	<key>NSWindow Frame IDEEditSchemeWindow</key>
-	<string>977 475 933 504 0 0 2560 1409 </string>
+	<string>960 475 965 504 0 0 2560 1410 </string>
 	<key>NSWindow Frame IDEManageRunContextSheet</key>
-	<string>1059 512 768 461 0 0 2560 1409 </string>
+	<string>1059 513 768 461 0 0 2560 1410 </string>
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>925 527 710 722 0 0 2560 1410 </string>
+	<string>924 475 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
@@ -530,9 +534,9 @@
 	<key>ProductMappingKey</key>
 	<data>
 	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
-	Wmxhc3RPcGVuZWRfEEQvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9YY29k
-	ZUdlZURibEEvWGNvZGVHZWVEYmxBLnhjb2RlcHJvaqAzQcfr3nIkLIAICxMVHCozPoWG
-	AAAAAAAAAQEAAAAAAAAACgAAAAAAAAAAAAAAAAAAAI8=
+	Wmxhc3RPcGVuZWRfEEovVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9Tb2Np
+	YWxCdXR0ZXJmbHkvU29jaWFsQnV0dGVyZmx5Lnhjb2RlcHJvaqAzQcgFeTyY/K0ICxMV
+	HCozPouMAAAAAAAAAQEAAAAAAAAACgAAAAAAAAAAAAAAAAAAAJU=
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
 	<string>23F77</string>
@@ -542,7 +546,7 @@
 	<string>23T570</string>
 	<key>UVLastUsedDate</key>
 	<data>
-	ODAyNjY0NTA0LjYyNzUzMw==
+	ODA1NzQ1MTgxLjA1MTg0
 	</data>
 	<key>WebKitUseSystemAppearance</key>
 	<true/>

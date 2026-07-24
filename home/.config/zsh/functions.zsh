@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  16-Jun-2026  2:41pm
+# Modified :  24-Jul-2026  2:21pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -65,11 +65,13 @@ sysupdate() {
 	if command -v pip3 &>/dev/null; then
 		_q pip3 install --upgrade --quiet pip
 		_q pip3 install -U --quiet $(pip3 freeze | cut -d = -f 1)
+		_q pip3 cache purge &>"$error_log"
 	fi
 
 	if command -v npm &>/dev/null; then
 		_q npm install -g --silent npm@latest
 		_q npm update -g --silent
+		_q npm cache clean --force &>"$error_log"
 	fi
 
 	find "$HOME/Library/CloudStorage/Dropbox/Data" -name "Keyboard Maestro Macros \(*.kmsync" -delete &>/dev/null

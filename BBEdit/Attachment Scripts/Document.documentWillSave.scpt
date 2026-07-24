@@ -5,12 +5,13 @@
  *
  * Author   :  Gary Ash <gary.ash@icloud.com>
  * Created  :  30-Jan-2026  2:43pm
- * Modified :
+ * Modified :  22-Jul-2026  1:41pm
  *
  * Copyright © 2026 By Gary Ash All rights reserved.
  ****************************************************************************************)
 
 use BBEditUtilities : script "BBEditUtilities"
+use TextUtilities : script "TextUtilities"
 use scripting additions
 
 on documentWillSave(doc)
@@ -38,7 +39,7 @@ on updateHeaderComment(td)
 			set copyPos to offset of "Copyright © " in lineText
 			set yearFromCopyright to texts (copyPos + 12) thru (copyPos + 15) of lineText
 			
-			if BBREditLibrary's checkOrganization(organizationName) is equal to true and copyrightLine < 20 then
+			if BBEditUtilities's checkOrganization(organizationName) is equal to true and copyrightLine < 20 then
 				if (year of (current date) as string) > yearFromCopyright then
 					try
 						find "Copyright © " & yearFromCopyright & ¬
@@ -62,7 +63,7 @@ on updateHeaderComment(td)
 					
 					delete selection
 					
-					set stamp to BBEditUtilities's formatDateTimeStamp()
+					set stamp to TextUtilities's formatDateTimeStamp()
 					set selection to ((":  " & stamp) as string)
 				end if
 			end if
