@@ -27,6 +27,7 @@
       "mcp__github__list_gists"
     ]
   },
+  "disableDeepLinkRegistration": "disable",
   "model": "opus",
   "statusLine": {
     "type": "command",
