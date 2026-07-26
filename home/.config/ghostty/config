@@ -11,12 +11,12 @@
 #*****************************************************************************************
 
 title = "👻 Ghostty"
-
 theme = "Selenized Dark"
 font-size = 12
 font-family = "PragmataPro Liga"
 #font-feature = +ss15
 
+macos-titlebar-style = tabs
 auto-update = check
 auto-update-channel = tip
 

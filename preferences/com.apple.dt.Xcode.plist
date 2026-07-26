@@ -404,8 +404,6 @@
 	<true/>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
-	<key>IDE_CA_Daily_RunMTC</key>
-	<true/>
 	<key>IDE_CA_Daily_UsedScriptingAPI</key>
 	<true/>
 	<key>LastExplicitInspectorVisibility</key>
