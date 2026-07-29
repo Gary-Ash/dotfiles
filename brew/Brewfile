@@ -1,3 +1,4 @@
+tap "agavra/tap"
 tap "dlvhdr/formulae", trusted: true
 tap "ggpeti/rmrec", trusted: true
 tap "mulle-kybernetik/software", trusted: true
@@ -71,6 +72,8 @@ brew "zsh-autosuggestions"
 brew "zsh-completions"
 # Debugger for zsh
 brew "zshdb"
+# Terminal UI for Code Reviews - review AI-generated diffs like a GitHub PR
+brew "agavra/tap/tuicr", trusted: true
 # Git diff pager based on delta but with a file tree, à la GitHub
 brew "dlvhdr/formulae/diffnav"
 # Xcode Extension for reformatting Swift code

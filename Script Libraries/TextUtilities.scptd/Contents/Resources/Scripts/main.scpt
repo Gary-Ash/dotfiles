@@ -64,7 +64,12 @@ end wordWrap
 on formatDateTimeStamp()
 	set d to current date
 	
-	set theDay to day of d
+	if day of d > 9 then
+		set theDay to day of d
+	else
+		set theDay to " " & (day of d as text)
+	end if
+	
 	set theMonth to text 1 thru 3 of ((month of d) as text)
 	set theYear to year of d
 	
