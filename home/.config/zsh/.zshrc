@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :   9-Jun-2026 10:07pm
+# Modified :   4-Aug-2026  8:00pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -90,28 +90,6 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #*****************************************************************************************
 _ZO_DATA_DIR="$HOME/Library/Application Support"
 eval "$(zoxide init zsh)"
-
-# Override zoxide completion to query its database instead of local dirs
-function __zoxide_z_complete() {
-	[[ "${#words[@]}" -eq "${CURRENT}" ]] || return 0
-
-	if [[ "${#words[@]}" -eq 2 ]]; then
-		# Query zoxide database for matches
-		local -a dirs
-		dirs=("${(@f)$(\command zoxide query --list -- "${words[2]}" 2>/dev/null)}")
-		if [[ ${#dirs[@]} -gt 0 ]]; then
-			compadd -U -Q -- "${dirs[@]}"
-		fi
-		return 0
-
-	elif [[ "${words[-1]}" == '' ]]; then
-		__zoxide_result="$(\command zoxide query --exclude "$(__zoxide_pwd || \builtin true)" --interactive -- ${words[2,-1]})" || __zoxide_result=''
-		compadd -Q ""
-		\builtin bindkey '\e[0n' '__zoxide_z_complete_helper'
-		\builtin printf '\e[5n'
-		return 0
-	fi
-}
 
 #*****************************************************************************************
 # Setup my own snazzy powerline style prompt

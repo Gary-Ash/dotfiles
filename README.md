@@ -64,6 +64,7 @@ dotfiles/
 │   │   ├── rgrc.conf         # Ripgrep configuration
 │   │   ├── sourcekit-lsp/    # SourceKit-LSP configuration
 │   │   ├── television/       # Television (tv) fuzzy finder config
+│   │   ├── tuicr/            # tuicr code review TUI config
 │   │   └── zsh/              # Zsh configuration
 │   ├── .gitconfig            # Git configuration
 │   ├── .hushlogin            # Suppress login banner
@@ -100,8 +101,7 @@ dotfiles/
 │   ├── Setup/
 │   ├── Startup Items/
 │   ├── Stationery/
-│   ├── Text Filters/
-│   └── Workspaces/
+│   └── Text Filters/
 ├── xcode/                    # Xcode configuration
 │   ├── Templates/
 │   │   └── Project Templates/
@@ -113,9 +113,7 @@ dotfiles/
 │       ├── KeyBindings/
 │       └── xcdebugger/
 └── shortcuts/                # macOS Shortcuts
-    ├── Clear Downloads Folder.shortcut
-    ├── Gee Dbl A Toolbox.shortcut
-    └── OCD.shortcut
+    └── Gee Dbl A Toolbox.shortcut
 ```
 
 ## Homebrew Packages
@@ -126,6 +124,7 @@ Key packages installed via Brewfile:
 |----------|----------|
 | Shell | zsh, bash, zsh-autosuggestions, zsh-completions, zshdb |
 | Git | git, gh, git-delta, git-lfs, github-mcp-server |
+| Code Review | tuicr |
 | Search | ripgrep, fd, television, diffnav |
 | File Utilities | bat, eza, jq, rename, imagemagick |
 | Languages | python@3.14, node, rbenv |

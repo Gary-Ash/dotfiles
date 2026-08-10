@@ -15,11 +15,11 @@ filekinds:
 perms:
   user_read: {foreground: "#839496"}
   user_write: {foreground: "#b58900"}
-  user_execute_file: {foreground: "#859900"}
+  user_execute_file: {foreground: "#ed230d", is_bold: true}
   user_execute_other: {foreground: "#859900"}
   group_read: {foreground: "#839496"}
   group_write: {foreground: "#b58900"}
-  group_execute: {foreground: "#859900"}
+  group_execute: {foreground: "#ed230d", is_bold: true}
   other_read: {foreground: "#93a1a1"}
   other_write: {foreground: "#b58900"}
   other_execute: {foreground: "#859900"}

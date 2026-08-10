@@ -185,7 +185,7 @@
 	<key>DefaultLanguageNameForNewDocuments</key>
 	<string>text-file</string>
 	<key>DefaultPosition:FTPBrowser:displays([(0, 0), (2560, 1440)])</key>
-	<string>rect(58,0,570,668)</string>
+	<string>rect(62,0,574,668)</string>
 	<key>DefaultPosition:PatternTester:displays([(0, 0), (2560, 1440)])</key>
 	<string>rect(217,946,1292,1806)</string>
 	<key>DefaultPosition:ProjectWindow:displays([(0, 0), (2560, 1440)])</key>
@@ -585,7 +585,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>675 384 1210 911 0 0 2560 1409 </string>
 	<key>NSWindow Frame OpenFileByName</key>
-	<string>1040 560 480 360 0 0 2560 1410 </string>
+	<string>1040 560 480 364 0 0 2560 1410 </string>
 	<key>NSWindow Frame OpenRecentPanel</key>
 	<string>1039 944 480 300 0 0 2560 1409 </string>
 	<key>NSWindow Frame ProgressPanel</key>
@@ -620,6 +620,8 @@
 	<string>1145 986 266 160 0 0 2560 1415 </string>
 	<key>NextAutoSaveCheckTime</key>
 	<integer>2040626118</integer>
+	<key>OFBNIncludeGitIgnoredFiles</key>
+	<true/>
 	<key>Open Editing Windows</key>
 	<false/>
 	<key>Open Text Documents</key>
