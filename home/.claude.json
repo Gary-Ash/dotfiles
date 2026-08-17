@@ -26,27 +26,26 @@
       "env": {}
     }
   },
-  "closedIssuesLastChecked": 1786314194008,
-  "seenNotifications": {},
+  "closedIssuesLastChecked": 1787181157201,
+  "seenNotifications": {
+    "remote-control-auto-on": 1,
+    "rc-active-badge": 1
+  },
   "cachedExperimentFeatures": [
     "tengu_amber_prism",
+    "tengu_auto_mode_config",
     "tengu_copper_fox",
     "tengu_coral_beacon",
     "tengu_flint_harbor",
-    "tengu_heron_tallow",
-    "tengu_immediate_model_command",
+    "tengu_gault_kestrel",
+    "tengu_harbor_willow",
+    "tengu_maple_pier",
     "tengu_mcp_subagent_prompt",
     "tengu_plank_river_frost",
     "tengu_read_dedup_killswitch",
-    "tengu_review_workflow_routing",
-    "tengu_velvet_hammer_fable_5",
-    "tengu_velvet_mallet_fable_5",
-    "tengu_velvet_mallet_haiku_4_5",
-    "tengu_velvet_mallet_opus_4_6",
-    "tengu_velvet_mallet_opus_4_7",
-    "tengu_velvet_mallet_opus_4_8",
-    "tengu_velvet_mallet_sonnet_4_6",
-    "tengu_velvet_mallet_sonnet_5"
+    "tengu_ultrareview_awareness",
+    "tengu_vellum_anchor",
+    "tengu_velvet_hammer_fable_5"
   ],
   "routineFiredWatermark": "2026-05-24T20:05:01.618Z",
   "passesEligibilityCache": {
@@ -65,19 +64,19 @@
       "limit": 3,
       "share_link": "https://claude.ai/referral/yslhgPIVpA",
       "terms_url": "https://support.claude.com/en/articles/13456702-claude-code-and-cowork-guest-passes",
-      "timestamp": 1786314195118
+      "timestamp": 1787181157819
     }
   },
   "passesUpsellSeenCount": 3,
   "hasVisitedPasses": false,
   "passesLastSeenRemaining": 3,
-  "cachedGrowthBookFeaturesAt": 1786317798515,
+  "cachedGrowthBookFeaturesAt": 1787181156941,
   "remoteControlUpsellSeenCount": 3,
   "pluginUsage": {
     "swift-lsp@claude-plugins-official": {
-      "usageCount": 0,
-      "lastUsedAt": 1784678820651,
-      "lastUsedNumStartups": 209
+      "usageCount": 14,
+      "lastUsedAt": 1787193788244,
+      "lastUsedNumStartups": 235
     },
     "clangd-lsp@claude-plugins-official": {
       "usageCount": 0,
@@ -98,28 +97,28 @@
   "tipLifetimeShownCounts": {
     "fotw-campaign-upsell": 1,
     "image-paste": 3,
-    "desktop-app": 3,
-    "web-app": 3,
-    "plan-mode-for-complex-tasks": 8,
-    "guest-passes": 11,
-    "install-github-app": 5,
-    "custom-agents": 3,
-    "install-slack-app": 4,
-    "permissions": 4,
-    "drag-and-drop-images": 4,
-    "paste-images-mac": 4,
-    "double-esc-code-restore": 4,
-    "continue": 4,
-    "shift-tab": 4,
-    "git-worktrees": 4,
-    "voice-mode": 4,
+    "desktop-app": 4,
+    "web-app": 4,
+    "plan-mode-for-complex-tasks": 10,
+    "guest-passes": 14,
+    "install-github-app": 6,
+    "custom-agents": 4,
+    "install-slack-app": 5,
+    "permissions": 5,
+    "drag-and-drop-images": 5,
+    "paste-images-mac": 5,
+    "double-esc-code-restore": 5,
+    "continue": 5,
+    "shift-tab": 5,
+    "git-worktrees": 5,
+    "voice-mode": 5,
     "rename-conversation": 3,
     "desktop-shortcut": 3,
     "feedback-command": 3,
     "no-flicker": 1,
-    "plugin-disuse-review": 1,
-    "memory-command": 2,
-    "remote-control": 2,
+    "plugin-disuse-review": 2,
+    "memory-command": 3,
+    "remote-control": 3,
     "agents-view-multiclauding": 1,
     "artifact-publish-plan": 5,
     "theme-command": 2,
@@ -127,7 +126,11 @@
     "todo-list": 2,
     "auto-copy-config-hint": 1,
     "shift-enter-setup": 1,
-    "terminal-setup": 1
+    "terminal-setup": 1,
+    "ultrareview-awareness": 2,
+    "ultrareview-post-commit": 4,
+    "artifact-duplicate": 2,
+    "push-notif": 1
   },
   "lastShownEmergencyTip": "Claude Fable 5 is currently unavailable. Please use Opus 4.8 or another available model. Learn more: https://www.anthropic.com/news/fable-mythos-access",
   "machineID": "81e92b06cec40dfe3f2ce94b4d162e5bd09f7c6f26f5c4c3cb39e1839691bb08",
@@ -144,18 +147,83 @@
     "claude.ai Google Calendar"
   ],
   "cachedExperimentData": {
-    "tengu_amber_prism": {
-      "experimentId": "tengu_amber_prism",
-      "variationId": 1,
-      "value": true
-    },
     "tengu_flint_harbor": {
       "experimentId": "tengu_flint_harbor",
       "variationId": 0,
       "value": false
     },
+    "tengu_gault_kestrel": {
+      "experimentId": "tengu_gault_kestrel_experiment",
+      "variationId": 0,
+      "value": false
+    },
+    "tengu_ultrareview_awareness": {
+      "experimentId": "ultrareview_cli_nudges",
+      "variationId": 1,
+      "value": {
+        "slash_menu": true,
+        "prose_pointer": true,
+        "post_commit": true,
+        "startup_tip": true
+      }
+    },
+    "tengu_amber_prism": {
+      "experimentId": "tengu_amber_prism",
+      "variationId": 1,
+      "value": true
+    },
     "tengu_mcp_subagent_prompt": {
       "experimentId": "tengu_mcp_subagent_prompt-public",
+      "variationId": 1,
+      "value": true
+    },
+    "tengu_read_dedup_killswitch": {
+      "experimentId": "tengu_read_dedup_killswitch",
+      "variationId": 0,
+      "value": false
+    },
+    "tengu_auto_mode_config": {
+      "experimentId": "auto-mode-default-launch",
+      "variationId": 1,
+      "value": {
+        "enabled": "enabled",
+        "twoStageClassifier": true,
+        "sameTurnSiblingContext": true,
+        "jsonlTranscript": true,
+        "editRemovalVisibility": true,
+        "editRemovalCap": 3000,
+        "outcomeVisibility": false,
+        "repoVisibility": true,
+        "gitStatusType": true,
+        "gitStatusUploads": false,
+        "severityByModel": {
+          "claude-sonnet-5[1m]": {
+            "t1": 25,
+            "t2": 35
+          },
+          "claude-opus-4-8[1m]": {
+            "t1": 45,
+            "t2": 35
+          },
+          "claude-sonnet-5": {
+            "t1": 25,
+            "t2": 35
+          },
+          "claude-opus-4-8": {
+            "t1": 45,
+            "t2": 35
+          }
+        },
+        "envOnboarding": true
+      }
+    },
+    "tengu_coral_beacon": {
+      "experimentId": "tengu_coral_beacon",
+      "variationId": 0,
+      "value": false
+    },
+    "tengu_harbor_willow": {
+      "experimentId": "auto-mode-default-launch",
       "variationId": 1,
       "value": true
     },
@@ -164,38 +232,13 @@
       "variationId": 0,
       "value": "user_intent"
     },
-    "tengu_read_dedup_killswitch": {
-      "experimentId": "tengu_read_dedup_killswitch",
-      "variationId": 0,
-      "value": false
-    },
     "tengu_copper_fox": {
       "experimentId": "tengu_copper_fox_experiment-try-3",
       "variationId": 1,
       "value": true
     },
-    "tengu_heron_tallow": {
-      "experimentId": "tool-disabled-error-handling",
-      "variationId": 0,
-      "value": false
-    },
-    "tengu_review_workflow_routing": {
-      "experimentId": "tengu_review_workflow_routing",
-      "variationId": 1,
-      "value": true
-    },
-    "tengu_immediate_model_command": {
-      "experimentId": "tengu_immediate_model_command_experiment",
-      "variationId": 1,
-      "value": true
-    },
-    "tengu_coral_beacon": {
-      "experimentId": "tengu_coral_beacon",
-      "variationId": 0,
-      "value": false
-    },
-    "tengu_velvet_mallet_opus_4_6": {
-      "experimentId": "tengu_velvet_mallet_opus_4_6_experiment",
+    "tengu_maple_pier": {
+      "experimentId": "auto-mode-default-launch",
       "variationId": 1,
       "value": true
     },
@@ -204,33 +247,8 @@
       "variationId": 0,
       "value": false
     },
-    "tengu_velvet_mallet_sonnet_4_6": {
-      "experimentId": "tengu_velvet_mallet_sonnet_4_6_experiment",
-      "variationId": 0,
-      "value": false
-    },
-    "tengu_velvet_mallet_haiku_4_5": {
-      "experimentId": "tengu_velvet_mallet_haiku_4_5_experiment",
-      "variationId": 0,
-      "value": false
-    },
-    "tengu_velvet_mallet_opus_4_7": {
-      "experimentId": "tengu_velvet_mallet_opus_4_7_experiment",
-      "variationId": 1,
-      "value": true
-    },
-    "tengu_velvet_mallet_fable_5": {
-      "experimentId": "tengu_velvet_mallet_fable_5_experiment",
-      "variationId": 1,
-      "value": true
-    },
-    "tengu_velvet_mallet_sonnet_5": {
-      "experimentId": "tengu_velvet_mallet_sonnet_5_experiment",
-      "variationId": 0,
-      "value": false
-    },
-    "tengu_velvet_mallet_opus_4_8": {
-      "experimentId": "tengu_velvet_mallet_opus_4_8_experiment",
+    "tengu_vellum_anchor": {
+      "experimentId": "tengu_vellum_anchor_experiment",
       "variationId": 1,
       "value": true
     }
@@ -241,6 +259,71 @@
   ],
   "hasSeenAutoModeEntryWarning": true,
   "clientDataCacheSlots": {
+    "bi1-d6bc13b96d75fe84": {
+      "data": {
+        "cedar_lagoon": {
+          "claude-fable": true,
+          "claude-mythos": true
+        },
+        "cedar_basin": "2026-08-31"
+      },
+      "at": 1787181157264,
+      "entrypoint": "cli",
+      "model": "claude-opus-5",
+      "org": "44ed8be7-c6d4-430e-9a86-ed8efc92979c"
+    },
+    "bi1-6ee2a1fc8be84e25": {
+      "data": {
+        "cedar_lagoon": {
+          "claude-fable": true,
+          "claude-mythos": true
+        },
+        "cedar_basin": "2026-08-31"
+      },
+      "at": 1787168004828,
+      "entrypoint": "cli",
+      "model": "claude-opus-5",
+      "org": "44ed8be7-c6d4-430e-9a86-ed8efc92979c"
+    },
+    "bi1-b1ff728a00cf4ece": {
+      "data": {
+        "cedar_lagoon": {
+          "claude-fable": true,
+          "claude-mythos": true
+        },
+        "cedar_basin": "2026-08-31"
+      },
+      "at": 1787093299813,
+      "entrypoint": "cli",
+      "model": "claude-opus-5",
+      "org": "44ed8be7-c6d4-430e-9a86-ed8efc92979c"
+    },
+    "bi1-66d02da88b1bdcea": {
+      "data": {
+        "cedar_lagoon": {
+          "claude-fable": true,
+          "claude-mythos": true
+        },
+        "cedar_basin": "2026-08-31"
+      },
+      "at": 1786841688689,
+      "entrypoint": "cli",
+      "model": "claude-opus-5",
+      "org": "44ed8be7-c6d4-430e-9a86-ed8efc92979c"
+    },
+    "bi1-fde6572d936b9775": {
+      "data": {
+        "cedar_lagoon": {
+          "claude-fable": true,
+          "claude-mythos": true
+        },
+        "cedar_basin": "2026-08-31"
+      },
+      "at": 1786571480838,
+      "entrypoint": "cli",
+      "model": "claude-opus-5",
+      "org": "44ed8be7-c6d4-430e-9a86-ed8efc92979c"
+    },
     "bi1-7aeb4693e6eed418": {
       "data": {
         "cedar_lagoon": {
@@ -249,7 +332,7 @@
         },
         "cedar_basin": "2026-08-31"
       },
-      "at": 1786316303862,
+      "at": 1786479303480,
       "entrypoint": "cli",
       "model": "claude-opus-5",
       "org": "44ed8be7-c6d4-430e-9a86-ed8efc92979c"
@@ -270,5 +353,16 @@
   },
   "modelAccessCache": [],
   "orgModelDefaultCache": null,
-  "autoCompactWindowsCache": null
+  "autoCompactWindowsCache": null,
+  "hasSeenAutoDefaultNotice": true,
+  "replBridgePlaceholders": {
+    "cse_01PrN8nnByCDjtdSDtaauCDW": {
+      "pid": 49055,
+      "procStart": "Wed Aug 19 23:12:35 2026",
+      "createdAt": 1787181157624
+    }
+  },
+  "rcLongTurnNudgeSeenCount": 3,
+  "rcLongTurnNudgeSeenKey": "v1",
+  "pushNotifUpsellSeenCount": 1
 }

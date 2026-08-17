@@ -404,6 +404,8 @@
 	<true/>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
+	<key>IDE_CA_Daily_RunMTC</key>
+	<true/>
 	<key>IDE_CA_Daily_UsedScriptingAPI</key>
 	<true/>
 	<key>LastExplicitInspectorVisibility</key>
@@ -512,7 +514,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>924 475 710 722 0 0 2560 1410 </string>
+	<string>924 423 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
@@ -531,10 +533,12 @@
 	<true/>
 	<key>ProductMappingKey</key>
 	<data>
-	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
-	Wmxhc3RPcGVuZWRfEEovVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9Tb2Np
-	YWxCdXR0ZXJmbHkvU29jaWFsQnV0dGVyZmx5Lnhjb2RlcHJvaqAzQcgFeTyY/K0ICxMV
-	HCozPouMAAAAAAAAAQEAAAAAAAAACgAAAAAAAAAAAAAAAAAAAJU=
+	YnBsaXN0MDDRAQJXZW50cmllc6IDCtMEBQYHCAldd29ya3NwYWNlUGF0aFhwcm9kdWN0
+	c1psYXN0T3BlbmVkXxBEL1VzZXJzL2dhcnlhc2gvRGV2ZWxvcGVyL0dlZURibEEvWGNv
+	ZGVHZWVEYmxBL1hjb2RlR2VlRGJsQS54Y29kZXByb2qgM0HIGqGpBkY50wQFBgsMDV8Q
+	Ti9Vc2Vycy9nYXJ5YXNoL0RldmVsb3Blci9HZWVEYmxBL1Byb2plY3RXYXRjaGRvZ0dC
+	L1Byb2plY3RXYXRjaGRvZ0dCLnhjb2RlcHJvaqAzQcgbN08mzokICxMWHSs0P4aHkJfo
+	6QAAAAAAAAEBAAAAAAAAAA4AAAAAAAAAAAAAAAAAAADy
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
 	<string>23F77</string>
@@ -544,10 +548,12 @@
 	<string>23T570</string>
 	<key>UVLastUsedDate</key>
 	<data>
-	ODA1NzQ1MTgxLjA1MTg0
+	ODA4ODYwMDQzLjM3MTk3MQ==
 	</data>
 	<key>WebKitUseSystemAppearance</key>
 	<true/>
+	<key>XCFontAndColorCurrentDarkTheme</key>
+	<string>Default (Dark).xccolortheme</string>
 	<key>XCFontAndColorCurrentTheme</key>
 	<string>Solarized (Light).xccolortheme</string>
 	<key>Xcode.AlertEvents</key>
