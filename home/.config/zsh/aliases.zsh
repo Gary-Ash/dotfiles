@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :   9-Jun-2026 10:07pm
+# Modified :  20-Aug-2026  8:19pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -29,9 +29,13 @@ alias zshrc="${EDITOR} ${ZDOTDIR}/.zshenv ${ZDOTDIR}/options.zsh ${ZDOTDIR}/alia
 #*****************************************************************************************
 alias mute="osascript -e \"set volume output muted true\""
 alias volumenormal="osascript -e \"set volume output volume 50\""
+alias volumemusic="osascript -e \"set volume output volume 80\""
 alias volumemax="osascript -e \"set volume output volume 100\""
+
 alias perms="stat -f '%Sp %OLp %N'"
+
 alias fix-finder="killall Dock Finder"
+
 alias afk="osascript -e 'tell app \"System Events\" to key code 12 using {control down, command down}'"
 
 #*****************************************************************************************

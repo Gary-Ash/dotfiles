@@ -35,13 +35,13 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>452 130 275 474 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>2049 76 445 95 0 0 2560 1415 </string>
+	<string>1588 164 543 281 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>881 887 800 448 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTAppPreferences</key>
 	<string>947 838 667 572 0 0 2560 1410 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>846 149 1100 1099 0 0 2560 1410 </string>
+	<string>875 120 1100 1099 0 0 2560 1410 </string>
 	<key>NSWindow Frame TTWindow Basic</key>
 	<string>995 541 570 371 0 0 2560 1415 </string>
 	<key>NSWindow Frame TTWindow Man Page</key>
@@ -1662,11 +1662,11 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
-			Z3NWTlNOYW1lViRjbGFzcyNAKAAAAAAAABAQgAKAA18QF1ByYWdt
-			YXRhUHJvTGlnYS1SZWd1bGFy0hcYGRpaJGNsYXNzbmFtZVgkY2xh
-			c3Nlc1ZOU0ZvbnSiGRtYTlNPYmplY3QIERokKTI3SUxRU1heZ253
-			foWOkJKUrrO+x87RAAAAAAAAAQEAAAAAAAAAHAAAAAAAAAAAAAAA
-			AAAAANo=
+			Z3NWTlNOYW1lViRjbGFzcyNAKAAAAAAAABAQgAKAA18QG1ByYWdt
+			YXRhUHJvTW9ub0xpZ2EtUmVndWxhctIXGBkaWiRjbGFzc25hbWVY
+			JGNsYXNzZXNWTlNGb250ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNY
+			Xmdud36FjpCSlLK3wsvS1QAAAAAAAAEBAAAAAAAAABwAAAAAAAAA
+			AAAAAAAAAADe
 			</data>
 			<key>FontHeightSpacing</key>
 			<integer>1</integer>
