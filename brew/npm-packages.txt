@@ -1,0 +1,4 @@
+@mermaid-js/mermaid-cli
+bash-language-server
+jscpd
+perlnavigator-server

@@ -1,0 +1,36 @@
+{
+  "installMethod": "native",
+  "autoUpdates": false,
+  "s1mAccessCache": {},
+  "groveConfigCache": {},
+  "skillUsage": {},
+  "mcpServers": {
+    "github": {
+      "type": "stdio",
+      "command": "/Users/garyash/.claude/github-mcp-wrapper.sh",
+      "args": [],
+      "env": {}
+    },
+    "xcode": {
+      "type": "stdio",
+      "command": "xcrun",
+      "args": [
+        "mcpbridge"
+      ],
+      "env": {}
+    },
+    "snipper": {
+      "type": "stdio",
+      "command": "/Applications/SnipperApp 3.app/Contents/MacOS/snipper-mcp",
+      "args": [],
+      "env": {}
+    }
+  },
+  "hasResetAutoModeOptInForDefaultOffer": true,
+  "additionalModelOptionsAnsweredAt": 1788404367955,
+  "githubWebConnectionStatusCache": {
+    "accountUuid": "00000000-0000-0000-0000-000000000000",
+    "orgUuid": "00000000-0000-0000-0000-000000000000",
+    "status": "connected"
+  }
+}

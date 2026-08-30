@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sosumi": {
+      "type": "url",
+      "url": "https://sosumi.ai/mcp"
+    }
+  }
+}
