@@ -1,0 +1,47 @@
+(*
+    Author: Kendall Conrad of Angelwatt.com
+    Name: Smart Prefixed Newline
+    Created: 2016-01-22
+    Updated: 2016-01-22
+    Description: Starts new line with the same line prefix as the current line and keeps the text
+      from the current cursor position to the end of the line
+*)
+tell application "BBEdit" to tell front window
+	activate
+	set lineNum to startLine of selection
+	set leng to length of line lineNum
+	-- Find leading whitespace
+	set theResult to find "(^[\\s]*)" options {search mode:grep} searching in line (lineNum)
+	-- Set text to the white space found
+	set white to ""
+	if found of theResult then
+		set white to found text of theResult
+	end if
+	set wleng to length of white
+	
+	-- Define a tab based on user settings
+	set aTab to tab
+	if expand tabs then
+		set spaceTab to ""
+		repeat tab width times
+			set spaceTab to spaceTab & space
+		end repeat
+		set aTab to spaceTab
+	end if
+	
+	-- Check for list style lines
+	set theResult to find "^\\s*[\\*#>\\+\\-]+([\\w ]*)" options {search mode:grep} searching in (line lineNum)
+	if found of theResult then
+		set preFind to find "[\\*#>\\+\\-]+" options {search mode:grep} searching in (line lineNum)
+		set _char to found text of preFind
+		set selection to return & white & _char
+		select insertion point after selection
+		return
+	end if
+	
+	-- Default: Insert a return plus the white space
+	set selection to return & white
+	select insertion point after selection
+end tell
+
+

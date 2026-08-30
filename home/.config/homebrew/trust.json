@@ -1,0 +1,11 @@
+{
+  "trustedtaps": [
+    "dlvhdr/formulae",
+    "ggpeti/rmrec",
+    "mulle-kybernetik/software",
+    "peripheryapp/periphery"
+  ],
+  "trustedformulae": [
+    "agavra/tap/tuicr"
+  ]
+}

@@ -1,0 +1,3 @@
+case #placeholderstart#constant#placeholderend#:
+	#placeholderstart#code#placeholderend#
+	break;

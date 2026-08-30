@@ -1,0 +1,5 @@
+const app = Application.currentApplication()
+app.documents()
+	.filter(doc => doc.modified() && doc.file())
+	.forEach(doc => app.save(doc))
+

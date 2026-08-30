@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "plugins": {
+    "swift-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/garyash/.claude/plugins/cache/claude-plugins-official/swift-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-08-28T02:48:37.673Z",
+        "lastUpdated": "2026-08-28T02:48:37.673Z",
+        "gitCommitSha": "e33a9ec0973ad16d5ad9d755a47e62e8309c7590"
+      }
+    ],
+    "clangd-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/garyash/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-08-28T02:48:37.673Z",
+        "lastUpdated": "2026-08-28T02:48:37.673Z",
+        "gitCommitSha": "e33a9ec0973ad16d5ad9d755a47e62e8309c7590"
+      }
+    ],
+    "swift-concurrency@swift-concurrency-agent-skill": [
+      {
+        "scope": "user",
+        "installPath": "/Users/garyash/.claude/plugins/cache/swift-concurrency-agent-skill/swift-concurrency/2.3.0",
+        "version": "2.3.0",
+        "installedAt": "2026-08-28T02:48:37.673Z",
+        "lastUpdated": "2026-08-28T02:48:37.673Z",
+        "gitCommitSha": "45fa49e4e0b2af4d43b1cb458903f8030ac993bd"
+      }
+    ],
+    "swiftui-expert@swiftui-expert-skill": [
+      {
+        "scope": "user",
+        "installPath": "/Users/garyash/.claude/plugins/cache/swiftui-expert-skill/swiftui-expert/4.2.0",
+        "version": "4.2.0",
+        "installedAt": "2026-08-28T02:48:37.673Z",
+        "lastUpdated": "2026-08-28T02:48:37.673Z",
+        "gitCommitSha": "4c6a97d15aa5e023538c3cb06b5192f241dd451d"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+#*****************************************************************************************
+# config
+#
+# This my Ghostty configuration
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :   8-Feb-2026  3:37pm
+# Modified :
+#
+# Copyright © 2026 By Gary Ash All rights reserved.
+#*****************************************************************************************
+
+title = "👻 Ghostty"
+theme = "Selenized Dark"
+font-size = 12
+font-family = "PragmataPro Liga"
+#font-feature = +ss15
+
+macos-titlebar-style = tabs
+auto-update = check
+auto-update-channel = tip
+
+shell-integration = "zsh"
+shell-integration-features = no-cursor, title, ssh-terminfo
+
+window-height = 70
+window-width = 200
+window-colorspace = "display-p3"
+window-save-state = always
+
+cursor-style = block
+cursor-style-blink = true
+cursor-opacity=0.96
+
+mouse-hide-while-typing = true
+
+confirm-close-surface = false
+quit-after-last-window-closed = true
+
