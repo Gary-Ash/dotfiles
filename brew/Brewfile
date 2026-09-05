@@ -1,7 +1,3 @@
-tap "agavra/tap"
-tap "dlvhdr/formulae", trusted: true
-tap "ggpeti/rmrec", trusted: true
-tap "mulle-kybernetik/software", trusted: true
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # C library of Git core methods that is re-entrant and linkable
@@ -12,6 +8,10 @@ brew "bat"
 brew "bats-core"
 # Cross-platform make
 brew "cmake"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Git diff pager based on delta but with a file tree
+brew "diffnav"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
@@ -20,14 +20,10 @@ brew "fd"
 brew "gh"
 # Distributed revision control system
 brew "git"
-# Syntax-highlighting pager for git and diff output
-brew "git-delta"
 # Git extension for versioning large files
 brew "git-lfs"
 # GitHub Model Context Protocol server for AI tools
 brew "github-mcp-server"
-# Program providing model for GNU coding standards and practices
-brew "hello"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -60,6 +56,8 @@ brew "swiftformat"
 brew "swiftlint"
 # General purpose fuzzy finder TUI
 brew "television"
+# Code review TUI with vim keybindings
+brew "tuicr"
 # Source code beautifier
 brew "uncrustify"
 # Shell extension to navigate your filesystem faster
@@ -72,9 +70,5 @@ brew "zsh-autosuggestions"
 brew "zsh-completions"
 # Debugger for zsh
 brew "zshdb"
-# Terminal UI for Code Reviews - review AI-generated diffs like a GitHub PR
-brew "agavra/tap/tuicr", trusted: true
-# Git diff pager based on delta but with a file tree, à la GitHub
-brew "dlvhdr/formulae/diffnav"
 # Xcode Extension for reformatting Swift code
 cask "swiftformat-for-xcode"
