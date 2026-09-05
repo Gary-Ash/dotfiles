@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :   5-Sep-2026  7:09pm
+# Modified :  13-Sep-2026  9:42pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -25,7 +25,7 @@ fi
 #*****************************************************************************************
 update-dotfiles() {
 	if /opt/geedbla/scripts/update-dots.sh; then
-		cd "$HOME/Developer/GeeDblA/dotfiles"
+		cd "$HOME/Downloads/dotfiles"
 	fi
 }
 
@@ -87,70 +87,16 @@ END
 }
 
 cleanup() {
-	(
-		#*****************************************************************************************
-		# load sudo password helper
-		#*****************************************************************************************
-		source "/opt/geedbla/lib/shell/lib/get_sudo_password.sh"
+	#*****************************************************************************************
+	# main work
+	#*****************************************************************************************
+	mole optimize
+	mole installer
+	mole purge
+	mole clean
 
-		#*****************************************************************************************
-		# get and validate sudo once
-		#*****************************************************************************************
-		SUDO_PASSWORD="$(get_sudo_password)"
-
-		if [[ -z $SUDO_PASSWORD ]] ||
-			! echo "$SUDO_PASSWORD" | sudo --validate --stdin &>/dev/null; then
-			echo "cleanup: sudo password invalid or missing" >&2
-			return 1
-		fi
-
-		#*****************************************************************************************
-		# keep sudo alive only while this subshell exists
-		#*****************************************************************************************
-		MAIN_PID=$$
-		keep_sudo_alive() {
-			while kill -0 "$MAIN_PID" 2>/dev/null; do
-				sudo --non-interactive -E true &>/dev/null
-				sleep 20
-			done
-		}
-
-		keep_sudo_alive &
-		SUDO_SHELL_PID=$!
-
-		#*****************************************************************************************
-		# prevent sleep while work is running
-		#*****************************************************************************************
-		caffeinate -dims &>/dev/null &
-		CAFFEINATE=$!
-
-		#*****************************************************************************************
-		# main work
-		#*****************************************************************************************
-		sudo mole optimize
-		sudo mole installer
-		sudo mole purge
-		sudo mole clean
-		cleanhist
-
-		#*****************************************************************************************
-		# teardown: stop helpers, clear sudo, clean env
-		#*****************************************************************************************
-		setopt local_options no_monitor
-
-		[[ -n $SUDO_SHELL_PID ]] && kill "$SUDO_SHELL_PID" 2>/dev/null
-		[[ -n $CAFFEINATE ]] && kill "$CAFFEINATE" 2>/dev/null
-
-		# clear sudo timestamp
-		sudo -k &>/dev/null
-
-		unset SUDO_SHELL_PID
-		unset CAFFEINATE
-		unset SUDO_PASSWORD
-		unset MAIN_PID
-
-		setopt monitor
-	)
+	rm -rf .npm
+	cleanhist
 }
 
 #*****************************************************************************************

@@ -19,18 +19,41 @@
       ],
       "env": {}
     },
-    "snipper": {
-      "type": "stdio",
-      "command": "/Applications/SnipperApp 3.app/Contents/MacOS/snipper-mcp",
-      "args": [],
-      "env": {}
+    "mcp-snippetslab": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "/opt/bin/mcp-snippetslab"
+      ]
     }
   },
   "hasResetAutoModeOptInForDefaultOffer": true,
-  "additionalModelOptionsAnsweredAt": 1788404367955,
+  "additionalModelOptionsAnsweredAt": 1789068284601,
   "githubWebConnectionStatusCache": {
     "accountUuid": "00000000-0000-0000-0000-000000000000",
     "orgUuid": "00000000-0000-0000-0000-000000000000",
     "status": "connected"
+  },
+  "hasSeenAutoModeOutsideReadPrompt": true,
+  "metricsStatusCache": {
+    "enabled": true,
+    "timestamp": 1788813401162
+  },
+  "cachedArtifactRoster": {
+    "accountUuid": "00000000-0000-0000-0000-000000000000",
+    "organizationUuid": "00000000-0000-0000-0000-000000000000",
+    "version": "0.2.45",
+    "capabilities": [
+      "artifact",
+      "assets",
+      "db",
+      "downloads",
+      "mcp",
+      "permissions",
+      "room",
+      "sample",
+      "self"
+    ],
+    "fetchedAt": 1789068279696
   }
 }
