@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :   5-Sep-2026  7:09pm
+# Modified :  10-Sep-2026  11:37pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -131,6 +131,7 @@ cleanup() {
 		sudo mole installer
 		sudo mole purge
 		sudo mole clean
+		sudo rm -rf .npm
 		cleanhist
 
 		#*****************************************************************************************

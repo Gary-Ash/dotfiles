@@ -14,6 +14,176 @@
 	<false/>
 	<key>ApplicationAppearanceMode</key>
 	<integer>0</integer>
+	<key>ApplicationAutoSaveState</key>
+	<dict>
+		<key>ApplicationBuildNumber</key>
+		<string>16A90</string>
+		<key>DisplayConfiguration</key>
+		<string>displays([(0, 0), (2560, 1440)])</string>
+		<key>OpenDocuments</key>
+		<dict>
+			<key>6380ADDC-3A71-42ED-8940-EBA1C78A470A</key>
+			<dict>
+				<key>CreationDate</key>
+				<date>2026-09-11T18:49:20Z</date>
+				<key>DocumentProperties</key>
+				<dict>
+					<key>EditorState</key>
+					<dict>
+						<key>MainScrollBar</key>
+						<integer>0</integer>
+						<key>SelectionEnd</key>
+						<integer>1041</integer>
+						<key>SelectionStart</key>
+						<integer>1007</integer>
+					</dict>
+					<key>EncodingName</key>
+					<string>Unicode (UTF-8)</string>
+					<key>LanguageName</key>
+					<string>Text File</string>
+					<key>LineEnds</key>
+					<string>LF  </string>
+					<key>MarkerData</key>
+					<data>
+					UipjaAAAAAEAAAAA
+					</data>
+				</dict>
+				<key>IsRememberedRecent</key>
+				<true/>
+				<key>Location</key>
+				<dict>
+					<key>FileBookmark</key>
+					<data>
+					Ym9va4wDAAAAAAUQQAAAAGcWfOPvmBN4+hBG
+					xvlhJROtBbDn2kX9BdN6QVI59KVYAAAAAAAA
+					AAAAAAAAAAAAAFQCAAAEAAAAAwMAAAAIACgF
+					AAAAAQEAAFVzZXJzAAAABwAAAAEBAABnYXJ5
+					YXNoAAcAAAABAQAALmNvbmZpZwADAAAAAQEA
+					AGdpdAAGAAAAAQEAAGNvbmZpZwAAFAAAAAEG
+					AAAQAAAAIAAAADAAAABAAAAATAAAAAgAAAAE
+					AwAAzFAAAAAAAAAIAAAABAMAAHQBVAEAAAAA
+					CAAAAAQDAAB2AVQBAAAAAAgAAAAEAwAAiwFU
+					AQAAAAAIAAAABAMAAGyHkAMAAAAAFAAAAAEG
+					AAB4AAAAiAAAAJgAAACoAAAAuAAAAAgAAAAA
+					BAAAQcfL/sZX1qkYAAAAAQIAAAEAAAAAAAAA
+					DwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
+					AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZp
+					bGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
+					AAAABAMAAACQgpbnAAAACAAAAAAEAABByBa0
+					ZYAAACQAAAABAQAARUMwN0E2MTktRDcxNi00
+					MTFGLUE3NkUtMkI1RTU2QkRBQjM4GAAAAAEC
+					AACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
+					AAAAAQEAAC8AAAAAAAAAAQUAABoAAAABAQAA
+					TlNVUkxEb2N1bWVudElkZW50aWZpZXJLZXkA
+					AAQAAAADAwAAmgUAABoAAAABAQAATlNVUkxQ
+					YXJlbnREaXJlY3RvcnlVUkxLZXkAACIAAAAB
+					CQAAZmlsZTovLy9Vc2Vycy9nYXJ5YXNoLy5j
+					b25maWcvZ2l0LwAA8AAAAP7///8BAAAAAAAA
+					ABMAAAAEEAAAXAAAAAAAAAAFEAAAyAAAAAAA
+					AAAQEAAA9AAAAAAAAAAgEAAATAAAAAAAAABA
+					EAAA5AAAAAAAAAACIAAAwAEAAAAAAAAFIAAA
+					MAEAAAAAAAAQIAAAQAEAAAAAAAARIAAAdAEA
+					AAAAAAASIAAAVAEAAAAAAAATIAAAZAEAAAAA
+					AAAgIAAAoAEAAAAAAAAwIAAAzAEAAAAAAAAB
+					wAAAFAEAAAAAAAARwAAAIAAAAAAAAAASwAAA
+					JAEAAAAAAAAQ0AAABAAAAAAAAADUAQCA+AEA
+					AAAAAAAEAgCAKAIAAAAAAAA=
+					</data>
+					<key>FileBookmarkHasSecurityScope</key>
+					<true/>
+					<key>FileName</key>
+					<string>config</string>
+					<key>FileURLString</key>
+					<string>file:///Users/garyash/.config/git/config</string>
+				</dict>
+				<key>com.barebones.DocumentType</key>
+				<string>Text</string>
+			</dict>
+			<key>77B5D8C8-8118-48C0-8863-4D9B3041F19A</key>
+			<dict>
+				<key>CreationDate</key>
+				<date>2026-09-11T18:48:28Z</date>
+				<key>DocumentProperties</key>
+				<dict>
+					<key>EditorState</key>
+					<dict>
+						<key>MainScrollBar</key>
+						<integer>0</integer>
+						<key>SelectionEnd</key>
+						<integer>0</integer>
+						<key>SelectionStart</key>
+						<integer>0</integer>
+					</dict>
+					<key>EncodingName</key>
+					<string>Unicode (UTF-8)</string>
+					<key>LanguageName</key>
+					<string>Text File</string>
+					<key>LineEnds</key>
+					<string>LF  </string>
+					<key>MarkerData</key>
+					<data>
+					UipjaAAAAAEAAAAA
+					</data>
+				</dict>
+				<key>IsRememberedRecent</key>
+				<false/>
+				<key>Location</key>
+				<string>-unsaved-</string>
+				<key>UntitledName</key>
+				<string>untitled text</string>
+				<key>com.barebones.DocumentType</key>
+				<string>Text</string>
+			</dict>
+		</dict>
+		<key>OpenWindows</key>
+		<array>
+			<dict>
+				<key>ActiveDocument</key>
+				<string>6380ADDC-3A71-42ED-8940-EBA1C78A470A</string>
+				<key>AdditionalProperties</key>
+				<dict>
+					<key>EmbeddedEditorVisible</key>
+					<true/>
+					<key>FileListVisible</key>
+					<true/>
+					<key>IsFullScreen</key>
+					<false/>
+					<key>OpenDocumentSplitProportion</key>
+					<real>0.0</real>
+					<key>ProjectListWidthAsFraction</key>
+					<real>0.20000000000000001</real>
+				</dict>
+				<key>Documents</key>
+				<array>
+					<string>6380ADDC-3A71-42ED-8940-EBA1C78A470A</string>
+					<string>77B5D8C8-8118-48C0-8863-4D9B3041F19A</string>
+				</array>
+				<key>IsFullScreen</key>
+				<false/>
+				<key>IsMinimized</key>
+				<false/>
+				<key>SavedPosition</key>
+				<string>rect(62,742,1381,1817)</string>
+				<key>SavedPosition_v3</key>
+				<string>{{742, 59}, {1075, 1351}}</string>
+				<key>WindowName</key>
+				<string>config</string>
+				<key>WindowType</key>
+				<string>ProjectWindow</string>
+			</dict>
+		</array>
+		<key>UntitledWindowsState</key>
+		<dict>
+			<key>GrpD</key>
+			<integer>1</integer>
+			<key>TxtD</key>
+			<integer>1</integer>
+		</dict>
+		<key>com.barebones.DocumentFormatVersion</key>
+		<integer>2</integer>
+		<key>com.barebones.DocumentType</key>
+		<string>ApplicationState</string>
+	</dict>
 	<key>ApplicationDidStartClean</key>
 	<true/>
 	<key>ApplyTextTransformPanelSavedOperation</key>
@@ -60,6 +230,8 @@
 	<false/>
 	<key>BBEditRegisteredOwner:16.0</key>
 	<string>Gary Ash</string>
+	<key>BBEditSerialNumber:15.0</key>
+	<string>BEE150-VAT69-QKSZ2-JQZW8</string>
 	<key>BBEditSerialNumber:16.0</key>
 	<string>BEE160-ATURS-ZLKCK-QZWXY</string>
 	<key>BBEditorFont</key>
@@ -249,6 +421,25 @@
 	<false/>
 	<key>FindDialog_MultiFileSearchOptions</key>
 	<string>yes </string>
+	<key>FindDialog_SearchReplaceHistory</key>
+	<array>
+		<dict>
+			<key>CaseSensitive</key>
+			<false/>
+			<key>EntireWord</key>
+			<false/>
+			<key>GrepEnabled</key>
+			<true/>
+			<key>IsExtract</key>
+			<false/>
+			<key>SearchDate</key>
+			<date>2026-09-11T18:49:41Z</date>
+			<key>SearchString</key>
+			<string>lfs</string>
+			<key>WrapAround</key>
+			<true/>
+		</dict>
+	</array>
 	<key>FindDialog_SelectionOnly</key>
 	<false/>
 	<key>FindDialog_ShowLiveMatches</key>
@@ -383,6 +574,8 @@
 		<key>ServerLanguageID</key>
 		<string></string>
 	</dict>
+	<key>LastLaunchOSVersion</key>
+	<string>Version 26.6.2 (Build 25G83)</string>
 	<key>ListDisplayFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -413,6 +606,22 @@
 	<string>{1314, 958}</string>
 	<key>NSNavPanelExpandedStateForSaveMode</key>
 	<true/>
+	<key>NSOSPLastRootDirectory</key>
+	<data>
+	Ym9va4ACAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAGABAAAEAAAAAwMAAAAAACAFAAAAAQEAAFVzZXJzAAAABwAAAAEB
+	AABnYXJ5YXNoAAgAAAABBgAAEAAAACAAAAAIAAAABAMAAMxQAAAAAAAACAAAAAQDAAB0
+	AVQBAAAAAAgAAAABBgAAQAAAAFAAAAAIAAAAAAQAAEHHgtP73GoCGAAAAAECAAACAAAA
+	AAAAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAgAAAAEAwAAAAAAAAAAAAAEAAAAAwMA
+	APUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQ
+	gpbnAAAACAAAAAAEAABByBa0ZYAAACQAAAABAQAARUMwN0E2MTktRDcxNi00MTFGLUE3
+	NkUtMkI1RTU2QkRBQjM4GAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAA
+	AQEAAC8AAADYAAAA/v///wEAAAAAAAAAEQAAAAQQAAAwAAAAAAAAAAUQAABgAAAAAAAA
+	ABAQAACAAAAAAAAAAEAQAABwAAAAAAAAAAIgAABUAQAAAAAAAAUgAADEAAAAAAAAABAg
+	AADUAAAAAAAAABEgAAAIAQAAAAAAABIgAADoAAAAAAAAABMgAAD4AAAAAAAAACAgAAA0
+	AQAAAAAAADAgAACgAAAAAAAAAAHAAACoAAAAAAAAABHAAAAgAAAAAAAAABLAAAC4AAAA
+	AAAAAAHQAACgAAAAAAAAABDQAAAEAAAAAAAAAA==
+	</data>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
 		<string>0.000000, 0.000000, 230.000000, 281.000000, NO, NO</string>
@@ -595,7 +804,7 @@
 	<key>NSWindow Frame WindowPosition_v2_ScriptsPalette</key>
 	<string>1145 986 266 160 0 0 2560 1415 </string>
 	<key>NextAutoSaveCheckTime</key>
-	<integer>2043802957</integer>
+	<integer>2044660677</integer>
 	<key>OFBNIncludeGitIgnoredFiles</key>
 	<true/>
 	<key>Open Editing Windows</key>
@@ -612,16 +821,80 @@
 	<true/>
 	<key>PinchZoomChangesMagnification</key>
 	<true/>
+	<key>PreferencesSnapshotDate</key>
+	<date>2026-09-11T19:42:22Z</date>
 	<key>PrintColorSyntax</key>
 	<false/>
 	<key>Projects</key>
 	<true/>
+	<key>PropertyWindowsToReopen</key>
+	<array/>
 	<key>ReadTextEncodingFallbacks</key>
 	<array>
 		<integer>0</integer>
 	</array>
 	<key>Recent Folders</key>
 	<true/>
+	<key>RecentItemsData</key>
+	<dict>
+		<key>Text</key>
+		<array>
+			<dict>
+				<key>Date</key>
+				<date>2026-09-11T19:42:18Z</date>
+				<key>DocumentClass</key>
+				<string>Text</string>
+				<key>Locator</key>
+				<dict>
+					<key>BookmarkData</key>
+					<data>
+					Ym9vayQDAAAAAAUQQAAAALChj/gQlVq+onrp
+					HNQiTHnc72Q6Z+T6VGcdp8tUWw4SAAAAAAAA
+					AAAAAAAAAAAAAAQCAAAEAAAAAwMAAAAIACgF
+					AAAAAQEAAFVzZXJzAAAABwAAAAEBAABnYXJ5
+					YXNoAAcAAAABAQAALmNvbmZpZwADAAAAAQEA
+					AGdpdAAGAAAAAQEAAGNvbmZpZwAAFAAAAAEG
+					AAAQAAAAIAAAADAAAABAAAAATAAAAAgAAAAE
+					AwAAzFAAAAAAAAAIAAAABAMAAHQBVAEAAAAA
+					CAAAAAQDAAB2AVQBAAAAAAgAAAAEAwAAiwFU
+					AQAAAAAIAAAABAMAAGyHkAMAAAAAFAAAAAEG
+					AAB4AAAAiAAAAJgAAACoAAAAuAAAAAgAAAAA
+					BAAAQcfL/sZX1qkYAAAAAQIAAAEAAAAAAAAA
+					DwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAA
+					AAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZp
+					bGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
+					AAAABAMAAACQgpbnAAAACAAAAAAEAABByBa0
+					ZYAAACQAAAABAQAARUMwN0E2MTktRDcxNi00
+					MTFGLUE3NkUtMkI1RTU2QkRBQjM4GAAAAAEC
+					AACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAAB
+					AAAAAQEAAC8AAAAAAAAAAQUAABoAAAABAQAA
+					TlNVUkxEb2N1bWVudElkZW50aWZpZXJLZXkA
+					AAQAAAADAwAAmgUAANgAAAD+////AQAAAAAA
+					AAARAAAABBAAAFwAAAAAAAAABRAAAMgAAAAA
+					AAAAEBAAAPQAAAAAAAAAQBAAAOQAAAAAAAAA
+					AiAAAMABAAAAAAAABSAAADABAAAAAAAAECAA
+					AEABAAAAAAAAESAAAHQBAAAAAAAAEiAAAFQB
+					AAAAAAAAEyAAAGQBAAAAAAAAICAAAKABAAAA
+					AAAAMCAAAMwBAAAAAAAAAcAAABQBAAAAAAAA
+					EcAAACAAAAAAAAAAEsAAACQBAAAAAAAAENAA
+					AAQAAAAAAAAA1AEAgPgBAAAAAAAA
+					</data>
+					<key>FileURL</key>
+					<string>file:///Users/garyash/.config/git/config</string>
+					<key>HasSecurityScope</key>
+					<true/>
+					<key>TypeID</key>
+					<string>_CFileLocator</string>
+					<key>Version</key>
+					<integer>1</integer>
+				</dict>
+				<key>Name</key>
+				<string>config</string>
+				<key>URL</key>
+				<string>file:///Users/garyash/.config/git/config</string>
+			</dict>
+		</array>
+	</dict>
 	<key>RecentItemsPrefDataUpgradedForSandbox</key>
 	<true/>
 	<key>Results Browsers</key>
@@ -644,6 +917,8 @@
 	<string>sed 's/,/,\n/g'</string>
 	<key>RunUnixCommand_OutputMode</key>
 	<integer>0</integer>
+	<key>SULastCheckedDate</key>
+	<date>2026-09-11T17:35:59Z</date>
 	<key>Saved Search Sets</key>
 	<false/>
 	<key>Search_CaseSensitive</key>

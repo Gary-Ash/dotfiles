@@ -5,7 +5,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  23-Mar-2026  2:06pm
-# Modified :   5-Sep-2026  6:47pm
+# Modified :  11-Sep-2026  3:42pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -15,12 +15,6 @@
 #*****************************************************************************************
 [user]
     name       = Gary Ash
-
-    # The e-mail address is not set here — it comes from the includes at the
-    # bottom of this file and depends on where the repository lives
-
-    # Never fall back to a guessed username@hostname address. If neither include
-    # supplies an e-mail, git refuses to commit rather than inventing one
     useConfigOnly = true
 
     # SSH signing key (modern alternative to GPG keys)
@@ -34,13 +28,8 @@
     allowedSignersFile = ~/.config/git/allowed_signers
 
 [commit]
-    # Always sign commits
     gpgsign = true
-
-    # Predefined commit message template
     template = ~/.config/git/gitmessage
-
-    # Show diff in commit editor
     verbose = true
 
 #*****************************************************************************************
@@ -285,19 +274,14 @@
     oops = "!git add -A && git commit --amend --reuse-message=HEAD && git push --force-with-lease"
 
     # --- cleanup ---
-
     delete-merged = "!git branch --merged | grep -viE 'main|master|develop|dev' | xargs -r -n 1 git branch -d"
-
     trim = "!git for-each-ref --format='%(refname:short)' refs/heads | grep -vE '^(main|master)$' | xargs -r -n 1 git branch -D && git remote prune origin"
-
     pruner = "!git prune --expire=now && git reflog expire --expire-unreachable=now --rewrite --all"
 
     # --- dangerous ops (explicit naming) ---
-
     nuke = "!read -p 'Confirm hard reset (yes/no): ' ans && [ \"$ans\" = yes ] && git clean -df && git reset --hard"
 
     # --- misc ---
-
     logg = "!git-log.sh"
 
     # Add co-author trailer
@@ -360,4 +344,7 @@
     path = ~/.config/git/config.local
 
 [includeIf "gitdir:~/Developer/GeeDblA/"]
+    path = ~/.config/git/config.geedbla
+
+[includeIf "gitdir:/opt/geedbla/"]
     path = ~/.config/git/config.geedbla

@@ -26,8 +26,6 @@ brew "git-delta"
 brew "git-lfs"
 # GitHub Model Context Protocol server for AI tools
 brew "github-mcp-server"
-# Program providing model for GNU coding standards and practices
-brew "hello"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
