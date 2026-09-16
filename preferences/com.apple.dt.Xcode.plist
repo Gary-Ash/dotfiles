@@ -16,8 +16,12 @@
 	<true/>
 	<key>DVTDisclosureViewDisclosedStates</key>
 	<dict/>
+	<key>DVTEnableOnDeviceCodePredictions</key>
+	<false/>
 	<key>DVTFontAndColorLastUpdatedToolsVersion</key>
 	<string>16.0</string>
+	<key>DVTSourceEditorCursor</key>
+	<string>Vertical Bar</string>
 	<key>DVTTextAlignConsecutiveSlashSlashComments</key>
 	<true/>
 	<key>DVTTextAutoSuggestCompletions</key>
@@ -52,6 +56,53 @@
 	<false/>
 	<key>DVTTextShowPageGuide</key>
 	<false/>
+	<key>DVTWorkspaceGlobalFontRecipe</key>
+	<data>
+	eyJmb250cyI6W3siY29kZSI6e319LHsiY2F0ZWdvcnkiOnsiY29kZSI6e319LCJkaXNw
+	bGF5TW9kZXMiOlt7InN0YW5kYXJkIjp7fX0seyJjYXRlZ29yeSI6eyJjb2RlIjp7fX0s
+	ImNvbnRlbnQiOnsiY3VzdG9tIjp7ImF1dG9tYXRpY1NpemUiOmZhbHNlLCJkYXJrIjp7
+	ImZhbWlseSI6eyJjdXN0b20iOnsiXzAiOiJQcmFnbWF0YVBybyBMaWdhIn19LCJzaXpl
+	IjoxMiwidmFyaWFudCI6eyJpZGVudGlmaWVyIjoiUHJhZ21hdGFQcm9MaWdhLVJlZ3Vs
+	YXIiLCJzbGFudCI6eyJ2YWx1ZSI6MH0sIndlaWdodCI6NCwid2lkdGgiOnsidmFsdWUi
+	OjB9fX0sImxpZ2h0Ijp7ImZhbWlseSI6eyJjdXN0b20iOnsiXzAiOiJQcmFnbWF0YVBy
+	byBMaWdhIn19LCJzaXplIjoxMiwidmFyaWFudCI6eyJpZGVudGlmaWVyIjoiUHJhZ21h
+	dGFQcm9MaWdhLVJlZ3VsYXIiLCJzbGFudCI6eyJ2YWx1ZSI6MH0sIndlaWdodCI6NCwi
+	d2lkdGgiOnsidmFsdWUiOjB9fX19fX1dfSx7ImNvbnNvbGUiOnt9fSx7ImNhdGVnb3J5
+	Ijp7ImNvbnNvbGUiOnt9fSwiZGlzcGxheU1vZGVzIjpbeyJzdGFuZGFyZCI6e319LHsi
+	Y2F0ZWdvcnkiOnsiY29uc29sZSI6e319LCJjb250ZW50Ijp7ImN1c3RvbSI6eyJhdXRv
+	bWF0aWNTaXplIjp0cnVlLCJkYXJrIjp7ImZhbWlseSI6eyJjdXN0b20iOnsiXzAiOiJQ
+	cmFnbWF0YVBybyBNb25vIExpZ2EifX0sInNpemUiOjEyLCJ2YXJpYW50Ijp7ImlkZW50
+	aWZpZXIiOiJQcmFnbWF0YVByb01vbm9MaWdhLVJlZ3VsYXIiLCJzbGFudCI6eyJ2YWx1
+	ZSI6MH0sIndlaWdodCI6NCwid2lkdGgiOnsidmFsdWUiOjB9fX0sImxpZ2h0Ijp7ImZh
+	bWlseSI6eyJjdXN0b20iOnsiXzAiOiJQcmFnbWF0YVBybyBNb25vIExpZ2EifX0sInNp
+	emUiOjEyLCJ2YXJpYW50Ijp7ImlkZW50aWZpZXIiOiJQcmFnbWF0YVByb01vbm9MaWdh
+	LVJlZ3VsYXIiLCJzbGFudCI6eyJ2YWx1ZSI6MH0sIndlaWdodCI6NCwid2lkdGgiOnsi
+	dmFsdWUiOjB9fX19fX1dfSx7InByb3NlIjp7fX0seyJjYXRlZ29yeSI6eyJwcm9zZSI6
+	e319LCJkaXNwbGF5TW9kZXMiOlt7InN0YW5kYXJkIjp7fX0seyJjYXRlZ29yeSI6eyJw
+	cm9zZSI6e319LCJjb250ZW50Ijp7ImN1c3RvbSI6eyJhdXRvbWF0aWNTaXplIjpmYWxz
+	ZSwiZGFyayI6eyJmYW1pbHkiOnsiY3VzdG9tIjp7Il8wIjoiUHJhZ21hdGFQcm8gTGln
+	YSJ9fSwic2l6ZSI6MTIsInZhcmlhbnQiOnsiaWRlbnRpZmllciI6IlByYWdtYXRhUHJv
+	TGlnYS1JdGFsaWMiLCJzbGFudCI6eyJ2YWx1ZSI6MC4wNjk0NDQ0NDAzMDUyMzN9LCJ3
+	ZWlnaHQiOjQsIndpZHRoIjp7InZhbHVlIjowfX19LCJsaWdodCI6eyJmYW1pbHkiOnsi
+	Y3VzdG9tIjp7Il8wIjoiUHJhZ21hdGFQcm8gTGlnYSJ9fSwic2l6ZSI6MTIsInZhcmlh
+	bnQiOnsiaWRlbnRpZmllciI6IlByYWdtYXRhUHJvTGlnYS1JdGFsaWMiLCJzbGFudCI6
+	eyJ2YWx1ZSI6MC4wNjk0NDQ0NDAzMDUyMzN9LCJ3ZWlnaHQiOjQsIndpZHRoIjp7InZh
+	bHVlIjowfX19fX19XX1dLCJsaW5lU3BhY2luZyI6eyJub3JtYWwiOnt9fX0=
+	</data>
+	<key>DVTWorkspaceRecipeLastUsedDates</key>
+	<data>
+	eyI2RjNBMUEyOC1DNUE5LTU2NEQtQkFGQy04ODkwQzAzNTVGNkMiOjgxMTEwODk4NS4w
+	NDE4NzQsIjhFNDNEODFFLUQ4QzUtNTE1Qi05NkE4LTg5OTAzODVDOUQzOSI6ODExMTA4
+	OTkzLjEzODg3N30=
+	</data>
+	<key>DVTWorkspaceThemeEditorExpandedColorGranularity</key>
+	<true/>
+	<key>DVTWorkspaceThemeSettings</key>
+	<data>
+	eyJkYXJrIjp7InNhdmVkUmVjaXBlIjp7Il8wIjoiNkYzQTFBMjgtQzVBOS01NjRELUJB
+	RkMtODg5MEMwMzU1RjZDIn19LCJsaWdodCI6eyJzYXZlZFJlY2lwZSI6eyJfMCI6IjhF
+	NDNEODFFLUQ4QzUtNTE1Qi05NkE4LTg5OTAzODVDOUQzOSJ9fX0=
+	</data>
 	<key>GTFPreference_heightOfActionEditorArea</key>
 	<real>288</real>
 	<key>GTFPreference_timeScaleSliderPosition</key>
@@ -132,6 +183,8 @@
 	</dict>
 	<key>IDEDeveloperDocumentationSelectedDuringFirstLaunch</key>
 	<true/>
+	<key>IDEDidCompleteThemesFLEToolsVersion</key>
+	<string>27.0</string>
 	<key>IDEDisableGitSupportForNewProjects</key>
 	<false/>
 	<key>IDEDocSearchSelectedReferenceIdentifier</key>
@@ -186,35 +239,31 @@
 	<dict>
 		<key>/Applications/Xcode.app/Contents/Applications/Accessibility Inspector.app</key>
 		<data>
-		YjO3SuE+4Wo5GPWNXPIsBr9lCqk=
+		usQGc69NAHknmt2wiEgszpnKSuY=
+		</data>
+		<key>/Applications/Xcode.app/Contents/Applications/DeviceHub.app</key>
+		<data>
+		cxIo7zwo/rgM3AwDedyte6/I7t0=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/FileMerge.app</key>
 		<data>
-		5mpQIB0CQUOZt9W2pd6QH7LbPPk=
+		yLEFzWrQKUZ1VcK9DYss5QLCNvM=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Icon Composer.app</key>
 		<data>
-		j7zC6BctGCN++By+KyHd4vgMBLI=
+		+JC9VJQKoN4LfpqIvAUXLryzT9s=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Instruments.app</key>
 		<data>
-		EpA1yFMNRhzIdKA75Y16tFsX1ZU=
-		</data>
-		<key>/Applications/Xcode.app/Contents/Applications/Reality Composer Pro.app</key>
-		<data>
-		oykztSBcoOZUCJGtQ6G5k/bTg4s=
-		</data>
-		<key>/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app</key>
-		<data>
-		qk5u4Z4YfGRN8Q0PuZ/kzVFOMWg=
+		HDO59Z4ydYNDlfjgc2sNkr8ApVA=
 		</data>
 		<key>/System/Library/CoreServices/CoreTypes.bundle</key>
 		<data>
-		PzMBJr9jEb9E886rfnvxzm+sEc0=
+		o/KmkAe11U1V2NeTzV55f2/MsBw=
 		</data>
 	</dict>
 	<key>IDELastShownWhatsNewContentRevision</key>
-	<integer>5</integer>
+	<integer>6</integer>
 	<key>IDELibraryWindowController-With-Details.height</key>
 	<real>449</real>
 	<key>IDELibraryWindowController-With-Details.location</key>
@@ -263,12 +312,14 @@
 	<string>17E188</string>
 	<key>IDEMetalToolchainLastNotified-17F113</key>
 	<string>17F109</string>
+	<key>IDEMetalToolchainLastNotified-27A266a</key>
+	<string>27A266a</string>
 	<key>IDEMetalToolchainSelectedDuringFirstLaunch</key>
 	<true/>
 	<key>IDEModelAccessHasUserConsentForOnDeviceInteractions</key>
 	<true/>
 	<key>IDEMostRecentPostFLEToolsVersion</key>
-	<string>26.6</string>
+	<string>27.0</string>
 	<key>IDEOmnibar.location</key>
 	<dict>
 		<key>horizontal</key>
@@ -290,6 +341,7 @@
 	<real>560</real>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-appletvos</key>
 	<array>
+		<string>24J360</string>
 		<string>23L470</string>
 		<string>23L236</string>
 		<string>23K50</string>
@@ -302,6 +354,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-iphoneos</key>
 	<array>
+		<string>24A430</string>
 		<string>23F81a</string>
 		<string>23F73</string>
 		<string>23E252</string>
@@ -312,10 +365,10 @@
 		<string>23A339</string>
 		<string>22F76</string>
 		<string>22E235</string>
-		<string>22C146</string>
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-macosx</key>
 	<array>
+		<string>26A425</string>
 		<string>25F70</string>
 		<string>25E251</string>
 		<string>25E236</string>
@@ -326,10 +379,10 @@
 		<string>24F74</string>
 		<string>24E241</string>
 		<string>24C94</string>
-		<string>24B75</string>
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-watchos</key>
 	<array>
+		<string>24R360</string>
 		<string>23T570</string>
 		<string>23T238</string>
 		<string>23S303</string>
@@ -342,6 +395,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-xros</key>
 	<array>
+		<string>24M361</string>
 		<string>23O469</string>
 		<string>23O248</string>
 		<string>23O238</string>
@@ -423,6 +477,11 @@
 	<string>{1258, 928}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{1074, 855}</string>
+	<key>NSSplitView Subview Frames DVTWorkspaceThemeEditor</key>
+	<array>
+		<string>0.000000, 0.000000, 530.000000, 360.000000, NO, NO</string>
+		<string>0.000000, 361.000000, 530.000000, 309.000000, NO, NO</string>
+	</array>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
 		<string>0.000000, 0.000000, 228.000000, 315.000000, NO, NO</string>
@@ -490,6 +549,62 @@
 	<true/>
 	<key>NSTableView Supports v2 XclocStringTable</key>
 	<true/>
+	<key>NSToolbar Configuration Xcode.IDEKit.Toolbar.Workspace.Customizable</key>
+	<dict>
+		<key>TB Default Item Identifiers</key>
+		<array>
+			<string>Xcode.IDEKit.CustomToolbarItem.ToggleNavigator</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.RunStop</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SplitViewDivider-0</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.BackForward</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.WindowTitle</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEIntelligenceChat.CustomToolbarItem.NewConversation</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.RootChooser</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SchemePicker.Centered</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.Issues</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.XcodeCloud.CustomToolbarItem.ToolbarItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.StatusCategories</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.AddEditor</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.EditorOptions</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.EditorMode</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SplitViewDivider-1</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.ToggleInspector</string>
+		</array>
+		<key>TB Display Mode</key>
+		<integer>2</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Item Identifiers</key>
+		<array>
+			<string>Xcode.IDEKit.CustomToolbarItem.ToggleNavigator</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.RunStop</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SplitViewDivider-0</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.BackForward</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.WindowTitle</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEIntelligenceChat.CustomToolbarItem.NewConversation</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SchemePicker.Centered</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.Issues</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.XcodeCloud.CustomToolbarItem.ToolbarItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.StatusCategories</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.AddEditor</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.EditorOptions</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.EditorMode</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SplitViewDivider-1</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.ToggleInspector</string>
+		</array>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
@@ -505,7 +620,7 @@
 	<key>NSWindow Frame Documentation Viewer Window</key>
 	<string>841 530 1024 730 0 0 2560 1410 </string>
 	<key>NSWindow Frame IDEDownloadProgressWindow</key>
-	<string>1944 1198 400 104 0 0 2560 1410 </string>
+	<string>1944 866 400 436 0 0 2560 1410 </string>
 	<key>NSWindow Frame IDEEditContextSheet</key>
 	<string>1176 572 534 341 0 0 2560 1409 </string>
 	<key>NSWindow Frame IDEEditSchemeWindow</key>
@@ -515,11 +630,11 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>924 423 710 722 0 0 2560 1410 </string>
+	<string>924 267 710 722 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>2045 99 478 281 0 0 2560 1409 </string>
+	<string>2045 99 478 281 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>814 263 1258 928 0 0 2560 1409 </string>
 	<key>NSWindow Frame NSSpellCheckerSpellingPanel</key>
@@ -536,7 +651,7 @@
 	<data>
 	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
 	Wmxhc3RPcGVuZWRfEEIvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9GbGFz
-	aHlDYXJkcy9GbGFzaHlDYXJkcy54Y29kZXByb2qgM0HIJx7kPS/TCAsTFRwqMz6DhAAA
+	aHlDYXJkcy9GbGFzaHlDYXJkcy54Y29kZXByb2qgM0HILjqNpuJMCAsTFRwqMz6DhAAA
 	AAAAAAEBAAAAAAAAAAoAAAAAAAAAAAAAAAAAAACN
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
@@ -549,6 +664,8 @@
 	<data>
 	ODA4ODYwMDQzLjM3MTk3MQ==
 	</data>
+	<key>VerticalSplitView.topHeight.DVTWorkspaceThemeEditor</key>
+	<real>360</real>
 	<key>WebKitUseSystemAppearance</key>
 	<true/>
 	<key>XCFontAndColorCurrentDarkTheme</key>

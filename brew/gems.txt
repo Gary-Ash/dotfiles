@@ -32,7 +32,6 @@ forwardable
 forwardable-extended
 getoptlong
 google-protobuf
-hana
 highline
 http_parser.rb
 i18n
@@ -48,8 +47,6 @@ jekyll-paginate-v2
 jekyll-sass-converter
 jekyll-watch
 json
-json-schema
-json_schemer
 kramdown
 kramdown-parser-gfm
 language_server-protocol
@@ -58,7 +55,6 @@ liquid
 listen
 logger
 matrix
-mcp
 mercenary
 minitest
 mutex_m
@@ -110,12 +106,10 @@ rubocop
 rubocop-ast
 ruby-progressbar
 ruby2_keywords
-rubygems-update
 safe_yaml
 sass-embedded
 securerandom
 shellwords
-simpleidn
 singleton
 solargraph
 sorbet-runtime
