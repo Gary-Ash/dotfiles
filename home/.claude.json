@@ -19,16 +19,17 @@
       ],
       "env": {}
     },
-    "mcp-snippetslab": {
-      "type": "local",
-      "enabled": true,
-      "command": [
-        "/opt/bin/mcp-snippetslab"
-      ]
+    "snippetslab": {
+      "type": "stdio",
+      "command": "/Applications/SnippetsLab.app/Contents/Helpers/lab",
+      "args": [
+        "mcp"
+      ],
+      "env": {}
     }
   },
   "hasResetAutoModeOptInForDefaultOffer": true,
-  "additionalModelOptionsAnsweredAt": 1789068284601,
+  "additionalModelOptionsAnsweredAt": 1789941907756,
   "githubWebConnectionStatusCache": {
     "accountUuid": "00000000-0000-0000-0000-000000000000",
     "orgUuid": "00000000-0000-0000-0000-000000000000",
@@ -42,18 +43,34 @@
   "cachedArtifactRoster": {
     "accountUuid": "00000000-0000-0000-0000-000000000000",
     "organizationUuid": "00000000-0000-0000-0000-000000000000",
-    "version": "0.2.45",
+    "version": "0.2.52",
     "capabilities": [
       "artifact",
       "assets",
+      "comments",
       "db",
       "downloads",
       "mcp",
       "permissions",
       "room",
       "sample",
-      "self"
+      "self",
+      "user"
     ],
-    "fetchedAt": 1789068279696
+    "fetchedAt": 1789941903870
+  },
+  "tipsHistoryByCommand": {
+    "memory": {
+      "tipId": "memory-command",
+      "numStartups": 2
+    },
+    "install-github-app": {
+      "tipId": "install-github-app",
+      "numStartups": 3
+    },
+    "install-slack-app": {
+      "tipId": "install-slack-app",
+      "numStartups": 3
+    }
   }
 }

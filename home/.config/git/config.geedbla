@@ -11,7 +11,9 @@
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
+
 [user]
+    name       = Gary Ash
     email = gary.ash@icloud.com
 
 [core]

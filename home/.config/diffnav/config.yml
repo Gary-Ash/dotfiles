@@ -1,4 +1,5 @@
 ui:
+  theme: "solarized_dark"
   # Customize the file tree width (default: 26)
   fileTreeWidth: 30
 
@@ -6,5 +7,5 @@ ui:
   searchTreeWidth: 60
 
   # Icon style: "status" (default), "simple", "filetype", "full", "unicode", or "ascii"
-  icons: nerd-fonts-status
+  icons: nerd-fonts-full
   sideBySide: true
