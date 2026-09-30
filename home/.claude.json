@@ -29,7 +29,7 @@
     }
   },
   "hasResetAutoModeOptInForDefaultOffer": true,
-  "additionalModelOptionsAnsweredAt": 1789941907756,
+  "additionalModelOptionsAnsweredAt": 1791074260335,
   "githubWebConnectionStatusCache": {
     "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
     "orgUuid": "44ed8be7-c6d4-430e-9a86-ed8efc92979c",
@@ -43,13 +43,14 @@
   "cachedArtifactRoster": {
     "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
     "organizationUuid": "44ed8be7-c6d4-430e-9a86-ed8efc92979c",
-    "version": "0.2.52",
+    "version": "0.2.67",
     "capabilities": [
       "artifact",
       "assets",
       "comments",
       "db",
       "downloads",
+      "files",
       "mcp",
       "permissions",
       "room",
@@ -57,20 +58,38 @@
       "self",
       "user"
     ],
-    "fetchedAt": 1789941903870
+    "fetchedAt": 1791074254638
   },
   "tipsHistoryByCommand": {
     "memory": {
       "tipId": "memory-command",
-      "numStartups": 2
+      "numStartups": 1
     },
     "install-github-app": {
       "tipId": "install-github-app",
-      "numStartups": 3
+      "numStartups": 1
     },
     "install-slack-app": {
       "tipId": "install-slack-app",
-      "numStartups": 3
+      "numStartups": 1
+    },
+    "desktop": {
+      "tipId": "desktop-shortcut",
+      "numStartups": 1
+    },
+    "focus": {
+      "tipId": "focus-view",
+      "numStartups": 1
     }
-  }
+  },
+  "promoStartupStatusCache": {
+    "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
+    "endpoint": "/v1/code/promo/cloud_credit",
+    "eligible": true,
+    "claimed": false,
+    "checkedAt": 1790738791989
+  },
+  "voiceLangHintShownCount": 1,
+  "voiceLangHintLastLanguage": "en",
+  "voiceFooterHintSeenCount": 3
 }

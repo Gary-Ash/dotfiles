@@ -76,7 +76,7 @@
 	AAAAAAGO
 	</data>
 	<key>BBPreferencesSelectedModuleIdentifier</key>
-	<string>BBLanguagesPreferences</string>
+	<string>BBAppearancePreferences</string>
 	<key>BBPrintingFont</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -84,12 +84,12 @@
 	DxARElYkY2xhc3NfEBdOU0ZvbnREZXNjcmlwdG9yT3B0aW9uc18QGk5TRm9udERlc2Ny
 	aXB0b3JBdHRyaWJ1dGVzgAgSgAAAAIAC0xQVDRYZHFdOUy5rZXlzWk5TLm9iamVjdHOi
 	FxiAA4AEohobgAWABoAHXxATTlNGb250U2l6ZUF0dHJpYnV0ZV8QE05TRm9udE5hbWVB
-	dHRyaWJ1dGUjQCgAAAAAAABfEBdQcmFnbWF0YVByb0xpZ2EtUmVndWxhctIiIyQlWiRj
-	bGFzc25hbWVYJGNsYXNzZXNcTlNEaWN0aW9uYXJ5oiQmWE5TT2JqZWN00iIjKClfEBBO
-	U0ZvbnREZXNjcmlwdG9yoiomXxAQTlNGb250RGVzY3JpcHRvcgAIABEAGgAkACkAMgA3
-	AEkATABRAFMAXQBjAGoAcQCLAKgAqgCvALEAuADAAMsAzgDQANIA1QDXANkA2wDxAQcB
-	EAEqAS8BOgFDAVABUwFcAWEBdAF3AAAAAAAAAgEAAAAAAAAAKwAAAAAAAAAAAAAAAAAA
-	AYo=
+	dHRyaWJ1dGUjQCgAAAAAAABfEBtQcmFnbWF0YVByb01vbm9MaWdhLVJlZ3VsYXLSIiMk
+	JVokY2xhc3NuYW1lWCRjbGFzc2VzXE5TRGljdGlvbmFyeaIkJlhOU09iamVjdNIiIygp
+	XxAQTlNGb250RGVzY3JpcHRvcqIqJl8QEE5TRm9udERlc2NyaXB0b3IACAARABoAJAAp
+	ADIANwBJAEwAUQBTAF0AYwBqAHEAiwCoAKoArwCxALgAwADLAM4A0ADSANUA1wDZANsA
+	8QEHARABLgEzAT4BRwFUAVcBYAFlAXgBewAAAAAAAAIBAAAAAAAAACsAAAAAAAAAAAAA
+	AAAAAAGO
 	</data>
 	<key>BBSuffixMapOverrides</key>
 	<array>
@@ -542,7 +542,7 @@
 	<key>NSWindow Frame BBPreferences</key>
 	<string>978 611 685 611 0 0 2560 1410 </string>
 	<key>NSWindow Frame BBSetupEditorWindow</key>
-	<string>1963 1017 350 388 0 0 2560 1415 </string>
+	<string>1963 1012 480 388 0 0 2560 1410 </string>
 	<key>NSWindow Frame ClippingLanguageSetupPanel</key>
 	<string>2028 966 220 387 0 0 2560 1415 </string>
 	<key>NSWindow Frame ConfirmCloseMulti</key>
@@ -556,7 +556,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 9 266 366 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>2024 113 536 235 0 0 2560 1409 </string>
+	<string>2024 113 536 235 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>675 384 1210 911 0 0 2560 1409 </string>
 	<key>NSWindow Frame OpenFileByName</key>
@@ -564,7 +564,7 @@
 	<key>NSWindow Frame OpenRecentPanel</key>
 	<string>1039 944 480 300 0 0 2560 1409 </string>
 	<key>NSWindow Frame ProgressPanel</key>
-	<string>850 1123 407 173 0 0 2560 1410 </string>
+	<string>850 1155 407 141 0 0 2560 1410 </string>
 	<key>NSWindow Frame ProgressPanelSheet</key>
 	<string>850 1156 407 137 0 0 2560 1415 </string>
 	<key>NSWindow Frame RunUnixCommandSheet</key>
@@ -681,6 +681,8 @@
 	<true/>
 	<key>StripTrailingWhitespace_Unix Shell Script</key>
 	<true/>
+	<key>SupportFileCheckedForAppVersion:Read Me.txt</key>
+	<string>451000015</string>
 	<key>UseAttachmentScripts</key>
 	<true/>
 	<key>UserDeclinedSandboxAccess</key>

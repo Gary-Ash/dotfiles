@@ -26,7 +26,6 @@
       "mcp__github__list_gists"
     ]
   },
-  "disableDeepLinkRegistration": "disable",
   "model": "opus",
   "statusLine": {
     "type": "command",
@@ -38,5 +37,11 @@
     "swift-concurrency@swift-concurrency-agent-skill": true,
     "swiftui-expert@swiftui-expert-skill": true
   },
-  "tui": "fullscreen"
+  "tui": "fullscreen",
+  "disableDeepLinkRegistration": "disable",
+  "voiceEnabled": true,
+  "voice": {
+    "enabled": true,
+    "mode": "tap"
+  }
 }

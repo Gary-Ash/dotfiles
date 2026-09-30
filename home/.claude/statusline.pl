@@ -1,4 +1,9 @@
 #!/usr/bin/env perl
+use v5.34;
+use strict;
+use warnings;
+use utf8;
+
 #*****************************************************************************************
 # statusline.pl
 #
@@ -6,21 +11,22 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   7-Feb-2026  4:16pm
-# Modified :  17-Apr-2026 12:00pm
+# Modified :  30-Sep-2026  3:55pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
-use strict;
-use warnings;
 use JSON::PP;
-use POSIX qw(strftime floor);
+use POSIX        qw(strftime floor);
+use Scalar::Util qw(looks_like_number);
+
+binmode STDOUT, ':encoding(UTF-8)';
 
 my $bar_width = 16;
 my $json_text = do { local $/; <STDIN> };
-my $data      = decode_json($json_text);
+my $data      = eval { decode_json($json_text) } // {};
 
-my $model           = $data->{model}->{display_name}                      // 'unknown';
-my $total_cost      = $data->{cost}->{total_cost_usd}                     // undef;
+my $model           = $data->{model}->{display_name}                       // 'unknown';
+my $total_cost      = $data->{cost}->{total_cost_usd}                      // undef;
 my $ctx_used_pct    = $data->{context_window}->{used_percentage}           // undef;
 my $five_hr_pct     = $data->{rate_limits}->{five_hour}->{used_percentage} // undef;
 my $five_hr_reset   = $data->{rate_limits}->{five_hour}->{resets_at}       // undef;
@@ -35,23 +41,14 @@ sub fill_color {
     return "\e[38;2;220;40;40m";
 }
 
-# Returns the 24-bit bg color escape for a given percentage.
-sub fill_bg_color {
-    my ($pct) = @_;
-    return "\e[48;2;0;200;0m"   if $pct < 60;
-    return "\e[48;2;220;200;0m" if $pct < 85;
-    return "\e[48;2;220;40;40m";
-}
-
 # Builds a fixed-width bar with the percentage label centered inside it.
-# Cells in the filled portion use the color as background with dark text;
-# cells in the unfilled portion use default background with color as foreground.
+# All cells share a grey background; filled cells draw the block in the usage
+# color, unfilled cells draw it in grey, and label characters are white.
 sub create_bar {
     my ($percentage, $width) = @_;
-    my $filled      = int(($percentage / 100) * $width + 0.5);
-    $filled         = $width if $filled > $width;
+    my $filled = int(($percentage / 100) * $width + 0.5);
+    $filled = $width if $filled > $width;
     my $fg          = fill_color($percentage);
-    my $bg          = fill_bg_color($percentage);
     my $reset       = "\e[0m";
     my $label       = sprintf("%d%%", int($percentage + 0.5));
     my $label_len   = length($label);
@@ -68,9 +65,12 @@ sub create_bar {
         my $char      = $is_label ? substr($label, $i - $label_start, 1) : "\x{2588}";
 
         if ($is_filled) {
+
             # filled: dark bg, colored fg block (or white for label digits)
             $bar .= $dark_bg . ($is_label ? $white_fg : $fg) . $char . $reset;
-        } else {
+        }
+        else {
+
             # unfilled: dark bg, dark fg block so it blends away (or white for label digits)
             $bar .= $dark_bg . ($is_label ? $white_fg : $dark_fg) . $char . $reset;
         }
@@ -81,9 +81,9 @@ sub create_bar {
 # Formats an epoch as 12-hour clock: e.g. "3:05pm"
 sub format_clock {
     my ($epoch) = @_;
-    return '--' unless defined $epoch && $epoch > 0;
+    return '--' unless looks_like_number($epoch) && $epoch > 0;
     my $str = strftime("%I:%M%p", localtime($epoch));
-    $str =~ s/^0//;          # strip leading zero from hour
+    $str =~ s/^0//;    # strip leading zero from hour
     return lc($str);
 }
 
@@ -100,7 +100,7 @@ sub ordinal_suffix {
 # Formats an epoch as calendar + time: e.g. "Thursday May 5th 4:00pm"
 sub format_calendar {
     my ($epoch) = @_;
-    return '--' unless defined $epoch && $epoch > 0;
+    return '--' unless looks_like_number($epoch) && $epoch > 0;
     my @t       = localtime($epoch);
     my $day_num = $t[3];
     my $suffix  = ordinal_suffix($day_num);
@@ -118,14 +118,16 @@ my $line = "Model: \e[1m$model\e[0m";
 if (defined $ctx_used_pct) {
     my $bar = create_bar($ctx_used_pct, $bar_width);
     $line .= $sep . "Context: $bar";
-} else {
+}
+else {
     $line .= $sep . "Context: --";
 }
 
 if (defined $five_hr_pct) {
     my $bar = create_bar($five_hr_pct, $bar_width);
     $line .= $sep . "Session: $bar";
-} else {
+}
+else {
     $line .= $sep . "Session: --";
 }
 
@@ -134,7 +136,8 @@ $line .= $sep . "Session Reset: " . format_clock($five_hr_reset);
 if (defined $seven_day_pct) {
     my $bar = create_bar($seven_day_pct, $bar_width);
     $line .= $sep . "Week: $bar";
-} else {
+}
+else {
     $line .= $sep . "Week: --";
 }
 
