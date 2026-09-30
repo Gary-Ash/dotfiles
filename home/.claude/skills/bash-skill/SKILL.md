@@ -1,5 +1,5 @@
 ---
-name: bash
+name: bash-skill
 description: Full Bash development aid. Use when the user wants to create, edit, run, debug, or test Bash shell scripts. Scaffolds files with proper headers, follows Bash best practices, executes scripts, and assists with debugging.
 allowed-tools: Read, Write, Edit, Grep, Glob, Bash
 argument-hint: [action or filename]
@@ -11,7 +11,7 @@ Assist with all aspects of Bash script development including creating files, wri
 
 ## Creating New Files
 
-When creating a new Bash script, always include the file header from CLAUDE.md using the Shell scripts (Bash) template. Every script must begin with:
+When creating a new Bash script, always add the header using `file-header-skill` with its Bash template. Every script must begin with:
 
 ```bash
 #!/usr/bin/env bash
@@ -25,8 +25,8 @@ After creating a file, make it executable: `chmod +x <script.sh>`
 - Run scripts with: `bash <script.sh>` or `./<script.sh>`
 - Check syntax without executing: `bash -n <script.sh>`
 - Run with debug tracing: `bash -x <script.sh>`
-- Use `shellcheck <script.sh>` for static analysis (if available)
-- For test frameworks, use `bats` if available in the project
+- Use `shellcheck <script.sh>` for static analysis
+- Tests use `bats` (bats-core, required) in `test/*.bats`; run with `bats test/`
 
 ## Code Quality
 
@@ -48,13 +48,20 @@ After creating a file, make it executable: `chmod +x <script.sh>`
 
 ### Argument parsing:
 ```bash
+usage() { printf 'Usage: %s [-h] [-v] [args...]\n' "${0##*/}"; }
+
+verbose=false
+args=()
 while [[ $# -gt 0 ]]; do
     case "$1" in
         -h|--help) usage; exit 0 ;;
-        -v|--verbose) VERBOSE=true; shift ;;
+        -v|--verbose) verbose=true; shift ;;
         *) args+=("$1"); shift ;;
     esac
 done
+if [[ "${verbose}" == true ]]; then
+    printf 'Verbose mode on\n' >&2
+fi
 ```
 
 ### Cleanup on exit:
@@ -75,7 +82,7 @@ log() { printf '%s %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$*" >&2; }
 ### Built-in Bash debugging
 - Use `set -x` to trace execution (or `bash -x script.sh`)
 - Use `PS4='+(${BASH_SOURCE}:${LINENO}): '` for detailed trace output
-- Use `trap 'echo "Error on line $LINENO"' ERR` for error location
+- Use `set -E` with `trap 'printf "Error on line %s\n" "$LINENO" >&2' ERR` for error location; without `set -E`, functions don't inherit the ERR trap
 - Check for common issues: unquoted variables, missing error handling, word splitting
 
 ### ShellCheck (static analysis)
@@ -90,7 +97,7 @@ log() { printf '%s %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$*" >&2; }
 - Launch with: `bashdb <script.sh>`
 - Key commands:
   - `n` (next), `s` (step into), `c` (continue)
-  - `b <line>` (set breakpoint), `d <line>` (delete breakpoint)
+  - `b <line>` (set breakpoint), `clear <line>` or `d <n>` (delete breakpoint by line or by number)
   - `p <expr>` (print expression), `x <expr>` (examine)
   - `l` (list source), `w` (where/backtrace)
   - `q` (quit)

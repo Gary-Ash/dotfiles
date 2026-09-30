@@ -1,5 +1,5 @@
 ---
-name: file-header
+name: file-header-skill
 description: Ensure source files include a consistent metadata header comment using the correct comment syntax for the language. Use when creating new source files or when the user asks to add, fix, or update file headers. Handles Created/Modified timestamps, copyright years, and language-appropriate comment syntax.
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash
 argument-hint: [filename or language]
@@ -18,25 +18,25 @@ Every header must include these fields in order:
 3. **Author** — `Gary Ash <gary.ash@icloud.com>`
 4. **Created** — set once when the file is first created, never changed
 5. **Modified** — updated on every meaningful edit (use the latest time if multiple edits occur on the same day)
-6. **Copyright** — `Copyright © YYYY By Gary Ash All rights reserved.` (if the current year differs from the year in the copyright line, append `-<current year>` to form a range)
+6. **Copyright** — `Copyright © YYYY By Gary Ash All rights reserved.` (if the current year differs from the last year in the copyright line, form a range ending in the current year: `2025` becomes `2025-2026`, and `2024-2025` becomes `2024-2026`)
 
 ## Timestamp Format
 
-All timestamps use the format: `DD-MMM-YYYY  H:MMxm`
+All timestamps use the format: `DD-MMM-YYYY HH:MMxm`
 
 Examples: ` 7-Feb-2026  4:22pm`, `19-Mar-2026 11:05am`
 
-- Single-digit days are right-aligned with a leading space
+- Day and hour are two characters wide; a single digit is right-aligned with a leading space
 - Month is three-letter abbreviation with first letter capitalized
 - Time uses 12-hour format with `am`/`pm` (no space before am/pm)
-- Two spaces between the date and time portions
+- One space separates the date and time; a single-digit hour's leading space makes it look like two
 
 ## Comment Syntax Selection
 
 ### Multiline comment style (`/* */`)
 
 Use for languages that support multiline comment delimiters:
-- C, C++, Objective-C, Objective-C++, Java, JavaScript, TypeScript, Swift, Pascal, CSS
+- C, C++, Objective-C, Objective-C++, Java, JavaScript, TypeScript, Swift, CSS
 
 Template:
 ```
@@ -54,15 +54,20 @@ Template:
 ```
 
 Rules:
-- Opening line: `/*` followed by asterisks to fill 89 characters total
+- Opening line: `/*` followed by 88 asterisks (90 characters total)
 - Each interior line starts with ` * ` (space-asterisk-space)
-- Closing line: space followed by asterisks to fill 88 characters, then `/`
-- The asterisk border lines are exactly 89 characters wide
+- Closing line: a space, 88 asterisks, then `/` (90 characters total)
+- The asterisk border lines are exactly 90 characters wide
 
 ### AppleScript block comment style (`(* *)`)
 
 AppleScript has no `/* */` comments. It uses `(* ... *)` for block comments
-(and `--` or `#` for single-line). Use this style for `.applescript` and `.scpt` files.
+(and `--` or `#` for single-line). Use this style for `.applescript` files.
+
+A `.scpt` file is compiled binary — never edit it as text. Convert it to source
+first with `osadecompile <file.scpt> > <file.applescript>`, add the header to the
+`.applescript`, and recompile with `osacompile -o <file.scpt> <file.applescript>`
+if a `.scpt` is still needed.
 
 Template:
 ```
@@ -80,14 +85,14 @@ Template:
 ```
 
 Rules:
-- Opening line: `(*` followed by asterisks to fill 89 characters total
+- Opening line: `(*` followed by 88 asterisks (90 characters total)
 - Each interior line starts with ` * ` (space-asterisk-space)
-- Closing line: space followed by asterisks to fill 88 characters, then `)`
-- The asterisk border lines are exactly 89 characters wide
+- Closing line: a space, 88 asterisks, then `)` (90 characters total)
+- The asterisk border lines are exactly 90 characters wide
 
 ### Single-line comment style (`//`)
 
-Use for languages with `//` comments that do not have multiline delimiters or where `//` is conventional:
+Use for languages where `//` is the conventional comment style:
 - Rust, Zig, Go
 
 Template:
@@ -99,7 +104,7 @@ Template:
 //
 // Author   :  Gary Ash <gary.ash@icloud.com>
 // Created  :   7-Feb-2026  4:27pm
-// Modified :  27-Feb-2026  4:59pm
+// Modified :
 //
 // Copyright © 2026 By Gary Ash All rights reserved.
 //****************************************************************************************
@@ -107,24 +112,24 @@ Template:
 
 ### Hash comment style (`#`)
 
-Use for scripting languages:
-- Python, Ruby, Bash, Shell
+Use for scripting languages and other `#`-comment files:
+- Python, Ruby, Perl, Bash, Shell, Bats, CMake
 
 **Python** includes shebang and encoding lines before the header:
 ```
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# ****************************************************************************************
-#  filename.py
+#*****************************************************************************************
+# filename.py
 #
 # brief summary of the file contents
 #
-#  Author   :  Gary Ash <gary.ash@icloud.com>
-#  Created  :   7-Feb-2026  4:21pm
-#  Modified :
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :   7-Feb-2026  4:21pm
+# Modified :
 #
-#  Copyright © 2026 By Gary Ash All rights reserved.
-# ****************************************************************************************
+# Copyright © 2026 By Gary Ash All rights reserved.
+#*****************************************************************************************
 ```
 
 **Ruby** includes shebang and encoding:
@@ -138,6 +143,26 @@ Use for scripting languages:
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   7-Feb-2026  4:19pm
+# Modified :
+#
+# Copyright © 2026 By Gary Ash All rights reserved.
+#*****************************************************************************************
+```
+
+**Perl** scripts (`.pl`) include shebang and pragmas; modules (`.pm`) and tests (`.t`) omit the shebang line but keep the pragmas:
+```
+#!/usr/bin/env perl
+use v5.34;
+use strict;
+use warnings;
+use utf8;
+#*****************************************************************************************
+# filename.pl
+#
+# brief summary of the file contents
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  24-Sep-2026  9:15pm
 # Modified :
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
@@ -161,6 +186,39 @@ set -euo pipefail
 #*****************************************************************************************
 ```
 
+**Bats** test files (`.bats`) use the Bats shebang and no strict-mode line (Bats manages
+errors itself):
+```
+#!/usr/bin/env bats
+#*****************************************************************************************
+# filename.bats
+#
+# brief summary of the file contents
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  30-Sep-2026  4:10pm
+# Modified :
+#
+# Copyright © 2026 By Gary Ash All rights reserved.
+#*****************************************************************************************
+```
+
+**CMake** (`CMakeLists.txt`, `.cmake`) has no shebang or pragma lines; the header is the
+first line of the file:
+```
+#*****************************************************************************************
+# CMakeLists.txt
+#
+# brief summary of the file contents
+#
+# Author   :  Gary Ash <gary.ash@icloud.com>
+# Created  :  30-Sep-2026  4:10pm
+# Modified :
+#
+# Copyright © 2026 By Gary Ash All rights reserved.
+#*****************************************************************************************
+```
+
 ## Workflow
 
 ### Adding a header to a new file
@@ -173,7 +231,7 @@ set -euo pipefail
 ### Updating a header on an existing file
 1. Read the file and locate the existing header
 2. Update the Modified timestamp to the current date/time
-3. If the current year differs from the copyright year, update to a year range (e.g., `2025-2026`)
+3. If the current year differs from the last copyright year, update to a year range ending in the current year (e.g., `2025` → `2025-2026`, `2024-2025` → `2024-2026`)
 4. Do not change the Created timestamp
 5. Update the file name if the file has been renamed
 6. Update the description if the file's purpose has changed

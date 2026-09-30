@@ -12,30 +12,29 @@ Applies to every project unless a project-level CLAUDE.md overrides it.
 
 ## Development Approach
 
-- Test-Driven Development, Kent Beck style. Production code exists only to make a
-  failing test pass. One cycle:
-  1. Write a failing test.
-  2. Write the minimum code to pass it.
-  3. Refactor.
-- NEVER delete, skip, or comment out a test without my explicit approval. This holds
-  even when the test looks wrong — tell me and wait.
-- Tidy First: structural changes (rename, extract, move) and behavior changes are
-  separate steps, structural first — and separate commits when committing. Never
-  mix the two in one change.
+- Test-Driven Development, Kent Beck style, for all production code in a language with
+  a test framework listed under Build, Test, Lint. Use `tdd-skill`.
 - Small, focused commits. One concern each.
 
 ## Languages
 
 - **Swift** — primary. Xcode and Swift Package Manager only. No CocoaPods, Carthage,
   or other package managers.
-- **Python** — primary for scripts and tooling. Python 3.10+. Standard library only —
-  ask before adding a third-party dependency.
+- **Python** — primary for scripts and tooling. Python 3.10+. Standard library only in
+  runtime code — ask before adding a third-party dependency. The dev tools below
+  (pytest, ruff, mypy) are allowed. Use `python3-skill`.
 - **C++** — performance-critical work only.
-  - C++20. Memory-safe idioms: smart pointers, RAII, standard containers. No raw
+  - C++23. Memory-safe idioms: smart pointers, RAII, standard containers. No raw
     `new`/`delete`.
-  - CMake only. Targets are macOS and Linux — no Windows. Code must build and pass
+  - CMake only. Targets are macOS and Linux. Code must build and pass
     on both; no macOS-only or Linux-only API without an abstraction layer.
-  - Build with ASan and UBSan during development.
+  - Build with ASan and UBSan during development, through the `ENABLE_SANITIZERS`
+    CMake option (default `ON`; see `cpp-skill`).
+  - Use `cpp-skill`.
+- **Perl** — Perl 5, `#!/usr/bin/env perl`. Core modules only — ask before
+  adding a CPAN dependency. Use `perl-skill` for Perl work.
+- **Bash** — `#!/usr/bin/env bash` with `set -euo pipefail`. Use `bash-skill`.
+- **AppleScript** — macOS automation only. Use `applescript-skill`.
 
 ## Build, Test, Lint
 
@@ -45,30 +44,39 @@ Applies to every project unless a project-level CLAUDE.md overrides it.
   - SPM package: `swift test`
   - Xcode project: `xcodebuild test -scheme <scheme> -destination <dest>`
   - Format with **SwiftFormat** (Nick Lockwood's `swiftformat`), not Apple's
-    `swift-format`. Honor the project's `.swiftformat` if present. Pass the paths
-    you changed — never run it across the whole tree.
-- Python: **unittest** from the standard library. pytest is not installed — ask
-  before introducing it. Tests live in `tests/`.
-  - Run: `python3 -m unittest discover -p 'test_*.py'` from the tests directory
-  - Format: `black --config "$HOME/.config/black"`. Pass the paths you changed —
-    never run it across the whole tree.
+    `swift-format`. Honor the project's `.swiftformat` if present.
+- Python: **pytest**. Tests live in `tests/`. Leave existing unittest suites as they
+  are — pytest runs them.
+  - Run: `python3 -m pytest -v`
+  - Lint: `ruff check <files>`. Type check: `mypy <files>`.
+  - Format: `ruff format <files>`.
 - C++: **GoogleTest**, pulled in via CMake `FetchContent`. Tests registered with
   `gtest_discover_tests()` so CTest drives them.
 
   ```sh
-  cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug \
-        -DCMAKE_CXX_FLAGS="-fsanitize=address,undefined -fno-omit-frame-pointer -g"
+  cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
   cmake --build build
   ctest --test-dir build --output-on-failure
   ```
-
+  - Format: `uncrustify --no-backup <files>`. Honor the project's `uncrustify.cfg`
+    if present (`-c uncrustify.cfg`).
+- Perl: **Test::More** (core). Tests live in `t/*.t`.
+  - Run: `prove -lr t/`
+  - Format: `perltidy -b -bext='/' <files>`. Honor the project's `.perltidyrc` if present.
+- Bash: **bats-core**. Tests live in `test/*.bats`.
+  - Run: `bats test/`
+  - Lint: `shellcheck <files>`.
+- AppleScript: no test framework.
+  - Check: `osacompile -o /tmp/out.scpt <file>` catches syntax errors only; run the
+    script with `osascript` to confirm it works.
 
 ### All languages
 
 - Run the tests after changing code, without being asked.
 - Report results faithfully. If tests fail, show the actual output. Never describe a
   green run you did not observe.
-- Do not run a formatter or linter across files I did not touch.
+- Run formatters and linters only on the paths you changed — never across the whole
+  tree.
 
 ## File Headers
 

@@ -1,5 +1,5 @@
 ---
-name: cpp
+name: cpp-skill
 description: Full C++ development aid with emphasis on memory safety and cross-platform programming. Use when the user wants to create, edit, build, run, debug, or test C++ source files, headers, or CMake projects. Scaffolds files with proper headers, enforces modern C++ best practices, memory-safe idioms, cross-platform CMake builds, and assists with debugging and testing.
 allowed-tools: Read, Write, Edit, Grep, Glob, Bash
 argument-hint: [action or filename]
@@ -11,50 +11,14 @@ Assist with all aspects of modern C++ development with a strong emphasis on memo
 
 ## Creating New Files
 
-When creating a new C++ source file (`.cpp`) or header (`.hpp`/`.h`), always include the file header from CLAUDE.md using the `/* */` comment template (C, C++, Objective-C, Swift style).
-
-### Source file template (.cpp):
-
-```cpp
-/*****************************************************************************************
- * example.cpp
- *
- * brief summary of the file contents
- *
- * Author   :  Gary Ash <gary.ash@icloud.com>
- * Created  :  <current date/time>
- * Modified :
- *
- * Copyright © <year> By Gary Ash All rights reserved.
- ****************************************************************************************/
-
-#include "example.hpp"
-```
-
-### Header file template (.hpp):
-
-```cpp
-/*****************************************************************************************
- * example.hpp
- *
- * brief summary of the file contents
- *
- * Author   :  Gary Ash <gary.ash@icloud.com>
- * Created  :  <current date/time>
- * Modified :
- *
- * Copyright © <year> By Gary Ash All rights reserved.
- ****************************************************************************************/
-#pragma once
-```
+When creating a new C++ source file (`.cpp`) or header (`.hpp`/`.h`), always add the header using `file-header-skill` with its `/* */` comment template. In a header, put `#pragma once` directly after the header comment.
 
 Prefer `.hpp`/`.cpp` extensions for C++ files. Use `#pragma once` instead of `#ifndef` include guards.
 
 ## C++ Standard
 
-- Target **C++20** as the default standard unless the project specifies otherwise
-- Use C++23 features only when the project explicitly opts in
-- Set the standard in CMake: `set(CMAKE_CXX_STANDARD 20)` with `set(CMAKE_CXX_STANDARD_REQUIRED ON)`
+- Target **C++23** as the default standard unless the project specifies otherwise
+- Set the standard in CMake: `set(CMAKE_CXX_STANDARD 23)` with `set(CMAKE_CXX_STANDARD_REQUIRED ON)`
 
 ## Memory Safety (Critical)
 
@@ -80,7 +44,7 @@ Memory safety is the top priority. Apply these rules strictly:
 
 ### Array and Buffer Safety
 
-- Use **`.at()`** for bounds-checked access during development/debug builds
+- Bounds-check in development builds with standard-library hardening, enabled by the `ENABLE_SANITIZERS` block: `_LIBCPP_HARDENING_MODE_DEBUG` (libc++, macOS) and `_GLIBCXX_ASSERTIONS` (libstdc++, Linux) make `operator[]`, `front()`, `back()`, and iterators abort on out-of-range access
 - Use **`std::ranges`** algorithms instead of raw pointer iteration
 - Never perform pointer arithmetic on raw pointers — use `std::span` or iterators
 - Always validate sizes before buffer operations
@@ -116,14 +80,29 @@ Always use CMake for cross-platform builds. Minimum CMakeLists.txt:
 cmake_minimum_required(VERSION 3.20)
 project(ProjectName LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+option(ENABLE_SANITIZERS "Enable ASan and UBSan" ON)
+if(ENABLE_SANITIZERS)
+    add_compile_options(-fsanitize=address,undefined -fno-omit-frame-pointer)
+    add_link_options(-fsanitize=address,undefined)
+    add_compile_definitions(
+        _LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_DEBUG
+        _GLIBCXX_ASSERTIONS
+    )
+endif()
+
+add_library(${PROJECT_NAME}_lib src/my_module.cpp)
+target_include_directories(${PROJECT_NAME}_lib PUBLIC include)
+
 add_executable(${PROJECT_NAME} src/main.cpp)
-target_include_directories(${PROJECT_NAME} PRIVATE include)
+target_link_libraries(${PROJECT_NAME} PRIVATE ${PROJECT_NAME}_lib)
 ```
+
+Keep everything except `main()` in the library so the test executable can link the same code.
 
 Key CMake practices:
 - Always set `CMAKE_CXX_EXTENSIONS OFF` to disable compiler-specific extensions
@@ -133,19 +112,17 @@ Key CMake practices:
 
 ### Platform Abstraction
 
-- Use **`std::filesystem`** for all path and file operations (not POSIX or Win32 APIs)
+- Use **`std::filesystem`** for all path and file operations (not POSIX APIs)
 - Use **`std::chrono`** for all time operations
 - Use **`<cstdint>`** fixed-width types: `int32_t`, `uint64_t`, `size_t`, `ptrdiff_t`
-- Use **`std::thread`** / **`std::jthread`** for threading (not pthreads or Win32 threads)
+- Use **`std::thread`** / **`std::jthread`** for threading (not pthreads)
 - Use **`std::format`** (C++20) for string formatting
-- Avoid platform-specific headers (`<windows.h>`, `<unistd.h>`) unless isolated behind abstractions
+- Avoid platform-specific headers (`<unistd.h>`) unless isolated behind abstractions
 
 ### When Platform-Specific Code Is Needed
 
 ```cpp
-#if defined(_WIN32)
-    // Windows-specific code
-#elif defined(__APPLE__)
+#if defined(__APPLE__)
     // macOS/iOS-specific code
 #elif defined(__linux__)
     // Linux-specific code
@@ -169,7 +146,7 @@ Isolate platform-specific code into dedicated source files with a common interfa
 ### Building with CMake
 
 ```bash
-cmake -B build -DCMAKE_BUILD_TYPE=Debug
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
 cmake --build build
 ```
 
@@ -177,7 +154,6 @@ Build types:
 - **Debug**: `-DCMAKE_BUILD_TYPE=Debug` — full debug info, no optimization
 - **Release**: `-DCMAKE_BUILD_TYPE=Release` — optimized, no debug info
 - **RelWithDebInfo**: `-DCMAKE_BUILD_TYPE=RelWithDebInfo` — optimized with debug info
-- **ASAN build**: add `-DCMAKE_CXX_FLAGS="-fsanitize=address -fno-omit-frame-pointer"` and `-DCMAKE_EXE_LINKER_FLAGS="-fsanitize=address"`
 
 ### Running
 
@@ -187,28 +163,20 @@ Build types:
 
 ### Sanitizer Builds (Essential for Memory Safety)
 
-Add a CMake option for sanitizers:
+ASan and UBSan come from the `ENABLE_SANITIZERS` option in the minimum `CMakeLists.txt` above. Keep the option block before any `add_executable`/`add_library`, since `add_compile_options` only affects targets defined after it. When a project's `CMakeLists.txt` lacks the block, add it.
 
-```cmake
-option(ENABLE_SANITIZERS "Enable ASan and UBSan" OFF)
-if(ENABLE_SANITIZERS)
-    add_compile_options(-fsanitize=address,undefined -fno-omit-frame-pointer)
-    add_link_options(-fsanitize=address,undefined)
-endif()
-```
-
-Build with sanitizers:
+Sanitizers are on by default. Turn them off only for release builds:
 
 ```bash
-cmake -B build-asan -DENABLE_SANITIZERS=ON -DCMAKE_BUILD_TYPE=Debug
-cmake --build build-asan
+cmake -B build-release -DENABLE_SANITIZERS=OFF -DCMAKE_BUILD_TYPE=Release
+cmake --build build-release
 ```
 
 Available sanitizers (Clang/GCC):
-- **AddressSanitizer (ASan)**: `-fsanitize=address` — buffer overflows, use-after-free, memory leaks
+- **AddressSanitizer (ASan)**: `-fsanitize=address` — buffer overflows, use-after-free; memory leaks on Linux only (Apple Clang's ASan has no LeakSanitizer — use `leaks --atExit -- ./build/ProjectName` on macOS)
 - **UndefinedBehaviorSanitizer (UBSan)**: `-fsanitize=undefined` — signed overflow, null dereference, alignment
 - **ThreadSanitizer (TSan)**: `-fsanitize=thread` — data races (cannot combine with ASan)
-- **MemorySanitizer (MSan)**: `-fsanitize=memory` — uninitialized reads (Clang only, cannot combine with ASan)
+- **MemorySanitizer (MSan)**: `-fsanitize=memory` — uninitialized reads (Clang on Linux only, cannot combine with ASan)
 
 Always run the test suite under ASan+UBSan before considering code complete.
 
@@ -272,35 +240,20 @@ Always run the test suite under ASan+UBSan before considering code complete.
 - Memory error detection: `valgrind --leak-check=full ./build/ProjectName`
 - Detailed: `valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./build/ProjectName`
 
+## Formatting
+
+- Format with **uncrustify**: `uncrustify --no-backup <files>`
+- Honor the project's `uncrustify.cfg` if present: `uncrustify -c uncrustify.cfg --no-backup <files>`
+- Verify without changing: add `--check`
+- Pass only the paths you changed — never run it across the whole tree
+
 ## Static Analysis
-
-### clang-tidy
-
-- Run: `clang-tidy src/*.cpp -- -std=c++20 -Iinclude`
-- With compile_commands.json: `clang-tidy -p build src/*.cpp`
-- Fix in place: `clang-tidy -fix -p build src/*.cpp`
-- Key check categories:
-  - `cppcoreguidelines-*` — C++ Core Guidelines compliance
-  - `modernize-*` — modernize legacy code
-  - `bugprone-*` — common bug patterns
-  - `performance-*` — performance improvements
-  - `readability-*` — readability improvements
-- Configure via `.clang-tidy` file in project root:
-  ```yaml
-  Checks: >
-    -*,
-    bugprone-*,
-    cppcoreguidelines-*,
-    modernize-*,
-    performance-*,
-    readability-*
-  WarningsAsErrors: 'bugprone-*'
-  ```
 
 ### cppcheck
 
-- Run: `cppcheck --enable=all --std=c++20 --suppress=missingIncludeSystem src/`
-- Check a single file: `cppcheck --enable=all --std=c++20 src/file.cpp`
+- Pass only the files you changed — never run it across the whole tree:
+  `cppcheck --enable=warning,style,performance,portability --std=c++23 --suppress=missingIncludeSystem -Iinclude <files>`
+- Don't use `--enable=all` on a subset of files: it turns on `unusedFunction`, which reports false positives unless the whole program is checked
 
 ### Compiler Warnings (Always Enable)
 
@@ -308,7 +261,7 @@ Add to CMakeLists.txt:
 
 ```cmake
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
-    target_compile_options(${PROJECT_NAME} PRIVATE
+    target_compile_options(${PROJECT_NAME}_lib PRIVATE
         -Wall -Wextra -Wpedantic -Werror
         -Wconversion -Wsign-conversion
         -Wnon-virtual-dtor -Wold-style-cast
@@ -316,11 +269,6 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
         -Wshadow -Wnull-dereference
         -Wdouble-promotion -Wformat=2
         -Wimplicit-fallthrough
-    )
-elseif(MSVC)
-    target_compile_options(${PROJECT_NAME} PRIVATE
-        /W4 /WX /permissive-
-        /w14640 /w14826 /w14928
     )
 endif()
 ```
@@ -342,7 +290,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 add_executable(tests tests/test_main.cpp)
-target_link_libraries(tests PRIVATE GTest::gtest_main)
+target_link_libraries(tests PRIVATE ${PROJECT_NAME}_lib GTest::gtest_main)
 include(GoogleTest)
 gtest_discover_tests(tests)
 ```
@@ -362,10 +310,9 @@ TEST(MyModuleTest, EdgeCase) {
     EXPECT_THROW(my_function(-1, 0), std::invalid_argument);
 }
 
-TEST(MyModuleTest, NoLeaks) {
+TEST(MyModuleTest, CreatesResource) {
     auto ptr = create_resource();
     ASSERT_NE(ptr, nullptr);
-    // unique_ptr ensures cleanup — no manual delete needed
 }
 ```
 
@@ -376,46 +323,19 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-### Catch2 (alternative)
+## Dependency Management
+
+Prefer the standard library (e.g. `std::format` over `fmt`) before adding a dependency.
+When one is needed, use FetchContent pinned to a release tag:
 
 ```cmake
 FetchContent_Declare(
-    Catch2
-    GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-    GIT_TAG        v3.7.1
+    <name>
+    GIT_REPOSITORY https://github.com/<owner>/<repo>.git
+    GIT_TAG        <release-tag>
 )
-FetchContent_MakeAvailable(Catch2)
-
-add_executable(tests tests/test_main.cpp)
-target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
-```
-
-## Common Cross-Platform Dependency Management
-
-### FetchContent (preferred for small deps)
-
-```cmake
-FetchContent_Declare(
-    fmt
-    GIT_REPOSITORY https://github.com/fmtlib/fmt.git
-    GIT_TAG        11.1.4
-)
-FetchContent_MakeAvailable(fmt)
-target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt)
-```
-
-### vcpkg
-
-```bash
-vcpkg install fmt nlohmann-json
-cmake -B build -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
-```
-
-### Conan
-
-```bash
-conan install . --build=missing
-cmake -B build -DCMAKE_TOOLCHAIN_FILE=build/conan_toolchain.cmake
+FetchContent_MakeAvailable(<name>)
+target_link_libraries(${PROJECT_NAME} PRIVATE <name>::<name>)
 ```
 
 ## Argument Handling
@@ -425,6 +345,6 @@ cmake -B build -DCMAKE_TOOLCHAIN_FILE=build/conan_toolchain.cmake
 - If `$ARGUMENTS` is "build", configure and build the CMake project
 - If `$ARGUMENTS` is "run", build and run the project executable
 - If `$ARGUMENTS` is "test", build and run the test suite
-- If `$ARGUMENTS` is "check", run clang-tidy and cppcheck on the source tree
+- If `$ARGUMENTS` is "check", run cppcheck on the files you changed
 - If `$ARGUMENTS` is "sanitize", build with ASan+UBSan and run the test suite
 - Otherwise, treat `$ARGUMENTS` as a general C++ development request

@@ -1,5 +1,5 @@
 ---
-name: commit
+name: git-commit-skill
 description: Generate Git commit messages following project conventions. Use when the user wants to commit changes or asks for a commit message. Analyzes staged/unstaged changes and produces properly formatted commit messages with tags, capitalized summaries, and prose bodies.
 allowed-tools: Read, Bash, Grep, Glob, AskUserQuestion
 argument-hint: [description of changes]
@@ -21,11 +21,14 @@ Detailed description of the change, written in prose and wrapped at
 
 ## Tags
 
-- `[BUG FIX]` = A bug fix
-- `[FEATURE]` = New feature code
+- `[BUG FIX]` = A bug fix, including a fix to a misconfigured setting or document
+- `[FEATURE]` = New feature code, including a new or updated configuration,
+  document, or dependency version
 - `[REFACTOR]` = A code refactor
-- `[TEST CODE]` = Added test code
-- `[TIDY]` = A tidy up action such as reformatting or spelling fixes
+- `[TEST CODE]` = Added test code only; a test written together with the code
+  it drives (a TDD cycle) takes the tag of that code change
+- `[TIDY]` = A tidy up action such as reformatting or spelling fixes, in code
+  or documents
 
 ## Special Case
 
@@ -59,9 +62,9 @@ No tag, no body.
 2. Run `git diff --cached` to see staged changes; if nothing is staged, run `git diff` to see unstaged changes
 3. Check `git log --oneline -1` to determine if this is the first commit (if it errors, it is the first commit)
 4. Analyze the changes to determine the appropriate tag and write a clear summary and description
-5. Check for a README file at the repo root (`README.markdown` (preferred), `README.md`, `README`, `README.rst`, `README.txt`). If one exists, read it and determine whether the changes make any part of it stale or incomplete (features added/removed, usage changed, install steps, options, file layout, etc.). If so, update the README in the same commit. If the README is unaffected, proceed without changes.
+5. Check for a README file at the repo root (`README.markdown` (preferred), `README.md`, `README`, `README.rst`, `README.txt`), matching the name case-insensitively so `Readme.md` counts. If one exists, read it and determine whether the changes make any part of it stale or incomplete (features added/removed, usage changed, install steps, options, file layout, etc.). If so, tell the user which part is stale and ask whether to update it in this commit. If the README is unaffected, proceed without changes.
 6. Stage files if needed (prefer staging specific files over `git add -A`)
-7. Write the message to `.git/COMMIT_EDITMSG` using a quoted HEREDOC:
+7. Write the message to `COMMIT_EDITMSG` in the Git directory (`$(git rev-parse --git-dir)`, which is not always `.git`) using a quoted HEREDOC:
    ```
    cat > "$(git rev-parse --git-dir)/COMMIT_EDITMSG" <<'EOF'
    [TAG] Short summary opening with a capital
@@ -95,7 +98,7 @@ Proceed to the commit. Change nothing about the text.
    **Ignore `$GIT_EDITOR`** — Claude Code sets it to `true` in the environment,
    so it silently makes no edit. If none of the three is set, tell the user and
    fall back to the manual path below.
-2. Launch the editor on `.git/COMMIT_EDITMSG` from Bash with a 600000 ms
+2. Launch the editor on `"$(git rev-parse --git-dir)/COMMIT_EDITMSG"` from Bash with a 600000 ms
    timeout, and only with an option that makes it block until the file is
    closed (`--wait`, `-w`, `--block`). A GUI editor such as `bbedit --wait`
    blocks correctly this way.
@@ -103,10 +106,12 @@ Proceed to the commit. Change nothing about the text.
    Bash tool and will fail or return instantly. When the resolved editor is one
    of those — or the launch errors, or returns with the file unchanged — do not
    retry: ask the user to run it themselves by typing
-   `! <editor> .git/COMMIT_EDITMSG` at the prompt, then wait for them to say
-   they are done.
+   `! <editor> <path>` at the prompt, with `<path>` replaced by the absolute
+   path of the message file (resolve `$(git rev-parse --git-dir)` first), then
+   wait for them to say they are done.
 4. Read the file back. Strip lines beginning with `#` and any trailing blank
-   lines.
+   lines, and write the stripped text back to the file — `git commit -F`
+   keeps `#` lines unless they are removed.
 5. If what remains is empty or whitespace only, the commit is aborted — same as
    Git's own behavior. Say so and stop.
 6. Use the edited text verbatim. Do not reformat it, re-wrap it, re-tag it, or

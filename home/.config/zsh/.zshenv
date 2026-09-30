@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  30-Mar-2026  2:27pm
+# Modified :  24-Sep-2026  9:04pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -52,6 +52,11 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 export RBENV_ROOT="/opt/venv/ruby"
 export COCOAPODS_DISABLE_STATS=1
 export CP_HOME_DIR="$XDG_CACHE_HOME/.cocoapods/"
+
+#*****************************************************************************************
+# Perl
+#*****************************************************************************************
+export PERLTIDY="$XDG_CONFIG_HOME/perltidy/perltidyrc"
 
 #*****************************************************************************************
 # Utility configs

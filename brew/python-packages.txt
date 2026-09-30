@@ -1,3 +1,4 @@
+ast_serialize
 astroid
 autopep8
 black
@@ -6,9 +7,12 @@ dill
 docstring-to-markdown
 flake8
 importlib_metadata
+iniconfig
 isort
 jedi
+librt
 mccabe
+mypy
 mypy_extensions
 packaging
 parso
@@ -19,12 +23,15 @@ pluggy
 pycodestyle
 pydocstyle
 pyflakes
+Pygments
 pylint
+pytest
 python-lsp-jsonrpc
 python-lsp-server
 pytokens
 pytoolconfig
 rope
+ruff
 snowballstemmer
 tomlkit
 typing_extensions

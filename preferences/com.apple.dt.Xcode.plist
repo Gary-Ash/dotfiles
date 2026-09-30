@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AgentExecutableLastNotifiedVersion-claude</key>
+	<string>2.1.220</string>
 	<key>AppleICUDateFormatStrings</key>
 	<dict>
 		<key>1</key>
@@ -17,7 +19,7 @@
 	<key>DVTDisclosureViewDisclosedStates</key>
 	<dict/>
 	<key>DVTEnableOnDeviceCodePredictions</key>
-	<false/>
+	<true/>
 	<key>DVTFontAndColorLastUpdatedToolsVersion</key>
 	<string>16.0</string>
 	<key>DVTSourceEditorCursor</key>
@@ -25,6 +27,8 @@
 	<key>DVTTextAlignConsecutiveSlashSlashComments</key>
 	<true/>
 	<key>DVTTextAutoSuggestCompletions</key>
+	<true/>
+	<key>DVTTextAutoSuggestPredictiveCompletion</key>
 	<true/>
 	<key>DVTTextEditorTrimWhitespaceOnlyLines</key>
 	<true/>
@@ -154,7 +158,7 @@
 	<key>IDEBuildingContinueBuildingAfterErrors</key>
 	<true/>
 	<key>IDEChatClaudeAgentModelConfigurationAlias</key>
-	<string>opus</string>
+	<string>sonnet</string>
 	<key>IDEChatCurrentErrorsContextEnabled</key>
 	<true/>
 	<key>IDEChatIsBuiltInChatGPTEnabled</key>
@@ -452,7 +456,7 @@
 	<key>IDEStringCatalogAutomaticCommentGenerationEnabled</key>
 	<true/>
 	<key>IDESwiftPackageCollectionsAddedDefaultCollectionsDVTToolsVersion</key>
-	<string>Xcode 26.1.1</string>
+	<string>Xcode 27.0.0</string>
 	<key>IDETestActionSelectedTab</key>
 	<string>Info</string>
 	<key>IDEWindowTabsHaveIndependentSidebarWidths</key>
@@ -479,8 +483,8 @@
 	<string>{1074, 855}</string>
 	<key>NSSplitView Subview Frames DVTWorkspaceThemeEditor</key>
 	<array>
-		<string>0.000000, 0.000000, 530.000000, 360.000000, NO, NO</string>
-		<string>0.000000, 361.000000, 530.000000, 309.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 814.000000, 337.500000, NO, NO</string>
+		<string>0.000000, 338.500000, 814.000000, 446.500000, NO, NO</string>
 	</array>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
@@ -630,7 +634,7 @@
 	<key>NSWindow Frame IDEPreferencesPanel</key>
 	<string>865 687 830 507 0 0 2560 1415 </string>
 	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>924 267 710 722 0 0 2560 1410 </string>
+	<string>877 260 994 837 0 0 2560 1410 </string>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 123 228 335 0 0 2560 1415 </string>
 	<key>NSWindow Frame NSFontPanel</key>
@@ -650,22 +654,22 @@
 	<key>ProductMappingKey</key>
 	<data>
 	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
-	Wmxhc3RPcGVuZWRfEEIvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9GbGFz
-	aHlDYXJkcy9GbGFzaHlDYXJkcy54Y29kZXByb2qgM0HILjqNpuJMCAsTFRwqMz6DhAAA
-	AAAAAAEBAAAAAAAAAAoAAAAAAAAAAAAAAAAAAACN
+	Wmxhc3RPcGVuZWRfEEMvVXNlcnMvZ2FyeWFzaC9Eb3dubG9hZHMvWENTbmlwcGV0c0Fw
+	cC1tYWluL1hDU25pcHBldHNBcHAueGNvZGVwcm9qoDNByDRTav8ZLwgLExUcKjM+hIUA
+	AAAAAAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAjg==
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
-	<string>23F77</string>
+	<string>24A434</string>
 	<key>UVLastDeviceSetPurge-tvOS</key>
-	<string>23L470</string>
+	<string>24J360</string>
 	<key>UVLastDeviceSetPurge-watchOS</key>
-	<string>23T570</string>
+	<string>24R362</string>
 	<key>UVLastUsedDate</key>
 	<data>
 	ODA4ODYwMDQzLjM3MTk3MQ==
 	</data>
 	<key>VerticalSplitView.topHeight.DVTWorkspaceThemeEditor</key>
-	<real>360</real>
+	<real>337.5</real>
 	<key>WebKitUseSystemAppearance</key>
 	<true/>
 	<key>XCFontAndColorCurrentDarkTheme</key>

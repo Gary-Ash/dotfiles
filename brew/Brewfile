@@ -6,6 +6,8 @@ brew "libgit2"
 brew "bat"
 # Bash Automated Testing System
 brew "bats-core"
+# Statistics utility to count lines of code
+brew "cloc"
 # Cross-platform make
 brew "cmake"
 # Syntax-highlighting pager for git and diff output
