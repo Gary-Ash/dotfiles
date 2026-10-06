@@ -66,8 +66,10 @@ tell script "BBEditUtilities"
 	end if
 	
 	if license is not equal to "" then
-		set license to (wordWrap(license, insideLine, 89))
-		set comment to comment & license
+		tell script "TextUtilities"
+			set license to (wordWrap(license, insideLine, 89))
+			set comment to comment & license
+		end tell
 	end if
 	
 	set decoratorCount to 90 - (length of (item 2 of commentCharacters))

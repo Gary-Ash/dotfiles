@@ -29,17 +29,40 @@
     }
   },
   "hasResetAutoModeOptInForDefaultOffer": true,
-  "additionalModelOptionsAnsweredAt": 1791074260335,
-  "githubWebConnectionStatusCache": {
-    "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
-    "orgUuid": "44ed8be7-c6d4-430e-9a86-ed8efc92979c",
-    "status": "connected"
-  },
   "hasSeenAutoModeOutsideReadPrompt": true,
-  "metricsStatusCache": {
-    "enabled": true,
-    "timestamp": 1788813401162
+  "tipsHistoryByCommand": {
+    "memory": {
+      "tipId": "memory-command",
+      "numStartups": 1
+    },
+    "install-github-app": {
+      "tipId": "install-github-app",
+      "numStartups": 2
+    },
+    "install-slack-app": {
+      "tipId": "install-slack-app",
+      "numStartups": 1
+    },
+    "desktop": {
+      "tipId": "desktop-ios-simulator",
+      "numStartups": 1
+    },
+    "focus": {
+      "tipId": "focus-view",
+      "numStartups": 1
+    }
   },
+  "promoStartupStatusCache": {
+    "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
+    "endpoint": "/v1/code/promo/cloud_credit",
+    "eligible": true,
+    "claimed": false,
+    "checkedAt": 1791160387810
+  },
+  "voiceLangHintShownCount": 1,
+  "voiceLangHintLastLanguage": "en",
+  "voiceFooterHintSeenCount": 3,
+  "additionalModelOptionsAnsweredAt": 1791158797949,
   "cachedArtifactRoster": {
     "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
     "organizationUuid": "44ed8be7-c6d4-430e-9a86-ed8efc92979c",
@@ -58,38 +81,11 @@
       "self",
       "user"
     ],
-    "fetchedAt": 1791074254638
+    "fetchedAt": 1791158829515
   },
-  "tipsHistoryByCommand": {
-    "memory": {
-      "tipId": "memory-command",
-      "numStartups": 1
-    },
-    "install-github-app": {
-      "tipId": "install-github-app",
-      "numStartups": 1
-    },
-    "install-slack-app": {
-      "tipId": "install-slack-app",
-      "numStartups": 1
-    },
-    "desktop": {
-      "tipId": "desktop-shortcut",
-      "numStartups": 1
-    },
-    "focus": {
-      "tipId": "focus-view",
-      "numStartups": 1
-    }
-  },
-  "promoStartupStatusCache": {
+  "githubWebConnectionStatusCache": {
     "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
-    "endpoint": "/v1/code/promo/cloud_credit",
-    "eligible": true,
-    "claimed": false,
-    "checkedAt": 1790738791989
-  },
-  "voiceLangHintShownCount": 1,
-  "voiceLangHintLastLanguage": "en",
-  "voiceFooterHintSeenCount": 3
+    "orgUuid": "44ed8be7-c6d4-430e-9a86-ed8efc92979c",
+    "status": "connected"
+  }
 }
