@@ -127,7 +127,7 @@ Two directories are `.gitignore`d because they are separate clones:
 
 ## Homebrew Packages
 
-37 formulae and 1 cask across 4 taps. npm globals are kept separately — see below.
+38 formulae and 1 cask across 4 taps. npm globals are kept separately — see below.
 
 | Category | Packages |
 |----------|----------|
@@ -140,7 +140,7 @@ Two directories are `.gitignore`d because they are separate clones:
 | Build | `cmake` |
 | Swift / Xcode | `swiftformat`, `swiftlint`, `swiftformat-for-xcode` (cask) |
 | Formatters / Linters | `shfmt`, `shellcheck`, `perltidy`, `uncrustify` |
-| Testing | `bats-core` |
+| Testing | `bats-core`, `googletest` |
 | Misc | `mole`, `sshpass`, `hello` |
 
 Language package manifests, each installed by `bootstrap.sh` rather than by

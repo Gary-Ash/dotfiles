@@ -26,6 +26,8 @@ brew "git"
 brew "git-lfs"
 # GitHub Model Context Protocol server for AI tools
 brew "github-mcp-server"
+# Google Testing and Mocking Framework
+brew "googletest"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor

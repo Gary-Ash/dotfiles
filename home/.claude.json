@@ -62,11 +62,11 @@
   "voiceLangHintShownCount": 1,
   "voiceLangHintLastLanguage": "en",
   "voiceFooterHintSeenCount": 3,
-  "additionalModelOptionsAnsweredAt": 1791158797949,
+  "additionalModelOptionsAnsweredAt": 1791835442516,
   "cachedArtifactRoster": {
     "accountUuid": "00000000-0000-0000-0000-000000000000",
     "organizationUuid": "00000000-0000-0000-0000-000000000000",
-    "version": "0.2.67",
+    "version": "0.2.75",
     "capabilities": [
       "artifact",
       "assets",
@@ -81,7 +81,7 @@
       "self",
       "user"
     ],
-    "fetchedAt": 1791158829515
+    "fetchedAt": 1791832776964
   },
   "githubWebConnectionStatusCache": {
     "accountUuid": "00000000-0000-0000-0000-000000000000",
