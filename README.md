@@ -236,7 +236,9 @@ lives outside `~/Developer/GeeDblA` never sees them. There are two:
 
 ## Claude Code
 
-Everything under `home/.claude/`.
+The Claude Code configuration under `home/.claude/`. Caches, logs, transcripts,
+and the server-synced plugins are left out, and `.claude.json` is scrubbed of
+usage history and anything identifying the machine or account.
 
 - **`CLAUDE.md`** — global guidelines: TDD Kent Beck style, Tidy First, Swift
   primary (SPM + swift-testing), Python 3.10+ stdlib-only, C++20 with CMake and
@@ -253,17 +255,8 @@ Everything under `home/.claude/`.
 
 ### Skills
 
-| Skill | Purpose |
-|-------|---------|
-| `applescript` | AppleScript authoring, compiling, and System Events automation |
-| `bash` | Bash script scaffolding, execution, debugging |
-| `cpp` | Modern C++ with memory-safe idioms and cross-platform CMake |
-| `perl` | Perl scripts and modules |
-| `python3` | Python scripts and packages |
-| `file-header` | Consistent metadata headers with correct comment syntax per language |
-| `commit` | Commit messages following the tag and capitalization conventions |
-| `github-cli` | `gh` workflows for issues, PRs, releases *(separate clone)* |
-| `discovery-tree` | Mermaid Discovery Tree task visualization |
+Skills are not kept in this repository. The ones I wrote are published in
+[`Gary-Ash/AI-Tools`](https://github.com/Gary-Ash/AI-Tools).
 
 ### Plugins
 
