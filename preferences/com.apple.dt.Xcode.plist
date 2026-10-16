@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AgentExecutableLastNotifiedVersion-claude</key>
-	<string>2.1.220</string>
 	<key>AppleICUDateFormatStrings</key>
 	<dict>
 		<key>1</key>
@@ -65,33 +63,34 @@
 	eyJmb250cyI6W3siY29kZSI6e319LHsiY2F0ZWdvcnkiOnsiY29kZSI6e319LCJkaXNw
 	bGF5TW9kZXMiOlt7InN0YW5kYXJkIjp7fX0seyJjYXRlZ29yeSI6eyJjb2RlIjp7fX0s
 	ImNvbnRlbnQiOnsiY3VzdG9tIjp7ImF1dG9tYXRpY1NpemUiOmZhbHNlLCJkYXJrIjp7
-	ImZhbWlseSI6eyJjdXN0b20iOnsiXzAiOiJQcmFnbWF0YVBybyBMaWdhIn19LCJzaXpl
-	IjoxMiwidmFyaWFudCI6eyJpZGVudGlmaWVyIjoiUHJhZ21hdGFQcm9MaWdhLVJlZ3Vs
-	YXIiLCJzbGFudCI6eyJ2YWx1ZSI6MH0sIndlaWdodCI6NCwid2lkdGgiOnsidmFsdWUi
-	OjB9fX0sImxpZ2h0Ijp7ImZhbWlseSI6eyJjdXN0b20iOnsiXzAiOiJQcmFnbWF0YVBy
-	byBMaWdhIn19LCJzaXplIjoxMiwidmFyaWFudCI6eyJpZGVudGlmaWVyIjoiUHJhZ21h
-	dGFQcm9MaWdhLVJlZ3VsYXIiLCJzbGFudCI6eyJ2YWx1ZSI6MH0sIndlaWdodCI6NCwi
-	d2lkdGgiOnsidmFsdWUiOjB9fX19fX1dfSx7ImNvbnNvbGUiOnt9fSx7ImNhdGVnb3J5
-	Ijp7ImNvbnNvbGUiOnt9fSwiZGlzcGxheU1vZGVzIjpbeyJzdGFuZGFyZCI6e319LHsi
-	Y2F0ZWdvcnkiOnsiY29uc29sZSI6e319LCJjb250ZW50Ijp7ImN1c3RvbSI6eyJhdXRv
-	bWF0aWNTaXplIjp0cnVlLCJkYXJrIjp7ImZhbWlseSI6eyJjdXN0b20iOnsiXzAiOiJQ
+	ImZhbWlseSI6eyJjdXN0b20iOnsiXzAiOiJQcmFnbWF0YVBybyBNb25vIExpZ2EifX0s
+	InNpemUiOjEyLCJ2YXJpYW50Ijp7ImlkZW50aWZpZXIiOiJQcmFnbWF0YVByb01vbm9M
+	aWdhLVJlZ3VsYXIiLCJzbGFudCI6eyJ2YWx1ZSI6MH0sIndlaWdodCI6NCwid2lkdGgi
+	OnsidmFsdWUiOjB9fX0sImxpZ2h0Ijp7ImZhbWlseSI6eyJjdXN0b20iOnsiXzAiOiJQ
 	cmFnbWF0YVBybyBNb25vIExpZ2EifX0sInNpemUiOjEyLCJ2YXJpYW50Ijp7ImlkZW50
 	aWZpZXIiOiJQcmFnbWF0YVByb01vbm9MaWdhLVJlZ3VsYXIiLCJzbGFudCI6eyJ2YWx1
-	ZSI6MH0sIndlaWdodCI6NCwid2lkdGgiOnsidmFsdWUiOjB9fX0sImxpZ2h0Ijp7ImZh
-	bWlseSI6eyJjdXN0b20iOnsiXzAiOiJQcmFnbWF0YVBybyBNb25vIExpZ2EifX0sInNp
-	emUiOjEyLCJ2YXJpYW50Ijp7ImlkZW50aWZpZXIiOiJQcmFnbWF0YVByb01vbm9MaWdh
-	LVJlZ3VsYXIiLCJzbGFudCI6eyJ2YWx1ZSI6MH0sIndlaWdodCI6NCwid2lkdGgiOnsi
-	dmFsdWUiOjB9fX19fX1dfSx7InByb3NlIjp7fX0seyJjYXRlZ29yeSI6eyJwcm9zZSI6
-	e319LCJkaXNwbGF5TW9kZXMiOlt7InN0YW5kYXJkIjp7fX0seyJjYXRlZ29yeSI6eyJw
-	cm9zZSI6e319LCJjb250ZW50Ijp7ImN1c3RvbSI6eyJhdXRvbWF0aWNTaXplIjpmYWxz
-	ZSwiZGFyayI6eyJmYW1pbHkiOnsiY3VzdG9tIjp7Il8wIjoiUHJhZ21hdGFQcm8gTGln
-	YSJ9fSwic2l6ZSI6MTIsInZhcmlhbnQiOnsiaWRlbnRpZmllciI6IlByYWdtYXRhUHJv
-	TGlnYS1JdGFsaWMiLCJzbGFudCI6eyJ2YWx1ZSI6MC4wNjk0NDQ0NDAzMDUyMzN9LCJ3
-	ZWlnaHQiOjQsIndpZHRoIjp7InZhbHVlIjowfX19LCJsaWdodCI6eyJmYW1pbHkiOnsi
-	Y3VzdG9tIjp7Il8wIjoiUHJhZ21hdGFQcm8gTGlnYSJ9fSwic2l6ZSI6MTIsInZhcmlh
-	bnQiOnsiaWRlbnRpZmllciI6IlByYWdtYXRhUHJvTGlnYS1JdGFsaWMiLCJzbGFudCI6
-	eyJ2YWx1ZSI6MC4wNjk0NDQ0NDAzMDUyMzN9LCJ3ZWlnaHQiOjQsIndpZHRoIjp7InZh
-	bHVlIjowfX19fX19XX1dLCJsaW5lU3BhY2luZyI6eyJub3JtYWwiOnt9fX0=
+	ZSI6MH0sIndlaWdodCI6NCwid2lkdGgiOnsidmFsdWUiOjB9fX19fX1dfSx7InByb3Nl
+	Ijp7fX0seyJjYXRlZ29yeSI6eyJwcm9zZSI6e319LCJkaXNwbGF5TW9kZXMiOlt7InN0
+	YW5kYXJkIjp7fX0seyJjYXRlZ29yeSI6eyJwcm9zZSI6e319LCJjb250ZW50Ijp7ImN1
+	c3RvbSI6eyJhdXRvbWF0aWNTaXplIjpmYWxzZSwiZGFyayI6eyJmYW1pbHkiOnsiY3Vz
+	dG9tIjp7Il8wIjoiUHJhZ21hdGFQcm8gTW9ubyBMaWdhIn19LCJzaXplIjoxMiwidmFy
+	aWFudCI6eyJpZGVudGlmaWVyIjoiUHJhZ21hdGFQcm9Nb25vTGlnYS1JdGFsaWMiLCJz
+	bGFudCI6eyJ2YWx1ZSI6MC4wNjk0NDQ0NDAzMDUyMzN9LCJ3ZWlnaHQiOjQsIndpZHRo
+	Ijp7InZhbHVlIjowfX19LCJsaWdodCI6eyJmYW1pbHkiOnsiY3VzdG9tIjp7Il8wIjoi
+	UHJhZ21hdGFQcm8gTW9ubyBMaWdhIn19LCJzaXplIjoxMiwidmFyaWFudCI6eyJpZGVu
+	dGlmaWVyIjoiUHJhZ21hdGFQcm9Nb25vTGlnYS1JdGFsaWMiLCJzbGFudCI6eyJ2YWx1
+	ZSI6MC4wNjk0NDQ0NDAzMDUyMzN9LCJ3ZWlnaHQiOjQsIndpZHRoIjp7InZhbHVlIjow
+	fX19fX19XX0seyJjb25zb2xlIjp7fX0seyJjYXRlZ29yeSI6eyJjb25zb2xlIjp7fX0s
+	ImRpc3BsYXlNb2RlcyI6W3sic3RhbmRhcmQiOnt9fSx7ImNhdGVnb3J5Ijp7ImNvbnNv
+	bGUiOnt9fSwiY29udGVudCI6eyJjdXN0b20iOnsiYXV0b21hdGljU2l6ZSI6ZmFsc2Us
+	ImRhcmsiOnsiZmFtaWx5Ijp7ImN1c3RvbSI6eyJfMCI6IlByYWdtYXRhUHJvIE1vbm8g
+	TGlnYSJ9fSwic2l6ZSI6MTEsInZhcmlhbnQiOnsiaWRlbnRpZmllciI6IlByYWdtYXRh
+	UHJvTW9ub0xpZ2EtUmVndWxhciIsInNsYW50Ijp7InZhbHVlIjowfSwid2VpZ2h0Ijo0
+	LCJ3aWR0aCI6eyJ2YWx1ZSI6MH19fSwibGlnaHQiOnsiZmFtaWx5Ijp7ImN1c3RvbSI6
+	eyJfMCI6IlByYWdtYXRhUHJvIE1vbm8gTGlnYSJ9fSwic2l6ZSI6MTEsInZhcmlhbnQi
+	OnsiaWRlbnRpZmllciI6IlByYWdtYXRhUHJvTW9ub0xpZ2EtUmVndWxhciIsInNsYW50
+	Ijp7InZhbHVlIjowfSwid2VpZ2h0Ijo0LCJ3aWR0aCI6eyJ2YWx1ZSI6MH19fX19fV19
+	XSwibGluZVNwYWNpbmciOnsibm9ybWFsIjp7fX19
 	</data>
 	<key>DVTWorkspaceRecipeLastUsedDates</key>
 	<data>
@@ -455,8 +454,6 @@
 	<dict/>
 	<key>IDEStringCatalogAutomaticCommentGenerationEnabled</key>
 	<true/>
-	<key>IDESwiftPackageCollectionsAddedDefaultCollectionsDVTToolsVersion</key>
-	<string>Xcode 27.0.0</string>
 	<key>IDETestActionSelectedTab</key>
 	<string>Info</string>
 	<key>IDEWindowTabsHaveIndependentSidebarWidths</key>
@@ -465,6 +462,8 @@
 	<true/>
 	<key>IDE_CA_Daily_LanguageModel</key>
 	<string>enabled,usable</string>
+	<key>IDE_CA_Daily_RunMTC</key>
+	<true/>
 	<key>IDE_CA_Daily_UsedScriptingAPI</key>
 	<true/>
 	<key>LastExplicitInspectorVisibility</key>
@@ -481,21 +480,6 @@
 	<string>{1258, 928}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{1074, 855}</string>
-	<key>NSSplitView Subview Frames DVTWorkspaceThemeEditor</key>
-	<array>
-		<string>0.000000, 0.000000, 814.000000, 337.500000, NO, NO</string>
-		<string>0.000000, 338.500000, 814.000000, 446.500000, NO, NO</string>
-	</array>
-	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 228.000000, 315.000000, NO, NO</string>
-		<string>0.000000, 316.000000, 228.000000, 48.000000, NO, NO</string>
-	</array>
-	<key>NSSplitView Subview Frames com.apple.dt.Xcode.DevicesWidow.DevicesSplit</key>
-	<array>
-		<string>0.000000, 0.000000, 178.500000, 700.000000, NO, NO</string>
-		<string>178.500000, 0.000000, 1005.500000, 700.000000, NO, NO</string>
-	</array>
 	<key>NSTableView Columns v3 PlistColumns</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -619,44 +603,14 @@
 		<key>XcodeFormatOnSave</key>
 		<string>@s</string>
 	</dict>
-	<key>NSWindow Frame AppShortcutsEditorUI</key>
-	<string>1030 349 650 800 0 0 2560 1410 </string>
-	<key>NSWindow Frame Documentation Viewer Window</key>
-	<string>841 530 1024 730 0 0 2560 1410 </string>
-	<key>NSWindow Frame IDEDownloadProgressWindow</key>
-	<string>1944 866 400 436 0 0 2560 1410 </string>
-	<key>NSWindow Frame IDEEditContextSheet</key>
-	<string>1176 572 534 341 0 0 2560 1409 </string>
-	<key>NSWindow Frame IDEEditSchemeWindow</key>
-	<string>960 475 965 504 0 0 2560 1410 </string>
-	<key>NSWindow Frame IDEManageRunContextSheet</key>
-	<string>1059 513 768 461 0 0 2560 1410 </string>
-	<key>NSWindow Frame IDEPreferencesPanel</key>
-	<string>865 687 830 507 0 0 2560 1415 </string>
-	<key>NSWindow Frame IDESettingsPanel</key>
-	<string>877 208 994 837 0 0 2560 1410 </string>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>0 123 228 335 0 0 2560 1415 </string>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>2045 99 478 281 0 0 2560 1410 </string>
-	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>814 263 1258 928 0 0 2560 1409 </string>
-	<key>NSWindow Frame NSSpellCheckerSpellingPanel</key>
-	<string>814 645 431 289 0 0 2560 1409 </string>
-	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
-	<string>692 392 359 150 0 0 2560 1410 </string>
-	<key>NSWindow Frame Products</key>
-	<string>768 588 1024 640 0 0 2560 1410 </string>
-	<key>NSWindow Frame com.apple.dt.xcode.devicesWindow</key>
-	<string>734 543 1184 700 0 0 2560 1410 </string>
 	<key>PegasusMultipleCursorsEnabled</key>
 	<true/>
 	<key>ProductMappingKey</key>
 	<data>
 	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
-	Wmxhc3RPcGVuZWRfEEMvVXNlcnMvZ2FyeWFzaC9Eb3dubG9hZHMvWENTbmlwcGV0c0Fw
-	cC1tYWluL1hDU25pcHBldHNBcHAueGNvZGVwcm9qoDNByDRTav8ZLwgLExUcKjM+hIUA
-	AAAAAAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAjg==
+	Wmxhc3RPcGVuZWRfEEIvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9GbGFz
+	aHlDYXJkcy9GbGFzaHlDYXJkcy54Y29kZXByb2qgM0HIPtYr9rpzCAsTFRwqMz6DhAAA
+	AAAAAAEBAAAAAAAAAAoAAAAAAAAAAAAAAAAAAACN
 	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
 	<string>24A434</string>
@@ -669,7 +623,7 @@
 	ODA4ODYwMDQzLjM3MTk3MQ==
 	</data>
 	<key>VerticalSplitView.topHeight.DVTWorkspaceThemeEditor</key>
-	<real>337.5</real>
+	<real>316.5</real>
 	<key>WebKitUseSystemAppearance</key>
 	<true/>
 	<key>XCFontAndColorCurrentDarkTheme</key>

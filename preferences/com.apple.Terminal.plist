@@ -22,36 +22,11 @@
 	<string>{800, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{800, 448}</string>
-	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 255.000000, 439.500000, NO, NO</string>
-		<string>0.000000, 440.500000, 255.000000, 43.500000, NO, NO</string>
-	</array>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>452 130 275 474 0 0 2560 1410 </string>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>1588 164 543 281 0 0 2560 1410 </string>
-	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>881 887 800 448 0 0 2560 1415 </string>
-	<key>NSWindow Frame TTAppPreferences</key>
-	<string>947 838 667 572 0 0 2560 1410 </string>
-	<key>NSWindow Frame TTWindow</key>
-	<string>730 170 1100 1099 0 0 2560 1410 </string>
-	<key>NSWindow Frame TTWindow Basic</key>
-	<string>995 541 570 371 0 0 2560 1415 </string>
-	<key>NSWindow Frame TTWindow Man Page</key>
-	<string>825 356 570 707 0 0 2560 1415 </string>
-	<key>NSWindow Frame TTWindow Pro</key>
-	<string>900 556 760 686 0 0 2560 1415 </string>
-	<key>NSWindow Frame TTWindow Solarized Dark</key>
-	<string>730 170 1100 1099 0 0 2560 1410 </string>
-	<key>NSWindow Frame TTWindow Solarized Light</key>
-	<string>852 43 1100 1099 0 0 2560 1410 </string>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0899999999999999</real>
 	<key>SecureKeyboardEntry</key>
