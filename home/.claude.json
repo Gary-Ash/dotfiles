@@ -31,48 +31,7 @@
   },
   "hasResetAutoModeOptInForDefaultOffer": true,
   "hasSeenAutoModeOutsideReadPrompt": true,
-  "tipsHistoryByCommand": {
-    "memory": {
-      "tipId": "memory-command",
-      "numStartups": 1
-    },
-    "install-github-app": {
-      "tipId": "install-github-app",
-      "numStartups": 1
-    },
-    "install-slack-app": {
-      "tipId": "install-slack-app",
-      "numStartups": 1
-    },
-    "desktop": {
-      "tipId": "desktop-shortcut",
-      "numStartups": 2
-    },
-    "focus": {
-      "tipId": "focus-view",
-      "numStartups": 2
-    },
-    "plugin": {
-      "tipId": "you-should-know-plugin",
-      "numStartups": 2
-    }
-  },
-  "promoStartupStatusCache": {
-    "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
-    "endpoint": "/v1/code/promo/cloud_credit",
-    "eligible": true,
-    "claimed": false,
-    "checkedAt": 1791160387810
-  },
   "voiceLangHintShownCount": 1,
   "voiceLangHintLastLanguage": "en",
-  "voiceFooterHintSeenCount": 3,
-  "githubWebConnectionStatusCache": {
-    "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
-    "orgUuid": "44ed8be7-c6d4-430e-9a86-ed8efc92979c",
-    "status": "connected"
-  },
-  "autoModeEnvSetup": {
-    "denials": 1
-  }
+  "voiceFooterHintSeenCount": 3
 }

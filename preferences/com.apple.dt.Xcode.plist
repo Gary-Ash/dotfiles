@@ -460,12 +460,6 @@
 	<false/>
 	<key>IDEWorkspaceSuppressCleanBuildPrompt</key>
 	<true/>
-	<key>IDE_CA_Daily_LanguageModel</key>
-	<string>enabled,usable</string>
-	<key>IDE_CA_Daily_RunMTC</key>
-	<true/>
-	<key>IDE_CA_Daily_UsedScriptingAPI</key>
-	<true/>
 	<key>LastExplicitInspectorVisibility</key>
 	<true/>
 	<key>NSColorPanelMode</key>
@@ -605,13 +599,6 @@
 	</dict>
 	<key>PegasusMultipleCursorsEnabled</key>
 	<true/>
-	<key>ProductMappingKey</key>
-	<data>
-	YnBsaXN0MDDRAQJXZW50cmllc6ED0wQFBgcICV13b3Jrc3BhY2VQYXRoWHByb2R1Y3Rz
-	Wmxhc3RPcGVuZWRfEEIvVXNlcnMvZ2FyeWFzaC9EZXZlbG9wZXIvR2VlRGJsQS9GbGFz
-	aHlDYXJkcy9GbGFzaHlDYXJkcy54Y29kZXByb2qgM0HIPtYr9rpzCAsTFRwqMz6DhAAA
-	AAAAAAEBAAAAAAAAAAoAAAAAAAAAAAAAAAAAAACN
-	</data>
 	<key>UVLastDeviceSetPurge-iOS</key>
 	<string>24A434</string>
 	<key>UVLastDeviceSetPurge-tvOS</key>
