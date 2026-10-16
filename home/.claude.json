@@ -1,6 +1,7 @@
 {
   "installMethod": "native",
   "autoUpdates": false,
+  "hasSeenTasksHint": true,
   "s1mAccessCache": {},
   "groveConfigCache": {},
   "skillUsage": {},
@@ -37,19 +38,23 @@
     },
     "install-github-app": {
       "tipId": "install-github-app",
-      "numStartups": 2
+      "numStartups": 1
     },
     "install-slack-app": {
       "tipId": "install-slack-app",
       "numStartups": 1
     },
     "desktop": {
-      "tipId": "desktop-ios-simulator",
-      "numStartups": 1
+      "tipId": "desktop-shortcut",
+      "numStartups": 2
     },
     "focus": {
       "tipId": "focus-view",
-      "numStartups": 1
+      "numStartups": 2
+    },
+    "plugin": {
+      "tipId": "you-should-know-plugin",
+      "numStartups": 2
     }
   },
   "promoStartupStatusCache": {
@@ -62,30 +67,12 @@
   "voiceLangHintShownCount": 1,
   "voiceLangHintLastLanguage": "en",
   "voiceFooterHintSeenCount": 3,
-  "additionalModelOptionsAnsweredAt": 1791835442516,
-  "cachedArtifactRoster": {
-    "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
-    "organizationUuid": "44ed8be7-c6d4-430e-9a86-ed8efc92979c",
-    "version": "0.2.75",
-    "capabilities": [
-      "artifact",
-      "assets",
-      "comments",
-      "db",
-      "downloads",
-      "files",
-      "mcp",
-      "permissions",
-      "room",
-      "sample",
-      "self",
-      "user"
-    ],
-    "fetchedAt": 1791832776964
-  },
   "githubWebConnectionStatusCache": {
     "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
     "orgUuid": "44ed8be7-c6d4-430e-9a86-ed8efc92979c",
     "status": "connected"
+  },
+  "autoModeEnvSetup": {
+    "denials": 1
   }
 }
