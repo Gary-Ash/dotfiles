@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Definitions</key>
+	<dict>
+		<key>AppDelegate.h</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.h</string>
+		</dict>
+		<key>AppDelegate.m</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.m</string>
+		</dict>
+		<key>AppDelegate.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.swift</string>
+		</dict>
+		<key>Info.plist:UIApplicationSceneManifest</key>
+		<dict>
+			<key>Beginning</key>
+			<string>
+            &lt;key&gt;UIApplicationSceneManifest&lt;/key&gt;
+            &lt;dict&gt;
+                &lt;key&gt;UIApplicationSupportsMultipleScenes&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;key&gt;UISceneConfigurations&lt;/key&gt;
+                &lt;dict&gt;
+                    &lt;key&gt;UIWindowSceneSessionRoleApplication&lt;/key&gt;
+                    &lt;array&gt;
+                        &lt;dict&gt;
+                            &lt;key&gt;UISceneConfigurationName&lt;/key&gt;
+                            &lt;string&gt;Default Configuration&lt;/string&gt;
+                            &lt;key&gt;UISceneDelegateClassName&lt;/key&gt;
+                            &lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___SceneDelegate&lt;/string&gt;
+</string>
+			<key>End</key>
+			<string>
+                        &lt;/dict&gt;
+                    &lt;/array&gt;
+                &lt;/dict&gt;
+            &lt;/dict&gt;
+</string>
+			<key>Indent</key>
+			<integer>2</integer>
+		</dict>
+		<key>Info.plist:UIApplicationSceneManifest:UISceneStoryboardFile</key>
+		<string>
+&lt;key&gt;UISceneStoryboardFile&lt;/key&gt;
+&lt;string&gt;Main&lt;/string&gt;
+</string>
+		<key>SceneDelegate.h</key>
+		<dict>
+			<key>Path</key>
+			<string>SceneDelegate.h</string>
+		</dict>
+		<key>SceneDelegate.m</key>
+		<dict>
+			<key>Path</key>
+			<string>SceneDelegate.m</string>
+		</dict>
+		<key>SceneDelegate.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>SceneDelegate.swift</string>
+		</dict>
+	</dict>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.crossPlatformBase.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Concrete</key>
+			<false/>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___</string>
+				<key>PRODUCT_NAME</key>
+				<string>___VARIABLE_productName___</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,7 +7,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   5-Sep-2026  6:30pm
-# Modified :   3-Oct-2026  8:53pm
+# Modified :  20-Oct-2026  6:43pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -21,3 +21,6 @@
     # rather than copying anything into it, so editing a hook takes effect
     # everywhere at once and repositories elsewhere never see them
     hooksPath = ~/.config/git/hooks
+
+[commit]
+    template = ~/.config/git/gitmessage

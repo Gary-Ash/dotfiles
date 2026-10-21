@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.osxAppExtensionBase.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:NSExtension</key>
+		<string>&lt;key&gt;NSExtension&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;NSExtensionPrincipalClass&lt;/key&gt;
+    &lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___MailExtension&lt;/string&gt;
+    &lt;key&gt;NSExtensionAttributes&lt;/key&gt;
+    &lt;dict&gt;
+		&lt;key&gt;MEExtensionCapabilities&lt;/key&gt;
+        &lt;array&gt;
+            ___VARIABLE_MailCapability-ContentBlocker___
+            ___VARIABLE_MailCapability-MessageActionHandler___
+            ___VARIABLE_MailCapability-ComposeSessionHandler___
+			___VARIABLE_MailCapability-MessageSecurityHandler___
+        &lt;/array&gt;
+    &lt;/dict&gt;
+    &lt;key&gt;NSExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.email.extension&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a Mail application extension.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.mailkitextensionosx.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>MacOSSDKVersionMin</key>
+	<string>12.0</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:NSExtension</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>MailExtension.h</key>
+						<dict>
+							<key>Path</key>
+							<string>MailExtension.h</string>
+						</dict>
+						<key>MailExtension.m</key>
+						<dict>
+							<key>Path</key>
+							<string>MailExtension.m</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>MailExtension.h</string>
+						<string>MailExtension.m</string>
+					</array>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>MailExtension.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>MailExtension.swift</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>MailExtension.swift</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>true</string>
+			<key>Description</key>
+			<string>Whether this extension includes a content blocker.</string>
+			<key>Identifier</key>
+			<string>contentBlocker</string>
+			<key>Name</key>
+			<string>Include Content Blocker</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<dict/>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>ContentBlocker.h</key>
+							<dict>
+								<key>Path</key>
+								<string>ContentBlocker.h</string>
+							</dict>
+							<key>ContentBlocker.m</key>
+							<dict>
+								<key>Path</key>
+								<string>ContentBlocker.m</string>
+							</dict>
+							<key>ContentBlockerRules.json</key>
+							<dict>
+								<key>Path</key>
+								<string>ContentBlockerRules.json</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ContentBlocker.h</string>
+							<string>ContentBlocker.m</string>
+							<string>ContentBlockerRules.json</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Objective-C</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>ContentBlocker.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>ContentBlocker.swift</string>
+							</dict>
+							<key>ContentBlockerRules.json</key>
+							<dict>
+								<key>Path</key>
+								<string>ContentBlockerRules.json</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ContentBlocker.swift</string>
+							<string>ContentBlockerRules.json</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Swift</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<key>Variables</key>
+			<dict>
+				<key>false</key>
+				<dict>
+					<key>MailCapability-ContentBlocker</key>
+					<string></string>
+					<key>MailExtension-ContentBlocker-Import-ObjC</key>
+					<string></string>
+					<key>MailExtension-ContentBlocker-ObjC</key>
+					<string></string>
+					<key>MailExtension-ContentBlocker-Properties-ObjC</key>
+					<string></string>
+					<key>MailExtension-ContentBlocker-Swift</key>
+					<string></string>
+				</dict>
+				<key>true</key>
+				<dict>
+					<key>MailCapability-ContentBlocker</key>
+					<string>&lt;string&gt;MEContentBlocker&lt;/string&gt;</string>
+					<key>MailExtension-ContentBlocker-Import-ObjC</key>
+					<string>#import "ContentBlocker.h"</string>
+					<key>MailExtension-ContentBlocker-ObjC</key>
+					<string>- (id&lt;MEContentBlocker&gt;)handlerForContentBlocker {
+    // Use a shared instance for all messages, since there's
+    // no state associated with a content blocker.
+    return [ContentBlocker sharedInstance];
+}
+</string>
+					<key>MailExtension-ContentBlocker-Properties-ObjC</key>
+					<string>@property (atomic, strong) ContentBlocker *contentBlocker;</string>
+					<key>MailExtension-ContentBlocker-Swift</key>
+					<string>func handlerForContentBlocker() -&gt; MEContentBlocker {
+        // Use a shared instance for all messages, since there's
+        // no state associated with a content blocker.
+        return ContentBlocker.shared
+    }
+</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>true</string>
+			<key>Description</key>
+			<string>Whether this extension includes a message action handler.</string>
+			<key>Identifier</key>
+			<string>messageActionHandler</string>
+			<key>Name</key>
+			<string>Include Message Action Handler</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<dict/>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>MessageActionHandler.h</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageActionHandler.h</string>
+							</dict>
+							<key>MessageActionHandler.m</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageActionHandler.m</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>MessageActionHandler.h</string>
+							<string>MessageActionHandler.m</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Objective-C</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>MessageActionHandler.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageActionHandler.swift</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>MessageActionHandler.swift</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Swift</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<key>Variables</key>
+			<dict>
+				<key>false</key>
+				<dict>
+					<key>MailCapability-MessageActionHandler</key>
+					<string></string>
+					<key>MailExtension-MessageActionHandler-Import-ObjC</key>
+					<string></string>
+					<key>MailExtension-MessageActionHandler-ObjC</key>
+					<string></string>
+					<key>MailExtension-MessageActionHandler-Properties-ObjC</key>
+					<string></string>
+					<key>MailExtension-MessageActionHandler-Swift</key>
+					<string></string>
+				</dict>
+				<key>true</key>
+				<dict>
+					<key>MailCapability-MessageActionHandler</key>
+					<string>&lt;string&gt;MEMessageActionHandler&lt;/string&gt;</string>
+					<key>MailExtension-MessageActionHandler-Import-ObjC</key>
+					<string>#import "MessageActionHandler.h"</string>
+					<key>MailExtension-MessageActionHandler-ObjC</key>
+					<string>- (id&lt;MEMessageActionHandler&gt;)handlerForMessageActions {
+    // Use a shared instance for all messages, since there's
+    // no state associated with performing actions.
+    return [MessageActionHandler sharedInstance];
+}
+</string>
+					<key>MailExtension-MessageActionHandler-Properties-ObjC</key>
+					<string>@property (atomic, strong) MessageActionHandler *messageActionHandler;</string>
+					<key>MailExtension-MessageActionHandler-Swift</key>
+					<string>func handlerForMessageActions() -&gt; MEMessageActionHandler {
+        // Use a shared instance for all messages, since there's
+        // no state associated with performing actions.
+        return MessageActionHandler.shared
+    }
+</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>true</string>
+			<key>Description</key>
+			<string>Whether this extension includes a compose session handler.</string>
+			<key>Identifier</key>
+			<string>composeSessionHandler</string>
+			<key>Name</key>
+			<string>Include Compose Session Handler</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<dict/>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>ComposeSessionHandler.h</key>
+							<dict>
+								<key>Path</key>
+								<string>ComposeSessionHandler.h</string>
+							</dict>
+							<key>ComposeSessionHandler.m</key>
+							<dict>
+								<key>Path</key>
+								<string>ComposeSessionHandler.m</string>
+							</dict>
+							<key>ComposeSessionViewController.h</key>
+							<dict>
+								<key>Path</key>
+								<string>ComposeSessionViewController.h</string>
+							</dict>
+							<key>ComposeSessionViewController.m</key>
+							<dict>
+								<key>Path</key>
+								<string>ComposeSessionViewController.m</string>
+							</dict>
+							<key>ComposeSessionViewController.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>ComposeSessionViewController.xib</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ComposeSessionHandler.h</string>
+							<string>ComposeSessionHandler.m</string>
+							<string>ComposeSessionViewController.h</string>
+							<string>ComposeSessionViewController.m</string>
+							<string>ComposeSessionViewController.xib</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Objective-C</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>ComposeSessionHandler.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>ComposeSessionHandler.swift</string>
+							</dict>
+							<key>ComposeSessionViewController.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>ComposeSessionViewController.swift</string>
+							</dict>
+							<key>ComposeSessionViewController.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>ComposeSessionViewController.xib</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ComposeSessionHandler.swift</string>
+							<string>ComposeSessionViewController.swift</string>
+							<string>ComposeSessionViewController.xib</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Swift</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<key>Variables</key>
+			<dict>
+				<key>false</key>
+				<dict>
+					<key>MailCapability-ComposeSessionHandler</key>
+					<string></string>
+					<key>MailExtension-ComposeSessionHandler-Import-ObjC</key>
+					<string></string>
+					<key>MailExtension-ComposeSessionHandler-ObjC</key>
+					<string></string>
+					<key>MailExtension-ComposeSessionHandler-Swift</key>
+					<string></string>
+				</dict>
+				<key>true</key>
+				<dict>
+					<key>MailCapability-ComposeSessionHandler</key>
+					<string>&lt;string&gt;MEComposeSessionHandler&lt;/string&gt;</string>
+					<key>MailExtension-ComposeSessionHandler-Import-ObjC</key>
+					<string>#import "ComposeSessionHandler.h"</string>
+					<key>MailExtension-ComposeSessionHandler-ObjC</key>
+					<string>- (id&lt;MEComposeSessionHandler&gt;)handlerForComposeSession:(MEComposeSession *)session {
+    // Create a unique instance, since each compose window is separate.
+    return [[ComposeSessionHandler alloc] init];
+}
+</string>
+					<key>MailExtension-ComposeSessionHandler-Swift</key>
+					<string>func handler(for session: MEComposeSession) -&gt; MEComposeSessionHandler {
+        // Create a unique instance, since each compose window is separate.
+        return ComposeSessionHandler()
+    }
+</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>true</string>
+			<key>Description</key>
+			<string>Whether this extension includes a message security handler.</string>
+			<key>Identifier</key>
+			<string>messageSecurityHandler</string>
+			<key>Name</key>
+			<string>Include Message Security Handler</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<dict/>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>MessageSecurityHandler.h</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageSecurityHandler.h</string>
+							</dict>
+							<key>MessageSecurityHandler.m</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageSecurityHandler.m</string>
+							</dict>
+							<key>MessageSecurityViewController.h</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageSecurityViewController.h</string>
+							</dict>
+							<key>MessageSecurityViewController.m</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageSecurityViewController.m</string>
+							</dict>
+							<key>MessageSecurityViewController.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageSecurityViewController.xib</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>MessageSecurityHandler.h</string>
+							<string>MessageSecurityHandler.m</string>
+							<string>MessageSecurityViewController.h</string>
+							<string>MessageSecurityViewController.m</string>
+							<string>MessageSecurityViewController.xib</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Objective-C</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>MessageSecurityHandler.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageSecurityHandler.swift</string>
+							</dict>
+							<key>MessageSecurityViewController.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageSecurityViewController.swift</string>
+							</dict>
+							<key>MessageSecurityViewController.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>MessageSecurityViewController.xib</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>MessageSecurityHandler.swift</string>
+							<string>MessageSecurityViewController.swift</string>
+							<string>MessageSecurityViewController.xib</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Swift</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<key>Variables</key>
+			<dict>
+				<key>false</key>
+				<dict>
+					<key>MailCapability-MessageSecurityHandler</key>
+					<string></string>
+					<key>MailExtension-MessageSecurityHandler-Import-ObjC</key>
+					<string></string>
+					<key>MailExtension-MessageSecurityHandler-ObjC</key>
+					<string></string>
+					<key>MailExtension-MessageSecurityHandler-Properties-ObjC</key>
+					<string></string>
+					<key>MailExtension-MessageSecurityHandler-Swift</key>
+					<string></string>
+				</dict>
+				<key>true</key>
+				<dict>
+					<key>MailCapability-MessageSecurityHandler</key>
+					<string>&lt;string&gt;MEMessageSecurityHandler&lt;/string&gt;</string>
+					<key>MailExtension-MessageSecurityHandler-Import-ObjC</key>
+					<string>#import "MessageSecurityHandler.h"</string>
+					<key>MailExtension-MessageSecurityHandler-ObjC</key>
+					<string>- (id&lt;MEMessageSecurityHandler&gt;)handlerForMessageSecurity {
+    // Use a shared instance for all messages, since there's
+    // no state associated with the security handler.
+    return [MessageSecurityHandler sharedInstance];
+}
+</string>
+					<key>MailExtension-MessageSecurityHandler-Properties-ObjC</key>
+					<string>@property (atomic, strong) MessageSecurityHandler *messageSecurityHandler;</string>
+					<key>MailExtension-MessageSecurityHandler-Swift</key>
+					<string>func handlerForMessageSecurity() -&gt; MEMessageSecurityHandler {
+        // Use a shared instance for all messages, since there's
+        // no state associated with the security handler.
+        return MessageSecurityHandler.shared
+    }
+</string>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>ENABLE_APP_SANDBOX</key>
+				<string>YES</string>
+				<key>ENABLE_USER_SELECTED_FILES</key>
+				<string>readonly</string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.serviceWithUIExtensionService</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.application.document-based.SwiftUI.macOS.geedbla</string>
+	</array>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.cocoaApplicationDocumentBased.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:DocumentTypes</string>
+		<string>Info.plist:UTImportedTypeDeclarations</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>appLifecycle</string>
+			<key>Units</key>
+			<dict>
+				<key>Cocoa</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Info.plist:DocumentTypes</key>
+							<string>&lt;key&gt;CFBundleDocumentTypes&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;CFBundleTypeRole&lt;/key&gt;
+        &lt;string&gt;Editor&lt;/string&gt;
+        &lt;key&gt;LSItemContentTypes&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;com.example.plain-text&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;NSDocumentClass&lt;/key&gt;
+        &lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___Document&lt;/string&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+							<key>Info.plist:NSViewGestureRecognizerIsExclusive</key>
+							<string>&lt;key&gt;NSViewGestureRecognizerIsExclusive&lt;/key&gt;
+&lt;false/&gt;
+</string>
+							<key>Info.plist:UTImportedTypeDeclarations</key>
+							<string>&lt;key&gt;UTImportedTypeDeclarations&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;UTTypeIdentifier&lt;/key&gt;
+        &lt;string&gt;com.example.plain-text&lt;/string&gt;
+        &lt;key&gt;UTTypeDescription&lt;/key&gt;
+        &lt;string&gt;Example Text&lt;/string&gt;
+        &lt;key&gt;UTTypeConformsTo&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;public.plain-text&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;UTTypeTagSpecification&lt;/key&gt;
+        &lt;dict&gt;
+            &lt;key&gt;public.filename-extension&lt;/key&gt;
+            &lt;array&gt;
+                &lt;string&gt;exampletext&lt;/string&gt;
+            &lt;/array&gt;
+        &lt;/dict&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Info.plist:NSViewGestureRecognizerIsExclusive</string>
+						</array>
+					</dict>
+				</array>
+				<key>SwiftUI</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Info.plist:DocumentTypes</key>
+							<string>&lt;key&gt;CFBundleDocumentTypes&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;CFBundleTypeRole&lt;/key&gt;
+        &lt;string&gt;Editor&lt;/string&gt;
+        &lt;key&gt;LSItemContentTypes&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;com.example.plain-text&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;NSUbiquitousDocumentUserActivityType&lt;/key&gt;
+        &lt;string&gt;$(PRODUCT_BUNDLE_IDENTIFIER).exampledocument&lt;/string&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+							<key>Info.plist:UTImportedTypeDeclarations</key>
+							<string>&lt;key&gt;UTImportedTypeDeclarations&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;UTTypeIdentifier&lt;/key&gt;
+        &lt;string&gt;com.example.plain-text&lt;/string&gt;
+        &lt;key&gt;UTTypeDescription&lt;/key&gt;
+        &lt;string&gt;Example Text&lt;/string&gt;
+        &lt;key&gt;UTTypeConformsTo&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;public.plain-text&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;UTTypeTagSpecification&lt;/key&gt;
+        &lt;dict&gt;
+            &lt;key&gt;public.filename-extension&lt;/key&gt;
+            &lt;array&gt;
+                &lt;string&gt;exampletext&lt;/string&gt;
+            &lt;/array&gt;
+        &lt;/dict&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+						</dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>storageTypeDocument</key>
+							<string>None</string>
+						</dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>SWIFT_VERSION</key>
+									<string>6.0</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Info.plist:DocumentTypes</key>
+							<string>&lt;key&gt;CFBundleDocumentTypes&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;CFBundleTypeRole&lt;/key&gt;
+        &lt;string&gt;Editor&lt;/string&gt;
+        &lt;key&gt;LSHandlerRank&lt;/key&gt;
+        &lt;string&gt;Default&lt;/string&gt;
+        &lt;key&gt;LSItemContentTypes&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;com.example.item-document&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;NSUbiquitousDocumentUserActivityType&lt;/key&gt;
+        &lt;string&gt;$(PRODUCT_BUNDLE_IDENTIFIER).exampledocument&lt;/string&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+							<key>Info.plist:UTImportedTypeDeclarations</key>
+							<string>&lt;key&gt;UTImportedTypeDeclarations&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;UTTypeIdentifier&lt;/key&gt;
+        &lt;string&gt;com.example.item-document&lt;/string&gt;
+        &lt;key&gt;UTTypeDescription&lt;/key&gt;
+        &lt;string&gt;Example Document&lt;/string&gt;
+        &lt;key&gt;UTTypeConformsTo&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;com.apple.package&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;UTTypeTagSpecification&lt;/key&gt;
+        &lt;dict&gt;
+            &lt;key&gt;public.filename-extension&lt;/key&gt;
+            &lt;array&gt;
+                &lt;string&gt;exampledocument&lt;/string&gt;
+            &lt;/array&gt;
+        &lt;/dict&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+						</dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>storageTypeDocument</key>
+							<string>SwiftData</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Document.m:implementation:methods:autosavesInPlace:code</key>
+							<string>return YES;</string>
+							<key>Document.m:implementation:methods:init:comments</key>
+							<string>// Add your subclass-specific initialization here.</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Document.h:comments</string>
+							<string>Document.h:imports:importCocoa</string>
+							<string>Document.h:interface(Document : NSDocument)</string>
+							<string>Document.m:comments</string>
+							<string>Document.m:imports:importHeader:Document.h</string>
+							<string>Document.m:extension</string>
+							<string>Document.m:implementation:methods:init:comments</string>
+							<string>Document.m:implementation:methods:autosavesInPlace(+ (BOOL\)autosavesInPlace)</string>
+							<string>Document.m:implementation:methods:autosavesInPlace:code</string>
+						</array>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Document.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>Document.xib</string>
+							</dict>
+							<key>Base.lproj/MainMenu.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>MainMenuDoc.xib</string>
+								<key>SortOrder</key>
+								<integer>101</integer>
+							</dict>
+							<key>Document.m:implementation:methods:windowNibName:code</key>
+							<string>return @"Document";</string>
+							<key>Document.m:implementation:methods:windowNibName:comments</key>
+							<string>// Override returning the nib file name of the document
+// If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Document.m:implementation:methods:windowNibName(- (NSString *\)windowNibName)</string>
+							<string>Document.m:implementation:methods:windowNibName:comments</string>
+							<string>Document.m:implementation:methods:windowNibName:code</string>
+							<string>Base.lproj/Document.xib</string>
+							<string>Base.lproj/MainMenu.xib</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>XIB</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>Main.storyboard</string>
+								<key>SortOrder</key>
+								<integer>101</integer>
+							</dict>
+							<key>Document.m:implementation:methods:makeWindowControllers:code</key>
+							<string>[self addWindowController:[[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"Document Window Controller"]];</string>
+							<key>Document.m:implementation:methods:makeWindowControllers:comments</key>
+							<string>// Override to return the Storyboard file name of the document.</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Document.m:implementation:methods:makeWindowControllers(- (void\)makeWindowControllers)</string>
+							<string>Document.m:implementation:methods:makeWindowControllers:comments</string>
+							<string>Document.m:implementation:methods:makeWindowControllers:code</string>
+							<string>Base.lproj/Main.storyboard</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+					</dict>
+				</array>
+				<key>Swift</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Document.swift:implementation:methods:autosavesInPlace:code</key>
+							<string>return true</string>
+							<key>Document.swift:implementation:methods:init:comments</key>
+							<string>// Add your subclass-specific initialization here.</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Document.swift:comments</string>
+							<string>Document.swift:imports:importCocoa</string>
+							<string>Document.swift:implementation(Document: NSDocument)</string>
+							<string>Document.swift:implementation:methods:init:comments</string>
+							<string>Document.swift:implementation:methods:autosavesInPlace(override nonisolated class var autosavesInPlace: Bool)</string>
+							<string>Document.swift:implementation:methods:autosavesInPlace:code</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Document.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>Document.xib</string>
+							</dict>
+							<key>Base.lproj/MainMenu.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>MainMenuDoc.xib</string>
+								<key>SortOrder</key>
+								<integer>101</integer>
+							</dict>
+							<key>Document.swift:implementation:methods:windowNibName:code</key>
+							<string>return NSNib.Name("Document")</string>
+							<key>Document.swift:implementation:methods:windowNibName:comments</key>
+							<string>// Returns the nib file name of the document
+// If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this property and override -makeWindowControllers instead.</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Document.swift:implementation:methods:windowNibName(override var windowNibName: NSNib.Name?)</string>
+							<string>Document.swift:implementation:methods:windowNibName:comments</string>
+							<string>Document.swift:implementation:methods:windowNibName:code</string>
+							<string>Base.lproj/Document.xib</string>
+							<string>Base.lproj/MainMenu.xib</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>XIB</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>Main.storyboard</string>
+								<key>SortOrder</key>
+								<integer>101</integer>
+							</dict>
+							<key>Document.swift:implementation:methods:makeWindowControllers:code</key>
+							<string>let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
+let windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Document Window Controller")) as! NSWindowController
+self.addWindowController(windowController)</string>
+							<key>Document.swift:implementation:methods:makeWindowControllers:comments</key>
+							<string>// Returns the Storyboard that contains your Document window.</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Document.swift:implementation:methods:makeWindowControllers(override func makeWindowControllers(\))</string>
+							<string>Document.swift:implementation:methods:makeWindowControllers:comments</string>
+							<string>Document.swift:implementation:methods:makeWindowControllers:code</string>
+							<string>Base.lproj/Main.storyboard</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>*:imports:importSwiftUI</key>
+							<string>import SwiftUI</string>
+							<key>Document.swift:implementation:methods:makeWindowControllers:code</key>
+							<string>// Create the SwiftUI view that provides the window contents.
+let contentView = ContentView()
+</string>
+							<key>Document.swift:implementation:methods:makeWindowControllers:code:window</key>
+							<string>
+// Create the window and set the content view.
+let window = NSWindow(
+    contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
+    styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+    backing: .buffered, defer: false)
+window.isReleasedWhenClosed = false
+window.center()
+window.contentView = NSHostingView(rootView: contentView)
+let windowController = NSWindowController(window: window)
+self.addWindowController(windowController)</string>
+							<key>Document.swift:implementation:methods:makeWindowControllers:comments</key>
+							<string></string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Document.swift:imports:importSwiftUI</string>
+							<string>Document.swift:implementation:methods:makeWindowControllers(override func makeWindowControllers(\))</string>
+							<string>Document.swift:implementation:methods:makeWindowControllers:comments</string>
+							<string>Document.swift:implementation:methods:makeWindowControllers:code</string>
+							<string>Document.swift:implementation:methods:makeWindowControllers:code:window</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+							<key>userInterface</key>
+							<string>SwiftUI</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>ENABLE_APP_SANDBOX</key>
+				<string>YES</string>
+				<key>ENABLE_USER_SELECTED_FILES</key>
+				<string>readwrite</string>
+				<key>INFOPLIST_FILE</key>
+				<string>___PACKAGENAME___/Info.plist</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

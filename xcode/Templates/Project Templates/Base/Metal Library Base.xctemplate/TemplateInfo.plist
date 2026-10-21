@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAMEASIDENTIFIER___.metal</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.metal</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a Metal library.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.metalLibrary.base.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAMEASIDENTIFIER___.metal</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>Your new product's name</string>
+			<key>EmptyReplacement</key>
+			<string>ProductName</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Product Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>SortOrder</key>
+			<integer>-2</integer>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Debug</key>
+			<dict>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>INCLUDE_SOURCE</string>
+			</dict>
+			<key>Release</key>
+			<dict>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+			</dict>
+		</dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>ALWAYS_SEARCH_USER_PATHS</key>
+			<string>NO</string>
+			<key>MTL_FAST_MATH</key>
+			<string>YES</string>
+		</dict>
+	</dict>
+	<key>SortOrder</key>
+	<integer>50</integer>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>Sources</string>
+				</dict>
+			</array>
+			<key>Name</key>
+			<string>___PACKAGENAME___</string>
+			<key>ProductType</key>
+			<string>com.apple.product-type.metal-library</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string></string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.metalLibraryTarget</string>
+		</dict>
+	</array>
+</dict>
+</plist>

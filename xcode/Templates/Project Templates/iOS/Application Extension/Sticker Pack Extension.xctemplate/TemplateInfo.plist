@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.stickerpackextensionbaseios.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Stickers.xcassets</key>
+		<dict>
+			<key>AssetGeneration</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>iMessage App Icon</string>
+					<key>Platforms</key>
+					<dict>
+						<key>iOS</key>
+						<string>true</string>
+					</dict>
+					<key>Type</key>
+					<string>stickersicon</string>
+				</dict>
+			</array>
+			<key>Path</key>
+			<string>Stickers.xcassets</string>
+			<key>SortOrder</key>
+			<integer>100</integer>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a Sticker Pack application extension.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.stickerpackextensionios.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Stickers.xcassets</string>
+	</array>
+	<key>TargetOnly</key>
+	<true/>
+</dict>
+</plist>

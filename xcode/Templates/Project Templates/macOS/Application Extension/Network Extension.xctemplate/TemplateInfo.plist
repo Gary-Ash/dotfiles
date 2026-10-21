@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.osxAppExtensionBase.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAMEASIDENTIFIER___.entitlements</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+			<key>SortOrder</key>
+			<integer>1000</integer>
+			<key>TargetIdentifiers</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.networkproviderextensionosx.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:NSExtension</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>App Proxy</string>
+			<key>Description</key>
+			<string>The provider type for this network extension</string>
+			<key>Identifier</key>
+			<string>networkExtensionType</string>
+			<key>Name</key>
+			<string>Provider Type:</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Units</key>
+			<dict>
+				<key>App Proxy</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Info.plist:NSExtension</key>
+							<string>&lt;key&gt;NSExtension&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;NSExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.networkextension.app-proxy&lt;/string&gt;
+    &lt;key&gt;NSExtensionPrincipalClass&lt;/key&gt;
+    &lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___AppProxyProvider&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>AppProxyProvider.h</key>
+							<dict>
+								<key>Path</key>
+								<string>AppProxyProvider.h</string>
+							</dict>
+							<key>AppProxyProvider.m</key>
+							<dict>
+								<key>Path</key>
+								<string>AppProxyProvider.m</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>AppProxyProvider.h</string>
+							<string>AppProxyProvider.m</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Objective-C</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>AppProxyProvider.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>AppProxyProvider.swift</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>AppProxyProvider.swift</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Swift</string>
+						</dict>
+					</dict>
+				</array>
+				<key>Packet Tunnel</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Info.plist:NSExtension</key>
+							<string>&lt;key&gt;NSExtension&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;NSExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.networkextension.packet-tunnel&lt;/string&gt;
+    &lt;key&gt;NSExtensionPrincipalClass&lt;/key&gt;
+    &lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___PacketTunnelProvider&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>PacketTunnelProvider.h</key>
+							<dict>
+								<key>Path</key>
+								<string>PacketTunnelProvider.h</string>
+							</dict>
+							<key>PacketTunnelProvider.m</key>
+							<dict>
+								<key>Path</key>
+								<string>PacketTunnelProvider.m</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>PacketTunnelProvider.h</string>
+							<string>PacketTunnelProvider.m</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Objective-C</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>PacketTunnelProvider.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>PacketTunnelProvider.swift</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>PacketTunnelProvider.swift</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Swift</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<key>Values</key>
+			<array>
+				<string>App Proxy</string>
+				<string>Packet Tunnel</string>
+			</array>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>NetworkExtension</string>
+			</array>
+			<key>SharedSettings</key>
+			<dict>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string>___PACKAGENAME___/___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+				<key>ENABLE_APP_SANDBOX</key>
+				<string>YES</string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.networkProviderExtension</string>
+		</dict>
+	</array>
+</dict>
+</plist>

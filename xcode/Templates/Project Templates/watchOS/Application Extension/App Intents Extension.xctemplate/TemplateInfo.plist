@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.extensionkit-extension.watchOS.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:EXAppExtensionAttributes</key>
+		<string>&lt;key&gt;EXAppExtensionAttributes&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;EXExtensionPointIdentifier&lt;/key&gt;
+        &lt;string&gt;com.apple.appintents-extension&lt;/string&gt;
+    &lt;/dict&gt;
+</string>
+		<key>___PACKAGENAME:identifier___.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>AppIntents.swift</string>
+		</dict>
+		<key>___PACKAGENAME:identifier___Extension.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>AppIntentsExtension.swift</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template builds an App Intents Extension.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.extension.AppIntents.watchOS.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:EXAppExtensionAttributes</string>
+		<string>___PACKAGENAME:identifier___Extension.swift</string>
+		<string>___PACKAGENAME:identifier___.swift</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Override</key>
+			<string>Swift</string>
+		</dict>
+	</array>
+</dict>
+</plist>

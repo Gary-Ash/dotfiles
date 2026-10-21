@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.extensionkit-extension.iOS.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAMEASIDENTIFIER___.entitlements</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+			<key>SortOrder</key>
+			<integer>1000</integer>
+			<key>TargetIdentifiers</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a App Migration application extension.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.extension.AppMigration.iOS.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Override</key>
+			<string>Swift</string>
+			<key>Units</key>
+			<dict>
+				<key>Swift</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>AppMigrationExtension.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>AppMigrationExtension.swift</string>
+						</dict>
+						<key>Info.plist:EXAppExtensionAttributes</key>
+						<string>&lt;key&gt;EXAppExtensionAttributes&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;EXExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.app-migration&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>AppMigrationExtension.swift</string>
+						<string>Info.plist:EXAppExtensionAttributes</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string>___PACKAGENAME___/___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.target.extension.AppMigration.iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

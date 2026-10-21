@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.extensionkit-extension.iOS.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:EXAppExtensionAttributes</key>
+		<string>&lt;key&gt;EXAppExtensionAttributes&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;EXExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.live-lookup&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>LiveCallerIDLookupExtension.swift</string>
+			<key>SortOrder</key>
+			<integer>1000</integer>
+			<key>TargetIdentifiers</key>
+			<array>
+				<string>com.apple.dt.target.extension.LiveLookup.iOS</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a Live Lookup application extension.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.extension.LiveLookup.iOS.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAMEASIDENTIFIER___.swift</string>
+		<string>Info.plist:EXAppExtensionAttributes</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Override</key>
+			<string>Swift</string>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.target.extension.LiveLookup.iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

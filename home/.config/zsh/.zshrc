@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :   4-Aug-2026  8:00pm
+# Modified :  20-Oct-2026  9:29pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -16,8 +16,8 @@
 #*****************************************************************************************
 source "$XDG_CONFIG_HOME/zsh/options.zsh"
 source "$XDG_CONFIG_HOME/zsh/aliases.zsh"
+source "$XDG_CONFIG_HOME/zsh/fzf.zsh"
 source "$XDG_CONFIG_HOME/zsh/functions.zsh"
-source "$XDG_CONFIG_HOME/zsh/television.zsh"
 
 #*****************************************************************************************
 # Initialize completions
@@ -41,19 +41,9 @@ _load_completion() {
 	source "$file"
 }
 
-# TV completions with channel name support
-_tv_channels() {
-	local -a channels
-	channels=("${(@f)$(tv list-channels 2>/dev/null)}")
-	_describe 'channel' channels
-}
-_gen_tv_completion() {
-	tv completions zsh 2>/dev/null | sed 's/shall we watch?:_default/shall we watch?:_tv_channels/'
-}
 
 _load_completion npm npm completion
 _load_completion gh  gh completion -s zsh
-_load_completion tv  _gen_tv_completion
 
 #*****************************************************************************************
 # Key mapping and editing setup
@@ -84,6 +74,11 @@ export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE="1"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#*****************************************************************************************
+# FZF setup
+#*****************************************************************************************
+source <(fzf --zsh)
 
 #*****************************************************************************************
 # Setup Zoxide directory changer

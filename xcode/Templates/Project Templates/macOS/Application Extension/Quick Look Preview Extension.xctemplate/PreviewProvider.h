@@ -1,0 +1,8 @@
+___FILEHEADER___
+
+#import <Cocoa/Cocoa.h>
+#import <Quartz/Quartz.h>
+
+@interface PreviewProvider : QLPreviewProvider <QLPreviewingController>
+
+@end

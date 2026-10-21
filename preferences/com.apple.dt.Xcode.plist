@@ -100,6 +100,8 @@
 	</data>
 	<key>DVTWorkspaceThemeEditorExpandedColorGranularity</key>
 	<true/>
+	<key>DVTWorkspaceThemeEditorExpandedFontGranularity</key>
+	<true/>
 	<key>DVTWorkspaceThemeSettings</key>
 	<data>
 	eyJkYXJrIjp7InNhdmVkUmVjaXBlIjp7Il8wIjoiNkYzQTFBMjgtQzVBOS01NjRELUJB
@@ -157,7 +159,7 @@
 	<key>IDEBuildingContinueBuildingAfterErrors</key>
 	<true/>
 	<key>IDEChatClaudeAgentModelConfigurationAlias</key>
-	<string>sonnet</string>
+	<string>opusplan</string>
 	<key>IDEChatCurrentErrorsContextEnabled</key>
 	<true/>
 	<key>IDEChatIsBuiltInChatGPTEnabled</key>
@@ -184,6 +186,8 @@
 			<string>OpenAI</string>
 		</array>
 	</dict>
+	<key>IDECreateQuickly.PreviousChoice</key>
+	<string>template</string>
 	<key>IDEDeveloperDocumentationSelectedDuringFirstLaunch</key>
 	<true/>
 	<key>IDEDidCompleteThemesFLEToolsVersion</key>
@@ -242,23 +246,23 @@
 	<dict>
 		<key>/Applications/Xcode.app/Contents/Applications/Accessibility Inspector.app</key>
 		<data>
-		usQGc69NAHknmt2wiEgszpnKSuY=
+		AWBRx6Uob2MK5TWtqKzSKTuebjg=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/DeviceHub.app</key>
 		<data>
-		cxIo7zwo/rgM3AwDedyte6/I7t0=
+		R40VECRhGfrobYuk5ii1bXQyzjI=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/FileMerge.app</key>
 		<data>
-		yLEFzWrQKUZ1VcK9DYss5QLCNvM=
+		tpjbfS8yJU122Ge3Cwszf4rAuP4=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Icon Composer.app</key>
 		<data>
-		+JC9VJQKoN4LfpqIvAUXLryzT9s=
+		x4Vwfi9z0SUP1oTNU3DXxvTTa5Q=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Instruments.app</key>
 		<data>
-		HDO59Z4ydYNDlfjgc2sNkr8ApVA=
+		wW2T/wf1JrZqz8frs2EHWyRtEVM=
 		</data>
 		<key>/System/Library/CoreServices/CoreTypes.bundle</key>
 		<data>
@@ -322,7 +326,7 @@
 	<key>IDEModelAccessHasUserConsentForOnDeviceInteractions</key>
 	<true/>
 	<key>IDEMostRecentPostFLEToolsVersion</key>
-	<string>27.0</string>
+	<string>27.1</string>
 	<key>IDEOmnibar.location</key>
 	<dict>
 		<key>horizontal</key>
@@ -342,6 +346,25 @@
 	</dict>
 	<key>IDEOmnibar.width</key>
 	<real>560</real>
+	<key>IDEOpenQuicklyWindow.location</key>
+	<dict>
+		<key>horizontal</key>
+		<dict>
+			<key>anchor</key>
+			<integer>1</integer>
+			<key>distance</key>
+			<real>0.0</real>
+		</dict>
+		<key>vertical</key>
+		<dict>
+			<key>anchor</key>
+			<integer>1</integer>
+			<key>distance</key>
+			<real>0.24981711777615215</real>
+		</dict>
+	</dict>
+	<key>IDEOpenQuicklyWindow.width</key>
+	<real>640</real>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-appletvos</key>
 	<array>
 		<string>24J360</string>
@@ -357,6 +380,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-iphoneos</key>
 	<array>
+		<string>24A94232</string>
 		<string>24A430</string>
 		<string>23F81a</string>
 		<string>23F73</string>
@@ -367,7 +391,6 @@
 		<string>23B77</string>
 		<string>23A339</string>
 		<string>22F76</string>
-		<string>22E235</string>
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-macosx</key>
 	<array>
@@ -454,6 +477,8 @@
 	<dict/>
 	<key>IDEStringCatalogAutomaticCommentGenerationEnabled</key>
 	<true/>
+	<key>IDESwiftPackageAdditionAssistantRecentlyUsedPackages</key>
+	<array/>
 	<key>IDETestActionSelectedTab</key>
 	<string>Info</string>
 	<key>IDEWindowTabsHaveIndependentSidebarWidths</key>
@@ -600,14 +625,14 @@
 	<key>PegasusMultipleCursorsEnabled</key>
 	<true/>
 	<key>UVLastDeviceSetPurge-iOS</key>
-	<string>24A434</string>
+	<string>24A94425</string>
 	<key>UVLastDeviceSetPurge-tvOS</key>
 	<string>24J360</string>
 	<key>UVLastDeviceSetPurge-watchOS</key>
 	<string>24R362</string>
 	<key>UVLastUsedDate</key>
 	<data>
-	ODA4ODYwMDQzLjM3MTk3MQ==
+	ODE0MTM0MzE5LjcyNjgyMQ==
 	</data>
 	<key>VerticalSplitView.topHeight.DVTWorkspaceThemeEditor</key>
 	<real>316.5</real>

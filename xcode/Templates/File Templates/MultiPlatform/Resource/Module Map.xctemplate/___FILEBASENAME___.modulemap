@@ -1,0 +1,7 @@
+___FILEHEADER___
+
+module <#ModuleName#> {
+    header "<#Header#>.h"
+
+    export *
+}

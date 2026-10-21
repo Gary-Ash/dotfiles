@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaApplicationNativeBase.geedbla</string>
+		<string>com.apple.dt.unit.appLifecycle.macOS</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>ContentView.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>ContentView.swift</string>
+			<key>SortOrder</key>
+			<integer>99</integer>
+		</dict>
+	</dict>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.macOSApplicationUI.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>SwiftUI</string>
+			<key>Description</key>
+			<string>The type of user interface.</string>
+			<key>Identifier</key>
+			<string>userInterface</string>
+			<key>Name</key>
+			<string>Interface:</string>
+			<key>SortOrder</key>
+			<integer>100</integer>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Units</key>
+			<dict>
+				<key>Storyboard</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>Main.storyboard</string>
+								<key>SortOrder</key>
+								<integer>101</integer>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Base.lproj/Main.storyboard</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+						</dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>INFOPLIST_KEY_NSMainStoryboardFile</key>
+									<string>Main</string>
+									<key>INFOPLIST_KEY_NSPrincipalClass</key>
+									<string>NSApplication</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>ViewController.m:implementation:methods:setRepresentedObject:code</key>
+							<string>[super setRepresentedObject:representedObject];
+
+// Update the view, if already loaded.</string>
+							<key>ViewController.m:implementation:methods:viewDidLoad:code</key>
+							<string>[super viewDidLoad];
+
+// Do any additional setup after loading the view.</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ViewController.h:comments</string>
+							<string>ViewController.h:imports:importCocoa</string>
+							<string>ViewController.h:interface(ViewController : NSViewController)</string>
+							<string>ViewController.m:comments</string>
+							<string>ViewController.m:imports:importHeader:ViewController.h</string>
+							<string>ViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
+							<string>ViewController.m:implementation:methods:viewDidLoad:code</string>
+							<string>ViewController.m:implementation:methods:setRepresentedObject(- (void\)setRepresentedObject:(id\)representedObject)</string>
+							<string>ViewController.m:implementation:methods:setRepresentedObject:code</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+							<key>languageChoice</key>
+							<string>Objective-C</string>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>ViewController.swift:implementation:methods:representedObject:body</key>
+							<string>didSet {
+// Update the view, if already loaded.
+}</string>
+							<key>ViewController.swift:implementation:methods:viewDidLoad:code</key>
+							<string>super.viewDidLoad()
+
+// Do any additional setup after loading the view.</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ViewController.swift:comments</string>
+							<string>ViewController.swift:imports:importCocoa</string>
+							<string>ViewController.swift:implementation(ViewController: NSViewController)</string>
+							<string>ViewController.swift:comments</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad:code</string>
+							<string>ViewController.swift:implementation:methods:representedObject(override var representedObject: Any?)</string>
+							<string>ViewController.swift:implementation:methods:representedObject:body</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+							<key>languageChoice</key>
+							<string>Swift</string>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+					</dict>
+				</array>
+				<key>SwiftUI</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>MainMenuOnly.storyboard</string>
+								<key>SortOrder</key>
+								<integer>101</integer>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Base.lproj/Main.storyboard</string>
+							<string>ContentView.swift</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+						</dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>ENABLE_PREVIEWS</key>
+									<string>YES</string>
+									<key>INFOPLIST_KEY_NSMainStoryboardFile</key>
+									<string>Main</string>
+									<key>INFOPLIST_KEY_NSPrincipalClass</key>
+									<string>NSApplication</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+				</array>
+				<key>XIB</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/MainMenu.xib</key>
+							<dict>
+								<key>Path</key>
+								<string>MainMenuApp.xib</string>
+								<key>SortOrder</key>
+								<integer>101</integer>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Base.lproj/MainMenu.xib</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+						</dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>INFOPLIST_KEY_NSMainNibFile</key>
+									<string>MainMenu</string>
+									<key>INFOPLIST_KEY_NSPrincipalClass</key>
+									<string>NSApplication</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+			<key>Values</key>
+			<array>
+				<string>SwiftUI</string>
+				<string>Storyboard</string>
+				<string>XIB</string>
+			</array>
+			<key>Variables</key>
+			<dict>
+				<key>Storyboard</key>
+				<dict>
+					<key>windowPropertyObjC</key>
+					<string></string>
+					<key>windowPropertySwift</key>
+					<string></string>
+				</dict>
+				<key>SwiftUI</key>
+				<dict>
+					<key>windowPropertyObjC</key>
+					<string></string>
+					<key>windowPropertySwift</key>
+					<string>var window: NSWindow!</string>
+				</dict>
+				<key>XIB</key>
+				<dict>
+					<key>windowPropertyObjC</key>
+					<string>@property (strong) IBOutlet NSWindow *window;</string>
+					<key>windowPropertySwift</key>
+					<string>@IBOutlet var window: NSWindow!</string>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Project</key>
+	<dict/>
+</dict>
+</plist>

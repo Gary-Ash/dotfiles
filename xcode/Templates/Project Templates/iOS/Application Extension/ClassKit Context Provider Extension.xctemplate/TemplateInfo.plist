@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.iosAppExtensionBase.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:NSExtension</key>
+		<string>&lt;key&gt;NSExtension&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;NSExtensionPrincipalClass&lt;/key&gt;
+    &lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___ContextRequestHandler&lt;/string&gt;
+    &lt;key&gt;NSExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.classkit.context-provider&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___.entitlements</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+			<key>SortOrder</key>
+			<integer>1000</integer>
+			<key>TargetIdentifiers</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a ClassKit context provider extension.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.classkit-context-provider-extension.ios.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:NSExtension</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>ContextRequestHandler.h</key>
+						<dict>
+							<key>Path</key>
+							<string>ContextRequestHandler.h</string>
+						</dict>
+						<key>ContextRequestHandler.m</key>
+						<dict>
+							<key>Path</key>
+							<string>ContextRequestHandler.m</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>ContextRequestHandler.h</string>
+						<string>ContextRequestHandler.m</string>
+					</array>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>ContextRequestHandler.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>ContextRequestHandler.swift</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>ContextRequestHandler.swift</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>ClassKit</string>
+			</array>
+			<key>SharedSettings</key>
+			<dict>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string>___PACKAGENAME___/___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.unit.classkit-context-provider-extension.ios.geedbla</string>
+		</dict>
+	</array>
+</dict>
+</plist>

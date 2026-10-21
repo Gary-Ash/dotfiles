@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.base.geedbla</string>
+		<string>com.apple.dt.unit.languageChoice.app.watchOS</string>
+		<string>com.apple.dt.unit.appLifecycle.watchOS</string>
+	</array>
+	<key>AssociatedTargetSpecification</key>
+	<dict>
+		<key>AllowablePlatforms</key>
+		<array>
+			<string>com.apple.platform.iphoneos</string>
+		</array>
+		<key>AllowableProductTypes</key>
+		<array>
+			<string>com.apple.product-type.application</string>
+		</array>
+		<key>AssociatedTargetIsDependent</key>
+		<true/>
+		<key>AssociatedTargetIsRequired</key>
+		<true/>
+		<key>AssociatedTargetNeedsProductBuildPhaseInjection</key>
+		<true/>
+		<key>PopUpDescription</key>
+		<string>The iOS application target that will be configured to embed this new watchOS app.</string>
+		<key>PopUpTitle</key>
+		<string>Embed in Companion Application:</string>
+	</dict>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template provides a starting point for an application.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.application.watchOS.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>NameOfInitialFileForEditor</key>
+	<string>ContentView.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Override</key>
+			<string>Swift</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>appLifecycle</string>
+			<key>Override</key>
+			<string>SwiftUI</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>userInterface</string>
+			<key>Override</key>
+			<string>SwiftUI</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>storageType</string>
+			<key>Override</key>
+			<string>None</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Watch-only App</string>
+			<key>Identifier</key>
+			<string>companionAppStyle</string>
+			<key>Name</key>
+			<string>Create Companion iOS App</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>SortOrder</key>
+			<integer>200</integer>
+			<key>Type</key>
+			<string>companionAppTargetChooser</string>
+			<key>Units</key>
+			<dict>
+				<key>Watch App for Existing iOS App</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.application.SwiftUI.watchOS.geedbla</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___ Watch App</string>
+						</dict>
+					</array>
+				</dict>
+				<key>Watch App with New Companion iOS App</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.application.SwiftUI.iOS.watchOSCompanion.geedbla</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___</string>
+						</dict>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.application.SwiftUI.watchOS.geedbla</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___ Watch App</string>
+							<key>ProductBuildPhaseInjections</key>
+							<array>
+								<dict>
+									<key>TargetIdentifier</key>
+									<string>com.apple.dt.cocoaTouchApplicationTarget</string>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+				<key>Watch-only App</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.application.SwiftUI.iOS.watchOSCompanionStub.geedbla</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___</string>
+						</dict>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.application.SwiftUI.watchOS.geedbla</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___ Watch App</string>
+							<key>ProductBuildPhaseInjections</key>
+							<array>
+								<dict>
+									<key>TargetIdentifier</key>
+									<string>com.apple.dt.watchOnlyApp</string>
+								</dict>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>Values</key>
+			<array>
+				<string>Watch-only App</string>
+				<string>Watch App with New Companion iOS App</string>
+				<string>Watch App for Existing iOS App</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>None</string>
+			<key>Identifier</key>
+			<string>testingSystem</string>
+			<key>Name</key>
+			<string>Testing System:</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>RequiredOptionsForValues</key>
+			<dict>
+				<key>Swift Testing</key>
+				<dict>
+					<key>languageChoice</key>
+					<string>Swift</string>
+				</dict>
+			</dict>
+			<key>SortOrder</key>
+			<integer>300</integer>
+			<key>Type</key>
+			<string>popup</string>
+			<key>ValueTitles</key>
+			<array>
+				<string>None</string>
+				<string>XCTest for Unit and UI Tests</string>
+				<string>Swift Testing with XCTest UI Tests</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>None</string>
+				<string>XCTest</string>
+				<string>Swift Testing</string>
+			</array>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.watchos</string>
+	</array>
+	<key>SortOrder</key>
+	<integer>1</integer>
+</dict>
+</plist>

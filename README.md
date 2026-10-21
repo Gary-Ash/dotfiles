@@ -44,7 +44,7 @@ The script resolves its own location, so the repository can live anywhere.
 | Path | Installs To | Contents |
 |------|-------------|----------|
 | `home/` | `~` | Dotfiles and `~/.config` — zsh, Git, Claude Code, CLI tool configs |
-| `xcode/` | `~/Library/Developer/Xcode/` | Code snippets, themes, key bindings, template macros |
+| `xcode/` | `~/Library/Developer/Xcode/` | Code snippets, themes, key bindings, file and project templates, template macros |
 | `preferences/` | `~/Library/Preferences/` | Xcode, Terminal, and Script Editor preference plists |
 | `Script Libraries/` | `~/Library/Script Libraries/` | Reusable AppleScript libraries (`.scptd`) |
 | `BBEdit/` | `~/Library/Application Support/BBEdit/` | Clippings, scripts, text filters, color schemes |
@@ -127,14 +127,14 @@ Two directories are `.gitignore`d because they are separate clones:
 
 ## Homebrew Packages
 
-38 formulae and 1 cask across 4 taps. npm globals are kept separately — see below.
+90 formulae, most of them libraries the tools below depend on, and 1 cask. npm globals are kept separately — see below.
 
 | Category | Packages |
 |----------|----------|
 | Shell | `zsh`, `bash`, `zsh-autosuggestions`, `zsh-completions`, `zshdb` |
 | Git | `git`, `gh`, `git-delta`, `git-lfs`, `libgit2`, `github-mcp-server` |
 | Diff / Review | `diffnav`, `tuicr` |
-| Search / Navigation | `ripgrep`, `fd`, `television`, `zoxide` |
+| Search / Navigation | `ripgrep`, `fd`, `fzf`, `zoxide` |
 | File Utilities | `bat`, `eza`, `jq`, `rename`, `imagemagick` |
 | Languages | `python@3.14`, `python-packaging`, `node`, `rbenv` |
 | Build | `cmake` |
@@ -163,9 +163,9 @@ to `~/.cache`, and the split is by startup phase.
 | `options.zsh` | via `.zshrc` | History, globbing, and completion `setopt` flags, `LS_COLORS`, and completion `zstyle`s |
 | `aliases.zsh` | via `.zshrc` | Command shortcuts |
 | `functions.zsh` | via `.zshrc` | Shell functions |
-| `television.zsh` | via `.zshrc` | `tv`-backed path-completion widget and bracketed-paste helpers |
+| `fzf.zsh` | via `.zshrc` | Solarized fzf theme, `fd`-backed file discovery, `rgf` live ripgrep search, `ff` file picker, and the `^G` file widget |
 
-Completions for `npm`, `gh`, and `tv` are generated once and cached under
+Completions for `npm` and `gh` are generated once and cached under
 `$XDG_CACHE_HOME/zsh/completions`, regenerated only when a cache file is
 missing, empty, or older than seven days — the shell does not spawn those tools
 on every startup.
@@ -292,6 +292,7 @@ The `BBEdit/` tree mirrors the Application Support folder.
 | `UserData/CodeSnippets/` | 56 snippets, mostly Swift/SwiftUI/UIKit |
 | `UserData/FontAndColorThemes/` | Solarized Dark and Light |
 | `UserData/KeyBindings/` | `Default.idekeybindings` |
+| `Templates/` | 333 file and project templates for every platform, DriverKit, and custom bases |
 | `UserData/IDETemplateMacros.plist` | File header template macros |
 | `UserData/xcdebugger/` | Shared breakpoints |
 
@@ -299,7 +300,6 @@ The `BBEdit/` tree mirrors the Application Support folder.
 
 | Tool | Config | Highlights |
 |------|--------|------------|
-| `television` | `.config/television/` | 44 cable channels — Git (log, branches, stash, worktrees, reflog), `gh` issues/PRs, brew/npm/pip packages, launchd, procs, man pages, history |
 | `bat` | `.config/bat/config` | Solarized dark, italics, zsh and Brewfile syntax mapping |
 | `eza` | `.config/eza/theme.yml` | Full Solarized theme for file kinds, permissions, and Git status |
 | `ripgrep` | `.config/rgrc.conf` | Solarized colors, hidden files, smart case, and Apple-specific types (`ib`, `strings`, `xcconfig`, `plist`, `modulemap`, `swiftinterface`) |

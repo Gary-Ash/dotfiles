@@ -13,7 +13,7 @@ set -uo pipefail
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :   5-Sep-2026  5:20pm
+# Modified :  20-Oct-2026  9:34pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -48,7 +48,7 @@ format_file() {
 		read -r line <"${file}" || return 1
 		if [[ ${line} =~ ^\#\!.*perl ]]; then
 			command -v perltidy >/dev/null || return 1
-			perltidy -b -bext='/' --profile="${HOME}/.config/.perltidyrc" "${file}" &>/dev/null
+			perltidy -b -bext='/' --profile="${HOME}/.config/perltidy/perltidyrc" "${file}" &>/dev/null
 		elif [[ ${line} =~ ^\#\!.*python ]]; then
 			command -v black >/dev/null || return 1
 			black --config "${HOME}/.config/black" --quiet "${file}" &>/dev/null
@@ -72,6 +72,10 @@ format_file() {
 #*****************************************************************************************
 count=0
 while IFS= read -r -d '' path; do
+	# Xcode templates hold placeholder macros such as ___FILEBASENAME:identifier___ that
+	# the formatters mangle
+	[[ ${path} == xcode/Templates/* ]] && continue
+
 	entry="$(git ls-files --stage -- "${path}" 2>/dev/null)" || continue
 	[[ -n ${entry} ]] || continue
 

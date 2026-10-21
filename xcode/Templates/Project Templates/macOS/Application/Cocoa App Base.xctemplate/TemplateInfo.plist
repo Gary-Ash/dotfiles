@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.applicationBase.geedbla</string>
+		<string>com.apple.dt.unit.osxBase</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Assets.xcassets</key>
+		<dict>
+			<key>AssetGeneration</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>AppIcon</string>
+					<key>Platforms</key>
+					<dict>
+						<key>macOS</key>
+						<string>true</string>
+					</dict>
+					<key>Type</key>
+					<string>appicon</string>
+				</dict>
+			</array>
+			<key>Path</key>
+			<string>Assets.xcassets</string>
+			<key>SortOrder</key>
+			<integer>100</integer>
+		</dict>
+		<key>main.m:main:NSApplicationMain</key>
+		<string>@autoreleasepool {
+    // Setup code that might create autoreleased objects goes here.
+}
+return NSApplicationMain(argc, argv);</string>
+	</dict>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.cocoaApplicationBase.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Assets.xcassets</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>appLifecycle</string>
+			<key>Units</key>
+			<dict>
+				<key>Cocoa</key>
+				<dict>
+					<key>Targets</key>
+					<array>
+						<dict>
+							<key>SharedSettings</key>
+							<dict>
+								<key>INFOPLIST_KEY_NSPrincipalClass</key>
+								<string>NSApplication</string>
+								<key>INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive</key>
+								<string>NO</string>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME</key>
+				<string>AccentColor</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>INFOPLIST_KEY_NSHumanReadableCopyright</key>
+				<string>___COPYRIGHT___</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks</string>
+				<key>REGISTER_APP_GROUPS</key>
+				<string>YES</string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaApplicationTarget</string>
+		</dict>
+	</array>
+</dict>
+</plist>
