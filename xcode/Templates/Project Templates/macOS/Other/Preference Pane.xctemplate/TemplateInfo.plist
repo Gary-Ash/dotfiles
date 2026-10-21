@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.systemPlugInBase.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Base.lproj/___PACKAGENAMEASIDENTIFIER___.xib</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.xib</string>
+		</dict>
+		<key>Info.plist:preferencePane</key>
+		<string>&lt;key&gt;NSPrefPaneIconFile&lt;/key&gt;
+&lt;string&gt;___PACKAGENAMEASIDENTIFIER___.tiff&lt;/string&gt;
+&lt;key&gt;NSPrefPaneIconLabel&lt;/key&gt;
+&lt;string&gt;___PACKAGENAMEASXML___&lt;/string&gt;
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___.h</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.h</string>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___.m</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.m</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a preference pane bundle that can be used with the System Settings application.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.preferencePane.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:preferencePane</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.h</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.m</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.tiff</string>
+		<string>Base.lproj/___PACKAGENAMEASIDENTIFIER___.xib</string>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>Headers</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Sources</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Frameworks</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Resources</string>
+				</dict>
+			</array>
+			<key>ProductType</key>
+			<string>com.apple.product-type.bundle</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>___PACKAGENAME___/Info.plist</string>
+				<key>INFOPLIST_KEY_NSHumanReadableCopyright</key>
+				<string>___COPYRIGHT___</string>
+				<key>INFOPLIST_KEY_NSMainNibFile</key>
+				<string>___PACKAGENAMEASIDENTIFIER___</string>
+				<key>INFOPLIST_KEY_NSPrincipalClass</key>
+				<string>___PACKAGENAMEASIDENTIFIER___</string>
+				<key>INSTALL_PATH</key>
+				<string>$(HOME)/Library/PreferencePanes</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>prefPane</string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaPreferencePaneTarget</string>
+		</dict>
+	</array>
+</dict>
+</plist>

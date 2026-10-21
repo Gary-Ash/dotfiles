@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.application.document-based.SwiftUI.iOS.geedbla</string>
+		<string>com.apple.dt.unit.sceneLifecycleApplication.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:UTImportedTypeDeclarations</key>
+		<string>&lt;key&gt;UTImportedTypeDeclarations&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;UTTypeIdentifier&lt;/key&gt;
+        &lt;string&gt;com.example.plain-text&lt;/string&gt;
+        &lt;key&gt;UTTypeDescription&lt;/key&gt;
+        &lt;string&gt;Example Text&lt;/string&gt;
+        &lt;key&gt;UTTypeConformsTo&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;public.plain-text&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;UTTypeTagSpecification&lt;/key&gt;
+        &lt;dict&gt;
+            &lt;key&gt;public.filename-extension&lt;/key&gt;
+            &lt;array&gt;
+                &lt;string&gt;exampletext&lt;/string&gt;
+            &lt;/array&gt;
+        &lt;/dict&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+	</dict>
+	<key>Description</key>
+	<string>This template provides a starting point for a document-based application.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.documentBasedViewApplication.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:DocumentTypes</string>
+		<string>Info.plist:UTImportedTypeDeclarations</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>storageType</string>
+			<key>Override</key>
+			<string>None</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>appLifecycle</string>
+			<key>Units</key>
+			<dict>
+				<key>Cocoa</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Info.plist:DocumentTypes</key>
+						<string>&lt;key&gt;CFBundleDocumentTypes&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;CFBundleTypeRole&lt;/key&gt;
+        &lt;string&gt;Editor&lt;/string&gt;
+        &lt;key&gt;UIDocumentClass&lt;/key&gt;
+        &lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___Document&lt;/string&gt;
+        &lt;key&gt;LSItemContentTypes&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;com.example.plain-text&lt;/string&gt;
+        &lt;/array&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:DocumentTypes</string>
+					</array>
+				</dict>
+				<key>SwiftUI</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Info.plist:DocumentTypes</key>
+							<string>&lt;key&gt;CFBundleDocumentTypes&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;CFBundleTypeRole&lt;/key&gt;
+        &lt;string&gt;Editor&lt;/string&gt;
+        &lt;key&gt;LSItemContentTypes&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;com.example.plain-text&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;NSUbiquitousDocumentUserActivityType&lt;/key&gt;
+        &lt;string&gt;$(PRODUCT_BUNDLE_IDENTIFIER).exampledocument&lt;/string&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+						</dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>storageTypeDocument</key>
+							<string>None</string>
+						</dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>SWIFT_VERSION</key>
+									<string>6.0</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Info.plist:DocumentTypes</key>
+							<string>&lt;key&gt;CFBundleDocumentTypes&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;CFBundleTypeRole&lt;/key&gt;
+        &lt;string&gt;Editor&lt;/string&gt;
+        &lt;key&gt;LSHandlerRank&lt;/key&gt;
+        &lt;string&gt;Default&lt;/string&gt;
+        &lt;key&gt;LSItemContentTypes&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;com.example.item-document&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;NSUbiquitousDocumentUserActivityType&lt;/key&gt;
+        &lt;string&gt;$(PRODUCT_BUNDLE_IDENTIFIER).exampledocument&lt;/string&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+							<key>Info.plist:UTImportedTypeDeclarations</key>
+							<string>&lt;key&gt;UTImportedTypeDeclarations&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;UTTypeIdentifier&lt;/key&gt;
+        &lt;string&gt;com.example.item-document&lt;/string&gt;
+        &lt;key&gt;UTTypeDescription&lt;/key&gt;
+        &lt;string&gt;Example Document&lt;/string&gt;
+        &lt;key&gt;UTTypeConformsTo&lt;/key&gt;
+        &lt;array&gt;
+            &lt;string&gt;com.apple.package&lt;/string&gt;
+        &lt;/array&gt;
+        &lt;key&gt;UTTypeTagSpecification&lt;/key&gt;
+        &lt;dict&gt;
+            &lt;key&gt;public.filename-extension&lt;/key&gt;
+            &lt;array&gt;
+                &lt;string&gt;exampledocument&lt;/string&gt;
+            &lt;/array&gt;
+        &lt;/dict&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</string>
+						</dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>storageTypeDocument</key>
+							<string>SwiftData</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Document.h</key>
+						<dict>
+							<key>Path</key>
+							<string>Document.h</string>
+						</dict>
+						<key>Document.m</key>
+						<dict>
+							<key>Path</key>
+							<string>Document.m</string>
+						</dict>
+						<key>DocumentViewController.h</key>
+						<dict>
+							<key>Path</key>
+							<string>DocumentViewController.h</string>
+						</dict>
+						<key>DocumentViewController.m</key>
+						<dict>
+							<key>Path</key>
+							<string>DocumentViewController.m</string>
+						</dict>
+						<key>SceneDelegate.m:implementation:methods:sceneWillConnectToSession:body</key>
+						<string>if (![scene isKindOfClass:[UIWindowScene class]]) {
+    return;
+}
+UIWindowScene *windowScene = (UIWindowScene *)scene;
+self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[DocumentViewController alloc] init]];
+[self.window makeKeyAndVisible];
+</string>
+						<key>SceneDelegate.m:implementation:methods:sceneWillConnectToSession:comments</key>
+						<string>// Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+// This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+</string>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>Info.plist:UIApplicationSceneManifest</string>
+						<string>SceneDelegate.m:imports:importHeader:DocumentViewController.h</string>
+						<string>SceneDelegate.m:implementation:methods:sceneWillConnectToSession:comments</string>
+						<string>SceneDelegate.m:implementation:methods:sceneWillConnectToSession:body</string>
+						<string>DocumentViewController.h</string>
+						<string>DocumentViewController.m</string>
+						<string>Document.h</string>
+						<string>Document.m</string>
+					</array>
+				</dict>
+				<key>Swift</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Document.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>Document.swift</string>
+							</dict>
+							<key>DocumentViewController.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>DocumentViewController.swift</string>
+							</dict>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</key>
+							<string>guard let windowScene = scene as? UIWindowScene else { return }
+
+window = UIWindow(windowScene: windowScene)
+window?.rootViewController = UINavigationController(rootViewController: DocumentViewController())
+window?.makeKeyAndVisible()
+</string>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:comments</key>
+							<string>// Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+// This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Info.plist:UIApplicationSceneManifest</string>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:comments</string>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</string>
+							<string>DocumentViewController.swift</string>
+							<string>Document.swift</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Document.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>Document.swift</string>
+							</dict>
+							<key>DocumentView.swift</key>
+							<dict>
+								<key>Path</key>
+								<string>DocumentView.swift</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>DocumentView.swift</string>
+							<string>Document.swift</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+							<key>userInterface</key>
+							<string>SwiftUI</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>SwiftUI</string>
+			<key>Description</key>
+			<string>The type of user interface.</string>
+			<key>Identifier</key>
+			<string>userInterface</string>
+			<key>Name</key>
+			<string>Interface:</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>ValueTitles</key>
+			<array>
+				<string>SwiftUI</string>
+				<string>UIKit</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>SwiftUI</string>
+				<string>Storyboard</string>
+			</array>
+		</dict>
+	</array>
+	<key>SortOrder</key>
+	<integer>2</integer>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>___PACKAGENAME___/Info.plist</string>
+				<key>INFOPLIST_KEY_UISupportsDocumentBrowser</key>
+				<string>YES</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

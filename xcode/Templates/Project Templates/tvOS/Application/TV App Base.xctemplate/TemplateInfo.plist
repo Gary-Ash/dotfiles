@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.applicationBase.geedbla</string>
+		<string>com.apple.dt.unit.tvosBase</string>
+		<string>com.apple.dt.unit.languageChoice.app.tvOS</string>
+		<string>com.apple.dt.unit.appLifecycle.tvOS</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>*:implementation:methods:applicationDidBecomeActive:comments</key>
+		<string>// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.</string>
+		<key>*:implementation:methods:applicationDidEnterBackground:comments</key>
+		<string>// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+</string>
+		<key>*:implementation:methods:applicationWillEnterForeground:comments</key>
+		<string>// Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.</string>
+		<key>*:implementation:methods:applicationWillResignActive:comments</key>
+		<string>// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+// Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+</string>
+		<key>Assets.xcassets</key>
+		<dict>
+			<key>AssetGeneration</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>App Icon &amp; Top Shelf Image</string>
+					<key>Platforms</key>
+					<dict>
+						<key>tvOS</key>
+						<string>true</string>
+					</dict>
+					<key>Type</key>
+					<string>tvappicon</string>
+				</dict>
+			</array>
+			<key>Path</key>
+			<string>Assets.xcassets</string>
+			<key>SortOrder</key>
+			<integer>100</integer>
+		</dict>
+		<key>Base.lproj/LaunchScreen.storyboard</key>
+		<dict>
+			<key>Path</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>SortOrder</key>
+			<integer>101</integer>
+		</dict>
+	</dict>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.tvosApplicationBase.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Assets.xcassets</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>None</string>
+			<key>Identifier</key>
+			<string>testingSystem</string>
+			<key>Name</key>
+			<string>Testing System:</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>RequiredOptionsForValues</key>
+			<dict>
+				<key>Swift Testing</key>
+				<dict>
+					<key>languageChoice</key>
+					<string>Swift</string>
+				</dict>
+			</dict>
+			<key>SortOrder</key>
+			<integer>130</integer>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Units</key>
+			<dict>
+				<key>Swift Testing</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.tvosApplicationUnitTestBundle.geedbla</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___Tests</string>
+						</dict>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.tvosApplicationUITestBundle.geedbla</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___UITests</string>
+						</dict>
+					</array>
+				</dict>
+				<key>XCTest</key>
+				<dict>
+					<key>Components</key>
+					<array>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.tvosApplicationUnitTestBundle.geedbla</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___Tests</string>
+						</dict>
+						<dict>
+							<key>Identifier</key>
+							<string>com.apple.dt.unit.tvosApplicationUITestBundle.geedbla</string>
+							<key>Name</key>
+							<string>___PACKAGENAME___UITests</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>ValueTitles</key>
+			<array>
+				<string>None</string>
+				<string>XCTest for Unit and UI Tests</string>
+				<string>Swift Testing with XCTest UI Tests</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>None</string>
+				<string>XCTest</string>
+				<string>Swift Testing</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>*:implementation:methods:viewDidLoad:super</key>
+						<string>[super viewDidLoad];
+// Do any additional setup after loading the view.</string>
+						<key>AppDelegate.h:interface:window</key>
+						<string>@property (strong, nonatomic) UIWindow *window;
+</string>
+						<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+						<string>// Override point for customization after application launch.</string>
+						<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:return</key>
+						<string>return YES;</string>
+						<key>main.m:main</key>
+						<dict>
+							<key>Beginning</key>
+							<string>int main(int argc, char * argv[]) {</string>
+							<key>End</key>
+							<string>}</string>
+							<key>Indent</key>
+							<integer>1</integer>
+						</dict>
+						<key>main.m:main:UIApplicationMain</key>
+						<string>NSString * appDelegateClassName;
+@autoreleasepool {
+    // Setup code that might create autoreleased objects goes here.
+    appDelegateClassName = NSStringFromClass([AppDelegate class]);
+}
+return UIApplicationMain(argc, argv, nil, appDelegateClassName);
+</string>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>main.m:comments</string>
+						<string>main.m:imports:importCocoa</string>
+						<string>main.m:imports:importHeader:AppDelegate.h</string>
+						<string>main.m:main:UIApplicationMain</string>
+						<string>AppDelegate.h:comments</string>
+						<string>AppDelegate.h:imports:importCocoa</string>
+						<string>AppDelegate.h:interface(AppDelegate : UIResponder &lt;UIApplicationDelegate&gt;)</string>
+						<string>AppDelegate.h:interface:window</string>
+						<string>AppDelegate.m:comments</string>
+						<string>AppDelegate.m:imports:importHeader:AppDelegate.h</string>
+						<string>AppDelegate.m:extension</string>
+						<string>AppDelegate.m:implementation:synthesize</string>
+						<string>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions(- (BOOL\)application:(UIApplication *\)application didFinishLaunchingWithOptions:(NSDictionary *\)launchOptions)</string>
+						<string>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</string>
+						<string>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:return</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillResignActive(- (void\)applicationWillResignActive:(UIApplication *\)application)</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillResignActive:comments</string>
+						<string>AppDelegate.m:implementation:methods:applicationDidEnterBackground(- (void\)applicationDidEnterBackground:(UIApplication *\)application)</string>
+						<string>AppDelegate.m:implementation:methods:applicationDidEnterBackground:comments</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillEnterForeground(- (void\)applicationWillEnterForeground:(UIApplication *\)application)</string>
+						<string>AppDelegate.m:implementation:methods:applicationWillEnterForeground:comments</string>
+						<string>AppDelegate.m:implementation:methods:applicationDidBecomeActive(- (void\)applicationDidBecomeActive:(UIApplication *\)application)</string>
+						<string>AppDelegate.m:implementation:methods:applicationDidBecomeActive:comments</string>
+					</array>
+				</dict>
+				<key>Swift</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>*:implementation:methods:viewDidLoad:super</key>
+							<string>super.viewDidLoad()
+// Do any additional setup after loading the view.</string>
+							<key>AppDelegate.swift:UIApplicationMain</key>
+							<string>@main</string>
+							<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+							<string>// Override point for customization after application launch.</string>
+							<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:return</key>
+							<string>return true</string>
+							<key>AppDelegate.swift:implementation:properties:window</key>
+							<string>var window: UIWindow?</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>AppDelegate.swift:comments</string>
+							<string>AppDelegate.swift:imports:importCocoa</string>
+							<string>AppDelegate.swift:UIApplicationMain</string>
+							<string>AppDelegate.swift:implementation(AppDelegate: UIResponder, UIApplicationDelegate)</string>
+							<string>AppDelegate.swift:implementation:properties:window</string>
+							<string>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions(func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?\) -&gt; Bool)</string>
+							<string>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</string>
+							<string>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:return</string>
+							<string>AppDelegate.swift:implementation:methods:applicationWillResignActive(func applicationWillResignActive(_ application: UIApplication\))</string>
+							<string>AppDelegate.swift:implementation:methods:applicationWillResignActive:comments</string>
+							<string>AppDelegate.swift:implementation:methods:applicationDidEnterBackground(func applicationDidEnterBackground(_ application: UIApplication\))</string>
+							<string>AppDelegate.swift:implementation:methods:applicationDidEnterBackground:comments</string>
+							<string>AppDelegate.swift:implementation:methods:applicationWillEnterForeground(func applicationWillEnterForeground(_ application: UIApplication\))</string>
+							<string>AppDelegate.swift:implementation:methods:applicationWillEnterForeground:comments</string>
+							<string>AppDelegate.swift:implementation:methods:applicationDidBecomeActive(func applicationDidBecomeActive(_ application: UIApplication\))</string>
+							<string>AppDelegate.swift:implementation:methods:applicationDidBecomeActive:comments</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>App Icon &amp; Top Shelf Image</string>
+				<key>ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME</key>
+				<string>AccentColor</string>
+				<key>INFOPLIST_KEY_UIUserInterfaceStyle</key>
+				<string>Automatic</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.tvosApplicationTarget</string>
+		</dict>
+	</array>
+</dict>
+</plist>

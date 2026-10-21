@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.iosAppExtensionBase.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Base.lproj/MainInterface.storyboard</key>
+		<dict>
+			<key>Path</key>
+			<string>MainInterface.storyboard</string>
+			<key>SortOrder</key>
+			<integer>99</integer>
+		</dict>
+		<key>Info.plist:NSExtension</key>
+		<string>&lt;key&gt;NSExtension&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;NSExtensionMainStoryboard&lt;/key&gt;
+    &lt;string&gt;MainInterface&lt;/string&gt;
+    &lt;key&gt;NSExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.usernotifications.content-extension&lt;/string&gt;
+    &lt;key&gt;NSExtensionAttributes&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;UNNotificationExtensionCategory&lt;/key&gt;
+        &lt;string&gt;myNotificationCategory&lt;/string&gt;
+        &lt;key&gt;UNNotificationExtensionInitialContentSizeRatio&lt;/key&gt;
+        &lt;real&gt;1&lt;/real&gt;
+&lt;/dict&gt;
+&lt;/dict&gt;
+</string>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a Notification Content application extension.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.notificationextensionios.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:NSExtension</string>
+		<string>Base.lproj/MainInterface.storyboard</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>NotificationViewController.h</key>
+						<dict>
+							<key>Path</key>
+							<string>NotificationViewController.h</string>
+						</dict>
+						<key>NotificationViewController.m</key>
+						<dict>
+							<key>Path</key>
+							<string>NotificationViewController.m</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>NotificationViewController.h</string>
+						<string>NotificationViewController.m</string>
+					</array>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>NotificationViewController.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>NotificationViewController.swift</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>NotificationViewController.swift</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>UserNotifications</string>
+				<string>UserNotificationsUI</string>
+			</array>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.notificationExtension</string>
+		</dict>
+	</array>
+</dict>
+</plist>

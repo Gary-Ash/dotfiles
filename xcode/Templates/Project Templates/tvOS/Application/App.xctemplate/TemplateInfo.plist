@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.tvosCoreDataApplication.geedbla</string>
+		<string>com.apple.dt.unit.sceneLifecycleApplication.tvOS.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template provides a starting point for an application.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.tvosApplication.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>NameOfInitialFileForEditor</key>
+	<string>ContentView.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main.storyboard</string>
+							<key>SortOrder</key>
+							<integer>98</integer>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>ViewController.h:comments</string>
+						<string>ViewController.h:imports:importCocoa</string>
+						<string>ViewController.h:interface(___FILEBASENAME___ : UIViewController)</string>
+						<string>ViewController.m:comments</string>
+						<string>ViewController.m:imports:importHeader:ViewController.h</string>
+						<string>ViewController.m:extension</string>
+						<string>ViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
+						<string>ViewController.m:implementation:methods:viewDidLoad:super</string>
+						<string>Base.lproj/Main.storyboard</string>
+						<string>Base.lproj/LaunchScreen.storyboard</string>
+					</array>
+					<key>Targets</key>
+					<array>
+						<dict>
+							<key>SharedSettings</key>
+							<dict>
+								<key>INFOPLIST_KEY_UILaunchStoryboardName</key>
+								<string>LaunchScreen</string>
+								<key>INFOPLIST_KEY_UIMainStoryboardFile</key>
+								<string>Main</string>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+				<key>Swift</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>Main.storyboard</string>
+								<key>SortOrder</key>
+								<integer>98</integer>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ViewController.swift:comments</string>
+							<string>ViewController.swift:imports:importCocoa</string>
+							<string>ViewController.swift:implementation(___FILEBASENAME___: UIViewController)</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad:super</string>
+							<string>Base.lproj/Main.storyboard</string>
+							<string>Base.lproj/LaunchScreen.storyboard</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>INFOPLIST_KEY_UILaunchStoryboardName</key>
+									<string>LaunchScreen</string>
+									<key>INFOPLIST_KEY_UIMainStoryboardFile</key>
+									<string>Main</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>*:imports:importSwiftUI</key>
+							<string>import SwiftUI</string>
+							<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+							<string>
+// Create the SwiftUI view that provides the window contents.
+let contentView = ContentView()
+</string>
+							<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body:window</key>
+							<string>
+// Use a UIHostingController as window root view controller.
+let window = UIWindow(frame: UIScreen.main.bounds)
+window.rootViewController = UIHostingController(rootView: contentView)
+self.window = window
+window.makeKeyAndVisible()</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>AppDelegate.swift:imports:importSwiftUI</string>
+							<string>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</string>
+							<string>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body:window</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+							<key>userInterface</key>
+							<string>SwiftUI</string>
+						</dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>ENABLE_PREVIEWS</key>
+									<string>YES</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+							<string>
+// Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
+// Add `@Environment(\.managedObjectContext)` in the views that will need the context.
+let contentView = ContentView().environment(\.managedObjectContext, persistentContainer.viewContext)
+</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+							<key>storageType</key>
+							<string>Core Data</string>
+							<key>userInterface</key>
+							<string>SwiftUI</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>SwiftUI</string>
+			<key>Description</key>
+			<string>The type of user interface.</string>
+			<key>Identifier</key>
+			<string>userInterface</string>
+			<key>Name</key>
+			<string>Interface:</string>
+			<key>SortOrder</key>
+			<integer>100</integer>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Values</key>
+			<array>
+				<string>SwiftUI</string>
+				<string>Storyboard</string>
+			</array>
+		</dict>
+	</array>
+	<key>SortOrder</key>
+	<integer>1</integer>
+</dict>
+</plist>

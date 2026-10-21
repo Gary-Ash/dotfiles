@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.iosAppExtensionBase.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>DeviceActivityMonitorExtension.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>DeviceActivityMonitorExtension.swift</string>
+		</dict>
+		<key>Info.plist:NSExtension</key>
+		<string>&lt;key&gt;NSExtension&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;NSExtensionPrincipalClass&lt;/key&gt;
+    &lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___DeviceActivityMonitorExtension&lt;/string&gt;
+    &lt;key&gt;NSExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.deviceactivity.monitor-extension&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___.entitlements</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+			<key>SortOrder</key>
+			<integer>1000</integer>
+			<key>TargetIdentifiers</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template creates a device activity monitor application extension.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.device-activity-monitor.ios.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>DeviceActivityMonitorExtension.swift</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+		<string>Info.plist:NSExtension</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Override</key>
+			<string>Swift</string>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>DeviceActivity</string>
+			</array>
+			<key>SharedSettings</key>
+			<dict>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string>___PACKAGENAME___/___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.deviceActivityMonitorExtension</string>
+		</dict>
+	</array>
+</dict>
+</plist>

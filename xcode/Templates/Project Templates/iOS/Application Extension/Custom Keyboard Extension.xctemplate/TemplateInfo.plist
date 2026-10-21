@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.iosAppExtensionBase.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:NSExtension</key>
+		<string>&lt;key&gt;NSExtension&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;NSExtensionAttributes&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;PrimaryLanguage&lt;/key&gt;
+        &lt;string&gt;en-US&lt;/string&gt;
+        &lt;key&gt;IsASCIICapable&lt;/key&gt;
+        &lt;false/&gt;
+        &lt;key&gt;PrefersRightToLeft&lt;/key&gt;
+        &lt;false/&gt;
+        &lt;key&gt;RequestsOpenAccess&lt;/key&gt;
+        &lt;false/&gt;
+    &lt;/dict&gt;
+    &lt;key&gt;NSExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.keyboard-service&lt;/string&gt;
+    &lt;key&gt;NSExtensionPrincipalClass&lt;/key&gt;
+    &lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___KeyboardViewController&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a custom keyboard that users can choose in place of the system keyboard.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.keyboardextensionios.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:NSExtension</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>KeyboardViewController.h</key>
+						<dict>
+							<key>Path</key>
+							<string>KeyboardViewController.h</string>
+						</dict>
+						<key>KeyboardViewController.m</key>
+						<dict>
+							<key>Path</key>
+							<string>KeyboardViewController.m</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>KeyboardViewController.h</string>
+						<string>KeyboardViewController.m</string>
+					</array>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>KeyboardViewController.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>KeyboardViewController.swift</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>KeyboardViewController.swift</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.keyboardExtension</string>
+		</dict>
+	</array>
+</dict>
+</plist>

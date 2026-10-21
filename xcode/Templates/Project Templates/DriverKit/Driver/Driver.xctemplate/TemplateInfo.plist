@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.bundleBase.geedbla</string>
+		<string>com.apple.dt.unit.driverKitBase</string>
+	</array>
+	<key>AssociatedTargetSpecification</key>
+	<dict>
+		<key>AllowablePlatforms</key>
+		<array>
+			<string>com.apple.platform.macosx</string>
+			<string>com.apple.platform.iphoneos</string>
+		</array>
+		<key>AllowableProductTypes</key>
+		<array>
+			<string>com.apple.product-type.application</string>
+		</array>
+		<key>AssociatedTargetIsDependent</key>
+		<true/>
+		<key>AssociatedTargetNeedsProductBuildPhaseInjection</key>
+		<true/>
+		<key>PopUpDescription</key>
+		<string>The application target that will host this new driver. The application will be set up to embed the new driver.</string>
+		<key>PopUpTitle</key>
+		<string>Embed in Application:</string>
+	</dict>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:kernel</key>
+		<string>&lt;key&gt;IOKitPersonalities&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;___PACKAGENAMEASIDENTIFIER___&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;IOMatchCategory&lt;/key&gt;
+        &lt;string&gt;$(PRODUCT_BUNDLE_IDENTIFIER)&lt;/string&gt;
+        &lt;key&gt;IOResourceMatch&lt;/key&gt;
+        &lt;string&gt;IOKit&lt;/string&gt;
+        &lt;key&gt;IOUserServerName&lt;/key&gt;
+        &lt;string&gt;$(PRODUCT_BUNDLE_IDENTIFIER)&lt;/string&gt;
+        &lt;key&gt;IOProviderClass&lt;/key&gt;
+        &lt;string&gt;IOUserResources&lt;/string&gt;
+        &lt;key&gt;IOUserClass&lt;/key&gt;
+        &lt;string&gt;___PACKAGENAMEASIDENTIFIER___&lt;/string&gt;
+        &lt;key&gt;IOClass&lt;/key&gt;
+        &lt;string&gt;IOUserService&lt;/string&gt;
+        &lt;key&gt;CFBundleIdentifierKernel&lt;/key&gt;
+        &lt;string&gt;com.apple.kpi.iokit&lt;/string&gt;
+    &lt;/dict&gt;
+&lt;/dict&gt;
+&lt;key&gt;OSBundleUsageDescription&lt;/key&gt;
+&lt;string&gt;&lt;/string&gt;
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___.cpp</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.cpp</string>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___.iig</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.iig</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template builds a DriverKit driver.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.genericDriverExtension.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:kernel</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.cpp</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.iig</string>
+	</array>
+	<key>OptionConstraints</key>
+	<array>
+		<dict>
+			<key>ConstraintType</key>
+			<string>RequirementIfAssociatedTarget</string>
+			<key>Identifier</key>
+			<string>bundleIdentifierPrefix</string>
+			<key>Value</key>
+			<string>___ASSOCIATEDTARGET_bundleIdentifier___</string>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>Headers</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Sources</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Frameworks</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Resources</string>
+				</dict>
+			</array>
+			<key>Frameworks</key>
+			<array>
+				<string>DriverKit</string>
+			</array>
+			<key>ProductType</key>
+			<string>com.apple.product-type.driver-extension</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>___PACKAGENAME___/Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(inherited)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.genericDriverExtensionTarget</string>
+		</dict>
+	</array>
+</dict>
+</plist>

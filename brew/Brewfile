@@ -1,11 +1,55 @@
+# C++ Common Libraries
+brew "abseil"
+# Open-source formatting library for C++
+brew "fmt"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@78"
+# Unicode conversion routines, fast
+brew "simdutf"
+# WHATWG-compliant and fast URL parser written in modern C++
+brew "ada-url"
+# Perceptual video quality assessment based on multi-method fusion
+brew "libvmaf"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Macro processing language
+brew "m4"
+# Automatic configure script builder
+brew "autoconf"
+# C string library for manipulating Unicode strings
+brew "libunistring"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
+# JSON parser for C
+brew "json-c"
+# Text-based UI library
+brew "ncurses"
+# Library for command-line editing
+brew "readline"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Mozilla CA certificate store
+brew "ca-certificates"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@4"
+# C library implementing the SSH2 protocol
+brew "libssh2"
+# Port of http_parser to llparse
+brew "llhttp"
 # C library of Git core methods that is re-entrant and linkable
 brew "libgit2"
+# Regular expressions library
+brew "oniguruma"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Bash Automated Testing System
 brew "bats-core"
+# Generic-purpose lossless compression algorithm by Google
+brew "brotli"
+# Asynchronous DNS library
+brew "c-ares"
 # Statistics utility to count lines of code
 brew "cloc"
 # Cross-platform make
@@ -18,30 +62,92 @@ brew "diffnav"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Library for manipulating PNG images
+brew "libpng"
+# Software library to render fonts
+brew "freetype"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# Library and utilities for processing GIFs
+brew "giflib"
+# Perl compatible regular expressions library with a new API
+brew "pcre2"
 # Distributed revision control system
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
 # GitHub Model Context Protocol server for AI tools
 brew "github-mcp-server"
+# GNU multiple precision arithmetic library
+brew "gmp"
 # Google Testing and Mocking Framework
 brew "googletest"
+# C port of the HdrHistogram
+brew "hdrhistogram_c"
+# Performance-portable, length-agnostic SIMD with runtime dispatch
+brew "highway"
+# JPEG image codec that aids compression and decompression
+brew "jpeg-turbo"
+# Open h.265 video codec implementation
+brew "libde265"
+# Extremely Fast Compression algorithm
+brew "lz4"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Zstandard is a real-time compression algorithm
+brew "zstd"
+# TIFF library and utilities
+brew "libtiff"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# H.265/HEVC encoder
+brew "x265"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# Generic library support script
+brew "libtool"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Portable Foreign Function Interface library
+brew "libffi"
+# HTTP/2 C Library
+brew "libnghttp2"
+# Multi-platform support library with a focus on asynchronous I/O
+brew "libuv"
+# YAML Parser
+brew "libyaml"
+# C++ lexer for extracting named exports from CommonJS modules
+brew "merve"
 # Deep clean and optimize your Mac
 brew "mole"
+# Library for decimal floating point arithmetic
+brew "mpdecimal"
+# Library of byte handling functions extracted from Node.js core
+brew "nbytes"
+# SIMD-accelerated C++ JSON parser
+brew "simdjson"
+# Command-line interface for SQLite
+brew "sqlite"
+# WASI syscall API built atop libuv
+brew "uvwasi"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Indents and reformats Perl scripts to make them easier to read
 brew "perltidy"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Core utilities for Python packages
 brew "python-packaging"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.14"
+# Install various Ruby versions and implementations
+brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
 # Perl-powered file rename script with many helpful built-ins
@@ -58,8 +164,6 @@ brew "sshpass"
 brew "swiftformat"
 # Tool to enforce Swift style and conventions
 brew "swiftlint"
-# General purpose fuzzy finder TUI
-brew "television"
 # Code review TUI with vim keybindings
 brew "tuicr"
 # Source code beautifier

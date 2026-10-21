@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.extensionkit-extension.iOS.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:EXAppExtensionAttributes</key>
+		<string>&lt;key&gt;EXAppExtensionAttributes&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;EXExtensionPointIdentifier&lt;/key&gt;
+        &lt;string&gt;com.apple.crash-reporter.extension&lt;/string&gt;
+    &lt;/dict&gt;
+</string>
+		<key>___PACKAGENAME:identifier___.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>CrashReporterExtension.swift</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template provides a starting point for an out of process crash reporter.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.crash-reporter-extension.iOS.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAME:identifier___.swift</string>
+		<string>Info.plist:EXAppExtensionAttributes</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Override</key>
+			<string>Swift</string>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>CrashReportExtension</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

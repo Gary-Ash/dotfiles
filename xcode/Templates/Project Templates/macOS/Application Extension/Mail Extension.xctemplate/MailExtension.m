@@ -1,0 +1,26 @@
+___FILEHEADER___
+
+#import "___FILEBASENAME___.h"
+
+___VARIABLE_MailExtension-ContentBlocker-Import-ObjC___
+___VARIABLE_MailExtension-MessageActionHandler-Import-ObjC___
+___VARIABLE_MailExtension-ComposeSessionHandler-Import-ObjC___
+___VARIABLE_MailExtension-MessageSecurityHandler-Import-ObjC___
+
+@interface ___FILEBASENAME___ ()
+
+___VARIABLE_MailExtension-ContentBlocker-Properties-ObjC___
+___VARIABLE_MailExtension-MessageActionHandler-Properties-ObjC___
+___VARIABLE_MailExtension-MessageSecurityHandler-Properties-ObjC___
+
+@end
+
+@implementation ___FILEBASENAME___
+
+___VARIABLE_MailExtension-ContentBlocker-ObjC___
+___VARIABLE_MailExtension-MessageActionHandler-ObjC___
+___VARIABLE_MailExtension-ComposeSessionHandler-ObjC___
+___VARIABLE_MailExtension-MessageSecurityHandler-ObjC___
+
+@end
+

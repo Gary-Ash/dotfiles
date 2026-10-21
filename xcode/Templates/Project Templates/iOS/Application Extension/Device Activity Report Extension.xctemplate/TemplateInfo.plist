@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.extensionkit-extension.iOS.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:EXAppExtensionAttributes</key>
+		<string>&lt;key&gt;EXAppExtensionAttributes&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;EXExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.deviceactivityui.report-extension&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+		<key>TotalActivityReport.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>TotalActivityReport.swift</string>
+		</dict>
+		<key>TotalActivityView.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>TotalActivityView.swift</string>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___.entitlements</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+			<key>SortOrder</key>
+			<integer>1000</integer>
+			<key>TargetIdentifiers</key>
+			<array/>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>DeviceActivityReportExtension.swift</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template creates a Device Activity Report application extension.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.device-activity-report.iOS.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAMEASIDENTIFIER___.swift</string>
+		<string>TotalActivityReport.swift</string>
+		<string>TotalActivityView.swift</string>
+		<string>___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+		<string>Info.plist:EXAppExtensionAttributes</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Override</key>
+			<string>Swift</string>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>CODE_SIGN_ENTITLEMENTS</key>
+				<string>___PACKAGENAME___/___PACKAGENAMEASIDENTIFIER___.entitlements</string>
+			</dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.deviceActivityReportExtension</string>
+		</dict>
+	</array>
+</dict>
+</plist>

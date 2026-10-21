@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.tvosAppExtensionBase.geedbla</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:NSExtension</key>
+		<string>&lt;key&gt;NSExtension&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;NSExtensionAttributes&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;IntentsSupported&lt;/key&gt;
+        &lt;array/&gt;
+    &lt;/dict&gt;
+    &lt;key&gt;NSExtensionPrincipalClass&lt;/key&gt;
+    &lt;string&gt;___VARIABLE_moduleNamePrefixForClasses:XML___IntentHandler&lt;/string&gt;
+    &lt;key&gt;NSExtensionPointIdentifier&lt;/key&gt;
+    &lt;string&gt;com.apple.intents-service&lt;/string&gt;
+&lt;/dict&gt;
+</string>
+	</dict>
+	<key>Description</key>
+	<string>This template builds an Intents extension that allows your app to handle intents issued by system services like Siri.</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.intentsextensiontvos.geedbla</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:NSExtension</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>IntentHandler.h</key>
+						<dict>
+							<key>Path</key>
+							<string>NoneType/IntentHandler.h</string>
+						</dict>
+						<key>IntentHandler.m</key>
+						<dict>
+							<key>Path</key>
+							<string>NoneType/IntentHandler.m</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>IntentHandler.h</string>
+						<string>IntentHandler.m</string>
+					</array>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>IntentHandler.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>NoneType/IntentHandler.swift</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>IntentHandler.swift</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>Intents</string>
+			</array>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.intentsExtension.tvOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
