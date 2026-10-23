@@ -72,7 +72,9 @@ The script resolves its own location, so the repository can live anywhere.
 6. Clones [`Gary-Ash/Scripts`](https://github.com/Gary-Ash/Scripts) into
    `/opt/geedbla` if there is no checkout there already. `/opt` is root-owned,
    so the directory is created and handed over with `sudo` before `git` writes
-   into it.
+   into it. Then clones [`Gary-Ash/AI-Tools`](https://github.com/Gary-Ash/AI-Tools)
+   into a temporary directory and installs its `CLAUDE.md`, `statusline.pl`, and
+   skills into `~/.claude`. A clone failure only warns.
 7. Downloads the latest [`Gary-Ash/Prompt`](https://github.com/Gary-Ash/Prompt)
    and [`Gary-Ash/StartupBanner`](https://github.com/Gary-Ash/StartupBanner)
    releases and installs the binaries into `/opt/bin`, where `.zshrc` and
@@ -240,23 +242,20 @@ The Claude Code configuration under `home/.claude/`. Caches, logs, transcripts,
 and the server-synced plugins are left out, and `.claude.json` is scrubbed of
 usage history and anything identifying the machine or account.
 
-- **`CLAUDE.md`** — global guidelines: TDD Kent Beck style, Tidy First, Swift
-  primary (SPM + swift-testing), Python 3.10+ stdlib-only, C++20 with CMake and
-  sanitizers, plus scope, tone, and answer-format rules.
 - **`settings.json`** — Opus model, fullscreen TUI, empty commit/PR attribution,
   a Perl status line, and a `Bash`/`Skill` permission allowlist.
-- **`statusline.pl`** — status bar rendering model, cost, context-window usage,
-  and rate-limit bars from the JSON on stdin.
 - **`mcp.json`** — the [sosumi.ai](https://sosumi.ai) MCP server (Apple developer
   documentation).
 - **`github-mcp-wrapper.sh`** — launches `github-mcp-server` read-only with a
   token pulled from the macOS Keychain via `gh auth token`, so no PAT is written
   to a config file.
 
-### Skills
+### AI-Tools
 
-Skills are not kept in this repository. The ones I wrote are published in
-[`Gary-Ash/AI-Tools`](https://github.com/Gary-Ash/AI-Tools).
+`CLAUDE.md`, `statusline.pl`, and the skills I wrote are not kept in this
+repository. They are published in
+[`Gary-Ash/AI-Tools`](https://github.com/Gary-Ash/AI-Tools) and installed by
+`bootstrap.sh`.
 
 ### Plugins
 
