@@ -58,7 +58,7 @@ The script resolves its own location, so the repository can live anywhere.
    rather than a fixed location.
 2. Clears stray `.DS_Store` files, then normalizes file modes (files `600`,
    directories `755`) and puts the execute bit back on the shell and Perl
-   scripts, the Git template hooks, and the BBEdit text filters. `.git` is left
+   scripts, the Git hooks, and the BBEdit text filters. `.git` is left
    alone.
 3. Creates `~/.cache/zsh`.
 4. `rsync`s `home/`, `xcode/`, `Script Libraries/`, `BBEdit/`, and
