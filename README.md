@@ -306,6 +306,7 @@ The `BBEdit/` tree mirrors the Application Support folder.
 | `diffnav` | `.config/diffnav/config.yml` | Side-by-side, 30-column file tree, Nerd Font status icons |
 | `gh`, `gh-dash` | `.config/gh/`, `.config/gh-dash/` | CLI and dashboard settings |
 | `swiftformat` | `.config/.swiftformat` | Swift 6 mode, 4-space tabs, `--self remove`, organized declarations by visibility |
+| `swift-format` | `.config/.swift-format.json` | 100-column lines, 4-space indent, 20 of 23 rules off |
 | `black`, `pycodestyle` | `.config/black`, `.config/pycodestyle` | 200-column lines |
 | `perltidy`, `uncrustify` | `.config/.perltidyrc`, `.config/.uncrustify` | Perl and C-family formatting |
 | `sourcekit-lsp` | `.config/sourcekit-lsp/config.json` | Background indexing and preparation |
