@@ -54,6 +54,14 @@ brew "c-ares"
 brew "cloc"
 # Cross-platform make
 brew "cmake"
+# HTTP/2 C Library
+brew "libnghttp2"
+# Extremely Fast Compression algorithm
+brew "lz4"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Zstandard is a real-time compression algorithm
+brew "zstd"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
 # Git diff pager based on delta but with a file tree
@@ -92,12 +100,6 @@ brew "highway"
 brew "jpeg-turbo"
 # Open h.265 video codec implementation
 brew "libde265"
-# Extremely Fast Compression algorithm
-brew "lz4"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# Zstandard is a real-time compression algorithm
-brew "zstd"
 # TIFF library and utilities
 brew "libtiff"
 # Image format providing lossless and lossy compression for web images
@@ -116,8 +118,6 @@ brew "imagemagick"
 brew "jq"
 # Portable Foreign Function Interface library
 brew "libffi"
-# HTTP/2 C Library
-brew "libnghttp2"
 # Multi-platform support library with a focus on asynchronous I/O
 brew "libuv"
 # YAML Parser

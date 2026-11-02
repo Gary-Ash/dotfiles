@@ -16,12 +16,11 @@ font-size = 12
 font-family = "PragmataPro Mono Liga"
 #font-feature = +ss15
 
-macos-titlebar-style = tabs
 auto-update = check
 auto-update-channel = tip
 
 shell-integration = "zsh"
-shell-integration-features = no-cursor, title, ssh-terminfo
+shell-integration-features = no-cursor, ssh-terminfo
 
 window-height = 70
 window-width = 200

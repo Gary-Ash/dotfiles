@@ -141,6 +141,8 @@
 	</array>
 	<key>IDEAllowUnauthenticatedAgents</key>
 	<true/>
+	<key>IDEAnnotationPresentation</key>
+	<string>initially-inline</string>
 	<key>IDEAppStatisticsRunDestinationPlatform</key>
 	<dict>
 		<key>appletvos</key>
@@ -158,27 +160,67 @@
 	<string>Unique</string>
 	<key>IDEBuildingContinueBuildingAfterErrors</key>
 	<true/>
-	<key>IDEChatClaudeAgentModelConfigurationAlias</key>
-	<string>opusplan</string>
+	<key>IDEChatArtifactLaneScope</key>
+	<string>Last turn</string>
+	<key>IDEChatClaudeAgentModels</key>
+	<data>
+	W3siaWQiOiJkZWZhdWx0IiwibmFtZSI6Ik9wdXMgNS41IiwiaXNBdmFpbGFibGUiOnRy
+	dWUsInJlc29sdmVkTW9kZWwiOiJjbGF1ZGUtb3B1cy01LTUiLCJzdXBwb3J0c0F1dG9N
+	b2RlIjp0cnVlfSx7ImlkIjoib3B1cyIsIm5hbWUiOiJPcHVzIDUuNSIsImlzQXZhaWxh
+	YmxlIjp0cnVlLCJyZXNvbHZlZE1vZGVsIjoiY2xhdWRlLW9wdXMtNS01Iiwic3VwcG9y
+	dHNBdXRvTW9kZSI6dHJ1ZX0seyJpZCI6ImNsYXVkZS1mYWJsZS01LTFbMW1dIiwibmFt
+	ZSI6IkZhYmxlIDUuMSIsImlzQXZhaWxhYmxlIjp0cnVlLCJyZXNvbHZlZE1vZGVsIjoi
+	Y2xhdWRlLWZhYmxlLTUtMSIsInN1cHBvcnRzQXV0b01vZGUiOnRydWV9LHsiaWQiOiJz
+	b25uZXQiLCJuYW1lIjoiU29ubmV0IDUuNSIsImlzQXZhaWxhYmxlIjp0cnVlLCJyZXNv
+	bHZlZE1vZGVsIjoiY2xhdWRlLXNvbm5ldC01LTUiLCJzdXBwb3J0c0F1dG9Nb2RlIjp0
+	cnVlfSx7ImlkIjoiaGFpa3UiLCJuYW1lIjoiSGFpa3UgNS41IiwiaXNBdmFpbGFibGUi
+	OnRydWUsInJlc29sdmVkTW9kZWwiOiJjbGF1ZGUtaGFpa3UtNS01Iiwic3VwcG9ydHNB
+	dXRvTW9kZSI6dHJ1ZX1d
+	</data>
 	<key>IDEChatCurrentErrorsContextEnabled</key>
 	<true/>
-	<key>IDEChatIsBuiltInChatGPTEnabled</key>
+	<key>IDEChatDidResetAgentSupervisorDefault</key>
 	<true/>
+	<key>IDEChatGatewayModels.claude-code</key>
+	<data>
+	eyJkZWZhdWx0TW9kZWwiOnsiaXNBdmFpbGFibGUiOnRydWUsInJlc29sdmVkTW9kZWwi
+	OiJjbGF1ZGUtb3B1cy01LTUiLCJzdXBwb3J0c0F1dG9Nb2RlIjp0cnVlLCJuYW1lIjoi
+	T3B1cyA1LjUiLCJpZCI6ImRlZmF1bHQifSwibW9kZWxzIjpbeyJpc0F2YWlsYWJsZSI6
+	dHJ1ZSwicmVzb2x2ZWRNb2RlbCI6ImNsYXVkZS1vcHVzLTUtNSIsInN1cHBvcnRzQXV0
+	b01vZGUiOnRydWUsIm5hbWUiOiJPcHVzIDUuNSIsImlkIjoib3B1cyJ9LHsiaXNBdmFp
+	bGFibGUiOnRydWUsInJlc29sdmVkTW9kZWwiOiJjbGF1ZGUtZmFibGUtNS0xIiwic3Vw
+	cG9ydHNBdXRvTW9kZSI6dHJ1ZSwibmFtZSI6IkZhYmxlIDUuMSIsImlkIjoiY2xhdWRl
+	LWZhYmxlLTUtMVsxbV0ifSx7ImlzQXZhaWxhYmxlIjp0cnVlLCJyZXNvbHZlZE1vZGVs
+	IjoiY2xhdWRlLXNvbm5ldC01LTUiLCJzdXBwb3J0c0F1dG9Nb2RlIjp0cnVlLCJuYW1l
+	IjoiU29ubmV0IDUuNSIsImlkIjoic29ubmV0In0seyJpc0F2YWlsYWJsZSI6dHJ1ZSwi
+	cmVzb2x2ZWRNb2RlbCI6ImNsYXVkZS1oYWlrdS01LTUiLCJzdXBwb3J0c0F1dG9Nb2Rl
+	Ijp0cnVlLCJuYW1lIjoiSGFpa3UgNS41IiwiaWQiOiJoYWlrdSJ9XSwic3VwcG9ydHND
+	dXN0b21Nb2RlbElkZW50aWZpZXIiOnRydWV9
+	</data>
+	<key>IDEChatGatewayModelsPrefetchedVersion.claude-code</key>
+	<string>2.1.294</string>
+	<key>IDEChatHasBeenAlertedToPermissionSettings</key>
+	<true/>
+	<key>IDEChatIsBuiltInChatGPTEnabled</key>
+	<false/>
 	<key>IDEChatIsBuiltInChatGPTOnboardingComplete</key>
 	<true/>
 	<key>IDEChatIsBuiltInClaudeEnabled</key>
 	<true/>
 	<key>IDEChatLastServerResourcesRetrieval</key>
 	<real>1777427646.729871</real>
+	<key>IDEChatLiveArtifactsEnabled</key>
+	<true/>
 	<key>IDECodingIntelligenceUseHistory</key>
 	<dict>
 		<key>HasEverUsed</key>
 		<true/>
 		<key>LastUpdatedDate</key>
-		<string>2026-03-03</string>
+		<string>2026-10-30</string>
 		<key>UsedModelCategories</key>
 		<array>
 			<string>integrated</string>
+			<string>integratedAgent</string>
 		</array>
 		<key>UsedModelProviders</key>
 		<array>
@@ -246,27 +288,27 @@
 	<dict>
 		<key>/Applications/Xcode.app/Contents/Applications/Accessibility Inspector.app</key>
 		<data>
-		AWBRx6Uob2MK5TWtqKzSKTuebjg=
+		ARw+YvbLkdK70ZBOFcOAvK5pcnY=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/DeviceHub.app</key>
 		<data>
-		R40VECRhGfrobYuk5ii1bXQyzjI=
+		HP4P+CbmOkXUJEHLl6Kxy+lc5RI=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/FileMerge.app</key>
 		<data>
-		tpjbfS8yJU122Ge3Cwszf4rAuP4=
+		JN4wzx4JiccyU5CF7Z2iTcuCAzU=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Icon Composer.app</key>
 		<data>
-		x4Vwfi9z0SUP1oTNU3DXxvTTa5Q=
+		7UWVM5EhlWoss/MQPSIVYzoXw+A=
 		</data>
 		<key>/Applications/Xcode.app/Contents/Applications/Instruments.app</key>
 		<data>
-		wW2T/wf1JrZqz8frs2EHWyRtEVM=
+		0RIxB1PFM7UsWO0g7GbvXCyR/P4=
 		</data>
 		<key>/System/Library/CoreServices/CoreTypes.bundle</key>
 		<data>
-		o/KmkAe11U1V2NeTzV55f2/MsBw=
+		kjBMPap8CuE5iva63S71X0JCqOM=
 		</data>
 	</dict>
 	<key>IDELastShownWhatsNewContentRevision</key>
@@ -321,12 +363,14 @@
 	<string>17F109</string>
 	<key>IDEMetalToolchainLastNotified-27A266a</key>
 	<string>27A266a</string>
+	<key>IDEMetalToolchainLastNotified-27B52</key>
+	<string>27B47</string>
 	<key>IDEMetalToolchainSelectedDuringFirstLaunch</key>
 	<true/>
 	<key>IDEModelAccessHasUserConsentForOnDeviceInteractions</key>
 	<true/>
 	<key>IDEMostRecentPostFLEToolsVersion</key>
-	<string>27.1</string>
+	<string>27.2</string>
 	<key>IDEOmnibar.location</key>
 	<dict>
 		<key>horizontal</key>
@@ -367,6 +411,7 @@
 	<real>640</real>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-appletvos</key>
 	<array>
+		<string>24K122</string>
 		<string>24J360</string>
 		<string>23L470</string>
 		<string>23L236</string>
@@ -380,6 +425,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-iphoneos</key>
 	<array>
+		<string>24B8118</string>
 		<string>24A94232</string>
 		<string>24A430</string>
 		<string>23F81a</string>
@@ -390,10 +436,10 @@
 		<string>23C53</string>
 		<string>23B77</string>
 		<string>23A339</string>
-		<string>22F76</string>
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-macosx</key>
 	<array>
+		<string>26B118</string>
 		<string>26A425</string>
 		<string>25F70</string>
 		<string>25E251</string>
@@ -404,10 +450,10 @@
 		<string>25A352</string>
 		<string>24F74</string>
 		<string>24E241</string>
-		<string>24C94</string>
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-watchos</key>
 	<array>
+		<string>24S118</string>
 		<string>24R360</string>
 		<string>23T570</string>
 		<string>23T238</string>
@@ -421,6 +467,7 @@
 	</array>
 	<key>IDEPlatformsFirstLaunchPresentedSDKVersions-xros</key>
 	<array>
+		<string>24N120</string>
 		<string>24M361</string>
 		<string>23O469</string>
 		<string>23O248</string>
@@ -431,7 +478,6 @@
 		<string>22O473</string>
 		<string>22O233</string>
 		<string>22N799</string>
-		<string>22N573</string>
 	</array>
 	<key>IDEPlatformsFirstLaunchSelected-appletvos</key>
 	<true/>
@@ -508,7 +554,7 @@
 	ZW5dT3V0bGluZUNvbHVtbiNAdbAAAAAAAAjSJicoKVokY2xhc3NuYW1lWCRjbGFzc2Vz
 	XE5TRGljdGlvbmFyeaIoKlhOU09iamVjdNMVDQ4sMB6jFxgZgAOABIAFozEyHYALgAyA
 	CIAJW0NsYXNzQ29sdW1uI0BUAAAAAAAA0xUNDjg8HqMXGBmAA4AEgAWjPT4dgA6AD4AI
-	gAlbVmFsdWVDb2x1bW4jQHTwAAAAAADSJidERV5OU011dGFibGVBcnJheaNERipXTlNB
+	gAlbVmFsdWVDb2x1bW4jQEaAAAAAAADSJidERV5OU011dGFibGVBcnJheaNERipXTlNB
 	cnJheQAIABEAGgAkACkAMgA3AEkATABSAFQAaABuAHMAfgCFAIkAiwCNAI8AkQCYAKAA
 	pACmAKgAqgCuALAAsgC0ALYAwQDHAM4A3ADlAOYA6wD2AP8BDAEPARgBHwEjASUBJwEp
 	AS0BLwExATMBNQFBAUoBUQFVAVcBWQFbAV8BYQFjAWUBZwFzAXwBgQGQAZQAAAAAAAAC
@@ -556,6 +602,17 @@
 	<true/>
 	<key>NSTableView Supports v2 XclocStringTable</key>
 	<true/>
+	<key>NSToolbar Configuration Xcode.IDEKit.Toolbar.SimpleFilesFocused.Customizable</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>2</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSToolbar Configuration Xcode.IDEKit.Toolbar.Workspace.Customizable</key>
 	<dict>
 		<key>TB Default Item Identifiers</key>
@@ -625,11 +682,11 @@
 	<key>PegasusMultipleCursorsEnabled</key>
 	<true/>
 	<key>UVLastDeviceSetPurge-iOS</key>
-	<string>24A94425</string>
+	<string>24B91016s</string>
 	<key>UVLastDeviceSetPurge-tvOS</key>
-	<string>24J360</string>
+	<string>24K150</string>
 	<key>UVLastDeviceSetPurge-watchOS</key>
-	<string>24R362</string>
+	<string>24S118</string>
 	<key>UVLastUsedDate</key>
 	<data>
 	ODE0MTM0MzE5LjcyNjgyMQ==
