@@ -33,8 +33,5 @@
   "hasSeenAutoModeOutsideReadPrompt": true,
   "voiceLangHintShownCount": 1,
   "voiceLangHintLastLanguage": "en",
-  "voiceFooterHintSeenCount": 3,
-  "groveChoiceSeenAt": {
-    "00000000-0000-0000-0000-000000000000": 1793580432983
-  }
+  "voiceFooterHintSeenCount": 3
 }
