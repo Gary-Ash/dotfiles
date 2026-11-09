@@ -6,13 +6,13 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  13-Sep-2026  9:42pm
+# Modified :  10-Nov-2026  4:40pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
 
 #*****************************************************************************************
-# Language setup
+# Scripting Language virtual environment setup
 #*****************************************************************************************
 source /opt/venv/python3/bin/activate
 
@@ -87,15 +87,12 @@ END
 }
 
 cleanup() {
-	#*****************************************************************************************
-	# main work
-	#*****************************************************************************************
+	mole clean
 	mole optimize
 	mole installer
 	mole purge
-	mole clean
 
-	rm -rf .npm
+	rm -rf ~/.npm
 	cleanhist
 }
 

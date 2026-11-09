@@ -34,5 +34,11 @@
   "voiceLangHintShownCount": 1,
   "voiceLangHintLastLanguage": "en",
   "voiceFooterHintSeenCount": 3,
-  "transcriptShareDismissed": true
+  "transcriptShareDismissed": true,
+  "unusedLimitResetStatusCache": {
+    "accountUuid": "3e26ce79-a757-496b-96ba-5aa697c83715",
+    "holdsUnusedReset": true,
+    "checkedAt": 1794343464961,
+    "validUntil": 1794602664961
+  }
 }

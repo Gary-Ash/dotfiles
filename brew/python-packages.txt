@@ -10,6 +10,7 @@ importlib_metadata
 iniconfig
 isort
 jedi
+lazy-importer
 librt
 mccabe
 mypy

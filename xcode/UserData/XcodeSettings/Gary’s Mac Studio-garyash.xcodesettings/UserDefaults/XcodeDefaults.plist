@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DVTFontAndColorLastUpdatedToolsVersion</key>
+	<string>27.2</string>
+	<key>DVTSourceEditorCursor</key>
+	<string>Vertical Bar</string>
+	<key>DVTTextEditorWrapsLines</key>
+	<false/>
+	<key>DVTTextFadeCommentDelimiters</key>
+	<false/>
+	<key>DVTTextFadeMarkupDelimiters</key>
+	<false/>
+	<key>DVTTextIndentNamespaceAndExtern</key>
+	<true/>
+	<key>DVTTextIndentOnPaste</key>
+	<true/>
+	<key>DVTTextIndentUsingTabs</key>
+	<true/>
+	<key>DVTTextPageGuideLocation</key>
+	<integer>130</integer>
+	<key>DVTTextReformatGeneratedCode</key>
+	<true/>
+	<key>DVTTextShowPageGuide</key>
+	<true/>
+	<key>DVTWorkspaceGlobalFontRecipe</key>
+	<data>
+	eyJkYXJrT3ZlcnJpZGVzIjpbImtleXdvcmQiLHsiZmFtaWx5Ijp7Im1vbm9zcGFjZSI6
+	e319LCJzaXplIjoxMSwidmFyaWFudCI6eyJpZGVudGlmaWVyIjoiU0ZNb25vLUJvbGQi
+	LCJzbGFudCI6eyJ2YWx1ZSI6MH0sIndlaWdodCI6Nywid2lkdGgiOnsidmFsdWUiOjB9
+	fX0sImtleXdvcmQuYXR0cmlidXRlIix7ImZhbWlseSI6eyJtb25vc3BhY2UiOnt9fSwi
+	c2l6ZSI6MTEsInZhcmlhbnQiOnsiaWRlbnRpZmllciI6IlNGTW9uby1SZWd1bGFyIiwi
+	c2xhbnQiOnsidmFsdWUiOjB9LCJ3ZWlnaHQiOjQsIndpZHRoIjp7InZhbHVlIjowfX19
+	XSwiZm9udHMiOlt7ImNvZGUiOnt9fSx7ImNhdGVnb3J5Ijp7ImNvZGUiOnt9fSwiZGlz
+	cGxheU1vZGVzIjpbeyJzdGFuZGFyZCI6e319LHsiY2F0ZWdvcnkiOnsiY29kZSI6e319
+	LCJjb250ZW50Ijp7ImN1c3RvbSI6eyJhdXRvbWF0aWNTaXplIjpmYWxzZSwiZGFyayI6
+	eyJmYW1pbHkiOnsibW9ub3NwYWNlIjp7fX0sInNpemUiOjExLCJ2YXJpYW50Ijp7Imlk
+	ZW50aWZpZXIiOiJTRk1vbm8tTWVkaXVtIiwic2xhbnQiOnsidmFsdWUiOjB9LCJ3ZWln
+	aHQiOjUsIndpZHRoIjp7InZhbHVlIjowfX19LCJsaWdodCI6eyJmYW1pbHkiOnsibW9u
+	b3NwYWNlIjp7fX0sInNpemUiOjExLCJ2YXJpYW50Ijp7ImlkZW50aWZpZXIiOiJTRk1v
+	bm8tUmVndWxhciIsInNsYW50Ijp7InZhbHVlIjowfSwid2VpZ2h0Ijo0LCJ3aWR0aCI6
+	eyJ2YWx1ZSI6MH19fX19fV19XSwibGlnaHRPdmVycmlkZXMiOlsia2V5d29yZCIseyJm
+	YW1pbHkiOnsibW9ub3NwYWNlIjp7fX0sInNpemUiOjExLCJ2YXJpYW50Ijp7ImlkZW50
+	aWZpZXIiOiJTRk1vbm8tQm9sZCIsInNsYW50Ijp7InZhbHVlIjowfSwid2VpZ2h0Ijo3
+	LCJ3aWR0aCI6eyJ2YWx1ZSI6MH19fSwia2V5d29yZC5hdHRyaWJ1dGUiLHsiZmFtaWx5
+	Ijp7Im1vbm9zcGFjZSI6e319LCJzaXplIjoxMSwidmFyaWFudCI6eyJpZGVudGlmaWVy
+	IjoiU0ZNb25vLVJlZ3VsYXIiLCJzbGFudCI6eyJ2YWx1ZSI6MH0sIndlaWdodCI6NCwi
+	d2lkdGgiOnsidmFsdWUiOjB9fX1dLCJsaW5lU3BhY2luZyI6eyJub3JtYWwiOnt9fSwi
+	dXNlc1Byb3NlRm9udEZvckRvY3VtZW50YXRpb25Db21tZW50cyI6ZmFsc2V9
+	</data>
+	<key>DVTWorkspaceRecipeLastUsedDates</key>
+	<data>
+	eyI4RTQzRDgxRS1EOEM1LTUxNUItOTZBOC04OTkwMzg1QzlEMzkiOjgxNTM0Mzg0Ni41
+	OTgwMTEsIjE4REJCRURFLUNBQTktNTZGQi05Njc2LTU3QUJBQjgxODUwQyI6ODE1MzQz
+	NzkzLjUzNTAzNn0=
+	</data>
+	<key>DVTWorkspaceThemeSettings</key>
+	<data>
+	eyJkYXJrIjp7ImRlZmF1bHQiOnt9fSwibGlnaHQiOnsic2F2ZWRSZWNpcGUiOnsiXzAi
+	OiI4RTQzRDgxRS1EOEM1LTUxNUItOTZBOC04OTkwMzg1QzlEMzkifX19
+	</data>
+	<key>IDEDidCompleteThemesFLEToolsVersion</key>
+	<string>27.2</string>
+	<key>IDEKeyBindingCurrentPreferenceSet</key>
+	<string>Default.idekeybindings</string>
+	<key>IDEKeyBindingExcludedPreferenceSet</key>
+	<array>
+		<string>Default</string>
+	</array>
+	<key>IDEReadOnlyItemsManagerAutomaticallyUnlockFiles</key>
+	<true/>
+	<key>IDESourceControlShowUpstreamChangesInChangeBar</key>
+	<true/>
+	<key>IDEWorkspaceSuppressCleanBuildPrompt</key>
+	<false/>
+	<key>NSToolbar Configuration Xcode.IDEKit.Toolbar.SimpleFilesFocused.Customizable</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>2</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSToolbar Configuration Xcode.IDEKit.Toolbar.Workspace.Customizable</key>
+	<dict>
+		<key>TB Default Item Identifiers</key>
+		<array>
+			<string>Xcode.IDEKit.CustomToolbarItem.ToggleNavigator</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.RunStop</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SplitViewDivider-0</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.BackForward</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.WindowTitle</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEIntelligenceChat.CustomToolbarItem.NewConversation</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.RootChooser</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SchemePicker.Centered</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.Issues</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.XcodeCloud.CustomToolbarItem.ToolbarItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.StatusCategories</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.AddEditor</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.EditorOptions</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.EditorMode</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SplitViewDivider-1</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.ToggleInspector</string>
+		</array>
+		<key>TB Display Mode</key>
+		<integer>2</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Item Identifiers</key>
+		<array>
+			<string>Xcode.IDEKit.CustomToolbarItem.ToggleNavigator</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.RunStop</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SplitViewDivider-0</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.BackForward</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.WindowTitle</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEIntelligenceChat.CustomToolbarItem.NewConversation</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SchemePicker.Centered</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.Issues</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.XcodeCloud.CustomToolbarItem.ToolbarItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.StatusCategories</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.AddEditor</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.EditorOptions</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.EditorMode</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.SplitViewDivider-1</string>
+			<string>NSToolbarFlexibleSpaceItem</string>
+			<string>Xcode.IDEKit.CustomToolbarItem.ToggleInspector</string>
+		</array>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>XCFontAndColorCurrentTheme</key>
+	<string>Default (Light).xccolortheme</string>
+</dict>
+</plist>

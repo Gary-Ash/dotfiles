@@ -563,7 +563,7 @@
 	<key>StripTrailingWhitespace_Unix Shell Script</key>
 	<true/>
 	<key>SupportFileCheckedForAppVersion:Read Me.txt</key>
-	<string>451000027</string>
+	<string>451000029</string>
 	<key>UseAttachmentScripts</key>
 	<true/>
 	<key>UserDeclinedSandboxAccess</key>

@@ -24,7 +24,8 @@
       "Bash(gh auth:*)",
       "Bash(chmod 700:*)",
       "mcp__github__list_gists"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "model": "opus",
   "statusLine": {
