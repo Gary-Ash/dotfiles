@@ -1,5 +1,0 @@
-___FILEHEADER___
-
-class ___FILEBASENAMEASIDENTIFIER___ {
-
-}

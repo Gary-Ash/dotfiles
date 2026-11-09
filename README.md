@@ -44,7 +44,7 @@ The script resolves its own location, so the repository can live anywhere.
 | Path | Installs To | Contents |
 |------|-------------|----------|
 | `home/` | `~` | Dotfiles and `~/.config` — zsh, Git, Claude Code, CLI tool configs |
-| `xcode/` | `~/Library/Developer/Xcode/` | Code snippets, themes, key bindings, file and project templates, template macros |
+| `xcode/` | `~/Library/Developer/Xcode/` | Code snippets, themes, key bindings, template macros |
 | `preferences/` | `~/Library/Preferences/` | Xcode, Terminal, and Script Editor preference plists |
 | `Script Libraries/` | `~/Library/Script Libraries/` | Reusable AppleScript libraries (`.scptd`) |
 | `BBEdit/` | `~/Library/Application Support/BBEdit/` | Clippings, scripts, text filters, color schemes |
@@ -291,7 +291,6 @@ The `BBEdit/` tree mirrors the Application Support folder.
 | `UserData/CodeSnippets/` | 56 snippets, mostly Swift/SwiftUI/UIKit |
 | `UserData/FontAndColorThemes/` | Solarized Dark and Light |
 | `UserData/KeyBindings/` | `Default.idekeybindings` |
-| `Templates/` | 333 file and project templates for every platform, DriverKit, and custom bases |
 | `UserData/IDETemplateMacros.plist` | File header template macros |
 | `UserData/xcdebugger/` | Shared breakpoints |
 
