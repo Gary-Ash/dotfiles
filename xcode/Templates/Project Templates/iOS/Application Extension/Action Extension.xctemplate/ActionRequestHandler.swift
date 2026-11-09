@@ -20,12 +20,14 @@ class ___FILEBASENAME___: NSObject, NSExtensionRequestHandling {
                 if let attachments = item.attachments {
                     for itemProvider in attachments {
                         if itemProvider.hasItemConformingToTypeIdentifier(UTType.propertyList.identifier) {
-                            itemProvider.loadItem(forTypeIdentifier: UTType.propertyList.identifier, options: nil, completionHandler: { (item, error) in
-                                let dictionary = item as! [String: Any]
+                            itemProvider.loadDataRepresentation(forTypeIdentifier: UTType.propertyList.identifier) { (data, error) in
+                                let dictionary = data.flatMap {
+                                    try? PropertyListSerialization.propertyList(from: $0, format: nil)
+                                } as? [String: Any] ?? [:]
                                 OperationQueue.main.addOperation {
-                                    self.itemLoadCompletedWithPreprocessingResults(dictionary[NSExtensionJavaScriptPreprocessingResultsKey] as! [String: Any]? ?? [:])
+                                    self.itemLoadCompletedWithPreprocessingResults(dictionary[NSExtensionJavaScriptPreprocessingResultsKey] as? [String: Any] ?? [:])
                                 }
-                            })
+                            }
                             found = true
                             break outer
                         }
@@ -65,7 +67,16 @@ class ___FILEBASENAME___: NSObject, NSExtensionRequestHandling {
             
             let resultsDictionary = [NSExtensionJavaScriptFinalizeArgumentKey: resultsForJavaScriptFinalize]
             
-            let resultsProvider = NSItemProvider(item: resultsDictionary as NSDictionary, typeIdentifier: UTType.propertyList.identifier)
+            let resultsProvider = NSItemProvider()
+            resultsProvider.registerDataRepresentation(forTypeIdentifier: UTType.propertyList.identifier, visibility: .all) { completionHandler in
+                do {
+                    let data = try PropertyListSerialization.data(fromPropertyList: resultsDictionary, format: .binary, options: 0)
+                    completionHandler(data, nil)
+                } catch {
+                    completionHandler(nil, error)
+                }
+                return nil
+            }
             
             let resultsItem = NSExtensionItem()
             resultsItem.attachments = [resultsProvider]

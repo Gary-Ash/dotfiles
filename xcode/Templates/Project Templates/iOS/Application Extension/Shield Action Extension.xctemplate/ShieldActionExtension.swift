@@ -13,6 +13,12 @@ class ___FILEBASENAME___: ShieldActionDelegate {
             completionHandler(.close)
         case .secondaryButtonPressed:
             completionHandler(.defer)
+        case .firstSecondarySubmenuItemPressed:
+            completionHandler(.defer)
+        case .secondSecondarySubmenuItemPressed:
+            completionHandler(.defer)
+        case .thirdSecondarySubmenuItemPressed:
+            completionHandler(.defer)
         @unknown default:
             fatalError()
         }

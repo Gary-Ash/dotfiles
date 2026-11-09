@@ -35,6 +35,8 @@ class ___FILEBASENAME___: UIViewController, MTKViewDelegate, ARSessionDelegate {
             renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view)
             
             renderer.drawRectResized(size: view.bounds.size)
+            
+            session.viewLayer = view.layer
         }
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(___FILEBASENAME___.handleTap(gestureRecognize:)))

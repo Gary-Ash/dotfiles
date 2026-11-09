@@ -22,7 +22,8 @@ ___FILEHEADER___
     for (NSExtensionItem *item in self.extensionContext.inputItems) {
         for (NSItemProvider *itemProvider in item.attachments) {
             if ([itemProvider hasItemConformingToTypeIdentifier:UTTypePropertyList.identifier]) {
-                [itemProvider loadItemForTypeIdentifier:UTTypePropertyList.identifier options:nil completionHandler:^(NSDictionary *dictionary, NSError *error) {
+                [itemProvider loadDataRepresentationForTypeIdentifier:UTTypePropertyList.identifier completionHandler:^(NSData *data, NSError *error) {
+                    NSDictionary *dictionary = data ? [NSPropertyListSerialization propertyListWithData:data options:NSPropertyListImmutable format:NULL error:NULL] : nil;
                     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                         [self itemLoadCompletedWithPreprocessingResults:dictionary[NSExtensionJavaScriptPreprocessingResultsKey]];
                     }];
@@ -68,7 +69,18 @@ ___FILEHEADER___
         
         NSDictionary *resultsDictionary = @{ NSExtensionJavaScriptFinalizeArgumentKey: resultsForJavaScriptFinalize };
         
-        NSItemProvider *resultsProvider = [[NSItemProvider alloc] initWithItem:resultsDictionary typeIdentifier:UTTypePropertyList.identifier];
+        NSItemProvider *resultsProvider = [[NSItemProvider alloc] init];
+        [resultsProvider registerDataRepresentationForTypeIdentifier:UTTypePropertyList.identifier
+                                                          visibility:NSItemProviderRepresentationVisibilityAll
+                                                         loadHandler:^NSProgress * _Nullable(void (^completionHandler)(NSData *, NSError *)) {
+            NSError *error = nil;
+            NSData *data = [NSPropertyListSerialization dataWithPropertyList:resultsDictionary
+                                                                      format:NSPropertyListBinaryFormat_v1_0
+                                                                     options:0
+                                                                       error:&error];
+            completionHandler(data, error);
+            return nil;
+        }];
         
         NSExtensionItem *resultsItem = [[NSExtensionItem alloc] init];
         resultsItem.attachments = @[resultsProvider];

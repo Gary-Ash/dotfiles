@@ -11,7 +11,7 @@ extension DeviceActivityReport.Context {
     static let totalActivity = Self("Total Activity")
 }
 
-struct TotalActivityReport: DeviceActivityReportScene {
+nonisolated struct TotalActivityReport: DeviceActivityReportScene {
     // Define which context your scene will represent.
     let context: DeviceActivityReport.Context = .totalActivity
     

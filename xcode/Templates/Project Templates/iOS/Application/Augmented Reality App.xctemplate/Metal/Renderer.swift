@@ -344,11 +344,12 @@ class ___FILEBASENAME___ {
         updateAnchors(frame: currentFrame)
         updateCapturedImageTextures(frame: currentFrame)
         
-        if viewportSizeDidChange {
-            viewportSizeDidChange = false
-            
-            updateImagePlane(frame: currentFrame)
+        guard viewportSizeDidChange, let viewRotationAngle = session.viewRotationAngle else {
+            return
         }
+        
+        viewportSizeDidChange = false
+        updateImagePlane(frame: currentFrame, viewRotationAngle: viewRotationAngle)
     }
     
     func updateSharedUniforms(frame: ARFrame) {
@@ -356,8 +357,8 @@ class ___FILEBASENAME___ {
         
         let uniforms = sharedUniformBufferAddress.assumingMemoryBound(to: SharedUniforms.self)
         
-        uniforms.pointee.viewMatrix = frame.camera.viewMatrix(for: .landscapeRight)
-        uniforms.pointee.projectionMatrix = frame.camera.projectionMatrix(for: .landscapeRight, viewportSize: viewportSize, zNear: 0.001, zFar: 1000)
+        uniforms.pointee.viewMatrix = frame.camera.viewMatrix(viewRotationAngle: session.viewRotationAngle ?? 0)
+        uniforms.pointee.projectionMatrix = frame.camera.projectionMatrix(viewRotationAngle: session.viewRotationAngle ?? 0, viewportSize: viewportSize, zNear: 0.001, zFar: 1000)
 
         // Set up lighting for the scene using the ambient intensity if provided
         var ambientIntensity: Float = 1.0
@@ -428,9 +429,9 @@ class ___FILEBASENAME___ {
         return texture
     }
     
-    func updateImagePlane(frame: ARFrame) {
+    func updateImagePlane(frame: ARFrame, viewRotationAngle: CGFloat) {
         // Update the texture coordinates of our image plane to aspect fill the viewport
-        let displayToCameraTransform = frame.displayTransform(for: .landscapeRight, viewportSize: viewportSize).inverted()
+        let displayToCameraTransform = frame.displayTransform(viewRotationAngle: viewRotationAngle, viewportSize: viewportSize).inverted()
 
         let vertexData = imagePlaneVertexBuffer.contents().assumingMemoryBound(to: Float.self)
         for index in 0...3 {

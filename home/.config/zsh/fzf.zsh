@@ -6,14 +6,15 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  20-Oct-2026  8:14pm
-# Modified :  20-Oct-2026  8:22pm
+# Modified :   3-Nov-2026  8:38pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
 
 #*****************************************************************************************
-# Solarized dark palette
+# Solarized Dark Palette
 #*****************************************************************************************
+
 typeset -gr SOL_BASE03="#002b36"
 typeset -gr SOL_BASE02="#073642"
 typeset -gr SOL_BASE01="#586e75"
@@ -31,26 +32,37 @@ typeset -gr SOL_CYAN="#2aa198"
 typeset -gr SOL_GREEN="#859900"
 
 #*****************************************************************************************
-# File discovery
+# Tool Detection
 #*****************************************************************************************
-if command -v fd &>/dev/null; then
+
+(($ + commands[bat]))
+(($ + commands[eza]))
+(($ + commands[chafa]))
+(($ + commands[delta]))
+
+#*****************************************************************************************
+# File Discovery
+#*****************************************************************************************
+
+if command -v fd >/dev/null 2>&1; then
 	export FZF_DEFAULT_COMMAND="
 		fd \
-		--type f \
-		--hidden \
-		--follow \
-		--exclude .git \
-		--exclude node_modules \
-		--exclude DerivedData \
-		--exclude .build
+			--type f \
+			--hidden \
+			--follow \
+			--exclude .git \
+			--exclude node_modules \
+			--exclude DerivedData \
+			--exclude .build
 	"
 
 	export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 fi
 
 #*****************************************************************************************
-# Base theme
+# Base Theme
 #*****************************************************************************************
+
 export FZF_DEFAULT_OPTS="
 --height=85%
 --layout=reverse
@@ -59,7 +71,7 @@ export FZF_DEFAULT_OPTS="
 --padding=1
 
 --prompt='󰍉  '
---pointer=''
+--pointer='▶'
 --marker='󰄲'
 
 --info=inline-right
@@ -89,52 +101,107 @@ export FZF_DEFAULT_OPTS="
 "
 
 #*****************************************************************************************
-# Native fzf walker (fzf >= 0.48)
+# Native Walker (fzf >= 0.48)
 #*****************************************************************************************
+
 export FZF_DEFAULT_OPTS="
-$FZF_DEFAULT_OPTS
+${FZF_DEFAULT_OPTS}
 --walker=file,dir,follow,hidden
 --walker-skip=.git,node_modules,DerivedData,.build
 "
 
 #*****************************************************************************************
+# Preview Helper
+#*****************************************************************************************
+
+_fzf_preview() {
+	local target="$1"
+
+	[[ -z $target ]] && return
+
+	if [[ -d $target ]]; then
+
+		if command -v eza >/dev/null; then
+			eza \
+				--tree \
+				--icons \
+				--level=4 \
+				--color=always \
+				"$target"
+		else
+			ls -lah "$target"
+		fi
+
+	elif command -v file >/dev/null &&
+		file --mime "$target" 2>/dev/null | grep -q 'image/'; then
+
+		if command -v chafa >/dev/null; then
+			chafa \
+				-f symbols \
+				-s "${FZF_PREVIEW_COLUMNS}x${FZF_PREVIEW_LINES}" \
+				"$target"
+		else
+			file "$target"
+		fi
+
+	else
+
+		if command -v bat >/dev/null; then
+			bat \
+				--style=numbers \
+				--color=always \
+				--line-range=:500 \
+				"$target"
+		else
+			sed -n '1,500p' "$target"
+		fi
+
+	fi
+}
+
+#*****************************************************************************************
 # Ctrl-T
 #*****************************************************************************************
+
 export FZF_CTRL_T_OPTS="
---header='󰈔  Files'
---preview '
-	bat \
-		--style=numbers \
-		--color=always \
-		--line-range=:500 {}
-'
+--header='󰈔 Files'
+--bind='ctrl-/:change-preview-window(hidden|)'
+--preview '_fzf_preview {}'
 "
 
 #*****************************************************************************************
 # Alt-C
 #*****************************************************************************************
+
 export FZF_ALT_C_OPTS="
---header='󰉋  Directories'
+--header='󰉋 Directories'
+--bind='ctrl-/:change-preview-window(hidden|)'
 --preview '
-	eza \
-		--tree \
-		--icons \
-		--level=3 \
-		--color=always {}
+	if command -v eza >/dev/null; then
+		eza \
+			--tree \
+			--icons \
+			--level=4 \
+			--color=always {}
+	else
+		find {} -maxdepth 3
+	fi
 '
 "
 
 #*****************************************************************************************
 # Ctrl-R
 #*****************************************************************************************
+
 export FZF_CTRL_R_OPTS="
 --exact
---header='󰋚  History'
+--header='󰋚 History'
 "
 
 #*****************************************************************************************
-# Ripgrep live search
+# Ripgrep Live Search
 #*****************************************************************************************
+
 rgf() {
 	local rg_prefix
 
@@ -145,7 +212,7 @@ rgf() {
 		--ansi \
 		--disabled \
 		--query "${*:-}" \
-		--header='󰱼  Live Ripgrep Search' \
+		--header='󰱼 Live Ripgrep Search' \
 		--delimiter=: \
 		--bind "start:reload:$rg_prefix {q} || true" \
 		--bind "change:reload:$rg_prefix {q} || true" \
@@ -161,34 +228,233 @@ rgf() {
 }
 
 #*****************************************************************************************
-# Grep alias
+# File Browser
 #*****************************************************************************************
-alias fg='rgf'
 
-#*****************************************************************************************
-# File browser
-#*****************************************************************************************
 ff() {
 	local file
 
 	file=$(
 		fzf \
-			--header='󰈔  Files' \
-			--preview '
-				bat \
-					--style=numbers \
-					--color=always \
-					--line-range=:500 {}
-			'
+			--header='󰈔 Files' \
+			--preview '_fzf_preview {}'
 	) || return
 
 	[[ -n $file ]] && "${EDITOR:-nvim}" "$file"
 }
 
 #*****************************************************************************************
-# Zoxide integration
+# Git Branch Switcher
 #*****************************************************************************************
-if command -v zoxide &>/dev/null; then
+
+gb() {
+	git rev-parse --git-dir >/dev/null 2>&1 || return
+
+	local branch
+
+	branch=$(
+		git for-each-ref \
+			--sort=-committerdate \
+			--format='%(committerdate:relative)|%(authorname)|%(refname:short)' \
+			refs/heads refs/remotes |
+			grep -v 'origin/HEAD' |
+			fzf \
+				--delimiter='|' \
+				--with-nth=1,2,3 \
+				--header=' Git Branches' \
+				--preview '
+				git log \
+					--graph \
+					--decorate \
+					--oneline \
+					--color=always \
+					{3} | head -200
+			'
+	) || return
+
+	branch="${branch##*|}"
+
+	[[ -z $branch ]] && return
+
+	if [[ $branch == origin/* ]]; then
+		git switch \
+			-c "${branch#origin/}" \
+			--track "$branch"
+	else
+		git switch "$branch"
+	fi
+}
+
+#*****************************************************************************************
+# Safe Branch Delete
+#*****************************************************************************************
+
+gbd() {
+	local branches
+
+	branches=$(
+		git branch --format='%(refname:short)' |
+			grep -v "^$(git branch --show-current)$" |
+			fzf \
+				--multi \
+				--header='Delete Branches'
+	) || return
+
+	echo "$branches" | xargs -r git branch -d
+}
+
+#*****************************************************************************************
+# Force Branch Delete
+#*****************************************************************************************
+
+gbD() {
+	local branches
+
+	branches=$(
+		git branch --format='%(refname:short)' |
+			grep -v "^$(git branch --show-current)$" |
+			fzf \
+				--multi \
+				--header='Force Delete Branches'
+	) || return
+
+	echo "$branches" | xargs -r git branch -D
+}
+
+#*****************************************************************************************
+# Remote Branch Delete
+#*****************************************************************************************
+
+gbrd() {
+	local branches
+
+	branches=$(
+		git branch -r |
+			sed 's/^[[:space:]]*//' |
+			grep '^origin/' |
+			grep -v 'HEAD' |
+			fzf \
+				--multi \
+				--header='Delete Remote Branches'
+	) || return
+
+	while read -r branch; do
+		[[ -z $branch ]] && continue
+		git push origin --delete "${branch#origin/}"
+	done <<<"$branches"
+}
+
+#*****************************************************************************************
+# Git History Browser
+#*****************************************************************************************
+
+glf() {
+	git log \
+		--graph \
+		--decorate \
+		--all \
+		--color=always \
+		--pretty='format:%C(auto)%h %d %s %C(green)(%cr) %C(cyan)<%an>' |
+		fzf \
+			--ansi \
+			--no-sort \
+			--header='󰜘 Git History' \
+			--preview '
+			echo {} |
+			grep -o "[a-f0-9]\{7,\}" |
+			head -1 |
+			xargs git show --color=always
+		'
+}
+
+#*****************************************************************************************
+# Process Browser
+#*****************************************************************************************
+
+fkill() {
+	local selected
+
+	selected=$(
+		ps -ef |
+			fzf \
+				--multi \
+				--header='󰍹 Processes'
+	) || return
+
+	echo "$selected" |
+		awk '{print $2}' |
+		xargs -r kill -9
+}
+
+#*****************************************************************************************
+# SSH Host Browser
+#*****************************************************************************************
+
+fssh() {
+	local host
+
+	host=$(
+		grep '^Host ' ~/.ssh/config 2>/dev/null |
+			awk '{print $2}' |
+			grep -v '\*' |
+			sort -u |
+			fzf \
+				--header='󰣀 SSH Hosts'
+	) || return
+
+	ssh "$host"
+}
+
+#*****************************************************************************************
+# Environment Browser
+#*****************************************************************************************
+
+fenv() {
+	env |
+		sort |
+		fzf \
+			--header='󰘳 Environment Variables'
+}
+
+#*****************************************************************************************
+# Manual Page Browser
+#*****************************************************************************************
+
+fman() {
+	man -k . |
+		fzf \
+			--prompt='Manual > ' \
+			--preview '
+			man {1} |
+			col -bx |
+			head -400
+		' |
+		awk '{print $1}' |
+		xargs -r man
+}
+
+#*****************************************************************************************
+# Directory Stack Browser
+#*****************************************************************************************
+
+fdirs() {
+	local dir
+
+	dir=$(
+		dirs -v |
+			fzf \
+				--header='󰉋 Directory Stack' |
+			awk '{print $2}'
+	) || return
+
+	cd "$dir" || return
+}
+
+#*****************************************************************************************
+# Zoxide Integration
+#*****************************************************************************************
+
+if command -v zoxide >/dev/null 2>&1; then
 	eval "$(zoxide init zsh)"
 fi
 
@@ -198,7 +464,7 @@ zi() {
 	dir=$(
 		zoxide query -l |
 			fzf \
-				--header='󰉋  Jump To Directory' \
+				--header='󰉋 Jump To Directory' \
 				--height=40%
 	) || return
 
@@ -206,20 +472,58 @@ zi() {
 }
 
 #*****************************************************************************************
-# tmux popup integration
+# tmux Integration
 #*****************************************************************************************
+
 if [[ -n $TMUX ]]; then
-	export FZF_TMUX_OPTS="-p 85%,80%"
+	export FZF_TMUX_OPTS="-p 90%,85%"
 fi
+
+#*****************************************************************************************
+# Git Branch Widget
+#*****************************************************************************************
+
+fzf-git-branch-widget() {
+	local branch
+
+	branch=$(
+		git branch \
+			-a \
+			--format='%(refname:short)' |
+			fzf \
+				--header=' Git Branches'
+	) || return
+
+	LBUFFER+="$branch"
+}
+
+zle -N fzf-git-branch-widget
 
 #*****************************************************************************************
 # Aliases
 #*****************************************************************************************
-alias fzf-preview='fzf --preview "bat --style=numbers --color=always {}"'
-alias ffiles='ff'
+
+alias fg='rgf'
 alias fgrep='rgf'
 
+alias ffiles='ff'
+alias fk='fkill'
+alias fs='fssh'
+alias fe='fenv'
+alias fm='fman'
+
+# Git
+alias gbs='gb'
+alias gbdl='gbd'
+alias gbdf='gbD'
+alias gbrm='gbrd'
+alias ghl='glf'
+
+alias fzf-preview='fzf --preview "_fzf_preview {}"'
+
 #*****************************************************************************************
-# Key bindings
+# Key Bindings
 #*****************************************************************************************
+
 bindkey '^G' fzf-file-widget 2>/dev/null || true
+bindkey '^G^B' fzf-git-branch-widget

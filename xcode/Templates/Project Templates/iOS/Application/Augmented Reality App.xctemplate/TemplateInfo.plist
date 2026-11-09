@@ -110,11 +110,11 @@
 									<key>INFOPLIST_KEY_UIRequiredDeviceCapabilities</key>
 									<string>arkit metal</string>
 									<key>INFOPLIST_KEY_UISupportedInterfaceOrientations</key>
-									<string>UIInterfaceOrientationLandscapeRight</string>
+									<string>UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight</string>
 									<key>INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad</key>
-									<string>UIInterfaceOrientationLandscapeRight</string>
+									<string>UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight</string>
 									<key>INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone</key>
-									<string>UIInterfaceOrientationLandscapeRight</string>
+									<string>UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight</string>
 								</dict>
 							</dict>
 						</array>

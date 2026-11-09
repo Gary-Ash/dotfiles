@@ -41,6 +41,8 @@ ___FILEHEADER___
     
     [self.renderer drawRectResized:view.bounds.size];
     
+    self.session.viewLayer = view.layer;
+    
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     NSMutableArray *gestureRecognizers = [NSMutableArray array];
     [gestureRecognizers addObject:tapGesture];

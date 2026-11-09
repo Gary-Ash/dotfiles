@@ -25,7 +25,8 @@ ___FILEHEADER___
             if ([itemProvider hasItemConformingToTypeIdentifier:UTTypeImage.identifier]) {
                 // This is an image. We'll load it, then place it in our image view.
                 __weak UIImageView *imageView = self.imageView;
-                [itemProvider loadItemForTypeIdentifier:UTTypeImage.identifier options:nil completionHandler:^(UIImage *image, NSError *error) {
+                [itemProvider loadObjectOfClass:[UIImage class] completionHandler:^(id<NSItemProviderReading> object, NSError *error) {
+                    UIImage *image = (UIImage *)object;
                     if(image) {
                         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                             [imageView setImage:image];

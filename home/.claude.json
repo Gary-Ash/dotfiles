@@ -33,5 +33,6 @@
   "hasSeenAutoModeOutsideReadPrompt": true,
   "voiceLangHintShownCount": 1,
   "voiceLangHintLastLanguage": "en",
-  "voiceFooterHintSeenCount": 3
+  "voiceFooterHintSeenCount": 3,
+  "transcriptShareDismissed": true
 }

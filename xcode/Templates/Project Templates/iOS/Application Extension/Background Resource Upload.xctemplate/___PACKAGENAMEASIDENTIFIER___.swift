@@ -5,13 +5,13 @@ import ExtensionFoundation
 import Photos
 
 @main
-class BackgroundUploadExtension: PHBackgroundResourceUploadExtension {
+class BackgroundUploadExtension: PHBackgroundResourceUploadJobExtension {
 
     required init() {
         print("Initialized")
     }
 
-    func process() -> PHBackgroundResourceUploadProcessingResult {
+    func processJobs() async -> PHBackgroundResourceUploadProcessingResult {
         print("Processing")
         
         /// Please refer to documentation on uploading asset resources in the background. Some todos include:
@@ -25,7 +25,7 @@ class BackgroundUploadExtension: PHBackgroundResourceUploadExtension {
         return .processing
     }
     
-    func notifyTermination() {
+    func willTerminate() async {
         print("Terminating")
         
         /// Perform any actions here that you need before the extension terminates

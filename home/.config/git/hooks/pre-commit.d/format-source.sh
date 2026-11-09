@@ -3,7 +3,8 @@ set -uo pipefail
 #*****************************************************************************************
 # format-source.sh
 #
-# git pre-commit hook script that formats the source files a commit is staging
+# git pre-commit hook script that formats the source files a commit is staging, first
+# dropping the bare // line Xcode writes above a block comment file header
 #
 # What is staged is what gets formatted, and what gets written back.  A file staged in part
 # keeps the part that was held back, and the copy in the working tree is only overwritten
@@ -13,7 +14,7 @@ set -uo pipefail
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :  20-Oct-2026  9:34pm
+# Modified :   8-Nov-2026  7:06pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -24,6 +25,22 @@ readonly C_FILES='\.(hpp|hxx|c|cc|cpp|cxx|cs|jav|java)$'
 
 WORK_DIR="$(mktemp -d "${TMPDIR:-/tmp}/pre-commit.XXXXXX")" || exit 0
 trap 'rm -rf "${WORK_DIR}"' EXIT
+
+#*****************************************************************************************
+# drop the bare // line Xcode writes above a block comment file header
+#
+# New Empty File and the stock templates put // in front of the FILEHEADER macro, so a
+# header that is a /* */ block comes out with a lone // line above it.  Only that exact
+# shape is touched; Apple's default header, // on every line, keeps its first line.
+#*****************************************************************************************
+strip_xcode_comment_line() {
+	local file="$1" first second
+
+	[[ ${file} =~ ${SWIFT_FILES} || ${file} =~ ${OBJC_FILES} || ${file} =~ ${C_FILES} ]] || return 0
+	{ IFS= read -r first && IFS= read -r second; } <"${file}" || return 0
+	[[ ${first} == '//' && ${second} == '/*'* ]] || return 0
+	tail -n +2 "${file}" >"${file}.stripped" && mv "${file}.stripped" "${file}"
+}
 
 #*****************************************************************************************
 # format one file in place, by name
@@ -93,7 +110,9 @@ while IFS= read -r -d '' path; do
 	git cat-file blob ":${path}" >"${staged}" 2>/dev/null || continue
 	cp "${staged}" "${staged}.staged" || continue
 
-	format_file "${staged}" || continue
+	# a file no formatter claims comes back untouched, so the cmp below still decides
+	strip_xcode_comment_line "${staged}"
+	format_file "${staged}"
 	cmp -s "${staged}" "${staged}.staged" && continue
 
 	hash="$(git hash-object -w -- "${staged}" 2>/dev/null)" || continue

@@ -63,6 +63,10 @@ struct BackgroundDownloadHandler: BADownloaderExtension
             downloadsToSchedule.insert(nonEssentialDownload)
             break;
 
+        case .languageChange:
+            // User changed the language, return any downloads necessary for localization.
+            return Set()
+
         @unknown default:
             return Set()
         }

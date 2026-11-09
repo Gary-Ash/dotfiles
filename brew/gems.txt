@@ -106,6 +106,7 @@ rubocop
 rubocop-ast
 ruby-progressbar
 ruby2_keywords
+rubygems-update
 safe_yaml
 sass-embedded
 securerandom

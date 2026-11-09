@@ -7,7 +7,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   1-Sep-2026  4:42pm
-# Modified :   5-Sep-2026  4:53pm
+# Modified :   2-Nov-2026  10:56pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -19,7 +19,7 @@ my $MAX_LINE     = 72;
 my $MAX_ATTEMPTS = 5;
 my $MARKER       = '# commit-msg:';
 
-my @TAGS = ('BUG FIX', 'FEATURE', 'REFACTOR', 'TEST CODE', 'TIDY');
+my @TAGS = ('BUG FIX', 'FEATURE', 'REFACTOR', 'REVERT', 'TEST CODE', 'TIDY');
 
 my $msgfile = shift(@ARGV);
 die("usage: commit-msg <message file>\n") unless defined($msgfile) && length($msgfile);
@@ -201,7 +201,7 @@ sub check_subject {
 
     my $length = length($subject);
     push(@errors, "the summary line is $length characters, keep it inside $MAX_LINE")
-      if $length > $MAX_LINE;
+        if $length > $MAX_LINE;
 
     push(@errors, check_capitalization($summary));
     return @errors;
@@ -245,9 +245,9 @@ sub check_body {
         push(@errors, 'a blank line must separate the summary line from the body');
     }
 
-    my @body = @lines[2 .. $#lines];
+    my @body = @lines[ 2 .. $#lines ];
     push(@errors, 'the body is empty, drop it or write a description')
-      unless grep { /\S/ } @body;
+        unless grep { /\S/ } @body;
 
     my $listed = 0;
     my $long   = 0;
@@ -325,8 +325,7 @@ sub format_rules {
 sub launch_editor {
     my ($command, $path) = @_;
 
-    my $script
-      = 'if ( exec </dev/tty >/dev/tty ) 2>/dev/null; ' . 'then exec </dev/tty >/dev/tty 2>/dev/tty; fi; ' . $command . ' "$@"';
+    my $script = 'if ( exec </dev/tty >/dev/tty ) 2>/dev/null; ' . 'then exec </dev/tty >/dev/tty 2>/dev/tty; fi; ' . $command . ' "$@"';
 
     my $status = system('sh', '-c', $script, 'sh', $path);
     return -1 if $status == -1;

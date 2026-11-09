@@ -372,19 +372,21 @@ static const float kImagePlaneVertexData[16] = {
     [self _updateAnchorsWithFrame:currentFrame];
     [self _updateCapturedImageTexturesWithFrame:currentFrame];
     
-    if (_viewportSizeDidChange) {
-        _viewportSizeDidChange = NO;
-        
-        [self _updateImagePlaneWithFrame:currentFrame];
+    CGFloat viewRotationAngle = _session.viewRotationAngle;
+    if (!_viewportSizeDidChange || isnan(viewRotationAngle)) {
+        return;
     }
+    
+    _viewportSizeDidChange = NO;
+    [self _updateImagePlaneWithFrame:currentFrame viewRotationAngle:viewRotationAngle];
 }
 
 - (void)_updateSharedUniformsWithFrame:(ARFrame *)frame {
     // Update the shared uniforms of the frame
     SharedUniforms *uniforms = (SharedUniforms *)_sharedUniformBufferAddress;
     
-    uniforms->viewMatrix = [frame.camera viewMatrixForOrientation:UIInterfaceOrientationLandscapeRight];
-    uniforms->projectionMatrix = [frame.camera projectionMatrixForOrientation:UIInterfaceOrientationLandscapeRight viewportSize:_viewportSize zNear:0.001 zFar:1000];
+    uniforms->viewMatrix = [frame.camera viewMatrixForViewRotationAngle:_session.viewRotationAngle];
+    uniforms->projectionMatrix = [frame.camera projectionMatrixForViewRotationAngle:_session.viewRotationAngle viewportSize:_viewportSize zNear:0.001 zFar:1000];
 
     // Set up lighting for the scene using the ambient intensity if provided
     float ambientIntensity = 1.0;
@@ -458,9 +460,9 @@ static const float kImagePlaneVertexData[16] = {
     return mtlTextureRef;
 }
 
-- (void)_updateImagePlaneWithFrame:(ARFrame *)frame {
+- (void)_updateImagePlaneWithFrame:(ARFrame *)frame viewRotationAngle:(CGFloat)viewRotationAngle {
     // Update the texture coordinates of our image plane to aspect fill the viewport
-    CGAffineTransform displayToCameraTransform = CGAffineTransformInvert([frame displayTransformForOrientation:UIInterfaceOrientationLandscapeRight viewportSize:_viewportSize]);
+    CGAffineTransform displayToCameraTransform = CGAffineTransformInvert([frame displayTransformForViewRotationAngle:viewRotationAngle viewportSize:_viewportSize]);
 
     float *vertexData = [_imagePlaneVertexBuffer contents];
     for (NSInteger index = 0; index < 4; index++) {

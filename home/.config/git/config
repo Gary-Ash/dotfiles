@@ -5,7 +5,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  23-Mar-2026  2:06pm
-# Modified :  20-Oct-2026  6:47pm
+# Modified :   2-Nov-2026  10:48pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -324,11 +324,14 @@
 #*****************************************************************************************
 # URL Shortcuts
 #*****************************************************************************************
-[url "https://github.com/"]
+[url "git@github.com:"]
     insteadOf = gh:
 
-[url "https://gist.github.com/"]
+[url "git@gist.github.com:"]
     insteadOf = gist:
+
+[url "git@gitlab.com:"]
+    insteadOf = gl:
 
 #*****************************************************************************************
 # Location dependent configuration

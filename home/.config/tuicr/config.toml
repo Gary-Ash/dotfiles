@@ -1,5 +1,4 @@
-theme = "catppuccin-mocha"
-appearance = "system"
+appearance = "dark"
 theme_dark = "solarized-dark"
 theme_light = "solarized-light"
 

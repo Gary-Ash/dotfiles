@@ -20,12 +20,12 @@ class ___FILEBASENAME___: UIViewController {
             for provider in item.attachments! {
                 if provider.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
                     // This is an image. We'll load it, then place it in our image view.
-                    weak var weakImageView = self.imageView
-                    provider.loadItem(forTypeIdentifier: UTType.image.identifier) { (imageURL, error) in
-                        if let imageURL = imageURL as? URL {
+                    weak let weakImageView = self.imageView
+                    provider.loadObject(ofClass: UIImage.self) { (image, error) in
+                        if let image = image as? UIImage {
                             Task { @MainActor in
                                 if let strongImageView = weakImageView {
-                                    strongImageView.image = UIImage(data: try! Data(contentsOf: imageURL))
+                                    strongImageView.image = image
                                 }
                             }
                         }
