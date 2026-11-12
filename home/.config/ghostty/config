@@ -14,13 +14,15 @@ title = "👻 Ghostty"
 theme = "Selenized Dark"
 font-size = 12
 font-family = "PragmataPro Mono Liga"
-#font-feature = +ss15
 
 auto-update = check
 auto-update-channel = tip
 
 shell-integration = "zsh"
 shell-integration-features = no-cursor, ssh-terminfo
+
+macos-titlebar-style = tabs
+macos-window-shadow = false
 
 window-height = 70
 window-width = 200
