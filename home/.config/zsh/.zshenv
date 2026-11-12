@@ -47,11 +47,9 @@ export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 #*****************************************************************************************
-# Ruby and CocoaPods
+# Ruby
 #*****************************************************************************************
 export RBENV_ROOT="/opt/venv/ruby"
-export COCOAPODS_DISABLE_STATS=1
-export CP_HOME_DIR="$XDG_CACHE_HOME/.cocoapods/"
 
 #*****************************************************************************************
 # Perl

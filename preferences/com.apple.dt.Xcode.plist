@@ -114,6 +114,27 @@
 	</dict>
 	<key>IDELastShownWhatsNewContentRevision</key>
 	<integer>6</integer>
+	<key>IDELibraryWindowController-With-Details.height</key>
+	<real>449</real>
+	<key>IDELibraryWindowController-With-Details.location</key>
+	<dict>
+		<key>horizontal</key>
+		<dict>
+			<key>anchor</key>
+			<integer>1</integer>
+			<key>distance</key>
+			<real>-0.00019531250000000001</real>
+		</dict>
+		<key>vertical</key>
+		<dict>
+			<key>anchor</key>
+			<integer>1</integer>
+			<key>distance</key>
+			<real>0.24981711777615215</real>
+		</dict>
+	</dict>
+	<key>IDELibraryWindowController-With-Details.width</key>
+	<real>681</real>
 	<key>IDEModelAccessHasUserConsentForOnDeviceInteractions</key>
 	<true/>
 	<key>IDEMostRecentPostFLEToolsVersion</key>
@@ -187,6 +208,8 @@
 	<false/>
 	<key>IDEWorkspaceSuppressCleanBuildPrompt</key>
 	<false/>
+	<key>LastExplicitInspectorVisibility</key>
+	<true/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{880, 448}</string>
 	<key>NSTableView Columns v3 PlistColumns</key>
@@ -289,10 +312,12 @@
 	<string>24S118</string>
 	<key>UVLastUsedDate</key>
 	<data>
-	ODE1ODc0Mjg3LjUyNTI1OA==
+	ODE2MTM2NjgzLjE0ODM2OQ==
 	</data>
 	<key>VerticalSplitView.topHeight.DVTWorkspaceThemeEditor</key>
 	<real>360</real>
+	<key>WebKitUseSystemAppearance</key>
+	<true/>
 	<key>XCFontAndColorCurrentTheme</key>
 	<string>Default (Light).xccolortheme</string>
 	<key>Xcode3ProjectEditorSourceListVisible</key>

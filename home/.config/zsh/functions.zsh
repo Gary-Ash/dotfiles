@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  10-Nov-2026  4:40pm
+# Modified :  11-Nov-2026  8:02pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -86,13 +86,35 @@ end tell
 END
 }
 
+#*****************************************************************************************
+# Use the Mole utility to cleanup my mac
+#*****************************************************************************************
 cleanup() {
-	mole clean
-	mole optimize
-	mole installer
-	mole purge
+	setopt local_options no_monitor
 
-	rm -rf ~/.npm
+	# keep the sudo timestamp alive so mole's own sudo calls don't prompt
+	local sudo_shell_pid
+	# source inside the command substitution's subshell so get_sudo_password never reaches this shell
+	sudo --validate --stdin <<<"$(source "/opt/geedbla/lib/shell/lib/get_sudo_password.sh" && get_sudo_password)" &>/dev/null
+	while true; do
+		sudo --non-interactive true
+		sleep 20
+	done &
+	sudo_shell_pid=$!
+
+	{
+		mole clean
+		mole optimize
+		mole installer
+		mole purge
+
+		sudo rm -rf ~/.npm
+	} always {
+		kill "$sudo_shell_pid" 2>/dev/null
+		wait "$sudo_shell_pid" 2>/dev/null
+	}
+
+	# cleanhist execs a new shell, so the keep-alive loop must be gone first
 	cleanhist
 }
 
