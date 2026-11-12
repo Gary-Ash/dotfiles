@@ -14,7 +14,7 @@ set -uo pipefail
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :   8-Feb-2026  3:37pm
-# Modified :   8-Nov-2026  7:06pm
+# Modified :  11-Nov-2026  8:40pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -71,7 +71,7 @@ format_file() {
 			black --config "${HOME}/.config/black" --quiet "${file}" &>/dev/null
 		elif [[ ${line} =~ ^\#\!.*(bash|zsh|sh)$ ]]; then
 			command -v shfmt >/dev/null || return 1
-			shfmt -ln bash -i 0 -s -ci -w "${file}" &>/dev/null
+			shfmt -i 0 -s -ci -w "${file}" &>/dev/null
 		else
 			return 1
 		fi

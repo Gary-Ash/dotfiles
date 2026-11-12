@@ -54,10 +54,6 @@ brew "c-ares"
 brew "cloc"
 # Cross-platform make
 brew "cmake"
-# Syntax-highlighting pager for git and diff output
-brew "git-delta"
-# Git diff pager based on delta but with a file tree
-brew "diffnav"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
@@ -76,6 +72,8 @@ brew "giflib"
 brew "pcre2"
 # Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Git extension for versioning large files
 brew "git-lfs"
 # GitHub Model Context Protocol server for AI tools
@@ -164,8 +162,6 @@ brew "sshpass"
 brew "swiftformat"
 # Tool to enforce Swift style and conventions
 brew "swiftlint"
-# Code review TUI with vim keybindings
-brew "tuicr"
 # Source code beautifier
 brew "uncrustify"
 # Shell extension to navigate your filesystem faster
