@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  24-Mar-2026  3:30pm
-# Modified :  20-Oct-2026  9:29pm
+# Modified :  11-Nov-2026  8:29pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -106,6 +106,11 @@ install_powerline_precmd() {
 }
 
 install_powerline_precmd
+
+#*****************************************************************************************
+# SSH agent — load my key once per login; passphrase comes from the macOS Keychain
+#*****************************************************************************************
+ssh-add -l &>/dev/null || ssh-add -q --apple-use-keychain "$HOME/.ssh/id_ed25519"
 
 #*****************************************************************************************
 # Startup banner
