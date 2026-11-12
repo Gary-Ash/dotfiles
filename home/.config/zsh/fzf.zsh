@@ -6,7 +6,7 @@
 #
 # Author   :  Gary Ash <gary.ash@icloud.com>
 # Created  :  20-Oct-2026  8:14pm
-# Modified :  11-Nov-2026  8:06pm
+# Modified :  11-Nov-2026  8:34pm
 #
 # Copyright © 2026 By Gary Ash All rights reserved.
 #*****************************************************************************************
@@ -29,14 +29,6 @@ typeset -gr SOL_VIOLET="#6c71c4"
 typeset -gr SOL_BLUE="#268bd2"
 typeset -gr SOL_CYAN="#2aa198"
 typeset -gr SOL_GREEN="#859900"
-
-#*****************************************************************************************
-# Tool Detection
-#*****************************************************************************************
-(($ + commands[bat]))
-(($ + commands[eza]))
-(($ + commands[chafa]))
-(($ + commands[delta]))
 
 #*****************************************************************************************
 # File Discovery
